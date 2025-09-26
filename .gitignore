@@ -1,0 +1,48 @@
+
+# Archivos de base de datos
+*.sqlite
+*.db
+data/
+database.sqlite
+
+# Archivos temporales
+temp/
+logs/
+uploads/
+
+# Archivos de configuración local
+config/local_config.php
+
+# Archivos de PHP portátil
+php/
+php-portable.zip
+usbwebserver/
+usbwebserver.zip
+xampp-portable-installer.exe
+
+# Archivos de Node.js
+node_modules/
+package-lock.json
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# Archivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos de backup
+*.bak
+*.backup
+*~

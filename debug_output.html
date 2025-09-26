@@ -1,0 +1,22 @@
+﻿<h1>Debug HTML Crear Auditoría</h1><h2>1. Resultado de obtenerOpcionesClientes()</h2><p>Tipo de dato: array</p><p>Número de elementos: 0</p><p style='color: red;'>No se encontraron clientes o hay un error</p><h2>2. Simulación del HTML del dropdown</h2><h3>HTML generado:</h3><pre>&lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;cliente_id&quot;&gt;Cliente *&lt;/label&gt;
+    &lt;select class=&quot;form-control&quot; id=&quot;cliente_id&quot; name=&quot;cliente_id&quot; required&gt;
+        &lt;option value=&quot;&quot;&gt;Seleccionar cliente...&lt;/option&gt;
+                    &lt;option value=&quot;&quot; disabled&gt;No hay clientes disponibles&lt;/option&gt;
+            &lt;/select&gt;
+&lt;/div&gt;
+</pre><h3>Vista previa del dropdown:</h3><div class="form-group">
+    <label for="cliente_id">Cliente *</label>
+    <select class="form-control" id="cliente_id" name="cliente_id" required>
+        <option value="">Seleccionar cliente...</option>
+                    <option value="" disabled>No hay clientes disponibles</option>
+            </select>
+</div>
+<h2>3. Verificación directa en base de datos</h2><p style='color: red;'>Error de base de datos: could not find driver</p><h2>4. Consulta exacta de obtenerOpcionesClientes</h2><p>SQL: <code>SELECT id, nombre_empresa as nombre, contacto_nombre FROM clientes WHERE activo = 1 ORDER BY nombre_empresa</code></p><br />
+<b>Warning</b>:  Undefined variable $pdo in <b>C:\ai\investigacionauditoria programacion\debug_html_crear.php</b> on line <b>97</b><br />
+<br />
+<b>Fatal error</b>:  Uncaught Error: Call to a member function prepare() on null in C:\ai\investigacionauditoria programacion\debug_html_crear.php:97
+Stack trace:
+#0 {main}
+  thrown in <b>C:\ai\investigacionauditoria programacion\debug_html_crear.php</b> on line <b>97</b><br />
+
