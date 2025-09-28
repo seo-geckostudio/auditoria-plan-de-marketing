@@ -27,7 +27,15 @@
       "Bash(curl -s \"http://localhost:8000/index.php?modulo=auditorias&accion=ver&id=26\")",
       "Bash(curl -s \"http://localhost:8000/*\")",
       "Bash(curl:*)",
-      "Bash(sqlite3:*)"
+      "Bash(sqlite3:*)",
+      "Bash(npx playwright:*)",
+      "Bash(npx @playwright/mcp:*)",
+      "Read(//c/Users/Migue/**)",
+      "Bash(timeout 5 npx @playwright/mcp --headless)",
+      "Bash(timeout 3 npx -y @modelcontextprotocol/server-sequential-thinking --help)",
+      "Bash(timeout 3 npx -y @modelcontextprotocol/server-memory --help)",
+      "Bash(timeout 3 npx -y @upstash/context7-mcp --help)",
+      "Bash(start test_ia_functionality.html)"
     ],
     "deny": [],
     "ask": []

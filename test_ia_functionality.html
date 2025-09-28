@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test AI Functionality</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <h2>🧠 Test de Funcionalidad de IA</h2>
+        <p>Esta página prueba las funciones JavaScript de asistencia con IA implementadas.</p>
+
+        <!-- Botones de prueba -->
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Opción 1: Plantilla para Cliente</h5>
+                    </div>
+                    <div class="card-body">
+                        <button class="btn btn-primary" onclick="testGenerarPlantilla()">
+                            <i class="fas fa-robot"></i> Test Plantilla
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Opción 2: Importar JSON</h5>
+                    </div>
+                    <div class="card-body">
+                        <textarea id="json-textarea" class="form-control mb-2" rows="3">{"meta_title": "Título de prueba", "meta_description": "Descripción de prueba"}</textarea>
+                        <button class="btn btn-success" onclick="testImportarJSON()">
+                            <i class="fas fa-upload"></i> Test Importar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Opción 3: IA Local</h5>
+                    </div>
+                    <div class="card-body">
+                        <button class="btn btn-warning" onclick="testBusquedaIA()">
+                            <i class="fas fa-magic"></i> Test IA Local
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Área de contenido dinámico -->
+        <div id="contenido-dinamico" style="display: none;" class="mb-4"></div>
+
+        <!-- Formulario de prueba -->
+        <div class="card">
+            <div class="card-header">
+                <h5>Formulario de Prueba</h5>
+            </div>
+            <div class="card-body">
+                <form id="formulario-dinamico">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="meta_title" class="form-label">Meta Title</label>
+                            <input type="text" class="form-control" name="meta_title" id="meta_title">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="meta_description" class="form-label">Meta Description</label>
+                            <input type="text" class="form-control" name="meta_description" id="meta_description">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <label for="keyword_principal" class="form-label">Keyword Principal</label>
+                            <input type="text" class="form-control" name="keyword_principal" id="keyword_principal">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="densidad_keyword" class="form-label">Densidad Keyword</label>
+                            <input type="text" class="form-control" name="densidad_keyword" id="densidad_keyword">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Área de resultados -->
+        <div id="resultado-busqueda" style="display: none;" class="mt-4"></div>
+        <div id="progreso-busqueda" class="progress mt-4" style="display: none;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 10%"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Simular variables globales
+        let cambiosPendientes = false;
+        window.resultadosIA = null;
+
+        // Funciones de prueba
+        function testGenerarPlantilla() {
+            const contenidoDinamico = document.getElementById('contenido-dinamico');
+
+            const plantillaIA = {
+                "meta_title": "Describe el título principal de la página",
+                "meta_description": "Describe la meta descripción",
+                "keyword_principal": "Palabra clave principal del contenido"
+            };
+
+            const nombrePaso = "Meta Tags SEO";
+            const nombreCliente = "Cliente de Prueba";
+
+            contenidoDinamico.innerHTML = `
+                <div class="alert alert-primary">
+                    <h6><i class="fas fa-robot"></i> Plantilla para IA Externa</h6>
+                    <p class="mb-0">Envía este texto a tu cliente para que lo use con ChatGPT o Claude:</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <span><strong>📋 Instrucciones para el Cliente</strong></span>
+                        <button type="button" class="btn btn-sm btn-outline-primary" onclick="copiarPlantillaCliente()">
+                            <i class="fas fa-copy"></i> Copiar Todo
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-light" id="plantilla-cliente">
+                            <h6>📨 Para: ${nombreCliente}</h6>
+                            <p><strong>Asunto:</strong> Información necesaria para ${nombrePaso}</p>
+
+                            <p>Hola,</p>
+
+                            <p>Para completar tu auditoría SEO, necesito que me proporciones información sobre <strong>"${nombrePaso}"</strong>.</p>
+
+                            <p>Por favor, usa ChatGPT o Claude con el siguiente prompt:</p>
+
+                            <div class="border p-3 bg-light">
+                                <strong>PROMPT PARA IA:</strong><br><br>
+                                Analiza mi sitio web y proporciona la siguiente información en formato JSON:<br><br>
+                                ${JSON.stringify(plantillaIA, null, 2)}
+                                <br><br>
+                                Mi sitio web es: [URL DEL CLIENTE]<br>
+                                Específicamente para: ${nombrePaso}
+                            </div>
+
+                            <p>Una vez que tengas la respuesta en JSON, envíamela por email.</p>
+
+                            <p>Gracias,<br>
+                            Tu consultor SEO</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            contenidoDinamico.style.display = 'block';
+            mostrarNotificacion('Plantilla generada correctamente', 'success');
+        }
+
+        function testImportarJSON() {
+            const jsonText = document.getElementById('json-textarea').value.trim();
+            if (!jsonText) {
+                alert('Por favor, ingresa un JSON válido');
+                return;
+            }
+
+            try {
+                const datos = JSON.parse(jsonText);
+                let camposImportados = 0;
+                let errores = [];
+
+                // Iterar sobre los datos del JSON
+                for (const [campo, valor] of Object.entries(datos)) {
+                    const elemento = document.querySelector(`[name="${campo}"]`);
+
+                    if (elemento) {
+                        if (elemento.type === 'checkbox' || elemento.type === 'radio') {
+                            elemento.checked = Boolean(valor);
+                        } else {
+                            elemento.value = valor;
+                        }
+                        camposImportados++;
+                    } else {
+                        errores.push(`Campo "${campo}" no encontrado en el formulario`);
+                    }
+                }
+
+                // Mostrar resultado
+                let mensaje = `Importación completada: ${camposImportados} campos importados`;
+                if (errores.length > 0) {
+                    mensaje += `\n\nAdvertencias:\n- ${errores.join('\n- ')}`;
+                }
+
+                alert(mensaje);
+                mostrarNotificacion('Datos importados correctamente', 'success');
+
+            } catch (error) {
+                alert('Error al procesar JSON: ' + error.message);
+            }
+        }
+
+        function testBusquedaIA() {
+            const contenidoDinamico = document.getElementById('contenido-dinamico');
+            const urlCliente = "https://ejemplo.com";
+            const nombrePaso = "Meta Tags SEO";
+
+            contenidoDinamico.innerHTML = `
+                <div class="alert alert-warning">
+                    <h6><i class="fas fa-magic"></i> Búsqueda Automática con IA</h6>
+                    <p class="mb-0">Claude analizará automáticamente la información disponible para "${nombrePaso}"</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="spinner-border text-warning me-3" role="status" id="spinner-busqueda">
+                                <span class="visually-hidden">Buscando...</span>
+                            </div>
+                            <div>
+                                <strong>Analizando: ${urlCliente}</strong><br>
+                                <small class="text-muted">Esto puede tomar unos momentos...</small>
+                            </div>
+                        </div>
+
+                        <div id="progreso-busqueda" class="progress mb-3">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 10%"></div>
+                        </div>
+
+                        <div id="resultado-busqueda" style="display: none;">
+                            <!-- Los resultados aparecerán aquí -->
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            contenidoDinamico.style.display = 'block';
+
+            // Simular búsqueda automática
+            simularBusquedaIA(urlCliente, nombrePaso);
+        }
+
+        // OPCIÓN 3: Simular búsqueda automática con IA local
+        function simularBusquedaIA(urlCliente, nombrePaso) {
+            const progressBar = document.querySelector('#progreso-busqueda .progress-bar');
+            const spinner = document.getElementById('spinner-busqueda');
+            const resultadoDiv = document.getElementById('resultado-busqueda');
+
+            let progreso = 10;
+            const pasos = [
+                { mensaje: 'Accediendo al sitio web...', tiempo: 1000 },
+                { mensaje: 'Analizando meta tags y estructura...', tiempo: 1500 },
+                { mensaje: 'Revisando contenido relevante...', tiempo: 2000 },
+                { mensaje: 'Extrayendo datos específicos para ' + nombrePaso + '...', tiempo: 1500 },
+                { mensaje: 'Generando respuestas estructuradas...', tiempo: 1000 },
+                { mensaje: 'Finalizando análisis...', tiempo: 500 }
+            ];
+
+            let pasoActual = 0;
+
+            function ejecutarSiguientePaso() {
+                if (pasoActual < pasos.length) {
+                    const paso = pasos[pasoActual];
+                    progreso += 15;
+                    progressBar.style.width = progreso + '%';
+
+                    // Mostrar mensaje de progreso
+                    const mensaje = document.querySelector('#progreso-busqueda').parentElement.querySelector('small');
+                    mensaje.textContent = paso.mensaje;
+
+                    pasoActual++;
+                    setTimeout(ejecutarSiguientePaso, paso.tiempo);
+                } else {
+                    // Completar la búsqueda
+                    completarBusquedaIA();
+                }
+            }
+
+            function completarBusquedaIA() {
+                progressBar.style.width = '100%';
+                progressBar.classList.remove('progress-bar-animated');
+                progressBar.classList.add('bg-success');
+
+                spinner.style.display = 'none';
+
+                // Generar resultados simulados
+                const resultadosSimulados = {
+                    '_analisis_automatico': true,
+                    '_timestamp': new Date().toISOString(),
+                    '_url_analizada': urlCliente,
+                    '_paso_analizado': nombrePaso,
+                    'meta_title': 'Título principal encontrado en la página',
+                    'meta_description': 'Descripción meta extraída automáticamente',
+                    'meta_keywords': 'palabras, clave, encontradas',
+                    'longitud_titulo': '60 caracteres',
+                    'longitud_descripcion': '155 caracteres'
+                };
+
+                resultadoDiv.innerHTML = `
+                    <div class="alert alert-success">
+                        <h6><i class="fas fa-check-circle"></i> Análisis Completado</h6>
+                        <p class="mb-0">Se ha analizado automáticamente la información disponible</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>📊 Datos Encontrados:</h6>
+                            <div class="border rounded p-3 mb-3" style="background-color: #f8f9fa;">
+                                <pre style="white-space: pre-wrap; font-size: 12px;">${JSON.stringify(resultadosSimulados, null, 2)}</pre>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>🎯 Acciones Disponibles:</h6>
+                            <button type="button" class="btn btn-success btn-sm me-2 mb-2" onclick="aplicarResultadosIA()">
+                                <i class="fas fa-magic"></i> Aplicar Automáticamente
+                            </button>
+                            <button type="button" class="btn btn-outline-primary btn-sm me-2 mb-2" onclick="revisarResultados()">
+                                <i class="fas fa-eye"></i> Revisar y Editar
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary btn-sm mb-2" onclick="exportarResultados()">
+                                <i class="fas fa-download"></i> Exportar JSON
+                            </button>
+                        </div>
+                    </div>
+                `;
+
+                resultadoDiv.style.display = 'block';
+
+                // Guardar los resultados para uso posterior
+                window.resultadosIA = resultadosSimulados;
+                mostrarNotificacion('Análisis de IA completado exitosamente', 'success');
+            }
+
+            // Iniciar el proceso
+            setTimeout(ejecutarSiguientePaso, 500);
+        }
+
+        // Aplicar resultados de IA directamente al formulario
+        function aplicarResultadosIA() {
+            if (!window.resultadosIA) {
+                alert('No hay resultados disponibles para aplicar');
+                return;
+            }
+
+            if (!confirm('¿Aplicar automáticamente los resultados encontrados? Esto sobrescribirá los campos actuales.')) {
+                return;
+            }
+
+            let camposAplicados = 0;
+
+            for (const [campo, valor] of Object.entries(window.resultadosIA)) {
+                // Saltar campos meta que no son del formulario
+                if (campo.startsWith('_')) continue;
+
+                const elemento = document.querySelector(`[name="${campo}"]`);
+                if (elemento) {
+                    elemento.value = valor;
+                    camposAplicados++;
+                }
+            }
+
+            mostrarNotificacion(`IA aplicada: ${camposAplicados} campos completados automáticamente`, 'success');
+        }
+
+        function revisarResultados() {
+            if (!window.resultadosIA) {
+                alert('No hay resultados disponibles para revisar');
+                return;
+            }
+
+            const jsonString = JSON.stringify(window.resultadosIA, null, 2);
+            document.getElementById('json-textarea').value = jsonString;
+            mostrarNotificacion('Resultados cargados en el área de revisión', 'info');
+        }
+
+        function exportarResultados() {
+            if (!window.resultadosIA) {
+                alert('No hay resultados disponibles para exportar');
+                return;
+            }
+
+            const jsonString = JSON.stringify(window.resultadosIA, null, 2);
+            const blob = new Blob([jsonString], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `ai_results_${Date.now()}.json`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+
+            mostrarNotificacion('Resultados exportados como archivo JSON', 'success');
+        }
+
+        function copiarPlantillaCliente() {
+            const plantilla = document.getElementById('plantilla-cliente').innerText;
+            navigator.clipboard.writeText(plantilla).then(() => {
+                mostrarNotificacion('Plantilla copiada al portapapeles. ¡Listo para enviar al cliente!', 'success');
+            }).catch(err => {
+                console.error('Error al copiar: ', err);
+                alert('Error al copiar al portapapeles');
+            });
+        }
+
+        // Mostrar notificación toast mejorada
+        function mostrarNotificacion(mensaje, tipo = 'info', duracion = 3000) {
+            // Crear contenedor de notificaciones si no existe
+            let container = document.getElementById('notifications-container');
+            if (!container) {
+                container = document.createElement('div');
+                container.id = 'notifications-container';
+                container.style.cssText = `
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    z-index: 9999;
+                    max-width: 350px;
+                `;
+                document.body.appendChild(container);
+            }
+
+            // Crear notificación
+            const notification = document.createElement('div');
+            const notificationId = 'notification-' + Date.now();
+            notification.id = notificationId;
+
+            const tipoClass = {
+                'success': 'alert-success',
+                'error': 'alert-danger',
+                'warning': 'alert-warning',
+                'info': 'alert-info',
+                'danger': 'alert-danger'
+            }[tipo] || 'alert-info';
+
+            const iconClass = {
+                'success': 'fas fa-check-circle',
+                'error': 'fas fa-exclamation-triangle',
+                'warning': 'fas fa-exclamation-triangle',
+                'info': 'fas fa-info-circle',
+                'danger': 'fas fa-exclamation-triangle'
+            }[tipo] || 'fas fa-info-circle';
+
+            notification.innerHTML = `
+                <div class="alert ${tipoClass} alert-dismissible fade show mb-2" role="alert" style="box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <i class="${iconClass} me-2"></i>
+                    ${mensaje}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" onclick="document.getElementById('${notificationId}').remove()"></button>
+                </div>
+            `;
+
+            container.appendChild(notification);
+
+            // Auto-remover después del tiempo especificado
+            setTimeout(() => {
+                const element = document.getElementById(notificationId);
+                if (element) {
+                    element.remove();
+                }
+            }, duracion);
+        }
+    </script>
+</body>
+</html>

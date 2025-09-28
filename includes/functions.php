@@ -250,7 +250,7 @@ function calcularPorcentajeAuditoria($auditoriaId) {
  */
 function obtenerPasosPorFase($auditoriaId) {
     $sql = "
-        SELECT 
+        SELECT
             f.numero_fase,
             f.nombre as fase_nombre,
             ap.id as auditoria_paso_id,
@@ -258,6 +258,7 @@ function obtenerPasosPorFase($auditoriaId) {
             pt.nombre as paso_nombre,
             pt.descripcion,
             pt.es_critico,
+            pt.orden_en_fase,
             ap.estado,
             ap.fecha_inicio,
             ap.fecha_completado,
@@ -296,6 +297,9 @@ function obtenerPasosPorFase($auditoriaId) {
         $pasoConAlias['nombre'] = $paso['paso_nombre']; // Alias para compatibilidad
         $pasoConAlias['id'] = $paso['auditoria_paso_id']; // Alias para compatibilidad
 
+        // Generar descripción dinámica
+        $pasoConAlias['descripcion_dinamica'] = generarDescripcionPaso($pasoConAlias, $pasos);
+
         $fases[$numeroFase]['pasos'][] = $pasoConAlias;
     }
     
@@ -321,13 +325,132 @@ function actualizarEstadoPaso($auditoriaId, $pasoId, $nuevoEstado, $usuarioId) {
     }
     
     $resultado = actualizarRegistro('auditoria_pasos', $pasoId, $datos);
-    
+
     if ($resultado) {
         // El trigger se encarga de actualizar el porcentaje y registrar el cambio
         return true;
     }
-    
+
     return false;
+}
+
+/**
+ * Genera descripción dinámica para un paso según su estado y dependencias
+ *
+ * @param array $paso Datos del paso
+ * @param array $todosPasos Todos los pasos de la auditoría para verificar dependencias
+ * @return string Descripción dinámica del paso
+ */
+function generarDescripcionPaso($paso, $todosPasos = []) {
+    $estado = $paso['estado'] ?? 'pendiente';
+    $numeroPaso = isset($paso['codigo_paso']) ? $paso['codigo_paso'] : 'N/A';
+    $esCritico = ($paso['es_critico'] ?? 0) == 1;
+
+    // Si el paso está completado, no mostrar descripción
+    if ($estado === 'completado') {
+        return '';
+    }
+
+    $descripcion = [];
+
+    // Información de orden
+    $descripcion[] = "Paso {$numeroPaso}";
+    if ($esCritico) {
+        $descripcion[] = "⚡ Crítico";
+    }
+
+    // Verificar dependencias
+    $dependencias = obtenerDependenciasPaso($paso, $todosPasos);
+
+    if (!empty($dependencias['pendientes'])) {
+        // Tiene dependencias pendientes
+        $dependientes = array_map(function($dep) {
+            return $dep['nombre'] ?? $dep['paso_nombre'] ?? 'Paso anterior';
+        }, $dependencias['pendientes']);
+
+        $descripcion[] = "Depende de: " . implode(', ', $dependientes);
+    } else if (!empty($dependencias['completadas'])) {
+        // Dependencias completadas, paso listo
+        $descripcion[] = "✅ Iniciable";
+    } else {
+        // Sin dependencias
+        $descripcion[] = "✅ Iniciable";
+    }
+
+    // Estado actual
+    switch ($estado) {
+        case 'en_progreso':
+            $descripcion[] = "🔄 En progreso";
+            break;
+        case 'pendiente':
+            if (empty($dependencias['pendientes'])) {
+                $descripcion[] = "⏳ Listo para iniciar";
+            }
+            break;
+        case 'pausado':
+            $descripcion[] = "⏸️ Pausado";
+            break;
+        case 'bloqueado':
+            $descripcion[] = "🚫 Bloqueado";
+            break;
+    }
+
+    return implode(' • ', $descripcion);
+}
+
+/**
+ * Obtiene las dependencias de un paso
+ *
+ * @param array $paso Datos del paso
+ * @param array $todosPasos Todos los pasos de la auditoría
+ * @return array Array con dependencias completadas y pendientes
+ */
+function obtenerDependenciasPaso($paso, $todosPasos) {
+    $resultado = [
+        'completadas' => [],
+        'pendientes' => []
+    ];
+
+    // Obtener el orden en la fase del paso actual
+    $ordenActual = $paso['orden_en_fase'] ?? 1;
+    $faseActual = $paso['numero_fase'] ?? 0;
+
+    // Para pasos de Fase 0 (Marketing Digital), verificar dependencias secuenciales
+    if ($faseActual == 0) {
+        // Buscar pasos anteriores en la misma fase
+        foreach ($todosPasos as $otroPaso) {
+            if (($otroPaso['numero_fase'] ?? 0) == $faseActual &&
+                ($otroPaso['orden_en_fase'] ?? 0) < $ordenActual) {
+
+                $estadoOtroPaso = $otroPaso['estado'] ?? 'pendiente';
+                if ($estadoOtroPaso === 'completado') {
+                    $resultado['completadas'][] = $otroPaso;
+                } else {
+                    $resultado['pendientes'][] = $otroPaso;
+                }
+            }
+        }
+    }
+
+    // Para otras fases, verificar que la fase anterior esté completa
+    if ($faseActual > 0) {
+        $faseAnteriorCompleta = true;
+        foreach ($todosPasos as $otroPaso) {
+            if (($otroPaso['numero_fase'] ?? 0) == ($faseActual - 1)) {
+                $estadoOtroPaso = $otroPaso['estado'] ?? 'pendiente';
+                if ($estadoOtroPaso !== 'completado') {
+                    $faseAnteriorCompleta = false;
+                    $resultado['pendientes'][] = [
+                        'nombre' => "Fase " . ($faseActual - 1) . " completa",
+                        'paso_nombre' => "Completar fase anterior"
+                    ];
+                    break;
+                }
+            }
+        }
+    }
+
+    return $resultado;
 }
 
 // =====================================================

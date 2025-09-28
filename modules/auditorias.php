@@ -91,24 +91,24 @@ function mostrarListaAuditorias() {
  */
 function mostrarDetalleAuditoria() {
     $auditoriaId = (int)($_GET['id'] ?? 0);
-    
+
     // La validación de ID y existencia ahora se hace en index.php
     // Solo obtener los datos necesarios para la vista
-    
-    // Obtener datos de la auditoría
-    $auditoria = obtenerAuditoria($auditoriaId);
+
+    // Obtener datos de la auditoría (función temporal)
+    $auditoria = obtenerRegistro("SELECT * FROM auditorias WHERE id = ?", [$auditoriaId]);
     
     // Obtener pasos organizados por fase
     $fases = obtenerPasosPorFase($auditoriaId);
     
-    // Obtener archivos de la auditoría
-    $archivos = obtenerArchivosAuditoria($auditoriaId);
-    
-    // Obtener comentarios
-    $comentarios = obtenerComentariosAuditoria($auditoriaId);
-    
-    // Obtener historial de cambios
-    $historial = obtenerHistorialAuditoria($auditoriaId);
+    // Obtener archivos de la auditoría (función temporal)
+    $archivos = ejecutarConsulta("SELECT * FROM archivos WHERE auditoria_id = ?", [$auditoriaId]) ?: [];
+
+    // Obtener comentarios (función temporal)
+    $comentarios = [];
+
+    // Obtener historial de cambios (función temporal)
+    $historial = [];
     
     include __DIR__ . '/../views/auditorias/detalle.php';
 }

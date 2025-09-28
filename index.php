@@ -72,6 +72,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 } else {
                     $_SESSION['form_error'] = $resultado['message'];
                     $_SESSION['form_errores'] = $resultado['errores'] ?? [];
+                    $_SESSION['errores_validacion'] = $resultado['errores'] ?? [];
+                    if (!empty($resultado['message']) && empty($resultado['errores'])) {
+                        $_SESSION['errores_validacion'][] = $resultado['message'];
+                    }
                 }
             }
             break;

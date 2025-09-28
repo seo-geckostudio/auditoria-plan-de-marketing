@@ -295,8 +295,19 @@ function obtenerIconoCriticidad($criticidad) {
                                                                     <?= ucfirst($paso['criticidad'] ?? 'Media') ?>
                                                                 </span>
                                                             </h6>
-                                                            <?php if (!empty($paso['descripcion'])): ?>
-                                                                <p class="text-muted mb-2 small"><?= htmlspecialchars($paso['descripcion']) ?></p>
+                                                            <!-- DEBUG: Verificar descripción dinámica -->
+                                                            <?php if (!empty($paso['descripcion_dinamica'])): ?>
+                                                                <p class="text-muted mb-2 small" style="background-color: #e8f5e8;">
+                                                                    <strong>DINÁMICO:</strong> <?= htmlspecialchars($paso['descripcion_dinamica']) ?>
+                                                                </p>
+                                                            <?php elseif (!empty($paso['descripcion'])): ?>
+                                                                <p class="text-muted mb-2 small" style="background-color: #fff2e8;">
+                                                                    <strong>ORIGINAL:</strong> <?= htmlspecialchars($paso['descripcion']) ?>
+                                                                </p>
+                                                            <?php else: ?>
+                                                                <p class="text-muted mb-2 small" style="background-color: #ffe8e8;">
+                                                                    <strong>SIN DESCRIPCIÓN</strong>
+                                                                </p>
                                                             <?php endif; ?>
                                                             
                                                             <?php if (!empty($paso['datos_completados'])): ?>

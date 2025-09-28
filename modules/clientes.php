@@ -470,8 +470,17 @@ function activarCliente() {
 // =====================================================
 
 /**
+ * Procesa la creación de un nuevo cliente (wrapper para compatibilidad con index.php)
+ *
+ * @return array Resultado del procesamiento
+ */
+function procesarFormularioCliente() {
+    return procesarCrearCliente();
+}
+
+/**
  * Procesa la creación de un nuevo cliente
- * 
+ *
  * @return array Resultado del procesamiento
  */
 function procesarCrearCliente() {
@@ -507,7 +516,7 @@ function procesarCrearCliente() {
         'contacto_email' => sanitizar($_POST['contacto_email'] ?? ''),
         'contacto_telefono' => sanitizar($_POST['contacto_telefono'] ?? ''),
         'sector' => sanitizar($_POST['sector'] ?? ''),
-        'url_principal' => sanitizar($_POST['url_principal'] ?? ''),
+        'url_principal' => sanitizar($_POST['sitio_web'] ?? ''),
         'pais' => sanitizar($_POST['pais'] ?? ''),
         'notas' => sanitizar($_POST['notas'] ?? ''),
         'activo' => isset($_POST['activo']) ? (int)$_POST['activo'] : 1

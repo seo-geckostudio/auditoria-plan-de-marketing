@@ -58,7 +58,7 @@ unset($_SESSION['errores_validacion'], $_SESSION['datos_formulario']);
                     </h5>
                 </div>
                 <div class="card-body">
-                    <form method="POST" action="processor.php" novalidate>
+                    <form method="POST" action="index.php?modulo=clientes&accion=crear" novalidate>
                         <?= generarCampoCSRF() ?>
                         <input type="hidden" name="form_name" value="clientes_crear">
                         

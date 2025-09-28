@@ -1,30 +1,16 @@
 <?php
 /**
  * PROCESADOR ÚNICO DE FORMULARIOS
- * 
+ *
  * Este archivo maneja TODOS los formularios del sistema de manera centralizada.
  * Los formularios se identifican por nombres únicos basados en módulo + acción.
- * 
+ *
  * @author Sistema de Auditorías SEO
  * @version 1.0
  */
 
-// Configurar para mostrar errores
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-// Iniciar sesión si no está iniciada
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
-
-// Definir constante del sistema
-define('SISTEMA_INICIADO', true);
-
-// Incluir funciones del sistema
-require_once __DIR__ . '/includes/functions.php';
-require_once __DIR__ . '/modules/clientes.php';
-require_once __DIR__ . '/modules/auditorias.php';
+// Inicialización segura del sistema
+require_once __DIR__ . '/includes/init.php';
 
 // Verificar que sea una petición POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {

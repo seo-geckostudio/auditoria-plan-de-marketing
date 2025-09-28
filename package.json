@@ -18,5 +18,11 @@
     "@types/node": "^24.5.2",
     "playwright": "^1.55.1",
     "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server-memory": "^2025.9.25",
+    "@modelcontextprotocol/server-sequential-thinking": "^2025.7.1",
+    "@playwright/mcp": "^0.0.40",
+    "@upstash/context7-mcp": "^1.0.20"
   }
 }

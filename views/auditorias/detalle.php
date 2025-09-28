@@ -178,8 +178,19 @@ if (!isset($auditoria) || !$auditoria) {
                                                     <tr>
                                                         <td>
                                                             <strong><?= htmlspecialchars($paso['nombre'] ?? 'Paso sin nombre') ?></strong>
-                                                            <?php if (!empty($paso['descripcion'])): ?>
-                                                                <br><small class="text-muted"><?= htmlspecialchars($paso['descripcion']) ?></small>
+                                                            <!-- DEBUG: Verificar descripción dinámica -->
+                                                            <?php if (!empty($paso['descripcion_dinamica'])): ?>
+                                                                <br><small class="text-muted" style="background-color: #e8f5e8; padding: 2px 4px; border-radius: 3px;">
+                                                                    <strong>DINÁMICO:</strong> <?= htmlspecialchars($paso['descripcion_dinamica']) ?>
+                                                                </small>
+                                                            <?php elseif (!empty($paso['descripcion'])): ?>
+                                                                <br><small class="text-muted" style="background-color: #fff2e8; padding: 2px 4px; border-radius: 3px;">
+                                                                    <strong>ORIGINAL:</strong> <?= htmlspecialchars($paso['descripcion']) ?>
+                                                                </small>
+                                                            <?php else: ?>
+                                                                <br><small class="text-muted" style="background-color: #ffe8e8; padding: 2px 4px; border-radius: 3px;">
+                                                                    <strong>SIN DESCRIPCIÓN</strong>
+                                                                </small>
                                                             <?php endif; ?>
                                                         </td>
                                                         <td>
