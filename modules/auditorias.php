@@ -38,6 +38,24 @@ function manejarAuditorias() {
         case 'dashboard':
             mostrarDashboard();
             break;
+        case 'seleccionar_metodo':
+            mostrarSelectorMetodo();
+            break;
+        case 'formulario':
+            mostrarFormularioPaso();
+            break;
+        case 'upload':
+            mostrarUploadArchivo();
+            break;
+        case 'importar_csv':
+            mostrarImportarCSV();
+            break;
+        case 'eliminar':
+            procesarEliminarAuditoria();
+            break;
+        case 'procesar_eliminar':
+            confirmarEliminarAuditoria();
+            break;
         default:
             mostrarListaAuditorias();
     }
@@ -420,6 +438,193 @@ function duplicarAuditoria($auditoriaId, $nuevosDatos) {
     }
     
     return false;
+}
+
+// =====================================================
+// NUEVAS FUNCIONES PARA FORMULARIOS DINÁMICOS
+// =====================================================
+
+/**
+ * Muestra el selector de método de entrada para un paso
+ */
+function mostrarSelectorMetodo() {
+    include __DIR__ . '/../views/auditorias/seleccionar_metodo.php';
+}
+
+/**
+ * Muestra el formulario dinámico para un paso específico
+ */
+function mostrarFormularioPaso() {
+    include __DIR__ . '/../views/auditorias/formulario_paso.php';
+}
+
+/**
+ * Muestra la interfaz de upload de archivos (usar la existente)
+ */
+function mostrarUploadArchivo() {
+    // Redirigir a la funcionalidad existente de upload
+    include __DIR__ . '/../views/auditorias/upload_file.php';
+}
+
+/**
+ * Muestra la interfaz de importación CSV (próximamente)
+ */
+function mostrarImportarCSV() {
+    // TODO: Implementar en próxima iteración
+    echo '<div class="alert alert-info">Funcionalidad de importar CSV - próximamente</div>';
+    echo '<a href="javascript:history.back()" class="btn btn-secondary">Volver</a>';
+}
+
+/**
+ * Procesa la solicitud de eliminar una auditoría
+ */
+function procesarEliminarAuditoria() {
+    // Debug logging para procesarEliminarAuditoria
+    $log_file = __DIR__ . '/../delete_debug.log';
+    $timestamp = date('Y-m-d H:i:s');
+    file_put_contents($log_file, "\n[$timestamp] ==> procesarEliminarAuditoria() INICIADA\n", FILE_APPEND);
+    file_put_contents($log_file, "[$timestamp] REQUEST_METHOD: " . ($_SERVER['REQUEST_METHOD'] ?? 'undefined') . "\n", FILE_APPEND);
+    file_put_contents($log_file, "[$timestamp] POST data: " . print_r($_POST, true) . "\n", FILE_APPEND);
+    file_put_contents($log_file, "[$timestamp] GET data: " . print_r($_GET, true) . "\n", FILE_APPEND);
+
+    $auditoria_id = (int)($_GET['id'] ?? 0);
+    file_put_contents($log_file, "[$timestamp] Auditoria ID extraído de GET: $auditoria_id\n", FILE_APPEND);
+
+    if (!$auditoria_id) {
+        file_put_contents($log_file, "[$timestamp] ERROR: ID inválido en procesarEliminarAuditoria\n", FILE_APPEND);
+        header('Location: ?modulo=auditorias&accion=listar&error=id_invalido');
+        exit;
+    }
+
+    // Verificar que la auditoría existe
+    $auditoria = obtenerAuditoria($auditoria_id);
+    if (!$auditoria) {
+        file_put_contents($log_file, "[$timestamp] ERROR: Auditoría no encontrada en procesarEliminarAuditoria\n", FILE_APPEND);
+        header('Location: ?modulo=auditorias&accion=listar&error=no_encontrada');
+        exit;
+    }
+
+    file_put_contents($log_file, "[$timestamp] Auditoría encontrada: " . $auditoria['titulo'] . "\n", FILE_APPEND);
+
+    // Si es confirmación POST, proceder con eliminación
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['confirmar'])) {
+        file_put_contents($log_file, "[$timestamp] ✅ POST detectado con confirmar, llamando a confirmarEliminarAuditoria()\n", FILE_APPEND);
+        confirmarEliminarAuditoria();
+        file_put_contents($log_file, "[$timestamp] ⚠️ REGRESÓ de confirmarEliminarAuditoria() - esto NO debería pasar\n", FILE_APPEND);
+        return;
+    } else {
+        $has_post = $_SERVER['REQUEST_METHOD'] === 'POST';
+        $has_confirmar = isset($_POST['confirmar']);
+        file_put_contents($log_file, "[$timestamp] ❌ POST NO detectado - METHOD=" . ($_SERVER['REQUEST_METHOD'] ?? 'undefined') . ", confirmar=$has_confirmar\n", FILE_APPEND);
+    }
+
+    // Mostrar página de confirmación
+    file_put_contents($log_file, "[$timestamp] Mostrando página de confirmación\n", FILE_APPEND);
+    include __DIR__ . '/../views/auditorias/confirmar_eliminar.php';
+}
+
+/**
+ * Confirma y ejecuta la eliminación de la auditoría
+ */
+function confirmarEliminarAuditoria() {
+    $auditoria_id = (int)($_POST['auditoria_id'] ?? $_GET['id'] ?? 0);
+
+    // Debug logging detallado
+    $log_file = __DIR__ . '/../delete_debug.log';
+    $timestamp = date('Y-m-d H:i:s');
+    file_put_contents($log_file, "[$timestamp] ==> confirmarEliminarAuditoria() INICIADA\n", FILE_APPEND);
+    file_put_contents($log_file, "[$timestamp] POST data: " . print_r($_POST, true) . "\n", FILE_APPEND);
+    file_put_contents($log_file, "[$timestamp] GET data: " . print_r($_GET, true) . "\n", FILE_APPEND);
+    file_put_contents($log_file, "[$timestamp] Auditoria ID extraído: $auditoria_id\n", FILE_APPEND);
+
+    if (!$auditoria_id) {
+        file_put_contents($log_file, "[$timestamp] ERROR: ID inválido, redirigiendo\n", FILE_APPEND);
+        header('Location: ?modulo=auditorias&accion=listar&error=id_invalido');
+        exit;
+    }
+
+    try {
+        file_put_contents($log_file, "[$timestamp] Conectando a base de datos...\n", FILE_APPEND);
+        $pdo = obtenerConexion();
+        file_put_contents($log_file, "[$timestamp] Conexión exitosa, iniciando transacción...\n", FILE_APPEND);
+        $pdo->beginTransaction();
+
+        // Eliminar en orden: datos dependientes primero
+
+        // 1. Eliminar datos de formularios (compatible con SQLite)
+        $sql = "DELETE FROM paso_datos
+                WHERE auditoria_paso_id IN (
+                    SELECT id FROM auditoria_pasos WHERE auditoria_id = ?
+                )";
+        $pdo->prepare($sql)->execute([$auditoria_id]);
+
+        // 2. Eliminar datos CSV (compatible con SQLite)
+        $sql = "DELETE FROM csv_datos
+                WHERE auditoria_paso_id IN (
+                    SELECT id FROM auditoria_pasos WHERE auditoria_id = ?
+                )";
+        $pdo->prepare($sql)->execute([$auditoria_id]);
+
+        // 3. Eliminar archivos (compatible con SQLite)
+        $sql = "DELETE FROM archivos
+                WHERE auditoria_paso_id IN (
+                    SELECT id FROM auditoria_pasos WHERE auditoria_id = ?
+                )";
+        $pdo->prepare($sql)->execute([$auditoria_id]);
+
+        // 4. Eliminar comentarios (compatible con SQLite)
+        $sql = "DELETE FROM comentarios
+                WHERE auditoria_paso_id IN (
+                    SELECT id FROM auditoria_pasos WHERE auditoria_id = ?
+                )";
+        $pdo->prepare($sql)->execute([$auditoria_id]);
+
+        // 5. Eliminar historial
+        $sql = "DELETE FROM historial_cambios WHERE auditoria_id = ?";
+        $pdo->prepare($sql)->execute([$auditoria_id]);
+
+        // 6. Eliminar pasos de auditoría
+        $sql = "DELETE FROM auditoria_pasos WHERE auditoria_id = ?";
+        $pdo->prepare($sql)->execute([$auditoria_id]);
+
+        // 7. Finalmente, eliminar la auditoría
+        $sql = "DELETE FROM auditorias WHERE id = ?";
+        $stmt = $pdo->prepare($sql);
+        $resultado = $stmt->execute([$auditoria_id]);
+
+        if ($resultado && $stmt->rowCount() > 0) {
+            file_put_contents($log_file, "[$timestamp] ✅ ELIMINACIÓN EXITOSA - rowCount: " . $stmt->rowCount() . "\n", FILE_APPEND);
+            $pdo->commit();
+            file_put_contents($log_file, "[$timestamp] ✅ COMMIT realizado\n", FILE_APPEND);
+            mostrarNotificacionSegura('Auditoría eliminada correctamente', 'success');
+            file_put_contents($log_file, "[$timestamp] ✅ Notificación añadida, redirigiendo...\n", FILE_APPEND);
+            header('Location: ?modulo=auditorias&accion=listar&success=eliminado');
+            file_put_contents($log_file, "[$timestamp] ✅ REDIRECT enviado, saliendo...\n", FILE_APPEND);
+            exit;
+        } else {
+            file_put_contents($log_file, "[$timestamp] ❌ FALLO: resultado=$resultado, rowCount=" . $stmt->rowCount() . "\n", FILE_APPEND);
+            throw new Exception('No se pudo eliminar la auditoría');
+        }
+
+    } catch (Exception $e) {
+        file_put_contents($log_file, "[$timestamp] ❌ EXCEPCIÓN: " . $e->getMessage() . "\n", FILE_APPEND);
+        file_put_contents($log_file, "[$timestamp] ❌ Archivo: " . $e->getFile() . " línea " . $e->getLine() . "\n", FILE_APPEND);
+
+        if (isset($pdo)) {
+            $pdo->rollback();
+            file_put_contents($log_file, "[$timestamp] ❌ ROLLBACK ejecutado\n", FILE_APPEND);
+        }
+
+        // Intentar registrar error si la función existe
+        if (function_exists('registrarError')) {
+            registrarError("Error eliminando auditoría: " . $e->getMessage());
+        }
+
+        mostrarNotificacionSegura('Error al eliminar la auditoría: ' . $e->getMessage(), 'error');
+        file_put_contents($log_file, "[$timestamp] ❌ Redirigiendo con error...\n", FILE_APPEND);
+        header('Location: ?modulo=auditorias&accion=listar&error=eliminacion_fallida');
+        exit;
+    }
 }
 
 ?>

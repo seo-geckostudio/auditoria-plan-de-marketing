@@ -224,7 +224,7 @@ function procesarBorrarClientePermanente() {
     }
     
     // Borrar cliente permanentemente
-    $resultado = borrarClientePermanentemente($clienteId);
+    $resultado = borrarClienteDefinitivamente($clienteId);
     if ($resultado) {
         header('Location: ?modulo=clientes&accion=listar&mensaje=cliente_borrado');
     } else {
@@ -832,8 +832,7 @@ function contarTodasAuditoriasCliente($clienteId) {
  * @return bool True si se borró correctamente
  */
 function borrarClienteDefinitivamente($clienteId) {
-    $sql = "DELETE FROM clientes WHERE id = ?";
-    return ejecutarConsulta($sql, [$clienteId]);
+    return eliminarRegistro('clientes', $clienteId);
 }
 
 /**

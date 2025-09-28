@@ -13,9 +13,7 @@
  * Muestra las notificaciones almacenadas en la sesión
  */
 function mostrarNotificaciones() {
-    if (session_status() === PHP_SESSION_NONE) {
-        session_start();
-    }
+    // La sesión ya debe estar iniciada en includes/init.php
     
     $html = '';
     

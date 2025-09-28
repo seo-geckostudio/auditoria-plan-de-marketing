@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Cursor Directo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 50px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* FORZAR CURSORES - MÁXIMA PRIORIDAD */
+        .test-disabled {
+            cursor: not-allowed !important;
+            background: #dc3545 !important;
+            color: white !important;
+            opacity: 0.5 !important;
+            border: 2px solid #dc3545 !important;
+            padding: 10px 20px !important;
+            border-radius: 5px !important;
+        }
+
+        .test-enabled {
+            cursor: pointer !important;
+            background: #dc3545 !important;
+            color: white !important;
+            opacity: 1 !important;
+            border: 2px solid #dc3545 !important;
+            padding: 10px 20px !important;
+            border-radius: 5px !important;
+        }
+
+        .test-enabled:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .debug {
+            margin: 20px 0;
+            padding: 10px;
+            background: #f0f0f0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Test Directo de Cursores</h1>
+
+    <div class="debug">
+        <h3>Estado actual del botón:</h3>
+        <p id="status">Cargando...</p>
+    </div>
+
+    <h3>1. Botón Bootstrap Normal:</h3>
+    <button class="btn btn-danger" disabled id="btn1">Bootstrap Disabled</button>
+    <button class="btn btn-danger" id="btn2">Bootstrap Enabled</button>
+
+    <h3 style="margin-top: 30px;">2. Botón con Clases Personalizadas:</h3>
+    <button class="test-disabled" id="btn3">Custom Disabled</button>
+    <button class="test-enabled" id="btn4">Custom Enabled</button>
+
+    <h3 style="margin-top: 30px;">3. Test Interactivo:</h3>
+    <input type="checkbox" id="toggle"> <label for="toggle">Habilitar botón de eliminación</label><br><br>
+    <button class="btn btn-danger" disabled id="delete-btn">🗑️ Eliminar</button>
+
+    <div class="debug">
+        <h4>Instrucciones:</h4>
+        <ul>
+            <li>El botón "Bootstrap Disabled" debería mostrar cursor "not-allowed" (🚫)</li>
+            <li>El botón "Bootstrap Enabled" debería mostrar cursor "pointer" (👆)</li>
+            <li>Los botones "Custom" deberían tener comportamiento forzado</li>
+            <li>El checkbox debería activar/desactivar el botón de eliminación</li>
+        </ul>
+    </div>
+
+    <script>
+        const toggle = document.getElementById('toggle');
+        const deleteBtn = document.getElementById('delete-btn');
+        const status = document.getElementById('status');
+
+        function updateStatus() {
+            const computed = window.getComputedStyle(deleteBtn);
+            status.innerHTML = `
+                <strong>Disabled:</strong> ${deleteBtn.disabled}<br>
+                <strong>Computed cursor:</strong> ${computed.cursor}<br>
+                <strong>Inline cursor:</strong> ${deleteBtn.style.cursor}<br>
+                <strong>Classes:</strong> ${deleteBtn.className}
+            `;
+        }
+
+        toggle.addEventListener('change', function() {
+            deleteBtn.disabled = !this.checked;
+
+            if (this.checked) {
+                deleteBtn.style.setProperty('cursor', 'pointer', 'important');
+                deleteBtn.style.opacity = '1';
+                deleteBtn.classList.remove('test-disabled');
+                deleteBtn.classList.add('test-enabled');
+            } else {
+                deleteBtn.style.setProperty('cursor', 'not-allowed', 'important');
+                deleteBtn.style.opacity = '0.5';
+                deleteBtn.classList.remove('test-enabled');
+                deleteBtn.classList.add('test-disabled');
+            }
+            updateStatus();
+        });
+
+        // Inicializar
+        deleteBtn.style.setProperty('cursor', 'not-allowed', 'important');
+        deleteBtn.style.opacity = '0.5';
+        deleteBtn.classList.add('test-disabled');
+
+        // Actualizar estado cada segundo para debug
+        setInterval(updateStatus, 1000);
+        updateStatus();
+    </script>
+</body>
+</html>

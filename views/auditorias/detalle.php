@@ -309,3 +309,62 @@ function obtenerColorPrioridad($prioridad) {
     }
 }
 ?>
+
+<script>
+/**
+ * Función para editar un paso
+ */
+function editarPaso(pasoId) {
+    if (!pasoId || pasoId === 0) {
+        alert('ID de paso inválido');
+        return;
+    }
+
+    // Obtener información del paso actual
+    const auditoriaId = <?= $auditoria['id'] ?? 0 ?>;
+
+    if (!auditoriaId) {
+        alert('ID de auditoría inválido');
+        return;
+    }
+
+    // Redirigir a la página de formulario del paso
+    const url = `?modulo=auditorias&accion=formulario&auditoria_id=${auditoriaId}&paso_id=${pasoId}`;
+    window.location.href = url;
+}
+
+/**
+ * Función para cambiar estado de un paso
+ */
+function cambiarEstadoPaso(pasoId, nuevoEstado) {
+    if (!pasoId || !nuevoEstado) {
+        alert('Parámetros inválidos');
+        return;
+    }
+
+    const auditoriaId = <?= $auditoria['id'] ?? 0 ?>;
+
+    // Confirmar cambio de estado
+    if (!confirm(`¿Cambiar estado a "${nuevoEstado}"?`)) {
+        return;
+    }
+
+    // Aquí se podría implementar una llamada AJAX para cambiar el estado
+    // Por ahora, recargar la página
+    alert('Funcionalidad en desarrollo: cambiar estado a ' + nuevoEstado);
+}
+
+/**
+ * Función para ver archivos de un paso
+ */
+function verArchivosPaso(pasoId) {
+    if (!pasoId) {
+        alert('ID de paso inválido');
+        return;
+    }
+
+    const auditoriaId = <?= $auditoria['id'] ?? 0 ?>;
+    const url = `?modulo=auditorias&accion=upload&auditoria_id=${auditoriaId}&paso_id=${pasoId}`;
+    window.location.href = url;
+}
+</script>

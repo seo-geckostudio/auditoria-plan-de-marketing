@@ -108,6 +108,26 @@ function actualizarRegistro($tabla, $id, $datos) {
     }
 }
 
+/**
+ * Elimina un registro por ID
+ *
+ * @param string $tabla Nombre de la tabla
+ * @param int $id ID del registro a eliminar
+ * @return bool True si se eliminó correctamente
+ */
+function eliminarRegistro($tabla, $id) {
+    try {
+        $pdo = obtenerConexion();
+
+        $sql = "DELETE FROM {$tabla} WHERE id = ?";
+        $stmt = $pdo->prepare($sql);
+        return $stmt->execute([$id]);
+    } catch (PDOException $e) {
+        registrarError("Error eliminando de {$tabla}: " . $e->getMessage());
+        return false;
+    }
+}
+
 // =====================================================
 // FUNCIONES DE AUDITORÍAS
 // =====================================================
@@ -270,7 +290,13 @@ function obtenerPasosPorFase($auditoriaId) {
                 'pasos' => []
             ];
         }
-        $fases[$numeroFase]['pasos'][] = $paso;
+
+        // Añadir alias para compatibilidad con vistas existentes
+        $pasoConAlias = $paso;
+        $pasoConAlias['nombre'] = $paso['paso_nombre']; // Alias para compatibilidad
+        $pasoConAlias['id'] = $paso['auditoria_paso_id']; // Alias para compatibilidad
+
+        $fases[$numeroFase]['pasos'][] = $pasoConAlias;
     }
     
     return $fases;

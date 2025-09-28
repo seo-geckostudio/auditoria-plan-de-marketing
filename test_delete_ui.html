@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test UI - Eliminar Auditoría</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .danger-zone {
+            border: 2px solid #dc3545;
+            border-radius: 8px;
+            background-color: #fff5f5;
+        }
+        .audit-info {
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            padding: 1rem;
+        }
+
+        /* Estilos mejorados para botones - Máxima especificidad */
+        button.btn.btn-danger:not(:disabled),
+        button.btn.btn-danger:not([disabled]) {
+            cursor: pointer !important;
+        }
+
+        button.btn.btn-danger:disabled,
+        button.btn.btn-danger[disabled],
+        button.btn:disabled,
+        button.btn[disabled] {
+            cursor: not-allowed !important;
+            opacity: 0.6 !important;
+            pointer-events: auto !important;
+        }
+
+        button.btn-danger:disabled,
+        button.btn-danger[disabled] {
+            background-color: #dc3545 !important;
+            border-color: #dc3545 !important;
+            color: #fff !important;
+            opacity: 0.5 !important;
+        }
+
+        button.btn-danger:not(:disabled):hover,
+        button.btn-danger:not([disabled]):hover {
+            cursor: pointer !important;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(220, 53, 69, 0.3);
+        }
+
+        /* Forzar cursor en el botón específico */
+        #btn-eliminar:disabled,
+        #btn-eliminar[disabled],
+        #btn-eliminar.btn-disabled {
+            cursor: not-allowed !important;
+        }
+
+        #btn-eliminar:not(:disabled),
+        #btn-eliminar:not([disabled]),
+        #btn-eliminar.btn-enabled {
+            cursor: pointer !important;
+        }
+
+        /* Clases auxiliares para forzar cursores */
+        .btn-disabled {
+            cursor: not-allowed !important;
+        }
+
+        .btn-enabled {
+            cursor: pointer !important;
+        }
+
+        /* Prevenir selección de texto en elementos UI */
+        .card-body h6, .card-body p, .card-body ul, .card-body li {
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+
+        /* Permitir selección solo en texto importante */
+        .audit-info p {
+            user-select: text;
+            -webkit-user-select: text;
+            -moz-user-select: text;
+            -ms-user-select: text;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h2>🧪 Test UI - Comportamiento del Botón Eliminar</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="danger-zone p-4">
+                    <div class="text-center mb-4">
+                        <i class="fas fa-exclamation-triangle text-danger" style="font-size: 3rem;"></i>
+                        <h4 class="text-danger mt-3">Test de Comportamiento UI</h4>
+                    </div>
+
+                    <div class="audit-info mb-4">
+                        <p><strong>Auditoría de prueba:</strong> Test UI #999</p>
+                        <p><strong>Estado:</strong> Test Mode</p>
+                    </div>
+
+                    <div class="alert alert-info">
+                        <h6>🧪 Instrucciones de Test:</h6>
+                        <ol>
+                            <li>El botón "Eliminar" debe mostrar cursor "not-allowed" (prohibido)</li>
+                            <li>Al activar el checkbox, debe cambiar a cursor "pointer" (mano)</li>
+                            <li>Al pasar el mouse sobre el botón deshabilitado, debe resaltar el checkbox</li>
+                            <li>La sección "Alternativas" NO debe seleccionarse al hacer doble clic</li>
+                        </ol>
+                    </div>
+
+                    <form id="form-test">
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" id="confirmar-eliminacion" required>
+                            <label class="form-check-label fw-bold" for="confirmar-eliminacion">
+                                Entiendo que esta acción es irreversible (TEST)
+                            </label>
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button type="button" class="btn btn-secondary me-md-2">
+                                <i class="fas fa-times"></i> Cancelar
+                            </button>
+                            <button type="button" class="btn btn-info me-md-2">
+                                <i class="fas fa-eye"></i> Ver Auditoría
+                            </button>
+                            <button type="submit" class="btn btn-danger" id="btn-eliminar" disabled>
+                                <i class="fas fa-trash"></i> Eliminar Definitivamente
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Información adicional -->
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h6><i class="fas fa-lightbulb text-warning"></i> Alternativas a la eliminación</h6>
+                        <p class="mb-2">Antes de eliminar, considera estas opciones:</p>
+                        <ul class="mb-0">
+                            <li><strong>Archivar:</strong> Cambia el estado a "Cancelada"</li>
+                            <li><strong>Duplicar:</strong> Crea una copia para reutilizar</li>
+                            <li><strong>Exportar:</strong> Descarga los datos antes de eliminar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const checkbox = document.getElementById('confirmar-eliminacion');
+        const btnEliminar = document.getElementById('btn-eliminar');
+        const form = document.getElementById('form-test');
+
+        // Habilitar/deshabilitar botón según checkbox con feedback visual
+        checkbox.addEventListener('change', function() {
+            btnEliminar.disabled = !this.checked;
+
+            if (this.checked) {
+                btnEliminar.style.setProperty('cursor', 'pointer', 'important');
+                btnEliminar.style.opacity = '1';
+                btnEliminar.title = 'Clic para eliminar definitivamente';
+                btnEliminar.classList.remove('btn-disabled');
+                btnEliminar.classList.add('btn-enabled');
+            } else {
+                btnEliminar.style.setProperty('cursor', 'not-allowed', 'important');
+                btnEliminar.style.opacity = '0.5';
+                btnEliminar.title = 'Debes confirmar la eliminación primero';
+                btnEliminar.classList.remove('btn-enabled');
+                btnEliminar.classList.add('btn-disabled');
+            }
+        });
+
+        // Feedback visual al pasar el mouse por el botón deshabilitado
+        btnEliminar.addEventListener('mouseover', function() {
+            if (this.disabled) {
+                this.style.opacity = '0.7';
+                if (!checkbox.checked) {
+                    // Resaltar brevemente el checkbox
+                    checkbox.parentElement.style.border = '2px solid #dc3545';
+                    checkbox.parentElement.style.borderRadius = '4px';
+                    checkbox.parentElement.style.padding = '5px';
+
+                    setTimeout(() => {
+                        checkbox.parentElement.style.border = '';
+                        checkbox.parentElement.style.borderRadius = '';
+                        checkbox.parentElement.style.padding = '';
+                    }, 1500);
+                }
+            }
+        });
+
+        btnEliminar.addEventListener('mouseout', function() {
+            if (this.disabled) {
+                this.style.opacity = '0.5';
+            }
+        });
+
+        // Test de envío
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('✅ Test completado! El formulario funcionaría correctamente.');
+        });
+
+        // Inicializar estado del botón
+        btnEliminar.style.setProperty('cursor', 'not-allowed', 'important');
+        btnEliminar.style.opacity = '0.5';
+        btnEliminar.title = 'Debes confirmar la eliminación primero';
+        btnEliminar.classList.add('btn-disabled');
+
+        // Forzar aplicación de estilos después de un pequeño delay
+        setTimeout(function() {
+            if (btnEliminar.disabled) {
+                btnEliminar.style.setProperty('cursor', 'not-allowed', 'important');
+                btnEliminar.classList.add('btn-disabled');
+            }
+        }, 100);
+    });
+    </script>
+</body>
+</html>

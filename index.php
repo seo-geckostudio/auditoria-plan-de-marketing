@@ -2,27 +2,15 @@
 /**
  * SISTEMA DE GESTIÓN DE AUDITORÍAS SEO
  * ====================================
- * 
+ *
  * Archivo principal del sistema - Punto de entrada y enrutador
- * 
+ *
  * @author Sistema de Auditorías SEO
  * @version 1.0
  */
 
-// Definir constante de seguridad
-define('SISTEMA_INICIADO', true);
-
-// Iniciar sesión
-session_start();
-
-// Configuración de errores para desarrollo
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-// Incluir archivos necesarios
-require_once __DIR__ . '/config/database.php';
-require_once __DIR__ . '/includes/functions.php';
-require_once __DIR__ . '/includes/notifications.php';
+// Inicialización segura del sistema
+require_once __DIR__ . '/includes/init.php';
 
 // Verificar instalación de la base de datos
 if (!verificarInstalacion()) {
@@ -34,14 +22,7 @@ if (!verificarInstalacion()) {
 $modulo = $_GET['modulo'] ?? 'dashboard';
 $accion = $_GET['accion'] ?? 'index';
 
-// Verificar autenticación (simplificado para demo)
-if (!isset($_SESSION['usuario_id'])) {
-    // Para demo, crear sesión automática con usuario admin
-    $_SESSION['usuario_id'] = 1;
-    $_SESSION['usuario_nombre'] = 'Administrador';
-    $_SESSION['usuario_email'] = 'admin@auditoriaseo.com';
-    $_SESSION['usuario_rol'] = 'admin';
-}
+// La autenticación ya se maneja en includes/init.php
 
 // INCLUIR MÓDULOS (sin ejecutar las vistas aún)
 switch ($modulo) {
@@ -59,6 +40,10 @@ switch ($modulo) {
         
     case 'clientes':
         require_once __DIR__ . '/modules/clientes.php';
+        break;
+
+    case 'ayuda':
+        require_once __DIR__ . '/modules/ayuda.php';
         break;
 }
 
@@ -350,7 +335,14 @@ if ($modulo === 'auditorias' && $accion === 'ver') {
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?= ($modulo === 'configuracion') ? 'active' : '' ?>" 
+                            <a class="nav-link <?= ($modulo === 'ayuda') ? 'active' : '' ?>"
+                               href="?modulo=ayuda">
+                                <i class="fas fa-question-circle"></i>
+                                Ayuda
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <?= ($modulo === 'configuracion') ? 'active' : '' ?>"
                                href="?modulo=configuracion">
                                 <i class="fas fa-cog"></i>
                                 Configuración
@@ -362,6 +354,11 @@ if ($modulo === 'auditorias' && $accion === 'ver') {
                     
                     <div class="text-center text-white-50 small">
                         <p class="mb-1">Usuario: <?= htmlspecialchars($_SESSION['usuario_nombre']) ?></p>
+                        <p class="mb-1">
+                            <a href="?modulo=ayuda" class="text-white-50 me-3">
+                                <i class="fas fa-question-circle"></i> Ayuda
+                            </a>
+                        </p>
                         <p class="mb-0">
                             <a href="?accion=logout" class="text-white-50">
                                 <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
@@ -470,6 +467,10 @@ if ($modulo === 'auditorias' && $accion === 'ver') {
                             
                         case 'clientes':
                             manejarClientes();
+                            break;
+
+                        case 'ayuda':
+                            manejarAyuda();
                             break;
                             
                         case 'reportes':

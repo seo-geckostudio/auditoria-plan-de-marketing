@@ -7,7 +7,8 @@
     "test": "playwright test",
     "test:headed": "playwright test --headed",
     "test:ui": "playwright test --ui",
-    "test:report": "playwright show-report"
+    "test:report": "playwright show-report",
+    "typecheck": "tsc --noEmit --skipLibCheck playwright.config.ts tests/example.spec.ts tests/navegacion-auditoria.spec.ts"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
   "devDependencies": {
     "@playwright/test": "^1.55.1",
     "@types/node": "^24.5.2",
-    "playwright": "^1.55.1"
+    "playwright": "^1.55.1",
+    "typescript": "^5.9.2"
   }
 }

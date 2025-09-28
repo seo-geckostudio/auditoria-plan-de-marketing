@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+Host: localhost:8000
+Date: Sun, 28 Sep 2025 06:27:15 GMT
+Connection: close
+X-Powered-By: PHP/8.2.28
+Set-Cookie: PHPSESSID=r4jgcp5219prt2n864e6qkt9o5; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-type: text/html; charset=UTF-8
+

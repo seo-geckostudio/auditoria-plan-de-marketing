@@ -18,6 +18,9 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
+// Definir constante del sistema
+define('SISTEMA_INICIADO', true);
+
 // Incluir funciones del sistema
 require_once __DIR__ . '/includes/functions.php';
 require_once __DIR__ . '/modules/clientes.php';
@@ -46,7 +49,15 @@ switch ($form_name) {
     // =====================================================
     
     case 'clientes_crear':
-        procesarCrearCliente();
+        $resultado = procesarCrearCliente();
+        if ($resultado['success']) {
+            $_SESSION['success'] = $resultado['message'];
+            header('Location: index.php?modulo=clientes&accion=ver&id=' . $resultado['cliente_id']);
+        } else {
+            $_SESSION['error'] = $resultado['message'];
+            header('Location: index.php?modulo=clientes&accion=crear');
+        }
+        exit;
         break;
         
     case 'clientes_editar':
@@ -91,77 +102,7 @@ switch ($form_name) {
 // FUNCIONES DE PROCESAMIENTO DE CLIENTES
 // =====================================================
 
-/**
- * Procesa la creación de un nuevo cliente
- */
-function procesarCrearCliente() {
-    try {
-        // Validar datos requeridos
-        $errores = [];
-        
-        $nombre_empresa = trim($_POST['nombre_empresa'] ?? '');
-        $contacto_nombre = trim($_POST['contacto_nombre'] ?? '');
-        $contacto_email = trim($_POST['contacto_email'] ?? '');
-        $contacto_telefono = trim($_POST['contacto_telefono'] ?? '');
-        $sector = trim($_POST['sector'] ?? '');
-        $pais = trim($_POST['pais'] ?? '');
-        $sitio_web = trim($_POST['sitio_web'] ?? '');
-        $notas = trim($_POST['notas'] ?? '');
-        
-        // Validaciones
-        if (empty($nombre_empresa)) {
-            $errores[] = 'El nombre de la empresa es obligatorio';
-        }
-        
-        if (empty($contacto_nombre)) {
-            $errores[] = 'El nombre del contacto es obligatorio';
-        }
-        
-        if (empty($contacto_email)) {
-            $errores[] = 'El email del contacto es obligatorio';
-        } elseif (!filter_var($contacto_email, FILTER_VALIDATE_EMAIL)) {
-            $errores[] = 'El email del contacto no es válido';
-        } elseif (existeClienteConEmail($contacto_email)) {
-            $errores[] = 'Ya existe un cliente con este email';
-        }
-        
-        if (!empty($errores)) {
-            $_SESSION['error'] = implode('<br>', $errores);
-            header('Location: index.php?modulo=clientes&accion=crear');
-            exit;
-        }
-        
-        // Crear cliente
-        $clienteData = [
-            'nombre_empresa' => $nombre_empresa,
-            'contacto_nombre' => $contacto_nombre,
-            'contacto_email' => $contacto_email,
-            'contacto_telefono' => $contacto_telefono,
-            'sector' => $sector,
-            'pais' => $pais,
-            'sitio_web' => $sitio_web,
-            'notas' => $notas,
-            'activo' => 1,
-            'fecha_creacion' => date('Y-m-d H:i:s')
-        ];
-        
-        $clienteId = crearClienteEnBD($clienteData);
-        
-        if ($clienteId) {
-            $_SESSION['success'] = 'Cliente creado exitosamente';
-            header('Location: index.php?modulo=clientes&accion=ver&id=' . $clienteId);
-        } else {
-            $_SESSION['error'] = 'Error al crear el cliente';
-            header('Location: index.php?modulo=clientes&accion=crear');
-        }
-        
-    } catch (Exception $e) {
-        registrarError("Error procesando creación de cliente: " . $e->getMessage());
-        $_SESSION['error'] = 'Error interno del sistema';
-        header('Location: index.php?modulo=clientes&accion=crear');
-    }
-    exit;
-}
+// Nota: Las funciones de procesamiento de clientes están en modules/clientes.php
 
 /**
  * Procesa la edición de un cliente existente
@@ -253,53 +194,13 @@ function procesarEditarClienteForm() {
 // FUNCIONES DE PROCESAMIENTO DE AUDITORÍAS
 // =====================================================
 
-/**
- * Procesa la creación de una nueva auditoría
- */
-function procesarCrearAuditoria() {
-    // TODO: Implementar procesamiento de auditorías
-    $_SESSION['info'] = 'Funcionalidad de auditorías en desarrollo';
-    header('Location: index.php?modulo=auditorias');
-    exit;
-}
-
-/**
- * Procesa la edición de una auditoría
- */
-function procesarEditarAuditoria() {
-    // TODO: Implementar procesamiento de auditorías
-    $_SESSION['info'] = 'Funcionalidad de auditorías en desarrollo';
-    header('Location: index.php?modulo=auditorias');
-    exit;
-}
+// Nota: Las funciones de procesamiento de auditorías están en includes/forms.php
 
 // =====================================================
-// FUNCIONES DE PROCESAMIENTO DE PASOS
+// FUNCIONES DE PROCESAMIENTO DE PASOS Y ARCHIVOS
 // =====================================================
 
-/**
- * Procesa la actualización de un paso
- */
-function procesarActualizarPaso() {
-    // TODO: Implementar procesamiento de pasos
-    $_SESSION['info'] = 'Funcionalidad de pasos en desarrollo';
-    header('Location: index.php?modulo=pasos');
-    exit;
-}
-
-// =====================================================
-// FUNCIONES DE PROCESAMIENTO DE ARCHIVOS
-// =====================================================
-
-/**
- * Procesa la subida de archivos
- */
-function procesarSubirArchivo() {
-    // TODO: Implementar procesamiento de archivos
-    $_SESSION['info'] = 'Funcionalidad de archivos en desarrollo';
-    header('Location: index.php?modulo=archivos');
-    exit;
-}
+// Nota: Las funciones de procesamiento están en includes/forms.php
 
 // =====================================================
 // FUNCIONES AUXILIARES DE BASE DE DATOS
