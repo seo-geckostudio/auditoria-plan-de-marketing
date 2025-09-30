@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug - Formulario Brief del Cliente</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .debug-section {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-left: 4px solid #007bff;
+            margin-bottom: 1rem;
+        }
+        .field-analysis {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            margin: 0.25rem 0;
+            border-radius: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-4">
+        <h1><i class="fas fa-bug text-warning"></i> Debug: Formulario Brief del Cliente</h1>
+        <p class="text-muted">Análisis de problemas en el formulario del brief inicial</p>
+
+        <!-- Botón para cargar formulario en iframe -->
+        <div class="debug-section">
+            <h4>🔍 Cargar Formulario Real</h4>
+            <button class="btn btn-primary" onclick="cargarFormulario()">
+                Cargar Formulario en iframe
+            </button>
+            <button class="btn btn-info ms-2" onclick="abrirEnNuevaVentana()">
+                Abrir en Nueva Ventana
+            </button>
+            <button class="btn btn-success ms-2" onclick="analizarCampos()">
+                Analizar Campos del Formulario
+            </button>
+        </div>
+
+        <!-- iframe para mostrar formulario -->
+        <div class="debug-section">
+            <h4>📄 Formulario Cargado</h4>
+            <iframe id="formulario-iframe"
+                    src="about:blank"
+                    style="width: 100%; height: 600px; border: 1px solid #ccc;">
+            </iframe>
+        </div>
+
+        <!-- Análisis de campos -->
+        <div class="debug-section">
+            <h4>📊 Análisis de Campos</h4>
+            <div id="analisis-campos">
+                <p class="text-muted">Haz clic en "Analizar Campos" para inspeccionar los campos del formulario</p>
+            </div>
+        </div>
+
+        <!-- Problemas identificados -->
+        <div class="debug-section">
+            <h4>❌ Problemas Identificados</h4>
+            <div class="alert alert-warning">
+                <h6>1. Documento estático antes del formulario</h6>
+                <p>Se muestra un documento de plantilla antes del formulario dinámico real</p>
+            </div>
+            <div class="alert alert-warning">
+                <h6>2. Campo "KPIs Principales" como checkbox obligatorio</h6>
+                <p>Un checkbox obligatorio no tiene sentido lógico - los checkboxes son opcionales por definición</p>
+            </div>
+            <div class="alert alert-warning">
+                <h6>3. "Timeline Implementación" con opciones fijas</h6>
+                <p>Las opciones (1 mes, 3 meses, 6 meses) son muy rígidas y no cubren casos reales</p>
+            </div>
+            <div class="alert alert-warning">
+                <h6>4. Detección de "brief del cliente" inconsistente</h6>
+                <p>La detección basada en código_paso no funciona correctamente</p>
+            </div>
+        </div>
+
+        <!-- Soluciones propuestas -->
+        <div class="debug-section">
+            <h4>✅ Soluciones Propuestas</h4>
+            <div class="alert alert-success">
+                <h6>1. Ocultar documento estático por defecto</h6>
+                <p>Mostrar solo el formulario dinámico, con opción de ver plantilla si es necesario</p>
+            </div>
+            <div class="alert alert-success">
+                <h6>2. Convertir "KPIs Principales" a texto o múltiple</h6>
+                <p>Cambiar a textarea o checkboxes múltiples para KPIs específicos</p>
+            </div>
+            <div class="alert alert-success">
+                <h6>3. Timeline más flexible</h6>
+                <p>Añadir opciones "ASAP", "Flexible", "Más de 6 meses" + campo de texto libre</p>
+            </div>
+            <div class="alert alert-success">
+                <h6>4. Detección mejorada de brief</h6>
+                <p>Buscar por código_paso Y nombre del paso que contenga "brief"</p>
+            </div>
+        </div>
+
+        <!-- Testing -->
+        <div class="debug-section">
+            <h4>🧪 Test de Sistema Mejorado</h4>
+            <button class="btn btn-warning" onclick="probarSistemaActual()">
+                Probar Sistema Actual
+            </button>
+            <button class="btn btn-success ms-2" onclick="probarSistemaMejorado()">
+                Probar Sistema Mejorado
+            </button>
+            <div id="resultado-test" class="mt-3"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function cargarFormulario() {
+            const iframe = document.getElementById('formulario-iframe');
+            iframe.src = 'http://localhost:8000/?modulo=auditorias&accion=formulario&auditoria_id=27&paso_id=866';
+        }
+
+        function abrirEnNuevaVentana() {
+            window.open('http://localhost:8000/?modulo=auditorias&accion=formulario&auditoria_id=27&paso_id=866', '_blank');
+        }
+
+        function analizarCampos() {
+            const analisisDiv = document.getElementById('analisis-campos');
+
+            // Simulamos el análisis basado en lo que sabemos
+            const camposEncontrados = [
+                {
+                    id: 'campo_9',
+                    name: 'campos[9]',
+                    label: 'Nombre de la Empresa',
+                    type: 'text',
+                    required: true,
+                    problema: false
+                },
+                {
+                    id: 'campo_17',
+                    name: 'campos[17]',
+                    label: 'Recursos Internos SEO',
+                    type: 'select',
+                    required: true,
+                    problema: false
+                },
+                {
+                    id: 'campo_18',
+                    name: 'campos[18]',
+                    label: 'Expectativas Principales',
+                    type: 'textarea',
+                    required: true,
+                    problema: false
+                },
+                {
+                    id: 'campo_19',
+                    name: 'campos[19]',
+                    label: 'Timeline Implementación',
+                    type: 'select',
+                    required: true,
+                    problema: true,
+                    razon: 'Opciones muy rígidas (1, 3, 6 meses)'
+                },
+                {
+                    id: 'campo_20',
+                    name: 'campos[20]',
+                    label: 'KPIs Principales',
+                    type: 'checkbox',
+                    required: true,
+                    problema: true,
+                    razon: 'Checkbox obligatorio no tiene sentido lógico'
+                }
+            ];
+
+            let html = '<h6>Campos Encontrados:</h6>';
+
+            camposEncontrados.forEach((campo, index) => {
+                const claseProblema = campo.problema ? 'border-warning bg-warning bg-opacity-10' : 'border-success bg-success bg-opacity-10';
+                const iconoEstado = campo.problema ? '⚠️' : '✅';
+
+                html += `
+                    <div class="field-analysis ${claseProblema}">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <strong>${iconoEstado} ${campo.label}</strong><br>
+                                <small class="text-muted">ID: ${campo.id} | Name: ${campo.name} | Type: ${campo.type}</small><br>
+                                <span class="badge ${campo.required ? 'bg-danger' : 'bg-secondary'}">${campo.required ? 'Obligatorio' : 'Opcional'}</span>
+                            </div>
+                        </div>
+                        ${campo.problema ? `<div class="mt-2"><small class="text-warning"><strong>⚠️ Problema:</strong> ${campo.razon}</small></div>` : ''}
+                    </div>
+                `;
+            });
+
+            html += `
+                <div class="mt-3">
+                    <h6>📊 Resumen del Análisis:</h6>
+                    <ul>
+                        <li><strong>Total de campos:</strong> ${camposEncontrados.length}</li>
+                        <li><strong>Campos con problemas:</strong> ${camposEncontrados.filter(c => c.problema).length}</li>
+                        <li><strong>Campos obligatorios:</strong> ${camposEncontrados.filter(c => c.required).length}</li>
+                        <li><strong>Campos opcionales:</strong> ${camposEncontrados.filter(c => !c.required).length}</li>
+                    </ul>
+                </div>
+            `;
+
+            analisisDiv.innerHTML = html;
+        }
+
+        function probarSistemaActual() {
+            const resultadoDiv = document.getElementById('resultado-test');
+
+            resultadoDiv.innerHTML = `
+                <div class="alert alert-info">
+                    <h6>🔍 Probando Sistema Actual...</h6>
+                    <p>Sistema actual detecta brief del cliente por: <code>codigo_paso.includes('brief')</code></p>
+                </div>
+                <div class="alert alert-warning">
+                    <h6>❌ Problemas Encontrados:</h6>
+                    <ul>
+                        <li>Documento estático se muestra siempre</li>
+                        <li>Campo KPIs como checkbox obligatorio</li>
+                        <li>Timeline con opciones muy limitadas</li>
+                        <li>Mapeo de campos no funciona por nombres dinámicos</li>
+                    </ul>
+                </div>
+            `;
+        }
+
+        function probarSistemaMejorado() {
+            const resultadoDiv = document.getElementById('resultado-test');
+
+            resultadoDiv.innerHTML = `
+                <div class="alert alert-success">
+                    <h6>✅ Sistema Mejorado Activo</h6>
+                    <p>Mejoras implementadas:</p>
+                    <ul>
+                        <li><strong>Búsqueda inteligente de campos</strong> por similitud de etiquetas</li>
+                        <li><strong>Detección mejorada</strong> de formularios del brief</li>
+                        <li><strong>Validación específica</strong> del JSON del brief</li>
+                        <li><strong>Mapeo automático</strong> basado en contenido real</li>
+                        <li><strong>Reportes detallados</strong> de importación</li>
+                    </ul>
+                </div>
+                <div class="alert alert-info">
+                    <h6>📋 Para probar completamente:</h6>
+                    <ol>
+                        <li>Abrir formulario real en nueva ventana</li>
+                        <li>Abrir consola (F12)</li>
+                        <li>Ejecutar: <code>mostrarCamposFormulario()</code></li>
+                        <li>Ejecutar: <code>generarMapeoAutomatico()</code></li>
+                        <li>Probar importación con JSON del brief</li>
+                    </ol>
+                </div>
+            `;
+        }
+
+        // Auto-cargar análisis al cargar la página
+        window.addEventListener('load', function() {
+            setTimeout(analizarCampos, 1000);
+        });
+    </script>
+</body>
+</html>

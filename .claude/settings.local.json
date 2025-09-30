@@ -36,7 +36,10 @@
       "Bash(timeout 3 npx -y @modelcontextprotocol/server-memory --help)",
       "Bash(timeout 3 npx -y @upstash/context7-mcp --help)",
       "Bash(start test_ia_functionality.html)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(start test_brief_import.html)",
+      "Bash(start debug_brief_form.html)",
+      "Bash(start test_final_sistema.html)"
     ],
     "deny": [],
     "ask": []

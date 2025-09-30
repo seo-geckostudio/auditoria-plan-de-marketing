@@ -286,9 +286,31 @@ $porcentaje_completado = calcularCompletitudFormulario($paso_id);
                         <?php endif; ?>
 
                         <?php if ($paso_info['paso_instrucciones']): ?>
-                            <div class="alert alert-info">
-                                <h6><i class="fas fa-info-circle"></i> Instrucciones:</h6>
-                                <?= nl2br(htmlspecialchars($paso_info['paso_instrucciones'])) ?>
+                            <!-- Sección de instrucciones colapsable para evitar confusión -->
+                            <div class="alert alert-light border" id="instrucciones-section" style="display: none;">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6><i class="fas fa-info-circle"></i> Ver Plantilla del Brief</h6>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="ocultarInstrucciones()">
+                                        <i class="fas fa-times"></i> Ocultar
+                                    </button>
+                                </div>
+                                <hr>
+                                <div class="small" style="max-height: 400px; overflow-y: auto;">
+                                    <?= nl2br(htmlspecialchars($paso_info['paso_instrucciones'])) ?>
+                                </div>
+                            </div>
+
+                            <!-- Botón para mostrar la plantilla si es necesario -->
+                            <div class="alert alert-secondary" id="mostrar-plantilla-btn">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6><i class="fas fa-file-alt"></i> Plantilla de Brief Disponible</h6>
+                                        <p class="mb-0 small text-muted">¿Necesitas ver la plantilla completa del brief del cliente?</p>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-primary btn-sm" onclick="mostrarInstrucciones()">
+                                        <i class="fas fa-eye"></i> Ver Plantilla
+                                    </button>
+                                </div>
                             </div>
                         <?php endif; ?>
                     </div>
@@ -493,6 +515,13 @@ $porcentaje_completado = calcularCompletitudFormulario($paso_id);
     <div id="save-indicator" class="save-indicator"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script específico para el brief del cliente si es el caso -->
+    <?php if (strpos(strtolower($paso_info['codigo_paso'] ?? ''), 'brief') !== false ||
+              strpos(strtolower($paso_info['paso_nombre'] ?? ''), 'brief') !== false): ?>
+    <script src="js/brief_cliente_import.js"></script>
+    <?php endif; ?>
+
     <script>
         // Variables globales
         let autoSaveTimer;
@@ -728,51 +757,85 @@ $porcentaje_completado = calcularCompletitudFormulario($paso_id);
             const contenidoDinamico = document.getElementById('contenido-dinamico');
             const botonesAccion = document.getElementById('botones-accion');
 
-            // Generar la plantilla para IA
-            const plantillaIA = <?php
-                echo json_encode(function_exists('generarPlantillaIA') && isset($campos) ? generarPlantillaIA($campos) : []);
-            ?>;
-            const nombrePaso = "<?php echo htmlspecialchars($paso_info['paso_nombre'] ?? 'Paso'); ?>";
-            const nombreCliente = "<?php echo htmlspecialchars($paso_info['nombre_empresa'] ?? 'Cliente'); ?>";
+            // Verificar si tenemos la funcionalidad específica del brief del cliente
+            const esBriefCliente = "<?php
+                $es_brief = (strpos(strtolower($paso_info['codigo_paso'] ?? ''), 'brief') !== false) ||
+                           (strpos(strtolower($paso_info['paso_nombre'] ?? ''), 'brief') !== false);
+                echo $es_brief ? 'true' : 'false';
+            ?>" === 'true';
+
+            let plantillaTexto = '';
+
+            if (esBriefCliente && typeof generarPlantillaMejoradaCliente === 'function') {
+                // Usar la plantilla mejorada específica para el brief del cliente
+                plantillaTexto = generarPlantillaMejoradaCliente();
+            } else {
+                // Usar la plantilla genérica original
+                const plantillaIA = <?php
+                    echo json_encode(function_exists('generarPlantillaIA') && isset($campos) ? generarPlantillaIA($campos) : []);
+                ?>;
+                const nombrePaso = "<?php echo htmlspecialchars($paso_info['paso_nombre'] ?? 'Paso'); ?>";
+                const nombreCliente = "<?php echo htmlspecialchars($paso_info['nombre_empresa'] ?? 'Cliente'); ?>";
+
+                plantillaTexto = `📧 PARA: ${nombreCliente}
+📌 ASUNTO: Información necesaria para ${nombrePaso}
+
+Hola,
+
+Para completar tu auditoría SEO, necesito que me proporciones información sobre "${nombrePaso}".
+
+📝 INSTRUCCIONES:
+1. Copia el JSON de campos que aparece abajo
+2. Pégalo en ChatGPT o Claude junto con estas instrucciones:
+
+💬 Prompt para la IA:
+"Ayúdame a rellenar esta información sobre mi empresa. Te proporciono un JSON con los campos que necesito completar y sus descripciones. Por favor, pregúntame sobre cada campo y luego devuélveme un JSON final con las respuestas. Los campos son:
+
+${JSON.stringify(plantillaIA, null, 2)}
+
+🔄 Cuando tengas el JSON final de respuesta, envíamelo y yo lo importaré directamente al sistema.
+
+Gracias,
+Tu consultor SEO`;
+            }
 
             contenidoDinamico.innerHTML = `
-                <div class="alert alert-primary">
-                    <h6><i class="fas fa-robot"></i> Plantilla para IA Externa</h6>
-                    <p class="mb-0">Envía este texto a tu cliente para que lo use con ChatGPT o Claude:</p>
+                <div class="alert alert-success">
+                    <h6><i class="fas fa-robot"></i> Plantilla Mejorada para Cliente</h6>
+                    <p class="mb-0"><strong>✨ Plantilla específica diseñada para obtener información precisa y estructurada</strong></p>
                 </div>
 
                 <div class="card">
                     <div class="card-header d-flex justify-content-between align-items-center">
-                        <span><strong>📋 Instrucciones para el Cliente</strong></span>
-                        <button type="button" class="btn btn-sm btn-outline-primary" onclick="copiarPlantillaCliente()">
-                            <i class="fas fa-copy"></i> Copiar Todo
+                        <span><strong>📧 Email listo para enviar al cliente</strong></span>
+                        <button type="button" class="btn btn-sm btn-success" onclick="copiarPlantillaCliente()">
+                            <i class="fas fa-copy"></i> Copiar Email Completo
                         </button>
                     </div>
                     <div class="card-body">
-                        <div class="alert alert-light" id="plantilla-cliente">
-                            <h6>📨 Para: ${nombreCliente}</h6>
-                            <p><strong>Asunto:</strong> Información necesaria para ${nombrePaso}</p>
+                        <div class="alert alert-light border" id="plantilla-cliente" style="white-space: pre-wrap; font-family: monospace; font-size: 0.9em;">
+${plantillaTexto}
+                        </div>
 
-                            <p>Hola,</p>
-
-                            <p>Para completar tu auditoría SEO, necesito que me proporciones información sobre <strong>"${nombrePaso}"</strong>.</p>
-
-                            <p><strong>📝 Instrucciones:</strong></p>
-                            <ol>
-                                <li>Copia el JSON de campos que aparece abajo</li>
-                                <li>Pégalo en ChatGPT o Claude junto con estas instrucciones:</li>
-                            </ol>
-
-                            <div class="alert alert-secondary">
-                                <strong>💬 Prompt para la IA:</strong><br>
-                                "Ayúdame a rellenar esta información sobre mi empresa. Te proporciono un JSON con los campos que necesito completar y sus descripciones. Por favor, pregúntame sobre cada campo y luego devuélveme un JSON final con las respuestas. Los campos son:
-
-                                <pre class="mt-2 mb-0">${JSON.stringify(plantillaIA, null, 2)}</pre>
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <div class="alert alert-info small">
+                                    <strong>🎯 Ventajas de esta plantilla:</strong><br>
+                                    ✅ Estructura clara y específica<br>
+                                    ✅ Compatible con ChatGPT y Claude<br>
+                                    ✅ Formato de respuesta estandarizado<br>
+                                    ✅ Evita información faltante
+                                </div>
                             </div>
-
-                            <p><strong>🔄 Cuando tengas el JSON final de respuesta, envíamelo y yo lo importaré directamente al sistema.</strong></p>
-
-                            <p>Gracias,<br>Tu consultor SEO</p>
+                            <div class="col-md-6">
+                                <div class="alert alert-warning small">
+                                    <strong>📋 Qué obtendrás:</strong><br>
+                                    • JSON directamente importable<br>
+                                    • Información completa y estructurada<br>
+                                    • Formato consistente<br>
+                                    • Menos idas y venidas con el cliente
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -822,28 +885,76 @@ $porcentaje_completado = calcularCompletitudFormulario($paso_id);
         function mostrarTextarea() {
             const contenidoDinamico = document.getElementById('contenido-dinamico');
             const botonesAccion = document.getElementById('botones-accion');
+            const esBriefCliente = "<?php
+                $es_brief = (strpos(strtolower($paso_info['codigo_paso'] ?? ''), 'brief') !== false) ||
+                           (strpos(strtolower($paso_info['paso_nombre'] ?? ''), 'brief') !== false);
+                echo $es_brief ? 'true' : 'false';
+            ?>" === 'true';
+
+            let esquemaInfo = '';
+            let ejemploJSON = '';
+
+            if (esBriefCliente && typeof BRIEF_CLIENTE_SCHEMA !== 'undefined' && typeof EJEMPLO_BRIEF_COMPLETO !== 'undefined') {
+                esquemaInfo = `
+                    <div class="alert alert-info">
+                        <h6><i class="fas fa-info-circle"></i> Esquema JSON para Brief del Cliente</h6>
+                        <p class="small mb-2">Tu JSON debe seguir esta estructura específica para mayor precisión:</p>
+                        <details>
+                            <summary class="text-primary" style="cursor: pointer;">📋 Ver esquema completo</summary>
+                            <pre class="mt-2 mb-0" style="font-size: 0.8em; max-height: 300px; overflow-y: auto;">${JSON.stringify(BRIEF_CLIENTE_SCHEMA, null, 2)}</pre>
+                        </details>
+                    </div>
+                `;
+
+                ejemploJSON = JSON.stringify(EJEMPLO_BRIEF_COMPLETO, null, 2).substring(0, 500) + '...';
+            } else {
+                ejemploJSON = '{\n  "campo1": "valor1",\n  "campo2": "valor2"\n}';
+            }
 
             contenidoDinamico.innerHTML = `
                 <div class="alert alert-success">
-                    <h6><i class="fas fa-paste"></i> Pegar JSON Directamente</h6>
-                    <p class="mb-0">Pega aquí el JSON que te ha devuelto la IA:</p>
+                    <h6><i class="fas fa-paste"></i> Importar JSON con Validación Avanzada</h6>
+                    <p class="mb-0">Pega aquí el JSON que te ha devuelto la IA. <strong>Incluye validación automática de estructura y campos.</strong></p>
                 </div>
+
+                ${esquemaInfo}
 
                 <div class="card">
                     <div class="card-body">
                         <div class="mb-3">
                             <label for="json-textarea" class="form-label">JSON de respuesta:</label>
-                            <textarea class="form-control" id="json-textarea" rows="8" placeholder='{\n  "campo1": "valor1",\n  "campo2": "valor2"\n}'></textarea>
-                            <small class="text-muted">Pega aquí el JSON que te ha proporcionado ChatGPT o Claude</small>
+                            <textarea class="form-control" id="json-textarea" rows="10" placeholder='${ejemploJSON}'></textarea>
+                            <small class="text-muted">
+                                ${esBriefCliente ?
+                                    '✨ Validación automática activada para Brief del Cliente' :
+                                    'Pega aquí el JSON que te ha proporcionado ChatGPT o Claude'
+                                }
+                            </small>
                         </div>
 
-                        <div class="d-flex gap-2">
-                            <button type="button" class="btn btn-primary" onclick="importarJSON()">
-                                <i class="fas fa-upload"></i> Importar Datos
-                            </button>
-                            <button type="button" class="btn btn-outline-secondary" onclick="validarJSON()">
-                                <i class="fas fa-check"></i> Validar JSON
-                            </button>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="d-flex gap-2">
+                                    <button type="button" class="btn btn-success" onclick="importarJSON()">
+                                        <i class="fas fa-upload"></i> Importar y Validar
+                                    </button>
+                                    <button type="button" class="btn btn-outline-secondary" onclick="validarJSON()">
+                                        <i class="fas fa-check"></i> Solo Validar
+                                    </button>
+                                    ${esBriefCliente ?
+                                        '<button type="button" class="btn btn-outline-info" onclick="cargarEjemplo()"><i class="fas fa-lightbulb"></i> Cargar Ejemplo</button>' :
+                                        ''
+                                    }
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="small text-muted">
+                                    ${esBriefCliente ?
+                                        '<strong>🎯 Validación incluye:</strong><br>• Campos obligatorios<br>• Formato de URLs<br>• Valores permitidos<br>• Estructura de datos' :
+                                        '<strong>Validación:</strong><br>• Formato JSON válido<br>• Campos básicos'
+                                    }
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -962,50 +1073,92 @@ $porcentaje_completado = calcularCompletitudFormulario($paso_id);
 
             try {
                 const datos = JSON.parse(jsonText);
+                const esBriefCliente = "<?php
+                $es_brief = (strpos(strtolower($paso_info['codigo_paso'] ?? ''), 'brief') !== false) ||
+                           (strpos(strtolower($paso_info['paso_nombre'] ?? ''), 'brief') !== false);
+                echo $es_brief ? 'true' : 'false';
+            ?>" === 'true';
+
                 let camposImportados = 0;
                 let errores = [];
+                let advertencias = [];
 
-                // Iterar sobre los datos del JSON
-                for (const [campo, valor] of Object.entries(datos)) {
-                    const elemento = document.querySelector(`[name="${campo}"]`);
+                // Si es un brief del cliente y tenemos las funciones específicas, usar validación mejorada
+                if (esBriefCliente && typeof validarJSONBriefCliente === 'function' && typeof mapearDatosBriefCliente === 'function') {
+                    // Validar estructura específica del brief
+                    const validacion = validarJSONBriefCliente(datos);
+                    errores = validacion.errores;
+                    advertencias = validacion.advertencias;
 
-                    if (elemento) {
-                        if (elemento.type === 'checkbox' || elemento.type === 'radio') {
-                            elemento.checked = Boolean(valor);
-                        } else if (elemento.tagName === 'SELECT') {
-                            // Buscar la opción que coincida
-                            const opcion = Array.from(elemento.options).find(opt =>
-                                opt.value === valor || opt.text === valor
-                            );
-                            if (opcion) {
-                                elemento.value = opcion.value;
+                    if (errores.length > 0) {
+                        const continuar = confirm(`Se encontraron ${errores.length} errores en el JSON:\n\n${errores.join('\n')}\n\n¿Continuar con la importación de los campos válidos?`);
+                        if (!continuar) return;
+                    }
+
+                    // Mapear datos específicos del brief
+                    const datosMapeados = mapearDatosBriefCliente(datos);
+                    const resultado = aplicarDatosMapeados(datosMapeados);
+
+                    camposImportados = resultado.camposAplicados;
+                    errores.push(...resultado.errores);
+
+                } else {
+                    // Usar importación genérica original
+                    for (const [campo, valor] of Object.entries(datos)) {
+                        const elemento = document.querySelector(`[name="${campo}"]`);
+
+                        if (elemento) {
+                            if (elemento.type === 'checkbox' || elemento.type === 'radio') {
+                                elemento.checked = Boolean(valor);
+                            } else if (elemento.tagName === 'SELECT') {
+                                // Buscar la opción que coincida
+                                const opcion = Array.from(elemento.options).find(opt =>
+                                    opt.value === valor || opt.text === valor
+                                );
+                                if (opcion) {
+                                    elemento.value = opcion.value;
+                                } else {
+                                    errores.push(`Opción "${valor}" no encontrada para campo "${campo}"`);
+                                }
                             } else {
-                                errores.push(`Opción "${valor}" no encontrada para campo "${campo}"`);
+                                elemento.value = valor;
                             }
+                            camposImportados++;
                         } else {
-                            elemento.value = valor;
+                            errores.push(`Campo "${campo}" no encontrado en el formulario`);
                         }
-                        camposImportados++;
-                    } else {
-                        errores.push(`Campo "${campo}" no encontrado en el formulario`);
                     }
                 }
 
-                // Mostrar resultado
-                let mensaje = `Importación completada: ${camposImportados} campos importados`;
-                if (errores.length > 0) {
-                    mensaje += `\n\nAdvertencias:\n- ${errores.join('\n- ')}`;
+                // Mostrar resultado detallado
+                let mensaje = `✅ Importación completada: ${camposImportados} campos importados`;
+
+                if (advertencias.length > 0) {
+                    mensaje += `\n\n⚠️ Advertencias (${advertencias.length}):\n${advertencias.map(a => '• ' + a).join('\n')}`;
                 }
 
-                alert(mensaje);
-                mostrarNotificacion('Datos importados correctamente', 'success');
+                if (errores.length > 0) {
+                    mensaje += `\n\n❌ Errores (${errores.length}):\n${errores.map(e => '• ' + e).join('\n')}`;
+                }
+
+                // Mostrar modal con resultados si hay muchos errores/advertencias
+                if (errores.length > 3 || advertencias.length > 3) {
+                    mostrarModalResultadosImportacion(camposImportados, errores, advertencias);
+                } else {
+                    alert(mensaje);
+                }
+
+                mostrarNotificacion(`Datos importados: ${camposImportados} campos`, camposImportados > 0 ? 'success' : 'warning');
 
                 // Marcar cambios pendientes
-                cambiosPendientes = true;
-                mostrarIndicadorCambios();
+                if (camposImportados > 0) {
+                    cambiosPendientes = true;
+                    mostrarIndicadorCambios();
+                }
 
             } catch (error) {
-                alert('Error al procesar JSON: ' + error.message);
+                alert('❌ Error al procesar JSON: ' + error.message);
+                mostrarNotificacion('Error en el formato JSON', 'error');
             }
         }
 
@@ -1277,6 +1430,159 @@ $porcentaje_completado = calcularCompletitudFormulario($paso_id);
                 console.error('Error al copiar: ', err);
                 alert('Error al copiar al portapapeles');
             });
+        }
+
+        // Función para cargar ejemplo del brief del cliente
+        function cargarEjemplo() {
+            if (typeof EJEMPLO_BRIEF_COMPLETO !== 'undefined') {
+                document.getElementById('json-textarea').value = JSON.stringify(EJEMPLO_BRIEF_COMPLETO, null, 2);
+                mostrarNotificacion('Ejemplo cargado - modifica los datos según tu cliente', 'info');
+            } else {
+                alert('Ejemplo no disponible para este tipo de formulario');
+            }
+        }
+
+        // Modal para mostrar resultados de importación detallados
+        function mostrarModalResultadosImportacion(camposImportados, errores, advertencias) {
+            // Crear modal dinámicamente si no existe
+            let modal = document.getElementById('modalResultadosImportacion');
+            if (!modal) {
+                modal = document.createElement('div');
+                modal.className = 'modal fade';
+                modal.id = 'modalResultadosImportacion';
+                modal.innerHTML = `
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">📊 Resultados de Importación</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body" id="contenido-resultados">
+                                <!-- Contenido dinámico -->
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary" onclick="copiarResultadosImportacion()">
+                                    <i class="fas fa-copy"></i> Copiar Resumen
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                document.body.appendChild(modal);
+            }
+
+            // Generar contenido
+            const contenido = document.getElementById('contenido-resultados');
+            contenido.innerHTML = `
+                <div class="alert alert-${camposImportados > 0 ? 'success' : 'warning'}">
+                    <h6><i class="fas fa-check-circle"></i> Resumen</h6>
+                    <p class="mb-0"><strong>${camposImportados} campos importados correctamente</strong></p>
+                </div>
+
+                ${advertencias.length > 0 ? `
+                <div class="alert alert-warning">
+                    <h6><i class="fas fa-exclamation-triangle"></i> Advertencias (${advertencias.length})</h6>
+                    <ul class="mb-0">
+                        ${advertencias.map(a => `<li>${a}</li>`).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+
+                ${errores.length > 0 ? `
+                <div class="alert alert-danger">
+                    <h6><i class="fas fa-times-circle"></i> Errores (${errores.length})</h6>
+                    <ul class="mb-0">
+                        ${errores.map(e => `<li>${e}</li>`).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+
+                <div class="alert alert-info">
+                    <h6><i class="fas fa-info-circle"></i> Recomendaciones</h6>
+                    <ul class="mb-0">
+                        ${camposImportados === 0 ? '<li>Verificar que el JSON tenga la estructura correcta</li>' : ''}
+                        ${errores.length > 0 ? '<li>Revisar los campos que no se pudieron importar</li>' : ''}
+                        ${advertencias.length > 0 ? '<li>Considerar corregir las advertencias para mayor precisión</li>' : ''}
+                        <li>Guardar el formulario después de revisar los datos importados</li>
+                    </ul>
+                </div>
+            `;
+
+            // Mostrar modal
+            const bootstrapModal = new bootstrap.Modal(modal);
+            bootstrapModal.show();
+        }
+
+        // Copiar resultados de importación
+        function copiarResultadosImportacion() {
+            const contenido = document.getElementById('contenido-resultados').innerText;
+            navigator.clipboard.writeText(contenido).then(() => {
+                mostrarNotificacion('Resumen copiado al portapapeles', 'success');
+            }).catch(err => {
+                console.error('Error al copiar: ', err);
+                alert('Error al copiar al portapapeles');
+            });
+        }
+
+        // Validar JSON mejorado para brief del cliente
+        function validarJSON() {
+            const jsonText = document.getElementById('json-textarea').value.trim();
+            if (!jsonText) {
+                alert('Por favor, ingresa un JSON para validar');
+                return;
+            }
+
+            try {
+                const datos = JSON.parse(jsonText);
+                const esBriefCliente = "<?php
+                $es_brief = (strpos(strtolower($paso_info['codigo_paso'] ?? ''), 'brief') !== false) ||
+                           (strpos(strtolower($paso_info['paso_nombre'] ?? ''), 'brief') !== false);
+                echo $es_brief ? 'true' : 'false';
+            ?>" === 'true';
+
+                let mensaje = '✅ JSON válido';
+                let tipo = 'success';
+
+                if (esBriefCliente && typeof validarJSONBriefCliente === 'function') {
+                    const validacion = validarJSONBriefCliente(datos);
+
+                    if (validacion.errores.length > 0) {
+                        mensaje = `⚠️ JSON válido pero con ${validacion.errores.length} errores de estructura`;
+                        tipo = 'warning';
+                    }
+
+                    if (validacion.advertencias.length > 0) {
+                        mensaje += ` y ${validacion.advertencias.length} advertencias`;
+                    }
+
+                    // Mostrar detalles en console para revisión
+                    if (validacion.errores.length > 0 || validacion.advertencias.length > 0) {
+                        console.log('Detalles de validación:', validacion);
+                        mensaje += '\n\nVer detalles en la consola del navegador';
+                    }
+                } else {
+                    const campos = Object.keys(datos);
+                    mensaje += ` con ${campos.length} campos: ${campos.slice(0, 5).join(', ')}${campos.length > 5 ? '...' : ''}`;
+                }
+
+                mostrarNotificacion(mensaje.split('\n')[0], tipo);
+                alert(mensaje);
+
+            } catch (error) {
+                alert('❌ JSON inválido: ' + error.message);
+                mostrarNotificacion('Error en el formato JSON', 'error');
+            }
+        }
+        // Funciones para mostrar/ocultar instrucciones del brief
+        function mostrarInstrucciones() {
+            document.getElementById('instrucciones-section').style.display = 'block';
+            document.getElementById('mostrar-plantilla-btn').style.display = 'none';
+        }
+
+        function ocultarInstrucciones() {
+            document.getElementById('instrucciones-section').style.display = 'none';
+            document.getElementById('mostrar-plantilla-btn').style.display = 'block';
         }
     </script>
 </body>

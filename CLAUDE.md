@@ -52,6 +52,12 @@ When working with this repository:
 - Each phase should include both templates and instruction files
 - Export specifications must include tool, format, and specific configuration details
 
+## Language and Communication
+
+- **Always communicate in Spanish** when working with this repository
+- All responses, explanations, and documentation should be in Spanish
+- Maintain professional consulting language in Spanish throughout all interactions
+
 ## Document Types
 
 The repository contains several document formats:

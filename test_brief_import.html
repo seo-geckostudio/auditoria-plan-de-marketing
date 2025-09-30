@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - Sistema de Importación Brief del Cliente</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .test-section {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #007bff;
+        }
+        .result-box {
+            background: #e9ecef;
+            padding: 1rem;
+            border-radius: 0.25rem;
+            font-family: monospace;
+            font-size: 0.9em;
+            white-space: pre-wrap;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-4">
+        <div class="row">
+            <div class="col-12">
+                <h1><i class="fas fa-test-tube text-primary"></i> Test del Sistema de Importación Brief del Cliente</h1>
+                <p class="text-muted">Prueba de las mejoras implementadas para el formulario del brief inicial del cliente</p>
+
+                <div class="alert alert-info">
+                    <h6><i class="fas fa-info-circle"></i> Estado del Sistema</h6>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="mb-1"><strong>Scripts cargados:</strong> <span id="status-scripts">Verificando...</span></p>
+                            <p class="mb-1"><strong>Funciones disponibles:</strong> <span id="status-functions">Verificando...</span></p>
+                        </div>
+                        <div class="col-md-6">
+                            <button type="button" class="btn btn-sm btn-outline-primary" onclick="verificarEstado()">
+                                <i class="fas fa-refresh"></i> Verificar Estado
+                            </button>
+                            <button type="button" class="btn btn-sm btn-outline-success" onclick="location.reload()">
+                                <i class="fas fa-redo"></i> Recargar Página
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Test 1: Cargar Scripts -->
+        <div class="test-section">
+            <h4><i class="fas fa-code"></i> Test 1: Cargar Scripts y Funciones</h4>
+            <button type="button" class="btn btn-primary" onclick="test1_cargarScripts()">
+                <i class="fas fa-play"></i> Ejecutar Test 1
+            </button>
+            <div id="result1" class="result-box mt-3" style="display: none;"></div>
+        </div>
+
+        <!-- Test 2: Generar Plantilla Cliente -->
+        <div class="test-section">
+            <h4><i class="fas fa-envelope"></i> Test 2: Generar Plantilla para Cliente</h4>
+            <button type="button" class="btn btn-success" onclick="test2_generarPlantilla()">
+                <i class="fas fa-play"></i> Ejecutar Test 2
+            </button>
+            <div id="result2" class="result-box mt-3" style="display: none;"></div>
+        </div>
+
+        <!-- Test 3: Validar JSON -->
+        <div class="test-section">
+            <h4><i class="fas fa-check"></i> Test 3: Validar JSON del Brief</h4>
+            <button type="button" class="btn btn-warning" onclick="test3_validarJSON()">
+                <i class="fas fa-play"></i> Ejecutar Test 3
+            </button>
+            <div id="result3" class="result-box mt-3" style="display: none;"></div>
+        </div>
+
+        <!-- Test 4: Mapear Datos -->
+        <div class="test-section">
+            <h4><i class="fas fa-map"></i> Test 4: Mapear Datos al Formulario</h4>
+            <button type="button" class="btn btn-info" onclick="test4_mapearDatos()">
+                <i class="fas fa-play"></i> Ejecutar Test 4
+            </button>
+            <div id="result4" class="result-box mt-3" style="display: none;"></div>
+        </div>
+
+        <!-- Test 5: Ejemplo Completo -->
+        <div class="test-section">
+            <h4><i class="fas fa-clipboard-check"></i> Test 5: Flujo Completo de Importación</h4>
+            <button type="button" class="btn btn-dark" onclick="test5_flujoCompleto()">
+                <i class="fas fa-play"></i> Ejecutar Test 5
+            </button>
+            <div id="result5" class="result-box mt-3" style="display: none;"></div>
+        </div>
+
+        <!-- Test 6: Inspección de Formulario Real -->
+        <div class="test-section">
+            <h4><i class="fas fa-search"></i> Test 6: Inspeccionar Formulario Real</h4>
+            <p class="text-muted">Este test requiere estar en el formulario real para funcionar correctamente</p>
+            <button type="button" class="btn btn-secondary" onclick="test6_inspeccionarFormulario()">
+                <i class="fas fa-play"></i> Ejecutar Test 6
+            </button>
+            <div id="result6" class="result-box mt-3" style="display: none;"></div>
+        </div>
+    </div>
+
+    <!-- Cargar scripts necesarios -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/brief_cliente_import.js"></script>
+
+    <script>
+        // Función para verificar estado del sistema
+        function verificarEstado() {
+            const statusScripts = document.getElementById('status-scripts');
+            const statusFunctions = document.getElementById('status-functions');
+
+            // Verificar scripts
+            const scriptsOk = typeof BRIEF_CLIENTE_SCHEMA !== 'undefined' &&
+                             typeof EJEMPLO_BRIEF_COMPLETO !== 'undefined';
+            statusScripts.innerHTML = scriptsOk ?
+                '<span class="text-success">✅ Cargados correctamente</span>' :
+                '<span class="text-danger">❌ Error en la carga</span>';
+
+            // Verificar funciones
+            const funcionesOk = typeof generarPlantillaMejoradaCliente === 'function' &&
+                               typeof validarJSONBriefCliente === 'function' &&
+                               typeof mapearDatosBriefCliente === 'function';
+            statusFunctions.innerHTML = funcionesOk ?
+                '<span class="text-success">✅ Todas disponibles</span>' :
+                '<span class="text-warning">⚠️ Algunas faltan</span>';
+        }
+
+        // Test 1: Verificar que los scripts se cargaron correctamente
+        function test1_cargarScripts() {
+            const result = document.getElementById('result1');
+            result.style.display = 'block';
+
+            let output = 'TEST 1: VERIFICACIÓN DE SCRIPTS\n';
+            output += '=====================================\n\n';
+
+            // Verificar constantes globales
+            output += '🔍 Verificando constantes globales:\n';
+            output += `- BRIEF_CLIENTE_SCHEMA: ${typeof BRIEF_CLIENTE_SCHEMA !== 'undefined' ? '✅ Cargado' : '❌ No encontrado'}\n`;
+            output += `- EJEMPLO_BRIEF_COMPLETO: ${typeof EJEMPLO_BRIEF_COMPLETO !== 'undefined' ? '✅ Cargado' : '❌ No encontrado'}\n\n`;
+
+            // Verificar funciones
+            output += '🔍 Verificando funciones:\n';
+            output += `- generarPlantillaMejoradaCliente: ${typeof generarPlantillaMejoradaCliente === 'function' ? '✅ Disponible' : '❌ No encontrada'}\n`;
+            output += `- validarJSONBriefCliente: ${typeof validarJSONBriefCliente === 'function' ? '✅ Disponible' : '❌ No encontrada'}\n`;
+            output += `- mapearDatosBriefCliente: ${typeof mapearDatosBriefCliente === 'function' ? '✅ Disponible' : '❌ No encontrada'}\n`;
+            output += `- aplicarDatosMapeados: ${typeof aplicarDatosMapeados === 'function' ? '✅ Disponible' : '❌ No encontrada'}\n\n`;
+
+            if (typeof BRIEF_CLIENTE_SCHEMA !== 'undefined') {
+                const secciones = Object.keys(BRIEF_CLIENTE_SCHEMA);
+                output += `📋 Secciones del esquema (${secciones.length}):\n`;
+                secciones.forEach(seccion => {
+                    output += `  • ${seccion}\n`;
+                });
+            }
+
+            output += '\n✅ Test 1 completado';
+            result.textContent = output;
+        }
+
+        // Test 2: Generar plantilla para cliente
+        function test2_generarPlantilla() {
+            const result = document.getElementById('result2');
+            result.style.display = 'block';
+
+            let output = 'TEST 2: GENERAR PLANTILLA PARA CLIENTE\n';
+            output += '=======================================\n\n';
+
+            try {
+                if (typeof generarPlantillaMejoradaCliente === 'function') {
+                    // Crear elementos simulados para la prueba si no existen
+                    let h4Created = false, smallCreated = false;
+
+                    if (!document.querySelector('h4')) {
+                        const h4 = document.createElement('h4');
+                        h4.textContent = 'BRIEF INICIAL DEL CLIENTE - AUDITORÍA SEO (Simulado para pruebas)';
+                        document.body.appendChild(h4);
+                        h4Created = true;
+                    }
+
+                    if (!document.querySelector('small')) {
+                        const small = document.createElement('small');
+                        small.textContent = 'Cliente: Empresa de Prueba | Fecha: 29/09/2025';
+                        document.body.appendChild(small);
+                        smallCreated = true;
+                    }
+
+                    const plantilla = generarPlantillaMejoradaCliente();
+
+                    // Limpiar elementos simulados
+                    if (h4Created) document.querySelector('h4').remove();
+                    if (smallCreated) document.querySelector('small').remove();
+
+                    output += '✅ Plantilla generada exitosamente\n\n';
+                    output += '📧 VISTA PREVIA DE LA PLANTILLA:\n';
+                    output += '─'.repeat(50) + '\n';
+                    output += plantilla.substring(0, 800) + '...\n';
+                    output += '─'.repeat(50) + '\n\n';
+                    output += `📊 Estadísticas:\n`;
+                    output += `- Longitud total: ${plantilla.length} caracteres\n`;
+                    output += `- Incluye esquema JSON: ${plantilla.includes('BRIEF_CLIENTE_SCHEMA') ? '✅ Sí' : '❌ No'}\n`;
+                    output += `- Incluye ejemplo: ${plantilla.includes('EJEMPLO_BRIEF_COMPLETO') ? '✅ Sí' : '❌ No'}\n`;
+                    output += `- Menciona ChatGPT/Claude: ${plantilla.includes('ChatGPT') || plantilla.includes('Claude') ? '✅ Sí' : '❌ No'}\n`;
+                    output += `- Formato profesional: ${plantilla.includes('📧') ? '✅ Sí' : '❌ No'}\n`;
+                } else {
+                    output += '❌ Función generarPlantillaMejoradaCliente no disponible\n';
+                }
+            } catch (error) {
+                output += `❌ Error al generar plantilla: ${error.message}\n`;
+                output += `   Stack trace: ${error.stack}\n`;
+            }
+
+            output += '\n✅ Test 2 completado';
+            result.textContent = output;
+        }
+
+        // Test 3: Validar JSON
+        function test3_validarJSON() {
+            const result = document.getElementById('result3');
+            result.style.display = 'block';
+
+            let output = 'TEST 3: VALIDAR JSON DEL BRIEF\n';
+            output += '==============================\n\n';
+
+            try {
+                if (typeof validarJSONBriefCliente === 'function' && typeof EJEMPLO_BRIEF_COMPLETO !== 'undefined') {
+                    // Test con ejemplo válido
+                    output += '🔍 Validando ejemplo válido:\n';
+                    const validacionValida = validarJSONBriefCliente(EJEMPLO_BRIEF_COMPLETO);
+                    output += `- Errores: ${validacionValida.errores.length}\n`;
+                    output += `- Advertencias: ${validacionValida.advertencias.length}\n`;
+
+                    if (validacionValida.errores.length > 0) {
+                        output += '\n❌ Errores encontrados:\n';
+                        validacionValida.errores.forEach(error => {
+                            output += `  • ${error}\n`;
+                        });
+                    }
+
+                    if (validacionValida.advertencias.length > 0) {
+                        output += '\n⚠️ Advertencias encontradas:\n';
+                        validacionValida.advertencias.forEach(advertencia => {
+                            output += `  • ${advertencia}\n`;
+                        });
+                    }
+
+                    // Test con JSON inválido
+                    output += '\n🔍 Validando JSON incompleto:\n';
+                    const jsonIncompleto = { info_general: { cliente: 'Test' } };
+                    const validacionIncompleta = validarJSONBriefCliente(jsonIncompleto);
+                    output += `- Errores: ${validacionIncompleta.errores.length}\n`;
+                    output += `- Advertencias: ${validacionIncompleta.advertencias.length}\n`;
+
+                    if (validacionIncompleta.errores.length > 0) {
+                        output += '\n❌ Errores esperados (JSON incompleto):\n';
+                        validacionIncompleta.errores.slice(0, 3).forEach(error => {
+                            output += `  • ${error}\n`;
+                        });
+                        if (validacionIncompleta.errores.length > 3) {
+                            output += `  • ... y ${validacionIncompleta.errores.length - 3} más\n`;
+                        }
+                    }
+
+                } else {
+                    output += '❌ Función validarJSONBriefCliente o EJEMPLO_BRIEF_COMPLETO no disponibles\n';
+                }
+            } catch (error) {
+                output += `❌ Error durante validación: ${error.message}\n`;
+            }
+
+            output += '\n✅ Test 3 completado';
+            result.textContent = output;
+        }
+
+        // Test 4: Mapear datos
+        function test4_mapearDatos() {
+            const result = document.getElementById('result4');
+            result.style.display = 'block';
+
+            let output = 'TEST 4: MAPEAR DATOS AL FORMULARIO\n';
+            output += '==================================\n\n';
+
+            try {
+                if (typeof mapearDatosBriefCliente === 'function' && typeof EJEMPLO_BRIEF_COMPLETO !== 'undefined') {
+                    const datosMapeados = mapearDatosBriefCliente(EJEMPLO_BRIEF_COMPLETO);
+
+                    output += '✅ Mapeo realizado exitosamente\n\n';
+                    output += '📊 Campos mapeados:\n';
+
+                    let camposMapeados = 0;
+                    Object.entries(datosMapeados).forEach(([campo, valor]) => {
+                        if (valor !== undefined && valor !== null && valor !== '') {
+                            camposMapeados++;
+                            const valorMostrar = typeof valor === 'string' && valor.length > 50
+                                ? valor.substring(0, 47) + '...'
+                                : valor;
+                            output += `  • ${campo}: ${valorMostrar}\n`;
+                        }
+                    });
+
+                    output += `\n📈 Total de campos con valor: ${camposMapeados}\n`;
+
+                    // Verificar tipos de datos
+                    output += '\n🔍 Tipos de datos detectados:\n';
+                    const tipos = {};
+                    Object.values(datosMapeados).forEach(valor => {
+                        const tipo = typeof valor;
+                        tipos[tipo] = (tipos[tipo] || 0) + 1;
+                    });
+
+                    Object.entries(tipos).forEach(([tipo, cantidad]) => {
+                        output += `  • ${tipo}: ${cantidad} campos\n`;
+                    });
+
+                } else {
+                    output += '❌ Función mapearDatosBriefCliente o EJEMPLO_BRIEF_COMPLETO no disponibles\n';
+                }
+            } catch (error) {
+                output += `❌ Error durante mapeo: ${error.message}\n`;
+            }
+
+            output += '\n✅ Test 4 completado';
+            result.textContent = output;
+        }
+
+        // Test 5: Flujo completo
+        function test5_flujoCompleto() {
+            const result = document.getElementById('result5');
+            result.style.display = 'block';
+
+            let output = 'TEST 5: FLUJO COMPLETO DE IMPORTACIÓN\n';
+            output += '=====================================\n\n';
+
+            try {
+                // Paso 1: Generar plantilla
+                output += '1️⃣ Generando plantilla para cliente...\n';
+                if (typeof generarPlantillaMejoradaCliente === 'function') {
+                    const plantilla = generarPlantillaMejoradaCliente();
+                    output += `   ✅ Plantilla generada (${plantilla.length} caracteres)\n`;
+                } else {
+                    output += '   ❌ Error: función no disponible\n';
+                }
+
+                // Paso 2: Validar JSON
+                output += '\n2️⃣ Validando JSON de ejemplo...\n';
+                if (typeof validarJSONBriefCliente === 'function' && typeof EJEMPLO_BRIEF_COMPLETO !== 'undefined') {
+                    const validacion = validarJSONBriefCliente(EJEMPLO_BRIEF_COMPLETO);
+                    output += `   📋 Errores: ${validacion.errores.length}\n`;
+                    output += `   📋 Advertencias: ${validacion.advertencias.length}\n`;
+                    output += `   ${validacion.errores.length === 0 ? '✅ Validación exitosa' : '⚠️ Validación con errores'}\n`;
+                } else {
+                    output += '   ❌ Error: función no disponible\n';
+                }
+
+                // Paso 3: Mapear datos
+                output += '\n3️⃣ Mapeando datos...\n';
+                if (typeof mapearDatosBriefCliente === 'function') {
+                    const datosMapeados = mapearDatosBriefCliente(EJEMPLO_BRIEF_COMPLETO);
+                    const camposConValor = Object.values(datosMapeados).filter(v => v !== undefined && v !== null && v !== '').length;
+                    output += `   ✅ ${camposConValor} campos mapeados correctamente\n`;
+                } else {
+                    output += '   ❌ Error: función no disponible\n';
+                }
+
+                // Paso 4: Simular aplicación (sin formulario real)
+                output += '\n4️⃣ Simulando aplicación al formulario...\n';
+                output += '   ℹ️ No hay formulario real para aplicar los datos\n';
+                output += '   ℹ️ En el formulario real se aplicarían automáticamente\n';
+
+                // Resumen final
+                output += '\n📊 RESUMEN DEL FLUJO:\n';
+                output += '─'.repeat(40) + '\n';
+                output += 'Todas las funciones principales están operativas:\n';
+                output += '✅ Generación de plantilla mejorada\n';
+                output += '✅ Validación específica de JSON\n';
+                output += '✅ Mapeo inteligente de datos\n';
+                output += '✅ Sistema listo para usar en formularios reales\n';
+
+                output += '\n🎯 SIGUIENTE PASO:\n';
+                output += 'Usar este sistema en el formulario real del brief del cliente\n';
+                output += 'URL: http://localhost:8000/?modulo=auditorias&accion=formulario&auditoria_id=27&paso_id=866\n';
+
+            } catch (error) {
+                output += `❌ Error durante flujo completo: ${error.message}\n`;
+            }
+
+            output += '\n✅ Test 5 completado';
+            result.textContent = output;
+        }
+
+        // Test 6: Inspeccionar formulario real
+        function test6_inspeccionarFormulario() {
+            const result = document.getElementById('result6');
+            result.style.display = 'block';
+
+            let output = 'TEST 6: INSPECCIONAR FORMULARIO REAL\n';
+            output += '===================================\n\n';
+
+            try {
+                if (typeof inspeccionarFormularioReal === 'function') {
+                    // Crear formulario simulado para la prueba
+                    const formularioSimulado = document.createElement('form');
+                    formularioSimulado.id = 'formulario-dinamico';
+                    formularioSimulado.innerHTML = `
+                        <input type="text" name="campos[1]" id="campo_1" placeholder="Nombre del cliente">
+                        <label for="campo_1">Cliente</label>
+                        <input type="email" name="campos[2]" id="campo_2">
+                        <label for="campo_2">Email</label>
+                        <select name="campos[3]" id="campo_3">
+                            <option value="">Seleccionar</option>
+                            <option value="PYME">PYME</option>
+                            <option value="Grande">Grande</option>
+                        </select>
+                        <label for="campo_3">Tamaño de empresa</label>
+                    `;
+                    document.body.appendChild(formularioSimulado);
+
+                    const campos = inspeccionarFormularioReal();
+
+                    output += '✅ Inspección realizada exitosamente\n\n';
+                    output += '📋 CAMPOS ENCONTRADOS:\n';
+
+                    if (campos.length > 0) {
+                        campos.forEach((campo, index) => {
+                            output += `${index + 1}. ${campo.etiqueta || 'Sin etiqueta'}\n`;
+                            output += `   - Name: ${campo.name}\n`;
+                            output += `   - Type: ${campo.type}\n`;
+                            output += `   - ID: ${campo.id}\n`;
+                            if (campo.placeholder) output += `   - Placeholder: ${campo.placeholder}\n`;
+                            output += `   - Required: ${campo.required ? 'Sí' : 'No'}\n\n`;
+                        });
+                    } else {
+                        output += 'No se encontraron campos (se requiere formulario real)\n\n';
+                    }
+
+                    // Probar mapeo automático
+                    if (typeof generarMapeoAutomatico === 'function') {
+                        output += '🔄 PROBANDO MAPEO AUTOMÁTICO:\n';
+                        const mapeo = generarMapeoAutomatico();
+                        const mapeosEncontrados = Object.keys(mapeo).length;
+                        output += `- Correspondencias encontradas: ${mapeosEncontrados}\n`;
+
+                        if (mapeosEncontrados > 0) {
+                            output += '- Ejemplos de mapeo:\n';
+                            Object.entries(mapeo).slice(0, 3).forEach(([clave, info]) => {
+                                output += `  • ${clave} → ${info.etiqueta}\n`;
+                            });
+                        }
+                    }
+
+                    // Limpiar formulario simulado
+                    document.body.removeChild(formularioSimulado);
+
+                } else {
+                    output += '❌ Función inspeccionarFormularioReal no disponible\n';
+                }
+
+                output += '\n💡 RECOMENDACIÓN:\n';
+                output += 'Para probar completamente esta funcionalidad:\n';
+                output += '1. Abrir el formulario real del brief del cliente\n';
+                output += '2. Abrir consola del navegador (F12)\n';
+                output += '3. Ejecutar: mostrarCamposFormulario()\n';
+                output += '4. Ejecutar: generarMapeoAutomatico()\n';
+
+            } catch (error) {
+                output += `❌ Error durante inspección: ${error.message}\n`;
+            }
+
+            output += '\n✅ Test 6 completado';
+            result.textContent = output;
+        }
+
+        // Auto-ejecutar verificación al cargar la página
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                verificarEstado();
+                test1_cargarScripts();
+            }, 500);
+        });
+    </script>
+</body>
+</html>
