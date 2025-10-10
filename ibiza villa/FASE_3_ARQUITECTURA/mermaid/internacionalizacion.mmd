@@ -1,0 +1,9 @@
+flowchart LR
+    ES([ibizavilla.com/alquiler/]) --- EN([ibizavilla.co.uk/rent/]) --- IT([ibizavilla.it/affitto/])
+    ES --> ES_U([ubicaciones])
+    EN --> EN_U([locations])
+    IT --> IT_U([località])
+
+    ES_U --> ES_SEU[/santa-eulalia/]
+    EN_U --> EN_SEU[/santa-eulalia/]
+    IT_U --> IT_SEU[/santa-eulalia/]

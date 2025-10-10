@@ -1,50 +1,40 @@
 
-# Archivos de base de datos
-*.sqlite
-*.db
-data/
-database.sqlite
+# Credenciales sensibles MCP
+credentials/
+*.json
+.env
+.env.local
+.env.production
+
+# Archivos de configuración con datos sensibles
+claude_desktop_config.json
+
+# Logs
+*.log
+logs/
 
 # Archivos temporales
-temp/
-logs/
-uploads/
+*.tmp
+*.temp
+.cache/
 
-# Archivos de configuración local
-config/local_config.php
-
-# Archivos de PHP portátil
-php/
-php-portable.zip
-usbwebserver/
-usbwebserver.zip
-xampp-portable-installer.exe
-
-# Archivos de Node.js
-node_modules/
-package-lock.json
-
-# Playwright
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
-/playwright/.auth/
-
-# Archivos de sistema
+# Archivos del sistema
 .DS_Store
 Thumbs.db
-*.log
-
-# Archivos de IDE
-.vscode/
-.idea/
-*.swp
-*.swo
+desktop.ini
 
 # Archivos de backup
 *.bak
 *.backup
-*~
-".claude/settings.local.json" 
-".claude/settings.local.json" 
+
+# Datos exportados sensibles
+exports/
+data/
+*.csv
+*.xlsx
+
+# Node modules si se usan MCPs locales
+node_modules/
+package-lock.json
+yarn.lock
+node_modules

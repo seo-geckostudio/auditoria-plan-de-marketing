@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arquitectura ibizavilla.com/alquiler/ (visual)</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 24px; }
+    h1, h2 { margin: 0 0 8px; }
+    .section { margin: 32px 0; }
+    .mermaid { border: 1px solid #ddd; border-radius: 8px; padding: 16px; background: #fff; }
+    .note { color: #555; font-size: 0.95em; }
+    header { margin-bottom: 16px; }
+    code { background: #f6f8fa; padding: 2px 6px; border-radius: 4px; }
+  </style>
+  <script>
+    mermaid.initialize({ startOnLoad: true, theme: 'default' });
+  </script>
+  </head>
+<body>
+  <header>
+    <h1>Arquitectura gráfica — ibizavilla.com/alquiler/</h1>
+    <p class="note">Diagramas generados con Mermaid (render cliente). Incluye: diagrama general, árbol de URLs (ASCII), breadcrumbs/interlinking, internacionalización y Top 10.</p>
+  </header>
+
+  <section id="diagrama-general" class="section">
+    <h2>Diagrama general (categorías y ejemplos)</h2>
+    <div class="mermaid">
+flowchart LR
+    A([Inicio]) --> B([Alquiler])
+    B --> C([Ubicaciones])
+    B --> D([Playas])
+    B --> E([Amenidades])
+    B --> F([Audiencias])
+    B --> G([Temporada])
+    B --> H([Capacidad])
+
+    %% Ubicaciones
+    C --> C1[/santa-eulalia/]
+    C --> C2[/san-jose/]
+    C --> C3[/ibiza-ciudad/]
+    C --> C4[/san-antonio/]
+    C --> C5[/es-cubells/]
+
+    %% Playas
+    D --> D1[/playa-den-bossa/]
+    D --> D2[/cala-comte/]
+    D --> D3[/cala-bassa/]
+    D --> D4[/cala-tarida/]
+
+    %% Amenidades
+    E --> E1[/lujo/]
+    E --> E2[/con-piscina/]
+    E --> E3[/vista-mar/]
+    E --> E4[/frente-mar/]
+    E --> E5[/cerca-playa/]
+
+    %% Audiencias
+    F --> F1[/familias/]
+    F --> F2[/grupos/]
+    F --> F3[/bodas/]
+    F --> F4[/eventos/]
+
+    %% Temporada
+    G --> G1[/verano/]
+    G --> G2[/julio/]
+    G --> G3[/agosto/]
+    G --> G4[/semanal/]
+    G --> G5[/fin-de-semana/]
+
+    %% Capacidad
+    H --> H1[/8-personas/]
+    H --> H2[/10-personas/]
+    H --> H3[/12-personas/]
+
+    %% Interlinking de ejemplo
+    C1 --- D2
+    C1 --- E2
+    D1 --- E1
+    D2 --- E3
+    C2 --- D4
+    </div>
+  </section>
+
+  <section id="arbol" class="section">
+    <h2>Árbol de URLs (ASCII)</h2>
+    <pre>
+ibizavilla.com/alquiler/
+├── ubicaciones/
+│   ├── santa-eulalia/
+│   ├── san-jose/
+│   ├── ibiza-ciudad/
+│   ├── san-antonio/
+│   └── es-cubells/
+├── playas/
+│   ├── playa-den-bossa/
+│   ├── cala-comte/
+│   ├── cala-bassa/
+│   └── cala-tarida/
+├── amenidades/
+│   ├── lujo/
+│   ├── con-piscina/
+│   ├── vista-mar/
+│   └── frente-mar/
+├── audiencias/
+│   ├── familias/
+│   ├── grupos/
+│   ├── bodas/
+│   └── eventos/
+├── temporada/
+│   ├── verano/
+│   ├── julio/
+│   ├── agosto/
+│   ├── semanal/
+│   └── fin-de-semana/
+└── capacidad/
+    ├── 8-personas/
+    ├── 10-personas/
+    └── 12-personas/
+    </pre>
+  </section>
+
+  <section id="breadcrumbs" class="section">
+    <h2>Breadcrumbs e interlinking</h2>
+    <div class="mermaid">
+flowchart TD
+    Home([Inicio]) --> Alq([Alquiler])
+    Alq --> Cat1([Ubicaciones])
+    Cat1 --> SEU[[/alquiler/santa-eulalia/]]
+
+    %% Breadcrumbs
+    classDef crumb fill:#f3f3f3,stroke:#bbb,color:#333;
+    Home:::crumb --> Alq:::crumb --> Cat1:::crumb --> SEU:::crumb
+
+    %% Enlaces cruzados desde Santa Eulalia
+    SEU -.-> PDB[/playa-den-bossa/]
+    SEU -.-> LUX[/lujo/]
+    SEU -.-> CP[/con-piscina/]
+    </div>
+  </section>
+
+  <section id="i18n" class="section">
+    <h2>Internacionalización (espejo)</h2>
+    <div class="mermaid">
+flowchart LR
+    ES([ES /alquiler/]) --- EN([EN /rent/]) --- IT([IT /affitto/])
+    ES --> ES_U([ubicaciones])
+    EN --> EN_U([locations])
+    IT --> IT_U([località])
+
+    ES_U --> ES_SEU[/santa-eulalia/]
+    EN_U --> EN_SEU[/santa-eulalia/]
+    IT_U --> IT_SEU[/santa-eulalia/]
+    </div>
+  </section>
+
+  <section id="top10" class="section">
+    <h2>Top 10 prioritarios (visual)</h2>
+    <div class="mermaid">
+flowchart LR
+    root([/alquiler/])
+    root --> lujo[/lujo/]
+    root --> seu[/santa-eulalia/]
+    root --> sj[/san-jose/]
+    root --> ibc[/ibiza-ciudad/]
+    root --> pdb[/playa-den-bossa/]
+    root --> piscina[/con-piscina/]
+    root --> vista[/vista-mar/]
+    root --> cco[/cala-comte/]
+    root --> sa[/san-antonio/]
+    root --> esc[/es-cubells/]
+    </div>
+  </section>
+
+  <footer class="note">Referencias: 09_propuesta_arquitectura.md · 10_slugs_priorizados_alquiler.md</footer>
+</body>
+</html>

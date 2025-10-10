@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Internacionalización — /alquiler/ ↔ /rent/ ↔ /affitto/</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <style> body { margin: 24px; font-family: Segoe UI, Roboto, Arial; } .mermaid{ border:1px solid #ddd; padding:16px; border-radius:8px;} </style>
+  <script> mermaid.initialize({ startOnLoad: true, theme: 'default' }); </script>
+</head>
+<body>
+  <h1>Internacionalización — ES /alquiler/ ↔ EN /rent/ ↔ IT /affitto/</h1>
+  <div class="mermaid">
+flowchart LR
+    ES([ES /alquiler/]) --- EN([EN /rent/]) --- IT([IT /affitto/])
+    ES --> ES_U([ubicaciones])
+    EN --> EN_U([locations])
+    IT --> IT_U([località])
+
+    ES_U --> ES_SEU[/santa-eulalia/]
+    EN_U --> EN_SEU[/santa-eulalia/]
+    IT_U --> IT_SEU[/santa-eulalia/]
+  </div>
+</body>
+</html>
