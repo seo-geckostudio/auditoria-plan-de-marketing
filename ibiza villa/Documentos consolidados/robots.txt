@@ -1,0 +1,5 @@
+# SEO Robots
+Sitemap: https://www.ibizavilla.com/sitemap.xml
+
+User-agent: *
+Disallow:

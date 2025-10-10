@@ -1,0 +1,13 @@
+flowchart TD
+    Home([Inicio]) --> Alq([Alquiler])
+    Alq --> Cat1([Ubicaciones])
+    Cat1 --> SEU[[/alquiler/santa-eulalia/]]
+
+    %% Breadcrumbs
+    classDef crumb fill:#f3f3f3,stroke:#bbb,color:#333;
+    Home:::crumb --> Alq:::crumb --> Cat1:::crumb --> SEU:::crumb
+
+    %% Enlaces cruzados desde Santa Eulalia
+    SEU -.-> PDB[/playa-den-bossa/]
+    SEU -.-> LUX[/lujo/]
+    SEU -.-> CP[/con-piscina/]

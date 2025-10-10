@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Breadcrumbs e interlinking — /alquiler/</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <style> body { margin: 24px; font-family: Segoe UI, Roboto, Arial; } .mermaid{ border:1px solid #ddd; padding:16px; border-radius:8px;} </style>
+  <script> mermaid.initialize({ startOnLoad: true, theme: 'default' }); </script>
+</head>
+<body>
+  <h1>Breadcrumbs e interlinking — ibizavilla.com/alquiler/</h1>
+  <div class="mermaid">
+flowchart TD
+    Home([Inicio]) --> Alq([Alquiler])
+    Alq --> Cat1([Ubicaciones])
+    Cat1 --> SEU[[/alquiler/santa-eulalia/]]
+
+    %% Breadcrumbs
+    classDef crumb fill:#f3f3f3,stroke:#bbb,color:#333;
+    Home:::crumb --> Alq:::crumb --> Cat1:::crumb --> SEU:::crumb
+
+    %% Enlaces cruzados desde Santa Eulalia
+    SEU -.-> PDB[/playa-den-bossa/]
+    SEU -.-> LUX[/lujo/]
+    SEU -.-> CP[/con-piscina/]
+  </div>
+</body>
+</html>

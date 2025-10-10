@@ -1,0 +1,53 @@
+flowchart LR
+    A([Inicio]) --> B([Alquiler])
+    B --> C([Ubicaciones])
+    B --> D([Playas])
+    B --> E([Amenidades])
+    B --> F([Audiencias])
+    B --> G([Temporada])
+    B --> H([Capacidad])
+
+    %% Ubicaciones
+    C --> C1[/santa-eulalia/]
+    C --> C2[/san-jose/]
+    C --> C3[/ibiza-ciudad/]
+    C --> C4[/san-antonio/]
+    C --> C5[/es-cubells/]
+
+    %% Playas
+    D --> D1[/playa-den-bossa/]
+    D --> D2[/cala-comte/]
+    D --> D3[/cala-bassa/]
+    D --> D4[/cala-tarida/]
+
+    %% Amenidades
+    E --> E1[/lujo/]
+    E --> E2[/con-piscina/]
+    E --> E3[/vista-mar/]
+    E --> E4[/frente-mar/]
+    E --> E5[/cerca-playa/]
+
+    %% Audiencias
+    F --> F1[/familias/]
+    F --> F2[/grupos/]
+    F --> F3[/bodas/]
+    F --> F4[/eventos/]
+
+    %% Temporada
+    G --> G1[/verano/]
+    G --> G2[/julio/]
+    G --> G3[/agosto/]
+    G --> G4[/semanal/]
+    G --> G5[/fin-de-semana/]
+
+    %% Capacidad
+    H --> H1[/8-personas/]
+    H --> H2[/10-personas/]
+    H --> H3[/12-personas/]
+
+    %% Interlinking de ejemplo
+    C1 --- D2
+    C1 --- E2
+    D1 --- E1
+    D2 --- E3
+    C2 --- D4

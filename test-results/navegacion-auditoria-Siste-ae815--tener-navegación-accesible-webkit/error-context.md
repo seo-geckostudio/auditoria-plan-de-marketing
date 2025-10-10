@@ -1,0 +1,140 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e5]:
+      - heading " Auditorías SEO" [level=4] [ref=e7]:
+        - generic [ref=e8]: 
+        - text: Auditorías SEO
+      - list [ref=e9]:
+        - listitem [ref=e10]:
+          - link " Dashboard" [ref=e11]:
+            - /url: "?modulo=dashboard"
+            - generic [ref=e12]: 
+            - text: Dashboard
+        - listitem [ref=e13]:
+          - link " Auditorías" [ref=e14]:
+            - /url: "?modulo=auditorias&accion=listar"
+            - generic [ref=e15]: 
+            - text: Auditorías
+        - listitem [ref=e16]:
+          - link " Plantillas de Pasos" [ref=e17]:
+            - /url: "?modulo=pasos&accion=plantillas"
+            - generic [ref=e18]: 
+            - text: Plantillas de Pasos
+        - listitem [ref=e19]:
+          - link " Clientes" [ref=e20]:
+            - /url: "?modulo=clientes&accion=listar"
+            - generic [ref=e21]: 
+            - text: Clientes
+        - listitem [ref=e22]:
+          - link " Reportes" [ref=e23]:
+            - /url: "?modulo=reportes"
+            - generic [ref=e24]: 
+            - text: Reportes
+        - listitem [ref=e25]:
+          - link " Configuración" [ref=e26]:
+            - /url: "?modulo=configuracion"
+            - generic [ref=e27]: 
+            - text: Configuración
+      - separator [ref=e28]
+      - generic [ref=e29]:
+        - paragraph [ref=e30]: "Usuario: Administrador"
+        - paragraph [ref=e31]:
+          - link " Cerrar Sesión" [ref=e32]:
+            - /url: "?accion=logout"
+            - generic [ref=e33]: 
+            - text: Cerrar Sesión
+  - main [ref=e34]:
+    - generic [ref=e35]:
+      - navigation "breadcrumb" [ref=e36]:
+        - list [ref=e37]:
+          - listitem [ref=e38]:
+            - link " Inicio" [ref=e39]:
+              - /url: "?modulo=dashboard"
+              - generic [ref=e40]: 
+              - text: Inicio
+      - generic [ref=e41]:
+        - button " Exportar" [ref=e43] [cursor=pointer]:
+          - generic [ref=e44] [cursor=pointer]: 
+          - text: Exportar
+        - button "+ Nuevo" [ref=e45] [cursor=pointer]:
+          - generic [ref=e46] [cursor=pointer]: +
+          - text: Nuevo
+    - generic [ref=e47]:
+      - generic [ref=e48]:
+        - generic [ref=e52]:
+          - generic [ref=e53]:
+            - generic [ref=e54]: Total Auditorías
+            - generic [ref=e55]: "0"
+          - generic [ref=e57]: 
+        - generic [ref=e61]:
+          - generic [ref=e62]:
+            - generic [ref=e63]: Auditorías Completadas
+            - generic [ref=e64]: "0"
+          - generic [ref=e66]: 
+        - generic [ref=e70]:
+          - generic [ref=e71]:
+            - generic [ref=e72]: Progreso Promedio
+            - generic [ref=e73]:
+              - generic [ref=e75]: 0.0%
+              - generic [ref=e77]:
+                - progressbar
+          - generic [ref=e79]: 
+        - generic [ref=e83]:
+          - generic [ref=e84]:
+            - generic [ref=e85]: Pasos Críticos Pendientes
+            - generic [ref=e86]: "0"
+          - generic [ref=e88]: 
+      - generic [ref=e89]:
+        - generic [ref=e92]:
+          - heading " Progreso de Auditorías Activas" [level=6] [ref=e93]:
+            - generic [ref=e94]: 
+            - text: Progreso de Auditorías Activas
+          - button "" [ref=e96] [cursor=pointer]:
+            - generic [ref=e97] [cursor=pointer]: 
+        - generic [ref=e102]:
+          - heading " Estados de Auditorías" [level=6] [ref=e104]:
+            - generic [ref=e105]: 
+            - text: Estados de Auditorías
+          - generic [ref=e109]:
+            - generic [ref=e110]:
+              - generic [ref=e111]: 
+              - text: Activas
+            - generic [ref=e112]:
+              - generic [ref=e113]: 
+              - text: Completadas
+            - generic [ref=e114]:
+              - generic [ref=e115]: 
+              - text: Pausadas
+            - generic [ref=e116]:
+              - generic [ref=e117]: 
+              - text: Pendientes
+      - generic [ref=e118]:
+        - generic [ref=e120]:
+          - heading " Auditorías Recientes" [level=6] [ref=e122]:
+            - generic [ref=e123]: 
+            - text: Auditorías Recientes
+          - generic [ref=e125]:
+            - generic [ref=e126]: 
+            - paragraph [ref=e127]: No hay auditorías recientes
+            - link "+ Crear Primera Auditoría" [ref=e128] [cursor=pointer]:
+              - /url: "?modulo=auditorias&accion=crear"
+              - generic [ref=e129] [cursor=pointer]: +
+              - text: Crear Primera Auditoría
+        - generic [ref=e131]:
+          - heading " Pasos Críticos Pendientes" [level=6] [ref=e133]:
+            - generic [ref=e134]: 
+            - text: Pasos Críticos Pendientes
+          - generic [ref=e136]:
+            - generic [ref=e137]: 
+            - paragraph [ref=e138]: ¡Excelente! No hay pasos críticos pendientes
+      - generic [ref=e141]:
+        - heading " Actividad Reciente" [level=6] [ref=e143]:
+          - generic [ref=e144]: 
+          - text: Actividad Reciente
+        - generic [ref=e146]:
+          - generic [ref=e147]: 
+          - paragraph [ref=e148]: No hay actividad reciente
+```

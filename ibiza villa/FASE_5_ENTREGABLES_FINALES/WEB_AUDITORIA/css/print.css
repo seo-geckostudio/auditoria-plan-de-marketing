@@ -1,0 +1,252 @@
+/* Estilos de impresión en PDF (A4) optimizado para 131 páginas */
+
+@page {
+  size: A4 landscape; /* Orientación apaisada */
+  margin: 12mm 15mm 18mm 15mm; /* Top, Right, Bottom, Left - ajustado para landscape */
+  
+  @bottom-left {
+    content: "Página: " attr(data-page-title) " — Fuentes: " attr(data-source);
+    font-size: 8pt;
+    color: #666;
+    font-family: 'Hanken Grotesk', Arial, sans-serif;
+  }
+  
+  @bottom-right {
+    content: "Página " counter(page) " de 133";
+    font-size: 8pt;
+    color: #666;
+    font-family: 'Hanken Grotesk', Arial, sans-serif;
+  }
+}
+
+/* Ocultar navegación y márgenes adecuados */
+.sidebar { 
+  display: none !important; 
+}
+
+.content { 
+  margin: 0 !important; 
+  padding: 0 !important; 
+  max-width: none !important;
+}
+
+/* Cada sección equivale a una página en PDF */
+.audit-page {
+  page-break-after: always;
+  page-break-inside: avoid;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  min-height: 180mm; /* Altura mínima para A4 landscape */
+  max-width: 270mm; /* Ancho máximo para A4 landscape */
+  position: relative;
+}
+
+/* Última página sin salto */
+.audit-page:last-child {
+  page-break-after: auto;
+}
+
+/* Headers optimizados para impresión */
+.page-header { 
+  margin-bottom: 8mm;
+  padding-bottom: 4mm;
+  border-bottom: 2px solid #54a34a;
+}
+
+.page-header h1,
+.page-header h2 {
+  color: #54a34a !important;
+  font-size: 18pt;
+  margin: 0 0 4mm 0;
+  line-height: 1.2;
+}
+
+.page-header .subtitle,
+.page-header h3 {
+  color: #475569 !important;
+  font-size: 12pt;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Contenido de página optimizado */
+.page-body,
+.page-content {
+  margin: 8mm 0;
+  line-height: 1.4;
+  font-size: 10pt;
+}
+
+/* Bullets y listas */
+.bullets,
+.audit-bullets {
+  margin: 4mm 0;
+  padding-left: 6mm;
+}
+
+.bullets li,
+.audit-bullets li {
+  margin-bottom: 2mm;
+  line-height: 1.3;
+  font-size: 10pt;
+}
+
+/* Footer optimizado con información de página y fuentes */
+.page-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: 8mm;
+  padding-top: 3mm;
+  border-top: 1px solid #ccc;
+  font-size: 8pt;
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-page-num {
+  text-align: right;
+  font-weight: 500;
+}
+
+/* Tipografías para impresión */
+body {
+  font-family: 'Hanken Grotesk', Arial, sans-serif;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  color: #1e293b !important;
+}
+
+h1, h2, h3 { 
+  font-family: 'TWKEverett-Regular', 'Everett', serif;
+  color: #54a34a !important;
+}
+
+/* Placeholder content styling */
+.page-placeholder {
+  margin: 6mm 0;
+  padding: 4mm;
+  background: #f8fafc !important;
+  border-left: 3px solid #54a34a;
+}
+
+.placeholder-text {
+  font-style: italic;
+  color: #64748b !important;
+  margin: 0 0 2mm 0;
+}
+
+.data-source {
+  font-size: 8pt;
+  color: #94a3b8 !important;
+  margin: 0;
+}
+
+/* Portada especial */
+.cover .title {
+  font-size: 24pt;
+  color: #54a34a !important;
+  text-align: center;
+  margin-bottom: 8mm;
+}
+
+.cover .subtitle {
+  font-size: 14pt;
+  color: #475569 !important;
+  text-align: center;
+  margin-bottom: 12mm;
+}
+
+/* Índice interactivo */
+#indice-lista {
+  columns: 2;
+  column-gap: 8mm;
+  list-style: none;
+  padding: 0;
+}
+
+#indice-lista li {
+  break-inside: avoid;
+  margin-bottom: 2mm;
+  padding: 2mm 0;
+  border-bottom: 1px dotted #ccc;
+}
+
+#indice-lista a {
+  color: #1e293b !important;
+  text-decoration: none;
+  font-size: 9pt;
+}
+
+/* Evitar saltos de página problemáticos */
+h1, h2, h3 {
+  page-break-after: avoid;
+}
+
+ul, ol {
+  page-break-inside: avoid;
+}
+
+/* Estilos para imágenes en impresión */
+.audit-image {
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 4mm 0 !important;
+  border: 1px solid #ccc !important;
+  page-break-inside: avoid;
+}
+
+.image-container {
+  text-align: center;
+  margin: 4mm 0;
+  page-break-inside: avoid;
+}
+
+.data-visualization {
+  background: #f8fafc !important;
+  border: 1px solid #ccc !important;
+  padding: 3mm !important;
+  margin: 3mm 0 !important;
+  page-break-inside: avoid;
+}
+
+.metrics-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 3mm !important;
+  margin: 3mm 0 !important;
+}
+
+.metric-card {
+  background: white !important;
+  border: 1px solid #ccc !important;
+  padding: 2mm !important;
+  text-align: center;
+  page-break-inside: avoid;
+}
+
+.metric-value {
+  font-size: 12pt !important;
+  font-weight: 700;
+  color: #54a34a !important;
+}
+
+.metric-label {
+  font-size: 8pt !important;
+  color: #666 !important;
+}
+
+/* Asegurar que el contenido no se corte */
+.page-body > *:last-child {
+  margin-bottom: 0;
+}

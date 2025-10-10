@@ -1,0 +1,31 @@
+﻿# Lista de documentos de auditorÃ­a
+Generado: 2025-10-06 08:54
+
+Instrucciones: AÃ±ade nuevos documentos en 'scripts/documentos_auditoria_config.json'. Este listado se actualiza automÃ¡ticamente marcando el checkbox cuando el archivo existe.
+
+- [x] Screaming Frog - CSVs consolidados - ibiza villa/Documentos consolidados/exports_csv/*.csv (requerido)
+- [x] GSC - Páginas (últimos 30 días) - ibiza villa/Documentos consolidados/gsc/gsc_pages_last30.csv (requerido)
+- [x] GSC - Consultas (últimos 30 días) - ibiza villa/Documentos consolidados/gsc/gsc_queries_last30.csv (requerido)
+- [x] GSC - Páginas por dispositivo (últimos 30 días) - ibiza villa/Documentos consolidados/gsc/gsc_pages_by_device_last30.csv (requerido)
+- [x] GSC - Páginas por país (últimos 30 días) - ibiza villa/Documentos consolidados/gsc/gsc_pages_by_country_last30.csv (requerido)
+- [x] GSC - Consultas por dispositivo (últimos 30 días) - ibiza villa/Documentos consolidados/gsc/gsc_queries_by_device_last30.csv (requerido)
+- [x] GSC - Consultas por país (últimos 30 días) - ibiza villa/Documentos consolidados/gsc/gsc_queries_by_country_last30.csv (requerido)
+- [x] GA4 - PageViews por pagePath (últimos 30 días) - ibiza villa/Documentos consolidados/ga4/ga4_pageviews_last30.csv (requerido)
+- [x] GA4 - PageViews por pagePath y dispositivo (últimos 30 días) - ibiza villa/Documentos consolidados/ga4/ga4_pageviews_by_device_last30.csv (requerido)
+- [x] GA4 - PageViews por pagePath y país (últimos 30 días) - ibiza villa/Documentos consolidados/ga4/ga4_pageviews_by_country_last30.csv (requerido)
+- [x] GSC - Overview (JSON) - ibiza villa/Documentos consolidados/gsc/gsc_overview.json (opcional)
+- [x] GA4 - Active/New Users (JSON) - ibiza villa/Documentos consolidados/ga4/ga4_active_users_overview.json (opcional)
+- [x] GA4 - Pages sample (CSV) - ibiza villa/Documentos consolidados/ga4/ga4_pages_sample.csv (opcional)
+- [x] README capturas iniciales - ibiza villa/Documentos consolidados/README_capturas_iniciales.md (opcional)
+- [x] Logs de servidor - Access (últimos 30 días) - ibiza villa/Documentos consolidados/logs/access/* (requerido)
+- [x] Logs de servidor - Error (últimos 30 días) - ibiza villa/Documentos consolidados/logs/error/* (requerido)
+- [x] Ahrefs - Backlinks - ibiza villa/Documentos consolidados/ahrefs/backlinks.csv (requerido)
+- [x] Ahrefs - Anchors - ibiza villa/Documentos consolidados/ahrefs/anchors.csv (requerido)
+- [x] Ahrefs - Referring Domains - ibiza villa/Documentos consolidados/ahrefs/referring_domains.csv (requerido)
+- [x] Ahrefs - Organic Keywords - ibiza villa/Documentos consolidados/ahrefs/organic_keywords.csv (requerido)
+- [x] Ahrefs - Top Pages - ibiza villa/Documentos consolidados/ahrefs/top_pages.csv (requerido)
+- [x] Sitemaps descargados - ibiza villa/Documentos consolidados/sitemaps/*.xml (opcional)
+- [x] Listado de redirecciones - ibiza villa/Documentos consolidados/redirects/redirects.csv (requerido)
+- [x] robots.txt (copia) - ibiza villa/Documentos consolidados/robots.txt (opcional)
+- [x] GA4 - PageViews por pagePath y dispositivo (últimos 365 días) - ibiza villa/Documentos consolidados/ga4/ga4_pageviews_by_device_last365_full.csv (requerido)
+- [x] GA4 - PageViews por pagePath y país (últimos 365 días) - ibiza villa/Documentos consolidados/ga4/ga4_pageviews_by_country_last365_full.csv (requerido)

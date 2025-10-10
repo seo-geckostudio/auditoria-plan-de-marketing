@@ -1,0 +1,47 @@
+version: 1
+description: Reglas para excluir términos que representen propiedades específicas o ruido.
+
+patterns:
+  # Identificadores y códigos de propiedad
+  - "(?i)(ref|id|listing|propiedad|codigo|cod|expediente|ficha)"
+  - "(?i)villa\s*[0-9]+"
+  - "(?i)(lote|parcel[aá]|parcela)\s*[0-9]+"
+
+  # Direcciones y elementos de calle
+  - "(?i)(calle|avenida|av\.|carretera|km|kilometro|urbanizacion|urb\.|bloque|portal)"
+  - "(?i)km\s*[0-9]+"
+
+  # Ruido comercial no orientado a intención de búsqueda
+  - "(?i)(precio|oferta|rebaja|€|eur|usd)"
+  - "(?i)(airbnb|booking|vrbo|expedia)"
+
+  # Tokens numéricos sin contexto
+  - "^[0-9]+(\s*(hab|bed|habitaciones))?$"
+
+include_categories:
+  - pilares
+  - localidades
+  - amenities
+  - servicios
+
+category_hints:
+  pilares:
+    - "(?i)(alquiler|renta)\s+(villas|villa)\s+ibiza"
+    - "(?i)ibiza\s+(villas|villa)"
+    - "(?i)(luxury|lujo)\s+(villas|villa)\s+ibiza"
+  localidades:
+    - "(?i)sant josep"
+    - "(?i)santa eul[àa]ria"
+    - "(?i)san antonio|sant antoni"
+    - "(?i)ibiza ciudad|eivissa"
+    - "(?i)es cubells|cala tarida|cala bassa|cala llonga|cala comte"
+  amenities:
+    - "(?i)piscina privada|frente al mar|vista al mar|aire acondicionado|parking"
+    - "(?i)barbacoa|jard[íi]n|terraza|wifi"
+  servicios:
+    - "(?i)limpieza|housekeeping|chef privado|transfer|conserjer[íi]a"
+
+notes:
+  - Estas reglas se aplican para filtrar ideas del Keyword Planner.
+  - Los patrones son regex compatibles con motores PCRE/RE2; ajustar si es necesario.
+  - Se pueden añadir marcas específicas o términos que identifiquen propiedades concretas.

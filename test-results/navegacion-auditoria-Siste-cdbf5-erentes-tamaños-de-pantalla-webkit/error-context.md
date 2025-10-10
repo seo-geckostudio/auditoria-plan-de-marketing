@@ -1,0 +1,97 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - text:        
+  - main [ref=e4]:
+    - generic [ref=e5]:
+      - navigation "breadcrumb" [ref=e6]:
+        - list [ref=e7]:
+          - listitem [ref=e8]:
+            - link " Inicio" [ref=e9]:
+              - /url: "?modulo=dashboard"
+              - generic [ref=e10]: 
+              - text: Inicio
+      - generic [ref=e11]:
+        - button " Exportar" [ref=e13] [cursor=pointer]:
+          - generic [ref=e14] [cursor=pointer]: 
+          - text: Exportar
+        - button "+ Nuevo" [ref=e15] [cursor=pointer]:
+          - generic [ref=e16] [cursor=pointer]: +
+          - text: Nuevo
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - generic [ref=e24]: Total Auditorías
+            - generic [ref=e25]: "0"
+          - generic [ref=e27]: 
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - generic [ref=e33]: Auditorías Completadas
+            - generic [ref=e34]: "0"
+          - generic [ref=e36]: 
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - generic [ref=e42]: Progreso Promedio
+            - generic [ref=e43]:
+              - generic [ref=e45]: 0.0%
+              - generic [ref=e47]:
+                - progressbar
+          - generic [ref=e49]: 
+        - generic [ref=e53]:
+          - generic [ref=e54]:
+            - generic [ref=e55]: Pasos Críticos Pendientes
+            - generic [ref=e56]: "0"
+          - generic [ref=e58]: 
+      - generic [ref=e59]:
+        - generic [ref=e62]:
+          - heading " Progreso de Auditorías Activas" [level=6] [ref=e63]:
+            - generic [ref=e64]: 
+            - text: Progreso de Auditorías Activas
+          - button "" [ref=e66] [cursor=pointer]:
+            - generic [ref=e67] [cursor=pointer]: 
+        - generic [ref=e72]:
+          - heading " Estados de Auditorías" [level=6] [ref=e74]:
+            - generic [ref=e75]: 
+            - text: Estados de Auditorías
+          - generic [ref=e79]:
+            - generic [ref=e80]:
+              - generic [ref=e81]: 
+              - text: Activas
+            - generic [ref=e82]:
+              - generic [ref=e83]: 
+              - text: Completadas
+            - generic [ref=e84]:
+              - generic [ref=e85]: 
+              - text: Pausadas
+            - generic [ref=e86]:
+              - generic [ref=e87]: 
+              - text: Pendientes
+      - generic [ref=e88]:
+        - generic [ref=e90]:
+          - heading " Auditorías Recientes" [level=6] [ref=e92]:
+            - generic [ref=e93]: 
+            - text: Auditorías Recientes
+          - generic [ref=e95]:
+            - generic [ref=e96]: 
+            - paragraph [ref=e97]: No hay auditorías recientes
+            - link "+ Crear Primera Auditoría" [ref=e98] [cursor=pointer]:
+              - /url: "?modulo=auditorias&accion=crear"
+              - generic [ref=e99] [cursor=pointer]: +
+              - text: Crear Primera Auditoría
+        - generic [ref=e101]:
+          - heading " Pasos Críticos Pendientes" [level=6] [ref=e103]:
+            - generic [ref=e104]: 
+            - text: Pasos Críticos Pendientes
+          - generic [ref=e106]:
+            - generic [ref=e107]: 
+            - paragraph [ref=e108]: ¡Excelente! No hay pasos críticos pendientes
+      - generic [ref=e111]:
+        - heading " Actividad Reciente" [level=6] [ref=e113]:
+          - generic [ref=e114]: 
+          - text: Actividad Reciente
+        - generic [ref=e116]:
+          - generic [ref=e117]: 
+          - paragraph [ref=e118]: No hay actividad reciente
+```
