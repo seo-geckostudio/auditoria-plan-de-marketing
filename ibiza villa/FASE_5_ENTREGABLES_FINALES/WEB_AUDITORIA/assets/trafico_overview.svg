@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <defs>
+    <style>
+      .title { font: 700 24px 'Segoe UI', sans-serif; fill: #1f2937; }
+      .subtitle { font: 600 16px 'Segoe UI', sans-serif; fill: #6b7280; }
+      .label { font: 600 14px 'Segoe UI', sans-serif; fill: #374151; }
+      .value { font: 700 14px 'Segoe UI', sans-serif; fill: #111827; }
+      .axis { stroke: #9ca3af; stroke-width: 2; }
+      .grid { stroke: #e5e7eb; stroke-width: 1; }
+      .bar { rx: 6; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="960" height="540" fill="#ffffff"/>
+
+  <!-- Header -->
+  <text class="title" x="40" y="50">Visión general del tráfico web</text>
+  <text class="subtitle" x="40" y="78">Ibiza Villa — GA4 (últimos 12 meses)</text>
+
+  <!-- Legend -->
+  <rect x="40" y="100" width="14" height="14" fill="#3b82f6" rx="3"/>
+  <text class="label" x="62" y="112">Directo</text>
+  <rect x="140" y="100" width="14" height="14" fill="#10b981" rx="3"/>
+  <text class="label" x="162" y="112">Orgánico</text>
+  <rect x="260" y="100" width="14" height="14" fill="#f59e0b" rx="3"/>
+  <text class="label" x="282" y="112">Pago</text>
+  <rect x="360" y="100" width="14" height="14" fill="#6b7280" rx="3"/>
+  <text class="label" x="382" y="112">Referencia</text>
+
+  <!-- Axes -->
+  <line class="axis" x1="40" y1="470" x2="900" y2="470"/>
+  <line class="axis" x1="40" y1="150" x2="40" y2="470"/>
+
+  <!-- Gridlines -->
+  <line class="grid" x1="40" y1="430" x2="900" y2="430"/>
+  <line class="grid" x1="40" y1="390" x2="900" y2="390"/>
+  <line class="grid" x1="40" y1="350" x2="900" y2="350"/>
+  <line class="grid" x1="40" y1="310" x2="900" y2="310"/>
+  <line class="grid" x1="40" y1="270" x2="900" y2="270"/>
+  <line class="grid" x1="40" y1="230" x2="900" y2="230"/>
+
+  <!-- Bars (relative volumes) -->
+  <!-- Directo ~ 25% -->
+  <rect class="bar" x="120" y="270" width="120" height="200" fill="#3b82f6"/>
+  <text class="value" x="180" y="258" text-anchor="middle">25%</text>
+  <text class="label" x="180" y="490" text-anchor="middle">Directo</text>
+
+  <!-- Orgánico ~ 10% -->
+  <rect class="bar" x="300" y="370" width="120" height="100" fill="#10b981"/>
+  <text class="value" x="360" y="358" text-anchor="middle">10%</text>
+  <text class="label" x="360" y="490" text-anchor="middle">Orgánico</text>
+
+  <!-- Pago ~ 30% -->
+  <rect class="bar" x="480" y="230" width="120" height="240" fill="#f59e0b"/>
+  <text class="value" x="540" y="218" text-anchor="middle">30%</text>
+  <text class="label" x="540" y="490" text-anchor="middle">Pago</text>
+
+  <!-- Referencia ~ 20% -->
+  <rect class="bar" x="660" y="310" width="120" height="160" fill="#6b7280"/>
+  <text class="value" x="720" y="298" text-anchor="middle">20%</text>
+  <text class="label" x="720" y="490" text-anchor="middle">Referencia</text>
+
+  <!-- Notes -->
+  <text class="subtitle" x="40" y="520">Fuente: GA4 (estimaciones orientativas para maqueta visual)</text>
+</svg>

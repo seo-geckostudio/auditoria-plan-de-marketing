@@ -1,0 +1,1 @@
+usuario_id|i:1;usuario_nombre|s:13:"Administrador";usuario_email|s:22:"admin@auditoriaseo.com";usuario_rol|s:5:"admin";form_error|s:28:"Token de seguridad inválido";form_errores|a:0:{}csrf_token|s:64:"e84397ae4142818329e8b68e719b44c8f4a2fb97610a5bb8fe3c16feb048064b";

@@ -1,7 +1,7 @@
 {
   "name": "investigacionauditoria-programacion",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sistema web para gestión de auditorías SEO desarrollado en PHP con base de datos SQLite.",
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
@@ -14,15 +14,29 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.55.1",
+    "@playwright/test": "^1.56.0",
     "@types/node": "^24.5.2",
-    "playwright": "^1.55.1",
+    "playwright": "^1.56.0",
     "typescript": "^5.9.2"
   },
   "dependencies": {
     "@modelcontextprotocol/server-memory": "^2025.9.25",
     "@modelcontextprotocol/server-sequential-thinking": "^2025.7.1",
     "@playwright/mcp": "^0.0.40",
-    "@upstash/context7-mcp": "^1.0.20"
-  }
+    "@upstash/context7-mcp": "^1.0.20",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^17.2.3",
+    "googleapis": "^162.0.0"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seo-geckostudio/auditoria-plan-de-marketing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/seo-geckostudio/auditoria-plan-de-marketing/issues"
+  },
+  "homepage": "https://github.com/seo-geckostudio/auditoria-plan-de-marketing#readme"
 }

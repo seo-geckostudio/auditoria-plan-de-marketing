@@ -1,0 +1,17 @@
+Resumen Ejecutivo de la Auditoría SEO — Ibiza Villa
+
+Este resumen recoge los hallazgos clave de la auditoría técnica y de contenidos:
+
+- Indexación y rastreo: se detectan áreas con potencial de mejora en sitemaps y robots.
+- Arquitectura de información: oportunidades para simplificar rutas y reforzar enlazado interno.
+- Contenido: priorizar fichas con búsqueda transaccional y mejorar E-E-A-T.
+- Performance: optimizar imágenes y recursos críticos para LCP/CLS.
+- Analítica: verificar eventos clave en GA4 y cobertura de GSC.
+
+Recomendaciones inmediatas:
+- Corregir canonicals inconsistentes y revisar metadatos críticos.
+- Implementar esquema para propiedades y listados.
+- Activar un plan de contenidos por clusters priorizados.
+- Establecer métricas de éxito y cuadros de mando mensuales.
+
+Este documento es provisional y será reemplazado por la versión final tras la validación con el equipo.

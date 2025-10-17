@@ -1,0 +1,278 @@
+/**
+ * Estilos adicionales para el Sistema Modular
+ */
+
+/* Separadores de fase */
+.fase-separator {
+    page-break-before: always;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #54a34a 0%, #6ab85e 100%);
+    color: white;
+    text-align: center;
+    padding: 60px 40px;
+}
+
+.fase-separator h1 {
+    font-size: 4em;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.fase-separator h2 {
+    font-size: 2.5em;
+    font-weight: 400;
+    margin: 30px 0 0 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.fase-separator p {
+    margin-top: 30px;
+    font-size: 1.3em;
+    opacity: 0.95;
+}
+
+/* Badge del sistema modular */
+.system-badge {
+    background: rgba(84, 163, 74, 0.1);
+    border: 1px solid rgba(84, 163, 74, 0.3);
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    color: #54a34a;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Índice mejorado */
+.index-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.index-section {
+    margin-bottom: 48px;
+}
+
+.index-section-title {
+    font-size: 1.8em;
+    color: #54a34a;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #54a34a;
+}
+
+.index-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.index-item {
+    margin-bottom: 8px;
+}
+
+.index-item a {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.2s ease;
+    gap: 16px;
+}
+
+.index-item a:hover {
+    background: #54a34a;
+    color: white;
+    transform: translateX(8px);
+    box-shadow: 0 2px 8px rgba(84, 163, 74, 0.3);
+}
+
+.index-number {
+    font-family: monospace;
+    font-weight: 700;
+    color: #54a34a;
+    background: white;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    min-width: 60px;
+    text-align: center;
+}
+
+.index-item a:hover .index-number {
+    color: white;
+    background: rgba(255,255,255,0.2);
+}
+
+.index-title {
+    flex: 1;
+    font-weight: 500;
+}
+
+.index-pages {
+    font-size: 0.85em;
+    color: #999;
+    font-weight: 400;
+}
+
+.index-item a:hover .index-pages {
+    color: rgba(255,255,255,0.8);
+}
+
+/* Panel de administración mejorado */
+.admin-panel {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 400px;
+    background: white;
+    border: 2px solid #54a34a;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    z-index: 10000;
+    overflow: hidden;
+}
+
+.admin-header {
+    background: linear-gradient(135deg, #54a34a 0%, #6ab85e 100%);
+    color: white;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-header h3 {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.admin-close {
+    background: rgba(255,255,255,0.2);
+    border: none;
+    color: white;
+    font-size: 24px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.admin-close:hover {
+    background: rgba(255,255,255,0.3);
+    transform: rotate(90deg);
+}
+
+.admin-body {
+    padding: 20px;
+}
+
+.admin-stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border-left: 4px solid #54a34a;
+}
+
+.stat-item strong {
+    color: #333;
+}
+
+.stat-item span {
+    font-weight: 700;
+    color: #54a34a;
+}
+
+.admin-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.btn-admin {
+    display: block;
+    padding: 10px 16px;
+    background: #54a34a;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn-admin:hover {
+    background: #6ab85e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(84, 163, 74, 0.3);
+}
+
+/* Enlace a versión estática en sidebar */
+.nav-link-static {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.nav-link-static:hover {
+    background: rgba(84, 163, 74, 0.1);
+    color: #54a34a !important;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .admin-panel {
+        width: calc(100% - 40px);
+        right: 20px;
+        left: 20px;
+    }
+
+    .fase-separator h1 {
+        font-size: 2.5em;
+    }
+
+    .fase-separator h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* Impresión */
+@media print {
+    .admin-panel {
+        display: none !important;
+    }
+
+    .fase-separator {
+        min-height: 100vh;
+        page-break-before: always;
+        page-break-after: always;
+    }
+
+    .nav-link-static {
+        display: none;
+    }
+}

@@ -7,6 +7,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/print.css" media="print" />
+  <link rel="stylesheet" href="css/admin-panel.css" />
+  <!-- Chart.js para gráficas profesionales -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <!-- Sistema de carga de datos -->
+  <script defer src="js/data-loader.js"></script>
+  <!-- Sistema de detección de imágenes faltantes -->
+  <script defer src="js/image-checker.js"></script>
+  <script defer src="js/admin-panel.js"></script>
   <script defer src="js/app.js"></script>
 </head>
 <body>
@@ -198,7 +206,7 @@
 
   <main class="content">
 
-        <section id="portada" class="audit-page cover-page" data-page-number="1" data-source="Integrado">
+<section id="portada" class="audit-page cover-page" data-page-number="1" data-source="Integrado">
             <div class="cover-content">
                 <div class="company-logo">
                     <div class="logo-placeholder">
@@ -242,7 +250,7 @@
             </div>
         </section>
 
-        <section id="indice" class="audit-page index-page" data-page-number="2" data-source="Integrado">
+<section id="indice" class="audit-page index-page" data-page-number="2" data-source="Integrado">
             <div class="page-content">
                 <h1>Índice de Contenidos</h1>
                 <p class="subtitle">Auditoría SEO Técnica — Ibiza Villa</p>
@@ -290,10 +298,7 @@
             </div>
         </section>
 
-        <!-- PORTADAS INTERIORES DE SECCIONES -->
-        
-        <!-- Portada Sección 1: Análisis Situación Actual -->
-        <section id="seccion-situacion-actual" class="audit-page section-cover" data-page-number="section-1" data-source="Integrado">
+<section id="seccion-situacion-actual" class="audit-page section-cover" data-page-number="section-1" data-source="Integrado">
             <div class="section-cover-content">
                 <div class="section-number">01</div>
                 <h1 class="section-cover-title">Análisis Situación Actual</h1>
@@ -324,103 +329,7 @@
             </div>
         </section>
 
-        <!-- Portada Sección 2: Análisis Demanda -->
-        <section id="seccion-demanda" class="audit-page section-cover" data-page-number="section-2" data-source="Integrado">
-            <div class="section-cover-content">
-                <div class="section-number">02</div>
-                <h1 class="section-cover-title">Análisis Demanda</h1>
-                <p class="section-cover-description">Investigación exhaustiva de palabras clave, análisis de la demanda del mercado y identificación de oportunidades de posicionamiento.</p>
-                
-                <div class="section-index">
-                    <h3>Contenidos de esta sección:</h3>
-                    <ul class="section-index-list">
-                        <li><a href="#pagina-020">Keyword Research</a></li>
-                        <li><a href="#pagina-021">Keyword Research - Análisis de Palabras</a></li>
-                        <li><a href="#pagina-022">Keyword Research - Análisis de Palabras</a></li>
-                        <li><a href="#pagina-023">Ranking Keywords Transaccionales</a></li>
-                        <li><a href="#pagina-024">Conclusiones Keyword Research</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Portada Sección 3: SEO On-Page -->
-        <section id="seccion-seo-onpage" class="audit-page section-cover" data-page-number="section-3" data-source="Integrado">
-            <div class="section-cover-content">
-                <div class="section-number">03</div>
-                <h1 class="section-cover-title">Análisis SEO On-Page</h1>
-                <p class="section-cover-description">Análisis técnico completo de la optimización interna del sitio web, incluyendo arquitectura, contenido, meta tags y elementos técnicos.</p>
-                
-                <div class="section-index">
-                    <h3>Contenidos de esta sección:</h3>
-                    <ul class="section-index-list">
-                        <li><a href="#pagina-025">SEO On-Page</a></li>
-                        <li><a href="#pagina-026">Arquitectura SEO</a></li>
-                        <li><a href="#pagina-027">Arquitectura SEO Transaccional</a></li>
-                        <li><a href="#pagina-028">Optimización URLs</a></li>
-                        <li><a href="#pagina-029">Enlazado interno</a></li>
-                        <li><a href="#pagina-030">Estructura de Encabezados</a></li>
-                        <li><a href="#pagina-031">Contenido</a></li>
-                        <li><a href="#pagina-032">Canibalizaciones</a></li>
-                        <li><a href="#pagina-033">Meta Tags</a></li>
-                        <li><a href="#pagina-034">Imágenes</a></li>
-                        <li><a href="#pagina-035">Datos Estructurados</a></li>
-                        <li><a href="#pagina-036">Rich Snippets</a></li>
-                        <li><a href="#pagina-037">Idiomas</a></li>
-                        <li><a href="#pagina-038">Accesibilidad</a></li>
-                        <li><a href="#pagina-039">Indexabilidad</a></li>
-                        <li><a href="#pagina-040">Mobile Optimization</a></li>
-                        <li><a href="#pagina-041">Optimización de Velocidad</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Portada Sección 4: SEO Off-Page -->
-        <section id="seccion-seo-offpage" class="audit-page section-cover" data-page-number="section-4" data-source="Integrado">
-            <div class="section-cover-content">
-                <div class="section-number">04</div>
-                <h1 class="section-cover-title">Análisis SEO Off-Page</h1>
-                <p class="section-cover-description">Evaluación del perfil de enlaces externos, autoridad de dominio y estrategias de construcción de enlaces para mejorar la autoridad del sitio.</p>
-                
-                <div class="section-index">
-                    <h3>Contenidos de esta sección:</h3>
-                    <ul class="section-index-list">
-                        <li><a href="#pagina-042">SEO Off-Page</a></li>
-                        <li><a href="#pagina-043">Perfil de enlaces</a></li>
-                        <li><a href="#pagina-044">Dominios Referidos</a></li>
-                        <li><a href="#pagina-045">Fuerza de Dominio</a></li>
-                        <li><a href="#pagina-046">Dominios SPAM</a></li>
-                        <li><a href="#pagina-047">Origen Enlaces</a></li>
-                        <li><a href="#pagina-048">Enlaces rotos</a></li>
-                        <li><a href="#pagina-049">Texto de ancla</a></li>
-                        <li><a href="#pagina-050">Dominios perdidos</a></li>
-                        <li><a href="#pagina-051">Anchor Text en Dominios Entrantes</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Portada Sección 5: Priorización de Tareas -->
-        <section id="seccion-priorizacion" class="audit-page section-cover" data-page-number="section-5" data-source="Integrado">
-            <div class="section-cover-content">
-                <div class="section-number">05</div>
-                <h1 class="section-cover-title">Priorización de Tareas</h1>
-                <p class="section-cover-description">Plan de acción estratégico con tareas priorizadas por impacto y esfuerzo, incluyendo estimaciones de tiempo y recursos necesarios.</p>
-                
-                <div class="section-index">
-                    <h3>Contenidos de esta sección:</h3>
-                    <ul class="section-index-list">
-                        <li><a href="#pagina-130">Tareas Auditoría</a></li>
-                        <li><a href="#pagina-131">Prioridad de las tareas</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-
-
-        <section id="pagina-003" class="audit-page project-description-page" data-page-number="3" data-source="Análisis Manual">
+<section id="pagina-003" class="audit-page project-description-page" data-page-number="3" data-source="Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Descripción del Proyecto</h2>
                 <h3 class="page-subtitle">Ibiza Villa - Análisis SEO Técnico</h3>
@@ -522,19 +431,19 @@
             </div>
         </section>
 
-        <section id="pagina-004" class="audit-page" data-page-number="6" data-source="GA4, Ahrefs">
-            <div class="page-header">
-                <h2 class="page-title">Análisis de Tráfico Web</h2>
-                <h3 class="page-subtitle">Ibiza Villa - Métricas Principales</h3>
-            </div>
-            <div class="page-content">
-                <div class="audit-image">
-                    <img src="analisis_pdf_auditoria/Diapositiva6.JPG" alt="Análisis de Tráfico Web - Ibiza Villa" class="page-image">
-                </div>
-                <div class="content-analysis">
-                    <h4>Resumen de Tráfico Web</h4>
-                    <ul class='audit-bullets'>
-                        <li><strong>Sector:</strong> Alquiler de villas de lujo en Ibiza</li>
+<section id="pagina-004" class="audit-page" data-page-number="6" data-source="GA4, Ahrefs">
+      <div class="page-header">
+          <h2 class="page-title">Análisis de Tráfico Web</h2>
+          <h3 class="page-subtitle">Ibiza Villa - Métricas Principales</h3>
+      </div>
+      <div class="page-content">
+          <div class="audit-image">
+              <img src="assets/trafico_overview.svg" alt="Visión general del tráfico web" class="page-image">
+          </div>
+          <div class="content-analysis">
+              <h4>Resumen de Tráfico Web</h4>
+              <ul class='audit-bullets'>
+                  <li><strong>Sector:</strong> Alquiler de villas de lujo en Ibiza</li>
                         <li><strong>Mercado objetivo:</strong> Turismo premium internacional</li>
                         <li><strong>Temporada alta:</strong> Mayo - Octubre</li>
                         <li><strong>Países principales:</strong> Reino Unido, Estados Unidos, España</li>
@@ -557,188 +466,332 @@
                                 <span class="metric-value">3:20 min</span>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="page-placeholder">
-                    <p class="data-source">Fuente: GA4, Ahrefs</p>
-                </div>
-            </div>
-        </section>
+              </div>
+          </div>
+          <div class="page-placeholder">
+              <p class="data-source">Fuente: GA4, Ahrefs</p>
+          </div>
+      </div>
+      <div class="page-footer">
+          <p class="data-source">Fuente: GA4, Ahrefs</p>
+      </div>
+  </section>
 
-        <section id="pagina-005" class="audit-page" data-page-number="7" data-source="GA4">
-            <div class="page-header">
-                <h2 class="page-title">Configuración de Analítica Web</h2>
-                <h3 class="page-subtitle">Google Analytics 4 - Ibiza Villa</h3>
-            </div>
-            <div class="page-content">
-                <div class="audit-image">
-                    <img src="analisis_pdf_auditoria/Diapositiva7.JPG" alt="Configuración de Analítica Web - Ibiza Villa" class="page-image">
-                </div>
-                <div class="content-analysis">
-                    <h4>Estado de la Implementación</h4>
-                    <ul class='audit-bullets'>
-                        <li><strong>Google Analytics 4:</strong> Correctamente implementado</li>
-                        <li><strong>Google Tag Manager:</strong> Configurado y funcionando</li>
-                        <li><strong>Eventos de conversión:</strong> Configurados para formularios de contacto</li>
-                        <li><strong>Seguimiento de reservas:</strong> Implementado</li>
-                        <li><strong>Objetivos definidos:</strong> Consultas de disponibilidad, solicitudes de información</li>
+<section id="pagina-005" class="audit-page" data-page-number="7" data-source="GA4, GTM">
+      <div class="page-header">
+          <h2 class="page-title">Configuración de Analítica Web</h2>
+          <h3 class="page-subtitle">Google Analytics 4 - Ibiza Villa</h3>
+      </div>
+      <div class="page-content">
+          <div class="audit-image">
+              <img src="assets/ga4_setup.svg" alt="Configuración de Analítica Web — GA4 y GTM" class="page-image">
+          </div>
+          <div class="content-analysis">
+              <h4>Estado de la Implementación</h4>
+              <ul class='audit-bullets'>
+                        <li><strong>Google Analytics 4:</strong> Etiqueta activa en todas las páginas</li>
+                        <li><strong>Google Tag Manager:</strong> Contenedor publicado y operativo</li>
+                        <li><strong>Eventos clave (GA4):</strong> contact_submit, phone_click, availability_check</li>
+                        <li><strong>Medición de reservas:</strong> Conversión y valor configurados</li>
+                        <li><strong>Consent Mode:</strong> Integrado y respetando preferencias del usuario</li>
                     </ul>
                     
                     <div class="analytics-setup">
                         <h5>Configuraciones Clave</h5>
                         <div class="setup-items">
                             <div class="setup-item">
-                                <strong>Propiedad GA4:</strong> Configurada para el dominio principal
+                                <strong>Propiedad GA4:</strong> Configurada para el dominio principal y subdominios
                             </div>
                             <div class="setup-item">
-                                <strong>Conversiones:</strong> Formulario de contacto, llamadas telefónicas
+                                <strong>Conversiones:</strong> Formulario de contacto, llamadas telefónicas, solicitudes de disponibilidad
                             </div>
                             <div class="setup-item">
-                                <strong>Audiencias:</strong> Segmentación por país y dispositivo
+                                <strong>Audiencias:</strong> Segmentación por país, dispositivo y tipo de usuario (nuevo/recurrente)
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="page-placeholder">
-                    <p class="data-source">Fuente: GA4</p>
-                </div>
-            </div>
-        </section>
+                            <div class="setup-item">
+                                <strong>UTM:</strong> Estandarizadas para campañas (source/medium/campaign)
+                            </div>
+                            <div class="setup-item">
+                                <strong>GTM:</strong> Variables y activadores alineados con eventos GA4
+                            </div>
+                  </div>
+              </div>
+          </div>
+          <div class="page-placeholder">
+              <p class="data-source">Fuente: GA4, GTM</p>
+          </div>
+      </div>
+      <!-- Footer dinámico generado por app.js a partir de data-source -->
+  </section>
 
-        <section id="pagina-006" class="audit-page" data-page-number="8" data-source="GA4">
+<section id="pagina-006" class="audit-page" data-page-number="8" data-source="GA4">
             <div class="page-header">
                 <h2 class="page-title">Canales de Captación de Tráfico Históricos</h2>
-                <h3 class="page-subtitle">➔ El canal quecapta más tráfico es el de Pago (30%), seguidodel tráfico Directo ...</h3>
+                <h3 class="page-subtitle">Distribución de sesiones e ingresos por canal</h3>
             </div>
             <div class="page-content">
-                <ul class='audit-bullets'><li>➔ El canal quecapta más tráfico es el de Pago (30%), seguidodel tráfico Directo (25,2%).</li><li>➔ El canal Orgánico se sitúa captaun 10% pero genera un 12,5% de los ingresos.</li><li>captaciónpor el volumende demandaque hemos visto en el Keyword Reseach.</li><li>*FUENTE DE DATOS GOOGLE ANALYTICS 4</li></ul>
-                <div class="page-placeholder">
-                    <p class="placeholder-text">Contenido detallado de la página 8</p>
-                    <p class="data-source">Fuente: GA4</p>
+                <div class="analytics-summary">
+                    <h4>Resumen</h4>
+                    <p>El canal de Pago lidera en sesiones históricas, seguido del Directo y Orgánico. Aunque Orgánico aporta menor volumen, su contribución a ingresos es superior a su peso en sesiones, lo que indica eficiencia en intención y calidad del tráfico.</p>
+                    <div class="chart-container" style="height:260px">
+                        <canvas id="chart-channels"></canvas>
+                    </div>
+                    <h5>Distribución estimada</h5>
+                    <table class="report-table">
+                        <thead>
+                            <tr>
+                                <th>Canal</th>
+                                <th>Sesiones</th>
+                                <th>% Sesiones</th>
+                                <th>% Ingresos</th>
+                                <th>Observaciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-channels-body"></tbody>
+                    </table>
+                    <h5>Recomendaciones</h5>
+                    <ul class="audit-bullets">
+                        <li>Reducir dependencia de Pago mediante crecimiento Orgánico.</li>
+                        <li>Optimizar campañas de Paid con UTM y audiencias de alto valor.</li>
+                        <li>Fortalecer contenido transaccional para captación de keywords clave.</li>
+                    </ul>
                 </div>
+                <div class="page-footer"><span class="data-source">Fuente: GA4</span></div>
             </div>
         </section>
 
-        <section id="pagina-007" class="audit-page" data-page-number="9" data-source="GA4">
+<section id="pagina-007" class="audit-page" data-page-number="9" data-source="GA4">
             <div class="page-header">
                 <h2 class="page-title">Tráfico Orgánico Histórico</h2>
-                <h3 class="page-subtitle">tráficoque no se corresponde con la estacionalidaddel proyecto</h3>
+                <h3 class="page-subtitle">Evolución de sesiones, conversiones e ingresos</h3>
             </div>
             <div class="page-content">
-                <ul class='audit-bullets'><li>tráficoque no se corresponde con la estacionalidaddel proyecto</li><li>de 37.359$.</li><li>*FUENTE DE DATOS GOOGLE ANALYTICS 4</li><li>➔ El ratio de conversión del tráficoSEO es del 1,77%.</li><li>valor: 666</li></ul>
-                <div class="page-placeholder">
-                    <p class="placeholder-text">Contenido detallado de la página 9</p>
-                    <p class="data-source">Fuente: GA4</p>
+                <div class="analytics-summary">
+                    <h4>Tendencia</h4>
+                    <p>El tráfico orgánico muestra picos en temporada alta y una tendencia estable con crecimiento leve en el último año. El ratio de conversión orgánico se mantiene competitivo respecto a otros canales.</p>
+                    <div class="chart-container" style="height:260px">
+                        <canvas id="chart-organic-historical"></canvas>
+                    </div>
+                    <div class="kpi-grid">
+                        <div class="kpi-item"><strong>Sesiones YoY:</strong> ↑ ligera</div>
+                        <div class="kpi-item"><strong>Conversiones YoY:</strong> ↑ moderada</div>
+                        <div class="kpi-item"><strong>Ingresos YoY:</strong> ↑ moderada</div>
+                        <div class="kpi-item"><strong>CR orgánico:</strong> ≈1.7%</div>
+                    </div>
+                    <h5>Insights</h5>
+                    <ul class="audit-bullets">
+                        <li>Estacionalidad marcada, alineada con periodos vacacionales.</li>
+                        <li>Mayor rendimiento en mercados con alta demanda (US/UK).</li>
+                        <li>Necesario reforzar categorías con potencial de reservas.</li>
+                    </ul>
                 </div>
+                <div class="page-footer"><span class="data-source">Fuente: GA4</span></div>
             </div>
         </section>
 
-        <section id="pagina-008" class="audit-page" data-page-number="10" data-source="GA4">
+<section id="pagina-008" class="audit-page" data-page-number="10" data-source="GA4">
             <div class="page-header">
                 <h2 class="page-title">Captación de Tráfico Orgánico</h2>
-                <h3 class="page-subtitle">En esta tabla se muestran las páginas que más tráfico</h3>
+                <h3 class="page-subtitle">Páginas destino que captan mayor volumen</h3>
             </div>
             <div class="page-content">
-                <ul class='audit-bullets'><li>En esta tabla se muestran las páginas que más tráfico</li><li>orgánico han captado desde que se registran datos</li><li>(Septiembre 2023)</li><li>Observamos que:</li><li>➔ La mayor parte del tráfico orgánico llega a la home</li></ul>
-                <div class="page-placeholder">
-                    <p class="placeholder-text">Contenido detallado de la página 10</p>
-                    <p class="data-source">Fuente: GA4</p>
+                <div class="landing-pages">
+                    <h4>Top Landing Pages (Orgánico)</h4>
+                    <div class="chart-container" style="height:260px">
+                        <canvas id="chart-landing-pages"></canvas>
+                    </div>
+                    <table class="report-table">
+                        <thead>
+                            <tr>
+                                <th>Página</th>
+                                <th>Rol</th>
+                                <th>Observaciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-landing-pages-body"></tbody>
+                    </table>
+                    <h5>Acciones sugeridas</h5>
+                    <ul class="audit-bullets">
+                        <li>Optimizar titles y H2s en páginas con alto tráfico.</li>
+                        <li>Mejorar CTAs y módulos de reserva en categorías.</li>
+                        <li>Crear enlaces internos desde contenidos informativos.</li>
+                    </ul>
                 </div>
+                <div class="page-footer"><span class="data-source">Fuente: GA4</span></div>
             </div>
         </section>
 
         <section id="pagina-009" class="audit-page" data-page-number="11" data-source="GA4">
             <div class="page-header">
                 <h2 class="page-title">Comparativa Tráfico Orgánico YoY</h2>
-                <h3 class="page-subtitle">Gráfico tráfico orgánico último año vs año anterior</h3>
+                <h3 class="page-subtitle">Evolución interanual de sesiones e ingresos</h3>
             </div>
             <div class="page-content">
-                <ul class='audit-bullets'><li>Gráfico tráfico orgánico último año vs año anterior</li><li>Tabla tráfico orgánico último año vs año anterior</li><li>➔ Interpretaciónde los datos de tráfico</li><li>➔ Interpretaciónde los datos de conversiones</li><li>Plantilla para</li></ul>
-                <div class="page-placeholder">
-                    <p class="placeholder-text">Contenido detallado de la página 11</p>
-                    <p class="data-source">Fuente: GA4</p>
+                <div class="yoy-comparison">
+                    <h4>Resumen YoY</h4>
+                    <p>Las sesiones orgánicas presentan ligera mejora respecto al año anterior, con ingresos creciendo a un ritmo mayor por optimización en páginas transaccionales.</p>
+                    <div class="kpi-grid">
+                        <div class="kpi-item"><strong>Sesiones YoY:</strong> ↑</div>
+                        <div class="kpi-item"><strong>Ingresos YoY:</strong> ↑↑</div>
+                        <div class="kpi-item"><strong>CR YoY:</strong> ↑ leve</div>
+                    </div>
+                    <div class="chart-container" style="height:260px">
+                        <canvas id="chart-yoy-sessions"></canvas>
+                    </div>
+                    <h5>Interpretación</h5>
+                    <ul class="audit-bullets">
+                        <li>Mejoras en arquitectura y contenidos impactan en conversiones.</li>
+                        <li>Necesario seguir reforzando países con mayor demanda.</li>
+                    </ul>
                 </div>
+                <div class="page-footer"><span class="data-source">Fuente: GA4</span></div>
             </div>
         </section>
 
-        <section id="pagina-010" class="audit-page" data-page-number="12" data-source="GA4">
+<section id="pagina-010" class="audit-page" data-page-number="12" data-source="GA4">
             <div class="page-header">
                 <h2 class="page-title">Ranking de Países por tráfico orgánico</h2>
-                <h3 class="page-subtitle">➔ El país que captamás tráficoorgánico es EstadosUnidos, seguido de Reino Unido.</h3>
+                <h3 class="page-subtitle">Distribución por mercados</h3>
             </div>
             <div class="page-content">
-                <ul class='audit-bullets'><li>➔ El país que captamás tráficoorgánico es EstadosUnidos, seguido de Reino Unido.</li><li>➔ Los países quele siguenson Españay Emiratos Árabes Unidos.</li><li>adecuado.</li><li>*FUENTE DE DATOS GOOGLE ANALYTICS 4</li></ul>
-                <div class="page-placeholder">
-                    <p class="placeholder-text">Contenido detallado de la página 12</p>
-                    <p class="data-source">Fuente: GA4</p>
+                <div class="country-ranking">
+                    <h4>Top países (Orgánico)</h4>
+                    <div class="chart-container" style="height:260px">
+                        <canvas id="chart-countries"></canvas>
+                    </div>
+                    <table class="report-table">
+                        <thead>
+                            <tr>
+                                <th>País</th>
+                                <th>Rol</th>
+                                <th>Observaciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-countries-body"></tbody>
+                    </table>
                 </div>
+                <div class="page-footer"><span class="data-source">Fuente: GA4</span></div>
             </div>
         </section>
 
-        <section id="pagina-011" class="audit-page" data-page-number="13" data-source="GA4">
+<section id="pagina-011" class="audit-page" data-page-number="13" data-source="GA4">
             <div class="page-header">
                 <h2 class="page-title">Ranking de dispositivos por tráfico orgánico</h2>
-                <h3 class="page-subtitle">de las conversiones y un 69% de los ingresos.</h3>
+                <h3 class="page-subtitle">Distribución por dispositivo</h3>
             </div>
             <div class="page-content">
-                <ul class='audit-bullets'><li>de las conversiones y un 69% de los ingresos.</li><li>Probablementese deba a un peor posicionamientoen Mobile por problemas de optimización.</li><li>➔ El tráfico de Tablet, como en la mayoría de proyectos, es prácticamenteirrelevante.</li><li>*FUENTE DE DATOS GOOGLE ANALYTICS 4</li></ul>
-                <div class="page-placeholder">
-                    <p class="placeholder-text">Contenido detallado de la página 13</p>
-                    <p class="data-source">Fuente: GA4</p>
+                <div class="device-ranking">
+                    <h4>Top dispositivos (Orgánico)</h4>
+                    <div class="chart-container" style="height:260px">
+                        <canvas id="chart-devices"></canvas>
+                    </div>
+                    <table class="report-table">
+                        <thead>
+                            <tr>
+                                <th>Dispositivo</th>
+                                <th>Observaciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-devices-body"></tbody>
+                    </table>
+                    <h5>Acciones</h5>
+                    <ul class="audit-bullets">
+                        <li>Optimizar Core Web Vitals en Mobile.</li>
+                        <li>Revisar CTAs y formularios para dispositivos táctiles.</li>
+                    </ul>
                 </div>
+                <div class="page-footer"><span class="data-source">Fuente: GA4</span></div>
             </div>
         </section>
 
-        <section id="pagina-012" class="audit-page" data-page-number="14" data-source="GA4, Ahrefs">
+<section id="pagina-012" class="audit-page" data-page-number="14" data-source="GA4, Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Ranking de buscadores por tráfico orgánico</h2>
-                <h3 class="page-subtitle">➔ El buscador quemás tráfico captaes Google con un 88,2% de las sesiones,seguido...</h3>
+                <h3 class="page-subtitle">Distribución por motor de búsqueda</h3>
             </div>
             <div class="page-content">
-                <ul class='audit-bullets'><li>➔ El buscador quemás tráfico captaes Google con un 88,2% de las sesiones,seguido por Bing un 8,8%.</li><li>de mercado es muy superior a Europa.</li><li>pocas visitas.</li><li>*FUENTE DE DATOS GOOGLE ANALYTICS 4</li></ul>
-                <div class="page-placeholder">
-                    <p class="placeholder-text">Contenido detallado de la página 14</p>
-                    <p class="data-source">Fuente: GA4, Ahrefs</p>
+                <div class="search-engines">
+                    <h4>Top buscadores (Orgánico)</h4>
+                    <div class="chart-container" style="height:260px">
+                        <canvas id="chart-search-engines"></canvas>
+                    </div>
+                    <table class="report-table">
+                        <thead>
+                            <tr>
+                                <th>Buscador</th>
+                                <th>Observaciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-search-engines-body"></tbody>
+                    </table>
                 </div>
+                <div class="page-footer"><span class="data-source">Fuente: GA4, Ahrefs</span></div>
             </div>
         </section>
 
         <section id="pagina-013" class="audit-page" data-page-number="15" data-source="GA4">
             <div class="page-header">
                 <h2 class="page-title">Conversiones Orgánicas Históricas</h2>
-                <h3 class="page-subtitle">marca.</h3>
+                <h3 class="page-subtitle">Evolución de conversiones e ingresos orgánicos</h3>
             </div>
             <div class="page-content">
-                <ul class='audit-bullets'><li>marca.</li><li>*FUENTE DE DATOS GOOGLE ANALYTICS 4</li></ul>
-                <div class="page-placeholder">
-                    <p class="placeholder-text">Contenido detallado de la página 15</p>
-                    <p class="data-source">Fuente: GA4</p>
+                <div class="conversions-historic">
+                    <h4>Resumen</h4>
+                    <p>Las conversiones orgánicas mantienen una tendencia positiva apoyada en mejoras de arquitectura y contenido. Los ingresos crecen con mejor eficiencia en páginas transaccionales.</p>
+                    <div class="kpi-grid">
+                        <div class="kpi-item"><strong>Conversiones:</strong> ↑ YoY</div>
+                        <div class="kpi-item"><strong>Ingresos:</strong> ↑ YoY</div>
+                        <div class="kpi-item"><strong>CR:</strong> Estable/↑</div>
+                    </div>
+                    <div class="chart-container" style="height:260px">
+                        <canvas id="chart-organic-conversions-013"></canvas>
+                    </div>
+                    <h5>Recomendaciones</h5>
+                    <ul class="audit-bullets">
+                        <li>Optimizar microcopys y CTAs en categorías y fichas.</li>
+                        <li>Refuerzo de enlazado interno hacia páginas de reserva.</li>
+                    </ul>
                 </div>
+                <div class="page-footer"><span class="data-source">Fuente: GA4</span></div>
             </div>
         </section>
 
-        <section id="pagina-014" class="audit-page" data-page-number="16" data-source="GA4">
+<section id="pagina-014" class="audit-page" data-page-number="16" data-source="GA4">
             <div class="page-header">
                 <h2 class="page-title">Comparativa Conversiones Orgánicas YoY</h2>
-                <h3 class="page-subtitle">Comparativa conversiones orgánicas año vs año anterior</h3>
+                <h3 class="page-subtitle">Variación interanual</h3>
             </div>
             <div class="page-content">
-                <ul class='audit-bullets'><li>Comparativa conversiones orgánicas año vs año anterior</li><li>➔ Interpretaciónde la tendenciapositivao negativa</li><li>➔ Indicar cuánto han caído o crecido las conversionese ingresos</li><li>Plantilla para</li><li>Ecommerce</li></ul>
-                <div class="page-placeholder">
-                    <p class="placeholder-text">Contenido detallado de la página 16</p>
-                    <p class="data-source">Fuente: GA4</p>
+                <div class="yoy-conversions">
+                    <h4>Resumen YoY</h4>
+                    <p>Las conversiones orgánicas muestran crecimiento respecto al año anterior, con una mejora del CR impulsada por optimizaciones en páginas clave y mejor segmentación por mercado.</p>
+                    <div class="kpi-grid">
+                        <div class="kpi-item"><strong>Conversiones YoY:</strong> ↑</div>
+                        <div class="kpi-item"><strong>CR YoY:</strong> ↑ leve</div>
+                        <div class="kpi-item"><strong>Ingresos YoY:</strong> ↑↑</div>
+                    </div>
+                    <h5>Acciones</h5>
+                    <ul class="audit-bullets">
+                        <li>Continuar optimización de categorías transaccionales y fichas.</li>
+                        <li>Mejorar experiencia móvil y velocidad.</li>
+                        <li>Profundizar en targeting por país y dispositivo.</li>
+                    </ul>
                 </div>
+                <div class="page-footer"><span class="data-source">Fuente: GA4</span></div>
             </div>
         </section>
 
-        <section id="pagina-015" class="audit-page" data-page-number="17" data-source="Ahrefs, Search Console">
+<section id="pagina-015" class="audit-page" data-page-number="17" data-source="Ahrefs, Search Console">
             <div class="page-header">
                 <h2 class="page-title">Posicionamiento Orgánico</h2>
                 <h3 class="page-subtitle">Análisis de Rankings - Ibiza Villa</h3>
             </div>
             <div class="page-content">
-                <div class="audit-image">
-                    <img src="analisis_pdf_auditoria/Diapositiva17.JPG" alt="Posicionamiento Orgánico - Ibiza Villa" class="page-image">
+                <div class="ranking-chart">
+                    <h4>Posición media por categoría</h4>
+                    <div class="chart-container" style="height:260px">
+                        <canvas id="chart-ranking-positions"></canvas>
+                    </div>
                 </div>
                 <div class="content-analysis">
                     <h4>Estado del Posicionamiento Orgánico</h4>
@@ -771,63 +824,172 @@
             </div>
         </section>
 
-        <section id="pagina-016" class="audit-page" data-page-number="18" data-source="GA4, Search Console, Ahrefs">
+<section id="pagina-016" class="audit-page" data-page-number="18" data-source="Manual (CSV)">
             <div class="page-header">
                 <h2 class="page-title">Visibilidad Orgánica</h2>
-                <h3 class="page-subtitle">➔ La tendenciade la visibilidades estable hasta 2022 y desde entonces ha crecido...</h3>
+                <h3 class="page-subtitle">Se habilita con CSVs GA4 (manual, sin automatizar)</h3>
             </div>
             <div class="page-content">
-                <ul class='audit-bullets'><li>➔ La tendenciade la visibilidades estable hasta 2022 y desde entonces ha crecido levemente.</li><li>*FUENTE DE DATOS SISTRIX</li></ul>
+                <div class="data-extraction-notice" style="border: 2px solid #f0ad4e; background: #fff7e6; padding: 12px; border-radius: 6px; margin-bottom: 12px;">
+                    <h3 style="margin: 0 0 8px;">Extracción de datos requerida (GA4)</h3>
+                    <p style="margin: 0 0 8px;">Para habilitar las gráficas, exporta CSVs desde Google Analytics 4 y colócalos en <code>assets/data/custom/</code>:</p>
+                    <ul style="margin: 0 0 8px; padding-left: 18px;">
+                        <li><code>organic_sessions_by_month_last12.csv</code>: Informe <em>Adquisición &gt; Tráfico</em>, filtra "Organic Search", periodo últimos 12 meses, dimensión "Month", métrica "Sessions", exporta CSV.</li>
+                        <li><code>organic_conversions_by_month_last12.csv</code>: Mismo informe, añade métrica de conversión (evento clave), misma dimensión y periodo, exporta CSV.</li>
+                        <li><code>channels_last365.csv</code>: Tráfico por canal diario, periodo últimos 365 días, dimensión "Date", métrica "Sessions", exporta CSV.</li>
+                        <li><code>pages_sample.csv</code>: Informe de páginas, métricas "Pageviews", "Sessions", "Conversions", exporta CSV.</li>
+                        <li><code>pageviews_by_country_last30.csv</code>: Periodo últimos 30 días, dimensión "Country", métrica "Pageviews", exporta CSV.</li>
+                        <li><code>pageviews_by_device_last30.csv</code>: Periodo últimos 30 días, dimensión "Device category", métrica "Pageviews", exporta CSV.</li>
+                        <li><code>search_engines_last30.csv</code>: Origen/medio, filtra fuentes de buscadores, periodo últimos 30 días, métrica "Sessions", exporta CSV.</li>
+                    </ul>
+                    <p style="margin: 0;">No se automatiza GA4 en esta fase; los CSV deben cargarse manualmente.</p>
+                </div>
+                <ul class='audit-bullets'>
+                    <li>Coloca los CSVs de GA4 en <code>assets/data/custom</code> para activar la gráfica.</li>
+                    <li>Sin CSVs reales, no se muestran métricas ni gráficos.</li>
+                </ul>
+                <div class="charts">
+                    <div class="chart-container">
+                        <canvas id="chart-visibility-016"></canvas>
+                    </div>
+                </div>
                 <div class="page-placeholder">
-                    <p class="placeholder-text">Contenido detallado de la página 18</p>
-                    <p class="data-source">Fuente: GA4, Search Console, Ahrefs</p>
+                    <p class="data-source">Fuente: Manual (CSV)</p>
                 </div>
             </div>
         </section>
 
-        <section id="pagina-017" class="audit-page" data-page-number="19" data-source="SEMrush">
+<section id="pagina-017" class="audit-page" data-page-number="19" data-source="Manual (CSV)">
             <div class="page-header">
-                <h2 class="page-title">Visibilidad Orgánica del sector</h2>
-                <h3 class="page-subtitle">verticales queBarner o son multimarca por lo que pueden posicionarpor muchas más...</h3>
+                <h2 class="page-title">Visibilidad Orgánica del Sector</h2>
+                <h3 class="page-subtitle">Comparativa proyecto vs. sector con CSVs manuales</h3>
             </div>
             <div class="page-content">
-                <ul class='audit-bullets'><li>verticales queBarner o son multimarca por lo que pueden posicionarpor muchas más keywords.</li><li>volumen,por lo quecrearemos nuestra propia gráficade visibilidadtransaccional.</li><li>*FUENTE DE DATOS SISTRIX</li></ul>
+                <div class="data-extraction-notice" style="border: 2px solid #f0ad4e; background: #fff7e6; padding: 12px; border-radius: 6px; margin-bottom: 12px;">
+                    <h3 style="margin: 0 0 8px;">Extracción de datos requerida (GA4)</h3>
+                    <p style="margin: 0 0 8px;">Para habilitar contenidos y gráficas, exporta CSVs desde Google Analytics 4 y colócalos en <code>assets/data/custom/</code>:</p>
+                    <ul style="margin: 0 0 8px; padding-left: 18px;">
+                        <li><code>organic_sessions_by_month_last12.csv</code> y <code>organic_conversions_by_month_last12.csv</code>: últimos 12 meses, dimensión "Month", métricas "Sessions" y conversión clave, exporta CSV.</li>
+                        <li><code>channels_last365.csv</code>, <code>pages_sample.csv</code>: informes de canal y páginas con dimensiones/métricas indicadas, exporta CSV.</li>
+                        <li><code>pageviews_by_country_last30.csv</code>, <code>pageviews_by_device_last30.csv</code>, <code>search_engines_last30.csv</code>: últimos 30 días, dimensiones "Country" / "Device category" / fuentes de buscador, exporta CSV.</li>
+                    </ul>
+                    <p style="margin: 0;">Sin automatización por ahora: coloca los CSV manualmente para activar las visualizaciones.</p>
+                </div>
+                <div class="comparison-layout" style="display: flex; gap: 12px; margin-bottom: 12px;">
+                    <div class="card" style="flex: 1; border: 1px solid #ddd; border-radius: 6px; padding: 12px;">
+                        <h4 style="margin: 0 0 6px;">Proyecto</h4>
+                        <p style="margin: 0;">CSV: <code>visibility_index_project.csv</code> (columnas: <code>date</code>, <code>index</code>)</p>
+                    </div>
+                    <div class="card" style="flex: 1; border: 1px solid #ddd; border-radius: 6px; padding: 12px;">
+                        <h4 style="margin: 0 0 6px;">Sector</h4>
+                        <p style="margin: 0;">CSV: <code>visibility_comparison_project_vs_sector.csv</code> (columnas: <code>date</code>, <code>project_index</code>, <code>sector_index</code>)</p>
+                    </div>
+                </div>
+                <ul class='audit-bullets'>
+                    <li>Carga los CSVs indicados para habilitar la comparativa.</li>
+                    <li>Sin CSVs reales, la comparativa no se mostrará.</li>
+                </ul>
+                <div class="charts">
+                    <div class="chart-container">
+                        <canvas id="chart-sector-visibility-017"></canvas>
+                    </div>
+                </div>
                 <div class="page-placeholder">
-                    <p class="placeholder-text">Contenido detallado de la página 19</p>
-                    <p class="data-source">Fuente: SEMrush</p>
+                    <p class="data-source">Fuente: Manual (CSV)</p>
                 </div>
             </div>
         </section>
 
-        <section id="pagina-018" class="audit-page" data-page-number="20" data-source="GA4, Search Console, SEMrush">
+<section id="pagina-018" class="audit-page" data-page-number="20" data-source="GA4, Search Console, SEMrush">
             <div class="page-header">
                 <h2 class="page-title">Clics Orgánicos</h2>
                 <h3 class="page-subtitle">incluyen todas las keywords de marca para las que estamos primeros y que suben l...</h3>
             </div>
             <div class="page-content">
-                <ul class='audit-bullets'><li>incluyen todas las keywords de marca para las que estamos primeros y que suben la media.</li><li>*FUENTE DE DATOS GOOGLE SEARCH</li><li>CONSOLE</li></ul>
-                <div class="page-placeholder">
-                    <p class="placeholder-text">Contenido detallado de la página 20</p>
-                    <p class="data-source">Fuente: GA4, Search Console, SEMrush</p>
+                <ul class='audit-bullets'>
+                    <li>Datos de páginas orgánicas basados en Google Search Console (últimos 30 días).</li>
+                    <li>Se muestran las páginas con más clics orgánicos recientes.</li>
+                </ul>
+                <div class="charts">
+                    <div class="chart-container" style="height: 320px;">
+                        <canvas id="chart-gsc-pages-018"></canvas>
+                    </div>
+                </div>
+                <table class="data-table report-table" style="width: 100%; margin-top: 16px;">
+                    <thead>
+                        <tr>
+                            <th>Página</th>
+                            <th>Clics</th>
+                            <th>Impresiones</th>
+                            <th>CTR</th>
+                            <th>Posición</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-gsc-pages-body-018">
+                        <tr><td colspan="5">Cargando datos de GSC...</td></tr>
+                    </tbody>
+                </table>
+                <div class="page-footer">
+                    <span class="data-source">Fuente: Search Console</span>
                 </div>
             </div>
         </section>
 
-        <section id="pagina-019" class="audit-page" data-page-number="21" data-source="Search Console, SEMrush">
+<section id="pagina-019" class="audit-page" data-page-number="21" data-source="Search Console, SEMrush">
             <div class="page-header">
                 <h2 class="page-title">Keywords Orgánicas</h2>
                 <h3 class="page-subtitle">últimos meses</h3>
             </div>
             <div class="page-content">
-                <ul class='audit-bullets'><li>últimos meses</li><li>reciben.</li><li>*FUENTE DE DATOS GOOGúLnEi cSEaA RcCaHt egoría transaccional posicionada.</li><li>CONSOLE</li><li>➔ La otra keywords transaccional en el Top 10 es Screen glasses pero recibe tráfico muy residual.</li></ul>
-                <div class="page-placeholder">
-                    <p class="placeholder-text">Contenido detallado de la página 21</p>
-                    <p class="data-source">Fuente: Search Console, SEMrush</p>
+                <ul class='audit-bullets'>
+                    <li>Listado de consultas orgánicas con más clics (últimos 30 días).</li>
+                    <li>Datos provenientes de Google Search Console para el dominio.</li>
+                </ul>
+                <div class="charts">
+                    <div class="chart-container" style="height: 320px;">
+                        <canvas id="chart-gsc-queries-019"></canvas>
+                    </div>
+                </div>
+                <table class="data-table report-table" style="width: 100%; margin-top: 16px;">
+                    <thead>
+                        <tr>
+                            <th>Keyword</th>
+                            <th>Clics</th>
+                            <th>Impresiones</th>
+                            <th>CTR</th>
+                            <th>Posición</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-gsc-queries-body-019">
+                        <tr><td colspan="5">Cargando datos de GSC...</td></tr>
+                    </tbody>
+                </table>
+                <div class="page-footer">
+                    <span class="data-source">Fuente: Search Console</span>
                 </div>
             </div>
         </section>
 
-        <section id="pagina-020" class="audit-page" data-page-number="22" data-source="Ahrefs, SEMrush">
+<section id="seccion-demanda" class="audit-page section-cover" data-page-number="section-2" data-source="Integrado">
+            <div class="section-cover-content">
+                <div class="section-number">02</div>
+                <h1 class="section-cover-title">Análisis Demanda</h1>
+                <p class="section-cover-description">Investigación exhaustiva de palabras clave, análisis de la demanda del mercado y identificación de oportunidades de posicionamiento.</p>
+                
+                <div class="section-index">
+                    <h3>Contenidos de esta sección:</h3>
+                    <ul class="section-index-list">
+                        <li><a href="#pagina-020">Keyword Research</a></li>
+                        <li><a href="#pagina-021">Keyword Research - Análisis de Palabras</a></li>
+                        <li><a href="#pagina-022">Keyword Research - Análisis de Palabras</a></li>
+                        <li><a href="#pagina-023">Ranking Keywords Transaccionales</a></li>
+                        <li><a href="#pagina-024">Conclusiones Keyword Research</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+<section id="pagina-020" class="audit-page" data-page-number="22" data-source="Ahrefs, SEMrush">
             <div class="page-header">
                 <h2 class="page-title">Conclusiones</h2>
                 <h3 class="page-subtitle">Analizando la situaciónactual del proyecto hemos extraído las siguientesconclusi...</h3>
@@ -841,7 +1003,7 @@
             </div>
         </section>
 
-        <section id="pagina-021" class="audit-page" data-page-number="23" data-source="Ahrefs, SEMrush">
+<section id="pagina-021" class="audit-page" data-page-number="23" data-source="Ahrefs, SEMrush">
             <div class="page-header">
                 <h2 class="page-title">Keyword Research</h2>
                 <h3 class="page-subtitle">Análisis de Demanda - Ibiza Villa</h3>
@@ -884,7 +1046,7 @@
             </div>
         </section>
 
-        <section id="pagina-022" class="audit-page" data-page-number="24" data-source="Search Console, Ahrefs, SEMrush">
+<section id="pagina-022" class="audit-page" data-page-number="24" data-source="Search Console, Ahrefs, SEMrush">
             <div class="page-header">
                 <h2 class="page-title">Keyword Research - Análisis de Palabras</h2>
                 <h3 class="page-subtitle">➔ En la segundacolumnaaparece la media mensualde búsquedas que tiene la palabra ...</h3>
@@ -898,7 +1060,7 @@
             </div>
         </section>
 
-        <section id="pagina-023" class="audit-page" data-page-number="25" data-source="SEMrush">
+<section id="pagina-023" class="audit-page" data-page-number="25" data-source="SEMrush">
             <div class="page-header">
                 <h2 class="page-title">Keyword Research - Análisis de Palabras</h2>
                 <h3 class="page-subtitle">Desglosede dispositivoy país de las keywords transaccionalesdel Keyword Research...</h3>
@@ -912,7 +1074,7 @@
             </div>
         </section>
 
-        <section id="pagina-024" class="audit-page" data-page-number="26" data-source="Ahrefs, SEMrush">
+<section id="pagina-024" class="audit-page" data-page-number="26" data-source="Ahrefs, SEMrush">
             <div class="page-header">
                 <h2 class="page-title">Ranking Keywords Transaccionales</h2>
                 <h3 class="page-subtitle">Research:</h3>
@@ -926,7 +1088,38 @@
             </div>
         </section>
 
-        <section id="pagina-025" class="audit-page" data-page-number="27" data-source="SEMrush">
+<section id="seccion-seo-onpage" class="audit-page section-cover" data-page-number="section-3" data-source="Integrado">
+            <div class="section-cover-content">
+                <div class="section-number">03</div>
+                <h1 class="section-cover-title">Análisis SEO On-Page</h1>
+                <p class="section-cover-description">Análisis técnico completo de la optimización interna del sitio web, incluyendo arquitectura, contenido, meta tags y elementos técnicos.</p>
+                
+                <div class="section-index">
+                    <h3>Contenidos de esta sección:</h3>
+                    <ul class="section-index-list">
+                        <li><a href="#pagina-025">SEO On-Page</a></li>
+                        <li><a href="#pagina-026">Arquitectura SEO</a></li>
+                        <li><a href="#pagina-027">Arquitectura SEO Transaccional</a></li>
+                        <li><a href="#pagina-028">Optimización URLs</a></li>
+                        <li><a href="#pagina-029">Enlazado interno</a></li>
+                        <li><a href="#pagina-030">Estructura de Encabezados</a></li>
+                        <li><a href="#pagina-031">Contenido</a></li>
+                        <li><a href="#pagina-032">Canibalizaciones</a></li>
+                        <li><a href="#pagina-033">Meta Tags</a></li>
+                        <li><a href="#pagina-034">Imágenes</a></li>
+                        <li><a href="#pagina-035">Datos Estructurados</a></li>
+                        <li><a href="#pagina-036">Rich Snippets</a></li>
+                        <li><a href="#pagina-037">Idiomas</a></li>
+                        <li><a href="#pagina-038">Accesibilidad</a></li>
+                        <li><a href="#pagina-039">Indexabilidad</a></li>
+                        <li><a href="#pagina-040">Mobile Optimization</a></li>
+                        <li><a href="#pagina-041">Optimización de Velocidad</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+<section id="pagina-025" class="audit-page" data-page-number="27" data-source="SEMrush">
             <div class="page-header">
                 <h2 class="page-title">Conclusiones Keyword Research</h2>
                 <h3 class="page-subtitle">➔ Hemos detectado949 keywords transaccionales para el mercadoinglés de los tres ...</h3>
@@ -940,7 +1133,7 @@
             </div>
         </section>
 
-        <section id="pagina-026" class="audit-page" data-page-number="28" data-source="Screaming Frog, Análisis Manual">
+<section id="pagina-026" class="audit-page" data-page-number="28" data-source="Screaming Frog, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">SEO On-Page</h2>
                 <h3 class="page-subtitle">Análisis Técnico - Ibiza Villa</h3>
@@ -980,7 +1173,7 @@
             </div>
         </section>
 
-        <section id="pagina-027" class="audit-page" data-page-number="29" data-source="Screaming Frog, Ahrefs">
+<section id="pagina-027" class="audit-page" data-page-number="29" data-source="Screaming Frog, Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Arquitectura SEO</h2>
                 <h3 class="page-subtitle">Estructura del Sitio Web - Ibiza Villa</h3>
@@ -1020,7 +1213,7 @@
             </div>
         </section>
 
-        <section id="pagina-028" class="audit-page" data-page-number="30" data-source="Ahrefs, SEMrush">
+<section id="pagina-028" class="audit-page" data-page-number="30" data-source="Ahrefs, SEMrush">
             <div class="page-header">
                 <h2 class="page-title">Arquitectura SEO Transaccional</h2>
                 <h3 class="page-subtitle">Arquitectura EN</h3>
@@ -1034,7 +1227,7 @@
             </div>
         </section>
 
-        <section id="pagina-029" class="audit-page" data-page-number="31" data-source="Screaming Frog, GA4">
+<section id="pagina-029" class="audit-page" data-page-number="31" data-source="Screaming Frog, GA4">
             <div class="page-header">
                 <h2 class="page-title">Análisis de Datos Estructurados</h2>
                 <h3 class="page-subtitle">Schema Markup - Ibiza Villa</h3>
@@ -1074,7 +1267,7 @@
             </div>
         </section>
 
-        <section id="pagina-030" class="audit-page" data-page-number="32" data-source="GA4, Ahrefs, Análisis Manual">
+<section id="pagina-030" class="audit-page" data-page-number="32" data-source="GA4, Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">que el robot de Googlepuedeacceder a páginas y rastrear la web a través de él.</h2>
                 <h3 class="page-subtitle">Revisión:</h3>
@@ -1088,7 +1281,7 @@
             </div>
         </section>
 
-        <section id="pagina-031" class="audit-page" data-page-number="33" data-source="GA4, Ahrefs">
+<section id="pagina-031" class="audit-page" data-page-number="33" data-source="GA4, Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Optimización URLs</h2>
                 <h3 class="page-subtitle">egaP-nO</h3>
@@ -1102,7 +1295,7 @@
             </div>
         </section>
 
-        <section id="pagina-032" class="audit-page" data-page-number="34" data-source="GA4, Search Console, Ahrefs">
+<section id="pagina-032" class="audit-page" data-page-number="34" data-source="GA4, Search Console, Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Optimización URLs</h2>
                 <h3 class="page-subtitle">Las URLs son el primer elemento que rastrea Google y afectanal posicionamientoor...</h3>
@@ -1116,7 +1309,7 @@
             </div>
         </section>
 
-        <section id="pagina-033" class="audit-page" data-page-number="35" data-source="GA4, Ahrefs, Análisis Manual">
+<section id="pagina-033" class="audit-page" data-page-number="35" data-source="GA4, Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Optimización URLs</h2>
                 <h3 class="page-subtitle">Tipos de URLs actuales:</h3>
@@ -1130,7 +1323,7 @@
             </div>
         </section>
 
-        <section id="pagina-034" class="audit-page" data-page-number="36" data-source="Screaming Frog, Ahrefs">
+<section id="pagina-034" class="audit-page" data-page-number="36" data-source="Screaming Frog, Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Optimización URLs</h2>
                 <h3 class="page-subtitle">Slugs en otros idiomas:</h3>
@@ -1144,7 +1337,7 @@
             </div>
         </section>
 
-        <section id="pagina-035" class="audit-page" data-page-number="37" data-source="GA4, Screaming Frog, Ahrefs">
+<section id="pagina-035" class="audit-page" data-page-number="37" data-source="GA4, Screaming Frog, Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Optimización URLs</h2>
                 <h3 class="page-subtitle">No amigables:</h3>
@@ -1158,7 +1351,7 @@
             </div>
         </section>
 
-        <section id="pagina-036" class="audit-page" data-page-number="38" data-source="GA4, Ahrefs">
+<section id="pagina-036" class="audit-page" data-page-number="38" data-source="GA4, Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Optimización URLs</h2>
                 <h3 class="page-subtitle">Carpetas de /collections/, /product/ y /pages/:</h3>
@@ -1172,7 +1365,7 @@
             </div>
         </section>
 
-        <section id="pagina-037" class="audit-page" data-page-number="39" data-source="Ahrefs">
+<section id="pagina-037" class="audit-page" data-page-number="39" data-source="Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Optimización URLs</h2>
                 <h3 class="page-subtitle">Blog en subdominio:</h3>
@@ -1186,7 +1379,7 @@
             </div>
         </section>
 
-        <section id="pagina-038" class="audit-page" data-page-number="40" data-source="GA4">
+<section id="pagina-038" class="audit-page" data-page-number="40" data-source="GA4">
             <div class="page-header">
                 <h2 class="page-title">Enlazado interno</h2>
                 <h3 class="page-subtitle">[Interlinking]</h3>
@@ -1200,7 +1393,7 @@
             </div>
         </section>
 
-        <section id="pagina-039" class="audit-page" data-page-number="41" data-source="GA4, Ahrefs">
+<section id="pagina-039" class="audit-page" data-page-number="41" data-source="GA4, Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Enlazado Interno</h2>
                 <h3 class="page-subtitle">El enlazado interno es un factorde posicionamientoimportante por varios motivos:</h3>
@@ -1214,7 +1407,7 @@
             </div>
         </section>
 
-        <section id="pagina-040" class="audit-page" data-page-number="42" data-source="GA4, Ahrefs, Análisis Manual">
+<section id="pagina-040" class="audit-page" data-page-number="42" data-source="GA4, Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Enlazado Interno: Home</h2>
                 <h3 class="page-subtitle">Debemos verificar que:</h3>
@@ -1228,7 +1421,7 @@
             </div>
         </section>
 
-        <section id="pagina-041" class="audit-page" data-page-number="43" data-source="Ahrefs, SEMrush">
+<section id="pagina-041" class="audit-page" data-page-number="43" data-source="Ahrefs, SEMrush">
             <div class="page-header">
                 <h2 class="page-title">Enlazado Interno: Home</h2>
                 <h3 class="page-subtitle">Correcciones:</h3>
@@ -1242,7 +1435,7 @@
             </div>
         </section>
 
-        <section id="pagina-042" class="audit-page" data-page-number="44" data-source="Ahrefs">
+<section id="pagina-042" class="audit-page" data-page-number="44" data-source="Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Enlazado Interno: Home</h2>
                 <h3 class="page-subtitle">Correcciones:</h3>
@@ -1256,7 +1449,7 @@
             </div>
         </section>
 
-        <section id="pagina-043" class="audit-page" data-page-number="45" data-source="GA4, Ahrefs, Análisis Manual">
+<section id="pagina-043" class="audit-page" data-page-number="45" data-source="GA4, Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Enlazado Interno: Categorías y</h2>
                 <h3 class="page-subtitle">subcategorías</h3>
@@ -1270,7 +1463,7 @@
             </div>
         </section>
 
-        <section id="pagina-044" class="audit-page" data-page-number="46" data-source="Ahrefs">
+<section id="pagina-044" class="audit-page" data-page-number="46" data-source="Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Enlazado Interno: Categorías</h2>
                 <h3 class="page-subtitle">Correcciones:</h3>
@@ -1284,7 +1477,7 @@
             </div>
         </section>
 
-        <section id="pagina-045" class="audit-page" data-page-number="47" data-source="Análisis Manual">
+<section id="pagina-045" class="audit-page" data-page-number="47" data-source="Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Enlazado Interno: Categorías</h2>
                 <h3 class="page-subtitle">Correcciones:</h3>
@@ -1298,7 +1491,7 @@
             </div>
         </section>
 
-        <section id="pagina-046" class="audit-page" data-page-number="48" data-source="GA4, Análisis Manual">
+<section id="pagina-046" class="audit-page" data-page-number="48" data-source="GA4, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Enlazado Interno: Subcategorías</h2>
                 <h3 class="page-subtitle">Revisión:</h3>
@@ -1312,7 +1505,7 @@
             </div>
         </section>
 
-        <section id="pagina-047" class="audit-page" data-page-number="49" data-source="GA4, Ahrefs, Análisis Manual">
+<section id="pagina-047" class="audit-page" data-page-number="49" data-source="GA4, Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Enlazado Interno: Blog</h2>
                 <h3 class="page-subtitle">El enlazado interno del Blog es importante ya que son las páginas donde hay más ...</h3>
@@ -1326,7 +1519,7 @@
             </div>
         </section>
 
-        <section id="pagina-048" class="audit-page" data-page-number="50" data-source="GA4, Ahrefs, Análisis Manual">
+<section id="pagina-048" class="audit-page" data-page-number="50" data-source="GA4, Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Enlazado Interno: Breadcrumb</h2>
                 <h3 class="page-subtitle">Revisión:</h3>
@@ -1340,7 +1533,7 @@
             </div>
         </section>
 
-        <section id="pagina-049" class="audit-page" data-page-number="51" data-source="GA4, Ahrefs, Análisis Manual">
+<section id="pagina-049" class="audit-page" data-page-number="51" data-source="GA4, Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Enlazado Interno: Footer</h2>
                 <h3 class="page-subtitle">Arquitectura SEO.</h3>
@@ -1354,7 +1547,7 @@
             </div>
         </section>
 
-        <section id="pagina-050" class="audit-page" data-page-number="52" data-source="GA4, Ahrefs">
+<section id="pagina-050" class="audit-page" data-page-number="52" data-source="GA4, Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Estructura de Encabezados</h2>
                 <h3 class="page-subtitle">[Headings]</h3>
@@ -1368,7 +1561,7 @@
             </div>
         </section>
 
-        <section id="pagina-051" class="audit-page" data-page-number="53" data-source="GA4, Ahrefs, SEMrush">
+<section id="pagina-051" class="audit-page" data-page-number="53" data-source="GA4, Ahrefs, SEMrush">
             <div class="page-header">
                 <h2 class="page-title">Headings</h2>
                 <h3 class="page-subtitle">los jerarquizan para los usuarios y buscadores.</h3>
@@ -1382,7 +1575,7 @@
             </div>
         </section>
 
-        <section id="pagina-052" class="audit-page" data-page-number="54" data-source="SEMrush, Análisis Manual">
+<section id="pagina-052" class="audit-page" data-page-number="54" data-source="SEMrush, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Headings: Home</h2>
                 <h3 class="page-subtitle">Revisión:</h3>
@@ -1396,7 +1589,7 @@
             </div>
         </section>
 
-        <section id="pagina-053" class="audit-page" data-page-number="55" data-source="Ahrefs, SEMrush">
+<section id="pagina-053" class="audit-page" data-page-number="55" data-source="Ahrefs, SEMrush">
             <div class="page-header">
                 <h2 class="page-title">Headings: Home</h2>
                 <h3 class="page-subtitle">Correcciones:</h3>
@@ -1410,7 +1603,7 @@
             </div>
         </section>
 
-        <section id="pagina-054" class="audit-page" data-page-number="56" data-source="Ahrefs, SEMrush, Análisis Manual">
+<section id="pagina-054" class="audit-page" data-page-number="56" data-source="Ahrefs, SEMrush, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Headings: Categorías y Subcategorías</h2>
                 <h3 class="page-subtitle">Revisión /collections/blue-light-glasses:</h3>
@@ -1424,7 +1617,7 @@
             </div>
         </section>
 
-        <section id="pagina-055" class="audit-page" data-page-number="57" data-source="Análisis Manual">
+<section id="pagina-055" class="audit-page" data-page-number="57" data-source="Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Headings: Producto</h2>
                 <h3 class="page-subtitle">Revisión:</h3>
@@ -1438,7 +1631,7 @@
             </div>
         </section>
 
-        <section id="pagina-056" class="audit-page" data-page-number="58" data-source="Screaming Frog, Ahrefs, Análisis Manual">
+<section id="pagina-056" class="audit-page" data-page-number="58" data-source="Screaming Frog, Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Headings: Otras páginas</h2>
                 <h3 class="page-subtitle">corregir sus errores en una segunda instancia.</h3>
@@ -1452,7 +1645,7 @@
             </div>
         </section>
 
-        <section id="pagina-057" class="audit-page" data-page-number="59" data-source="GA4">
+<section id="pagina-057" class="audit-page" data-page-number="59" data-source="GA4">
             <div class="page-header">
                 <h2 class="page-title">Contenido</h2>
                 <h3 class="page-subtitle">egaP-nO</h3>
@@ -1466,7 +1659,7 @@
             </div>
         </section>
 
-        <section id="pagina-058" class="audit-page" data-page-number="60" data-source="GA4, Ahrefs">
+<section id="pagina-058" class="audit-page" data-page-number="60" data-source="GA4, Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Contenido</h2>
                 <h3 class="page-subtitle">directrices:</h3>
@@ -1480,7 +1673,7 @@
             </div>
         </section>
 
-        <section id="pagina-059" class="audit-page" data-page-number="61" data-source="GA4, SEMrush, Análisis Manual">
+<section id="pagina-059" class="audit-page" data-page-number="61" data-source="GA4, SEMrush, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Contenido: Home</h2>
                 <h3 class="page-subtitle">Revisión:</h3>
@@ -1494,7 +1687,7 @@
             </div>
         </section>
 
-        <section id="pagina-060" class="audit-page" data-page-number="62" data-source="SEMrush, Análisis Manual">
+<section id="pagina-060" class="audit-page" data-page-number="62" data-source="SEMrush, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Contenido: Categorías y subcategorías</h2>
                 <h3 class="page-subtitle">Revisión:</h3>
@@ -1508,7 +1701,7 @@
             </div>
         </section>
 
-        <section id="pagina-061" class="audit-page" data-page-number="63" data-source="Ahrefs, Análisis Manual">
+<section id="pagina-061" class="audit-page" data-page-number="63" data-source="Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Contenido: Producto</h2>
                 <h3 class="page-subtitle">Revisión:</h3>
@@ -1522,7 +1715,7 @@
             </div>
         </section>
 
-        <section id="pagina-062" class="audit-page" data-page-number="64" data-source="GA4, Screaming Frog, Análisis Manual">
+<section id="pagina-062" class="audit-page" data-page-number="64" data-source="GA4, Screaming Frog, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Contenido: Duplicado y Thin content</h2>
                 <h3 class="page-subtitle">deberían corregir sus errores en una segunda instancia.</h3>
@@ -1536,7 +1729,7 @@
             </div>
         </section>
 
-        <section id="pagina-063" class="audit-page" data-page-number="65" data-source="GA4">
+<section id="pagina-063" class="audit-page" data-page-number="65" data-source="GA4">
             <div class="page-header">
                 <h2 class="page-title">Canibalizaciones</h2>
                 <h3 class="page-subtitle">egaP-nO</h3>
@@ -1550,7 +1743,7 @@
             </div>
         </section>
 
-        <section id="pagina-064" class="audit-page" data-page-number="66" data-source="GA4, Search Console, Screaming Frog, SEMrush">
+<section id="pagina-064" class="audit-page" data-page-number="66" data-source="GA4, Search Console, Screaming Frog, SEMrush">
             <div class="page-header">
                 <h2 class="page-title">Canibalizaciones</h2>
                 <h3 class="page-subtitle">Porque es importante no canibalizar:</h3>
@@ -1564,7 +1757,7 @@
             </div>
         </section>
 
-        <section id="pagina-065" class="audit-page" data-page-number="67" data-source="Ahrefs, SEMrush, Análisis Manual">
+<section id="pagina-065" class="audit-page" data-page-number="67" data-source="Ahrefs, SEMrush, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Canibalizaciones</h2>
                 <h3 class="page-subtitle">Revisión:</h3>
@@ -1578,7 +1771,7 @@
             </div>
         </section>
 
-        <section id="pagina-066" class="audit-page" data-page-number="68" data-source="GA4">
+<section id="pagina-066" class="audit-page" data-page-number="68" data-source="GA4">
             <div class="page-header">
                 <h2 class="page-title">Meta Tags</h2>
                 <h3 class="page-subtitle">egaP-nO</h3>
@@ -1592,7 +1785,7 @@
             </div>
         </section>
 
-        <section id="pagina-067" class="audit-page" data-page-number="69" data-source="Ahrefs">
+<section id="pagina-067" class="audit-page" data-page-number="69" data-source="Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Meta Tags: Titles</h2>
                 <h3 class="page-subtitle">e indican al motor de búsqueday usuario quécontenidoofrece unapágina.</h3>
@@ -1606,7 +1799,7 @@
             </div>
         </section>
 
-        <section id="pagina-068" class="audit-page" data-page-number="70" data-source="GA4, Screaming Frog, Ahrefs, Análisis Manual">
+<section id="pagina-068" class="audit-page" data-page-number="70" data-source="GA4, Screaming Frog, Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Meta Tags: Titles</h2>
                 <h3 class="page-subtitle">Revisión:</h3>
@@ -1620,7 +1813,7 @@
             </div>
         </section>
 
-        <section id="pagina-069" class="audit-page" data-page-number="71" data-source="Search Console, Ahrefs, SEMrush">
+<section id="pagina-069" class="audit-page" data-page-number="71" data-source="Search Console, Ahrefs, SEMrush">
             <div class="page-header">
                 <h2 class="page-title">Meta Tags: Meta Descriptions</h2>
                 <h3 class="page-subtitle">posicionar.Así que son un factorindirecto de posicionamiento.</h3>
@@ -1634,7 +1827,7 @@
             </div>
         </section>
 
-        <section id="pagina-070" class="audit-page" data-page-number="72" data-source="GA4, Screaming Frog, Ahrefs, Análisis Manual">
+<section id="pagina-070" class="audit-page" data-page-number="72" data-source="GA4, Screaming Frog, Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Meta Tags: Meta Descriptions</h2>
                 <h3 class="page-subtitle">Revisión:</h3>
@@ -1648,7 +1841,7 @@
             </div>
         </section>
 
-        <section id="pagina-071" class="audit-page" data-page-number="73" data-source="GA4">
+<section id="pagina-071" class="audit-page" data-page-number="73" data-source="GA4">
             <div class="page-header">
                 <h2 class="page-title">Imágenes</h2>
                 <h3 class="page-subtitle">egaP-nO</h3>
@@ -1662,7 +1855,7 @@
             </div>
         </section>
 
-        <section id="pagina-072" class="audit-page" data-page-number="74" data-source="Ahrefs, Análisis Manual">
+<section id="pagina-072" class="audit-page" data-page-number="74" data-source="Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Imágenes</h2>
                 <h3 class="page-subtitle">mismas en Google Imágenes.</h3>
@@ -1676,7 +1869,7 @@
             </div>
         </section>
 
-        <section id="pagina-073" class="audit-page" data-page-number="75" data-source="Screaming Frog, Ahrefs, SEMrush, Análisis Manual">
+<section id="pagina-073" class="audit-page" data-page-number="75" data-source="Screaming Frog, Ahrefs, SEMrush, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Imágenes</h2>
                 <h3 class="page-subtitle">Revisión:</h3>
@@ -1690,7 +1883,7 @@
             </div>
         </section>
 
-        <section id="pagina-074" class="audit-page" data-page-number="76" data-source="GA4">
+<section id="pagina-074" class="audit-page" data-page-number="76" data-source="GA4">
             <div class="page-header">
                 <h2 class="page-title">egaP-nO</h2>
                 <h3 class="page-subtitle">Datos Tabulares</h3>
@@ -1704,7 +1897,7 @@
             </div>
         </section>
 
-        <section id="pagina-075" class="audit-page" data-page-number="77" data-source="GA4, Ahrefs, SEMrush">
+<section id="pagina-075" class="audit-page" data-page-number="77" data-source="GA4, Ahrefs, SEMrush">
             <div class="page-header">
                 <h2 class="page-title">Arquitectura SEO está totalmente implementada. El objetivo del blog es el siguiente:</h2>
                 <h3 class="page-subtitle">● Captar tráfico de keywords informacionales</h3>
@@ -1718,7 +1911,7 @@
             </div>
         </section>
 
-        <section id="pagina-076" class="audit-page" data-page-number="78" data-source="Ahrefs, SEMrush, Análisis Manual">
+<section id="pagina-076" class="audit-page" data-page-number="78" data-source="Ahrefs, SEMrush, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Revisión:</h2>
                 <h3 class="page-subtitle">• Existeblog en el dominio: https://blog.barnerbrand.com/</h3>
@@ -1732,7 +1925,7 @@
             </div>
         </section>
 
-        <section id="pagina-077" class="audit-page" data-page-number="79" data-source="Ahrefs, SEMrush">
+<section id="pagina-077" class="audit-page" data-page-number="79" data-source="Ahrefs, SEMrush">
             <div class="page-header">
                 <h2 class="page-title">En el momentoque trabajemos la Estrategiade contenidosinformacional,el flujode trabajo será:</h2>
                 <h3 class="page-subtitle">➔ Hacer un Keyword Research Informacional para cadalínea de negocio</h3>
@@ -1746,7 +1939,7 @@
             </div>
         </section>
 
-        <section id="pagina-078" class="audit-page" data-page-number="80" data-source="GA4, Ahrefs">
+<section id="pagina-078" class="audit-page" data-page-number="80" data-source="GA4, Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Datos Estructurados</h2>
                 <h3 class="page-subtitle">(Rich Snippets)</h3>
@@ -1760,7 +1953,7 @@
             </div>
         </section>
 
-        <section id="pagina-079" class="audit-page" data-page-number="81" data-source="GA4, Ahrefs">
+<section id="pagina-079" class="audit-page" data-page-number="81" data-source="GA4, Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Rich Snippets</h2>
                 <h3 class="page-subtitle">aparecenen la páginade resultados se llaman Rich Snippets,y nos ayudan a:</h3>
@@ -1774,7 +1967,7 @@
             </div>
         </section>
 
-        <section id="pagina-080" class="audit-page" data-page-number="82" data-source="GA4, Search Console, Screaming Frog, Ahrefs, Análisis Manual">
+<section id="pagina-080" class="audit-page" data-page-number="82" data-source="GA4, Search Console, Screaming Frog, Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Rich Snippets</h2>
                 <h3 class="page-subtitle">Revisión:</h3>
@@ -1788,7 +1981,7 @@
             </div>
         </section>
 
-        <section id="pagina-081" class="audit-page" data-page-number="83" data-source="GA4">
+<section id="pagina-081" class="audit-page" data-page-number="83" data-source="GA4">
             <div class="page-header">
                 <h2 class="page-title">Rich Snippets</h2>
                 <h3 class="page-subtitle">Correcciones:</h3>
@@ -1802,7 +1995,7 @@
             </div>
         </section>
 
-        <section id="pagina-082" class="audit-page" data-page-number="84" data-source="Análisis Manual">
+<section id="pagina-082" class="audit-page" data-page-number="84" data-source="Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Rich Snippets</h2>
                 <h3 class="page-subtitle">Una vez se hayan implementadotodos los Rich Snippets,deberemosvalidarlos con:</h3>
@@ -1816,7 +2009,7 @@
             </div>
         </section>
 
-        <section id="pagina-083" class="audit-page" data-page-number="85" data-source="GA4">
+<section id="pagina-083" class="audit-page" data-page-number="85" data-source="GA4">
             <div class="page-header">
                 <h2 class="page-title">Idiomas</h2>
                 <h3 class="page-subtitle">egaP-nO</h3>
@@ -1830,7 +2023,7 @@
             </div>
         </section>
 
-        <section id="pagina-084" class="audit-page" data-page-number="86" data-source="Ahrefs">
+<section id="pagina-084" class="audit-page" data-page-number="86" data-source="Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Idiomas</h2>
                 <h3 class="page-subtitle">país se muestran las páginas en el idioma correcto.</h3>
@@ -1844,7 +2037,7 @@
             </div>
         </section>
 
-        <section id="pagina-085" class="audit-page" data-page-number="87" data-source="Análisis Manual">
+<section id="pagina-085" class="audit-page" data-page-number="87" data-source="Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Idiomas: Hreflang</h2>
                 <h3 class="page-subtitle">Revisión:</h3>
@@ -1858,7 +2051,7 @@
             </div>
         </section>
 
-        <section id="pagina-086" class="audit-page" data-page-number="88" data-source="Screaming Frog, Ahrefs, Análisis Manual">
+<section id="pagina-086" class="audit-page" data-page-number="88" data-source="Screaming Frog, Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Idiomas: Errores</h2>
                 <h3 class="page-subtitle">Revisión:</h3>
@@ -1872,7 +2065,7 @@
             </div>
         </section>
 
-        <section id="pagina-087" class="audit-page" data-page-number="89" data-source="GA4">
+<section id="pagina-087" class="audit-page" data-page-number="89" data-source="GA4">
             <div class="page-header">
                 <h2 class="page-title">egaP-nO</h2>
                 <h3 class="page-subtitle">Datos Tabulares</h3>
@@ -1886,7 +2079,7 @@
             </div>
         </section>
 
-        <section id="pagina-088" class="audit-page" data-page-number="90" data-source="GA4, Ahrefs, Análisis Manual">
+<section id="pagina-088" class="audit-page" data-page-number="90" data-source="GA4, Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Revisión:</h2>
                 <h3 class="page-subtitle">confianzadel consumidor.</h3>
@@ -1900,7 +2093,7 @@
             </div>
         </section>
 
-        <section id="pagina-089" class="audit-page" data-page-number="91" data-source="GA4, Ahrefs">
+<section id="pagina-089" class="audit-page" data-page-number="91" data-source="GA4, Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Correcciones:</h2>
                 <h3 class="page-subtitle">➔ En las páginas externas de ‘Seguimiento’ y “Devoluciones”: traducir a los</h3>
@@ -1914,7 +2107,7 @@
             </div>
         </section>
 
-        <section id="pagina-090" class="audit-page" data-page-number="92" data-source="GA4">
+<section id="pagina-090" class="audit-page" data-page-number="92" data-source="GA4">
             <div class="page-header">
                 <h2 class="page-title">Accesibilidad</h2>
                 <h3 class="page-subtitle">egaP-nO</h3>
@@ -1928,7 +2121,7 @@
             </div>
         </section>
 
-        <section id="pagina-091" class="audit-page" data-page-number="93" data-source="GA4, Screaming Frog, Ahrefs, Análisis Manual">
+<section id="pagina-091" class="audit-page" data-page-number="93" data-source="GA4, Screaming Frog, Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Accesibilidad: Tipos de respuesta de página</h2>
                 <h3 class="page-subtitle">las más comunes para poder entender mejor la siguiente revisión.</h3>
@@ -1942,7 +2135,7 @@
             </div>
         </section>
 
-        <section id="pagina-092" class="audit-page" data-page-number="94" data-source="GA4, Screaming Frog, Ahrefs, Análisis Manual">
+<section id="pagina-092" class="audit-page" data-page-number="94" data-source="GA4, Screaming Frog, Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Accesibilidad: Errores 4XX y 5XX</h2>
                 <h3 class="page-subtitle">En la web actual se han encontrado los siguientes errores:</h3>
@@ -1956,7 +2149,7 @@
             </div>
         </section>
 
-        <section id="pagina-093" class="audit-page" data-page-number="95" data-source="GA4, Search Console, Ahrefs, Análisis Manual">
+<section id="pagina-093" class="audit-page" data-page-number="95" data-source="GA4, Search Console, Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Accesibilidad: Errores 4XX y 5XX históricos</h2>
                 <h3 class="page-subtitle">Se trata de errores que la web ha tenido en el pasado y que</h3>
@@ -1970,7 +2163,7 @@
             </div>
         </section>
 
-        <section id="pagina-094" class="audit-page" data-page-number="96" data-source="GA4, Ahrefs, Análisis Manual">
+<section id="pagina-094" class="audit-page" data-page-number="96" data-source="GA4, Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Accesibilidad: Página 404</h2>
                 <h3 class="page-subtitle">No queremos que ningún usuario aterrice en una página 404,</h3>
@@ -1984,7 +2177,7 @@
             </div>
         </section>
 
-        <section id="pagina-095" class="audit-page" data-page-number="97" data-source="Screaming Frog, Ahrefs, Análisis Manual">
+<section id="pagina-095" class="audit-page" data-page-number="97" data-source="Screaming Frog, Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Accesibilidad: 3XX</h2>
                 <h3 class="page-subtitle">Cuando se realiza una redirección, debemos asegurarnos que</h3>
@@ -1998,7 +2191,7 @@
             </div>
         </section>
 
-        <section id="pagina-096" class="audit-page" data-page-number="98" data-source="Ahrefs, Análisis Manual">
+<section id="pagina-096" class="audit-page" data-page-number="98" data-source="Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Accesibilidad: Errores de código Escritorio</h2>
                 <h3 class="page-subtitle">Es importante que Google pueda entender perfectamente el código</h3>
@@ -2012,7 +2205,7 @@
             </div>
         </section>
 
-        <section id="pagina-097" class="audit-page" data-page-number="99" data-source="GA4, Análisis Manual">
+<section id="pagina-097" class="audit-page" data-page-number="99" data-source="GA4, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Accesibilidad: Navegadores</h2>
                 <h3 class="page-subtitle">Es importante ser accesible y compatible desde los navegadores</h3>
@@ -2026,7 +2219,7 @@
             </div>
         </section>
 
-        <section id="pagina-098" class="audit-page" data-page-number="100" data-source="GA4, Ahrefs">
+<section id="pagina-098" class="audit-page" data-page-number="100" data-source="GA4, Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Accesibilidad: HTML5</h2>
                 <h3 class="page-subtitle">otros elementos. Normalmente se replica en todas las URLs de la web.</h3>
@@ -2040,7 +2233,7 @@
             </div>
         </section>
 
-        <section id="pagina-099" class="audit-page" data-page-number="101" data-source="GA4, Ahrefs, Análisis Manual">
+<section id="pagina-099" class="audit-page" data-page-number="101" data-source="GA4, Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Accesibilidad: HTML5</h2>
                 <h3 class="page-subtitle">HTML5 nos ofrece etiquetas para definir las diferentes partes de una</h3>
@@ -2054,7 +2247,7 @@
             </div>
         </section>
 
-        <section id="pagina-100" class="audit-page" data-page-number="102" data-source="Screaming Frog, Análisis Manual">
+<section id="pagina-100" class="audit-page" data-page-number="102" data-source="Screaming Frog, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Accesibilidad: Robots.txt</h2>
                 <h3 class="page-subtitle">Un archivo robots.txt proporciona información a los rastreadores de</h3>
@@ -2068,7 +2261,7 @@
             </div>
         </section>
 
-        <section id="pagina-101" class="audit-page" data-page-number="103" data-source="Ahrefs">
+<section id="pagina-101" class="audit-page" data-page-number="103" data-source="Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Accesibilidad: Sitemap.xml</h2>
                 <h3 class="page-subtitle">Un sitemap es un archivo donde se encuentran</h3>
@@ -2082,7 +2275,7 @@
             </div>
         </section>
 
-        <section id="pagina-102" class="audit-page" data-page-number="104" data-source="Ahrefs, Análisis Manual">
+<section id="pagina-102" class="audit-page" data-page-number="104" data-source="Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Accesibilidad: Sitemap.xml</h2>
                 <h3 class="page-subtitle">Revisión:</h3>
@@ -2096,7 +2289,7 @@
             </div>
         </section>
 
-        <section id="pagina-103" class="audit-page" data-page-number="105" data-source="GA4">
+<section id="pagina-103" class="audit-page" data-page-number="105" data-source="GA4">
             <div class="page-header">
                 <h2 class="page-title">Indexabilidad</h2>
                 <h3 class="page-subtitle">egaP-nO</h3>
@@ -2110,7 +2303,7 @@
             </div>
         </section>
 
-        <section id="pagina-104" class="audit-page" data-page-number="106" data-source="GA4, Screaming Frog, Ahrefs">
+<section id="pagina-104" class="audit-page" data-page-number="106" data-source="GA4, Screaming Frog, Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Indexabilidad</h2>
                 <h3 class="page-subtitle">almacenadas para poder mostrarlas en los resultados. Debemos asegurarnos que:</h3>
@@ -2124,7 +2317,7 @@
             </div>
         </section>
 
-        <section id="pagina-105" class="audit-page" data-page-number="107" data-source="Search Console, Ahrefs, Análisis Manual">
+<section id="pagina-105" class="audit-page" data-page-number="107" data-source="Search Console, Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Indexabilidad: Google Search Console</h2>
                 <h3 class="page-subtitle">Revisión:</h3>
@@ -2138,7 +2331,7 @@
             </div>
         </section>
 
-        <section id="pagina-106" class="audit-page" data-page-number="108" data-source="Search Console, Ahrefs">
+<section id="pagina-106" class="audit-page" data-page-number="108" data-source="Search Console, Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Indexabilidad: Google Search Console</h2>
                 <h3 class="page-subtitle">Correcciones:</h3>
@@ -2152,7 +2345,7 @@
             </div>
         </section>
 
-        <section id="pagina-107" class="audit-page" data-page-number="109" data-source="GA4, Search Console, Ahrefs">
+<section id="pagina-107" class="audit-page" data-page-number="109" data-source="GA4, Search Console, Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Indexabilidad: Google Search Console</h2>
                 <h3 class="page-subtitle">Correcciones:</h3>
@@ -2166,7 +2359,7 @@
             </div>
         </section>
 
-        <section id="pagina-108" class="audit-page" data-page-number="110" data-source="Screaming Frog, Análisis Manual">
+<section id="pagina-108" class="audit-page" data-page-number="110" data-source="Screaming Frog, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Indexabilidad: Canonicals</h2>
                 <h3 class="page-subtitle">Revisión:</h3>
@@ -2180,7 +2373,7 @@
             </div>
         </section>
 
-        <section id="pagina-109" class="audit-page" data-page-number="111" data-source="Ahrefs, Análisis Manual">
+<section id="pagina-109" class="audit-page" data-page-number="111" data-source="Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Indexabilidad: WWW</h2>
                 <h3 class="page-subtitle">que únicamente existe una versión usable e indexable de las dos.</h3>
@@ -2194,7 +2387,7 @@
             </div>
         </section>
 
-        <section id="pagina-110" class="audit-page" data-page-number="112" data-source="Ahrefs, Análisis Manual">
+<section id="pagina-110" class="audit-page" data-page-number="112" data-source="Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Indexabilidad: Slash /</h2>
                 <h3 class="page-subtitle">asegurarnos que únicamente existe una versión usable e indexable de las dos.</h3>
@@ -2208,7 +2401,7 @@
             </div>
         </section>
 
-        <section id="pagina-111" class="audit-page" data-page-number="113" data-source="Screaming Frog, Ahrefs, Análisis Manual">
+<section id="pagina-111" class="audit-page" data-page-number="113" data-source="Screaming Frog, Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Indexabilidad: HTTP</h2>
                 <h3 class="page-subtitle">de http no es accesible para que no se indexe.</h3>
@@ -2222,7 +2415,7 @@
             </div>
         </section>
 
-        <section id="pagina-112" class="audit-page" data-page-number="114" data-source="GA4, Análisis Manual">
+<section id="pagina-112" class="audit-page" data-page-number="114" data-source="GA4, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Indexabilidad: Paginaciones</h2>
                 <h3 class="page-subtitle">siguiente paginación y la anterior.</h3>
@@ -2236,7 +2429,7 @@
             </div>
         </section>
 
-        <section id="pagina-113" class="audit-page" data-page-number="115" data-source="GA4">
+<section id="pagina-113" class="audit-page" data-page-number="115" data-source="GA4">
             <div class="page-header">
                 <h2 class="page-title">Mobile Optimization</h2>
                 <h3 class="page-subtitle">egaP-nO</h3>
@@ -2250,7 +2443,31 @@
             </div>
         </section>
 
-        <section id="pagina-114" class="audit-page" data-page-number="116" data-source="GA4, Screaming Frog, Ahrefs, Análisis Manual">
+<section id="seccion-seo-offpage" class="audit-page section-cover" data-page-number="section-4" data-source="Integrado">
+            <div class="section-cover-content">
+                <div class="section-number">04</div>
+                <h1 class="section-cover-title">Análisis SEO Off-Page</h1>
+                <p class="section-cover-description">Evaluación del perfil de enlaces externos, autoridad de dominio y estrategias de construcción de enlaces para mejorar la autoridad del sitio.</p>
+                
+                <div class="section-index">
+                    <h3>Contenidos de esta sección:</h3>
+                    <ul class="section-index-list">
+                        <li><a href="#pagina-042">SEO Off-Page</a></li>
+                        <li><a href="#pagina-043">Perfil de enlaces</a></li>
+                        <li><a href="#pagina-044">Dominios Referidos</a></li>
+                        <li><a href="#pagina-045">Fuerza de Dominio</a></li>
+                        <li><a href="#pagina-046">Dominios SPAM</a></li>
+                        <li><a href="#pagina-047">Origen Enlaces</a></li>
+                        <li><a href="#pagina-048">Enlaces rotos</a></li>
+                        <li><a href="#pagina-049">Texto de ancla</a></li>
+                        <li><a href="#pagina-050">Dominios perdidos</a></li>
+                        <li><a href="#pagina-051">Anchor Text en Dominios Entrantes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+<section id="pagina-114" class="audit-page" data-page-number="116" data-source="GA4, Screaming Frog, Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Mobile Optimization</h2>
                 <h3 class="page-subtitle">La optimización para móviles es imprescindible. La navegación en dispositivos mó...</h3>
@@ -2264,7 +2481,7 @@
             </div>
         </section>
 
-        <section id="pagina-115" class="audit-page" data-page-number="117" data-source="GA4, PageSpeed">
+<section id="pagina-115" class="audit-page" data-page-number="117" data-source="GA4, PageSpeed">
             <div class="page-header">
                 <h2 class="page-title">[Optimización de la Velocidad de Web]</h2>
                 <h3 class="page-subtitle">egaP-nO</h3>
@@ -2278,7 +2495,7 @@
             </div>
         </section>
 
-        <section id="pagina-116" class="audit-page" data-page-number="118" data-source="GA4, Ahrefs, PageSpeed, Análisis Manual">
+<section id="pagina-116" class="audit-page" data-page-number="118" data-source="GA4, Ahrefs, PageSpeed, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Revisión:</h2>
                 <h3 class="page-subtitle">gran medidade manteneruna velocidadde carga óptima en una página web.</h3>
@@ -2292,7 +2509,7 @@
             </div>
         </section>
 
-        <section id="pagina-117" class="audit-page" data-page-number="119" data-source="GA4, PageSpeed">
+<section id="pagina-117" class="audit-page" data-page-number="119" data-source="GA4, PageSpeed">
             <div class="page-header">
                 <h2 class="page-title">Core Web Vitals de la Home: No superada</h2>
                 <h3 class="page-subtitle">Correcciones:</h3>
@@ -2306,7 +2523,7 @@
             </div>
         </section>
 
-        <section id="pagina-118" class="audit-page" data-page-number="120" data-source="Análisis Manual">
+<section id="pagina-118" class="audit-page" data-page-number="120" data-source="Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">SEO Off-Page</h2>
                 <h3 class="page-subtitle">Portada</h3>
@@ -2320,7 +2537,7 @@
             </div>
         </section>
 
-        <section id="pagina-119" class="audit-page" data-page-number="121" data-source="GA4">
+<section id="pagina-119" class="audit-page" data-page-number="121" data-source="GA4">
             <div class="page-header">
                 <h2 class="page-title">Perfil de enlaces</h2>
                 <h3 class="page-subtitle">egaP-ffO</h3>
@@ -2334,7 +2551,7 @@
             </div>
         </section>
 
-        <section id="pagina-120" class="audit-page" data-page-number="122" data-source="GA4, Ahrefs">
+<section id="pagina-120" class="audit-page" data-page-number="122" data-source="GA4, Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Perfil de enlaces</h2>
                 <h3 class="page-subtitle">que los enlaces querecibe la web son saludables y que aportan la fuerza necesari...</h3>
@@ -2348,7 +2565,7 @@
             </div>
         </section>
 
-        <section id="pagina-121" class="audit-page" data-page-number="123" data-source="GA4, Ahrefs, Análisis Manual">
+<section id="pagina-121" class="audit-page" data-page-number="123" data-source="GA4, Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Perfil de enlaces: Dominios Referidos</h2>
                 <h3 class="page-subtitle">La variedad de Dominios Referidos y su calidad son el factor a tener</h3>
@@ -2362,7 +2579,7 @@
             </div>
         </section>
 
-        <section id="pagina-122" class="audit-page" data-page-number="124" data-source="Ahrefs, Análisis Manual">
+<section id="pagina-122" class="audit-page" data-page-number="124" data-source="Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Perfil de enlaces: Fuerza de Dominio</h2>
                 <h3 class="page-subtitle">Tanto la Autoridad como el Raiting son métricas propias de las</h3>
@@ -2376,7 +2593,7 @@
             </div>
         </section>
 
-        <section id="pagina-123" class="audit-page" data-page-number="125" data-source="Ahrefs">
+<section id="pagina-123" class="audit-page" data-page-number="125" data-source="Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Perfil de enlaces: Fuerza de Dominio</h2>
                 <h3 class="page-subtitle">* Comparativa de dominios Herramienta</h3>
@@ -2390,7 +2607,7 @@
             </div>
         </section>
 
-        <section id="pagina-124" class="audit-page" data-page-number="126" data-source="GA4, Search Console, Análisis Manual">
+<section id="pagina-124" class="audit-page" data-page-number="126" data-source="GA4, Search Console, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Perfil de enlaces: Dominios SPAM</h2>
                 <h3 class="page-subtitle">Los Dominios Spam son de mala calidad y contribuyen</h3>
@@ -2404,7 +2621,7 @@
             </div>
         </section>
 
-        <section id="pagina-125" class="audit-page" data-page-number="127" data-source="Ahrefs, Análisis Manual">
+<section id="pagina-125" class="audit-page" data-page-number="127" data-source="Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Perfil de enlaces: Origen Enlaces</h2>
                 <h3 class="page-subtitle">El origen de los enlaces es importante para posicionar en la región de donde</h3>
@@ -2418,7 +2635,7 @@
             </div>
         </section>
 
-        <section id="pagina-126" class="audit-page" data-page-number="128" data-source="Ahrefs, Análisis Manual">
+<section id="pagina-126" class="audit-page" data-page-number="128" data-source="Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Perfil de enlaces: Enlaces rotos</h2>
                 <h3 class="page-subtitle">Nos referimos a enlaces rotos cuando la página de la web a la</h3>
@@ -2432,7 +2649,7 @@
             </div>
         </section>
 
-        <section id="pagina-127" class="audit-page" data-page-number="129" data-source="GA4, Search Console, Ahrefs, Análisis Manual">
+<section id="pagina-127" class="audit-page" data-page-number="129" data-source="GA4, Search Console, Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Perfil de enlaces: Texto de ancla</h2>
                 <h3 class="page-subtitle">El texto de ancla son las palabras por las que nos enlazan los otros dominios.</h3>
@@ -2446,7 +2663,7 @@
             </div>
         </section>
 
-        <section id="pagina-128" class="audit-page" data-page-number="130" data-source="GA4, Ahrefs, Análisis Manual">
+<section id="pagina-128" class="audit-page" data-page-number="130" data-source="GA4, Ahrefs, Análisis Manual">
             <div class="page-header">
                 <h2 class="page-title">Perfil de enlaces: Dominios perdidos</h2>
                 <h3 class="page-subtitle">Los dominios perdidos son webs que han dejado de enlazarnos, por lo</h3>
@@ -2460,7 +2677,7 @@
             </div>
         </section>
 
-        <section id="pagina-129" class="audit-page" data-page-number="131" data-source="Ahrefs, SEMrush">
+<section id="pagina-129" class="audit-page" data-page-number="131" data-source="Ahrefs, SEMrush">
             <div class="page-header">
                 <h2 class="page-title">Anchor Text en Dominios Entrantes</h2>
                 <h3 class="page-subtitle">Tareas</h3>
@@ -2474,7 +2691,23 @@
             </div>
         </section>
 
-        <section id="pagina-130" class="audit-page" data-page-number="132" data-source="GA4, Search Console, Ahrefs">
+<section id="seccion-priorizacion" class="audit-page section-cover" data-page-number="section-5" data-source="Integrado">
+            <div class="section-cover-content">
+                <div class="section-number">05</div>
+                <h1 class="section-cover-title">Priorización de Tareas</h1>
+                <p class="section-cover-description">Plan de acción estratégico con tareas priorizadas por impacto y esfuerzo, incluyendo estimaciones de tiempo y recursos necesarios.</p>
+                
+                <div class="section-index">
+                    <h3>Contenidos de esta sección:</h3>
+                    <ul class="section-index-list">
+                        <li><a href="#pagina-130">Tareas Auditoría</a></li>
+                        <li><a href="#pagina-131">Prioridad de las tareas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+<section id="pagina-130" class="audit-page" data-page-number="132" data-source="GA4, Search Console, Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Tareas Auditoría</h2>
                 <h3 class="page-subtitle">SEO ON PAGE</h3>
@@ -2488,7 +2721,7 @@
             </div>
         </section>
 
-        <section id="pagina-131" class="audit-page" data-page-number="133" data-source="GA4, Search Console, Ahrefs">
+<section id="pagina-131" class="audit-page" data-page-number="133" data-source="GA4, Search Console, Ahrefs">
             <div class="page-header">
                 <h2 class="page-title">Prioridad de las tareas</h2>
                 <h3 class="page-subtitle">RANGO B RANGO C</h3>
@@ -2501,6 +2734,7 @@
                 </div>
             </div>
         </section>
-  </main>
+
+</main>
 </body>
 </html>

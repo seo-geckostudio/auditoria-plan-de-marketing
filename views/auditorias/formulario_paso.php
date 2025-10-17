@@ -520,6 +520,7 @@ $porcentaje_completado = calcularCompletitudFormulario($paso_id);
     <?php if (strpos(strtolower($paso_info['codigo_paso'] ?? ''), 'brief') !== false ||
               strpos(strtolower($paso_info['paso_nombre'] ?? ''), 'brief') !== false): ?>
     <script src="js/brief_cliente_import.js"></script>
+    <script src="js/ia_local_integration.js"></script>
     <?php endif; ?>
 
     <script>
@@ -966,50 +967,12 @@ ${plantillaTexto}
 
         // OPCIÓN 3: Búsqueda automática con IA local
         function buscarConIA() {
-            const contenidoDinamico = document.getElementById('contenido-dinamico');
-            const botonesAccion = document.getElementById('botones-accion');
-            const urlCliente = "<?php echo htmlspecialchars($auditoria['url_principal'] ?? ''); ?>";
-            const nombrePaso = "<?php echo htmlspecialchars($paso_info['paso_nombre'] ?? 'Paso'); ?>";
-
-            if (!urlCliente) {
-                alert('No se ha configurado la URL del cliente en esta auditoría');
-                return;
+            // Usar el sistema de IA Local si está disponible
+            if (typeof iniciarAsistenteIALocal === 'function') {
+                iniciarAsistenteIALocal();
+            } else {
+                alert('El sistema de IA Local no está disponible para este formulario.\n\nEsta funcionalidad está disponible solo para el Brief del Cliente.');
             }
-
-            contenidoDinamico.innerHTML = `
-                <div class="alert alert-warning">
-                    <h6><i class="fas fa-magic"></i> Búsqueda Automática con IA</h6>
-                    <p class="mb-0">Claude analizará automáticamente la información disponible para "${nombrePaso}"</p>
-                </div>
-
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="spinner-border text-warning me-3" role="status" id="spinner-busqueda">
-                                <span class="visually-hidden">Buscando...</span>
-                            </div>
-                            <div>
-                                <strong>Analizando: ${urlCliente}</strong><br>
-                                <small class="text-muted">Esto puede tomar unos momentos...</small>
-                            </div>
-                        </div>
-
-                        <div id="progreso-busqueda" class="progress mb-3">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 10%"></div>
-                        </div>
-
-                        <div id="resultado-busqueda" style="display: none;">
-                            <!-- Los resultados aparecerán aquí -->
-                        </div>
-                    </div>
-                </div>
-            `;
-
-            contenidoDinamico.style.display = 'block';
-            botonesAccion.style.display = 'flex';
-
-            // Simular búsqueda automática
-            simularBusquedaIA(urlCliente, nombrePaso);
         }
 
         // Copiar plantilla completa al portapapeles

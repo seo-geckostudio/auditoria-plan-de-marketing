@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <defs>
+    <style>
+      .title { font: 700 24px 'Segoe UI', sans-serif; fill: #1f2937; }
+      .subtitle { font: 600 16px 'Segoe UI', sans-serif; fill: #6b7280; }
+      .label { font: 600 14px 'Segoe UI', sans-serif; fill: #374151; }
+      .small { font: 500 12px 'Segoe UI', sans-serif; fill: #6b7280; }
+      .box { rx: 12; stroke: #d1d5db; stroke-width: 2; fill: #ffffff; }
+      .ok { fill: #10b981; }
+      .warn { fill: #f59e0b; }
+      .bad { fill: #ef4444; }
+      .line { stroke: #9ca3af; stroke-width: 2; marker-end: url(#arrow); }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9ca3af" />
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="960" height="540" fill="#ffffff"/>
+
+  <!-- Header -->
+  <text class="title" x="40" y="50">Configuración de Analítica Web</text>
+  <text class="subtitle" x="40" y="78">Google Analytics 4 + Google Tag Manager</text>
+
+  <!-- GA4 Box -->
+  <rect class="box" x="80" y="120" width="300" height="160"/>
+  <text class="label" x="100" y="150">GA4 — Propiedad principal</text>
+  <circle class="ok" cx="100" cy="170" r="6"/>
+  <text class="small" x="115" y="174">Medición básica activa</text>
+  <circle class="ok" cx="100" cy="195" r="6"/>
+  <text class="small" x="115" y="199">Eventos de conversión</text>
+  <circle class="warn" cx="100" cy="220" r="6"/>
+  <text class="small" x="115" y="224">Audiencias por dispositivo</text>
+  <circle class="warn" cx="100" cy="245" r="6"/>
+  <text class="small" x="115" y="249">Mejorar etiquetado de campañas</text>
+
+  <!-- GTM Box -->
+  <rect class="box" x="580" y="120" width="300" height="160"/>
+  <text class="label" x="600" y="150">GTM — Contenedor web</text>
+  <circle class="ok" cx="600" cy="170" r="6"/>
+  <text class="small" x="615" y="174">Cargas en todas las páginas</text>
+  <circle class="ok" cx="600" cy="195" r="6"/>
+  <text class="small" x="615" y="199">Tags GA4 configurados</text>
+  <circle class="warn" cx="600" cy="220" r="6"/>
+  <text class="small" x="615" y="224">Variables de campaña</text>
+  <circle class="bad" cx="600" cy="245" r="6"/>
+  <text class="small" x="615" y="249">Consent Mode V2 pendiente</text>
+
+  <!-- Flow arrow -->
+  <line class="line" x1="380" y1="200" x2="580" y2="200"/>
+  <text class="small" x="440" y="190">Eventos</text>
+
+  <!-- KPI Tiles -->
+  <rect class="box" x="80" y="320" width="220" height="150"/>
+  <text class="label" x="100" y="350">Sesiones mensuales</text>
+  <text class="subtitle" x="100" y="380">~2.5k</text>
+
+  <rect class="box" x="320" y="320" width="220" height="150"/>
+  <text class="label" x="340" y="350">Tasa de rebote</text>
+  <text class="subtitle" x="340" y="380">45%</text>
+
+  <rect class="box" x="560" y="320" width="220" height="150"/>
+  <text class="label" x="580" y="350">Duración media</text>
+  <text class="subtitle" x="580" y="380">3:20 min</text>
+
+  <!-- Footer note -->
+  <text class="small" x="40" y="520">Fuente: GA4 (maqueta visual; valores orientativos)</text>
+</svg>

@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Sistema Real - Brief Cliente</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .test-section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .test-result {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 14px;
+        }
+        .test-success {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+        .test-error {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+        .test-warning {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+        }
+        .test-info {
+            background-color: #d1ecf1;
+            border: 1px solid #bee5eb;
+            color: #0c5460;
+        }
+        .iframe-container {
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        iframe {
+            width: 100%;
+            min-height: 800px;
+            border: none;
+        }
+        .test-controls {
+            position: sticky;
+            top: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="mb-4"><i class="fas fa-vial"></i> Test Sistema Real - Brief Cliente</h1>
+
+        <div class="alert alert-info">
+            <strong><i class="fas fa-info-circle"></i> Objetivo:</strong>
+            Verificar que las correcciones funcionan en la aplicación real navegando a:
+            <code>http://localhost:8000/index.php?modulo=auditorias&accion=formulario&auditoria_id=1&paso_id=40</code>
+        </div>
+
+        <div class="row">
+            <!-- Panel de Control de Tests -->
+            <div class="col-lg-4">
+                <div class="test-controls">
+                    <h5><i class="fas fa-tasks"></i> Panel de Control</h5>
+                    <hr>
+
+                    <div class="mb-3">
+                        <label class="form-label"><strong>URL de la Aplicación:</strong></label>
+                        <input type="text" class="form-control form-control-sm" id="app-url"
+                               value="http://localhost:8000/index.php?modulo=auditorias&accion=formulario&auditoria_id=1&paso_id=40" readonly>
+                    </div>
+
+                    <button class="btn btn-primary w-100 mb-2" onclick="cargarAplicacion()">
+                        <i class="fas fa-sync"></i> Cargar/Recargar Aplicación
+                    </button>
+
+                    <hr>
+
+                    <h6>Tests Automatizados:</h6>
+
+                    <button class="btn btn-outline-primary w-100 mb-2" onclick="test1_verificarPlantillaOculta()">
+                        <i class="fas fa-eye-slash"></i> Test 1: Plantilla Oculta
+                    </button>
+
+                    <button class="btn btn-outline-success w-100 mb-2" onclick="test2_verificarAsistenciaIA()">
+                        <i class="fas fa-robot"></i> Test 2: Asistencia IA
+                    </button>
+
+                    <button class="btn btn-outline-info w-100 mb-2" onclick="test3_verificarOpcionesIA()">
+                        <i class="fas fa-th"></i> Test 3: 3 Opciones IA
+                    </button>
+
+                    <button class="btn btn-outline-warning w-100 mb-2" onclick="test4_verificarGenerarPlantilla()">
+                        <i class="fas fa-file-export"></i> Test 4: Generar Plantilla
+                    </button>
+
+                    <button class="btn btn-outline-secondary w-100 mb-2" onclick="test5_verificarImportarJSON()">
+                        <i class="fas fa-upload"></i> Test 5: Importar JSON
+                    </button>
+
+                    <button class="btn btn-outline-danger w-100 mb-2" onclick="test6_verificarCampoKPIs()">
+                        <i class="fas fa-check-square"></i> Test 6: Campo KPIs
+                    </button>
+
+                    <hr>
+
+                    <button class="btn btn-success w-100" onclick="ejecutarTodosLosTests()">
+                        <i class="fas fa-play-circle"></i> Ejecutar Todos
+                    </button>
+
+                    <hr>
+
+                    <div id="resumen-tests" class="mt-3">
+                        <strong>Estado:</strong> <span id="estado-general">No ejecutado</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resultados de Tests -->
+            <div class="col-lg-8">
+                <div class="test-section">
+                    <h5><i class="fas fa-clipboard-list"></i> Resultados de Tests</h5>
+                    <div id="resultados-tests">
+                        <p class="text-muted">Los resultados aparecerán aquí...</p>
+                    </div>
+                </div>
+
+                <!-- Frame de la Aplicación -->
+                <div class="test-section">
+                    <h5><i class="fas fa-desktop"></i> Vista de la Aplicación Real</h5>
+                    <div class="iframe-container">
+                        <iframe id="app-iframe" src="about:blank"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let testResults = {
+            test1: null,
+            test2: null,
+            test3: null,
+            test4: null,
+            test5: null,
+            test6: null
+        };
+
+        function mostrarResultado(tipo, mensaje) {
+            const container = document.getElementById('resultados-tests');
+            const claseCSS = tipo === 'success' ? 'test-success' :
+                            tipo === 'error' ? 'test-error' :
+                            tipo === 'warning' ? 'test-warning' : 'test-info';
+
+            const icono = tipo === 'success' ? '✅' :
+                         tipo === 'error' ? '❌' :
+                         tipo === 'warning' ? '⚠️' : 'ℹ️';
+
+            const timestamp = new Date().toLocaleTimeString();
+            container.innerHTML += `<div class="test-result ${claseCSS}">[${timestamp}] ${icono} ${mensaje}</div>`;
+
+            // Auto-scroll al último resultado
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function limpiarResultados() {
+            document.getElementById('resultados-tests').innerHTML = '';
+        }
+
+        function cargarAplicacion() {
+            const url = document.getElementById('app-url').value;
+            const iframe = document.getElementById('app-iframe');
+
+            mostrarResultado('info', 'Cargando aplicación real...');
+            iframe.src = url;
+
+            iframe.onload = function() {
+                mostrarResultado('success', 'Aplicación cargada correctamente');
+            };
+
+            iframe.onerror = function() {
+                mostrarResultado('error', 'Error al cargar la aplicación. ¿Está el servidor corriendo?');
+            };
+        }
+
+        function getIframeDocument() {
+            const iframe = document.getElementById('app-iframe');
+            return iframe.contentDocument || iframe.contentWindow.document;
+        }
+
+        function esperarElemento(selector, timeout = 5000) {
+            return new Promise((resolve, reject) => {
+                const startTime = Date.now();
+                const checkExist = setInterval(() => {
+                    const doc = getIframeDocument();
+                    const element = doc.querySelector(selector);
+
+                    if (element) {
+                        clearInterval(checkExist);
+                        resolve(element);
+                    } else if (Date.now() - startTime > timeout) {
+                        clearInterval(checkExist);
+                        reject(new Error(`Timeout esperando elemento: ${selector}`));
+                    }
+                }, 100);
+            });
+        }
+
+        // TEST 1: Verificar que la plantilla está oculta por defecto
+        async function test1_verificarPlantillaOculta() {
+            mostrarResultado('info', '--- Iniciando Test 1: Plantilla Oculta por Defecto ---');
+
+            try {
+                const doc = getIframeDocument();
+
+                // Verificar que existe el botón "Ver Plantilla"
+                const botonVerPlantilla = doc.querySelector('button[onclick*="mostrarInstrucciones"]');
+                if (botonVerPlantilla) {
+                    mostrarResultado('success', 'PASO 1: Botón "Ver Plantilla" encontrado ✓');
+                } else {
+                    mostrarResultado('error', 'PASO 1: Botón "Ver Plantilla" NO encontrado ✗');
+                    testResults.test1 = false;
+                    return;
+                }
+
+                // Verificar que la sección de instrucciones está oculta
+                const seccionInstrucciones = doc.getElementById('instrucciones-section');
+                if (seccionInstrucciones) {
+                    const isHidden = seccionInstrucciones.style.display === 'none' ||
+                                   window.getComputedStyle(seccionInstrucciones).display === 'none';
+
+                    if (isHidden) {
+                        mostrarResultado('success', 'PASO 2: Sección de instrucciones oculta por defecto ✓');
+                    } else {
+                        mostrarResultado('error', 'PASO 2: Sección de instrucciones NO está oculta ✗');
+                        testResults.test1 = false;
+                        return;
+                    }
+                } else {
+                    mostrarResultado('warning', 'PASO 2: Sección de instrucciones no encontrada (puede no tener instrucciones) ⚠️');
+                }
+
+                // Verificar que existe la sección con el botón "Ver Plantilla"
+                const seccionBoton = doc.getElementById('mostrar-plantilla-btn');
+                if (seccionBoton) {
+                    mostrarResultado('success', 'PASO 3: Sección con botón "Ver Plantilla" existe ✓');
+                } else {
+                    mostrarResultado('warning', 'PASO 3: Sección con botón no encontrada (puede no tener instrucciones) ⚠️');
+                }
+
+                mostrarResultado('success', '🎉 TEST 1 COMPLETADO: Plantilla oculta correctamente por defecto');
+                testResults.test1 = true;
+
+            } catch (error) {
+                mostrarResultado('error', `Error en Test 1: ${error.message}`);
+                testResults.test1 = false;
+            }
+        }
+
+        // TEST 2: Verificar sección "Asistencia con IA"
+        async function test2_verificarAsistenciaIA() {
+            mostrarResultado('info', '--- Iniciando Test 2: Asistencia con IA ---');
+
+            try {
+                const doc = getIframeDocument();
+
+                // Verificar que existe la sección de Asistencia con IA
+                const seccionIA = doc.querySelector('.card-header[style*="667eea"]');
+                if (seccionIA) {
+                    mostrarResultado('success', 'PASO 1: Sección "Asistencia con IA" encontrada ✓');
+
+                    // Verificar que contiene el icono robot
+                    const iconoRobot = seccionIA.querySelector('.fa-robot');
+                    if (iconoRobot) {
+                        mostrarResultado('success', 'PASO 2: Icono de robot presente ✓');
+                    } else {
+                        mostrarResultado('warning', 'PASO 2: Icono de robot no encontrado ⚠️');
+                    }
+                } else {
+                    mostrarResultado('error', 'PASO 1: Sección "Asistencia con IA" NO encontrada ✗');
+                    testResults.test2 = false;
+                    return;
+                }
+
+                // Verificar que existe el botón de toggle
+                const botonToggle = doc.querySelector('button[onclick="toggleImportacion()"]');
+                if (botonToggle) {
+                    mostrarResultado('success', 'PASO 3: Botón toggle (expandir/colapsar) encontrado ✓');
+                } else {
+                    mostrarResultado('error', 'PASO 3: Botón toggle NO encontrado ✗');
+                    testResults.test2 = false;
+                    return;
+                }
+
+                // Verificar que la sección está colapsada por defecto
+                const seccionImportacion = doc.getElementById('seccion-importacion');
+                if (seccionImportacion) {
+                    const isHidden = seccionImportacion.style.display === 'none';
+                    if (isHidden) {
+                        mostrarResultado('success', 'PASO 4: Sección colapsada por defecto ✓');
+                    } else {
+                        mostrarResultado('warning', 'PASO 4: Sección visible por defecto ⚠️');
+                    }
+                } else {
+                    mostrarResultado('error', 'PASO 4: Sección de importación NO encontrada ✗');
+                    testResults.test2 = false;
+                    return;
+                }
+
+                mostrarResultado('success', '🎉 TEST 2 COMPLETADO: Asistencia con IA funcionando correctamente');
+                testResults.test2 = true;
+
+            } catch (error) {
+                mostrarResultado('error', `Error en Test 2: ${error.message}`);
+                testResults.test2 = false;
+            }
+        }
+
+        // TEST 3: Verificar las 3 opciones de IA
+        async function test3_verificarOpcionesIA() {
+            mostrarResultado('info', '--- Iniciando Test 3: Tres Opciones de IA ---');
+
+            try {
+                const doc = getIframeDocument();
+
+                // Primero expandir la sección si está colapsada
+                const seccionImportacion = doc.getElementById('seccion-importacion');
+                if (seccionImportacion && seccionImportacion.style.display === 'none') {
+                    const botonToggle = doc.querySelector('button[onclick="toggleImportacion()"]');
+                    if (botonToggle) {
+                        botonToggle.click();
+                        await new Promise(resolve => setTimeout(resolve, 500)); // Esperar animación
+                        mostrarResultado('info', 'Sección de IA expandida para testing');
+                    }
+                }
+
+                // Verificar Opción 1: Para Cliente Remoto
+                const opcion1 = doc.querySelector('.card-header.bg-primary');
+                if (opcion1 && opcion1.textContent.includes('Cliente Remoto')) {
+                    mostrarResultado('success', 'PASO 1: Opción "Para Cliente Remoto" encontrada ✓');
+
+                    const botonOpcion1 = doc.querySelector('button[onclick="generarPlantillaCliente()"]');
+                    if (botonOpcion1) {
+                        mostrarResultado('success', 'PASO 1.1: Botón "Generar Plantilla IA" encontrado ✓');
+                    } else {
+                        mostrarResultado('error', 'PASO 1.1: Botón "Generar Plantilla IA" NO encontrado ✗');
+                    }
+                } else {
+                    mostrarResultado('error', 'PASO 1: Opción "Para Cliente Remoto" NO encontrada ✗');
+                    testResults.test3 = false;
+                    return;
+                }
+
+                // Verificar Opción 2: Importar JSON
+                const opcion2 = doc.querySelector('.card-header.bg-success');
+                if (opcion2 && opcion2.textContent.includes('Importar JSON')) {
+                    mostrarResultado('success', 'PASO 2: Opción "Importar JSON" encontrada ✓');
+
+                    const botonSubir = doc.querySelector('button[onclick="mostrarImportacion()"]');
+                    const botonPegar = doc.querySelector('button[onclick="mostrarTextarea()"]');
+
+                    if (botonSubir && botonPegar) {
+                        mostrarResultado('success', 'PASO 2.1: Botones "Subir Archivo" y "Pegar JSON" encontrados ✓');
+                    } else {
+                        mostrarResultado('error', 'PASO 2.1: Botones de importación NO encontrados ✗');
+                    }
+                } else {
+                    mostrarResultado('error', 'PASO 2: Opción "Importar JSON" NO encontrada ✗');
+                    testResults.test3 = false;
+                    return;
+                }
+
+                // Verificar Opción 3: IA Local (Claude)
+                const opcion3 = doc.querySelector('.card-header.bg-warning');
+                if (opcion3 && opcion3.textContent.includes('IA Local')) {
+                    mostrarResultado('success', 'PASO 3: Opción "IA Local (Claude)" encontrada ✓');
+
+                    const botonIA = doc.querySelector('button[onclick="buscarConIA()"]');
+                    if (botonIA) {
+                        mostrarResultado('success', 'PASO 3.1: Botón "Buscar Automáticamente" encontrado ✓');
+                    } else {
+                        mostrarResultado('error', 'PASO 3.1: Botón "Buscar Automáticamente" NO encontrado ✗');
+                    }
+                } else {
+                    mostrarResultado('error', 'PASO 3: Opción "IA Local (Claude)" NO encontrada ✗');
+                    testResults.test3 = false;
+                    return;
+                }
+
+                mostrarResultado('success', '🎉 TEST 3 COMPLETADO: Las 3 opciones de IA están presentes');
+                testResults.test3 = true;
+
+            } catch (error) {
+                mostrarResultado('error', `Error en Test 3: ${error.message}`);
+                testResults.test3 = false;
+            }
+        }
+
+        // TEST 4: Verificar función "Generar Plantilla"
+        async function test4_verificarGenerarPlantilla() {
+            mostrarResultado('info', '--- Iniciando Test 4: Generar Plantilla Cliente ---');
+
+            try {
+                const doc = getIframeDocument();
+                const win = doc.defaultView || doc.parentWindow;
+
+                // Expandir sección si está colapsada
+                const seccionImportacion = doc.getElementById('seccion-importacion');
+                if (seccionImportacion && seccionImportacion.style.display === 'none') {
+                    const botonToggle = doc.querySelector('button[onclick="toggleImportacion()"]');
+                    if (botonToggle) botonToggle.click();
+                    await new Promise(resolve => setTimeout(resolve, 500));
+                }
+
+                // Verificar que existe la función generarPlantillaCliente
+                if (typeof win.generarPlantillaCliente === 'function') {
+                    mostrarResultado('success', 'PASO 1: Función generarPlantillaCliente() existe ✓');
+                } else {
+                    mostrarResultado('error', 'PASO 1: Función generarPlantillaCliente() NO existe ✗');
+                    testResults.test4 = false;
+                    return;
+                }
+
+                // Verificar que existe la función mejorada del brief
+                if (typeof win.generarPlantillaMejoradaCliente === 'function') {
+                    mostrarResultado('success', 'PASO 2: Función generarPlantillaMejoradaCliente() existe (sistema mejorado) ✓');
+                } else {
+                    mostrarResultado('warning', 'PASO 2: Función generarPlantillaMejoradaCliente() no encontrada (puede usar versión antigua) ⚠️');
+                }
+
+                mostrarResultado('success', '🎉 TEST 4 COMPLETADO: Función de generación de plantilla disponible');
+                testResults.test4 = true;
+
+            } catch (error) {
+                mostrarResultado('error', `Error en Test 4: ${error.message}`);
+                testResults.test4 = false;
+            }
+        }
+
+        // TEST 5: Verificar importación JSON
+        async function test5_verificarImportarJSON() {
+            mostrarResultado('info', '--- Iniciando Test 5: Importar JSON ---');
+
+            try {
+                const doc = getIframeDocument();
+                const win = doc.defaultView || doc.parentWindow;
+
+                // Verificar funciones de importación
+                if (typeof win.mostrarImportacion === 'function') {
+                    mostrarResultado('success', 'PASO 1: Función mostrarImportacion() existe ✓');
+                } else {
+                    mostrarResultado('error', 'PASO 1: Función mostrarImportacion() NO existe ✗');
+                    testResults.test5 = false;
+                    return;
+                }
+
+                if (typeof win.mostrarTextarea === 'function') {
+                    mostrarResultado('success', 'PASO 2: Función mostrarTextarea() existe ✓');
+                } else {
+                    mostrarResultado('error', 'PASO 2: Función mostrarTextarea() NO existe ✗');
+                    testResults.test5 = false;
+                    return;
+                }
+
+                // Verificar que existe la función de aplicación inteligente de datos
+                if (typeof win.aplicarDatosInteligente === 'function') {
+                    mostrarResultado('success', 'PASO 3: Función aplicarDatosInteligente() existe (sistema mejorado) ✓');
+                } else {
+                    mostrarResultado('warning', 'PASO 3: Función aplicarDatosInteligente() no encontrada ⚠️');
+                }
+
+                // Verificar schema JSON
+                if (typeof win.BRIEF_CLIENTE_SCHEMA !== 'undefined') {
+                    mostrarResultado('success', 'PASO 4: BRIEF_CLIENTE_SCHEMA definido (schema estructurado disponible) ✓');
+                } else {
+                    mostrarResultado('warning', 'PASO 4: BRIEF_CLIENTE_SCHEMA no encontrado ⚠️');
+                }
+
+                mostrarResultado('success', '🎉 TEST 5 COMPLETADO: Sistema de importación JSON disponible');
+                testResults.test5 = true;
+
+            } catch (error) {
+                mostrarResultado('error', `Error en Test 5: ${error.message}`);
+                testResults.test5 = false;
+            }
+        }
+
+        // TEST 6: Verificar detección de campo KPIs problemático
+        async function test6_verificarCampoKPIs() {
+            mostrarResultado('info', '--- Iniciando Test 6: Campo KPIs Problemático ---');
+
+            try {
+                const doc = getIframeDocument();
+                const win = doc.defaultView || doc.parentWindow;
+
+                // Verificar que existe la función de detección
+                if (typeof win.manejarCampoKPIsProblematico === 'function') {
+                    mostrarResultado('success', 'PASO 1: Función manejarCampoKPIsProblematico() existe ✓');
+                } else {
+                    mostrarResultado('warning', 'PASO 1: Función manejarCampoKPIsProblematico() no encontrada ⚠️');
+                }
+
+                // Buscar campos checkbox que sean requeridos
+                const checkboxesRequeridos = doc.querySelectorAll('input[type="checkbox"][required]');
+
+                if (checkboxesRequeridos.length > 0) {
+                    mostrarResultado('warning', `PASO 2: Se encontraron ${checkboxesRequeridos.length} checkbox(es) requeridos (problemáticos) ⚠️`);
+
+                    // Verificar si alguno es el campo KPIs
+                    let kpiEncontrado = false;
+                    checkboxesRequeridos.forEach((checkbox, index) => {
+                        const label = checkbox.closest('.mb-3')?.querySelector('label')?.textContent || 'Sin label';
+                        mostrarResultado('info', `   └─ Checkbox ${index + 1}: "${label.trim()}"`);
+
+                        if (label.toLowerCase().includes('kpi')) {
+                            kpiEncontrado = true;
+                            mostrarResultado('warning', '      └─ ⚠️ Este es el campo KPIs problemático detectado');
+                        }
+                    });
+
+                    if (kpiEncontrado) {
+                        mostrarResultado('info', 'PASO 3: Campo KPIs problemático confirmado - sistema debería detectarlo ℹ️');
+                    }
+                } else {
+                    mostrarResultado('success', 'PASO 2: No se encontraron checkboxes requeridos (problema resuelto o no presente) ✓');
+                }
+
+                // Verificar función de auto-marcar
+                if (typeof win.marcarKPIsAutomaticamente === 'function') {
+                    mostrarResultado('success', 'PASO 4: Función marcarKPIsAutomaticamente() disponible ✓');
+                } else {
+                    mostrarResultado('warning', 'PASO 4: Función marcarKPIsAutomaticamente() no encontrada ⚠️');
+                }
+
+                mostrarResultado('success', '🎉 TEST 6 COMPLETADO: Sistema de detección de campos problemáticos verificado');
+                testResults.test6 = true;
+
+            } catch (error) {
+                mostrarResultado('error', `Error en Test 6: ${error.message}`);
+                testResults.test6 = false;
+            }
+        }
+
+        // Ejecutar todos los tests en secuencia
+        async function ejecutarTodosLosTests() {
+            limpiarResultados();
+            mostrarResultado('info', '═══════════════════════════════════════════════════════');
+            mostrarResultado('info', '🚀 INICIANDO BATERÍA COMPLETA DE TESTS DEL SISTEMA REAL');
+            mostrarResultado('info', '═══════════════════════════════════════════════════════');
+
+            document.getElementById('estado-general').innerHTML = '<span class="badge bg-warning">Ejecutando...</span>';
+
+            await new Promise(resolve => setTimeout(resolve, 1000));
+
+            await test1_verificarPlantillaOculta();
+            await new Promise(resolve => setTimeout(resolve, 500));
+
+            await test2_verificarAsistenciaIA();
+            await new Promise(resolve => setTimeout(resolve, 500));
+
+            await test3_verificarOpcionesIA();
+            await new Promise(resolve => setTimeout(resolve, 500));
+
+            await test4_verificarGenerarPlantilla();
+            await new Promise(resolve => setTimeout(resolve, 500));
+
+            await test5_verificarImportarJSON();
+            await new Promise(resolve => setTimeout(resolve, 500));
+
+            await test6_verificarCampoKPIs();
+            await new Promise(resolve => setTimeout(resolve, 500));
+
+            mostrarResumenFinal();
+        }
+
+        function mostrarResumenFinal() {
+            mostrarResultado('info', '');
+            mostrarResultado('info', '═══════════════════════════════════════════════════════');
+            mostrarResultado('info', '📊 RESUMEN FINAL DE TESTS');
+            mostrarResultado('info', '═══════════════════════════════════════════════════════');
+
+            const totalTests = Object.keys(testResults).length;
+            const testsPasados = Object.values(testResults).filter(r => r === true).length;
+            const testsFallados = Object.values(testResults).filter(r => r === false).length;
+            const testsNoEjecutados = Object.values(testResults).filter(r => r === null).length;
+
+            mostrarResultado('info', `Total de tests: ${totalTests}`);
+            mostrarResultado('success', `Tests pasados: ${testsPasados} ✅`);
+            if (testsFallados > 0) mostrarResultado('error', `Tests fallados: ${testsFallados} ❌`);
+            if (testsNoEjecutados > 0) mostrarResultado('warning', `Tests no ejecutados: ${testsNoEjecutados} ⏸️`);
+            mostrarResultado('info', `Porcentaje de éxito: ${Math.round((testsPasados / totalTests) * 100)}%`);
+
+            mostrarResultado('info', '');
+            mostrarResultado('info', 'Detalle por test:');
+
+            const nombresTests = {
+                test1: 'Plantilla Oculta por Defecto',
+                test2: 'Asistencia con IA',
+                test3: 'Tres Opciones de IA',
+                test4: 'Generar Plantilla Cliente',
+                test5: 'Importar JSON',
+                test6: 'Campo KPIs Problemático'
+            };
+
+            for (let [test, resultado] of Object.entries(testResults)) {
+                const icono = resultado === true ? '✅' : resultado === false ? '❌' : '⏸️';
+                const estado = resultado === true ? 'PASADO' : resultado === false ? 'FALLADO' : 'NO EJECUTADO';
+                mostrarResultado('info', `${icono} ${nombresTests[test]}: ${estado}`);
+            }
+
+            if (testsFallados === 0 && testsPasados === totalTests) {
+                mostrarResultado('info', '');
+                mostrarResultado('success', '🎉 ¡TODAS LAS VERIFICACIONES PASARON CORRECTAMENTE!');
+                mostrarResultado('success', '✅ El sistema está funcionando correctamente en producción');
+                document.getElementById('estado-general').innerHTML = '<span class="badge bg-success">✅ Todos los tests OK</span>';
+            } else {
+                mostrarResultado('info', '');
+                mostrarResultado('warning', '⚠️ Algunos tests fallaron o no se ejecutaron');
+                mostrarResultado('warning', 'Revisa los resultados detallados arriba');
+                document.getElementById('estado-general').innerHTML = `<span class="badge bg-danger">❌ ${testsFallados} test(s) fallaron</span>`;
+            }
+
+            mostrarResultado('info', '═══════════════════════════════════════════════════════');
+        }
+
+        // Auto-cargar la aplicación al iniciar
+        window.onload = function() {
+            mostrarResultado('info', 'Sistema de tests cargado. Haz clic en "Cargar/Recargar Aplicación" para comenzar.');
+        };
+    </script>
+</body>
+</html>

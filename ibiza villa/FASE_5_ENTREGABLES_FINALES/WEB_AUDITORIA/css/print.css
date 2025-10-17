@@ -1,22 +1,19 @@
-/* Estilos de impresión en PDF (A4) optimizado para 131 páginas */
+/* Estilos de impresión en PDF (A4 Apaisado) optimizado para 131 páginas */
 
 @page {
   size: A4 landscape; /* Orientación apaisada */
-  margin: 12mm 15mm 18mm 15mm; /* Top, Right, Bottom, Left - ajustado para landscape */
-  
-  @bottom-left {
-    content: "Página: " attr(data-page-title) " — Fuentes: " attr(data-source);
-    font-size: 8pt;
-    color: #666;
-    font-family: 'Hanken Grotesk', Arial, sans-serif;
-  }
-  
-  @bottom-right {
-    content: "Página " counter(page) " de 133";
-    font-size: 8pt;
-    color: #666;
-    font-family: 'Hanken Grotesk', Arial, sans-serif;
-  }
+  margin: 15mm 20mm 15mm 20mm; /* Top, Right, Bottom, Left */
+}
+
+/* Página específica para portadas sin márgenes en headers/footers */
+@page cover {
+  size: A4 landscape;
+  margin: 20mm; /* Márgenes uniformes para portadas */
+}
+
+@page index {
+  size: A4 landscape;
+  margin: 20mm;
 }
 
 /* Ocultar navegación y márgenes adecuados */
@@ -36,11 +33,19 @@
   page-break-inside: avoid;
   border: none;
   box-shadow: none;
-  padding: 0;
+  padding: 10mm 15mm; /* Padding interno para contenido */
   margin: 0;
-  min-height: 180mm; /* Altura mínima para A4 landscape */
-  max-width: 270mm; /* Ancho máximo para A4 landscape */
+  width: 100%; /* Usar todo el ancho disponible */
+  max-width: none; /* Sin límite de ancho máximo */
+  box-sizing: border-box;
   position: relative;
+}
+
+/* Solo aplicar altura mínima en impresión real, no en pantalla */
+@media print {
+  .audit-page {
+    min-height: 180mm; /* Altura mínima para A4 landscape */
+  }
 }
 
 /* Última página sin salto */
@@ -95,10 +100,6 @@
 
 /* Footer optimizado con información de página y fuentes */
 .page-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   margin-top: 8mm;
   padding-top: 3mm;
   border-top: 1px solid #ccc;
@@ -107,6 +108,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  page-break-inside: avoid;
 }
 
 .footer-text {
@@ -117,6 +119,26 @@
 .footer-page-num {
   text-align: right;
   font-weight: 500;
+}
+
+/* OCULTAR HEADERS Y FOOTERS EN PORTADAS, ÍNDICE Y SUBPORTADAS */
+.cover-page .page-header,
+.cover-page .page-footer,
+.index-page .page-header,
+.index-page .page-footer,
+.section-cover .page-header,
+.section-cover .page-footer {
+  display: none !important;
+}
+
+/* Aplicar página tipo 'cover' a portadas */
+.cover-page,
+.section-cover {
+  page: cover;
+}
+
+.index-page {
+  page: index;
 }
 
 /* Tipografías para impresión */
@@ -249,4 +271,176 @@ ul, ol {
 /* Asegurar que el contenido no se corte */
 .page-body > *:last-child {
   margin-bottom: 0;
+}
+
+/* MAQUETACIÓN ESPECÍFICA: Página Descripción del Proyecto */
+.project-description-page .page-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8mm;
+  align-items: start;
+}
+
+.project-description-page .project-info {
+  grid-column: 1;
+}
+
+.project-description-page .project-screenshot {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-description-page .screenshot-img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #e2e8f0;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.project-description-page .screenshot-caption {
+  font-size: 8pt;
+  color: #666;
+  margin-top: 2mm;
+  text-align: center;
+  font-style: italic;
+}
+
+.project-description-page h3 {
+  font-size: 12pt;
+  color: #54a34a !important;
+  margin: 4mm 0 2mm 0;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 1mm;
+}
+
+.project-description-page .info-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2mm 4mm;
+  margin: 3mm 0;
+  font-size: 9pt;
+}
+
+.project-description-page .info-label {
+  font-weight: 600;
+  color: #475569;
+}
+
+.project-description-page .info-value {
+  color: #1e293b;
+}
+
+/* Tablas de datos en impresión */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 4mm 0;
+  font-size: 9pt;
+}
+
+.data-table th {
+  background: #f8fafc !important;
+  color: #1e293b !important;
+  font-weight: 600;
+  text-align: left;
+  padding: 2mm;
+  border-bottom: 2px solid #54a34a;
+}
+
+.data-table td {
+  padding: 2mm;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.data-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Gráficas en impresión */
+.chart-container {
+  page-break-inside: avoid;
+  margin: 4mm 0;
+  padding: 3mm;
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+}
+
+.chart-container h4 {
+  font-size: 11pt;
+  color: #1e293b !important;
+  margin: 0 0 3mm 0;
+  font-weight: 600;
+}
+
+.chart-container canvas {
+  max-height: 120mm !important;
+}
+
+/* Secciones de conclusiones */
+.conclusions-section {
+  margin: 4mm 0;
+  page-break-inside: avoid;
+}
+
+.conclusions-section h3 {
+  font-size: 11pt;
+  color: #54a34a !important;
+  margin: 0 0 2mm 0;
+}
+
+.conclusions-section ul {
+  margin: 0;
+  padding-left: 6mm;
+}
+
+.conclusions-section li {
+  margin-bottom: 1.5mm;
+  line-height: 1.4;
+  font-size: 9pt;
+}
+
+/* Tarjetas de canales/métricas */
+.channels-grid,
+.metrics-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 3mm !important;
+  margin: 3mm 0 !important;
+}
+
+.channel-card,
+.metric-card {
+  background: white !important;
+  border: 1px solid #e2e8f0 !important;
+  padding: 3mm !important;
+  page-break-inside: avoid;
+}
+
+.channel-card h4 {
+  font-size: 10pt;
+  color: #1e293b !important;
+  margin: 0 0 2mm 0;
+  font-weight: 600;
+}
+
+/* Control de salto de página inteligente */
+.avoid-break {
+  page-break-inside: avoid;
+}
+
+/* Si una sección es muy larga, permitir split */
+.allow-break {
+  page-break-inside: auto;
+}
+
+/* Asegurar que imágenes no se distorsionen */
+img {
+  max-width: 100% !important;
+  height: auto !important;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
