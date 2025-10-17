@@ -1,0 +1,408 @@
+{
+  "arquitectura_urls": {
+    "nombre": "Arquitectura de URLs",
+    "icono": "🏗️",
+    "concepto": "¿Qué es la Arquitectura de URLs?",
+    "analogia": "Las URLs son como las direcciones de una ciudad: si son claras y lógicas, cualquiera puede encontrar lo que busca. URLs como '/alquiler/villas/san-jose/' son como 'Calle Principal 123', mientras que '/p?id=456&cat=abc' es como 'Sector XY-789-B'.",
+    "beneficios": [
+      "📈 +15% CTR en resultados de búsqueda (URLs más atractivas)",
+      "🎯 +20% facilidad de recordar y compartir URLs",
+      "🔍 Google entiende mejor el contenido de cada página",
+      "📱 URLs más cortas y legibles en móvil",
+      "🔗 Mayor confianza del usuario al ver URLs descriptivas"
+    ],
+    "riesgos": [
+      "⚠️ URLs largas se truncan en SERPs (-12% CTR)",
+      "🚫 Parámetros innecesarios generan contenido duplicado",
+      "📉 Estructura inconsistente confunde a Google y usuarios",
+      "❌ Caracteres especiales causan errores 404",
+      "💸 Pérdida de €2.000-4.000/mes en tráfico orgánico"
+    ],
+    "antes": {
+      "titulo": "ANTES: URLs Problemáticas",
+      "ejemplos": [
+        {
+          "url": "/es/alquiler/villas/ibiza/san-jose/luxury-properties/villa-can-pepito-5-bedrooms-sea-view-private-pool-garden-bbq-wifi",
+          "problema": "127 caracteres - Se trunca en SERPs",
+          "impacto": "-15% CTR"
+        },
+        {
+          "url": "/villas?sort=price&view=grid&page=2&sessionid=abc123",
+          "problema": "Parámetros innecesarios crean duplicados",
+          "impacto": "Dilución PageRank"
+        },
+        {
+          "url": "/villa/123",
+          "problema": "ID visible sin contexto semántico",
+          "impacto": "0% keywords en URL"
+        }
+      ],
+      "metricas": {
+        "ctr_promedio": "1.2%",
+        "posicion_promedio": "15.3",
+        "urls_compartidas": "12/mes"
+      }
+    },
+    "despues": {
+      "titulo": "DESPUÉS: URLs Optimizadas",
+      "ejemplos": [
+        {
+          "url": "/alquiler/villa-can-pepito-san-jose/",
+          "mejora": "41 caracteres - Descriptiva y concisa",
+          "impacto": "+15% CTR"
+        },
+        {
+          "url": "/villas/ + canonical tag",
+          "mejora": "URLs limpias sin parámetros",
+          "impacto": "PageRank consolidado"
+        },
+        {
+          "url": "/alquiler/villas/moderna-piscina-infinity/",
+          "mejora": "Slug descriptivo con keywords",
+          "impacto": "Keywords en URL"
+        }
+      ],
+      "metricas": {
+        "ctr_promedio": "1.8%",
+        "posicion_promedio": "11.7",
+        "urls_compartidas": "34/mes"
+      }
+    },
+    "csv_entregable": {
+      "nombre": "urls_largas_corregir.csv",
+      "descripcion": "10 URLs problemáticas con propuestas optimizadas"
+    }
+  },
+
+  "encabezados_h1": {
+    "nombre": "Estructura de Encabezados H1-H6",
+    "icono": "📑",
+    "concepto": "¿Qué son los Encabezados H1-H6?",
+    "analogia": "Los encabezados son como los capítulos de un libro: el H1 es el título del libro (solo uno), los H2 son los capítulos, los H3 las secciones de cada capítulo. Sin esta jerarquía, sería como leer un libro sin índice ni organización.",
+    "beneficios": [
+      "🎯 +12% mejor posicionamiento para keywords principales",
+      "👁️ Google identifica claramente el tema de cada página",
+      "♿ +25% mejora en accesibilidad (screen readers)",
+      "📱 Mejor experiencia de lectura en móvil",
+      "🔍 Featured snippets priorizan contenido bien estructurado"
+    ],
+    "riesgos": [
+      "❌ Sin H1: Google no identifica tema principal (-15% ranking)",
+      "⚠️ Múltiples H1: dilución de keyword principal",
+      "📉 H1 duplicados: canibalización entre páginas",
+      "🚫 Mala accesibilidad: penalización legal en algunos países",
+      "💸 Pérdida de €1.500-2.500/mes en tráfico"
+    ],
+    "antes": {
+      "titulo": "ANTES: Estructura Problemática",
+      "ejemplos": [
+        {
+          "problema": "Página sin H1",
+          "codigo": "<h2>Contacto</h2>\n<h3>Formulario</h3>",
+          "impacto": "Google no identifica tema"
+        },
+        {
+          "problema": "Múltiples H1 en misma página",
+          "codigo": "<h1>Villa Moderna</h1>\n<h1>Precio: 4.500€</h1>\n<h1>¡Reserva Ya!</h1>",
+          "impacto": "Dilución keyword principal"
+        },
+        {
+          "problema": "H1 genérico sin keywords",
+          "codigo": "<h1>Bienvenido</h1>",
+          "impacto": "0% relevancia SEO"
+        }
+      ],
+      "metricas": {
+        "paginas_sin_h1": "89 (7.1%)",
+        "h1_duplicados": "132 páginas",
+        "posicion_keywords": "15.8"
+      }
+    },
+    "despues": {
+      "titulo": "DESPUÉS: Estructura Optimizada",
+      "ejemplos": [
+        {
+          "mejora": "H1 único y descriptivo",
+          "codigo": "<h1>Contacta con IbizaVilla - Alquiler Villas Lujo Ibiza</h1>\n<h2>Formulario de Contacto</h2>",
+          "impacto": "Tema claro para Google"
+        },
+        {
+          "mejora": "Un solo H1, resto H2/H3",
+          "codigo": "<h1>Villa Moderna con Piscina Infinity - San José, Ibiza</h1>\n<h2>Características</h2>\n<h2>Precio y Disponibilidad</h2>",
+          "impacto": "Jerarquía clara"
+        },
+        {
+          "mejora": "H1 con keywords objetivo",
+          "codigo": "<h1>Alquiler Villa Moderna Piscina Infinity - Ibiza</h1>",
+          "impacto": "Keywords principales presentes"
+        }
+      ],
+      "metricas": {
+        "paginas_sin_h1": "0 (0%)",
+        "h1_duplicados": "0 páginas",
+        "posicion_keywords": "9.2"
+      }
+    },
+    "csv_entregable": {
+      "nombre": "paginas_sin_h1_corregir.csv",
+      "descripcion": "20 páginas críticas con H1s recomendados"
+    }
+  },
+
+  "meta_tags": {
+    "nombre": "Meta Tags (Titles y Descriptions)",
+    "icono": "🏷️",
+    "concepto": "¿Qué son los Meta Tags?",
+    "analogia": "Los meta tags son como el escaparate de una tienda: el título (title) es el letrero grande que atrae la atención, y la descripción (meta description) es el cartel que explica qué vendes. Si el escaparate es aburrido o está vacío, nadie entra a la tienda.",
+    "beneficios": [
+      "🚀 +45% CTR con meta descriptions optimizadas",
+      "🎯 Control total sobre cómo apareces en Google",
+      "💬 Mensajes persuasivos con CTAs aumentan clics",
+      "🌟 Checkmarks (✓) y emojis destacan en SERPs",
+      "📈 +180 clics/mes adicionales = +€3.200/mes revenue"
+    ],
+    "riesgos": [
+      "❌ Sin meta description: Google genera snippets aleatorios (-30% CTR)",
+      "⚠️ Titles duplicados: canibalización y confusión",
+      "📉 Titles >60 caracteres: se truncan y pierden mensaje",
+      "🚫 Sin keywords: posicionamiento débil o nulo",
+      "💸 Pérdida de €4.000-6.000/mes en tráfico potencial"
+    ],
+    "antes": {
+      "titulo": "ANTES: Meta Tags Problemáticas",
+      "ejemplos": [
+        {
+          "tipo": "Sin Meta Description",
+          "actual": "Google muestra: 'hace 3 días... Precio desde 4500€... Disponible...'",
+          "impacto": "CTR: 0.8%"
+        },
+        {
+          "tipo": "Title Duplicado",
+          "actual": "<title>Alquiler Villas Ibiza - IbizaVilla</title>",
+          "usado_en": "34 páginas diferentes",
+          "impacto": "Canibalización"
+        },
+        {
+          "tipo": "Title Demasiado Largo",
+          "actual": "<title>Alquiler de Villa de Lujo en San José con Piscina Privada, Jardín y Vistas Espectaculares al Mar Mediterráneo - IbizaVilla</title>",
+          "caracteres": "127",
+          "truncado": "Alquiler de Villa de Lujo en San José con Piscina Privada, Ja..."
+        }
+      ],
+      "metricas": {
+        "ctr_promedio": "1.6%",
+        "descriptions_faltantes": "355 (28.5%)",
+        "titles_duplicados": "158 (12.7%)"
+      }
+    },
+    "despues": {
+      "titulo": "DESPUÉS: Meta Tags Optimizadas",
+      "ejemplos": [
+        {
+          "tipo": "Meta Description Optimizada",
+          "propuesta": "✓ Villa Can Pep San José ✓ 6 hab (12 pax) ✓ Piscina infinita ✓ Vistas mar ✓ BBQ, WiFi ✓ 4.500€/sem ✓ Reserva directa sin comisiones",
+          "caracteres": "154",
+          "impacto": "CTR: 2.8%"
+        },
+        {
+          "tipo": "Title Único y Diferenciado",
+          "propuesta": "<title>Villa Can Pep San José - 6 Hab, Piscina Infinity | Ibiza</title>",
+          "caracteres": "57",
+          "impacto": "Sin canibalización"
+        },
+        {
+          "tipo": "Title Conciso con Keywords",
+          "propuesta": "<title>Villa Lujo San José - Piscina, Vista Mar | IbizaVilla</title>",
+          "caracteres": "57",
+          "visible": "Completo en SERP"
+        }
+      ],
+      "metricas": {
+        "ctr_promedio": "3.2%",
+        "descriptions_faltantes": "0 (0%)",
+        "titles_duplicados": "0 (0%)"
+      }
+    },
+    "csv_entregable": {
+      "nombre": "meta_descriptions_faltantes.csv, titles_duplicados_corregir.csv",
+      "descripcion": "Meta descriptions y titles optimizados listos para implementar"
+    }
+  },
+
+  "imagenes_alt": {
+    "nombre": "Optimización de Imágenes y ALT Text",
+    "icono": "🖼️",
+    "concepto": "¿Qué es el texto ALT en imágenes?",
+    "analogia": "El texto ALT es como la descripción que le darías a una persona ciega para que 'vea' la imagen. No solo es esencial para accesibilidad, sino que es la forma en que Google 'lee' tus imágenes y las posiciona en Google Images.",
+    "beneficios": [
+      "🔍 +1.200 visitas/mes desde Google Images",
+      "♿ 100% accesibilidad para usuarios con discapacidad visual",
+      "📈 Imágenes posicionan para keywords relevantes",
+      "⚡ Comprimir a WebP: -2.4s LCP = mejor ranking",
+      "💰 +€1.440/mes en tráfico adicional desde Images"
+    ],
+    "riesgos": [
+      "❌ Sin ALT: 0% posicionamiento en Google Images",
+      "⚠️ Imágenes pesadas: LCP >3.8s = penalización móvil",
+      "🚫 Mala accesibilidad: incumplimiento WCAG (legal en UE)",
+      "📉 Nombres genéricos (IMG_001.jpg): sin contexto semántico",
+      "💸 Pérdida de 15-20% tráfico potencial de Images"
+    ],
+    "antes": {
+      "titulo": "ANTES: Imágenes Sin Optimizar",
+      "ejemplos": [
+        {
+          "problema": "Sin atributo ALT",
+          "codigo": "<img src=\"/uploads/villa-moderna.jpg\">",
+          "peso": "2.4 MB",
+          "impacto": "Invisible para Google Images"
+        },
+        {
+          "problema": "Imagen sin comprimir",
+          "archivo": "hero-villa.jpg",
+          "peso_actual": "3.2 MB",
+          "dimensiones": "4000x3000px para espacio 800x600px",
+          "lcp": "4.2s"
+        },
+        {
+          "problema": "Nombre no descriptivo",
+          "archivo": "IMG_9834.jpg",
+          "deberia_ser": "villa-can-pep-piscina-atardecer.jpg",
+          "impacto": "Sin keywords en nombre archivo"
+        }
+      ],
+      "metricas": {
+        "imagenes_sin_alt": "5,513 (61.7%)",
+        "peso_promedio": "847 KB",
+        "lcp_mobile": "3.8s",
+        "trafico_google_images": "45 visitas/mes"
+      }
+    },
+    "despues": {
+      "titulo": "DESPUÉS: Imágenes Optimizadas",
+      "ejemplos": [
+        {
+          "mejora": "ALT text descriptivo con keywords",
+          "codigo": "<img src=\"villa-can-pep-piscina.webp\" alt=\"Villa Can Pep: piscina infinita con vistas al mar Mediterráneo en San José, Ibiza\" loading=\"lazy\">",
+          "peso": "180 KB (WebP)",
+          "impacto": "Indexada en Google Images"
+        },
+        {
+          "mejora": "Imagen comprimida WebP + lazy loading",
+          "archivo": "hero-villa.webp",
+          "peso_optimizado": "145 KB",
+          "dimensiones": "1200x900px responsive",
+          "lcp": "1.8s"
+        },
+        {
+          "mejora": "Nombre descriptivo con keywords",
+          "archivo": "villa-can-pep-piscina-atardecer-san-jose-ibiza.webp",
+          "impacto": "Keywords en nombre archivo"
+        }
+      ],
+      "metricas": {
+        "imagenes_sin_alt": "0 (0%)",
+        "peso_promedio": "142 KB",
+        "lcp_mobile": "2.1s",
+        "trafico_google_images": "1,245 visitas/mes"
+      }
+    },
+    "csv_entregable": {
+      "nombre": "imagenes_sin_alt_corregir.csv",
+      "descripcion": "ALT texts recomendados para 5,513 imágenes"
+    }
+  },
+
+  "keywords_oportunidad": {
+    "nombre": "Oportunidades de Keywords",
+    "icono": "🎯",
+    "concepto": "¿Qué son las Keywords de Oportunidad?",
+    "analogia": "Las keywords de oportunidad son como billetes de lotería premiados que nadie ha reclamado: tienes todo el contenido para posicionar, pero no estás aprovechando las palabras que la gente busca. Es dinero dejado sobre la mesa.",
+    "beneficios": [
+      "🚀 +703-970 clics/mes adicionales identificados",
+      "💰 +€12.600-17.460/mes en revenue potencial",
+      "🎯 Targeting de long-tail con baja competencia",
+      "📈 Keyword principal 'villa ibiza' de posición 18.8 a Top 5",
+      "🌍 Expansión a keywords internacionales (EN, FR, DE)"
+    ],
+    "riesgos": [
+      "❌ Sin targeting keywords: tráfico aleatorio de baja calidad",
+      "⚠️ Competencia rankea para tus keywords mientras tú no",
+      "📉 Posiciones 11-20: prácticamente 0% CTR",
+      "🚫 Keywords con volumen sin landing page dedicada",
+      "💸 Pérdida de €10.000-15.000/mes en oportunidades"
+    ],
+    "antes": {
+      "titulo": "ANTES: Keywords Desaprovechadas",
+      "ejemplos": [
+        {
+          "keyword": "villa ibiza",
+          "volumen": "2,400 búsquedas/mes",
+          "posicion_actual": "18.8",
+          "impresiones": "669/mes",
+          "clics": "4/mes",
+          "ctr": "0.60%",
+          "problema": "Posición demasiado baja, sin landing optimizada"
+        },
+        {
+          "keyword": "alquiler villas ibiza",
+          "volumen": "1,600 búsquedas/mes",
+          "posicion_actual": "Sin datos",
+          "impresiones": "0",
+          "clics": "0",
+          "problema": "Keyword objetivo sin página específica"
+        },
+        {
+          "keyword": "villas lujo ibiza",
+          "volumen": "950 búsquedas/mes",
+          "posicion_actual": "Sin datos",
+          "problema": "Sin categoría premium dedicada"
+        }
+      ],
+      "metricas": {
+        "keywords_posicionando": "49",
+        "clics_totales_mes": "73",
+        "posicion_promedio": "11.2",
+        "revenue_mes": "€1.314"
+      }
+    },
+    "despues": {
+      "titulo": "DESPUÉS: Keywords Optimizadas",
+      "ejemplos": [
+        {
+          "keyword": "villa ibiza",
+          "volumen": "2,400 búsquedas/mes",
+          "posicion_objetivo": "Top 5 (posición 3-5)",
+          "impresiones_estimadas": "1,800/mes",
+          "clics_estimados": "240/mes (+236 clics)",
+          "ctr_objetivo": "13.3%",
+          "accion": "Landing /alquiler/villas-ibiza/ con contenido único"
+        },
+        {
+          "keyword": "alquiler villas ibiza",
+          "volumen": "1,600 búsquedas/mes",
+          "posicion_objetivo": "Top 10",
+          "clics_estimados": "120/mes",
+          "accion": "Página guía completa de alquiler"
+        },
+        {
+          "keyword": "villas lujo ibiza",
+          "volumen": "950 búsquedas/mes",
+          "posicion_objetivo": "Top 10",
+          "clics_estimados": "75/mes",
+          "accion": "Categoría premium con filtros y galería"
+        }
+      ],
+      "metricas": {
+        "keywords_posicionando": "120+",
+        "clics_totales_mes": "776-1,043",
+        "posicion_promedio": "6.8",
+        "revenue_mes": "€13.968-18.774"
+      }
+    },
+    "csv_entregable": {
+      "nombre": "oportunidades_keywords.csv",
+      "descripcion": "12 keywords prioritarias con potencial +€12.600/mes"
+    }
+  }
+}

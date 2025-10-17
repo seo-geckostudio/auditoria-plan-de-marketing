@@ -436,6 +436,190 @@ if ($paso['datos_requeridos']) {
                     <?php endif; ?>
                 </div>
 
+                <!-- Sección Educativa -->
+                <?php
+                // Cargar configuración educativa
+                $config_educativa = null;
+                $educativa_file = '../../config/secciones_educativas_seo.json';
+                if (file_exists($educativa_file)) {
+                    $educativa_data = json_decode(file_get_contents($educativa_file), true);
+
+                    // Determinar qué sección educativa mostrar según el nombre del paso
+                    $paso_nombre_lower = strtolower($paso['paso_nombre']);
+
+                    if (strpos($paso_nombre_lower, 'url') !== false || strpos($paso_nombre_lower, 'arquitectura') !== false) {
+                        $config_educativa = $educativa_data['arquitectura_urls'] ?? null;
+                    } elseif (strpos($paso_nombre_lower, 'h1') !== false || strpos($paso_nombre_lower, 'encabezado') !== false) {
+                        $config_educativa = $educativa_data['encabezados_h1'] ?? null;
+                    } elseif (strpos($paso_nombre_lower, 'meta') !== false || strpos($paso_nombre_lower, 'title') !== false || strpos($paso_nombre_lower, 'description') !== false) {
+                        $config_educativa = $educativa_data['meta_tags'] ?? null;
+                    } elseif (strpos($paso_nombre_lower, 'imagen') !== false || strpos($paso_nombre_lower, 'alt') !== false) {
+                        $config_educativa = $educativa_data['imagenes_alt'] ?? null;
+                    } elseif (strpos($paso_nombre_lower, 'keyword') !== false || strpos($paso_nombre_lower, 'palabra') !== false) {
+                        $config_educativa = $educativa_data['keywords_oportunidad'] ?? null;
+                    }
+                }
+
+                if ($config_educativa):
+                ?>
+                <div class="card seccion-educativa">
+                    <div class="card-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 15px 15px 0 0;">
+                        <h2 class="card-title" style="color: white; display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.8rem;"><?= $config_educativa['icono'] ?></span>
+                            <?= htmlspecialchars($config_educativa['nombre']) ?>
+                        </h2>
+                    </div>
+
+                    <!-- Concepto y Analogía -->
+                    <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 25px; border-radius: 12px; margin-bottom: 25px;">
+                        <h3 style="color: white; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                            <span>🎓</span> <?= htmlspecialchars($config_educativa['concepto']) ?>
+                        </h3>
+                        <p style="font-size: 1.1rem; line-height: 1.8; color: rgba(255,255,255,0.95);">
+                            <?= htmlspecialchars($config_educativa['analogia']) ?>
+                        </p>
+                    </div>
+
+                    <!-- Beneficios y Riesgos -->
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px;">
+                        <!-- Beneficios -->
+                        <div style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); padding: 20px; border-radius: 12px;">
+                            <h3 style="color: #0f766e; margin-bottom: 15px; display: flex; align-items: center; gap: 8px;">
+                                <span>✅</span> Beneficios de Implementar
+                            </h3>
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <?php foreach ($config_educativa['beneficios'] as $beneficio): ?>
+                                <li style="padding: 8px 0; color: #0f766e; font-weight: 500; line-height: 1.6;">
+                                    <?= htmlspecialchars($beneficio) ?>
+                                </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+
+                        <!-- Riesgos -->
+                        <div style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); padding: 20px; border-radius: 12px;">
+                            <h3 style="color: #9a3412; margin-bottom: 15px; display: flex; align-items: center; gap: 8px;">
+                                <span>⚠️</span> Riesgos de NO Implementar
+                            </h3>
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <?php foreach ($config_educativa['riesgos'] as $riesgo): ?>
+                                <li style="padding: 8px 0; color: #9a3412; font-weight: 500; line-height: 1.6;">
+                                    <?= htmlspecialchars($riesgo) ?>
+                                </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Comparativa ANTES / DESPUÉS -->
+                    <div style="background: #f8f9fa; padding: 25px; border-radius: 12px; margin-bottom: 25px;">
+                        <h3 style="text-align: center; margin-bottom: 30px; color: #2c3e50; font-size: 1.5rem;">
+                            📊 Comparativa: Situación ANTES vs DESPUÉS
+                        </h3>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                            <!-- ANTES -->
+                            <div style="background: white; border: 3px solid #ef4444; border-radius: 12px; padding: 20px;">
+                                <div style="background: #ef4444; color: white; padding: 12px; border-radius: 8px 8px 0 0; margin: -20px -20px 20px -20px; text-align: center; font-weight: bold; font-size: 1.2rem;">
+                                    ❌ <?= htmlspecialchars($config_educativa['antes']['titulo']) ?>
+                                </div>
+
+                                <?php foreach ($config_educativa['antes']['ejemplos'] as $ejemplo): ?>
+                                <div style="background: #fef2f2; border-left: 4px solid #ef4444; padding: 15px; margin-bottom: 15px; border-radius: 0 8px 8px 0;">
+                                    <?php if (isset($ejemplo['url'])): ?>
+                                        <div style="font-family: monospace; color: #dc2626; font-size: 0.85rem; word-break: break-all; margin-bottom: 8px;">
+                                            <?= htmlspecialchars($ejemplo['url']) ?>
+                                        </div>
+                                    <?php endif; ?>
+                                    <?php if (isset($ejemplo['codigo'])): ?>
+                                        <pre style="background: #2d3748; color: #e2e8f0; padding: 10px; border-radius: 6px; font-size: 0.85rem; overflow-x: auto; margin-bottom: 8px;"><code><?= htmlspecialchars($ejemplo['codigo']) ?></code></pre>
+                                    <?php endif; ?>
+                                    <div style="color: #b91c1c; font-weight: 600; margin-bottom: 5px;">
+                                        <?= htmlspecialchars($ejemplo['problema'] ?? '') ?>
+                                    </div>
+                                    <div style="color: #991b1b; font-size: 0.9rem;">
+                                        <strong>Impacto:</strong> <?= htmlspecialchars($ejemplo['impacto']) ?>
+                                    </div>
+                                </div>
+                                <?php endforeach; ?>
+
+                                <?php if (isset($config_educativa['antes']['metricas'])): ?>
+                                <div style="background: #fee2e2; padding: 15px; border-radius: 8px; margin-top: 15px;">
+                                    <h4 style="color: #991b1b; margin-bottom: 10px; font-size: 0.95rem;">📉 Métricas Actuales:</h4>
+                                    <div style="display: grid; grid-template-columns: 1fr; gap: 8px;">
+                                        <?php foreach ($config_educativa['antes']['metricas'] as $key => $value): ?>
+                                        <div style="display: flex; justify-content: space-between; color: #7f1d1d; font-size: 0.9rem;">
+                                            <span><?= ucfirst(str_replace('_', ' ', $key)) ?>:</span>
+                                            <strong><?= htmlspecialchars($value) ?></strong>
+                                        </div>
+                                        <?php endforeach; ?>
+                                    </div>
+                                </div>
+                                <?php endif; ?>
+                            </div>
+
+                            <!-- DESPUÉS -->
+                            <div style="background: white; border: 3px solid #22c55e; border-radius: 12px; padding: 20px;">
+                                <div style="background: #22c55e; color: white; padding: 12px; border-radius: 8px 8px 0 0; margin: -20px -20px 20px -20px; text-align: center; font-weight: bold; font-size: 1.2rem;">
+                                    ✅ <?= htmlspecialchars($config_educativa['despues']['titulo']) ?>
+                                </div>
+
+                                <?php foreach ($config_educativa['despues']['ejemplos'] as $ejemplo): ?>
+                                <div style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 15px; margin-bottom: 15px; border-radius: 0 8px 8px 0;">
+                                    <?php if (isset($ejemplo['url'])): ?>
+                                        <div style="font-family: monospace; color: #16a34a; font-size: 0.85rem; word-break: break-all; margin-bottom: 8px;">
+                                            <?= htmlspecialchars($ejemplo['url']) ?>
+                                        </div>
+                                    <?php endif; ?>
+                                    <?php if (isset($ejemplo['codigo'])): ?>
+                                        <pre style="background: #2d3748; color: #e2e8f0; padding: 10px; border-radius: 6px; font-size: 0.85rem; overflow-x: auto; margin-bottom: 8px;"><code><?= htmlspecialchars($ejemplo['codigo']) ?></code></pre>
+                                    <?php endif; ?>
+                                    <div style="color: #15803d; font-weight: 600; margin-bottom: 5px;">
+                                        <?= htmlspecialchars($ejemplo['mejora'] ?? '') ?>
+                                    </div>
+                                    <div style="color: #166534; font-size: 0.9rem;">
+                                        <strong>Impacto:</strong> <?= htmlspecialchars($ejemplo['impacto']) ?>
+                                    </div>
+                                </div>
+                                <?php endforeach; ?>
+
+                                <?php if (isset($config_educativa['despues']['metricas'])): ?>
+                                <div style="background: #dcfce7; padding: 15px; border-radius: 8px; margin-top: 15px;">
+                                    <h4 style="color: #166534; margin-bottom: 10px; font-size: 0.95rem;">📈 Métricas Proyectadas:</h4>
+                                    <div style="display: grid; grid-template-columns: 1fr; gap: 8px;">
+                                        <?php foreach ($config_educativa['despues']['metricas'] as $key => $value): ?>
+                                        <div style="display: flex; justify-content: space-between; color: #14532d; font-size: 0.9rem;">
+                                            <span><?= ucfirst(str_replace('_', ' ', $key)) ?>:</span>
+                                            <strong><?= htmlspecialchars($value) ?></strong>
+                                        </div>
+                                        <?php endforeach; ?>
+                                    </div>
+                                </div>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CSV Entregable -->
+                    <?php if (isset($config_educativa['csv_entregable'])): ?>
+                    <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 12px; text-align: center;">
+                        <h3 style="color: white; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                            <span>📥</span> CSV Entregable Listo
+                        </h3>
+                        <p style="margin-bottom: 15px; opacity: 0.95;">
+                            <?= htmlspecialchars($config_educativa['csv_entregable']['descripcion']) ?>
+                        </p>
+                        <a href="../../ibiza villa/FASE_5_ENTREGABLES_FINALES/WEB_AUDITORIA/entregables/ibiza_villa/<?= $config_educativa['csv_entregable']['nombre'] ?>"
+                           class="btn btn-success"
+                           download
+                           style="background: white; color: #667eea; font-weight: bold; padding: 12px 30px; border-radius: 8px; text-decoration: none; display: inline-block;">
+                            📥 Descargar <?= htmlspecialchars($config_educativa['csv_entregable']['nombre']) ?>
+                        </a>
+                    </div>
+                    <?php endif; ?>
+                </div>
+                <?php endif; ?>
+
                 <!-- Formulario de datos -->
                 <div class="card">
                     <div class="card-header">
