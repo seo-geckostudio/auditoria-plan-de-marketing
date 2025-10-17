@@ -66,7 +66,8 @@
       "Bash(......phpphp.exe -S localhost:8000 -t .)",
       "Bash(/dev/null)",
       "Bash(\"D:/ai/investigacionauditoria programacion/php/php.exe\" -S localhost:8000)",
-      "Bash(git rm:*)"
+      "Bash(git rm:*)",
+      "Bash(git check-ignore:*)"
     ],
     "deny": [],
     "ask": []
