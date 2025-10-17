@@ -1,0 +1,249 @@
+{
+  "tipo": "accesibilidad",
+  "nombre": "Auditoría de Accesibilidad WCAG 2.1",
+  "version": "1.0",
+  "descripcion": "Evaluación completa de accesibilidad según estándares WCAG 2.1 (Niveles A, AA, AAA)",
+  "icono": "♿",
+
+  "fuentes_datos": {
+    "axe_core": {
+      "requerido": true,
+      "formato": "json",
+      "descripcion": "Análisis automatizado con axe-core",
+      "ubicacion": "data/axe/auditoria_{id}.json"
+    },
+    "lighthouse": {
+      "requerido": true,
+      "tipo": "json",
+      "descripcion": "Lighthouse accessibility audit",
+      "ubicacion": "data/lighthouse/auditoria_{id}.json"
+    },
+    "manual_testing": {
+      "requerido": true,
+      "tipo": "manual",
+      "descripcion": "Tests manuales requeridos por WCAG"
+    },
+    "screen_reader_testing": {
+      "requerido": false,
+      "tipo": "manual",
+      "descripcion": "Pruebas con lectores de pantalla (NVDA, JAWS)"
+    }
+  },
+
+  "modulos": [
+    {
+      "id": "wcag_nivel_a",
+      "nombre": "WCAG 2.1 Nivel A (Básico)",
+      "descripcion": "Criterios mínimos de accesibilidad",
+      "icono": "✓",
+      "orden": 1,
+
+      "campos": [
+        {
+          "id": "imagenes_sin_alt",
+          "nombre": "Imágenes sin Texto Alternativo",
+          "tipo_dato": "array",
+          "tipo_procesamiento": "hibrido",
+          "visibilidad": "visible",
+
+          "fuente": {
+            "origen": "axe_core.violations",
+            "procesador": "AccesibilidadProcessor::filtrarImagenesSinAlt"
+          },
+
+          "reglas_filtrado": {
+            "id": "image-alt",
+            "impact": ["critical", "serious"]
+          },
+
+          "enriquecimiento": [
+            {
+              "tipo": "ia",
+              "procesador_ia": {
+                "modelo": "claude-3-5-sonnet-20241022",
+                "prompt": "Analiza esta imagen en su contexto HTML:\n\nURL de imagen: {src}\nContexto HTML: {context}\nPágina: {page_url}\n\nGenera un texto alternativo descriptivo y apropiado según WCAG 2.1.\nSi la imagen es decorativa, indica 'decorativa'.\n\nRespuesta JSON: {\"alt_recomendado\": \"texto\", \"es_decorativa\": bool, \"justificacion\": \"texto\"}",
+                "temperatura": 0.3,
+                "max_tokens": 300
+              },
+              "cache": true
+            }
+          ],
+
+          "priorizacion": {
+            "tipo": "automatico",
+            "reglas": [
+              {
+                "condicion": "impact == 'critical'",
+                "prioridad": "Crítica"
+              },
+              {
+                "condicion": "impact == 'serious'",
+                "prioridad": "Alta"
+              }
+            ]
+          },
+
+          "entregable": {
+            "generar_csv": true,
+            "nombre_archivo": "imagenes_sin_alt_corregir.csv",
+            "categoria": "accesibilidad",
+            "columnas": ["page_url", "img_src", "alt_actual", "alt_recomendado", "es_decorativa", "prioridad"]
+          }
+        },
+
+        {
+          "id": "contraste_colores",
+          "nombre": "Problemas de Contraste de Color",
+          "tipo_dato": "array",
+          "tipo_procesamiento": "automatico",
+          "visibilidad": "visible",
+
+          "fuente": {
+            "origen": "axe_core.violations",
+            "procesador": "AccesibilidadProcessor::filtrarContraste"
+          },
+
+          "reglas_filtrado": {
+            "id": "color-contrast"
+          },
+
+          "enriquecimiento": [
+            {
+              "tipo": "automatico",
+              "procesador": "AccesibilidadProcessor::calcularContrasteMinimo",
+              "outputs": {
+                "ratio_actual": "number",
+                "ratio_minimo": "number",
+                "colores_sugeridos": "array"
+              }
+            }
+          ],
+
+          "validacion_adicional": {
+            "tipo": "manual",
+            "requerida": true,
+            "razon": "Algunos casos requieren validación visual humana (gradientes, texto sobre imágenes)"
+          },
+
+          "entregable": {
+            "generar_csv": true,
+            "nombre_archivo": "contraste_colores_corregir.csv"
+          }
+        },
+
+        {
+          "id": "navegacion_teclado",
+          "nombre": "Navegación por Teclado",
+          "tipo_dato": "object",
+          "tipo_procesamiento": "manual",
+          "visibilidad": "visible",
+
+          "guia_testing": {
+            "titulo": "Cómo Probar Navegación por Teclado",
+            "pasos": [
+              "Usar solo el teclado (Tab, Shift+Tab, Enter, Espacio, flechas)",
+              "Verificar que todos los elementos interactivos son alcanzables",
+              "Comprobar orden lógico de tabulación",
+              "Verificar visibilidad del foco en todos los elementos",
+              "Probar formularios completos",
+              "Verificar que no hay trampas de teclado"
+            ],
+            "criterios_exito": [
+              "Todos los links son alcanzables",
+              "Todos los botones son alcanzables",
+              "Formularios completables",
+              "Foco siempre visible",
+              "Orden lógico de tabulación"
+            ]
+          },
+
+          "formulario_manual": {
+            "campos": [
+              {
+                "id": "todos_elementos_alcanzables",
+                "tipo": "boolean",
+                "label": "¿Todos los elementos interactivos son alcanzables?"
+              },
+              {
+                "id": "orden_logico",
+                "tipo": "boolean",
+                "label": "¿El orden de tabulación es lógico?"
+              },
+              {
+                "id": "foco_visible",
+                "tipo": "boolean",
+                "label": "¿El foco es siempre visible?"
+              },
+              {
+                "id": "problemas_encontrados",
+                "tipo": "textarea",
+                "label": "Describe problemas específicos encontrados"
+              },
+              {
+                "id": "elementos_problematicos",
+                "tipo": "array",
+                "label": "URLs de páginas con problemas"
+              }
+            ]
+          }
+        }
+      ],
+
+      "seccion_educativa": {
+        "habilitada": true,
+        "concepto": "¿Qué es WCAG 2.1 Nivel A?",
+        "analogia": "El Nivel A es como las rampas y puertas anchas en un edificio: lo mínimo indispensable para que las personas con discapacidad puedan acceder.",
+        "beneficios": [
+          "Sitio accesible para personas con discapacidad visual",
+          "Mejor usabilidad para todos",
+          "Cumplimiento legal (obligatorio en muchos países)",
+          "Mayor audiencia potencial"
+        ],
+        "riesgos": [
+          "Demandas legales por inaccesibilidad",
+          "Exclusión del 15% de la población (con discapacidad)",
+          "Mala imagen de marca"
+        ]
+      }
+    }
+  ],
+
+  "reglas_globales": {
+    "niveles_conformidad": {
+      "A": {
+        "nombre": "Nivel A - Básico",
+        "descripcion": "Requisitos mínimos de accesibilidad",
+        "color": "#dc2626",
+        "obligatorio": true
+      },
+      "AA": {
+        "nombre": "Nivel AA - Recomendado",
+        "descripcion": "Estándar recomendado para la mayoría de sitios",
+        "color": "#f59e0b",
+        "obligatorio": false
+      },
+      "AAA": {
+        "nombre": "Nivel AAA - Óptimo",
+        "descripcion": "Máximo nivel de accesibilidad",
+        "color": "#22c55e",
+        "obligatorio": false
+      }
+    },
+
+    "tipos_discapacidad": {
+      "visual": ["ceguera", "baja_vision", "daltonismo"],
+      "auditiva": ["sordera", "hipoacusia"],
+      "motora": ["movilidad_reducida", "sin_uso_mouse"],
+      "cognitiva": ["dislexia", "tdah", "autismo"]
+    }
+  },
+
+  "metadata": {
+    "estandares": ["WCAG 2.1", "ADA", "Section 508"],
+    "herramientas_recomendadas": ["axe DevTools", "WAVE", "NVDA", "JAWS"],
+    "recursos": [
+      "https://www.w3.org/WAI/WCAG21/quickref/",
+      "https://webaim.org/"
+    ]
+  }
+}

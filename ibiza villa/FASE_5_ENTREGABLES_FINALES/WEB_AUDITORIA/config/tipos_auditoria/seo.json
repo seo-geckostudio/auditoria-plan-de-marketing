@@ -1,0 +1,252 @@
+{
+  "tipo": "seo",
+  "nombre": "Auditoría SEO Completa",
+  "version": "2.0",
+  "descripcion": "Auditoría técnica y de contenido SEO con análisis automático e IA",
+  "icono": "🔍",
+
+  "fuentes_datos": {
+    "screaming_frog": {
+      "requerido": true,
+      "formato": "json",
+      "descripcion": "Export completo de Screaming Frog (Internal, Images, etc)",
+      "ubicacion": "data/screamingfrog/auditoria_{id}.json"
+    },
+    "google_analytics": {
+      "requerido": false,
+      "tipo": "api",
+      "descripcion": "Datos de tráfico y comportamiento",
+      "credenciales_requeridas": true
+    },
+    "ahrefs": {
+      "requerido": false,
+      "formato": "csv_multiple",
+      "descripcion": "Keywords, backlinks, análisis competencia",
+      "ubicacion": "data/ahrefs/auditoria_{id}/"
+    },
+    "google_search_console": {
+      "requerido": false,
+      "tipo": "api",
+      "descripcion": "Queries, impresiones, CTR"
+    }
+  },
+
+  "modulos": [
+    {
+      "id": "arquitectura",
+      "nombre": "Arquitectura Web",
+      "descripcion": "Análisis de estructura, navegación y crawl efficiency",
+      "icono": "🏗️",
+      "orden": 1,
+      "habilitado": true,
+
+      "campos": [
+        {
+          "id": "urls_huerfanas",
+          "nombre": "URLs Huérfanas",
+          "descripcion": "Páginas indexables sin enlaces internos",
+          "tipo_dato": "array",
+          "tipo_procesamiento": "automatico",
+          "visibilidad": "visible",
+          "editable": false,
+
+          "fuente": {
+            "origen": "screaming_frog.internal",
+            "procesador": "ArquitecturaProcessor::filtrarURLsHuerfanas"
+          },
+
+          "reglas_filtrado": {
+            "inlinks": 0,
+            "status_code": 200,
+            "indexability": "Indexable"
+          },
+
+          "enriquecimiento": [
+            {
+              "tipo": "automatico",
+              "fuente": "google_analytics.sessions",
+              "campo_origen": "page_path",
+              "campo_destino": "trafico_mensual",
+              "agregacion": "sum",
+              "periodo": "ultimos_30_dias"
+            },
+            {
+              "tipo": "ia",
+              "procesador_ia": {
+                "modelo": "claude-3-5-sonnet-20241022",
+                "prompt": "Analiza la URL {url} del sitio {sitio_url}. Contexto: {context}.\n\nSugiere:\n1. Desde qué página debería enlazarse (máximo 2 opciones)\n2. Acción específica recomendada\n\nRespuesta en JSON: {\"desde_enlazar\": \"URL\", \"accion\": \"texto\"}",
+                "temperatura": 0.3,
+                "max_tokens": 500,
+                "inputs": ["address", "crawl_depth"],
+                "outputs": {
+                  "desde_enlazar": "string",
+                  "accion_recomendada": "string"
+                }
+              },
+              "cache": true,
+              "cache_duracion": 604800
+            }
+          ],
+
+          "priorizacion": {
+            "tipo": "automatico",
+            "reglas": [
+              {
+                "condicion": "trafico_mensual > 500",
+                "prioridad": "Crítica"
+              },
+              {
+                "condicion": "trafico_mensual > 200",
+                "prioridad": "Muy Alta"
+              },
+              {
+                "condicion": "trafico_mensual > 50",
+                "prioridad": "Alta"
+              },
+              {
+                "condicion": "trafico_mensual > 10",
+                "prioridad": "Media"
+              }
+            ],
+            "default": "Baja"
+          },
+
+          "presentacion": {
+            "formato": "tabla",
+            "columnas": [
+              {"id": "address", "nombre": "URL", "width": "40%"},
+              {"id": "crawl_depth", "nombre": "Profundidad", "width": "10%"},
+              {"id": "trafico_mensual", "nombre": "Tráfico/mes", "width": "10%"},
+              {"id": "prioridad", "nombre": "Prioridad", "width": "10%"},
+              {"id": "desde_enlazar", "nombre": "Enlazar desde", "width": "15%"},
+              {"id": "accion_recomendada", "nombre": "Acción", "width": "15%"}
+            ],
+            "ordenar_por": "prioridad DESC, trafico_mensual DESC",
+            "limite": 500
+          },
+
+          "entregable": {
+            "generar_csv": true,
+            "nombre_archivo": "urls_huerfanas_corregir.csv",
+            "categoria": "arquitectura",
+            "incluir_en_resumen": true,
+            "descripcion_corta": "URLs sin enlaces internos a corregir"
+          }
+        },
+
+        {
+          "id": "analisis_estructura_ia",
+          "nombre": "Análisis de Estructura (IA)",
+          "descripcion": "Análisis profundo de arquitectura con recomendaciones IA",
+          "tipo_dato": "object",
+          "tipo_procesamiento": "ia_asistido",
+          "visibilidad": "visible",
+          "editable": true,
+
+          "procesador_ia": {
+            "modelo": "claude-3-5-sonnet-20241022",
+            "prompt_template": "prompts/analizar_estructura_web.txt",
+            "temperatura": 0.5,
+            "max_tokens": 8000,
+            "inputs": [
+              "screaming_frog.internal",
+              "google_analytics.page_hierarchy",
+              "arquitectura.urls_huerfanas"
+            ],
+            "outputs": {
+              "evaluacion_general": "string",
+              "problemas_principales": "array",
+              "estructura_propuesta": "object",
+              "beneficios_esperados": "array",
+              "plan_implementacion": "array"
+            }
+          },
+
+          "revision_manual": {
+            "requerida": true,
+            "campos_editables": [
+              "estructura_propuesta.categorias",
+              "estructura_propuesta.urls",
+              "plan_implementacion"
+            ],
+            "guardado_automatico": true,
+            "versionado": true
+          },
+
+          "cache": true,
+          "cache_duracion": 2592000
+        }
+      ],
+
+      "seccion_educativa": {
+        "habilitada": true,
+        "concepto": "¿Qué es la Arquitectura Web?",
+        "analogia": "La arquitectura web es como diseñar un edificio: necesitas que los visitantes (y Google) puedan navegar fácilmente de una habitación a otra sin perderse.",
+        "beneficios": [
+          "Mejor crawl efficiency (Google indexa más páginas)",
+          "Mayor visibilidad en buscadores",
+          "Mejor experiencia de usuario",
+          "Reducción de contenido huérfano"
+        ],
+        "riesgos": [
+          "Páginas huérfanas invisibles para Google",
+          "Desperdicio de crawl budget",
+          "Contenido valioso no descubierto"
+        ]
+      }
+    }
+  ],
+
+  "reglas_globales": {
+    "prioridad": {
+      "critica": {
+        "descripcion": "Requiere acción inmediata",
+        "color": "#dc2626",
+        "trafico_min": 500,
+        "impacto": "muy_alto"
+      },
+      "muy_alta": {
+        "descripcion": "Acción en próximos 7 días",
+        "color": "#f59e0b",
+        "trafico_min": 200,
+        "impacto": "alto"
+      },
+      "alta": {
+        "descripcion": "Acción en próximas 2 semanas",
+        "color": "#3b82f6",
+        "trafico_min": 50,
+        "impacto": "medio"
+      },
+      "media": {
+        "descripcion": "Acción en próximo mes",
+        "color": "#8b5cf6",
+        "trafico_min": 10,
+        "impacto": "medio_bajo"
+      },
+      "baja": {
+        "descripcion": "Backlog",
+        "color": "#6b7280",
+        "trafico_min": 0,
+        "impacto": "bajo"
+      }
+    },
+
+    "costos_ia": {
+      "modelo": "claude-3-5-sonnet-20241022",
+      "costo_por_1k_tokens_input": 0.003,
+      "costo_por_1k_tokens_output": 0.015,
+      "presupuesto_maximo_auditoria": 50,
+      "alertar_si_supera": 40
+    }
+  },
+
+  "metadata": {
+    "autor": "Sistema de Auditoría",
+    "fecha_creacion": "2025-10-17",
+    "ultima_modificacion": "2025-10-17",
+    "changelog": [
+      "v2.0: Añadido procesamiento IA para análisis avanzado",
+      "v1.0: Versión inicial con procesamiento automático"
+    ]
+  }
+}
