@@ -19,8 +19,11 @@
  * - [ANALOGIA] - Comparación con algo cotidiano
  * - [GRADIENTE_CSS] - Código de gradiente específico del módulo
  * - [CATEGORIA_CSV] - Nombre de carpeta en /entregables/
- * - [NUMERO_ITEMS] - Cantidad de elementos en el CSV
- * - [ARCHIVO_CSV] - Nombre del archivo CSV
+ * - [TIPO_CSV] - Identificador del tipo (urls_huerfanas, paginas_sin_h1, etc)
+ * - [NUMERO_ITEMS] - Cantidad de elementos (se actualiza automáticamente vía JS)
+ *
+ * NOTA: Los CSVs se generan AUTOMÁTICAMENTE al cargar la página.
+ * Solo necesitas definir data-entregable-tipo en los botones.
  */
 
 // Obtener datos del módulo (ajustar según estructura real)
@@ -30,6 +33,10 @@ $pasoId = $_GET['paso_id'] ?? null;
 // Obtener datos específicos del módulo desde la base de datos o JSON
 // $datos = obtenerDatosModulo($auditoriaId, $pasoId);
 ?>
+
+<!-- Cargar script de generación automática de CSVs -->
+<script src="/js/entregables-generator.js" defer></script>
+<body data-auditoria-id="<?php echo $auditoriaId; ?>" data-modulo="[NOMBRE_MODULO]">
 
 <div class="[NOMBRE_MODULO]-page">
 
@@ -134,8 +141,12 @@ $pasoId = $_GET['paso_id'] ?? null;
                         <span class="meta-badge priority">Prioridad: [Crítica/Muy Alta/Alta/Media/Baja]</span>
                         <span class="meta-badge impact">Impacto: [estimación de beneficio]</span>
                     </div>
-                    <a href="/entregables/[CATEGORIA_CSV]/[ARCHIVO_CSV_1].csv"
-                       class="btn-download" download>
+                    <!-- IMPORTANTE: Usar data-entregable-tipo para generación automática -->
+                    <a href="#"
+                       class="btn-download"
+                       data-entregable-tipo="[TIPO_CSV_1]"
+                       data-entregable-categoria="[CATEGORIA_CSV]"
+                       download>
                         <i class="fas fa-download"></i> Descargar CSV
                     </a>
                 </div>
@@ -155,8 +166,11 @@ $pasoId = $_GET['paso_id'] ?? null;
                         <span class="meta-badge priority">Prioridad: [Nivel]</span>
                         <span class="meta-badge impact">Impacto: [estimación]</span>
                     </div>
-                    <a href="/entregables/[CATEGORIA_CSV]/[ARCHIVO_CSV_2].csv"
-                       class="btn-download" download>
+                    <a href="#"
+                       class="btn-download"
+                       data-entregable-tipo="[TIPO_CSV_2]"
+                       data-entregable-categoria="[CATEGORIA_CSV]"
+                       download>
                         <i class="fas fa-download"></i> Descargar CSV
                     </a>
                 </div>
@@ -176,8 +190,11 @@ $pasoId = $_GET['paso_id'] ?? null;
                         <span class="meta-badge priority">Prioridad: [Nivel]</span>
                         <span class="meta-badge impact">Impacto: [estimación]</span>
                     </div>
-                    <a href="/entregables/[CATEGORIA_CSV]/[ARCHIVO_CSV_3].csv"
-                       class="btn-download" download>
+                    <a href="#"
+                       class="btn-download"
+                       data-entregable-tipo="[TIPO_CSV_3]"
+                       data-entregable-categoria="[CATEGORIA_CSV]"
+                       download>
                         <i class="fas fa-download"></i> Descargar CSV
                     </a>
                 </div>
