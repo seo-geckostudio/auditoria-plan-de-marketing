@@ -1,0 +1,151 @@
+═══════════════════════════════════════════════════════════════
+  INSTRUCCIONES DE MIGRACIÓN - PROYECTO AUDITORÍA SEO
+═══════════════════════════════════════════════════════════════
+
+🔴 EN ESTE ORDENADOR (ACTUAL) - HACER AHORA
+═══════════════════════════════════════════════════════════════
+
+PASO 1: Abrir terminal en la carpeta del proyecto
+---------------------------------------------------------------
+   - Clic derecho en esta carpeta
+   - Seleccionar: "Abrir en Terminal" o "Git Bash Here"
+
+PASO 2: Ejecutar backup
+---------------------------------------------------------------
+   Escribir:
+
+   backup_proyecto.bat
+
+   [Enter]
+
+   → Si pregunta por commitear cambios, escribir: S [Enter]
+   → Esperar a que termine (1-2 minutos)
+
+PASO 3: Copiar archivo ZIP
+---------------------------------------------------------------
+   El script creará un archivo:
+
+   C:\backup_proyecto_auditoria_YYYYMMDD.zip
+
+   COPIAR este archivo a:
+   □ USB (recomendado)
+   □ OneDrive/Google Drive
+   □ Email a ti mismo
+
+   ⚠️ IMPORTANTE: Verificar que el archivo se copió (ver tamaño)
+
+═══════════════════════════════════════════════════════════════
+🟢 EN ORDENADOR NUEVO - HACER AL LLEGAR
+═══════════════════════════════════════════════════════════════
+
+PASO 1: Instalar software necesario
+---------------------------------------------------------------
+   Descargar e instalar en orden:
+
+   1. Git: https://git-scm.com/download/win
+      → Next, Next, Next, Finish
+
+   2. Node.js: https://nodejs.org/
+      → Descargar versión "LTS"
+      → Next, Next, Finish
+
+   3. Claude Code: https://claude.com/code
+      → Descargar para Windows
+      → Instalar
+
+PASO 2: Copiar archivos necesarios
+---------------------------------------------------------------
+   - Copiar el archivo ZIP del backup al escritorio
+   - Copiar el archivo: restaurar_proyecto.bat al escritorio
+
+PASO 3: Ejecutar restauración
+---------------------------------------------------------------
+   - Doble clic en: restaurar_proyecto.bat
+
+   - Cuando pida "Ruta del archivo ZIP", escribir:
+
+     C:\Users\TuNombreUsuario\Desktop\backup_proyecto_auditoria_20251017.zip
+
+     (ajustar nombre de usuario y fecha según tu caso)
+
+   - [Enter]
+
+   - Esperar a que termine (2-3 minutos)
+
+PASO 4: Verificar que funciona
+---------------------------------------------------------------
+   El script te dirá los siguientes pasos. Básicamente:
+
+   1. Abrir Claude Code
+      → File > Open Folder
+      → Seleccionar: C:\ai\investigacionauditoria programacion
+
+   2. Abrir terminal dentro de Claude Code
+      → Terminal > New Terminal
+
+   3. Iniciar servidor:
+
+      iniciar_sistema.bat
+
+   4. Abrir navegador:
+
+      http://localhost:8000
+
+═══════════════════════════════════════════════════════════════
+✅ VERIFICACIÓN RÁPIDA
+═══════════════════════════════════════════════════════════════
+
+En el nuevo ordenador, verificar que:
+
+□ Navegador muestra la página de auditoría en http://localhost:8000
+□ Claude Code reconoce CLAUDE.md (aparece aviso al abrir)
+□ MCP servers conectados (ícono en barra inferior de Claude Code)
+□ Historial de conversaciones disponible (Ctrl+H en Claude Code)
+
+Si todo esto funciona, ¡migración exitosa! 🎉
+
+═══════════════════════════════════════════════════════════════
+🆘 AYUDA RÁPIDA
+═══════════════════════════════════════════════════════════════
+
+Si algo falla:
+
+1. Ver guía completa: GUIA_MIGRACION_PROYECTO.md
+2. Ver guía rápida: MIGRACION_RAPIDA.md
+3. Ver README del proyecto: README.md
+
+Errores comunes:
+
+❌ "Git no está instalado"
+   → Instalar desde: https://git-scm.com/download/win
+
+❌ "Node.js no está instalado"
+   → Instalar desde: https://nodejs.org/
+
+❌ "Puerto 8000 ocupado"
+   → Usar: php -S localhost:8001
+   → Abrir: http://localhost:8001
+
+❌ Script de backup/restauración falla
+   → Hacer manual (ver GUIA_MIGRACION_PROYECTO.md sección Troubleshooting)
+
+═══════════════════════════════════════════════════════════════
+📋 RESUMEN EJECUTIVO
+═══════════════════════════════════════════════════════════════
+
+AHORA (Ordenador Actual):
+   1. backup_proyecto.bat
+   2. Copiar ZIP a USB/nube
+   ⏱️ Tiempo: 2 minutos
+
+LUEGO (Ordenador Nuevo):
+   1. Instalar: Git, Node.js, Claude Code
+   2. restaurar_proyecto.bat
+   3. Abrir Claude Code y verificar
+   ⏱️ Tiempo: 5 minutos
+
+TOTAL: ~7 minutos
+
+═══════════════════════════════════════════════════════════════
+Última actualización: 2025-10-17
+═══════════════════════════════════════════════════════════════
