@@ -34,6 +34,126 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
     <div class="page-body">
 
+        <!-- SECCIÓN EDUCATIVA: ¿Qué es la Arquitectura Web? -->
+        <section class="concepto-educativo">
+            <div class="concepto-header">
+                <span class="concepto-icon">📚</span>
+                <h2>¿Qué es la Arquitectura Web y Por Qué es Importante?</h2>
+            </div>
+            <div class="concepto-content">
+                <p class="concepto-intro">
+                    La arquitectura web es la forma en que organizas y estructuras todas las páginas de tu sitio.
+                    Es como diseñar un edificio: necesitas que los visitantes (y Google) puedan navegar fácilmente
+                    de una habitación a otra sin perderse.
+                </p>
+                <div class="analogia-box">
+                    <div class="analogia-header">
+                        <span class="analogia-icon">💡</span>
+                        <strong>Piensa en tu sitio web como un edificio de apartamentos:</strong>
+                    </div>
+                    <ul class="analogia-list">
+                        <li><strong>La home (nivel 0)</strong> es la recepción principal - el primer punto de contacto</li>
+                        <li><strong>Las categorías (nivel 1)</strong> son los diferentes pisos del edificio</li>
+                        <li><strong>Las subcategorías (nivel 2)</strong> son los pasillos de cada piso</li>
+                        <li><strong>Las páginas individuales (nivel 3+)</strong> son las habitaciones</li>
+                    </ul>
+                    <p class="analogia-conclusion">
+                        <strong>Problema:</strong> Si una habitación está demasiado lejos de la recepción (más de 4 "pisos" de distancia),
+                        los visitantes se cansarán de buscar y Google raramente llegará hasta allí.
+                    </p>
+                </div>
+                <div class="impacto-box">
+                    <h3>¿Cómo Afecta la Arquitectura a Tu Negocio?</h3>
+                    <div class="impacto-grid">
+                        <div class="impacto-item">
+                            <span class="impacto-icon">🔍</span>
+                            <div class="impacto-text">
+                                <strong>SEO:</strong> Google rastrea mejor sitios bien organizados. Páginas a >3 clics pierden 40-60% de visibilidad.
+                            </div>
+                        </div>
+                        <div class="impacto-item">
+                            <span class="impacto-icon">👥</span>
+                            <div class="impacto-text">
+                                <strong>Usuarios:</strong> Cada clic adicional = -10% tasa de conversión. Simplicidad = más reservas.
+                            </div>
+                        </div>
+                        <div class="impacto-item">
+                            <span class="impacto-icon">⚡</span>
+                            <div class="impacto-text">
+                                <strong>Crawl Budget:</strong> Google tiene tiempo limitado. Arquitectura eficiente = más páginas indexadas.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: Archivos de Trabajo Descargables -->
+        <section class="entregables-section">
+            <div class="entregables-header">
+                <span class="entregables-icon">📄</span>
+                <h2>Archivos de Trabajo para Implementar las Mejoras</h2>
+            </div>
+            <p class="entregables-intro">
+                Hemos preparado archivos CSV listos para usar con todas las URLs que necesitan corrección.
+                Descárgalos, ábrelos en Excel y empieza a trabajar:
+            </p>
+            <div class="entregables-grid">
+                <div class="entregable-card priority-critical">
+                    <div class="entregable-icon">
+                        <i class="fas fa-file-csv"></i>
+                    </div>
+                    <div class="entregable-content">
+                        <h3>URLs Huérfanas a Enlazar</h3>
+                        <p class="entregable-desc">
+                            <strong>127 páginas</strong> sin enlaces internos. Incluye desde dónde enlazar y acción específica para cada URL.
+                        </p>
+                        <div class="entregable-meta">
+                            <span class="meta-badge priority">Prioridad: Muy Alta</span>
+                            <span class="meta-badge impact">Impacto: +1,200-1,500 sesiones/mes</span>
+                        </div>
+                        <a href="/entregables/arquitectura/urls_huerfanas_corregir.csv"
+                           class="btn-download"
+                           download
+                           title="Descargar CSV con 127 URLs huérfanas">
+                            <i class="fas fa-download"></i> Descargar CSV
+                        </a>
+                    </div>
+                </div>
+                <div class="entregable-card priority-high">
+                    <div class="entregable-icon">
+                        <i class="fas fa-file-csv"></i>
+                    </div>
+                    <div class="entregable-content">
+                        <h3>URLs Profundas a Reducir</h3>
+                        <p class="entregable-desc">
+                            <strong>26 páginas</strong> a >4 clics con alto tráfico. Plan para reducir su profundidad a 2-3 clics.
+                        </p>
+                        <div class="entregable-meta">
+                            <span class="meta-badge priority">Prioridad: Alta</span>
+                            <span class="meta-badge impact">Impacto: +800-1,200 sesiones/mes</span>
+                        </div>
+                        <a href="/entregables/arquitectura/urls_profundas_reducir.csv"
+                           class="btn-download"
+                           download
+                           title="Descargar CSV con 26 URLs profundas">
+                            <i class="fas fa-download"></i> Descargar CSV
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="como-usar-entregables">
+                <h3>💡 Cómo Usar Estos Archivos</h3>
+                <ol class="uso-list">
+                    <li><strong>Descarga</strong> el CSV haciendo clic en el botón azul</li>
+                    <li><strong>Ábrelo</strong> en Excel, Google Sheets o Numbers</li>
+                    <li><strong>Ordena</strong> por columna "Prioridad" para empezar por lo más importante</li>
+                    <li><strong>Asigna</strong> tareas a tu equipo (puedes añadir columna "Responsable")</li>
+                    <li><strong>Marca</strong> como completado según avances (añade columna "Estado")</li>
+                </ol>
+            </div>
+        </section>
+
         <!-- Resumen Ejecutivo -->
         <?php if (!empty($resumen)): ?>
         <section class="executive-summary">
@@ -1024,6 +1144,297 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     color: #888;
 }
 
+/* Sección Educativa */
+.arquitectura-page .concepto-educativo {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.arquitectura-page .concepto-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.arquitectura-page .concepto-icon {
+    font-size: 32px;
+}
+
+.arquitectura-page .concepto-header h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    border: none;
+    padding: 0;
+    color: white;
+}
+
+.arquitectura-page .concepto-intro {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.arquitectura-page .analogia-box {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border-left: 4px solid #ffd700;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.arquitectura-page .analogia-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.arquitectura-page .analogia-icon {
+    font-size: 24px;
+}
+
+.arquitectura-page .analogia-list {
+    margin: 15px 0;
+    padding-left: 25px;
+    list-style: none;
+}
+
+.arquitectura-page .analogia-list li {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.arquitectura-page .analogia-list li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.arquitectura-page .analogia-conclusion {
+    background: rgba(255,100,100,0.2);
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin: 15px 0 0 0;
+}
+
+.arquitectura-page .impacto-box {
+    background: rgba(255,255,255,0.95);
+    color: #333;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 25px;
+}
+
+.arquitectura-page .impacto-box h3 {
+    margin: 0 0 20px 0;
+    color: #1a1a1a;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.arquitectura-page .impacto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.arquitectura-page .impacto-item {
+    display: flex;
+    gap: 15px;
+    align-items: start;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.arquitectura-page .impacto-icon {
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.arquitectura-page .impacto-text {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* Sección Entregables */
+.arquitectura-page .entregables-section {
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.arquitectura-page .entregables-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.arquitectura-page .entregables-icon {
+    font-size: 32px;
+}
+
+.arquitectura-page .entregables-header h2 {
+    margin: 0;
+    color: #1a1a1a;
+    font-size: 22px;
+    font-weight: 600;
+    border: none;
+    padding: 0;
+}
+
+.arquitectura-page .entregables-intro {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.arquitectura-page .entregables-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.arquitectura-page .entregable-card {
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+.arquitectura-page .entregable-card:hover {
+    border-color: #667eea;
+    box-shadow: 0 4px 12px rgba(102,126,234,0.15);
+    transform: translateY(-2px);
+}
+
+.arquitectura-page .entregable-card.priority-critical {
+    border-left: 5px solid #dc3545;
+}
+
+.arquitectura-page .entregable-card.priority-high {
+    border-left: 5px solid #ffc107;
+}
+
+.arquitectura-page .entregable-icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.arquitectura-page .entregable-content h3 {
+    margin: 0 0 12px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.arquitectura-page .entregable-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.arquitectura-page .entregable-meta {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.arquitectura-page .meta-badge {
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.arquitectura-page .meta-badge.priority {
+    background: #ffebee;
+    color: #c62828;
+}
+
+.arquitectura-page .meta-badge.impact {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.arquitectura-page .btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #667eea;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.arquitectura-page .btn-download:hover {
+    background: #5568d3;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(102,126,234,0.3);
+}
+
+.arquitectura-page .btn-download i {
+    font-size: 16px;
+}
+
+.arquitectura-page .como-usar-entregables {
+    background: #f9f9f9;
+    border-left: 4px solid #54a34a;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.arquitectura-page .como-usar-entregables h3 {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.arquitectura-page .uso-list {
+    margin: 0;
+    padding-left: 25px;
+}
+
+.arquitectura-page .uso-list li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
 @media print {
     .arquitectura-page {
         page-break-before: always;
@@ -1032,6 +1443,11 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     .arquitectura-page .problema-card,
     .arquitectura-page .oportunidad-card,
     .arquitectura-page .recommendation-item {
+        page-break-inside: avoid;
+    }
+
+    .arquitectura-page .concepto-educativo,
+    .arquitectura-page .entregables-section {
         page-break-inside: avoid;
     }
 }

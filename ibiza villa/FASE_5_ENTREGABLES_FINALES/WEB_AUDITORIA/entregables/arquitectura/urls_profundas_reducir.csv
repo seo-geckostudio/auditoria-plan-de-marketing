@@ -1,0 +1,11 @@
+URL,Profundidad_Actual,Profundidad_Objetivo,Trafico_Mensual,Prioridad,Accion_Reducir_Profundidad,Desde_Donde_Enlazar
+/blog/guias-viaje/ibiza-con-ninos/actividades-familiares,5,2,523,Muy Alta,Enlazar desde /blog/ directamente + crear categoría destacada,"/blog/ (sidebar ""Guías Destacadas"")"
+/villas/san-antonio/villa-sunset-deluxe/galeria-completa,5,3,342,Alta,Añadir botón prominente en ficha de villa,/villas/san-antonio/villa-sunset-deluxe/ (botón hero)
+/zonas/es-vedra/restaurantes-recomendados,4,2,456,Muy Alta,Crear sección restaurantes en página principal de zona,/zonas/es-vedra/ (tab principal)
+/blog/eventos/fiestas-ibiza-2025/calendario-mensual,5,3,287,Alta,Enlazar desde /blog/eventos/ + sidebar blog principal,/blog/ y /blog/eventos/
+/villas/santa-eulalia/villa-mar-azul/tour-virtual-360,5,3,198,Media,Integrar tour en ficha principal con tab dedicado,/villas/santa-eulalia/villa-mar-azul/ (tab tour)
+/villas/ibiza-centro/villa-moderna-piscina/plano-distribucion,5,3,124,Media,Añadir sección planos en ficha de villa,/villas/ibiza-centro/villa-moderna-piscina/ (tab)
+/blog/consejos/documentacion-alquiler-villa,4,2,412,Muy Alta,Promover a categoría principal del blog,/blog/ (menú principal) + /faq/
+/zonas/cala-conta/caracteristicas-playa,4,2,342,Alta,Integrar en guía principal de Cala Conta,/zonas/cala-conta/ (sección principal)
+/villas/compra/san-jose/villa-proyecto-nuevo/financiacion,5,3,167,Media,Crear tab financiación en ficha de venta,/villas/compra/san-jose/villa-proyecto-nuevo/
+/blog/guias-viaje/mejor-epoca-visitar-ibiza/clima-mes-a-mes,5,3,389,Alta,Promover a artículo independiente + enlazar desde home,/blog/ (destacados)
