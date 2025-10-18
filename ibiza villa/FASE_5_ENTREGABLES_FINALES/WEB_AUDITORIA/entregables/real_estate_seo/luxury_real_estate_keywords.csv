@@ -1,0 +1,15 @@
+keyword,volumen_mensual,dificultad,cpc_eur,intent,posicion_actual,posicion_objetivo,oportunidad_vertical,accion_especifica,trafic_estimado,valor_estimado_anual,prioridad
+luxury villa rental ibiza,2400,58,€4.80,Transaccional,45,8-12,Vertical luxury muy alto,"Landing luxury-specific con RealEstateListing Schema, luxury amenities, concierge services",240-360 clics/mes,€82k-125k,Crítica
+ibiza villa with private chef,880,42,€3.20,Transaccional,28,10-15,Service bundling alto,"Service landing chef + villa bundles, luxury dining experiences",88-132 clics/mes,€28k-42k,Muy Alta
+exclusive villas ibiza,720,52,€4.20,Transaccional,No ranking,12-18,Brand positioning,"Exclusive tier landing page, invitation-only properties",72-108 clics/mes,€24k-36k,Alta
+villa ibiza infinity pool,1680,48,€2.80,Transaccional,32,15-20,Amenity-focused medio,"Amenity landing pool types, photo galleries, filtering",168-252 clics/mes,€47k-71k,Muy Alta
+beachfront villa ibiza,1920,55,€3.60,Transaccional,38,12-18,Location premium alto,"Beachfront collection landing, proximity map, sunset views",192-288 clics/mes,€69k-104k,Crítica
+ibiza villa with sea views,1440,45,€2.40,Transaccional,24,10-15,View category medio,"View-based filtering, panoramic galleries, orientation data",144-216 clics/mes,€35k-52k,Alta
+private estate ibiza,420,62,€5.80,Transaccional,No ranking,15-22,Ultra-luxury niche,"Private estates tier >€15k/week, multi-villa compounds",42-63 clics/mes,€24k-37k,Media
+villa rental ibiza long term,680,38,€1.80,Transaccional,42,18-25,Seasonal strategy,"Long-term rental section (winter months), monthly rates",68-102 clics/mes,€12k-18k,Media
+luxury villa ibiza wedding,520,48,€4.60,Transaccional,No ranking,20-28,Event vertical,"Wedding/event packages, capacity 50-150, catering partnerships",52-78 clics/mes,€24k-36k,Media
+ibiza villa corporate retreat,380,52,€6.20,Transaccional,No ranking,25-35,B2B vertical,"Corporate section, team building, meeting facilities",38-57 clics/mes,€24k-35k,Baja
+family villa ibiza 8 bedrooms,1280,42,€2.60,Transaccional,26,12-18,Capacity targeting,"Family-focused landing, kid amenities, safety features",128-192 clics/mes,€33k-50k,Alta
+villa ibiza with gym,820,38,€2.20,Transaccional,35,18-25,Wellness amenity,"Wellness collection, gym+spa villas, health-focused travelers",82-123 clics/mes,€18k-27k,Media
+pet friendly villa ibiza,580,35,€1.60,Transaccional,48,22-30,Niche targeting bajo,"Pet policy clear, fenced gardens, pet services partnerships",58-87 clics/mes,€9k-14k,Baja
+smart home villa ibiza,240,58,€3.80,Transaccional,No ranking,30-40,Tech luxury niche,"Smart home features, automation, tech-savvy travelers",24-36 clics/mes,€9k-14k,Baja
