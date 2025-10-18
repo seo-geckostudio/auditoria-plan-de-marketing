@@ -577,3 +577,316 @@ table tr:hover {
 .gecko-shadow-sm { box-shadow: var(--gecko-shadow-sm); }
 .gecko-shadow-md { box-shadow: var(--gecko-shadow-md); }
 .gecko-shadow-lg { box-shadow: var(--gecko-shadow-lg); }
+
+/* ============================================
+   6. COMPONENTES DE PRESENTACIÓN PROFESIONAL
+   ============================================ */
+
+/* Portada profesional */
+.cover-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f7e6 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.cover-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(136, 176, 75, 0.05) 0%, rgba(136, 176, 75, 0.1) 100%);
+    transform: skewX(-12deg);
+    transform-origin: top right;
+}
+
+.cover-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    padding: 60px 40px;
+}
+
+.cover-logo img {
+    max-width: 280px;
+    height: auto;
+    margin-bottom: 40px;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1));
+}
+
+.cover-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--gecko-negro-miso);
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+}
+
+.cover-subtitle {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--gecko-verde-greenery);
+    margin-bottom: 50px;
+    line-height: 1.3;
+}
+
+.cover-meta {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.cover-date,
+.cover-consultant {
+    font-size: 1.1rem;
+    color: var(--gecko-gris-neutral);
+    font-weight: 500;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.cover-footer {
+    margin-top: 60px;
+}
+
+.system-badge {
+    font-size: 0.95rem;
+    color: var(--gecko-gris-neutral);
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+/* CTAs Profesionales */
+.btn-cta-primary {
+    display: inline-block;
+    background: var(--gecko-gradient-primary);
+    color: white;
+    padding: 18px 40px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 700;
+    box-shadow: 0 8px 24px rgba(136, 176, 75, 0.3);
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-cta-primary:hover {
+    background: var(--gecko-gradient-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(136, 176, 75, 0.4);
+    color: white;
+    text-decoration: none;
+}
+
+.btn-sidebar-cta {
+    background: var(--gecko-gradient-primary) !important;
+    color: white !important;
+    padding: 12px 20px !important;
+    border-radius: 8px !important;
+    display: block !important;
+    text-align: center !important;
+    font-weight: 700 !important;
+    margin: 10px 0 !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(136, 176, 75, 0.2);
+}
+
+.btn-sidebar-cta:hover {
+    background: var(--gecko-gradient-dark) !important;
+    transform: translateX(-4px);
+    box-shadow: 0 6px 16px rgba(136, 176, 75, 0.3);
+    color: white !important;
+}
+
+/* Separadores de Fase Profesionales */
+.gecko-fase-separator {
+    padding: 80px 40px;
+    background: var(--gecko-gradient-primary);
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.gecko-fase-separator::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 60%;
+    height: 200%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.1) 100%);
+    transform: rotate(-15deg);
+}
+
+.fase-numero {
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    color: white;
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    letter-spacing: -0.02em;
+}
+
+.fase-nombre {
+    font-size: 2.5rem;
+    margin: 0 0 30px 0;
+    font-weight: 400;
+    color: white;
+    position: relative;
+    z-index: 2;
+    line-height: 1.3;
+}
+
+.fase-meta {
+    margin: 30px 0 0 0;
+    font-size: 1.2rem;
+    opacity: 0.9;
+    position: relative;
+    z-index: 2;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+}
+
+/* Índice General Profesional */
+.index-page {
+    background: white;
+}
+
+.index-section {
+    margin-bottom: 40px;
+    border-left: 4px solid var(--gecko-verde-greenery);
+    padding-left: 24px;
+}
+
+.index-section-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--gecko-verde-greenery);
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+}
+
+.index-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.index-item {
+    margin-bottom: 8px;
+}
+
+.index-item a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--gecko-negro-miso);
+    transition: all 0.2s ease;
+}
+
+.index-item a:hover {
+    background: var(--gecko-gradient-light);
+    border-color: var(--gecko-verde-greenery);
+    transform: translateX(8px);
+    box-shadow: 0 4px 12px rgba(136, 176, 75, 0.15);
+}
+
+.index-number {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--gecko-verde-greenery);
+    background: rgba(136, 176, 75, 0.1);
+    padding: 6px 12px;
+    border-radius: 6px;
+    min-width: 50px;
+    text-align: center;
+}
+
+.index-title {
+    flex: 1;
+    margin: 0 20px;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.index-pages {
+    font-size: 0.875rem;
+    color: var(--gecko-gris-neutral);
+    font-weight: 400;
+}
+
+/* Mejoras generales de legibilidad */
+.page-header {
+    border-bottom: 3px solid var(--gecko-verde-greenery);
+    padding-bottom: 24px;
+    margin-bottom: 40px;
+}
+
+.page-title {
+    color: var(--gecko-negro-miso);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
+}
+
+.page-subtitle {
+    color: var(--gecko-gris-neutral);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cover-title {
+        font-size: 2.5rem;
+    }
+
+    .cover-subtitle {
+        font-size: 1.75rem;
+    }
+
+    .cover-meta {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .fase-numero {
+        font-size: 3rem;
+    }
+
+    .fase-nombre {
+        font-size: 1.75rem;
+    }
+
+    .index-item a {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}

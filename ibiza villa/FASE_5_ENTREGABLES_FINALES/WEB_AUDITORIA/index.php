@@ -69,7 +69,7 @@ if ($loader->tieneErrores()) {
 
         <!-- RESUMEN EJECUTIVO - DESTACADO -->
         <li class="nav-section nav-destacado">
-          <a href="00_resumen_ejecutivo.php" target="_blank" style="background: linear-gradient(135deg, #28a745 0%, #218838 100%); color: white; padding: 12px 20px; border-radius: 8px; display: block; text-align: center; font-weight: bold; margin: 10px 0;">
+          <a href="00_resumen_ejecutivo.php" target="_blank" class="btn-sidebar-cta">
             📊 Resumen Ejecutivo
           </a>
         </li>
@@ -175,8 +175,7 @@ if ($loader->tieneErrores()) {
         <div class="cover-footer">
           <!-- CTA Resumen Ejecutivo -->
           <div style="margin: 30px 0 20px 0;">
-            <a href="00_resumen_ejecutivo.php" target="_blank"
-               style="display: inline-block; background: linear-gradient(135deg, #28a745 0%, #218838 100%); color: white; padding: 18px 40px; border-radius: 10px; text-decoration: none; font-size: 18px; font-weight: bold; box-shadow: 0 8px 20px rgba(40, 167, 69, 0.3); transition: transform 0.2s;">
+            <a href="00_resumen_ejecutivo.php" target="_blank" class="btn-cta-primary">
               📊 Ver Resumen Ejecutivo (Vista Rápida)
             </a>
           </div>
@@ -232,12 +231,12 @@ if ($loader->tieneErrores()) {
     foreach ($fases as $numFase => $fase):
         // Separador de fase (opcional, solo si quieres visual entre fases)
         ?>
-        <div id="fase-<?php echo $numFase; ?>" class="fase-separator" style="page-break-before: always; padding: 40px; background: linear-gradient(135deg, #54a34a 0%, #6ab85e 100%); color: white; text-align: center;">
-            <h1 style="font-size: 3em; margin: 0;">Fase <?php echo $numFase; ?></h1>
-            <h2 style="font-size: 2em; margin: 20px 0 0 0; font-weight: 400;">
+        <div id="fase-<?php echo $numFase; ?>" class="fase-separator gecko-fase-separator" style="page-break-before: always;">
+            <h1 class="fase-numero">Fase <?php echo $numFase; ?></h1>
+            <h2 class="fase-nombre">
                 <?php echo htmlspecialchars($nombresFases[$numFase] ?? $fase['nombre']); ?>
             </h2>
-            <p style="margin-top: 20px; font-size: 1.2em; opacity: 0.9;">
+            <p class="fase-meta">
                 <?php echo count($fase['modulos']); ?> módulos |
                 <?php echo array_sum(array_column($fase['modulos'], 'paginas_generadas')); ?> páginas
             </p>
