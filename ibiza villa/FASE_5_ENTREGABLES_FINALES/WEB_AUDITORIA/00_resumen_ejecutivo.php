@@ -10,6 +10,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resumen Ejecutivo - Auditoría SEO Ibiza Villa</title>
+    <!-- Google Fonts - Roboto (corporativo Gecko Studio) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- CSS Corporativo Gecko Studio -->
+    <link rel="stylesheet" href="css/gecko-corporate.css">
     <style>
         * {
             margin: 0;
@@ -18,10 +22,10 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
             line-height: 1.6;
-            color: #2c3e50;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #000000;
+            background: linear-gradient(135deg, #f0f7e6 0%, #e1eed4 100%);
             padding: 40px 20px;
         }
 
@@ -35,10 +39,23 @@
         }
 
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
             color: white;
             padding: 60px 40px;
             text-align: center;
+            position: relative;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 3px;
+            background: white;
+            opacity: 0.5;
         }
 
         .header h1 {
@@ -72,10 +89,11 @@
 
         .seccion h2 {
             font-size: 32px;
-            color: #667eea;
+            color: #88B04B;
             margin-bottom: 25px;
             padding-bottom: 15px;
-            border-bottom: 3px solid #667eea;
+            border-bottom: 3px solid #88B04B;
+            font-weight: 700;
         }
 
         /* Situación Actual - Semáforo */
@@ -139,12 +157,13 @@
 
         /* Números de Impacto */
         .impacto-hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
             color: white;
             padding: 40px;
             border-radius: 15px;
             text-align: center;
             margin: 30px 0;
+            box-shadow: 0 10px 40px rgba(136, 176, 75, 0.2);
         }
 
         .impacto-hero h3 {
@@ -259,8 +278,8 @@
         }
 
         .fase-1 { border-color: #ffd700; }
-        .fase-2 { border-color: #3b82f6; }
-        .fase-3 { border-color: #28a745; }
+        .fase-2 { border-color: #88B04B; }
+        .fase-3 { border-color: #6d8f3c; }
 
         .fase .badge {
             position: absolute;
@@ -274,8 +293,8 @@
         }
 
         .fase-1 .badge { background: #ffd700; color: #333; }
-        .fase-2 .badge { background: #3b82f6; }
-        .fase-3 .badge { background: #28a745; }
+        .fase-2 .badge { background: #88B04B; }
+        .fase-3 .badge { background: #6d8f3c; }
 
         .fase h4 {
             font-size: 20px;
@@ -290,12 +309,12 @@
         }
 
         .fase .impacto {
-            background: #f8f9fa;
+            background: #f0f7e6;
             padding: 15px;
             border-radius: 8px;
             margin-top: 15px;
             font-weight: bold;
-            color: #667eea;
+            color: #88B04B;
         }
 
         /* Módulos Disponibles */
@@ -317,9 +336,9 @@
         }
 
         .modulo-card:hover {
-            border-color: #667eea;
+            border-color: #88B04B;
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.2);
+            box-shadow: 0 10px 25px rgba(136, 176, 75, 0.3);
         }
 
         .modulo-card .icono {
@@ -341,12 +360,13 @@
 
         /* CTA Final */
         .cta-box {
-            background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+            background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
             color: white;
             padding: 40px;
             border-radius: 15px;
             text-align: center;
             margin: 40px 0;
+            box-shadow: 0 10px 40px rgba(136, 176, 75, 0.2);
         }
 
         .cta-box h3 {
@@ -377,13 +397,23 @@
 
         .btn-primary {
             background: white;
-            color: #28a745;
+            color: #88B04B;
+            font-weight: 700;
+        }
+
+        .btn-primary:hover {
+            background: #f0f7e6;
+            color: #6d8f3c;
         }
 
         .btn-secondary {
             background: rgba(255,255,255,0.2);
             color: white;
             border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.3);
         }
 
         /* Responsive */
@@ -420,6 +450,10 @@
     </style>
 </head>
 <body>
+    <!-- Elementos de impresión (ocultos en pantalla) -->
+    <div class="print-header" style="display: none;" data-module-name="Resumen Ejecutivo"></div>
+    <div class="print-footer" style="display: none;" data-module-name="Resumen Ejecutivo"></div>
+
     <div class="container">
         <!-- Header -->
         <div class="header">

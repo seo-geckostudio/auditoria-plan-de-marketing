@@ -1,0 +1,579 @@
+/**
+ * Gecko Studio - Estilos Corporativos para Auditorías SEO
+ * Basado en Manual Corporativo Gecko Studio
+ *
+ * Colores Corporativos:
+ * - Verde Greenery: #88B04B (RGB 136, 176, 75) - Color principal
+ * - Negro Miso: #000000 - Tipografía, logotipo
+ * - Gris Neutral: #787878 (RGB 120, 120, 120) - Fondos, divisores, texto secundario
+ *
+ * Tipografía:
+ * - Miso Bold - Títulos destacados
+ * - Roboto Regular/Light - Textos largos
+ */
+
+/* ============================================
+   1. VARIABLES CSS CORPORATIVAS
+   ============================================ */
+:root {
+    /* Colores Corporativos Gecko Studio */
+    --gecko-verde-greenery: #88B04B;
+    --gecko-verde-greenery-rgb: 136, 176, 75;
+    --gecko-negro-miso: #000000;
+    --gecko-gris-neutral: #787878;
+    --gecko-gris-claro: #f5f5f5;
+    --gecko-blanco: #ffffff;
+
+    /* Colores Semánticos (basados en verde corporativo) */
+    --gecko-success: #88B04B;
+    --gecko-warning: #f39c12;
+    --gecko-error: #e74c3c;
+    --gecko-info: #3498db;
+
+    /* Gradientes Corporativos */
+    --gecko-gradient-primary: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
+    --gecko-gradient-light: linear-gradient(135deg, #f0f7e6 0%, #e1eed4 100%);
+    --gecko-gradient-dark: linear-gradient(135deg, #6d8f3c 0%, #556f2e 100%);
+
+    /* Tipografía */
+    --gecko-font-primary: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --gecko-font-headings: 'Roboto', sans-serif;
+
+    /* Espaciado */
+    --gecko-spacing-xs: 8px;
+    --gecko-spacing-sm: 16px;
+    --gecko-spacing-md: 24px;
+    --gecko-spacing-lg: 40px;
+    --gecko-spacing-xl: 60px;
+
+    /* Sombras */
+    --gecko-shadow-sm: 0 2px 8px rgba(136, 176, 75, 0.1);
+    --gecko-shadow-md: 0 5px 20px rgba(136, 176, 75, 0.15);
+    --gecko-shadow-lg: 0 10px 40px rgba(136, 176, 75, 0.2);
+}
+
+/* ============================================
+   2. ESTILOS BASE CORPORATIVOS
+   ============================================ */
+body {
+    font-family: var(--gecko-font-primary);
+    color: var(--gecko-negro-miso);
+    line-height: 1.6;
+    background-color: var(--gecko-gris-claro);
+}
+
+/* Títulos con estilo corporativo */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--gecko-font-headings);
+    font-weight: 700;
+    color: var(--gecko-negro-miso);
+}
+
+h1 { font-size: 42px; }
+h2 { font-size: 32px; color: var(--gecko-verde-greenery); }
+h3 { font-size: 24px; }
+h4 { font-size: 20px; }
+
+/* Enlaces corporativos */
+a {
+    color: var(--gecko-verde-greenery);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--gecko-negro-miso);
+    text-decoration: underline;
+}
+
+/* ============================================
+   3. COMPONENTES CORPORATIVOS
+   ============================================ */
+
+/* Headers con gradiente corporativo */
+.gecko-header,
+.header,
+.concepto-educativo,
+.impacto-hero {
+    background: var(--gecko-gradient-primary) !important;
+    color: var(--gecko-blanco);
+}
+
+/* Badges y etiquetas */
+.badge-seccion,
+.badge {
+    background: var(--gecko-verde-greenery) !important;
+    color: var(--gecko-blanco);
+}
+
+.badge-antes {
+    background: var(--gecko-error) !important;
+}
+
+.badge-despues {
+    background: var(--gecko-success) !important;
+}
+
+/* Botones corporativos */
+.btn,
+.btn-descargar,
+.btn-primary {
+    background: var(--gecko-gradient-primary) !important;
+    color: var(--gecko-blanco);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn-descargar:hover {
+    background: var(--gecko-gradient-dark) !important;
+    transform: translateY(-2px);
+    box-shadow: var(--gecko-shadow-md);
+}
+
+/* Cards y tarjetas */
+.card,
+.csv-card,
+.modulo-card,
+.quick-win-item {
+    background: var(--gecko-blanco);
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.card:hover,
+.csv-card:hover,
+.modulo-card:hover {
+    border-color: var(--gecko-verde-greenery);
+    box-shadow: var(--gecko-shadow-md);
+}
+
+/* Tablas corporativas */
+.tabla-kpis thead,
+table thead {
+    background: var(--gecko-gradient-primary) !important;
+    color: var(--gecko-blanco);
+}
+
+.tabla-kpis tr:hover,
+table tr:hover {
+    background: var(--gecko-gradient-light);
+}
+
+/* Elementos destacados */
+.fila-destacada,
+.destacado {
+    background: var(--gecko-gradient-light) !important;
+    border-left: 4px solid var(--gecko-verde-greenery) !important;
+}
+
+/* Semáforos y estados */
+.semaforo-bueno,
+.mejora-positiva {
+    color: var(--gecko-verde-greenery) !important;
+}
+
+.semaforo-critico {
+    border-color: var(--gecko-error) !important;
+}
+
+.semaforo-medio {
+    border-color: var(--gecko-warning) !important;
+}
+
+/* Notas informativas */
+.nota-explicativa,
+.nota-importante {
+    background: var(--gecko-gradient-light);
+    border-left: 4px solid var(--gecko-verde-greenery);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* ============================================
+   4. ESTILOS DE IMPRESIÓN PROFESIONALES
+   ============================================ */
+@media print {
+    /* Reset general para impresión */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+    }
+
+    body {
+        background: white;
+        color: black;
+        font-size: 11pt;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Ocultar elementos no imprimibles */
+    .sidebar,
+    .no-print,
+    button,
+    .admin-panel,
+    nav {
+        display: none !important;
+    }
+
+    /* Contenedor principal para impresión */
+    .main-content,
+    .container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ============================================
+       HEADERS Y FOOTERS DE PÁGINA
+       ============================================ */
+
+    /* Header corporativo en cada página (excepto portadas) */
+    @page {
+        size: A4;
+        margin: 2cm 2cm 3cm 2cm;
+
+        @top-left {
+            content: element(page-header);
+        }
+
+        @bottom-center {
+            content: element(page-footer);
+        }
+    }
+
+    /* Excluir headers/footers de portadas */
+    @page :first {
+        margin: 2cm;
+
+        @top-left {
+            content: none;
+        }
+
+        @bottom-center {
+            content: none;
+        }
+    }
+
+    @page cover {
+        margin: 0;
+
+        @top-left {
+            content: none;
+        }
+
+        @bottom-center {
+            content: none;
+        }
+    }
+
+    /* Header running element */
+    .print-header {
+        position: running(page-header);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--gecko-verde-greenery);
+        font-size: 9pt;
+        color: var(--gecko-gris-neutral);
+    }
+
+    .print-header::before {
+        content: "Auditoría SEO - Ibiza Villa";
+        font-weight: 700;
+        color: var(--gecko-negro-miso);
+    }
+
+    .print-header::after {
+        content: "Gecko Studio";
+        font-weight: 500;
+        color: var(--gecko-verde-greenery);
+    }
+
+    /* Footer running element */
+    .print-footer {
+        position: running(page-footer);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        border-top: 1px solid #e0e0e0;
+        font-size: 8pt;
+        color: var(--gecko-gris-neutral);
+    }
+
+    .print-footer::before {
+        content: "Módulo: " attr(data-module-name);
+        font-style: italic;
+    }
+
+    .print-footer::after {
+        content: "Página " counter(page) " de " counter(pages);
+        font-weight: 500;
+    }
+
+    /* Portadas sin headers/footers */
+    .cover-page,
+    .portada,
+    .audit-page.cover-page {
+        page: cover;
+    }
+
+    /* ============================================
+       OPTIMIZACIÓN DE CONTENIDO PARA IMPRESIÓN
+       ============================================ */
+
+    /* Secciones */
+    section,
+    .seccion {
+        page-break-inside: avoid;
+        margin-bottom: 30px;
+    }
+
+    /* Títulos */
+    h1, h2, h3, h4 {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+        margin-top: 20pt;
+        margin-bottom: 10pt;
+    }
+
+    h1 {
+        font-size: 24pt;
+        color: var(--gecko-negro-miso);
+    }
+
+    h2 {
+        font-size: 18pt;
+        color: var(--gecko-verde-greenery);
+        border-bottom: 2px solid var(--gecko-verde-greenery);
+        padding-bottom: 8pt;
+    }
+
+    h3 {
+        font-size: 14pt;
+    }
+
+    /* Tablas */
+    table {
+        page-break-inside: avoid;
+        width: 100%;
+        border-collapse: collapse;
+        margin: 15pt 0;
+    }
+
+    table thead {
+        background: var(--gecko-verde-greenery) !important;
+        color: white !important;
+    }
+
+    table th,
+    table td {
+        border: 1px solid #ddd;
+        padding: 8pt;
+        text-align: left;
+        font-size: 9pt;
+    }
+
+    table tr:nth-child(even) {
+        background: #f9f9f9;
+    }
+
+    /* Cards y grids */
+    .csv-grid,
+    .modulos-grid,
+    .quick-wins-lista,
+    .timeline {
+        display: block !important;
+    }
+
+    .csv-card,
+    .modulo-card,
+    .quick-win-item,
+    .fase {
+        page-break-inside: avoid;
+        margin-bottom: 15pt;
+        border: 1px solid #ddd;
+        padding: 10pt;
+        background: white;
+    }
+
+    /* Semáforo */
+    .semaforo-grid {
+        display: block !important;
+    }
+
+    .semaforo-item {
+        page-break-inside: avoid;
+        margin-bottom: 15pt;
+        border: 2px solid #ddd;
+        padding: 10pt;
+    }
+
+    .semaforo-critico {
+        border-color: var(--gecko-error) !important;
+        background: #fff5f5 !important;
+    }
+
+    .semaforo-medio {
+        border-color: var(--gecko-warning) !important;
+        background: #fffbf0 !important;
+    }
+
+    .semaforo-bueno {
+        border-color: var(--gecko-success) !important;
+        background: #f0fff4 !important;
+    }
+
+    /* Gradientes a colores sólidos en impresión */
+    .impacto-hero,
+    .quick-wins,
+    .cta-box {
+        background: var(--gecko-verde-greenery) !important;
+        color: white !important;
+        page-break-inside: avoid;
+        padding: 15pt;
+        margin: 15pt 0;
+    }
+
+    /* Botones en impresión */
+    .btn,
+    .btn-descargar {
+        display: inline-block;
+        background: var(--gecko-verde-greenery) !important;
+        color: white !important;
+        padding: 8pt 15pt;
+        border: 1px solid var(--gecko-verde-greenery);
+        border-radius: 4pt;
+    }
+
+    /* Enlaces visibles en impresión */
+    a[href^="http"]::after {
+        content: " (" attr(href) ")";
+        font-size: 8pt;
+        color: var(--gecko-gris-neutral);
+    }
+
+    /* Notas e información importante */
+    .nota-explicativa,
+    .nota-importante {
+        page-break-inside: avoid;
+        background: var(--gecko-gradient-light) !important;
+        border-left: 4pt solid var(--gecko-verde-greenery) !important;
+        padding: 10pt;
+        margin: 10pt 0;
+    }
+
+    /* Listas */
+    ul, ol {
+        page-break-inside: avoid;
+    }
+
+    li {
+        page-break-inside: avoid;
+    }
+
+    /* Comparación ANTES/DESPUÉS */
+    .comparacion-grid {
+        display: block !important;
+    }
+
+    .columna-antes,
+    .columna-despues {
+        page-break-inside: avoid;
+        margin-bottom: 15pt;
+        border: 2px solid #ddd;
+        padding: 10pt;
+    }
+
+    .columna-antes {
+        border-left-color: var(--gecko-error) !important;
+        border-left-width: 4pt !important;
+    }
+
+    .columna-despues {
+        border-left-color: var(--gecko-success) !important;
+        border-left-width: 4pt !important;
+    }
+
+    /* Portadas especiales */
+    .cover-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        page-break-after: always;
+    }
+
+    .cover-title {
+        font-size: 32pt;
+        color: var(--gecko-negro-miso);
+        margin-bottom: 20pt;
+    }
+
+    .cover-subtitle {
+        font-size: 24pt;
+        color: var(--gecko-verde-greenery);
+    }
+
+    /* Imágenes */
+    img {
+        max-width: 100%;
+        page-break-inside: avoid;
+    }
+
+    /* Evitar huérfanas y viudas */
+    p {
+        orphans: 3;
+        widows: 3;
+    }
+}
+
+/* ============================================
+   5. UTILIDADES CORPORATIVAS
+   ============================================ */
+
+/* Espaciado corporativo */
+.gecko-mt-sm { margin-top: var(--gecko-spacing-sm); }
+.gecko-mt-md { margin-top: var(--gecko-spacing-md); }
+.gecko-mt-lg { margin-top: var(--gecko-spacing-lg); }
+
+.gecko-mb-sm { margin-bottom: var(--gecko-spacing-sm); }
+.gecko-mb-md { margin-bottom: var(--gecko-spacing-md); }
+.gecko-mb-lg { margin-bottom: var(--gecko-spacing-lg); }
+
+.gecko-p-sm { padding: var(--gecko-spacing-sm); }
+.gecko-p-md { padding: var(--gecko-spacing-md); }
+.gecko-p-lg { padding: var(--gecko-spacing-lg); }
+
+/* Textos corporativos */
+.gecko-text-primary { color: var(--gecko-verde-greenery); }
+.gecko-text-dark { color: var(--gecko-negro-miso); }
+.gecko-text-muted { color: var(--gecko-gris-neutral); }
+
+/* Backgrounds corporativos */
+.gecko-bg-primary { background: var(--gecko-verde-greenery); }
+.gecko-bg-light { background: var(--gecko-gris-claro); }
+.gecko-bg-white { background: var(--gecko-blanco); }
+
+/* Bordes corporativos */
+.gecko-border-primary { border-color: var(--gecko-verde-greenery) !important; }
+.gecko-border-top { border-top: 2px solid var(--gecko-verde-greenery); }
+.gecko-border-bottom { border-bottom: 2px solid var(--gecko-verde-greenery); }
+.gecko-border-left { border-left: 4px solid var(--gecko-verde-greenery); }
+
+/* Sombras corporativas */
+.gecko-shadow-sm { box-shadow: var(--gecko-shadow-sm); }
+.gecko-shadow-md { box-shadow: var(--gecko-shadow-md); }
+.gecko-shadow-lg { box-shadow: var(--gecko-shadow-lg); }
