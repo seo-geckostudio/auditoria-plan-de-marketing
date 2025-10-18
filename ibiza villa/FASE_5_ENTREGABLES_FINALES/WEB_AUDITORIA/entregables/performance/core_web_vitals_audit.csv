@@ -1,0 +1,15 @@
+tipologia_pagina,url_ejemplo,dispositivo,lcp_actual,lcp_objetivo,fid_actual,fid_objetivo,cls_actual,cls_objetivo,estado_cwv,problema_principal,impacto_negocio,usuarios_afectados_mes,prioridad
+Home,/,Desktop,2.8s,<2.5s,85ms,<100ms,0.18,<0.1,Parcial,"LCP hero image sin optimizar (1.2MB), CLS falta dimensiones imágenes",Bounce rate +12% primeras impresiones,18500,Crítica
+Home,/,Mobile,4.2s,<2.5s,142ms,<100ms,0.31,<0.1,Falla,"LCP hero 1.2MB + CLS slider sin height, FID JavaScript bloqueante","Bounce rate mobile +28%, pérdida 3,200 sesiones/mes",22400,Crítica
+Categoría Villas,/villas,Desktop,3.1s,<2.5s,78ms,<100ms,0.22,<0.1,Falla,"LCP grid 12 imágenes pesadas (850KB cada), CLS lazy load sin placeholder",CTR interno -18% a villas individuales,12800,Muy Alta
+Categoría Villas,/villas,Mobile,5.8s,<2.5s,168ms,<100ms,0.38,<0.1,Falla,"LCP imágenes sin WebP, CLS grid responsive sin dimensiones, FID filtros JavaScript",Abandono 45% antes scroll completo,15600,Crítica
+Villa Individual,/villas/villa-sunset-ibiza,Desktop,2.6s,<2.5s,92ms,<100ms,0.15,<0.1,Parcial,"LCP galería 1ra imagen 920KB, CLS galería Lightbox sin reservar espacio",Conversión -8% por experiencia lenta,6400,Alta
+Villa Individual,/villas/villa-sunset-ibiza,Mobile,3.9s,<2.5s,156ms,<100ms,0.29,<0.1,Falla,"LCP galería sin optimizar mobile, FID calendario JavaScript pesado 380KB","Conversión mobile -22%, pérdida €180k-280k/año",8200,Crítica
+Blog Guías,/blog/mejores-zonas-ibiza,Desktop,2.2s,<2.5s,68ms,<100ms,0.08,<0.1,Aprobado,Ninguno crítico,Ninguno,3200,Baja
+Blog Guías,/blog/mejores-zonas-ibiza,Mobile,3.4s,<2.5s,125ms,<100ms,0.18,<0.1,Parcial,"LCP imagen destacada 780KB, CLS AdSense sin dimensiones",Engagement -12% tiempo en página,4100,Media
+Búsqueda/Filtros,/busqueda?zona=san-jose,Desktop,4.5s,<2.5s,215ms,<100ms,0.42,<0.1,Falla,"LCP mapa Google Maps tarda, FID filtros JavaScript bloqueante 520KB, CLS resultados cargan tarde",Abandono búsqueda 58% antes ver resultados,5800,Muy Alta
+Búsqueda/Filtros,/busqueda?zona=san-jose,Mobile,6.8s,<2.5s,385ms,<100ms,0.58,<0.1,Falla,"LCP mapa + resultados, FID JavaScript masivo, CLS todo el layout cambia",Abandono mobile 72% = pérdida crítica funcionalidad,7200,Crítica
+Checkout/Reserva,/reserva/paso-1,Desktop,2.9s,<2.5s,118ms,<100ms,0.25,<0.1,Falla,"LCP formulario tarda, CLS validaciones mueven campos",Abandono checkout +15% = pérdida €85k-120k/año,2400,Crítica
+Checkout/Reserva,/reserva/paso-1,Mobile,4.6s,<2.5s,248ms,<100ms,0.44,<0.1,Falla,"LCP todo lento mobile, FID teclado tarda, CLS formulario responsive mal","Abandono checkout mobile 38% vs 15% desktop, pérdida €210k-320k/año",3100,Crítica
+Contacto,/contacto,Desktop,1.9s,<2.5s,72ms,<100ms,0.06,<0.1,Aprobado,Ninguno crítico,Ninguno,1800,Baja
+Contacto,/contacto,Mobile,2.8s,<2.5s,115ms,<100ms,0.12,<0.1,Parcial,LCP Google Maps embed tarda mobile,Abandono formulario +8%,2200,Media
