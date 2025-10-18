@@ -127,15 +127,15 @@
 }
 
 .stat-total .stat-value {
-  color: #3b82f6;
+  color: #88B04B;
 }
 
 .stat-success .stat-value {
-  color: #10b981;
+  color: #88B04B;
 }
 
 .stat-warning .stat-value {
-  color: #f59e0b;
+  color: #787878;
 }
 
 /* Sections */
@@ -200,7 +200,7 @@
 }
 
 .images-table a {
-  color: #3b82f6;
+  color: #88B04B;
   text-decoration: none;
 }
 
@@ -233,13 +233,13 @@
 }
 
 .btn-copy-all {
-  background: #3b82f6;
+  background: #88B04B;
   margin-top: 12px;
 }
 
 .btn-copy-all:hover {
-  background: #2563eb;
-  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+  background: #6d8f3c;
+  box-shadow: 0 2px 8px rgba(136, 176, 75, 0.3);
 }
 
 /* Images Grid */
@@ -371,7 +371,7 @@ details[open] summary {
   position: fixed;
   top: 24px;
   right: 24px;
-  background: #10b981;
+  background: #88B04B;
   color: white;
   padding: 16px 24px;
   border-radius: 8px;
