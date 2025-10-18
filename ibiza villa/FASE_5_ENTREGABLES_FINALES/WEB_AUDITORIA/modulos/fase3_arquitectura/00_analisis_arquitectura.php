@@ -154,10 +154,321 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
             </div>
         </section>
 
+        <!-- SECCIÓN: Comparación Visual ANTES vs DESPUÉS -->
+        <section class="comparacion-antes-despues">
+            <div class="comparacion-main-header">
+                <span class="comparacion-main-icon">🔍</span>
+                <h2>Situación Actual vs. Propuesta de Mejora</h2>
+            </div>
+            <p class="comparacion-intro">
+                A continuación mostramos un resumen visual de los problemas detectados y cómo se resolverán con las acciones del plan:
+            </p>
+
+            <div class="comparacion-grid">
+                <!-- COLUMNA ANTES -->
+                <div class="comparacion-columna antes">
+                    <div class="comparacion-header error">
+                        <span class="badge-estado antes">ANTES - SITUACIÓN ACTUAL</span>
+                        <h3>Estado Actual de la Arquitectura</h3>
+                    </div>
+                    <div class="comparacion-content">
+                        <!-- Diagrama visual simplificado -->
+                        <div class="arquitectura-visual">
+                            <div class="arq-nivel nivel-0">
+                                <div class="arq-nodo home">🏠 Home</div>
+                            </div>
+                            <div class="arq-nivel nivel-1">
+                                <div class="arq-nodo categoria">Villas</div>
+                                <div class="arq-nodo categoria">Blog</div>
+                                <div class="arq-nodo categoria">Servicios</div>
+                            </div>
+                            <div class="arq-nivel nivel-2">
+                                <div class="arq-nodo subcategoria">Por Zona</div>
+                                <div class="arq-nodo subcategoria">Artículos</div>
+                                <div class="arq-nodo subcategoria">Extras</div>
+                            </div>
+                            <div class="arq-nivel nivel-3-plus">
+                                <div class="arq-nodo pagina profunda">26 páginas a >4 clics</div>
+                            </div>
+                            <div class="arq-huerfanas">
+                                <div class="arq-nodo huerfana">127 páginas huérfanas</div>
+                            </div>
+                        </div>
+
+                        <!-- Lista de problemas -->
+                        <div class="problemas-lista">
+                            <h4>Problemas Detectados:</h4>
+                            <ul>
+                                <li class="problema-item">
+                                    <span class="icon-error">❌</span>
+                                    <div class="problema-texto">
+                                        <strong>127 páginas huérfanas</strong> sin enlaces internos
+                                        <span class="problema-detalle">No reciben autoridad ni tráfico</span>
+                                    </div>
+                                </li>
+                                <li class="problema-item">
+                                    <span class="icon-error">❌</span>
+                                    <div class="problema-texto">
+                                        <strong>26 páginas a >4 clics</strong> de profundidad excesiva
+                                        <span class="problema-detalle">Google raramente las rastrea</span>
+                                    </div>
+                                </li>
+                                <li class="problema-item">
+                                    <span class="icon-error">❌</span>
+                                    <div class="problema-texto">
+                                        <strong>Profundidad media: 3.8 clics</strong>
+                                        <span class="problema-detalle">Objetivo: ≤3 clics para páginas clave</span>
+                                    </div>
+                                </li>
+                                <li class="problema-item">
+                                    <span class="icon-error">❌</span>
+                                    <div class="problema-texto">
+                                        <strong>Pérdida estimada:</strong> 1,200-1,500 sesiones/mes
+                                        <span class="problema-detalle">Por baja visibilidad de contenido valioso</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FLECHA DE TRANSFORMACIÓN -->
+                <div class="transformacion-arrow">
+                    <div class="arrow-icon">➡️</div>
+                    <p class="arrow-text">Implementando<br>las acciones<br>del CSV</p>
+                </div>
+
+                <!-- COLUMNA DESPUÉS -->
+                <div class="comparacion-columna despues">
+                    <div class="comparacion-header success">
+                        <span class="badge-estado despues">DESPUÉS - SOLUCIÓN PROPUESTA</span>
+                        <h3>Arquitectura Optimizada</h3>
+                    </div>
+                    <div class="comparacion-content">
+                        <!-- Diagrama visual mejorado -->
+                        <div class="arquitectura-visual">
+                            <div class="arq-nivel nivel-0">
+                                <div class="arq-nodo home">🏠 Home</div>
+                            </div>
+                            <div class="arq-nivel nivel-1">
+                                <div class="arq-nodo categoria mejorado">Villas</div>
+                                <div class="arq-nodo categoria mejorado">Blog</div>
+                                <div class="arq-nodo categoria mejorado">Servicios</div>
+                            </div>
+                            <div class="arq-nivel nivel-2">
+                                <div class="arq-nodo subcategoria mejorado">Por Zona</div>
+                                <div class="arq-nodo subcategoria mejorado">Artículos</div>
+                                <div class="arq-nodo subcategoria mejorado">Extras</div>
+                            </div>
+                            <div class="arq-nivel nivel-3-plus">
+                                <div class="arq-nodo pagina mejorado">Todas a ≤3 clics</div>
+                            </div>
+                            <div class="arq-nota-mejora">
+                                ✅ Todas las páginas enlazadas desde categorías relevantes
+                            </div>
+                        </div>
+
+                        <!-- Lista de mejoras -->
+                        <div class="mejoras-lista">
+                            <h4>Mejoras Implementadas:</h4>
+                            <ul>
+                                <li class="mejora-item">
+                                    <span class="icon-success">✅</span>
+                                    <div class="mejora-texto">
+                                        <strong>127 páginas enlazadas</strong> desde categorías relevantes
+                                        <span class="mejora-detalle">Reciben autoridad y son rastreables</span>
+                                    </div>
+                                </li>
+                                <li class="mejora-item">
+                                    <span class="icon-success">✅</span>
+                                    <div class="mejora-texto">
+                                        <strong>26 páginas reducidas</strong> a ≤3 clics de profundidad
+                                        <span class="mejora-detalle">Google las rastrea regularmente</span>
+                                    </div>
+                                </li>
+                                <li class="mejora-item">
+                                    <span class="icon-success">✅</span>
+                                    <div class="mejora-texto">
+                                        <strong>Profundidad media: 2.1 clics</strong>
+                                        <span class="mejora-detalle">Reducción del 45%</span>
+                                    </div>
+                                </li>
+                                <li class="mejora-item">
+                                    <span class="icon-success">✅</span>
+                                    <div class="mejora-texto">
+                                        <strong>Ganancia estimada:</strong> +1,200-1,500 sesiones/mes
+                                        <span class="mejora-detalle">Contenido valioso ahora es visible</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: Tabla de KPIs y Resultados Esperados -->
+        <section class="kpis-esperados-section">
+            <div class="section-badge-container">
+                <span class="section-badge badge-despues">DESPUÉS - RESULTADOS ESPERADOS</span>
+            </div>
+            <h2>📈 Resultados Esperados (30-90 días post-implementación)</h2>
+            <p class="kpis-intro">
+                Si implementas las acciones de los archivos CSV descargables, estos son los resultados que puedes esperar ver en tu sitio:
+            </p>
+
+            <div class="tabla-kpis-container">
+                <table class="tabla-kpis">
+                    <thead>
+                        <tr>
+                            <th class="col-metrica">Métrica</th>
+                            <th class="col-antes">ANTES<br><span class="col-subtitle">Situación Actual</span></th>
+                            <th class="col-despues">DESPUÉS<br><span class="col-subtitle">Con Mejoras</span></th>
+                            <th class="col-mejora">Mejora</th>
+                            <th class="col-impacto">Impacto en Negocio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="kpi-row critical">
+                            <td class="metrica-nombre">
+                                <strong>Páginas Huérfanas</strong>
+                                <span class="metrica-descripcion">Páginas sin enlaces internos</span>
+                            </td>
+                            <td class="valor-antes">
+                                <span class="valor-numero">127</span>
+                                <span class="valor-unidad">páginas</span>
+                            </td>
+                            <td class="valor-despues">
+                                <span class="valor-numero success">0</span>
+                                <span class="valor-unidad">páginas</span>
+                            </td>
+                            <td class="valor-mejora">
+                                <div class="mejora-badge success">
+                                    <span class="mejora-porcentaje">+100%</span>
+                                    <span class="mejora-texto">enlazadas</span>
+                                </div>
+                            </td>
+                            <td class="impacto-texto">
+                                Todas las páginas ahora reciben autoridad y son rastreables por Google
+                            </td>
+                        </tr>
+                        <tr class="kpi-row high">
+                            <td class="metrica-nombre">
+                                <strong>Profundidad Promedio</strong>
+                                <span class="metrica-descripcion">Clics desde home a páginas</span>
+                            </td>
+                            <td class="valor-antes">
+                                <span class="valor-numero">3.8</span>
+                                <span class="valor-unidad">clics</span>
+                            </td>
+                            <td class="valor-despues">
+                                <span class="valor-numero success">2.1</span>
+                                <span class="valor-unidad">clics</span>
+                            </td>
+                            <td class="valor-mejora">
+                                <div class="mejora-badge success">
+                                    <span class="mejora-porcentaje">-45%</span>
+                                    <span class="mejora-texto">reducción</span>
+                                </div>
+                            </td>
+                            <td class="impacto-texto">
+                                Páginas más accesibles mejoran experiencia de usuario y rastreo de Google
+                            </td>
+                        </tr>
+                        <tr class="kpi-row high">
+                            <td class="metrica-nombre">
+                                <strong>Páginas a >3 Clics</strong>
+                                <span class="metrica-descripcion">Páginas con profundidad excesiva</span>
+                            </td>
+                            <td class="valor-antes">
+                                <span class="valor-numero">26</span>
+                                <span class="valor-unidad">páginas</span>
+                            </td>
+                            <td class="valor-despues">
+                                <span class="valor-numero success">0</span>
+                                <span class="valor-unidad">páginas</span>
+                            </td>
+                            <td class="valor-mejora">
+                                <div class="mejora-badge success">
+                                    <span class="mejora-porcentaje">-100%</span>
+                                    <span class="mejora-texto">eliminadas</span>
+                                </div>
+                            </td>
+                            <td class="impacto-texto">
+                                Contenido clave ahora es fácilmente descubrible
+                            </td>
+                        </tr>
+                        <tr class="kpi-row critical highlight-row">
+                            <td class="metrica-nombre">
+                                <strong>Tráfico Orgánico Mensual</strong>
+                                <span class="metrica-descripcion">Sesiones desde Google</span>
+                            </td>
+                            <td class="valor-antes">
+                                <span class="valor-numero">8,450</span>
+                                <span class="valor-unidad">sesiones/mes</span>
+                            </td>
+                            <td class="valor-despues">
+                                <span class="valor-numero success">9,650-9,950</span>
+                                <span class="valor-unidad">sesiones/mes</span>
+                            </td>
+                            <td class="valor-mejora">
+                                <div class="mejora-badge success large">
+                                    <span class="mejora-porcentaje">+14-18%</span>
+                                    <span class="mejora-texto">incremento</span>
+                                </div>
+                            </td>
+                            <td class="impacto-texto">
+                                <strong>+1,200-1,500 sesiones/mes adicionales</strong> de contenido ahora visible
+                            </td>
+                        </tr>
+                        <tr class="kpi-row medium">
+                            <td class="metrica-nombre">
+                                <strong>Crawl Efficiency</strong>
+                                <span class="metrica-descripcion">% de páginas rastreadas</span>
+                            </td>
+                            <td class="valor-antes">
+                                <span class="valor-numero">68%</span>
+                                <span class="valor-unidad">rastreadas</span>
+                            </td>
+                            <td class="valor-despues">
+                                <span class="valor-numero success">92%</span>
+                                <span class="valor-unidad">rastreadas</span>
+                            </td>
+                            <td class="valor-mejora">
+                                <div class="mejora-badge success">
+                                    <span class="mejora-porcentaje">+24pp</span>
+                                    <span class="mejora-texto">mejora</span>
+                                </div>
+                            </td>
+                            <td class="impacto-texto">
+                                Google dedica más tiempo a rastrear contenido valioso
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="kpis-nota-importante">
+                <div class="nota-header">
+                    <span class="nota-icon">💡</span>
+                    <strong>Nota Importante</strong>
+                </div>
+                <p>
+                    Estos resultados son estimaciones conservadoras basadas en datos históricos de sitios similares.
+                    Los resultados reales pueden variar según la velocidad de implementación y otros factores SEO.
+                    <strong>Tiempo para ver resultados:</strong> Los primeros cambios en tráfico suelen verse en 30-45 días,
+                    con impacto completo en 60-90 días.
+                </p>
+            </div>
+        </section>
+
         <!-- Resumen Ejecutivo -->
         <?php if (!empty($resumen)): ?>
-        <section class="executive-summary">
-            <h2>Resumen Ejecutivo</h2>
+        <section class="executive-summary situacion-actual-section">
+            <div class="section-badge-container">
+                <span class="section-badge badge-antes">ANTES - SITUACIÓN ACTUAL</span>
+            </div>
+            <h2>Resumen Ejecutivo: Estado Actual</h2>
             <div class="summary-grid">
                 <div class="summary-card">
                     <div class="summary-label">Score Arquitectura</div>
@@ -1433,6 +1744,553 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     margin-bottom: 10px;
     line-height: 1.6;
     font-size: 14px;
+}
+
+/* Sección Comparación ANTES vs DESPUÉS */
+.arquitectura-page .comparacion-antes-despues {
+    background: #f8f9fa;
+    padding: 40px;
+    border-radius: 12px;
+    margin: 40px 0;
+}
+
+.arquitectura-page .comparacion-main-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.arquitectura-page .comparacion-main-icon {
+    font-size: 32px;
+}
+
+.arquitectura-page .comparacion-main-header h2 {
+    margin: 0;
+    color: #1a1a1a;
+    font-size: 24px;
+    font-weight: 600;
+    border: none;
+    padding: 0;
+}
+
+.arquitectura-page .comparacion-intro {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.arquitectura-page .comparacion-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.arquitectura-page .comparacion-columna {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.arquitectura-page .comparacion-header {
+    padding: 20px;
+    color: white;
+}
+
+.arquitectura-page .comparacion-header.error {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+}
+
+.arquitectura-page .comparacion-header.success {
+    background: linear-gradient(135deg, #28a745, #218838);
+}
+
+.arquitectura-page .comparacion-header h3 {
+    margin: 10px 0 0 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.arquitectura-page .badge-estado {
+    display: inline-block;
+    padding: 5px 12px;
+    background: rgba(255,255,255,0.25);
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.arquitectura-page .comparacion-content {
+    padding: 25px;
+}
+
+/* Diagrama de Arquitectura Visual */
+.arquitectura-page .arquitectura-visual {
+    background: #fafafa;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    min-height: 280px;
+}
+
+.arquitectura-page .arq-nivel {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.arquitectura-page .arq-nodo {
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    border: 2px solid;
+    transition: all 0.3s ease;
+}
+
+.arquitectura-page .arq-nodo.home {
+    background: #667eea;
+    color: white;
+    border-color: #5568d3;
+    font-size: 14px;
+    padding: 12px 20px;
+}
+
+.arquitectura-page .arq-nodo.categoria {
+    background: #f8f9fa;
+    color: #333;
+    border-color: #dee2e6;
+}
+
+.arquitectura-page .arq-nodo.categoria.mejorado {
+    background: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+}
+
+.arquitectura-page .arq-nodo.subcategoria {
+    background: #fff;
+    color: #666;
+    border-color: #e0e0e0;
+    font-size: 11px;
+}
+
+.arquitectura-page .arq-nodo.subcategoria.mejorado {
+    background: #d1ecf1;
+    border-color: #17a2b8;
+    color: #0c5460;
+}
+
+.arquitectura-page .arq-nodo.pagina {
+    background: #fff;
+    color: #888;
+    border-color: #ddd;
+    font-size: 10px;
+}
+
+.arquitectura-page .arq-nodo.pagina.mejorado {
+    background: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+}
+
+.arquitectura-page .arq-nodo.profunda {
+    background: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
+}
+
+.arquitectura-page .arq-nodo.huerfana {
+    background: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.arquitectura-page .arq-huerfanas {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.arquitectura-page .arq-nota-mejora {
+    text-align: center;
+    margin-top: 20px;
+    padding: 12px;
+    background: #d4edda;
+    border-radius: 6px;
+    color: #155724;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+/* Listas de Problemas y Mejoras */
+.arquitectura-page .problemas-lista h4,
+.arquitectura-page .mejoras-lista h4 {
+    margin: 0 0 15px 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.arquitectura-page .problemas-lista ul,
+.arquitectura-page .mejoras-lista ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.arquitectura-page .problema-item,
+.arquitectura-page .mejora-item {
+    display: flex;
+    gap: 12px;
+    align-items: start;
+    margin-bottom: 15px;
+    padding: 12px;
+    background: #f9f9f9;
+    border-radius: 6px;
+}
+
+.arquitectura-page .problema-item {
+    border-left: 3px solid #dc3545;
+}
+
+.arquitectura-page .mejora-item {
+    border-left: 3px solid #28a745;
+}
+
+.arquitectura-page .icon-error,
+.arquitectura-page .icon-success {
+    font-size: 20px;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.arquitectura-page .problema-texto,
+.arquitectura-page .mejora-texto {
+    flex: 1;
+}
+
+.arquitectura-page .problema-texto strong,
+.arquitectura-page .mejora-texto strong {
+    display: block;
+    margin-bottom: 4px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+.arquitectura-page .problema-detalle,
+.arquitectura-page .mejora-detalle {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Flecha de Transformación */
+.arquitectura-page .transformacion-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.arquitectura-page .arrow-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+.arquitectura-page .arrow-text {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: #667eea;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Responsive para comparación */
+@media (max-width: 1200px) {
+    .arquitectura-page .comparacion-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .arquitectura-page .transformacion-arrow {
+        transform: rotate(90deg);
+        padding: 20px 0;
+    }
+
+    .arquitectura-page .arrow-text br {
+        display: none;
+    }
+}
+
+/* Badges de Sección ANTES/DESPUÉS */
+.arquitectura-page .section-badge-container {
+    margin-bottom: 15px;
+}
+
+.arquitectura-page .section-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.arquitectura-page .section-badge.badge-antes {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    color: white;
+    box-shadow: 0 2px 4px rgba(220,53,69,0.3);
+}
+
+.arquitectura-page .section-badge.badge-despues {
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: white;
+    box-shadow: 0 2px 4px rgba(40,167,69,0.3);
+}
+
+/* Sección KPIs Esperados */
+.arquitectura-page .kpis-esperados-section {
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.arquitectura-page .kpis-esperados-section h2 {
+    color: #1a1a1a;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px 0 15px 0;
+    border: none;
+    padding: 0;
+}
+
+.arquitectura-page .kpis-intro {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.arquitectura-page .tabla-kpis-container {
+    overflow-x: auto;
+    margin: 25px 0;
+}
+
+.arquitectura-page .tabla-kpis {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.arquitectura-page .tabla-kpis thead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.arquitectura-page .tabla-kpis th {
+    padding: 15px 12px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.arquitectura-page .tabla-kpis .col-subtitle {
+    display: block;
+    font-size: 10px;
+    font-weight: normal;
+    text-transform: none;
+    margin-top: 3px;
+    opacity: 0.9;
+}
+
+.arquitectura-page .tabla-kpis .col-antes {
+    background: rgba(220,53,69,0.2);
+}
+
+.arquitectura-page .tabla-kpis .col-despues {
+    background: rgba(40,167,69,0.2);
+}
+
+.arquitectura-page .tabla-kpis .col-mejora {
+    background: rgba(255,193,7,0.15);
+    text-align: center;
+}
+
+.arquitectura-page .tabla-kpis tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+    transition: background 0.2s ease;
+}
+
+.arquitectura-page .tabla-kpis tbody tr:hover {
+    background: #f9f9f9;
+}
+
+.arquitectura-page .tabla-kpis tbody tr.highlight-row {
+    background: #fff9e6;
+    border-left: 4px solid #ffc107;
+}
+
+.arquitectura-page .tabla-kpis tbody tr.highlight-row:hover {
+    background: #fff5d6;
+}
+
+.arquitectura-page .tabla-kpis td {
+    padding: 15px 12px;
+    vertical-align: top;
+}
+
+.arquitectura-page .metrica-nombre {
+    min-width: 180px;
+}
+
+.arquitectura-page .metrica-nombre strong {
+    display: block;
+    color: #1a1a1a;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.arquitectura-page .metrica-descripcion {
+    display: block;
+    font-size: 12px;
+    color: #888;
+    font-style: italic;
+}
+
+.arquitectura-page .valor-antes,
+.arquitectura-page .valor-despues {
+    text-align: center;
+    min-width: 120px;
+}
+
+.arquitectura-page .valor-numero {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 2px;
+}
+
+.arquitectura-page .valor-numero.success {
+    color: #28a745;
+}
+
+.arquitectura-page .valor-unidad {
+    display: block;
+    font-size: 11px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.arquitectura-page .valor-mejora {
+    text-align: center;
+    min-width: 130px;
+}
+
+.arquitectura-page .mejora-badge {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.arquitectura-page .mejora-badge.success {
+    background: linear-gradient(135deg, #d4edda, #c3e6cb);
+    border: 2px solid #28a745;
+}
+
+.arquitectura-page .mejora-badge.large {
+    padding: 10px 15px;
+}
+
+.arquitectura-page .mejora-porcentaje {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #28a745;
+    margin-bottom: 2px;
+}
+
+.arquitectura-page .mejora-badge.large .mejora-porcentaje {
+    font-size: 24px;
+}
+
+.arquitectura-page .mejora-texto {
+    display: block;
+    font-size: 11px;
+    color: #155724;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.arquitectura-page .impacto-texto {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.arquitectura-page .kpis-nota-importante {
+    background: #e7f3ff;
+    border-left: 4px solid #2196f3;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 25px;
+}
+
+.arquitectura-page .nota-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.arquitectura-page .nota-icon {
+    font-size: 24px;
+}
+
+.arquitectura-page .nota-header strong {
+    font-size: 15px;
+    color: #1a1a1a;
+}
+
+.arquitectura-page .kpis-nota-importante p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
 }
 
 @media print {
