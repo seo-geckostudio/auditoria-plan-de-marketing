@@ -1,0 +1,25 @@
+Categoria,Item_Optimizacion,Status_Actual,Prioridad,Impacto_SEO,Instrucciones,Tiempo_Estimado,Notas
+Informacion_Basica,Nombre del negocio exacto (Ibiza Villa),Pendiente,Crítica,+15% visibilidad local,Usar nombre oficial sin keywords spam - Coincide con web,5 min,Debe coincidir 100% con la web y documentos oficiales
+Informacion_Basica,Categoría principal: Agencia alquiler vacacional,Pendiente,Crítica,+20% relevancia,Seleccionar categoría más específica posible en GBP,3 min,Categoría principal = máximo peso algorítmico
+Informacion_Basica,Categorías secundarias (Inmobiliaria + Servicio alojamiento),Pendiente,Alta,+8% relevancia,Añadir 2-3 categorías secundarias relacionadas,5 min,Máximo 10 categorías - priorizar las más relevantes
+Informacion_Basica,NAP completo y consistente,Pendiente,Crítica,+25% confianza,Nombre/Dirección/Teléfono idénticos en web y todos los directorios,10 min,Inconsistencias = penalización algorítmica Google
+Informacion_Basica,Horario de atención actualizado,Pendiente,Media,+5% conversión,Horario real de atención - actualizar días festivos,5 min,Horarios especiales en temporada alta (verano Ibiza)
+Informacion_Basica,URL del sitio web,Completo,Alta,+10% tráfico,Verificar que apunta a homepage con https://,2 min,URL debe coincidir con Google Search Console
+Informacion_Basica,Descripción de negocio (750 caracteres),Pendiente,Alta,+12% CTR,Descripción única con keywords naturales + USP,20 min,Incluir: lujo + Ibiza + villas + premium + servicios exclusivos
+Multimedia,Foto de portada profesional,Pendiente,Crítica,+30% engagement,Imagen hero de villa más exclusiva - resolución alta,15 min,Primera impresión = crítica - usar villa icónica
+Multimedia,Logo del negocio,Pendiente,Alta,+8% branding,Logo cuadrado mínimo 720x720px fondo transparente,10 min,Visible en Maps y resultados - identidad visual
+Multimedia,Fotos de villas (mínimo 20),Pendiente,Crítica,+40% conversión,Galería completa: exteriores + interiores + piscinas + vistas,60 min,Calidad profesional - mostrar lujo y exclusividad
+Multimedia,Videos de villas (mínimo 3),Pendiente,Alta,+25% engagement,Video tours de 30-60 seg de villas TOP,90 min,Video = formato más consumido en GBP
+Multimedia,Fotos 360° (tour virtual),Pendiente,Media,+15% tiempo visita,Tour virtual interior villas destacadas,120 min,Diferenciador vs competencia - experiencia inmersiva
+Products_Services,Sección Servicios completa,Pendiente,Alta,+18% conversión,Crear servicios: Villas Lujo + Chef Privado + Concierge + Transfer,30 min,Cada servicio = oportunidad de keyword adicional
+Products_Services,Precios indicativos (desde €X/semana),Pendiente,Media,+10% cualificación leads,Mostrar rangos de precio: Desde 3.000€/semana,15 min,Filtra búsquedas no cualificadas - transparencia
+Atributos,Atributos de negocio (20+ seleccionados),Pendiente,Alta,+12% relevancia,Marcar todos aplicables: Wifi gratis + Parking + Piscina + Vistas mar,15 min,Más atributos = mejor matching con búsquedas usuario
+Posts,Google Posts semanales,Pendiente,Alta,+20% engagement,Publicar 1 post/semana: ofertas + villas nuevas + contenido,15 min/semana,Posts = señal de actividad - favorece algoritmo
+Posts,Post tipo Oferta (mensual),Pendiente,Media,+15% conversión,Ofertas temporada baja o last minute con CTA,10 min/mes,Tipo Oferta tiene badge destacado en GBP
+Reviews,Estrategia adquisición reviews,Pendiente,Crítica,+35% conversión,Email post-estancia + incentivo review (descuento futuro),30 min setup,Reviews = factor #1 de decisión usuarios
+Reviews,Responder 100% reviews en <24h,Pendiente,Crítica,+22% confianza,Respuesta profesional personalizada a TODAS las reviews,10 min/día,Tasa respuesta 100% = señal de compromiso con clientes
+Reviews,Plantillas respuesta positivas/negativas,Pendiente,Alta,+10% eficiencia,Crear 3 plantillas base personalizables,20 min,Agiliza respuestas manteniendo calidad
+Q&A,Preguntas frecuentes pre-pobladas (10 Q&As),Pendiente,Alta,+18% información,Crear 10 Q&As anticipando dudas: Mascotas? Catering? Transfer?,45 min,Controlas narrativa - evitas preguntas negativas usuarios
+Insights,Revisar estadísticas GBP mensualmente,Pendiente,Media,+15% optimización,Analizar qué búsquedas generan impresiones y acciones,20 min/mes,Insights = feedback para ajustar estrategia keywords
+Mensajeria,Activar mensajería GBP,Pendiente,Media,+12% leads,Habilitar mensajes directos desde GBP - respuesta rápida,5 min,Canal adicional de contacto - lead caliente
+Reservas,Integración sistema reservas (si aplicable),Pendiente,Baja,+8% conversión,Conectar con motor reservas si disponible,60 min,Facilita conversión directa desde GBP
