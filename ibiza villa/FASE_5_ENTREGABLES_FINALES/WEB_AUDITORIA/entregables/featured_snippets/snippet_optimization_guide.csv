@@ -1,0 +1,121 @@
+Tipo_Snippet,Caracteristicas,Formato_HTML_Recomendado,Longitud_Optima,Ejemplo_Concreto_Ibiza_Villa,Schema_Markup,Prioridad,Esfuerzo,Queries_Aplicables,Notas_Implementacion
+"Párrafo (Paragraph)","Respuesta directa concisa a pregunta específica. Primeros 40-60 palabras después de H2.","<h2>¿Cuánto cuesta alquilar una villa en Ibiza?</h2>
+<p>El coste de alquilar una villa en Ibiza varía según temporada y capacidad. <strong>Temporada Baja</strong> (nov-mar): €2,500-4,200/semana. <strong>Temporada Media</strong> (abr-jun, sep-oct): €4,200-6,800/semana. <strong>Temporada Alta</strong> (jul-ago): €7,800-15,000/semana para villas de lujo 8-12 personas.</p>",40-60 palabras,"El coste de alquilar una villa en Ibiza varía según temporada: Baja €2,500-4,200/sem, Media €4,200-6,800/sem, Alta €7,800-15,000/sem para villas lujo 8-12 personas con piscina privada y servicios exclusivos.",No requerido (opcional FAQPage),"Crítica - 40% snippets son párrafos",Bajo,"""cuánto cuesta"", ""qué es"", ""por qué"", ""diferencia entre""","Usar <strong> para destacar cifras clave. Evitar jerga. Sujeto + Verbo + Complemento completo."
+"Lista Numerada (Numbered List)","Pasos secuenciales, rankings, o guías ordenadas. 5-8 items máximo.","<h2>¿Cómo reservar una villa en Ibiza?</h2>
+<ol>
+<li><strong>Selecciona fechas y capacidad</strong>: Define número personas y período estancia</li>
+<li><strong>Explora villas disponibles</strong>: Filtra por zona, amenidades y presupuesto</li>
+<li><strong>Solicita disponibilidad</strong>: Contacta para confirmar fechas exactas</li>
+<li><strong>Recibe presupuesto detallado</strong>: Incluye base + limpieza + tasas</li>
+<li><strong>Firma contrato</strong>: Revisa términos y política cancelación</li>
+<li><strong>Paga señal 50%</strong>: Reserva confirmada tras transferencia</li>
+</ol>",5-8 items (40-60 palabras cada uno),"1. Selecciona fechas y capacidad
+2. Explora villas disponibles con filtros
+3. Solicita disponibilidad específica
+4. Recibe presupuesto detallado
+5. Firma contrato de alquiler
+6. Paga señal 50% para confirmar",HowTo Schema (muy recomendado),"Muy Alta - 30% snippets son listas",Medio,"""cómo"", ""pasos para"", ""mejores"", ""top""","Cada <li> debe ser auto-contenido. Usar <strong> en primeras 2-3 palabras. HowTo Schema aumenta probabilidad 40%."
+"Lista Bullets (Bulleted List)","Items no secuenciales: características, requisitos, servicios incluidos. 8-12 items.","<h2>¿Qué incluye el alquiler de una villa en Ibiza?</h2>
+<ul>
+<li><strong>Alojamiento completo</strong>: Villa privada con todas habitaciones y baños</li>
+<li><strong>Ropa de cama y toallas</strong>: Sábanas de calidad y toallas de baño y piscina</li>
+<li><strong>Limpieza inicial</strong>: Villa preparada y desinfectada antes de entrada</li>
+<li><strong>Piscina privada</strong>: Mantenimiento incluido durante estancia</li>
+<li><strong>Wifi fibra óptica</strong>: Internet de alta velocidad en toda la villa</li>
+<li><strong>Aire acondicionado</strong>: Climatización en todas las habitaciones</li>
+<li><strong>Parking privado</strong>: 2-3 plazas según villa</li>
+<li><strong>Seguro de responsabilidad</strong>: Cobertura completa incluida</li>
+</ul>",8-12 items (30-40 palabras cada uno),"• Alojamiento completo privado
+• Ropa de cama y toallas premium
+• Limpieza inicial y final
+• Piscina privada con mantenimiento
+• Wifi fibra óptica
+• Aire acondicionado
+• Parking privado
+• Seguro responsabilidad civil",FAQPage Schema (recomendado),"Alta - 20% snippets son bullets",Bajo,"""qué incluye"", ""requisitos"", ""servicios"", ""características""","No necesita orden específico. Usar íconos ✓ opcionales. Agrupar items relacionados. 8-12 items = sweet spot."
+"Tabla Comparativa (Table)","Comparar opciones, precios por categoría, características múltiples. 3-5 columnas, 4-8 filas.","<h2>Mejor época para alquilar villa en Ibiza</h2>
+<table>
+<thead>
+<tr>
+<th>Temporada</th>
+<th>Meses</th>
+<th>Temperatura</th>
+<th>Precio/Semana</th>
+<th>Ocupación</th>
+<th>Ideal Para</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Baja</strong></td>
+<td>Nov-Mar</td>
+<td>12-18°C</td>
+<td>€2,500-4,200</td>
+<td>30-40%</td>
+<td>Retiros, descanso</td>
+</tr>
+<tr>
+<td><strong>Media</strong></td>
+<td>Abr-Jun, Sep-Oct</td>
+<td>20-26°C</td>
+<td>€4,200-6,800</td>
+<td>60-75%</td>
+<td>Familias, parejas</td>
+</tr>
+<tr>
+<td><strong>Alta</strong></td>
+<td>Jul-Ago</td>
+<td>28-32°C</td>
+<td>€7,800-15,000</td>
+<td>95-100%</td>
+<td>Grupos, eventos</td>
+</tr>
+</tbody>
+</table>",3-5 columnas x 4-8 filas,"Temporada | Meses | Temperatura | Precio/Semana | Ideal Para
+Baja | Nov-Mar | 12-18°C | €2,500-4,200 | Retiros
+Media | Abr-Jun, Sep-Oct | 20-26°C | €4,200-6,800 | Familias
+Alta | Jul-Ago | 28-32°C | €7,800-15,000 | Grupos",No específico (Table markup semántico),"Muy Alta - 15% snippets son tablas",Medio,"""mejor época"", ""comparativa"", ""diferencias"", ""precios""","Usar <thead> y <th scope='col'>. Datos numéricos alineados. Máximo 5 columnas para mobile. Header con <strong>."
+"Video Snippet","Video embebido YouTube con transcript. Aparece en queries ""cómo"" visuales.","<h2>Cómo llegar a tu villa desde el aeropuerto de Ibiza</h2>
+<p>Guía visual completa con 3 opciones de transporte y tiempos estimados.</p>
+<iframe width=""560"" height=""315"" src=""https://www.youtube.com/embed/ID"" title=""Transporte Aeropuerto Ibiza Villas""></iframe>
+<div class=""video-transcript"">
+<h3>Transcripción:</h3>
+<p>Desde el aeropuerto de Ibiza tienes 3 opciones principales: Taxi (15-30min, €30-60), Transfer privado (reserva anticipada, €45-80), o Coche de alquiler (máxima flexibilidad, €35-50/día)...</p>
+</div>","Video 2-5 minutos + Transcript completo","Video 3 minutos mostrando ruta aeropuerto → villa con 3 opciones transporte (taxi/transfer/rental) + precios + tiempos. Transcript completo debajo del video.",VideoObject Schema (crítico),"Alta - Creciente en queries visuales",Alto,"""cómo llegar"", ""tour virtual"", ""cómo funciona""","VideoObject Schema OBLIGATORIO. Transcript mejora accesibilidad y parseo IA. Thumbnail atractivo. Duración 2-5min óptimo."
+"Featured Snippet con Imágenes","Párrafo o lista acompañado de galería imágenes. Queries visuales.","<h2>Villas en Ibiza con vistas al mar</h2>
+<p>Las <strong>villas con vistas panorámicas al Mediterráneo</strong> son las más exclusivas de Ibiza. Zonas destacadas: <strong>Cala Comte</strong> (atardeceres espectaculares), <strong>Es Cubells</strong> (acantilados privacidad), <strong>Portinatx</strong> (costa norte tranquila).</p>
+<div class=""gallery"">
+<img src=""villa-vista-mar-1.jpg"" alt=""Villa lujo Cala Comte vistas mar piscina infinita"">
+<img src=""villa-vista-mar-2.jpg"" alt=""Villa Es Cubells acantilado vistas panorámicas"">
+<img src=""villa-vista-mar-3.jpg"" alt=""Villa Portinatx costa norte Ibiza vistas mar"">
+</div>","Respuesta 40-60 palabras + 3-6 imágenes optimizadas","Las villas con vistas al mar son las más exclusivas. Zonas: Cala Comte (atardeceres), Es Cubells (acantilados), Portinatx (tranquilidad). Galería 6 villas destacadas con piscina infinita y terrazas panorámicas.",ImageObject Schema (cada imagen),"Muy Alta - Queries de alto valor visual",Alto,"""villas con vistas"", ""mejores villas"", ""villas de lujo""","Alt text descriptivo 10-15 palabras. WebP comprimido. Lazy loading. Galería 3-6 imágenes. ImageObject Schema aumenta probabilidad."
+"Definition Box","Definición concisa término específico. Aparece en queries ""qué es"".","<h2>¿Qué es una finca en Ibiza?</h2>
+<p><strong>Una finca en Ibiza es una propiedad rústica tradicional</strong> ubicada en zona rural o campo, típicamente con arquitectura ibicenca auténtica (paredes blancas, vigas de madera), terreno amplio (5,000-20,000 m²), y rodeada de naturaleza. A diferencia de las villas modernas, las fincas ofrecen <strong>privacidad total y ambiente tradicional</strong>.</p>",50-70 palabras,"Una finca es una propiedad rústica tradicional ibicenca en zona rural con arquitectura auténtica (paredes blancas, vigas madera), terreno 5,000-20,000 m², y privacidad total rodeada de naturaleza.",No específico,"Media - Queries definitionales específicas",Bajo,"""qué es"", ""definición de"", ""significado""","Primera frase = definición directa con <strong>. Segunda frase = características diferenciadoras. Evitar circunloquios."
+"People Also Ask (PAA) Optimization","Preguntas relacionadas que Google muestra. Optimizar para aparecer en expansión PAA.","<h2>¿Puedo cancelar mi reserva de villa en Ibiza?</h2>
+<p>Sí, puedes cancelar tu reserva según la <strong>política de cancelación</strong> elegida al reservar:</p>
+<ul>
+<li><strong>Flexible</strong>: Cancelación gratuita hasta 30 días antes. Reembolso 100% señal.</li>
+<li><strong>Moderada</strong>: Cancelación hasta 60 días antes. Penalización 25% señal.</li>
+<li><strong>Estricta</strong>: No reembolsable. Solo reprogramación sujeto a disponibilidad.</li>
+</ul>
+<p>Recomendamos contratar <strong>seguro de cancelación</strong> (3-5% valor total) para máxima flexibilidad.</p>","Respuesta directa + Lista opciones + Recomendación","Sí, cancelación según política: Flexible (hasta 30 días, 100% reembolso), Moderada (60 días, 75% reembolso), Estricta (no reembolsable). Recomendamos seguro cancelación 3-5%.",FAQPage Schema (muy recomendado),"Crítica - Genera tráfico continuo",Bajo,"""puedo"", ""es posible"", ""cómo funciona"", ""qué pasa si""","Formato pregunta-respuesta. FAQPage Schema con 10-15 FAQs aumenta PAA visibility. Respuesta directa primero, detalles después."
+"Local Pack Integration","Featured Snippet combinado con Local Pack (Google Business Profile). Queries ""cerca de mí"".","<h2>Villas cerca de la playa en Ibiza</h2>
+<p>Las <strong>mejores zonas con villas a 5-10 minutos de playa</strong> son:</p>
+<ol>
+<li><strong>Cala Tarida</strong>: Playa familiar, 15 villas disponibles, 200-500m playa</li>
+<li><strong>Cala Vadella</strong>: Bahía protegida, villas 100-300m, ideal familias</li>
+<li><strong>Talamanca</strong>: Playa urbana, walking distance Ibiza ciudad</li>
+<li><strong>Santa Eulalia</strong>: Paseo marítimo, villas 5-10min caminando</li>
+<li><strong>Cala Comte</strong>: Atardeceres, villas 400-800m, acceso coche</li>
+</ol>","Lista 5 zonas + Distancia específica + LocalBusiness Schema","Zonas con villas cerca playa: Cala Tarida (200-500m), Cala Vadella (100-300m), Talamanca (walking distance), Santa Eulalia (5-10min), Cala Comte (400-800m).",LocalBusiness Schema + FAQPage,"Crítica - Alto volumen búsquedas locales",Medio,"""cerca de"", ""en [zona]"", ""mejores zonas""","LocalBusiness Schema obligatorio. Geo coordinates exactas. Distancias específicas en metros. NAP consistency 100%."
+"Rich Answer con Datos Estructurados","Respuesta enriquecida usando múltiples Schema types. Google prioriza structured data.","<h2>Servicios de chef privado en villas Ibiza</h2>
+<p>El <strong>servicio de chef privado</strong> transforma tu estancia en experiencia gastronómica de lujo. Disponible en todas nuestras villas premium.</p>
+<div itemscope itemtype=""https://schema.org/Service"">
+<h3>Opciones disponibles:</h3>
+<ul>
+<li><strong itemprop=""name"">Chef Desayuno</strong>: <span itemprop=""price"">€120-180</span>/día (8-12 personas)</li>
+<li><strong itemprop=""name"">Chef Cena</strong>: <span itemprop=""price"">€280-420</span>/noche (menú 3 platos)</li>
+<li><strong itemprop=""name"">Chef Dedicado</strong>: <span itemprop=""price"">€800-1,200</span>/día (todas comidas)</li>
+</ul>
+<p itemprop=""description"">Incluye: Compra ingredientes frescos mercado local, preparación en villa, servicio mesa, limpieza cocina.</p>
+</div>","Descripción + Service Schema + Pricing + Detalles incluidos","Chef privado disponible: Desayuno €120-180/día, Cena €280-420/noche, Dedicado €800-1,200/día. Incluye compra ingredientes, preparación, servicio, limpieza.",Service Schema + Offer Schema + PriceSpecification,"Alta - Queries transaccionales alto valor",Alto,"""servicios de"", ""chef privado"", ""cuánto cuesta [servicio]""","Service Schema completo. PriceSpecification por tier. Incluir qué está incluido/excluido. Reviews Schema suma autoridad."
