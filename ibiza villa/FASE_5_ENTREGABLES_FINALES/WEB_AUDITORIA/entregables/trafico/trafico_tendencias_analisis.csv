@@ -1,0 +1,13 @@
+metrica,2023_total,2024_total,variacion_absoluta,variacion_porcentual,temporada_alta_promedio,temporada_baja_promedio,estacionalidad_ratio,benchmark_sector,gap_vs_sector,prioridad,accion_recomendada
+Sesiones Orgánicas,98450,114500,16050,16.3%,14460,6025,2.4x,145000,-21.0%,Crítica,"Optimizar temporada baja con contenido evergreen, blog guías Ibiza, keywords long-tail"
+Usuarios Orgánicos,89200,103610,14410,16.2%,13090,5525,2.4x,131000,-20.9%,Muy Alta,"Captación usuarios nuevos con SEO local, partnerships medios autoridad, guest posting"
+Páginas Vistas por Sesión,3.42,3.52,0.10,2.9%,3.69,3.28,1.1x,4.20,-16.2%,Alta,"Mejorar internal linking, related villas, cross-sell servicios, blog to landing pages"
+Duración Promedio Sesión (seg),258,275,17,6.6%,305,248,1.2x,320,-14.1%,Alta,"Contenido más engaging, videos tours, FAQs expandidas, testimonios clientes"
+Tasa Rebote,56.8%,54.1%,-2.7pp,-4.8%,48.9%,57.9%,1.2x,45.0%,+20.2%,Muy Alta,"Hero home optimizado, propuesta valor clara, trust signals, comparador villas"
+Conversiones Orgánicas,1542,1867,325,21.1%,240,135,1.8x,2400,-22.2%,Crítica,"Calendar disponibilidad, pricing transparente, reviews destacadas, reduce fricción checkout"
+Valor Conversión Total (EUR),4626000,5601000,975000,21.1%,721500,405000,1.8x,7200000,-22.2%,Crítica,"Upsell servicios premium, villa+chef bundles, extend average stay, dynamic pricing"
+CTR Orgánico GSC,2.3%,2.8%,0.5pp,21.7%,3.4%,2.1%,1.6x,4.5%,-37.8%,Muy Alta,"Meta titles optimizados, rich snippets, FAQ schema, local pack optimization"
+Posición Promedio GSC,28.4,24.6,-3.8,-13.4%,18.2,32.5,1.8x,12.5,+96.8%,Crítica,"Quick wins keywords posición 11-20, featured snippets, content refresh top pages"
+Pages per Session Mobile,2.85,3.12,0.27,9.5%,3.45,2.76,1.3x,3.80,-17.9%,Alta,"Mobile UX, filtros touch-friendly, gallery swipe, lazy load images, AMP pages"
+Engagement Rate,38.5%,42.2%,3.7pp,9.6%,49.8%,35.1%,1.4x,55.0%,-23.3%,Alta,"Videos embebidos, interactive maps, virtual tours, social proof, live chat"
+New User Rate,78.2%,76.8%,-1.4pp,-1.8%,82.5%,69.4%,1.2x,65.0%,+18.2%,Media,"Retargeting estrategias, email nurturing, loyalty program, repeat booking incentives"
