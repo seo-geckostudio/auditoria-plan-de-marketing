@@ -1,0 +1,84 @@
+Tipo_Contenido,Problema_Actual,Optimizacion_IA,Formato_Recomendado,Ejemplo_Concreto,Impacto_SGE,Esfuerzo,Prioridad,Pasos_Implementacion,Metricas_Exito
+"Páginas de villas individuales","Descripciones genéricas sin estructura clara para IA","Estructurar con Q&A format + Datos clave en listas + Schema Product",FAQ Schema + Listas HTML <ul> + Schema Product,"Sección: ¿Qué incluye esta villa? → Lista 15 amenidades. ¿Para cuántas personas? → Respuesta directa: 8-10 personas.",Muy Alto,Medio,Crítica,"1. Añadir sección FAQ en cada villa (10 preguntas)
+2. Implementar Schema Product con price/availability
+3. Listas HTML semánticas para amenidades
+4. Estructurar con headings H2/H3 claros
+5. Añadir tabla comparativa capacidades",Citaciones SGE +40% | Featured Snippets +6-8 queries
+"Guías y artículos blog","Formato narrativo largo difícil de parsear para IA","Añadir TL;DR al inicio + Secciones con preguntas como H2 + Tablas de datos",Summary boxes + Question-based H2 + Tables,"TL;DR en primeros 100 palabras: Las 3 mejores zonas para familias son... Luego H2: ¿Qué zona elegir para familias con niños pequeños?",Alto,Alto,Muy Alta,"1. Añadir Summary box primeros 150 palabras
+2. Convertir H2 a formato pregunta cuando aplicable
+3. Extraer datos a tablas (precio/capacidad/características)
+4. Implementar FAQPage Schema
+5. Añadir People Also Ask anticipadas",SGE citations +25% | Tráfico zero-click +30%
+"Precios y costes","Información dispersa y poco clara","Crear tabla comparativa + Calculadora + Desglose transparente + PriceSpecification Schema",Interactive calculator + Comparison table + Schema PriceSpecification,"Tabla: Temporada Baja €2,500/sem | Media €4,200 | Alta €7,800. Calculadora: Selecciona villa + fechas = precio exacto con desglose.",Muy Alto,Alto,Crítica,"1. Diseñar calculadora interactiva precio
+2. Tabla comparativa 3 temporadas
+3. Desglose: base + limpieza + tasas + extras
+4. Schema PriceSpecification por temporada
+5. Sección: Qué está incluido / Qué NO
+6. Política cancelación clara",Conversión +20% | SGE price snippets en 5 queries
+"Información legal y requisitos","Ausente o muy básica","Crear guía completa requisitos + Checklist descargable + HowTo Schema",Step-by-step guide + Downloadable checklist + HowTo Schema,"Guía: Cómo alquilar una villa en Ibiza (8 pasos). Paso 1: Documentos necesarios (pasaporte/DNI). Checklist PDF descargable.",Alto,Medio,Alta,"1. Redactar guía 8 pasos completa
+2. Checklist visual con checkboxes
+3. HowTo Schema completo
+4. PDF descargable optimizado SEO
+5. Video explicativo 2 minutos
+6. FAQ legal (15 preguntas)",Autoridad E-E-A-T +15% | SGE how-to citations +8 queries
+"Comparativas y decisiones","No existen contenidos de ayuda a la decisión","Crear comparison content + Tablas decisión + Pros/Cons",Comparison tables + Decision trees + Versus pages,"Artículo: Villa vs Finca vs Apartamento - Tabla 3 columnas comparando 10 criterios. Decision tree: ¿Cuántas personas? → ¿Presupuesto? → Recomendación.",Muy Alto,Alto,Muy Alta,"1. Identificar 5 comparativas clave
+2. Tablas HTML semánticas con <th> scope
+3. Pros/Cons visuales con ✓ y ✗
+4. Añadir recomendación clara al final
+5. Schema Comparison si disponible
+6. Incluir casos de uso reales",SGE comparative citations +35% | Engagement +50%
+"Testimonios y casos de estudio","Testimonios cortos sin contexto ni datos","Transformar en casos de estudio detallados + Datos cuantitativos + Review Schema",Case study format + Data points + Review Schema aggregado,"Caso: Boda 50 personas en Villa Panorama. Problema: Necesitaban catering + alojamiento. Solución: Villa 12 personas + chef + coordinador. Resultado: 5★ de 5★.",Alto,Medio,Alta,"1. Seleccionar 8-10 mejores testimonios
+2. Entrevistar clientes: problema/solución/resultado
+3. Añadir datos: #personas, presupuesto, duración
+4. Fotos del evento (con permiso)
+5. Video testimonial 30-60 segundos
+6. Schema Review aggregado homepage",Trust signals +40% | SGE social proof citations +20%
+"Sobre Nosotros / Equipo","Página genérica sin expertise visible","Humanizar con equipo real + Credenciales + Experiencia local + Organization Schema",Team bios + Credentials + Local expertise + Organization Schema,"Fundador: Juan Martínez, 15 años Ibiza, 200+ villas gestionadas. Experto en: eventos corporativos, bodas lujo. Idiomas: ES/EN/DE/FR.",Muy Alto,Bajo,Crítica,"1. Sesión fotos profesionales equipo
+2. Biografías 200 palabras: experiencia + especialización
+3. Destacar años en Ibiza + conocimiento local
+4. Certificaciones y licencias visibles
+5. Organization Schema completo
+6. LinkedIn profiles linkados",E-E-A-T +25% | SGE brand entity recognition +60%
+"FAQs generales","8 preguntas básicas sin estructura","Ampliar a 40+ FAQs categorizadas + FAQPage Schema + Respuestas completas",Categorized FAQ + FAQPage Schema + 150-200 words answers,"Categorías: Reserva (8), Pago (6), Villas (8), Servicios (7), Ibiza (6), Políticas (5). Respuesta ejemplo 180 palabras con datos específicos.",Muy Alto,Bajo,Crítica,"1. Analizar emails clientes (30 preguntas comunes)
+2. Benchmarking competencia (10 adicionales)
+3. Categorizar en 6 grupos
+4. Respuestas 150-200 palabras con ejemplos
+5. FAQPage Schema completo
+6. Internal links desde FAQs a páginas relevantes",Featured Snippets FAQ +12-15 | SGE FAQ citations +40%
+"Datos y estadísticas propias","No se comparten datos internos","Publicar insights basados en datos reales de negocio","Data-driven content + Infographics + Industry report","Artículo: 'Análisis 500 reservas villas Ibiza 2024'. Insights: 68% viajan julio-agosto, estancia media 7.3 días, 4.2 personas promedio.",Muy Alto,Medio,Alta,"1. Analizar datos internos: reservas/temporadas/clientes
+2. Crear 5-8 insights relevantes
+3. Diseñar infografía visual
+4. Redactar artículo 2,000 palabras
+5. Dataset Schema si aplicable
+6. Promocionar en PR para backlinks",Autoridad industria +35% | SGE data citations +8-10 queries | Backlinks +15-20
+"Entidades y relaciones","Entidades no explícitas ni conectadas","Markup explícito de entidades + Relaciones semánticas + Wikidata links",Entity markup + SameAs properties + Contextual relationships,"Markup: Ibiza (Place) con coordinates. SameAs: Wikidata, DBpedia. Relaciones: Ibiza → part of → Islas Baleares → part of → España.",Alto,Medio,Alta,"1. Identificar 15 entidades clave (lugares/personas/org)
+2. Schema markup cada entidad
+3. SameAs a Wikidata/Wikipedia
+4. Explicit relationships en contenido
+5. Internal linking semántico
+6. Knowledge Panel optimization",Knowledge Graph visibility +50% | SGE entity understanding +40%
+"Multimedia descriptivo","Fotos sin contexto ni metadata","Alt text descriptivo + Captions + ImageObject Schema + Videos",Descriptive alt + Structured captions + ImageObject Schema,"Alt: 'Villa Sunset Ibiza - Piscina infinita 12x6m con vistas Cala Comte al atardecer'. Caption detallado + ImageObject Schema con location.",Medio,Bajo,Media,"1. Auditar 200 imágenes principales
+2. Alt text descriptivo 10-15 palabras
+3. Captions informativos
+4. ImageObject Schema con geo
+5. Comprimir images (WebP)
+6. Lazy loading implementado",Google Images traffic +25% | SGE visual citations +15%
+"Contenido evergreen actualizado","Artículos de 2019-2021 sin actualizar","Refresh con datos 2024 + Fecha modificación + Editor's note",Update dates + Editor's notes + Fresh data,"Editor's note: 'Actualizado octubre 2024 con precios temporada 2025 y nuevas regulaciones turísticas Ibiza'. Datos refreshed.",Alto,Bajo,Alta,"1. Identificar top 20 artículos evergreen
+2. Actualizar datos/precios/regulaciones 2024
+3. Editor's note visible al inicio
+4. Fecha modificación Schema
+5. Añadir sección: Novedades 2024
+6. Re-promocionar en redes",Freshness boost +20% | SGE prefers recent content +30%
+"Idiomas y localización","Solo español con traducción automática pobre","Contenido nativo multi-idioma + hreflang + alternativas culturales",Native content + Cultural adaptation + hreflang,"Contenido inglés: Native writer UK. Alemán: Native writer DE. No traducción literal - adaptar ejemplos culturales y monedas.",Alto,Muy Alto,Media,"1. Contratar native writers (EN, DE, FR)
+2. Traducir 30 páginas principales
+3. Implementar hreflang correcto
+4. Adaptar ejemplos culturalmente
+5. Monedas locales (€, £, $)
+6. Multi-language FAQ Schema",International traffic +40% | SGE multi-language citations +25%
+"Velocidad y Core Web Vitals","LCP 4.2s, CLS 0.18 - Pobre","Optimizar para LCP <2.5s + CLS <0.1 + lazy load",Image optimization + CDN + Critical CSS + Lazy loading,"LCP: Preload hero image + WebP + CDN. CLS: Size attributes all images. Lazy load below fold. Defer non-critical JS.",Medio,Alto,Alta,"1. Audit Lighthouse de 10 páginas clave
+2. Comprimir/convertir images a WebP
+3. Implementar CDN (Cloudflare)
+4. Critical CSS inline
+5. Lazy loading images/videos
+6. Defer JS no crítico
+7. Monitorear PageSpeed weekly",Core Web Vitals pass +80% | SGE prefers fast sites +15%
