@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #54a34a 0%, #6ab85e 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     text-align: center;
     padding: 60px 40px;
@@ -38,12 +38,12 @@
 
 /* Badge del sistema modular */
 .system-badge {
-    background: rgba(84, 163, 74, 0.1);
-    border: 1px solid rgba(84, 163, 74, 0.3);
+    background: rgba(136, 176, 75, 0.1);
+    border: 1px solid rgba(136, 176, 75, 0.3);
     padding: 12px 20px;
     border-radius: 8px;
     font-size: 0.9em;
-    color: #54a34a;
+    color: #88B04B;
     text-align: center;
     margin-top: 20px;
 }
@@ -60,10 +60,10 @@
 
 .index-section-title {
     font-size: 1.8em;
-    color: #54a34a;
+    color: #88B04B;
     margin-bottom: 20px;
     padding-bottom: 12px;
-    border-bottom: 3px solid #54a34a;
+    border-bottom: 3px solid #88B04B;
 }
 
 .index-list {
@@ -89,16 +89,16 @@
 }
 
 .index-item a:hover {
-    background: #54a34a;
+    background: #88B04B;
     color: white;
     transform: translateX(8px);
-    box-shadow: 0 2px 8px rgba(84, 163, 74, 0.3);
+    box-shadow: 0 2px 8px rgba(136, 176, 75, 0.3);
 }
 
 .index-number {
     font-family: monospace;
     font-weight: 700;
-    color: #54a34a;
+    color: #88B04B;
     background: white;
     padding: 4px 12px;
     border-radius: 4px;
@@ -134,7 +134,7 @@
     right: 20px;
     width: 400px;
     background: white;
-    border: 2px solid #54a34a;
+    border: 2px solid #88B04B;
     border-radius: 12px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.2);
     z-index: 10000;
@@ -142,7 +142,7 @@
 }
 
 .admin-header {
-    background: linear-gradient(135deg, #54a34a 0%, #6ab85e 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 16px 20px;
     display: flex;
@@ -194,7 +194,7 @@
     padding: 12px;
     background: #f8f9fa;
     border-radius: 6px;
-    border-left: 4px solid #54a34a;
+    border-left: 4px solid #88B04B;
 }
 
 .stat-item strong {
@@ -203,7 +203,7 @@
 
 .stat-item span {
     font-weight: 700;
-    color: #54a34a;
+    color: #88B04B;
 }
 
 .admin-actions {
@@ -215,7 +215,7 @@
 .btn-admin {
     display: block;
     padding: 10px 16px;
-    background: #54a34a;
+    background: #88B04B;
     color: white;
     text-decoration: none;
     text-align: center;
@@ -225,9 +225,9 @@
 }
 
 .btn-admin:hover {
-    background: #6ab85e;
+    background: #6d8f3c;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(84, 163, 74, 0.3);
+    box-shadow: 0 4px 12px rgba(136, 176, 75, 0.3);
 }
 
 /* Enlace a versión estática en sidebar */
@@ -239,8 +239,8 @@
 }
 
 .nav-link-static:hover {
-    background: rgba(84, 163, 74, 0.1);
-    color: #54a34a !important;
+    background: rgba(136, 176, 75, 0.1);
+    color: #88B04B !important;
 }
 
 /* Responsive */

@@ -54,7 +54,7 @@
   align-items: center;
   padding: 24px 32px;
   border-bottom: 2px solid #e2e8f0;
-  background: linear-gradient(135deg, #54a34a 0%, #3d7a36 100%);
+  background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
   color: white;
   border-radius: 12px 12px 0 0;
 }
@@ -211,7 +211,7 @@
 /* Buttons */
 .btn-copy,
 .btn-copy-all {
-  background: #54a34a;
+  background: #88B04B;
   color: white;
   border: none;
   padding: 8px 16px;
@@ -227,9 +227,9 @@
 
 .btn-copy:hover,
 .btn-copy-all:hover {
-  background: #3d7a36;
+  background: #6d8f3c;
   transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(84, 163, 74, 0.3);
+  box-shadow: 0 2px 8px rgba(136, 176, 75, 0.3);
 }
 
 .btn-copy-all {
@@ -297,7 +297,7 @@
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 16px;
-  border-left: 4px solid #54a34a;
+  border-left: 4px solid #88B04B;
 }
 
 .instruction-block:last-child {

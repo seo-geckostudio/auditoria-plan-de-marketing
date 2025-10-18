@@ -57,12 +57,12 @@
 .page-header { 
   margin-bottom: 8mm;
   padding-bottom: 4mm;
-  border-bottom: 2px solid #54a34a;
+  border-bottom: 2px solid #88B04B;
 }
 
 .page-header h1,
 .page-header h2 {
-  color: #54a34a !important;
+  color: #88B04B !important;
   font-size: 18pt;
   margin: 0 0 4mm 0;
   line-height: 1.2;
@@ -151,7 +151,7 @@ body {
 
 h1, h2, h3 { 
   font-family: 'TWKEverett-Regular', 'Everett', serif;
-  color: #54a34a !important;
+  color: #88B04B !important;
 }
 
 /* Placeholder content styling */
@@ -159,7 +159,7 @@ h1, h2, h3 {
   margin: 6mm 0;
   padding: 4mm;
   background: #f8fafc !important;
-  border-left: 3px solid #54a34a;
+  border-left: 3px solid #88B04B;
 }
 
 .placeholder-text {
@@ -177,7 +177,7 @@ h1, h2, h3 {
 /* Portada especial */
 .cover .title {
   font-size: 24pt;
-  color: #54a34a !important;
+  color: #88B04B !important;
   text-align: center;
   margin-bottom: 8mm;
 }
@@ -260,7 +260,7 @@ ul, ol {
 .metric-value {
   font-size: 12pt !important;
   font-weight: 700;
-  color: #54a34a !important;
+  color: #88B04B !important;
 }
 
 .metric-label {
@@ -310,7 +310,7 @@ ul, ol {
 
 .project-description-page h3 {
   font-size: 12pt;
-  color: #54a34a !important;
+  color: #88B04B !important;
   margin: 4mm 0 2mm 0;
   border-bottom: 1px solid #e2e8f0;
   padding-bottom: 1mm;
@@ -347,7 +347,7 @@ ul, ol {
   font-weight: 600;
   text-align: left;
   padding: 2mm;
-  border-bottom: 2px solid #54a34a;
+  border-bottom: 2px solid #88B04B;
 }
 
 .data-table td {
@@ -388,7 +388,7 @@ ul, ol {
 
 .conclusions-section h3 {
   font-size: 11pt;
-  color: #54a34a !important;
+  color: #88B04B !important;
   margin: 0 0 2mm 0;
 }
 
