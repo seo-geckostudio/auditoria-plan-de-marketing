@@ -8,6 +8,12 @@
  * que carga módulos según la configuración del cliente.
  */
 
+// Habilitar reporte de errores para diagnóstico
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('log_errors', 1);
+ini_set('error_log', __DIR__ . '/php_errors.log');
+
 // Incluir el ModuleLoader
 require_once 'includes/module_loader.php';
 
@@ -56,6 +62,13 @@ if ($loader->tieneErrores()) {
       <ul>
         <li><a href="#portada">Portada</a></li>
         <li><a href="#indice">Índice General</a></li>
+
+        <!-- RESUMEN EJECUTIVO - DESTACADO -->
+        <li class="nav-section nav-destacado">
+          <a href="00_resumen_ejecutivo.php" target="_blank" style="background: linear-gradient(135deg, #28a745 0%, #218838 100%); color: white; padding: 12px 20px; border-radius: 8px; display: block; text-align: center; font-weight: bold; margin: 10px 0;">
+            📊 Resumen Ejecutivo
+          </a>
+        </li>
 
         <?php
         // Generar navegación dinámica por fases
@@ -156,6 +169,14 @@ if ($loader->tieneErrores()) {
           </div>
         </div>
         <div class="cover-footer">
+          <!-- CTA Resumen Ejecutivo -->
+          <div style="margin: 30px 0 20px 0;">
+            <a href="00_resumen_ejecutivo.php" target="_blank"
+               style="display: inline-block; background: linear-gradient(135deg, #28a745 0%, #218838 100%); color: white; padding: 18px 40px; border-radius: 10px; text-decoration: none; font-size: 18px; font-weight: bold; box-shadow: 0 8px 20px rgba(40, 167, 69, 0.3); transition: transform 0.2s;">
+              📊 Ver Resumen Ejecutivo (Vista Rápida)
+            </a>
+          </div>
+
           <p class="system-badge">
             🧩 Generado con Sistema Modular v2.0 |
             <?php echo $stats['total_modulos']; ?> módulos |
