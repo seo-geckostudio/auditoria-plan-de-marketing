@@ -1,0 +1,120 @@
+Tipologia_Pagina,Estructura_Wireframe,Contenido_MustHave,Contenido_NiceToHave,Keywords_Incluir,Schema_Markup,CTAs_Recomendados,Ejemplo_Ibiza_Villa,Buyer_Journey_Stage,Conversion_Goal
+"Home (Landing Principal)","Hero (viewport completo) > Propuesta Valor > Social Proof > Villas Destacadas (grid 6) > Por Qué Elegirnos (3 columnas) > Zonas Destacadas > Testimonios > Blog Highlights > Newsletter > Footer Rico","Hero: Headline impactante + Subheadline propuesta valor + CTA primario + Búsqueda rápida (fechas/personas)
+Propuesta Valor: 3-4 diferenciadores clave (exclusividad, servicio 24/7, local expertise, insurance)
+Social Proof: Reviews agregadas (4.8★ 132 reviews) + Trust badges (License, Insurance)
+Villas: Grid 6 villas top (foto, nombre, capacidad, desde €X/semana, CTA)
+Por Qué: 3 columnas (iconos + texto): Expertise local, Servicio personalizado, Villas verificadas
+Zonas: 5 zonas top con foto + link
+Testimonios: Carrousel 5-8 testimonios clientes reales
+Blog: Últimos 3 artículos con imagen
+Newsletter: Lead magnet (PDF guía villas Ibiza)","Comparador villas (sticky widget), Video hero background (villas luxury), Stats (127 villas, 500+ clientes, 10 años), Partners logos (Timeout, Luxury Retreats), Instagram feed, Chat widget, Availability calendar hero","alquiler villas lujo ibiza, villas ibiza piscina privada, luxury villa rental ibiza, villas exclusivas ibiza","Organization Schema (completo con SameAs, founder, contactPoint), WebSite Schema (SearchAction), AggregateRating Schema","CTA Primario Hero: Ver Villas Disponibles
+CTA Secundario: Hablar con Experto (WhatsApp)
+CTA Villas: Ver Detalles Villa
+CTA Newsletter: Descargar Guía Gratis","/ - Hero: ""Villas de Lujo Exclusivas en Ibiza"" + búsqueda + CTA. Social proof: 4.8★ 132 reviews. Grid 6 villas top (Sunset, Paradise, Ocean View, etc). Testimonios carrousel. Blog 3 últimos.",Awareness + Consideration,"Engagement (exploración villas) + Lead capture (newsletter 8-12%)"
+"Categoría (Listado Villas)","Breadcrumbs > Header Categoría > Filtros Sidebar > Grid Villas (3 columnas) > Paginación > Comparador Sticky > Mapa Toggle","Breadcrumbs: Home > Villas
+Header: H1 ""Villas de Lujo en Ibiza"" + Stats (127 villas disponibles)
+Filtros: Capacidad (2-20 personas), Zona (dropdown 10 zonas), Precio (slider €2k-€15k/semana), Amenidades (checkboxes: piscina, vistas mar, chef, gym, etc), Disponibilidad (calendar)
+Grid: Cards villa (foto hover, nombre, zona, capacidad, desde €X, rating, CTA)
+Paginación: 12 villas por página
+Comparador: Sticky bottom (seleccionar hasta 3 villas)
+Mapa: Toggle vista mapa con markers villas","Ordenamiento (Precio: low/high, Popularidad, Disponibilidad, Rating), Quick view modal (hover CTA ver rápido), Save favorites (heart icon), Recently viewed (sidebar), Resultados guardados (email cuando nueva villa match criterios), Virtual tour badge","villas ibiza, alquiler villas ibiza, luxury villas ibiza, villas piscina ibiza, villas [zona] ibiza","BreadcrumbList Schema, CollectionPage Schema, Offers Schema (aggregate)","CTA Card Villa: Ver Detalles
+CTA Comparador: Comparar Seleccionadas (3)
+CTA Map View: Ver en Mapa
+CTA Filtros: Aplicar Filtros","/villas - Filtros sidebar: capacidad, zona, precio, amenidades. Grid 12 villas cards. Comparador sticky bottom (selecciona hasta 3). Map toggle. Breadcrumbs: Home > Villas. Stats: 127 villas disponibles.",Consideration (comparando opciones),"Clickthrough a villa individual (60-75%)"
+"Villa Individual (Producto)","Breadcrumbs > Gallery Hero (slider + thumbnails) > Sticky Sidebar (Pricing, Availability, CTA) > Tabs Contenido > Similar Villas > Reviews > FAQ > Map Nearby","Breadcrumbs: Home > Villas > [Zona] > [Villa Name]
+Gallery: Hero slider fullscreen + 20-30 fotos + Video tour 3-5 min + 360° tour
+Sidebar Sticky: Pricing tabla 3 temporadas, Calendar disponibilidad real-time, Form contacto/reserva rápido, WhatsApp CTA, Icons trust (seguro, cancelación, limpieza)
+Tabs: Overview (descripción 400 palabras), Amenidades (lista iconos), Habitaciones (detalle cada habitación + fotos), Ubicación (mapa + distancias), House Rules
+Similar: Carrousel 4 villas similares (zona, capacidad)
+Reviews: 15-20 reviews villa específica + rating breakdown (limpieza, ubicación, valor)
+FAQ: 8-10 preguntas villa específica colapsables
+Map: Google Maps con markers (playas 5km, restaurantes, clubs, supermercados, aeropuerto)","Virtual tour 360° integrado, Floor plan (plano villa), Availability sync calendario (iCal), Instant book opción, Price calculator (noches + personas → total), Weather widget zona, Local guide PDF download, Host video presentation, Damage protection add-on","villa [nombre] ibiza, alquilar villa [nombre], villa [capacidad] personas ibiza [zona], villa ibiza piscina [característica]","Product Schema (completo: name, image, description, offers, aggregateRating, brand), Review Schema (individual reviews), VideoObject Schema (tour), Place Schema (ubicación), FAQPage Schema","CTA Sidebar Primario: Reservar Ahora
+CTA Secundario: Consultar Disponibilidad (WhatsApp)
+CTA Terciario: Guardar Favoritos
+CTA Similar: Ver Villa Similar","/villas/villa-sunset-ibiza - Gallery 25 fotos + video 4min + 360° tour. Sidebar sticky: pricing €7,800-15,000/semana según temporada, calendar disponibilidad, form reserva. Tabs: overview, amenidades (piscina infinita, gym, cine), 6 habitaciones detalle, ubicación Cala Comte. Reviews 18 (4.9★). FAQ 10 preguntas. Map nearby: playas, restaurantes.",Decision (bottom funnel),"Conversión checkout (5-8%) o lead cualificado WhatsApp (12-18%)"
+"Artículo Blog (Informacional)","Header Article > Hero Image > Author Box > TOC > Content > Infografías > CTAs Mid/Bottom > Related Posts > Comments","Header: Breadcrumbs (Home > Blog > [Categoría] > [Título])
+Hero: Imagen destacada 1200x630 + Categoría badge + Fecha + Tiempo lectura
+Author: Foto + Bio 50 palabras + Social links
+TOC: Table of Contents clickable 8-12 secciones (sticky sidebar desktop)
+Content: 1,500-2,500 palabras, H2/H3 estructurados, 5-8 imágenes originales, 2 infografías custom, Video embebido 2-3 min
+CTAs: Mid-article lead magnet (PDF guía), Bottom CTA (Ver Villas Relacionadas)
+Related: 3-4 posts relacionados con imagen + excerpt
+Comments: Disqus o sistema nativo","Video embebido YouTube, Podcast audio embebido, Interactive elements (quiz, calculator), Downloadable resources (PDF, checklist), Social share buttons sticky, Print-friendly version, Estimated read time, Last updated date, Expert quotes (entrevistas), Statistics/data visualizations","keywords long-tail informacionales (cómo, qué, cuándo, dónde, por qué, guía, consejos, tips) + keywords transaccionales secundarias (alquiler villa [tema])","Article Schema (headline, image, author, datePublished, dateModified), Person Schema (author), FAQPage Schema (si incluye FAQ), HowTo Schema (si es guía pasos), ImageObject Schema (infografías)","CTA Mid: Descargar Guía Completa PDF (lead magnet)
+CTA Bottom: Explorar Villas en [Zona Relacionada]
+CTA Sidebar: Newsletter Signup
+Social Share: Compartir en Redes","/blog/guia-completa-alquiler-villas-ibiza - Hero imagen Ibiza villa sunset. Author box con foto + bio. TOC 10 secciones. Content 2,200 palabras: ¿Por qué alquilar villa? Ventajas vs hotel. Mejores zonas. Cuándo reservar. Precios. Proceso reserva. Qué incluye. Consejos. 2 infografías (proceso reserva flowchart, mapa zonas). Video 3min tips. CTA mid: PDF guía extendida. CTA bottom: Ver Villas Recomendadas. Related 4 posts.",Awareness (top funnel educación),"Engagement (tiempo página 3-5 min) + Lead capture PDF (15-25%) + Clickthrough villas (8-12%)"
+"Landing Zona Geográfica","Hero Zona > Stats Zona > Guía Zona > Villas Zona > Comparativa Zonas > Testimonios Zona > FAQ Zona > Map Interactive","Hero: Imagen icónica zona (Cala Tarida sunset) + H1 ""Villas de Lujo en [Zona]"" + Búsqueda rápida
+Stats: 4 stats (X villas disponibles, X playas <5km, X min aeropuerto, X restaurantes)
+Guía: 800-1,200 palabras (descripción zona, playas, restaurantes, nightlife, actividades, mejor época). 2 secciones: Qué hacer en [Zona] + Por qué alquilar villa en [Zona]
+Villas: Grid 8-12 villas zona con filtros
+Comparativa: Tabla 5 zonas top Ibiza (ubicación, playas, nightlife, familias, precio promedio) - destacar zona actual
+Testimonios: 5-8 reviews clientes alquilaron villa en zona específica
+FAQ: 6-8 preguntas zona (¿Cómo llegar a [Zona]?, ¿Mejor época?, ¿Playas cerca?, etc)
+Map: Google Maps interactivo con markers (villas, playas, restaurantes, actividades)","Video tour zona 2-3 min (drone footage), Weather widget zona, Events calendario zona (clubs, beach clubs, festivales), Transportation guide (taxi, bus, rent car), Restaurants/nightlife recommendations con ratings, Activities nearby (water sports, yoga, spa), Grocery stores/services map","villas [zona] ibiza, alquiler villa [zona], villas lujo [zona], villa [zona] piscina, luxury villa [zona] ibiza","Place Schema (zona con geo coordinates, containedInPlace), LocalBusiness Schema, FAQPage Schema, CollectionPage Schema (villas zona)","CTA Hero: Ver Villas en [Zona]
+CTA Guía: Explorar Villas Disponibles
+CTA Comparativa: Comparar con Otras Zonas
+CTA Testimonios: Reservar Villa en [Zona]","/zonas/cala-tarida - Hero: imagen Cala Tarida beach sunset. Stats: 12 villas, 3 playas <5min, 15min aeropuerto, 8 restaurantes. Guía 950 palabras: Cala Tarida playa familiar, sunset best spot, 3 beach clubs, restaurantes (Cotton Beach Club, Cala Codolar). Grid 12 villas Cala Tarida. Comparativa con Cala Comte, San José, Santa Eulalia, Portinatx. Reviews 8 clientes zona. FAQ 7 preguntas. Map interactivo.",Consideration (decisión zona) + Decision (villa zona),"Clickthrough villas zona (65-80%) + Conversión checkout zona (3.5-5.2%)"
+"Landing Servicio Adicional","Hero Servicio > Beneficios > Gallery Servicio > Process Workflow > Pricing > Reviews Servicio > FAQ > Bundle Upsell","Hero: Imagen servicio (chef cocinando villa) + H1 ""Chef Privado para Tu Villa"" + CTA
+Beneficios: 4 beneficios clave (iconos + texto): Menús personalizados, Ingredientes frescos mercado local, Servicio mesa, Limpieza incluida
+Gallery: 12-15 fotos chef trabajando villas reales (preparación, platos, servicio)
+Process: 5 pasos workflow (Consulta → Personalizar menú → Compra ingredientes → Preparación villa → Servicio limpieza)
+Pricing: Tabla 3 tiers (Desayuno €120-180/día, Cena €280-420/noche, Chef dedicado €800-1,200/día). Qué incluye cada tier
+Reviews: 15-20 testimonios servicio chef con rating
+FAQ: 8 preguntas servicio (¿Con cuánta antelación?, ¿Menús disponibles?, ¿Alergias?, etc)
+Bundle: Upsell villa + chef descuento 15%","Chef bio + foto profesional (credenciales, experiencia), Menús ejemplo PDF descargable (Mediterráneo, Sushi, BBQ, Vegano), Video chef preparando plato signature, Wine pairing add-on, Grocery delivery service, Private cooking class option, Instagram feed @chef_ibiza","chef privado ibiza, chef ibiza villa, servicio chef villas, chef lujo ibiza, personal chef ibiza","Service Schema (name, provider, areaServed, offers), Person Schema (chef), Review Schema, Offer Schema (pricing tiers)","CTA Hero: Reservar Chef Ahora
+CTA Pricing: Seleccionar Paquete Chef
+CTA Bundle: Añadir Chef a Reserva Villa (15% OFF)
+CTA FAQ: Consultar WhatsApp","/servicios/chef-privado - Hero: foto chef cocinando villa luxury. Beneficios: menús personalizados, frescos, servicio, limpieza. Gallery 14 fotos. Workflow 5 pasos visual. Pricing: Desayuno €150/día, Cena €350/noche, Dedicado €1,000/día. Reviews 18 (4.9★). FAQ 9 preguntas. Bundle: Reserva villa + chef → descuento 15%.",Consideration (post-reserva villa) o Decision (pre-reserva),"Add-on service booking (35-45% clients con landing optimizada) = +€8k-12k/mes revenue"
+"Página FAQ (Soporte)","Header FAQ > Buscador > Categorías Tabs > Accordion FAQs > CTA Bottom > Stats","Header: H1 ""Preguntas Frecuentes"" + Descripción ""95% preguntas respondidas <2h""
+Buscador: Input búsqueda keywords FAQs con autocomplete
+Categorías: 5 tabs (Reserva & Pago, Cancelación & Reembolso, Villa & Servicios, Check-in & Check-out, Otros)
+Accordion: 30-40 FAQs total colapsables. Cada FAQ: pregunta (H3) + respuesta 50-150 palabras + ""Related FAQs"" 2-3 links
+CTA Bottom: ""¿No encuentras tu respuesta?"" + WhatsApp CTA + Form contacto
+Stats: Badge ""95% preguntas respondidas en <2h"" + ""132 clientes satisfechos""","Video FAQ (respuestas video 1-2 min top questions), Chatbot integration (respuestas automáticas), Live chat widget, Contact options (email, phone, WhatsApp), Recent questions (últimas 5), Most popular FAQs (top 10), Feedback ""¿Te ayudó?"" (thumbs up/down)","preguntas frecuentes villa ibiza, faq alquiler villa, dudas reserva villa ibiza, cómo reservar villa ibiza, política cancelación ibiza","FAQPage Schema (30-40 questions/answers), Organization Schema (contactPoint)","CTA Bottom: Contactar por WhatsApp
+CTA Categoría: Ver Todas en [Categoría]
+CTA Related: Ver FAQ Relacionada","/faq - Header + descripción. Buscador keywords. 5 tabs categorías: Reserva (10 FAQs: ¿Cómo reservo?, ¿Pago?, ¿Señal?, etc), Cancelación (8 FAQs: ¿Política?, ¿Reembolso?, ¿Seguro?), Villa (10 FAQs: ¿Qué incluye?, ¿Limpieza?, ¿Ropa cama?), Check-in (6 FAQs: ¿Horario?, ¿Llegada tarde?, ¿Llaves?), Otros (6 FAQs). Total 40 FAQs. CTA bottom: WhatsApp si no encuentra respuesta.",Consideration + Decision (reducción fricción),"Reducción abandono checkout -25-35% + Lead WhatsApp qualificado +180-250 leads/mes"
+"Página Sobre Nosotros (Institucional)","Hero About > Historia > Valores > Equipo > Certificaciones > Timeline > Video > Partners > CTA","Hero: Imagen equipo o villa icónica + H1 ""Sobre Ibiza Villa"" + Tagline misión
+Historia: 300 palabras storytelling (fundación 2010, por qué Ibiza, crecimiento, visión futuro)
+Valores: 4 valores empresa (iconos): Exclusividad, Servicio Personalizado 24/7, Expertise Local 10 años, Transparencia Total
+Equipo: Grid 4-6 personas (Foto real profesional, Nombre, Cargo, Bio 100 palabras, LinkedIn link, Email directo)
+Certificaciones: Badges (Tourism License #12345, Insurance €5M liability, Luxury Villa Association member, ISO 9001)
+Timeline: 10 años empresa (2010 Fundación → 2015 50 villas → 2020 100 villas → 2024 127 villas, 500+ clientes)
+Video: About Us 2-3 min (equipo, villas, clientes testimonios)
+Partners: Logos 8 partners (Timeout, Luxury Retreats, Condé Nast, Spain Tourism, etc)
+CTA: ""Conoce Nuestras Villas"" o ""Habla con Nuestro Equipo""","Founder interview (Q&A), Awards/recognitions, Media mentions (press clippings), Office tour (si aplicable), Sustainability commitment, Community involvement (local charities), Customer success stories (case studies), Behind the scenes (cómo seleccionamos villas)","sobre nosotros ibiza villa, equipo ibiza villa, historia ibiza villa, contacto equipo","Organization Schema (completo con founder, employees, awards), Person Schema (equipo individual), Place Schema (office si aplicable)","CTA Primary: Explorar Villas
+CTA Secondary: Contactar Equipo
+CTA Team: Email Individual (cada miembro equipo)
+CTA Video: Ver Villas Destacadas","/sobre-nosotros - Hero: foto equipo frente villa. Historia: fundado 2010 por [Fundador], pasión Ibiza, crecimiento 15 villas a 127 en 10 años. Valores: exclusividad, servicio 24/7, expertise local, transparencia. Equipo: 6 personas (Fundador/CEO, Operations Manager, Customer Success, Villa Curator, Marketing, Concierge) con foto real, bio, LinkedIn. Certificaciones: Tourism License, €5M Insurance, Luxury Villa Association. Timeline visual 10 años. Video 2.5min. Partners: 8 logos. CTA: Conoce Villas.",Awareness + Consideration (verificación trust),"Trust score +45-60% + E-E-A-T boost (equipo real con LinkedIn = señal fuerte) + Conversión indirecta +18-25%"
+"Página Contacto (Transaccional)","Header Contacto > Opciones Contacto > Form > Info Contacto > Map > Horarios > FAQ Contacto","Header: H1 ""Contacta con Nosotros"" + Subheadline ""Respuesta <2h en horario laboral""
+Opciones: 4 métodos (WhatsApp Business link directo, Live Chat widget, Email form, Videollamada Calendly link) - destacar WhatsApp como preferido
+Form: 6 campos (Nombre, Email, Teléfono, Asunto dropdown [Reserva, Consulta Villa, Servicios, Otro], Mensaje, Fechas interés)
+Info: Dirección (si oficina), Email (info@ibiza-villa.com), Teléfono (+34-XXX-XXX-XXX), WhatsApp (mismo), Emergency 24/7 número
+Map: Google Maps ubicación oficina (si aplicable) o Ibiza general
+Horarios: Lun-Vie 9-20h, Sáb-Dom 10-18h CET, Emergency 24/7 disponible
+FAQ: 5 FAQs contacto rápidas colapsables (¿Cuánto tardan responder?, ¿WhatsApp mejor?, ¿Videollamada?, etc)","Social media links (Instagram, Facebook, LinkedIn, YouTube), Response time badge (""<2h promedio""), Team photos (quién responderá), Chatbot auto-respuestas, Callback request (te llamamos nosotros), SMS contact option, Multiple languages support badge","contacto ibiza villa, teléfono ibiza villa, email ibiza villa, whatsapp alquiler villa ibiza","Organization Schema (contactPoint completo con telephone, email, areaServed, availableLanguage), Place Schema (office location)","CTA Primary: Enviar Mensaje
+CTA WhatsApp: Abrir Chat WhatsApp
+CTA Videollamada: Agendar Llamada
+CTA Emergency: Llamar 24/7","/contacto - Header. 4 opciones: WhatsApp (+34-XXX), Live chat (9-20h), Email form, Videollamada Calendly. Form 6 campos. Info: email info@, phone +34-, WhatsApp mismo, emergency 24/7 separate number. Map Ibiza. Horarios: Lun-Vie 9-20h, Sáb-Dom 10-18h, Emergency 24/7. FAQ contacto 5 preguntas. Social links: Instagram, Facebook, LinkedIn.",Consideration + Decision + Post-Purchase (soporte),"Lead cualificado +30-45% con multicanal (WhatsApp preferido 68% turistas internacionales) + Response <2h = trust +35%"
+"Página Galería (Visual)","Header Galería > Filtros Categorías > Grid Fotos > Lightbox > Video Gallery > 360° Tours > Instagram Feed","Header: H1 ""Galería de Villas de Lujo"" + Stats (350+ fotos, 15 videos, 5 tours 360°)
+Filtros: 3 categorías principales tabs (Por Villa [dropdown 127 villas], Por Zona [dropdown 10 zonas], Por Amenidad [Piscinas, Vistas Mar, Interiores, Exteriores, Atardeceres])
+Grid: Masonry layout responsive (3-4 columnas desktop, 2 tablet, 1 mobile). Cada foto: hover overlay (villa nombre, zona, CTA Ver Villa)
+Lightbox: Fancybox/PhotoSwipe profesional (fullscreen, zoom, navigation, share, download opción)
+Videos: Sección separada 10-15 video tours villas (thumbnails con play icon, duración)
+360° Tours: 5 villas top con tours 360° interactivos (Matterport o similar)
+Instagram: Feed live @ibizavilla últimos 12-20 posts con follow CTA","Pinterest integration, Download high-res option (para prensa/partners), Favorites/collections (save fotos), Slideshow mode, Print photos, EXIF data (photographer credit), Similar villas suggestion (basado en foto viewing), Virtual staging (before/after)","galería villas ibiza, fotos villas lujo ibiza, imágenes villas ibiza, villas ibiza pictures","ImageObject Schema (cada foto con contentUrl, creator, copyrightHolder), VideoObject Schema (videos), Organization Schema","CTA Foto Hover: Ver Esta Villa
+CTA Video: Reproducir Tour
+CTA 360°: Explorar Tour Interactivo
+CTA Instagram: Seguir @ibizavilla","/galeria - Header + stats. Filtros tabs: Por Villa (dropdown 127), Por Zona (dropdown 10), Por Amenidad (Piscinas 45 fotos, Vistas Mar 67, Interiores 89, Exteriores 95, Atardeceres 54). Grid masonry 280 fotos. Hover: overlay villa nombre + CTA. Lightbox profesional. Video gallery: 12 tours (2-5 min cada uno). 360° tours: 5 villas (Villa Sunset, Paradise, Ocean View, Luxury Estate, Cliffside). Instagram feed: 16 últimos posts @ibizavilla + follow CTA.",Awareness + Consideration (inspiración visual),"Engagement visual +70-95% tiempo página (1.2min → 2.0-2.3min) + Clickthrough villas +25-35% desde galería + Instagram followers +150-220/mes"
+"Página Política Cancelación (Legal/Trust)","Header Política > Tabla Políticas > Ejemplos Escenarios > Calculator Reembolso > Comparativa > FAQ > Insurance Upsell","Header: H1 ""Política de Cancelación"" + Intro ""Ofrecemos 3 políticas flexibles según tus necesidades""
+Tabla: Comparativa 3 políticas (Flexible, Moderada, Estricta). Columnas: Días antes cancelación, % Reembolso señal, Aplicabilidad
+  - Flexible: >30 días 100%, 15-30 días 50%, <15 días 0%
+  - Moderada: >60 días 100%, 30-60 días 75%, <30 días 25%
+  - Estricta: >90 días 75%, <90 días 0%, solo reprogramación sujeto disponibilidad
+Ejemplos: 5 escenarios reales (""Si reservas en Enero para Agosto y cancelas en Junio (60 días antes) con política Moderada → Reembolso 75%"")
+Calculator: Interactivo (selecciona política, ingresa fecha reserva, fecha cancelación → calcula reembolso automáticamente)
+Comparativa: vs Booking (más restrictivo), vs Airbnb (similar), destacar nuestra flexibilidad
+FAQ: 8 preguntas (¿Qué pasa si cancelo?, ¿Cómo solicito reembolso?, ¿Cuánto tarda?, ¿Aplica a servicios adicionales?, etc)
+Insurance: Upsell seguro cancelación 3-5% valor total (cubre cualquier razón, reembolso 100%)","Force majeure clause (COVID, natural disasters), Medical emergency clause, Partial cancellation option (reducir noches), Postponement option (cambiar fechas sin penalty), Testimonials (clientes satisfechos con política), Refund timeline (7-14 días hábiles), Payment method refund (same method paid)","política cancelación villa ibiza, reembolso villa ibiza, cancelar reserva villa, seguro cancelación villa","FAQPage Schema (cancelación FAQs), Organization Schema (policies)","CTA Calculator: Calcular Mi Reembolso
+CTA Insurance: Añadir Seguro Cancelación (3-5%)
+CTA FAQ: Ver Todas las Preguntas
+CTA Policy: Elegir Política al Reservar","/politica-cancelacion - Header. Tabla 3 políticas visual (Flexible/Moderada/Estricta) con % reembolso por días. 5 ejemplos escenarios concretos con cálculo. Calculator interactivo: selecciona política dropdown, fecha reserva date picker, fecha cancelación date picker → muestra reembolso €€€ (100%, 75%, 50%, 25%, 0%). Comparativa vs Booking/Airbnb (tabla). FAQ 9 preguntas. Insurance upsell: Seguro Cancelación Flexible 3-5% total → cubre cualquier razón, reembolso 100% garantizado. CTA añadir seguro.",Decision (reducción riesgo) + Purchase (checkout),"Conversión +20-30% con política flexible vs estricta + Insurance upsell adoption 22-28% = +€3k-5k/mes revenue adicional + Reducción abandono -15-20%"
