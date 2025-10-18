@@ -1247,7 +1247,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .section-number {
     font-size: 14px;
-    color: #667eea;
+    color: #88B04B;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -1304,13 +1304,13 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .authority-card.highlight {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 
 .metric-icon {
     font-size: 32px;
-    color: #667eea;
+    color: #88B04B;
     opacity: 0.8;
 }
 
@@ -1368,7 +1368,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .competition-table thead {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 
@@ -1397,7 +1397,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .badge-primary {
-    background: #667eea;
+    background: #88B04B;
     color: white;
 }
 
@@ -1501,7 +1501,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .status-list li:before {
     content: "•";
-    color: #667eea;
+    color: #88B04B;
     font-size: 20px;
     font-weight: bold;
 }
@@ -1555,7 +1555,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .dist-value.highlight {
-    color: #667eea;
+    color: #88B04B;
 }
 
 .dist-percentage {
@@ -1605,7 +1605,7 @@ document.addEventListener('DOMContentLoaded', function() {
     top: 0;
     left: 0;
     height: 100%;
-    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(90deg, #88B04B 0%, #6d8f3c 100%);
     transition: width 0.3s ease;
 }
 
@@ -1955,7 +1955,7 @@ document.addEventListener('DOMContentLoaded', function() {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     display: flex;
     align-items: center;
@@ -2072,7 +2072,7 @@ document.addEventListener('DOMContentLoaded', function() {
     padding: 15px;
     background: #f7fafc;
     border-radius: 8px;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #88B04B;
 }
 
 .comparison-column.ideal .dist-item {
@@ -2093,7 +2093,7 @@ document.addEventListener('DOMContentLoaded', function() {
 .dist-percent {
     font-size: 24px;
     font-weight: 700;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .dist-range {
@@ -2246,7 +2246,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .rec-icon {
     font-size: 40px;
-    color: #667eea;
+    color: #88B04B;
     margin-bottom: 15px;
 }
 
@@ -2287,7 +2287,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /* Contenedor principal del patrón educativo */
 .offpage-educativo .concepto-educativo {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 30px;
     border-radius: 12px;
@@ -2408,7 +2408,7 @@ document.addEventListener('DOMContentLoaded', function() {
 .offpage-educativo .impacto-item h3 {
     margin: 0 0 12px 0;
     font-size: 20px;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .offpage-educativo .impacto-item p {
@@ -2435,7 +2435,7 @@ document.addEventListener('DOMContentLoaded', function() {
     font-size: 48px;
     display: block;
     margin-bottom: 15px;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .offpage-educativo .entregables-header h2 {
@@ -2477,7 +2477,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .offpage-educativo .entregable-card:hover {
-    border-color: #667eea;
+    border-color: #88B04B;
     box-shadow: 0 4px 12px rgba(102,126,234,0.15);
     transform: translateY(-2px);
 }
@@ -2492,7 +2492,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .offpage-educativo .entregable-icon {
     font-size: 48px;
-    color: #667eea;
+    color: #88B04B;
     text-align: center;
     margin-bottom: 15px;
 }
@@ -2541,12 +2541,12 @@ document.addEventListener('DOMContentLoaded', function() {
     border-radius: 8px;
     font-size: 14px;
     margin-bottom: 15px;
-    border-left: 3px solid #667eea;
+    border-left: 3px solid #88B04B;
 }
 
 .offpage-educativo .btn-download {
     display: block;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     text-align: center;
     padding: 12px 20px;
@@ -2571,12 +2571,12 @@ document.addEventListener('DOMContentLoaded', function() {
     background: white;
     padding: 25px;
     border-radius: 12px;
-    border: 2px solid #667eea;
+    border: 2px solid #88B04B;
 }
 
 .offpage-educativo .instrucciones-uso h3 {
     margin: 0 0 20px 0;
-    color: #667eea;
+    color: #88B04B;
     font-size: 22px;
 }
 
@@ -2757,7 +2757,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .offpage-educativo .flecha-container i {
     font-size: 48px;
-    color: #667eea;
+    color: #88B04B;
     display: block;
     margin-bottom: 10px;
     animation: pulse 2s infinite;
@@ -2766,7 +2766,7 @@ document.addEventListener('DOMContentLoaded', function() {
 .offpage-educativo .flecha-text {
     display: block;
     font-weight: 700;
-    color: #667eea;
+    color: #88B04B;
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1px;
@@ -2826,7 +2826,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .offpage-educativo .tabla-kpis thead {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 

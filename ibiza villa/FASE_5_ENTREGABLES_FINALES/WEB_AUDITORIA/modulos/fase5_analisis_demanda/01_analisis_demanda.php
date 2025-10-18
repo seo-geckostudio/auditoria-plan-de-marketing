@@ -1101,12 +1101,12 @@ foreach ($paginas as $index => $pagina):
     border-radius: 14px;
     padding: 30px;
     margin-bottom: 28px;
-    border-left: 5px solid #667eea;
+    border-left: 5px solid #88B04B;
 }
 
 .definition-icon {
     font-size: 48px;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .definition-content {
@@ -1178,7 +1178,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .trans-keywords-table thead tr {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 
@@ -1442,7 +1442,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .key-findings h2 i {
-    color: #667eea;
+    color: #88B04B;
 }
 
 .findings-list {
@@ -1458,11 +1458,11 @@ foreach ($paginas as $index => $pagina):
     padding: 12px;
     background: #f7fafc;
     border-radius: 8px;
-    border-left: 3px solid #667eea;
+    border-left: 3px solid #88B04B;
 }
 
 .finding-item i {
-    color: #667eea;
+    color: #88B04B;
     margin-top: 2px;
 }
 

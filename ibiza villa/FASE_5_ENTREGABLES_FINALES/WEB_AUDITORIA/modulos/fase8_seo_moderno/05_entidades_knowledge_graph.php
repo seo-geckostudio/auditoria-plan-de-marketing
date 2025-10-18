@@ -381,7 +381,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
    ======================================== */
 
 .entidades-page .concepto-educativo {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 35px;
     border-radius: 12px;
@@ -534,7 +534,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 }
 
 .entidades-page .csv-card:hover {
-    border-color: #667eea;
+    border-color: #88B04B;
     box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
     transform: translateY(-2px);
 }
@@ -606,7 +606,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
     content: "→";
     position: absolute;
     left: 0;
-    color: #667eea;
+    color: #88B04B;
     font-weight: bold;
 }
 
@@ -619,7 +619,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
     background: white;
     padding: 12px;
     border-radius: 6px;
-    border-left: 3px solid #667eea;
+    border-left: 3px solid #88B04B;
 }
 
 .entidades-page .csv-card-footer {
@@ -635,7 +635,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
     gap: 10px;
     width: 100%;
     padding: 12px 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -830,7 +830,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 }
 
 .entidades-page .flecha-contenido {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 20px;
     border-radius: 12px;
@@ -880,11 +880,11 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
     border: 1px solid #dee2e6;
     border-radius: 8px;
     padding: 15px;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #88B04B;
 }
 
 .entidades-page .timeline-badge {
-    background: #667eea;
+    background: #88B04B;
     color: white;
     padding: 5px 12px;
     border-radius: 12px;
@@ -953,7 +953,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 }
 
 .entidades-page .tabla-kpis thead {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 
@@ -1011,7 +1011,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 }
 
 .entidades-page .tabla-kpis .valor-mejora {
-    color: #667eea;
+    color: #88B04B;
     font-weight: 700;
     font-size: 15px;
 }

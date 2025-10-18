@@ -1044,7 +1044,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
 /* Contenedor principal del patrón educativo */
 .keywords-educativo .concepto-educativo {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 30px;
     border-radius: 12px;
@@ -1166,7 +1166,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 .keywords-educativo .impacto-item h3 {
     margin: 0 0 12px 0;
     font-size: 20px;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .keywords-educativo .impacto-item p {
@@ -1193,7 +1193,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     font-size: 48px;
     display: block;
     margin-bottom: 15px;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .keywords-educativo .entregables-header h2 {
@@ -1235,7 +1235,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .keywords-educativo .entregable-card:hover {
-    border-color: #667eea;
+    border-color: #88B04B;
     box-shadow: 0 4px 12px rgba(102,126,234,0.15);
     transform: translateY(-2px);
 }
@@ -1254,7 +1254,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
 .keywords-educativo .entregable-icon {
     font-size: 48px;
-    color: #667eea;
+    color: #88B04B;
     text-align: center;
     margin-bottom: 15px;
 }
@@ -1303,12 +1303,12 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     border-radius: 8px;
     font-size: 14px;
     margin-bottom: 15px;
-    border-left: 3px solid #667eea;
+    border-left: 3px solid #88B04B;
 }
 
 .keywords-educativo .btn-download {
     display: block;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     text-align: center;
     padding: 12px 20px;
@@ -1333,12 +1333,12 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     background: white;
     padding: 25px;
     border-radius: 12px;
-    border: 2px solid #667eea;
+    border: 2px solid #88B04B;
 }
 
 .keywords-educativo .instrucciones-uso h3 {
     margin: 0 0 20px 0;
-    color: #667eea;
+    color: #88B04B;
     font-size: 22px;
 }
 
@@ -1519,7 +1519,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
 .keywords-educativo .flecha-container i {
     font-size: 48px;
-    color: #667eea;
+    color: #88B04B;
     display: block;
     margin-bottom: 10px;
     animation: pulse 2s infinite;
@@ -1528,7 +1528,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 .keywords-educativo .flecha-text {
     display: block;
     font-weight: 700;
-    color: #667eea;
+    color: #88B04B;
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1px;
@@ -1599,7 +1599,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .keywords-educativo .tabla-kpis thead {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 

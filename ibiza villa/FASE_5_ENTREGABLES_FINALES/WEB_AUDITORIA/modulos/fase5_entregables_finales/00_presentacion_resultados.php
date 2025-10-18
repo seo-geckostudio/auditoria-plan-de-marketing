@@ -48,7 +48,7 @@
 
 <style>
 .presentation-cover-page {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     display: flex;
     align-items: center;
@@ -198,7 +198,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 2rem;
     margin: -2rem -2rem 2rem -2rem;
@@ -237,7 +237,7 @@
     top: 0;
     bottom: 0;
     width: 3px;
-    background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(180deg, #88B04B 0%, #6d8f3c 100%);
 }
 
 .agenda-item {
@@ -251,7 +251,7 @@
     left: -3rem;
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -282,7 +282,7 @@
 
 .agenda-header h2 {
     margin: 0;
-    color: #667eea;
+    color: #88B04B;
     font-size: 1.5rem;
 }
 
@@ -318,7 +318,7 @@
 }
 
 .agenda-topics li i {
-    color: #667eea;
+    color: #88B04B;
 }
 </style>
 
@@ -413,7 +413,7 @@
 
 .context-page section h2 {
     margin: 0 0 1.5rem 0;
-    color: #667eea;
+    color: #88B04B;
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -434,7 +434,7 @@
 }
 
 .metric-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 1.5rem;
     border-radius: 0.75rem;
@@ -468,12 +468,12 @@
     background: #f8f9fa;
     padding: 1.5rem;
     border-radius: 0.75rem;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #88B04B;
 }
 
 .objective-card h3 {
     margin: 0 0 1rem 0;
-    color: #667eea;
+    color: #88B04B;
     font-size: 1.2rem;
 }
 
@@ -527,7 +527,7 @@
 }
 
 .scope-column li i {
-    color: #667eea;
+    color: #88B04B;
     margin-top: 0.25rem;
 }
 
@@ -642,7 +642,7 @@
 }
 
 .executive-summary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 2rem;
     border-radius: 1rem;
@@ -825,7 +825,7 @@
     align-items: center;
     gap: 0.5rem;
     padding: 0.75rem 1.5rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     border-radius: 0.5rem;
     font-weight: bold;
@@ -1064,7 +1064,7 @@
 
 .action-plan-page section h2 {
     margin: 0 0 1.5rem 0;
-    color: #667eea;
+    color: #88B04B;
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -1078,7 +1078,7 @@
     color: #555;
     padding: 1rem;
     background: #f8f9fa;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #88B04B;
     border-radius: 0.5rem;
 }
 
@@ -1093,7 +1093,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 1.5rem;
 }
@@ -1175,7 +1175,7 @@
 
 .phase-metric i {
     font-size: 1.5rem;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .phase-metric div {
@@ -1196,7 +1196,7 @@
 .total-summary {
     display: flex;
     justify-content: space-around;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 2rem;
     border-radius: 0.75rem;
@@ -1241,7 +1241,7 @@
 }
 
 .step-badge {
-    background: #667eea;
+    background: #88B04B;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
@@ -1281,7 +1281,7 @@
 
 .resource-item h4 {
     margin: 0 0 0.5rem 0;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .resource-item p {
@@ -1317,11 +1317,11 @@
 }
 
 .kpis-list i {
-    color: #667eea;
+    color: #88B04B;
 }
 
 .closing-section {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     text-align: center;
 }

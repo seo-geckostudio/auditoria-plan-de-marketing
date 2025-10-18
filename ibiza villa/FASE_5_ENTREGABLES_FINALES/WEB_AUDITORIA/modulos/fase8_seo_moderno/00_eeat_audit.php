@@ -310,7 +310,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 /* ============================================================ */
 
 .eeat-educativo .concepto-educativo {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 30px;
     border-radius: 12px;
@@ -512,7 +512,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .eeat-educativo .csv-card:hover {
-    border-color: #667eea;
+    border-color: #88B04B;
     box-shadow: 0 4px 16px rgba(102, 126, 234, 0.2);
     transform: translateY(-2px);
 }
@@ -528,7 +528,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     flex-shrink: 0;
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     display: flex;
     align-items: center;
@@ -569,7 +569,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .eeat-educativo .csv-meta-item i {
-    color: #667eea;
+    color: #88B04B;
 }
 
 .eeat-educativo .csv-usage {
@@ -612,7 +612,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     align-items: center;
     gap: 10px;
     padding: 12px 24px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -782,7 +782,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     align-items: center;
     gap: 10px;
     padding: 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
@@ -826,13 +826,13 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     background: white;
     padding: 20px;
     border-radius: 8px;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #88B04B;
     box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 .eeat-educativo .timeline-periodo {
     font-weight: 700;
-    color: #667eea;
+    color: #88B04B;
     font-size: 15px;
     margin-bottom: 10px;
 }
@@ -891,7 +891,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .eeat-educativo .tabla-kpis thead {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 
@@ -935,7 +935,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .eeat-educativo .metrica-nombre i {
-    color: #667eea;
+    color: #88B04B;
     margin-right: 8px;
 }
 
@@ -991,7 +991,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     display: block;
     font-weight: 700;
     font-size: 15px;
-    color: #667eea;
+    color: #88B04B;
     margin-bottom: 4px;
 }
 
@@ -1000,7 +1000,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     padding: 25px;
     background: #f8f9fa;
     border-radius: 8px;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #88B04B;
 }
 
 .eeat-educativo .nota-tiempos h4 {

@@ -347,7 +347,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 
 /* Sección Educativa */
 .monitoreo-page .concepto-educativo {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 35px;
     border-radius: 12px;
@@ -503,7 +503,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 .monitoreo-page .csv-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-    border-color: #667eea;
+    border-color: #88B04B;
 }
 
 .monitoreo-page .csv-card-header {
@@ -604,7 +604,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 
 .monitoreo-page .btn-download {
     display: inline-block;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 12px 24px;
     border-radius: 6px;
@@ -626,7 +626,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
     background: white;
     padding: 25px;
     border-radius: 10px;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #88B04B;
 }
 
 .monitoreo-page .instrucciones-uso h4 {
@@ -803,7 +803,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 .monitoreo-page .flecha-text {
     font-weight: 700;
     font-size: 14px;
-    color: #667eea;
+    color: #88B04B;
     text-align: center;
     line-height: 1.4;
     text-transform: uppercase;
@@ -844,7 +844,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
     background: #f8f9fa;
     padding: 20px;
     border-radius: 8px;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #88B04B;
 }
 
 .monitoreo-page .fase-badge {
@@ -894,7 +894,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 .monitoreo-page .resultado-fase {
     display: block;
     font-size: 12px;
-    color: #667eea;
+    color: #88B04B;
     font-weight: 600;
     margin-top: 10px;
 }
@@ -936,7 +936,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 }
 
 .monitoreo-page .tabla-kpis thead {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 

@@ -112,7 +112,7 @@ $paginas = $datosModulo['paginas'];
 
 <style>
 .section-cover-page {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     padding: 60px;
     min-height: 100vh;
     color: white;
@@ -186,7 +186,7 @@ $paginas = $datosModulo['paginas'];
 .metric-card.large .metric-icon {
     font-size: 40px;
     margin-bottom: 15px;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .metric-card.large.highlight .metric-icon {
@@ -367,7 +367,7 @@ foreach ($paginas as $index => $pagina):
 
 .project-description-page .subtitle {
     font-size: 20px;
-    color: #667eea;
+    color: #88B04B;
     margin: 0;
     font-weight: 600;
 }
@@ -391,7 +391,7 @@ foreach ($paginas as $index => $pagina):
 
 .info-icon {
     font-size: 42px;
-    color: #667eea;
+    color: #88B04B;
     width: 70px;
     height: 70px;
     display: flex;
@@ -446,7 +446,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .detail-section h3 i {
-    color: #667eea;
+    color: #88B04B;
 }
 
 .markets-list,
@@ -459,7 +459,7 @@ foreach ($paginas as $index => $pagina):
 .market-badge,
 .language-badge {
     padding: 10px 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     border-radius: 25px;
     font-size: 14px;
@@ -479,7 +479,7 @@ foreach ($paginas as $index => $pagina):
 .objectives-list li {
     padding: 14px 14px 14px 45px;
     background: #f7fafc;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #88B04B;
     border-radius: 8px;
     margin-bottom: 12px;
     position: relative;
@@ -492,7 +492,7 @@ foreach ($paginas as $index => $pagina):
     content: "→";
     position: absolute;
     left: 18px;
-    color: #667eea;
+    color: #88B04B;
     font-weight: bold;
     font-size: 18px;
 }
@@ -668,14 +668,14 @@ foreach ($paginas as $index => $pagina):
 }
 
 .analytics-card.primary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     border: none;
 }
 
 .analytics-card .card-icon {
     font-size: 36px;
-    color: #667eea;
+    color: #88B04B;
     margin-bottom: 12px;
 }
 
@@ -751,7 +751,7 @@ foreach ($paginas as $index => $pagina):
 .source-percentage {
     font-size: 20px;
     font-weight: 800;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .source-bar {
@@ -763,7 +763,7 @@ foreach ($paginas as $index => $pagina):
 
 .source-fill {
     height: 100%;
-    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(90deg, #88B04B 0%, #6d8f3c 100%);
     transition: width 1s ease;
 }
 
@@ -910,7 +910,7 @@ foreach ($paginas as $index => $pagina):
 .channel-percentage {
     font-size: 32px;
     font-weight: 800;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .channel-metrics {
@@ -1095,7 +1095,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .keywords-table thead tr {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 
@@ -1307,7 +1307,7 @@ foreach ($paginas as $index => $pagina):
     margin: 0 0 20px 0;
     font-weight: 700;
     padding-bottom: 15px;
-    border-bottom: 3px solid #667eea;
+    border-bottom: 3px solid #88B04B;
 }
 
 .country-stats {
@@ -1488,7 +1488,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .swot-card.prioridades .swot-header {
-    border-bottom-color: #667eea;
+    border-bottom-color: #88B04B;
 }
 
 .swot-header i {
@@ -1508,7 +1508,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .swot-card.prioridades .swot-header i {
-    color: #667eea;
+    color: #88B04B;
 }
 
 .swot-header h3 {
@@ -1556,7 +1556,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .swot-card.prioridades .swot-list li:before {
-    color: #667eea;
+    color: #88B04B;
 }
 </style>
 

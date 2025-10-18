@@ -142,7 +142,7 @@
 
 <style>
 .opportunities-overview-page {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 
@@ -215,7 +215,7 @@
     flex-shrink: 0;
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -234,7 +234,7 @@
     margin: 0;
     font-size: 2rem;
     font-weight: bold;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .metric-description {
@@ -316,7 +316,7 @@
 }
 
 .stat i {
-    color: #667eea;
+    color: #88B04B;
 }
 
 .category-examples {
@@ -340,7 +340,7 @@
 .example-item strong {
     display: block;
     margin-bottom: 0.5rem;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .example-details {
@@ -528,7 +528,7 @@
 }
 
 .keyword-cell strong {
-    color: #667eea;
+    color: #88B04B;
 }
 
 .pos-badge {
@@ -780,7 +780,7 @@
 .trending-header h3 {
     margin: 0;
     font-size: 1.1rem;
-    color: #667eea;
+    color: #88B04B;
     flex: 1;
 }
 
@@ -818,7 +818,7 @@
 .stat-value {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .opportunity-tag {
@@ -850,12 +850,12 @@
     background: white;
     padding: 1.5rem;
     border-radius: 0.75rem;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #88B04B;
 }
 
 .season-card h3 {
     margin: 0 0 0.5rem 0;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .season-months {
@@ -881,7 +881,7 @@
 }
 
 .season-metrics .metric i {
-    color: #667eea;
+    color: #88B04B;
 }
 
 .season-examples {
@@ -964,12 +964,12 @@
     background: white;
     padding: 1.5rem;
     border-radius: 0.75rem;
-    border-top: 4px solid #667eea;
+    border-top: 4px solid #88B04B;
 }
 
 .intent-card h3 {
     margin: 0 0 0.75rem 0;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .intent-description {
@@ -1203,7 +1203,7 @@
 }
 
 .top-keywords-table thead {
-    background: #667eea;
+    background: #88B04B;
     color: white;
 }
 
@@ -1222,7 +1222,7 @@
     height: 32px;
     border-radius: 50%;
     font-weight: bold;
-    background: #667eea;
+    background: #88B04B;
     color: white;
 }
 
@@ -1234,7 +1234,7 @@
 }
 
 .kw-cell strong {
-    color: #667eea;
+    color: #88B04B;
 }
 
 .score-bar {
@@ -1282,14 +1282,14 @@
     background: white;
     padding: 1.5rem;
     border-radius: 0.75rem;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #88B04B;
 }
 
 .phase-number {
     flex-shrink: 0;
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -1305,7 +1305,7 @@
 
 .phase-content h3 {
     margin: 0 0 1rem 0;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .phase-meta {
@@ -1358,7 +1358,7 @@
 }
 
 .resource-item i {
-    color: #667eea;
+    color: #88B04B;
 }
 
 .resource-item.roi {

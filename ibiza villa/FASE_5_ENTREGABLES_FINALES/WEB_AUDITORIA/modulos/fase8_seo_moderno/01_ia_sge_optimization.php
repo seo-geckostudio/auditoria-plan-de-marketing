@@ -30,7 +30,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 
 /* SECCIÓN EDUCATIVA */
 .ia-sge-page .concepto-educativo {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 35px;
     border-radius: 12px;
@@ -199,7 +199,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 }
 
 .ia-sge-page .csv-card:hover {
-    border-color: #667eea;
+    border-color: #88B04B;
     box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
     transform: translateY(-2px);
 }
@@ -284,7 +284,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 
 .ia-sge-page .btn-download {
     display: inline-block;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 12px 24px;
     border-radius: 8px;
@@ -461,7 +461,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 
 .ia-sge-page .flecha-container {
     text-align: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 25px 20px;
     border-radius: 50%;
@@ -521,12 +521,12 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
     background: white;
     padding: 20px;
     border-radius: 8px;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #88B04B;
 }
 
 .ia-sge-page .timeline-badge {
     display: inline-block;
-    background: #667eea;
+    background: #88B04B;
     color: white;
     padding: 5px 12px;
     border-radius: 12px;
@@ -571,7 +571,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 }
 
 .ia-sge-page .tabla-kpis thead {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 
@@ -638,7 +638,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 
 /* EXECUTIVE SUMMARY ORIGINAL */
 .ia-sge-page .executive-summary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 30px;
     border-radius: 8px;
@@ -683,12 +683,12 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
     border-radius: 8px;
     padding: 25px;
     margin-bottom: 25px;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #88B04B;
 }
 
 .ia-sge-page .content-section h3 {
     margin: 0 0 20px 0;
-    color: #667eea;
+    color: #88B04B;
     font-size: 20px;
     font-weight: 600;
 }
@@ -819,7 +819,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 
 .ia-sge-page .entity-name {
     font-weight: 600;
-    color: #667eea;
+    color: #88B04B;
     margin-bottom: 8px;
 }
 
@@ -844,7 +844,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 
 .ia-sge-page .comparison-table th {
     background: #f0f4ff;
-    color: #667eea;
+    color: #88B04B;
     font-weight: 600;
     font-size: 14px;
 }
@@ -862,7 +862,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 }
 
 .ia-sge-page .phase-title {
-    color: #667eea;
+    color: #88B04B;
     font-weight: 600;
     font-size: 18px;
     margin-bottom: 10px;
@@ -870,7 +870,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 
 .ia-sge-page .phase-duration {
     display: inline-block;
-    background: #667eea;
+    background: #88B04B;
     color: white;
     padding: 4px 12px;
     border-radius: 12px;
@@ -890,7 +890,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 .ia-sge-page .metric-value {
     font-size: 28px;
     font-weight: 700;
-    color: #667eea;
+    color: #88B04B;
     margin: 10px 0;
 }
 

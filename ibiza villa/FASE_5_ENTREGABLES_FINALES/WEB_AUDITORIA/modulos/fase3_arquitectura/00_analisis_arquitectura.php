@@ -1457,7 +1457,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
 /* Sección Educativa */
 .arquitectura-page .concepto-educativo {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 30px;
     border-radius: 12px;
@@ -1633,7 +1633,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .arquitectura-page .entregable-card:hover {
-    border-color: #667eea;
+    border-color: #88B04B;
     box-shadow: 0 4px 12px rgba(102,126,234,0.15);
     transform: translateY(-2px);
 }
@@ -1650,7 +1650,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     flex-shrink: 0;
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     border-radius: 12px;
     display: flex;
@@ -1701,7 +1701,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: #667eea;
+    background: #88B04B;
     color: white;
     padding: 12px 24px;
     border-radius: 8px;
@@ -1858,7 +1858,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .arquitectura-page .arq-nodo.home {
-    background: #667eea;
+    background: #88B04B;
     color: white;
     border-color: #5568d3;
     font-size: 14px;
@@ -2024,7 +2024,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     text-align: center;
     font-size: 13px;
     font-weight: 600;
-    color: #667eea;
+    color: #88B04B;
     line-height: 1.4;
     margin: 0;
 }
@@ -2113,7 +2113,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .arquitectura-page .tabla-kpis thead {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 

@@ -109,7 +109,7 @@
     const categorias = <?php echo json_encode($datosModulo['estructura_sitio']['categorias']); ?>;
 
     const colors = [
-        '#667eea', '#764ba2', '#f093fb', '#f5576c',
+        '#88B04B', '#6d8f3c', '#f093fb', '#f5576c',
         '#4facfe', '#00f2fe', '#43e97b', '#38f9d7'
     ];
 
@@ -149,7 +149,7 @@
 
 <style>
 .mapping-overview-page {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 
@@ -222,7 +222,7 @@
     flex-shrink: 0;
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -241,7 +241,7 @@
     margin: 0;
     font-size: 2rem;
     font-weight: bold;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .metric-description {
@@ -289,7 +289,7 @@
 .structure-header h3 {
     margin: 0;
     font-size: 1.2rem;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .priority-badge {
@@ -340,7 +340,7 @@
 }
 
 .stat-label i {
-    color: #667eea;
+    color: #88B04B;
 }
 
 .stat-value {
@@ -365,7 +365,7 @@
     padding: 0.5rem;
     background: white;
     border-radius: 0.25rem;
-    color: #667eea;
+    color: #88B04B;
     font-family: 'Courier New', monospace;
 }
 
@@ -589,7 +589,7 @@
     padding: 2rem;
     margin-bottom: 2rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #88B04B;
 }
 
 .url-header {
@@ -603,7 +603,7 @@
 
 .url-info h3 {
     margin: 0 0 0.75rem 0;
-    color: #667eea;
+    color: #88B04B;
     font-family: 'Courier New', monospace;
 }
 
@@ -695,13 +695,13 @@
 }
 
 .keyword-group strong i {
-    color: #667eea;
+    color: #88B04B;
 }
 
 .main-keyword {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     border-radius: 0.5rem;
     font-weight: bold;
@@ -745,7 +745,7 @@
 }
 
 .url-actions strong i {
-    color: #667eea;
+    color: #88B04B;
 }
 
 .url-actions ul {
@@ -769,7 +769,7 @@
     border-radius: 1rem;
     padding: 1.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-top: 4px solid #667eea;
+    border-top: 4px solid #88B04B;
 }
 
 .cluster-header {
@@ -781,7 +781,7 @@
 
 .cluster-header h3 {
     margin: 0;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .pillar-info {
@@ -801,7 +801,7 @@
     padding: 0.5rem;
     background: white;
     border-radius: 0.25rem;
-    color: #667eea;
+    color: #88B04B;
     font-family: 'Courier New', monospace;
     margin-bottom: 0.75rem;
 }
@@ -819,7 +819,7 @@
 }
 
 .pillar-stats i {
-    color: #667eea;
+    color: #88B04B;
 }
 
 .subtopics-list strong {
@@ -863,7 +863,7 @@
 .kw-count {
     font-size: 0.85rem;
     font-weight: bold;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .status-mini {
@@ -1103,7 +1103,7 @@
 
 .orphan-category h3 {
     margin: 0 0 1rem 0;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .orphan-keywords-list {
@@ -1172,7 +1172,7 @@
     padding: 0.25rem 0.75rem;
     background: #f8f9fa;
     border-radius: 0.25rem;
-    color: #667eea;
+    color: #88B04B;
     font-family: 'Courier New', monospace;
 }
 
@@ -1196,12 +1196,12 @@
     background: white;
     padding: 1.5rem;
     border-radius: 0.75rem;
-    border-top: 4px solid #667eea;
+    border-top: 4px solid #88B04B;
 }
 
 .linking-card h3 {
     margin: 0 0 0.75rem 0;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .linking-info {
@@ -1272,7 +1272,7 @@
 
 .quarter-header h3 {
     margin: 0;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .quarter-stats {
@@ -1292,7 +1292,7 @@
 }
 
 .quarter-stats .stat i {
-    color: #667eea;
+    color: #88B04B;
 }
 
 .quarter-actions strong {

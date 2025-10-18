@@ -519,7 +519,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
    ===================================== */
 
 .wireframes-page .concepto-educativo {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 35px;
     border-radius: 12px;
@@ -700,7 +700,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 .wireframes-page .csv-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    border-color: #667eea;
+    border-color: #88B04B;
 }
 
 .wireframes-page .csv-card-header {
@@ -733,7 +733,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 
 .wireframes-page .csv-metadata {
     background: #f8f9fa;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #88B04B;
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 4px;
@@ -775,7 +775,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
     content: "▸";
     position: absolute;
     left: 0;
-    color: #667eea;
+    color: #88B04B;
     font-weight: bold;
 }
 
@@ -793,7 +793,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 }
 
 .wireframes-page .stat-box {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 15px;
     border-radius: 8px;
@@ -841,7 +841,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
     background: #f8f9fa;
     border-radius: 10px;
     padding: 30px;
-    border-left: 5px solid #667eea;
+    border-left: 5px solid #88B04B;
 }
 
 .wireframes-page .instrucciones-uso h3 {
@@ -870,7 +870,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
     position: absolute;
     left: 0;
     top: 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     width: 35px;
     height: 35px;
@@ -1020,7 +1020,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 
 .wireframes-page .flecha-container i {
     font-size: 3rem;
-    color: #667eea;
+    color: #88B04B;
     display: block;
     margin-bottom: 10px;
     animation: pulse 2s ease-in-out infinite;
@@ -1029,7 +1029,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 .wireframes-page .flecha-text {
     display: block;
     font-weight: 700;
-    color: #667eea;
+    color: #88B04B;
     font-size: 1.1rem;
     line-height: 1.4;
     text-transform: uppercase;
@@ -1126,7 +1126,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 }
 
 .wireframes-page .fase-badge {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 10px 20px;
     border-radius: 25px;
@@ -1141,7 +1141,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
     background: white;
     padding: 20px;
     border-radius: 8px;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #88B04B;
 }
 
 .wireframes-page .fase-content strong {
@@ -1192,7 +1192,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 }
 
 .wireframes-page .tabla-kpis thead {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 

@@ -30,7 +30,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 
 /* SECCIÓN EDUCATIVA */
 .voice-search-page .concepto-educativo {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 35px;
     border-radius: 12px;
@@ -199,7 +199,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 }
 
 .voice-search-page .csv-card:hover {
-    border-color: #667eea;
+    border-color: #88B04B;
     box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
     transform: translateY(-2px);
 }
@@ -284,7 +284,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 
 .voice-search-page .btn-download {
     display: inline-block;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 12px 24px;
     border-radius: 8px;
@@ -461,7 +461,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 
 .voice-search-page .flecha-container {
     text-align: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 25px 20px;
     border-radius: 50%;
@@ -521,12 +521,12 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
     background: white;
     padding: 20px;
     border-radius: 8px;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #88B04B;
 }
 
 .voice-search-page .timeline-badge {
     display: inline-block;
-    background: #667eea;
+    background: #88B04B;
     color: white;
     padding: 5px 12px;
     border-radius: 12px;
@@ -571,7 +571,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 }
 
 .voice-search-page .tabla-kpis thead {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 

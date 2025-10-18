@@ -40,11 +40,15 @@ if ($loader->tieneErrores()) {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Auditoría SEO — <?php echo htmlspecialchars($proyecto['nombre'] ?? 'Proyecto'); ?></title>
-  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Fuentes Google: Roboto (corporativo Gecko Studio) + Hanken Grotesk (sistema) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- CSS Sistema -->
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/print.css" media="print" />
   <link rel="stylesheet" href="css/admin-panel.css" />
   <link rel="stylesheet" href="css/module-system.css" />
+  <!-- CSS Corporativo Gecko Studio (colores, tipografía, estilos de impresión) -->
+  <link rel="stylesheet" href="css/gecko-corporate.css" />
   <!-- Chart.js para gráficas profesionales -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   <!-- Scripts del sistema -->

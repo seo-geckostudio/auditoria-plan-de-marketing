@@ -139,7 +139,7 @@
 
 <style>
 .competitor-overview-page {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 
@@ -215,7 +215,7 @@
     right: -10px;
     width: 40px;
     height: 40px;
-    background: #667eea;
+    background: #88B04B;
     color: white;
     border-radius: 50%;
     display: flex;
@@ -551,7 +551,7 @@
 }
 
 .gap-table thead {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 
@@ -567,7 +567,7 @@
 }
 
 .keyword-cell strong {
-    color: #667eea;
+    color: #88B04B;
 }
 
 .position-cell .badge {
@@ -680,7 +680,7 @@
 
 .shared-keyword-header h4 {
     margin: 0;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .keyword-stats {
@@ -949,7 +949,7 @@
     background: white;
     padding: 1.5rem;
     border-radius: 0.75rem;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #88B04B;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -957,7 +957,7 @@
     flex-shrink: 0;
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -973,7 +973,7 @@
 
 .strategy-content h3 {
     margin: 0 0 0.75rem 0;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .strategy-description {
@@ -1000,7 +1000,7 @@
 
 .strategy-keywords li {
     margin: 0.25rem 0;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .strategy-metrics {
@@ -1063,7 +1063,7 @@
     flex-shrink: 0;
     width: 32px;
     height: 32px;
-    background: #667eea;
+    background: #88B04B;
     color: white;
     border-radius: 50%;
     display: flex;

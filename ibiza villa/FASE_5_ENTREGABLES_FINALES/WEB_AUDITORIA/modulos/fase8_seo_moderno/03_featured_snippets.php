@@ -321,7 +321,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
    ======================================== */
 
 .featured-snippets-page .concepto-educativo {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 35px;
     border-radius: 12px;
@@ -474,7 +474,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
 }
 
 .featured-snippets-page .csv-card:hover {
-    border-color: #667eea;
+    border-color: #88B04B;
     box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
     transform: translateY(-2px);
 }
@@ -546,7 +546,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
     content: "→";
     position: absolute;
     left: 0;
-    color: #667eea;
+    color: #88B04B;
     font-weight: bold;
 }
 
@@ -559,7 +559,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
     background: white;
     padding: 12px;
     border-radius: 6px;
-    border-left: 3px solid #667eea;
+    border-left: 3px solid #88B04B;
 }
 
 .featured-snippets-page .csv-card-footer {
@@ -575,7 +575,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
     gap: 10px;
     width: 100%;
     padding: 12px 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -770,7 +770,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
 }
 
 .featured-snippets-page .flecha-contenido {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 20px;
     border-radius: 12px;
@@ -831,11 +831,11 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
     border: 1px solid #dee2e6;
     border-radius: 8px;
     padding: 15px;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #88B04B;
 }
 
 .featured-snippets-page .timeline-badge {
-    background: #667eea;
+    background: #88B04B;
     color: white;
     padding: 5px 12px;
     border-radius: 12px;
@@ -904,7 +904,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
 }
 
 .featured-snippets-page .tabla-kpis thead {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 
@@ -962,7 +962,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
 }
 
 .featured-snippets-page .tabla-kpis .valor-mejora {
-    color: #667eea;
+    color: #88B04B;
     font-weight: 700;
     font-size: 15px;
 }

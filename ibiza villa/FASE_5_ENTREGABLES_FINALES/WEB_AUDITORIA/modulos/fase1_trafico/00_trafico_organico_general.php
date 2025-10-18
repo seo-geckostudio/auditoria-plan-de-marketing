@@ -536,7 +536,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
    ===================================== */
 
 .trafico-organico-page .concepto-educativo {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 35px;
     border-radius: 12px;
@@ -670,7 +670,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
 .trafico-organico-page .csv-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-bottom: 40px; }
 .trafico-organico-page .csv-card { background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     overflow: hidden; transition: all 0.3s ease; border: 2px solid transparent; }
-.trafico-organico-page .csv-card:hover { transform: translateY(-5px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); border-color: #667eea; }
+.trafico-organico-page .csv-card:hover { transform: translateY(-5px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); border-color: #88B04B; }
 
 .trafico-organico-page .csv-card-header { background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     padding: 20px; border-bottom: 2px solid #dee2e6; }
@@ -680,7 +680,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
 .trafico-organico-page .csv-card-body { padding: 25px; }
 .trafico-organico-page .csv-description { font-size: 1.05rem; color: #495057; margin-bottom: 20px; line-height: 1.6; }
 
-.trafico-organico-page .csv-metadata { background: #f8f9fa; border-left: 4px solid #667eea; padding: 15px;
+.trafico-organico-page .csv-metadata { background: #f8f9fa; border-left: 4px solid #88B04B; padding: 15px;
     margin-bottom: 20px; border-radius: 4px; }
 .trafico-organico-page .metadata-item { margin-bottom: 8px; font-size: 0.95rem; }
 .trafico-organico-page .metadata-item:last-child { margin-bottom: 0; }
@@ -688,11 +688,11 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
 .trafico-organico-page .csv-highlights h4 { font-size: 1.15rem; color: #2c3e50; margin-bottom: 12px; }
 .trafico-organico-page .csv-highlights ul { list-style: none; padding-left: 0; }
 .trafico-organico-page .csv-highlights li { padding: 8px 0 8px 25px; position: relative; font-size: 0.95rem; line-height: 1.5; }
-.trafico-organico-page .csv-highlights li:before { content: "▸"; position: absolute; left: 0; color: #667eea; font-weight: bold; }
+.trafico-organico-page .csv-highlights li:before { content: "▸"; position: absolute; left: 0; color: #88B04B; font-weight: bold; }
 .trafico-organico-page .highlight-impact { color: #28a745; font-weight: 600; }
 
 .trafico-organico-page .csv-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 25px; }
-.trafico-organico-page .stat-box { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;
+.trafico-organico-page .stat-box { background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%); color: white;
     padding: 15px; border-radius: 8px; text-align: center; }
 .trafico-organico-page .stat-number { display: block; font-size: 1.8rem; font-weight: 700; margin-bottom: 5px; }
 .trafico-organico-page .stat-label { display: block; font-size: 0.85rem; opacity: 0.95; }
@@ -702,13 +702,13 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
     transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(40,167,69,0.3); }
 .trafico-organico-page .btn-download:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(40,167,69,0.4); color: white; }
 
-.trafico-organico-page .instrucciones-uso { background: #f8f9fa; border-radius: 10px; padding: 30px; border-left: 5px solid #667eea; }
+.trafico-organico-page .instrucciones-uso { background: #f8f9fa; border-radius: 10px; padding: 30px; border-left: 5px solid #88B04B; }
 .trafico-organico-page .instrucciones-uso h3 { font-size: 1.5rem; color: #2c3e50; margin-bottom: 20px; }
 .trafico-organico-page .instrucciones-list { counter-reset: instruccion-counter; list-style: none; padding-left: 0; }
 .trafico-organico-page .instrucciones-list li { counter-increment: instruccion-counter; position: relative;
     padding-left: 50px; margin-bottom: 20px; font-size: 1.05rem; line-height: 1.6; }
 .trafico-organico-page .instrucciones-list li:before { content: counter(instruccion-counter); position: absolute;
-    left: 0; top: 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;
+    left: 0; top: 0; background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%); color: white;
     width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
     font-weight: 700; font-size: 1.1rem; }
 
@@ -741,9 +741,9 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
 
 .trafico-organico-page .comparacion-flecha { display: flex; align-items: center; justify-content: center; }
 .trafico-organico-page .flecha-container { text-align: center; }
-.trafico-organico-page .flecha-container i { font-size: 3rem; color: #667eea; display: block; margin-bottom: 10px;
+.trafico-organico-page .flecha-container i { font-size: 3rem; color: #88B04B; display: block; margin-bottom: 10px;
     animation: pulse 2s ease-in-out infinite; }
-.trafico-organico-page .flecha-text { display: block; font-weight: 700; color: #667eea; font-size: 1.1rem;
+.trafico-organico-page .flecha-text { display: block; font-weight: 700; color: #88B04B; font-size: 1.1rem;
     line-height: 1.4; text-transform: uppercase; }
 
 @keyframes pulse { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.05); opacity: 0.9; } }
@@ -762,9 +762,9 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
 .trafico-organico-page .timeline-implementacion h3 { font-size: 1.6rem; color: #2c3e50; margin-bottom: 25px; text-align: center; }
 .trafico-organico-page .timeline-fases { display: grid; gap: 20px; }
 .trafico-organico-page .fase-item { display: flex; gap: 20px; align-items: start; }
-.trafico-organico-page .fase-badge { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;
+.trafico-organico-page .fase-badge { background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%); color: white;
     padding: 10px 20px; border-radius: 25px; font-weight: 700; font-size: 0.9rem; white-space: nowrap; flex-shrink: 0; }
-.trafico-organico-page .fase-content { flex: 1; background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #667eea; }
+.trafico-organico-page .fase-content { flex: 1; background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #88B04B; }
 .trafico-organico-page .fase-content strong { display: block; font-size: 1.15rem; color: #2c3e50; margin-bottom: 10px; }
 .trafico-organico-page .fase-content p { margin: 0 0 10px 0; font-size: 0.95rem; color: #495057; line-height: 1.6; }
 .trafico-organico-page .fase-resultado { display: inline-block; background: #d4edda; color: #155724;
@@ -773,7 +773,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
 .trafico-organico-page .tabla-kpis-container { overflow-x: auto; margin-bottom: 30px; }
 .trafico-organico-page .tabla-kpis { width: 100%; border-collapse: collapse; background: white;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; }
-.trafico-organico-page .tabla-kpis thead { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
+.trafico-organico-page .tabla-kpis thead { background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%); color: white; }
 .trafico-organico-page .tabla-kpis th { padding: 18px 15px; text-align: left; font-weight: 600; font-size: 0.95rem;
     text-transform: uppercase; letter-spacing: 0.5px; }
 .trafico-organico-page .tabla-kpis tbody tr { border-bottom: 1px solid #e9ecef; transition: background-color 0.2s ease; }

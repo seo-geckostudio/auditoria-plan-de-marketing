@@ -129,7 +129,7 @@
     text-align: center;
     margin-bottom: 40px;
     padding-bottom: 30px;
-    border-bottom: 3px solid #667eea;
+    border-bottom: 3px solid #88B04B;
 }
 
 .page-header h1 {
@@ -184,7 +184,7 @@
 }
 
 .summary-card.highlight {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     border: none;
 }
 
@@ -195,7 +195,7 @@
 
 .summary-icon {
     font-size: 32px;
-    color: #667eea;
+    color: #88B04B;
     width: 50px;
     height: 50px;
     display: flex;
@@ -240,12 +240,12 @@
     padding: 20px;
     background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
     border-radius: 12px;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #88B04B;
 }
 
 .plan-objective i {
     font-size: 24px;
-    color: #667eea;
+    color: #88B04B;
     margin-top: 2px;
 }
 
@@ -337,7 +337,7 @@
 
 .metric-arrow i {
     font-size: 24px;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .metric-arrow .increment {
@@ -366,7 +366,7 @@
 .phase-number {
     font-size: 48px;
     font-weight: 800;
-    color: #667eea;
+    color: #88B04B;
     line-height: 1;
     min-width: 80px;
 }
@@ -544,7 +544,7 @@
     border-radius: 14px;
     padding: 28px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-    border-left: 5px solid #667eea;
+    border-left: 5px solid #88B04B;
 }
 
 .task-header {
@@ -558,7 +558,7 @@
     font-size: 18px;
     font-weight: 800;
     color: white;
-    background: #667eea;
+    background: #88B04B;
     padding: 8px 16px;
     border-radius: 8px;
     min-width: 80px;
@@ -649,7 +649,7 @@
 }
 
 .task-detail h4 i {
-    color: #667eea;
+    color: #88B04B;
 }
 
 .task-detail p {
@@ -898,7 +898,7 @@
     font-size: 13px;
     font-weight: 800;
     color: white;
-    background: #667eea;
+    background: #88B04B;
     padding: 4px 10px;
     border-radius: 6px;
     display: inline-block;
@@ -1053,7 +1053,7 @@
     font-size: 11px;
     font-weight: 800;
     color: white;
-    background: #667eea;
+    background: #88B04B;
     padding: 3px 8px;
     border-radius: 5px;
 }
@@ -1362,7 +1362,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 14px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     border-radius: 8px;
     color: white;
 }
@@ -1391,7 +1391,7 @@
 .timeline-marker {
     width: 16px;
     height: 16px;
-    background: #667eea;
+    background: #88B04B;
     border-radius: 50%;
     margin-top: 6px;
     flex-shrink: 0;
@@ -1407,7 +1407,7 @@
 
 .timeline-month {
     font-size: 14px;
-    color: #667eea;
+    color: #88B04B;
     font-weight: 700;
     margin-bottom: 6px;
 }
@@ -1427,7 +1427,7 @@
 
 .timeline-content ul li:before {
     content: "→ ";
-    color: #667eea;
+    color: #88B04B;
 }
 
 .kpis-grid {
@@ -1463,7 +1463,7 @@
 }
 
 .kpi-values i {
-    color: #667eea;
+    color: #88B04B;
     font-size: 14px;
 }
 

@@ -245,7 +245,7 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
 <style>
 /* Reutilizando estilos del módulo Tráfico Orgánico con ajustes mínimos */
 .queries-gsc-page { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #2c3e50; line-height: 1.6; }
-.queries-gsc-page .concepto-educativo { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 35px; border-radius: 12px; margin-bottom: 40px; }
+.queries-gsc-page .concepto-educativo { background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%); color: white; padding: 35px; border-radius: 12px; margin-bottom: 40px; }
 .queries-gsc-page .concepto-header { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
 .queries-gsc-page .concepto-icon { font-size: 2.5rem; }
 .queries-gsc-page .concepto-header h2 { margin: 0; font-size: 1.75rem; font-weight: 700; }
@@ -265,7 +265,7 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
 
 .queries-gsc-page .csv-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-bottom: 40px; }
 .queries-gsc-page .csv-card { background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); overflow: hidden; transition: all 0.3s; border: 2px solid transparent; }
-.queries-gsc-page .csv-card:hover { transform: translateY(-5px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); border-color: #667eea; }
+.queries-gsc-page .csv-card:hover { transform: translateY(-5px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); border-color: #88B04B; }
 .queries-gsc-page .csv-card-header { background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 20px; border-bottom: 2px solid #dee2e6; }
 .queries-gsc-page .csv-icon { font-size: 2rem; margin-right: 12px; }
 .queries-gsc-page .csv-card-header h3 { margin: 10px 0; font-size: 1.4rem; color: #2c3e50; }
@@ -273,7 +273,7 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
 .queries-gsc-page .csv-description { font-size: 1.05rem; color: #495057; margin-bottom: 20px; }
 
 .queries-gsc-page .csv-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 25px; }
-.queries-gsc-page .stat-box { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; border-radius: 8px; text-align: center; }
+.queries-gsc-page .stat-box { background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%); color: white; padding: 15px; border-radius: 8px; text-align: center; }
 .queries-gsc-page .stat-number { display: block; font-size: 1.8rem; font-weight: 700; margin-bottom: 5px; }
 .queries-gsc-page .stat-label { display: block; font-size: 0.85rem; }
 
@@ -298,8 +298,8 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
 
 .queries-gsc-page .comparacion-flecha { display: flex; align-items: center; justify-content: center; }
 .queries-gsc-page .flecha-container { text-align: center; }
-.queries-gsc-page .flecha-container i { font-size: 3rem; color: #667eea; animation: pulse 2s ease-in-out infinite; }
-.queries-gsc-page .flecha-text { display: block; font-weight: 700; color: #667eea; font-size: 1.1rem; text-transform: uppercase; }
+.queries-gsc-page .flecha-container i { font-size: 3rem; color: #88B04B; animation: pulse 2s ease-in-out infinite; }
+.queries-gsc-page .flecha-text { display: block; font-weight: 700; color: #88B04B; font-size: 1.1rem; text-transform: uppercase; }
 @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
 
 .queries-gsc-page .columna-footer { background: #f8f9fa; padding: 20px 25px; }
@@ -310,7 +310,7 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
 .queries-gsc-page .score-valor { display: block; font-size: 2.5rem; font-weight: 700; }
 
 .queries-gsc-page .tabla-kpis { width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 8px; }
-.queries-gsc-page .tabla-kpis thead { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
+.queries-gsc-page .tabla-kpis thead { background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%); color: white; }
 .queries-gsc-page .tabla-kpis th { padding: 18px 15px; text-align: left; font-weight: 600; font-size: 0.95rem; }
 .queries-gsc-page .tabla-kpis td { padding: 18px 15px; font-size: 0.95rem; color: #495057; }
 .queries-gsc-page .tabla-kpis td:first-child { font-weight: 600; color: #2c3e50; }

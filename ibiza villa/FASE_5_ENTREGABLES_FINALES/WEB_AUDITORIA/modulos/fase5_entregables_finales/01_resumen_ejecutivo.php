@@ -157,7 +157,7 @@
 }
 
 .situation-summary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 2rem;
     border-radius: 0.75rem;
@@ -183,7 +183,7 @@
 
 .metrics-category h3 {
     margin: 0 0 1rem 0;
-    color: #667eea;
+    color: #88B04B;
     font-size: 1.3rem;
 }
 
@@ -637,7 +637,7 @@
     border-radius: 0.75rem;
     padding: 2rem;
     margin-bottom: 2rem;
-    border-left: 5px solid #667eea;
+    border-left: 5px solid #88B04B;
 }
 
 .recommendation-header {
@@ -653,7 +653,7 @@
 
 .priority-number {
     display: inline-block;
-    background: #667eea;
+    background: #88B04B;
     color: white;
     padding: 0.25rem 0.75rem;
     border-radius: 0.5rem;
@@ -682,7 +682,7 @@
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #88B04B;
 }
 
 .recommendation-actions {
@@ -725,7 +725,7 @@
 
 .rec-metric i {
     font-size: 1.5rem;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .rec-metric div {
@@ -1028,7 +1028,7 @@
 }
 
 .roi-summary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 2rem;
     border-radius: 0.75rem;
@@ -1396,7 +1396,7 @@
 }
 
 .contact-section {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 

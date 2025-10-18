@@ -35,7 +35,7 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
             <h2>Áreas Analizadas</h2>
             <div class="areas-grid">
                 <?php foreach ($areas as $area): ?>
-                <div class="area-card" style="border-left-color: <?php echo $area['color'] ?? '#667eea'; ?>">
+                <div class="area-card" style="border-left-color: <?php echo $area['color'] ?? '#88B04B'; ?>">
                     <div class="area-name"><?php echo htmlspecialchars($area['nombre'] ?? ''); ?></div>
                 </div>
                 <?php endforeach; ?>
@@ -46,7 +46,7 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
 
 <style>
 .onpage-cover {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 60px;
     min-height: 100vh;
@@ -725,7 +725,7 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
                 <div class="index-item">
                     <div class="index-number"><?php echo $index + 1; ?></div>
                     <div class="index-content">
-                        <div class="index-title" style="color: <?php echo $area['color'] ?? '#667eea'; ?>">
+                        <div class="index-title" style="color: <?php echo $area['color'] ?? '#88B04B'; ?>">
                             <?php echo htmlspecialchars($area['nombre'] ?? ''); ?>
                         </div>
                         <div class="index-metrics">
@@ -853,7 +853,7 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
 }
 
 .hallazgo-card.total {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 
@@ -935,7 +935,7 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
     font-size: 20px;
     font-weight: 800;
     color: white;
-    background: #667eea;
+    background: #88B04B;
     width: 40px;
     height: 40px;
     display: flex;
@@ -981,7 +981,7 @@ foreach ($areas as $area):
 
 <!-- Análisis Detallado: <?php echo htmlspecialchars($area['nombre'] ?? ''); ?> -->
 <div class="audit-page area-analysis">
-    <div class="area-header" style="background: linear-gradient(135deg, <?php echo $area['color'] ?? '#667eea'; ?> 0%, <?php echo $area['color'] ?? '#764ba2'; ?>dd 100%);">
+    <div class="area-header" style="background: linear-gradient(135deg, <?php echo $area['color'] ?? '#88B04B'; ?> 0%, <?php echo $area['color'] ?? '#6d8f3c'; ?>dd 100%);">
         <div class="area-badge">Análisis Detallado</div>
         <h1 class="area-title"><?php echo htmlspecialchars($area['nombre'] ?? ''); ?></h1>
         <div class="area-metrics-header">
@@ -1396,7 +1396,7 @@ endforeach;
 .ejemplo-tipo {
     font-size: 14px;
     font-weight: 700;
-    color: #667eea;
+    color: #88B04B;
     margin-bottom: 15px;
 }
 
@@ -1450,7 +1450,7 @@ endforeach;
 
 .ejemplo-arrow {
     font-size: 24px;
-    color: #667eea;
+    color: #88B04B;
     font-weight: bold;
 }
 
@@ -1545,7 +1545,7 @@ endforeach;
 .schema-tipo {
     font-size: 16px;
     font-weight: 700;
-    color: #667eea;
+    color: #88B04B;
 }
 
 .schema-prioridad {
@@ -1602,7 +1602,7 @@ endforeach;
     font-size: 18px;
     font-weight: 800;
     color: white;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     width: 36px;
     height: 36px;
     display: flex;
@@ -1683,7 +1683,7 @@ endforeach;
 
 /* Sección Educativa */
 .onpage-educativo .concepto-educativo {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 30px;
     border-radius: 12px;
@@ -1859,7 +1859,7 @@ endforeach;
 }
 
 .onpage-educativo .entregable-card:hover {
-    border-color: #667eea;
+    border-color: #88B04B;
     box-shadow: 0 4px 12px rgba(102,126,234,0.15);
     transform: translateY(-2px);
 }
@@ -1880,7 +1880,7 @@ endforeach;
     flex-shrink: 0;
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     border-radius: 12px;
     display: flex;
@@ -1931,7 +1931,7 @@ endforeach;
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: #667eea;
+    background: #88B04B;
     color: white;
     padding: 12px 24px;
     border-radius: 8px;
@@ -2145,7 +2145,7 @@ endforeach;
     text-align: center;
     font-size: 13px;
     font-weight: 600;
-    color: #667eea;
+    color: #88B04B;
     line-height: 1.4;
     margin: 0;
 }
@@ -2221,7 +2221,7 @@ endforeach;
 }
 
 .onpage-educativo .tabla-kpis thead {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 
