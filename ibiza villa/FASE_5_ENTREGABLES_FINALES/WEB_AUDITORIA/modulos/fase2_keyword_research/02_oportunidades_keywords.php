@@ -545,19 +545,19 @@
 }
 
 .pos-badge.current {
-    background: #ffc107;
+    background: #88B04B;
     color: #333;
 }
 
 .pos-badge.target {
-    background: #28a745;
+    background: #88B04B;
     color: white;
 }
 
 .improvement {
     display: inline-block;
     margin-left: 0.5rem;
-    color: #28a745;
+    color: #88B04B;
     font-size: 0.85rem;
     font-weight: bold;
 }
@@ -573,7 +573,7 @@
 .difficulty-bar {
     position: absolute;
     height: 100%;
-    background: linear-gradient(90deg, #28a745 0%, #ffc107 50%, #dc3545 100%);
+    background: linear-gradient(90deg, #88B04B 0%, #88B04B 50%, #dc3545 100%);
     border-radius: 0.5rem;
     transition: width 0.3s;
 }
@@ -785,7 +785,7 @@
 }
 
 .growth-badge {
-    background: #28a745;
+    background: #88B04B;
     color: white;
     padding: 0.25rem 0.75rem;
     border-radius: 0.5rem;
@@ -835,7 +835,7 @@
 }
 
 .opportunity-tag.opp-media {
-    background: #fff3cd;
+    background: #f0f7e6;
     color: #856404;
 }
 
@@ -1005,11 +1005,11 @@
 }
 
 .metric-value.conversion {
-    color: #28a745;
+    color: #88B04B;
 }
 
 .metric-value.value {
-    color: #ffc107;
+    color: #88B04B;
 }
 
 .intent-examples {
@@ -1248,7 +1248,7 @@
 .score-fill {
     position: absolute;
     height: 100%;
-    background: linear-gradient(90deg, #28a745 0%, #ffc107 50%, #dc3545 100%);
+    background: linear-gradient(90deg, #88B04B 0%, #88B04B 50%, #dc3545 100%);
     border-radius: 0.5rem;
 }
 
@@ -1363,7 +1363,7 @@
 
 .resource-item.roi {
     font-weight: bold;
-    color: #28a745;
+    color: #88B04B;
 }
 
 .final-recommendations {
@@ -1383,7 +1383,7 @@
     background: white;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
-    border-left: 4px solid #28a745;
+    border-left: 4px solid #88B04B;
 }
 
 .recommendation-card {
@@ -1399,11 +1399,11 @@
 }
 
 .recommendation-card.priority-alta {
-    border-left-color: #ffc107;
+    border-left-color: #88B04B;
 }
 
 .recommendation-card.priority-media {
-    border-left-color: #28a745;
+    border-left-color: #88B04B;
 }
 
 .rec-header {
@@ -1427,12 +1427,12 @@
 }
 
 .recommendation-card.priority-alta .priority-badge {
-    background: #ffc107;
+    background: #88B04B;
     color: #333;
 }
 
 .recommendation-card.priority-media .priority-badge {
-    background: #28a745;
+    background: #88B04B;
     color: white;
 }
 

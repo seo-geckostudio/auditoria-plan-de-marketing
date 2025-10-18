@@ -663,11 +663,11 @@ $paginas = $moduloData['paginas'];
 }
 
 .competitors-table tr.global-player {
-    background: #f0f9ff;
+    background: #f0f7e6;
 }
 
 .competitors-table tr.direct-competitor {
-    background: #fef3f2;
+    background: #f0f7e6;
 }
 
 .position-cell {
@@ -689,17 +689,17 @@ $paginas = $moduloData['paginas'];
 }
 
 .type-plataforma-global {
-    background: #dbeafe;
+    background: #f0f7e6;
     color: #1e40af;
 }
 
 .type-competidor-directo {
-    background: #fee2e2;
+    background: #f0f7e6;
     color: #991b1b;
 }
 
 .type-competidor-local {
-    background: #fef3c7;
+    background: #f0f7e6;
     color: #92400e;
 }
 
@@ -711,17 +711,17 @@ $paginas = $moduloData['paginas'];
 }
 
 .dr-high {
-    background: #10b981;
+    background: #88B04B;
     color: white;
 }
 
 .dr-medium {
-    background: #f59e0b;
+    background: #88B04B;
     color: white;
 }
 
 .dr-low {
-    background: #6b7280;
+    background: #787878;
     color: white;
 }
 
@@ -829,12 +829,12 @@ $paginas = $moduloData['paginas'];
 }
 
 .strengths h5 {
-    color: #10b981;
+    color: #88B04B;
     margin: 0 0 8px 0;
 }
 
 .weaknesses h5 {
-    color: #ef4444;
+    color: #88B04B;
     margin: 0 0 8px 0;
 }
 
@@ -864,7 +864,7 @@ $paginas = $moduloData['paginas'];
 }
 
 .our-position-section {
-    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    background: linear-gradient(135deg, #f0f7e6 0%, #f0f7e6 100%);
     padding: 32px;
     border-radius: 12px;
     margin: 32px 0;
@@ -911,11 +911,11 @@ $paginas = $moduloData['paginas'];
 }
 
 .position-metrics .value.warning {
-    color: #f59e0b;
+    color: #88B04B;
 }
 
 .opportunity-note {
-    background: #d1fae5;
+    background: #f0f7e6;
     padding: 12px 16px;
     border-radius: 6px;
     margin-top: 16px;
@@ -964,7 +964,7 @@ $paginas = $moduloData['paginas'];
     top: 0;
     left: 0;
     height: 100%;
-    background: linear-gradient(90deg, #10b981 0%, #f59e0b 50%, #ef4444 100%);
+    background: linear-gradient(90deg, #88B04B 0%, #88B04B 50%, #88B04B 100%);
 }
 
 .difficulty-bar span {
@@ -987,17 +987,17 @@ $paginas = $moduloData['paginas'];
 }
 
 .opportunity-alta {
-    background: #d1fae5;
+    background: #f0f7e6;
     color: #047857;
 }
 
 .opportunity-media {
-    background: #fed7aa;
+    background: #f0f7e6;
     color: #92400e;
 }
 
 .opportunity-baja {
-    background: #e5e7eb;
+    background: #f5f5f5;
     color: #374151;
 }
 
@@ -1012,22 +1012,22 @@ $paginas = $moduloData['paginas'];
 }
 
 .intent-informacional {
-    background: #dbeafe;
+    background: #f0f7e6;
     color: #1e40af;
 }
 
 .intent-navegacional {
-    background: #fce7f3;
+    background: #f0f7e6;
     color: #9f1239;
 }
 
 .intent-transaccional {
-    background: #dcfce7;
+    background: #f0f7e6;
     color: #15803d;
 }
 
 .intent-comercial {
-    background: #fef3c7;
+    background: #f0f7e6;
     color: #92400e;
 }
 
@@ -1088,17 +1088,17 @@ $paginas = $moduloData['paginas'];
 }
 
 .level-alta {
-    background: #fee2e2;
+    background: #f0f7e6;
     color: #991b1b;
 }
 
 .level-media {
-    background: #fed7aa;
+    background: #f0f7e6;
     color: #92400e;
 }
 
 .level-baja {
-    background: #d1fae5;
+    background: #f0f7e6;
     color: #047857;
 }
 
@@ -1118,18 +1118,18 @@ $paginas = $moduloData['paginas'];
 }
 
 .opportunity-card.priority-high {
-    border-left-color: #10b981;
-    background: #f0fdf4;
+    border-left-color: #88B04B;
+    background: #f0f7e6;
 }
 
 .opportunity-card.priority-medium {
-    border-left-color: #f59e0b;
-    background: #fffbeb;
+    border-left-color: #88B04B;
+    background: #f0f7e6;
 }
 
 .opportunity-card.priority-low {
-    border-left-color: #6b7280;
-    background: #f9fafb;
+    border-left-color: #787878;
+    background: #f5f5f5;
 }
 
 .opportunity-card h5 {
@@ -1166,17 +1166,17 @@ $paginas = $moduloData['paginas'];
 }
 
 .impact-alto {
-    background: #10b981;
+    background: #88B04B;
     color: white;
 }
 
 .impact-medio {
-    background: #f59e0b;
+    background: #88B04B;
     color: white;
 }
 
 .impact-muy-alto {
-    background: #8b5cf6;
+    background: #88B04B;
     color: white;
 }
 
@@ -1195,11 +1195,11 @@ $paginas = $moduloData['paginas'];
 }
 
 .threat-card.probability-alta {
-    border-left: 4px solid #ef4444;
+    border-left: 4px solid #88B04B;
 }
 
 .threat-card.probability-media {
-    border-left: 4px solid #f59e0b;
+    border-left: 4px solid #88B04B;
 }
 
 .threat-header {
@@ -1219,7 +1219,7 @@ $paginas = $moduloData['paginas'];
     border-radius: 4px;
     font-size: 0.8125rem;
     font-weight: 600;
-    background: #fee2e2;
+    background: #f0f7e6;
     color: #991b1b;
 }
 

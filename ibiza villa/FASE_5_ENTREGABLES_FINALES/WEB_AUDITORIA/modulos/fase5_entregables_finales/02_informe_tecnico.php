@@ -306,7 +306,7 @@
 }
 
 .area-estado.estado-excelente {
-    background: #28a745;
+    background: #88B04B;
     color: white;
 }
 
@@ -316,7 +316,7 @@
 }
 
 .area-estado.estado-mejorable {
-    background: #ffc107;
+    background: #88B04B;
     color: #333;
 }
 
@@ -341,7 +341,7 @@
 
 .score-fill {
     height: 100%;
-    background: linear-gradient(90deg, #28a745 0%, #17a2b8 50%, #ffc107 75%, #dc3545 100%);
+    background: linear-gradient(90deg, #88B04B 0%, #17a2b8 50%, #88B04B 75%, #dc3545 100%);
     transition: width 0.3s;
 }
 
@@ -689,7 +689,7 @@
 .area-score-badge.score-88,
 .area-score-badge.score-92,
 .area-score-badge.score-85 {
-    background: #28a745;
+    background: #88B04B;
 }
 
 .area-score-badge.score-72,
@@ -736,12 +736,12 @@
 
 .status-badge.status-correcto,
 .status-badge.status-bueno {
-    background: #28a745;
+    background: #88B04B;
     color: white;
 }
 
 .status-badge.status-mejorable {
-    background: #ffc107;
+    background: #88B04B;
     color: #333;
 }
 
@@ -783,11 +783,11 @@
 }
 
 .stat-value.success {
-    color: #28a745;
+    color: #88B04B;
 }
 
 .stat-value.warning {
-    color: #ffc107;
+    color: #88B04B;
 }
 
 .problems-list {
@@ -798,7 +798,7 @@
     background: white;
     padding: 1.5rem;
     border-radius: 0.75rem;
-    border-left: 4px solid #ffc107;
+    border-left: 4px solid #88B04B;
     margin-bottom: 1rem;
 }
 
@@ -815,7 +815,7 @@
 
 .problem-type {
     padding: 0.25rem 0.75rem;
-    background: #fff3cd;
+    background: #f0f7e6;
     color: #856404;
     border-radius: 0.5rem;
     font-size: 0.85rem;
@@ -839,11 +839,11 @@
     display: flex;
     align-items: flex-start;
     gap: 0.75rem;
-    border-left: 4px solid #28a745;
+    border-left: 4px solid #88B04B;
 }
 
 .problem-solution i {
-    color: #28a745;
+    color: #88B04B;
     font-size: 1.2rem;
     margin-top: 0.25rem;
 }
@@ -853,13 +853,13 @@
     padding: 2rem;
     border-radius: 0.75rem;
     text-align: center;
-    border: 3px solid #28a745;
+    border: 3px solid #88B04B;
     margin-bottom: 1.5rem;
 }
 
 .no-critical-errors i {
     font-size: 3rem;
-    color: #28a745;
+    color: #88B04B;
     margin-bottom: 1rem;
 }
 
@@ -885,7 +885,7 @@
 }
 
 .errors-section.importantes {
-    border-left: 4px solid #ffc107;
+    border-left: 4px solid #88B04B;
 }
 
 .errors-section.menores {
@@ -1004,12 +1004,12 @@
 
 .element-estado.estado-bueno,
 .element-estado.estado-excelente {
-    background: #28a745;
+    background: #88B04B;
     color: white;
 }
 
 .element-estado.estado-mejorable {
-    background: #ffc107;
+    background: #88B04B;
     color: #333;
 }
 
@@ -1048,7 +1048,7 @@
 }
 
 .element-recommendation {
-    background: #fff3cd;
+    background: #f0f7e6;
     padding: 1rem;
     border-radius: 0.5rem;
     display: flex;
@@ -1057,7 +1057,7 @@
 }
 
 .element-recommendation i {
-    color: #ffc107;
+    color: #88B04B;
     font-size: 1.2rem;
     margin-top: 0.25rem;
 }

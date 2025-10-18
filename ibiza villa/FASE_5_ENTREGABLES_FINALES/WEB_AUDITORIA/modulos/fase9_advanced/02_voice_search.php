@@ -25,7 +25,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 }
 
 .voice-search-page .executive-summary {
-    background: linear-gradient(135deg, #54a34a 0%, #6ab85e 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 30px;
     border-radius: 8px;
@@ -69,12 +69,12 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
     border-radius: 8px;
     padding: 25px;
     margin-bottom: 25px;
-    border-left: 4px solid #54a34a;
+    border-left: 4px solid #88B04B;
 }
 
 .voice-search-page .content-section h3 {
     margin: 0 0 20px 0;
-    color: #54a34a;
+    color: #88B04B;
     font-size: 20px;
     font-weight: 600;
 }
@@ -118,7 +118,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 }
 
 .voice-search-page .readiness-status.parcial {
-    background: #fff3cd;
+    background: #f0f7e6;
     color: #856404;
 }
 
@@ -137,7 +137,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 
 .voice-search-page .keywords-table th {
     background: #f0f7ee;
-    color: #54a34a;
+    color: #88B04B;
     font-weight: 600;
     font-size: 14px;
 }
@@ -174,7 +174,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
     border-radius: 6px;
     padding: 15px;
     margin-bottom: 12px;
-    border-left: 3px solid #54a34a;
+    border-left: 3px solid #88B04B;
 }
 
 .voice-search-page .question-header {
@@ -192,7 +192,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 }
 
 .voice-search-page .volume-badge {
-    background: #54a34a;
+    background: #88B04B;
     color: white;
     padding: 4px 10px;
     border-radius: 10px;
@@ -217,7 +217,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 }
 
 .voice-search-page .coverage-yes {
-    color: #28a745;
+    color: #88B04B;
 }
 
 .voice-search-page .coverage-no {
@@ -253,7 +253,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 }
 
 .voice-search-page .check-icon.yes {
-    background: #28a745;
+    background: #88B04B;
     color: white;
 }
 
@@ -263,12 +263,12 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 }
 
 .voice-search-page .opportunity-card {
-    background: #fff9e6;
+    background: #f0f7e6;
     border: 1px solid #ffeb3b;
     border-radius: 6px;
     padding: 20px;
     margin-bottom: 15px;
-    border-left: 4px solid #ffc107;
+    border-left: 4px solid #88B04B;
 }
 
 .voice-search-page .opportunity-header {
@@ -297,7 +297,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 }
 
 .voice-search-page .impact-badge.medio {
-    background: #ffc107;
+    background: #88B04B;
     color: #333;
 }
 
@@ -314,7 +314,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
     padding: 15px;
     border-radius: 6px;
     margin-bottom: 15px;
-    border-left: 4px solid #54a34a;
+    border-left: 4px solid #88B04B;
 }
 
 .voice-search-page .action-header {

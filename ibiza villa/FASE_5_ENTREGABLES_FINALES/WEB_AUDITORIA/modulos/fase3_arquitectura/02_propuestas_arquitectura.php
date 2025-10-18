@@ -502,7 +502,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 </div>
 
 <style>
-/* Estilos profesionales para Propuestas Arquitectura - Color corporativo #54a34a */
+/* Estilos profesionales para Propuestas Arquitectura - Color corporativo #88B04B */
 .propuestas-arquitectura-page {
     font-family: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
     color: #333;
@@ -510,7 +510,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .propuestas-arquitectura-page .page-header {
-    border-bottom: 3px solid #54a34a;
+    border-bottom: 3px solid #88B04B;
     padding-bottom: 20px;
     margin-bottom: 30px;
 }
@@ -546,7 +546,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     color: #1a1a1a;
     margin: 0 0 15px 0;
     padding-bottom: 10px;
-    border-bottom: 2px solid #54a34a;
+    border-bottom: 2px solid #88B04B;
 }
 
 .propuestas-arquitectura-page .section-intro {
@@ -557,7 +557,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
 /* Executive Summary */
 .propuestas-arquitectura-page .executive-summary {
-    background: linear-gradient(135deg, #54a34a 0%, #6ab85e 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 30px;
     border-radius: 8px;
@@ -636,14 +636,14 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
 .propuestas-arquitectura-page .arrow-icon {
     font-size: 48px;
-    color: #54a34a;
+    color: #88B04B;
     font-weight: bold;
 }
 
 .propuestas-arquitectura-page .arrow-label {
     font-size: 13px;
     font-weight: 600;
-    color: #54a34a;
+    color: #88B04B;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -664,7 +664,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .propuestas-arquitectura-page .architecture-box.proposed {
-    border-color: #54a34a;
+    border-color: #88B04B;
     background: #f0f7ee;
 }
 
@@ -747,7 +747,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     text-transform: uppercase;
     letter-spacing: 0.3px;
     color: #555;
-    border-bottom: 2px solid #54a34a;
+    border-bottom: 2px solid #88B04B;
 }
 
 .propuestas-arquitectura-page .data-table td {
@@ -805,7 +805,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 .propuestas-arquitectura-page .categoria-card {
     background: white;
     border: 1px solid #e0e0e0;
-    border-left: 4px solid #54a34a;
+    border-left: 4px solid #88B04B;
     border-radius: 6px;
     margin-bottom: 25px;
     overflow: hidden;
@@ -868,7 +868,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
 .propuestas-arquitectura-page .keyword-tag {
     background: #f0f7ee;
-    border: 1px solid #54a34a;
+    border: 1px solid #88B04B;
     padding: 4px 10px;
     border-radius: 4px;
     font-size: 12px;
@@ -907,7 +907,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 .propuestas-arquitectura-page .categorias-summary {
     background: #f0f7ee;
     padding: 15px 20px;
-    border-left: 4px solid #54a34a;
+    border-left: 4px solid #88B04B;
     margin-top: 20px;
     border-radius: 4px;
 }
@@ -964,7 +964,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 .propuestas-arquitectura-page .fase-numero {
     min-width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #54a34a 0%, #6ab85e 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     display: flex;
     align-items: center;
@@ -1016,7 +1016,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     margin-top: 15px;
     padding: 12px;
     background: #f0f7ee;
-    border-left: 3px solid #54a34a;
+    border-left: 3px solid #88B04B;
     border-radius: 4px;
 }
 
@@ -1031,7 +1031,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 .propuestas-arquitectura-page .impacto-card {
     background: white;
     border: 1px solid #e0e0e0;
-    border-left: 4px solid #54a34a;
+    border-left: 4px solid #88B04B;
     padding: 20px;
     border-radius: 6px;
     text-align: center;
@@ -1048,7 +1048,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 .propuestas-arquitectura-page .impacto-number {
     font-size: 36px;
     font-weight: 700;
-    color: #54a34a;
+    color: #88B04B;
     margin-bottom: 5px;
 }
 
@@ -1120,7 +1120,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 .propuestas-arquitectura-page .recommendation-item {
     background: white;
     border: 1px solid #e0e0e0;
-    border-left: 3px solid #54a34a;
+    border-left: 3px solid #88B04B;
     padding: 15px 20px;
     margin-bottom: 12px;
     border-radius: 4px;

@@ -666,7 +666,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 }
 
 .wireframes-page .badge-success {
-    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #20c997 100%);
     color: white;
 }
 
@@ -780,7 +780,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 }
 
 .wireframes-page .highlight-impact {
-    color: #28a745;
+    color: #88B04B;
     font-weight: 600;
 }
 
@@ -816,7 +816,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 /* Botón Descarga */
 .wireframes-page .btn-download {
     display: inline-block;
-    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #20c997 100%);
     color: white;
     padding: 12px 28px;
     border-radius: 6px;
@@ -916,7 +916,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 }
 
 .wireframes-page .columna-despues .columna-header {
-    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #20c997 100%);
     color: white;
 }
 
@@ -992,19 +992,19 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 .wireframes-page .problema-dato,
 .wireframes-page .solucion-dato {
     display: inline-block;
-    background: #fff3cd;
+    background: #f0f7e6;
     color: #856404;
     padding: 6px 12px;
     border-radius: 4px;
     font-size: 0.9rem;
     font-weight: 600;
-    border-left: 3px solid #ffc107;
+    border-left: 3px solid #88B04B;
 }
 
 .wireframes-page .solucion-dato {
     background: #d4edda;
     color: #155724;
-    border-left-color: #28a745;
+    border-left-color: #88B04B;
 }
 
 /* Flecha Transformación */
@@ -1066,7 +1066,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 }
 
 .wireframes-page .score-alto {
-    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #20c997 100%);
     color: white;
 }
 
@@ -1166,7 +1166,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
     border-radius: 4px;
     font-size: 0.9rem;
     font-weight: 600;
-    border-left: 3px solid #28a745;
+    border-left: 3px solid #88B04B;
 }
 
 /* =====================================
@@ -1234,13 +1234,13 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 }
 
 .wireframes-page .mejora-positiva {
-    color: #28a745;
+    color: #88B04B;
     font-weight: 700;
     font-size: 1.05rem;
 }
 
 .wireframes-page .fila-destacada {
-    background: #fff9e6 !important;
+    background: #f0f7e6 !important;
     border-top: 2px solid #ffd700;
     border-bottom: 2px solid #ffd700;
 }

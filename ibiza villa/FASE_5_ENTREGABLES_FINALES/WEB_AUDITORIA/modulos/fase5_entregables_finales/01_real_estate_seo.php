@@ -348,7 +348,7 @@ $moduloData = [
 
 .estrategia-vertical {
     background: linear-gradient(135deg, #f0fff4 0%, #d4f4dd 100%);
-    border-color: #28a745;
+    border-color: #88B04B;
 }
 
 .pilares-grid {
@@ -419,13 +419,13 @@ $moduloData = [
 }
 
 .fila-destacada {
-    background: linear-gradient(135deg, #fff9e6 0%, #ffe6cc 100%);
+    background: linear-gradient(135deg, #f0f7e6 0%, #ffe6cc 100%);
     border-left: 4px solid #ffd700;
     font-weight: bold;
 }
 
 .mejora-positiva {
-    color: #28a745;
+    color: #88B04B;
     font-weight: bold;
 }
 
@@ -438,12 +438,12 @@ $moduloData = [
 }
 
 .badge-antes {
-    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 
 .badge-despues {
-    background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 

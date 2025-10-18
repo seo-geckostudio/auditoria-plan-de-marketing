@@ -680,11 +680,11 @@
 }
 
 .strengths-section h2 {
-    color: #28a745;
+    color: #88B04B;
 }
 
 .opportunities-section h2 {
-    color: #ffc107;
+    color: #88B04B;
 }
 
 .critical-issues-section h2 {
@@ -701,13 +701,13 @@
     background: #f8f9fa;
     padding: 1.5rem;
     border-radius: 0.75rem;
-    border-top: 4px solid #28a745;
+    border-top: 4px solid #88B04B;
 }
 
 .strength-icon {
     width: 50px;
     height: 50px;
-    background: #28a745;
+    background: #88B04B;
     color: white;
     border-radius: 50%;
     display: flex;
@@ -719,7 +719,7 @@
 
 .strength-card h3 {
     margin: 0 0 1rem 0;
-    color: #28a745;
+    color: #88B04B;
 }
 
 .strength-card ul {
@@ -738,7 +738,7 @@
     content: '✓';
     position: absolute;
     left: 0;
-    color: #28a745;
+    color: #88B04B;
     font-weight: bold;
 }
 
@@ -746,7 +746,7 @@
     background: #f8f9fa;
     padding: 1.5rem;
     border-radius: 0.75rem;
-    border-left: 4px solid #ffc107;
+    border-left: 4px solid #88B04B;
     margin-bottom: 1.5rem;
 }
 
@@ -776,7 +776,7 @@
 }
 
 .impact-badge.impact-alto {
-    background: #28a745;
+    background: #88B04B;
     color: white;
 }
 
@@ -791,7 +791,7 @@
 }
 
 .effort-badge.effort-medio {
-    background: #fff3cd;
+    background: #f0f7e6;
     color: #856404;
 }
 
@@ -816,7 +816,7 @@
     content: '→';
     position: absolute;
     left: 0;
-    color: #ffc107;
+    color: #88B04B;
     font-weight: bold;
 }
 
@@ -845,7 +845,7 @@
 
 .issue-card.severity-media-alta,
 .issue-card.severity-media {
-    border-color: #ffc107;
+    border-color: #88B04B;
 }
 
 .issue-header {
@@ -888,11 +888,11 @@
 }
 
 .issue-solution {
-    border-left: 4px solid #28a745;
+    border-left: 4px solid #88B04B;
 }
 
 .issue-solution i {
-    color: #28a745;
+    color: #88B04B;
     margin-right: 0.5rem;
 }
 </style>
@@ -1128,7 +1128,7 @@
 }
 
 .priority-badge.priority-alta {
-    background: #ffc107;
+    background: #88B04B;
     color: #333;
 }
 
@@ -1152,7 +1152,7 @@
     content: '✓';
     position: absolute;
     left: 0;
-    color: #28a745;
+    color: #88B04B;
     font-weight: bold;
 }
 

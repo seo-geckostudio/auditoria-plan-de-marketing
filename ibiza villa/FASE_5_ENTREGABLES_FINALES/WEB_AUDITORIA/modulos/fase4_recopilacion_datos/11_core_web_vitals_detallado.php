@@ -402,7 +402,7 @@ $moduloData = [
 
 .columna-despues {
     background: linear-gradient(135deg, #f0fff4 0%, #d4f4dd 100%);
-    border-left: 5px solid #28a745;
+    border-left: 5px solid #88B04B;
 }
 
 .flecha-transformacion {
@@ -440,13 +440,13 @@ $moduloData = [
 }
 
 .fila-destacada {
-    background: linear-gradient(135deg, #fff9e6 0%, #ffe6cc 100%);
+    background: linear-gradient(135deg, #f0f7e6 0%, #ffe6cc 100%);
     border-left: 4px solid #ffd700;
     font-weight: bold;
 }
 
 .mejora-positiva {
-    color: #28a745;
+    color: #88B04B;
     font-weight: bold;
 }
 

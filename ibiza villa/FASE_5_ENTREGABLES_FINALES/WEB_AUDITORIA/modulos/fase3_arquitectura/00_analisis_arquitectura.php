@@ -930,7 +930,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 </div>
 
 <style>
-/* Estilos profesionales para Análisis de Arquitectura - Color corporativo #54a34a */
+/* Estilos profesionales para Análisis de Arquitectura - Color corporativo #88B04B */
 .arquitectura-page {
     font-family: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
     color: #333;
@@ -938,7 +938,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .arquitectura-page .page-header {
-    border-bottom: 3px solid #54a34a;
+    border-bottom: 3px solid #88B04B;
     padding-bottom: 20px;
     margin-bottom: 30px;
 }
@@ -970,7 +970,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
 /* Executive Summary */
 .arquitectura-page .executive-summary {
-    background: linear-gradient(135deg, #54a34a 0%, #6ab85e 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 30px;
     border-radius: 8px;
@@ -1045,7 +1045,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     color: #1a1a1a;
     margin: 0 0 20px 0;
     padding-bottom: 10px;
-    border-bottom: 2px solid #54a34a;
+    border-bottom: 2px solid #88B04B;
 }
 
 .arquitectura-page section h3 {
@@ -1076,7 +1076,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     text-transform: uppercase;
     letter-spacing: 0.3px;
     color: #555;
-    border-bottom: 2px solid #54a34a;
+    border-bottom: 2px solid #88B04B;
 }
 
 .arquitectura-page .data-table td {
@@ -1153,7 +1153,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .arquitectura-page .badge-current {
-    background: #54a34a;
+    background: #88B04B;
     color: white;
     padding: 2px 8px;
     border-radius: 3px;
@@ -1172,7 +1172,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 .arquitectura-page .metric-box {
     background: white;
     border: 1px solid #e0e0e0;
-    border-left: 4px solid #54a34a;
+    border-left: 4px solid #88B04B;
     padding: 20px;
     border-radius: 4px;
 }
@@ -1224,7 +1224,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .arquitectura-page .prof-bar {
-    background: linear-gradient(90deg, #54a34a 0%, #6ab85e 100%);
+    background: linear-gradient(90deg, #88B04B 0%, #6d8f3c 100%);
     height: 100%;
     display: flex;
     align-items: center;
@@ -1378,7 +1378,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 .arquitectura-page .recommendation-item {
     background: white;
     border: 1px solid #e0e0e0;
-    border-left: 3px solid #54a34a;
+    border-left: 3px solid #88B04B;
     padding: 15px 20px;
     margin-bottom: 12px;
     border-radius: 4px;
@@ -1416,7 +1416,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 .arquitectura-page .distribucion-insight,
 .arquitectura-page .benchmark-insights {
     background: #f9f9f9;
-    border-left: 4px solid #54a34a;
+    border-left: 4px solid #88B04B;
     padding: 20px;
     margin: 20px 0;
     border-radius: 4px;
@@ -1643,7 +1643,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .arquitectura-page .entregable-card.priority-high {
-    border-left: 5px solid #ffc107;
+    border-left: 5px solid #88B04B;
 }
 
 .arquitectura-page .entregable-icon {
@@ -1723,7 +1723,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
 .arquitectura-page .como-usar-entregables {
     background: #f9f9f9;
-    border-left: 4px solid #54a34a;
+    border-left: 4px solid #88B04B;
     padding: 20px;
     border-radius: 8px;
 }
@@ -1805,7 +1805,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .arquitectura-page .comparacion-header.success {
-    background: linear-gradient(135deg, #28a745, #218838);
+    background: linear-gradient(135deg, #88B04B, #6d8f3c);
 }
 
 .arquitectura-page .comparacion-header h3 {
@@ -1873,7 +1873,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
 .arquitectura-page .arq-nodo.categoria.mejorado {
     background: #d4edda;
-    border-color: #28a745;
+    border-color: #88B04B;
     color: #155724;
 }
 
@@ -1899,7 +1899,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
 .arquitectura-page .arq-nodo.pagina.mejorado {
     background: #d4edda;
-    border-color: #28a745;
+    border-color: #88B04B;
     color: #155724;
 }
 
@@ -1969,7 +1969,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .arquitectura-page .mejora-item {
-    border-left: 3px solid #28a745;
+    border-left: 3px solid #88B04B;
 }
 
 .arquitectura-page .icon-error,
@@ -2068,7 +2068,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .arquitectura-page .section-badge.badge-despues {
-    background: linear-gradient(135deg, #28a745, #218838);
+    background: linear-gradient(135deg, #88B04B, #6d8f3c);
     color: white;
     box-shadow: 0 2px 4px rgba(40,167,69,0.3);
 }
@@ -2158,8 +2158,8 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .arquitectura-page .tabla-kpis tbody tr.highlight-row {
-    background: #fff9e6;
-    border-left: 4px solid #ffc107;
+    background: #f0f7e6;
+    border-left: 4px solid #88B04B;
 }
 
 .arquitectura-page .tabla-kpis tbody tr.highlight-row:hover {
@@ -2204,7 +2204,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .arquitectura-page .valor-numero.success {
-    color: #28a745;
+    color: #88B04B;
 }
 
 .arquitectura-page .valor-unidad {
@@ -2229,7 +2229,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
 .arquitectura-page .mejora-badge.success {
     background: linear-gradient(135deg, #d4edda, #c3e6cb);
-    border: 2px solid #28a745;
+    border: 2px solid #88B04B;
 }
 
 .arquitectura-page .mejora-badge.large {
@@ -2240,7 +2240,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     display: block;
     font-size: 20px;
     font-weight: 700;
-    color: #28a745;
+    color: #88B04B;
     margin-bottom: 2px;
 }
 

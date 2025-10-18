@@ -237,12 +237,12 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 }
 
 .voice-search-page .csv-badge-success {
-    background: #28a745;
+    background: #88B04B;
     color: white;
 }
 
 .voice-search-page .csv-badge-warning {
-    background: #ffc107;
+    background: #88B04B;
     color: #333;
 }
 
@@ -278,7 +278,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
     content: "✓";
     position: absolute;
     left: 5px;
-    color: #28a745;
+    color: #88B04B;
     font-weight: bold;
 }
 
@@ -310,7 +310,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
     margin-top: 15px;
     padding: 12px;
     background: #e8f5e9;
-    border-left: 4px solid #28a745;
+    border-left: 4px solid #88B04B;
     border-radius: 4px;
     font-size: 14px;
     color: #155724;
@@ -381,7 +381,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 }
 
 .voice-search-page .badge-success {
-    background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     box-shadow: 0 2px 6px rgba(40, 167, 69, 0.3);
 }
@@ -410,7 +410,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 
 .voice-search-page .solucion-item {
     background: #f0f8f4;
-    border-left: 4px solid #28a745;
+    border-left: 4px solid #88B04B;
 }
 
 .voice-search-page .problema-item:hover,
@@ -441,14 +441,14 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 }
 
 .voice-search-page .impacto-negocio-antes {
-    background: #fff3cd;
-    border-left: 4px solid #ffc107;
+    background: #f0f7e6;
+    border-left: 4px solid #88B04B;
     color: #856404;
 }
 
 .voice-search-page .impacto-negocio-despues {
     background: #d4edda;
-    border-left: 4px solid #28a745;
+    border-left: 4px solid #88B04B;
     color: #155724;
 }
 
@@ -550,7 +550,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 .voice-search-page .timeline-content em {
     display: block;
     margin-top: 10px;
-    color: #28a745;
+    color: #88B04B;
     font-style: normal;
     font-weight: 600;
 }
@@ -598,11 +598,11 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 }
 
 .voice-search-page .tabla-kpis .fila-destacada:hover {
-    background: #fff3cd;
+    background: #f0f7e6;
 }
 
 .voice-search-page .mejora-positiva {
-    color: #28a745;
+    color: #88B04B;
     font-weight: 700;
 }
 
@@ -610,8 +610,8 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
     margin-top: 30px;
     display: flex;
     gap: 20px;
-    background: #fff3cd;
-    border-left: 5px solid #ffc107;
+    background: #f0f7e6;
+    border-left: 5px solid #88B04B;
     padding: 20px;
     border-radius: 8px;
 }
@@ -671,7 +671,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 /* SECCIONES CONTENIDO ORIGINAL */
 
 .voice-search-page .executive-summary {
-    background: linear-gradient(135deg, #54a34a 0%, #6ab85e 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 30px;
     border-radius: 8px;
@@ -715,12 +715,12 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
     border-radius: 8px;
     padding: 25px;
     margin-bottom: 25px;
-    border-left: 4px solid #54a34a;
+    border-left: 4px solid #88B04B;
 }
 
 .voice-search-page .content-section h3 {
     margin: 0 0 20px 0;
-    color: #54a34a;
+    color: #88B04B;
     font-size: 20px;
     font-weight: 600;
 }
@@ -764,7 +764,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 }
 
 .voice-search-page .readiness-status.parcial {
-    background: #fff3cd;
+    background: #f0f7e6;
     color: #856404;
 }
 
@@ -783,7 +783,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 
 .voice-search-page .keywords-table th {
     background: #f0f7ee;
-    color: #54a34a;
+    color: #88B04B;
     font-weight: 600;
     font-size: 14px;
 }
@@ -820,7 +820,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
     border-radius: 6px;
     padding: 15px;
     margin-bottom: 12px;
-    border-left: 3px solid #54a34a;
+    border-left: 3px solid #88B04B;
 }
 
 .voice-search-page .question-header {
@@ -838,7 +838,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 }
 
 .voice-search-page .volume-badge {
-    background: #54a34a;
+    background: #88B04B;
     color: white;
     padding: 4px 10px;
     border-radius: 10px;
@@ -863,7 +863,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 }
 
 .voice-search-page .coverage-yes {
-    color: #28a745;
+    color: #88B04B;
 }
 
 .voice-search-page .coverage-no {
@@ -899,7 +899,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 }
 
 .voice-search-page .check-icon.yes {
-    background: #28a745;
+    background: #88B04B;
     color: white;
 }
 
@@ -909,12 +909,12 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 }
 
 .voice-search-page .opportunity-card {
-    background: #fff9e6;
+    background: #f0f7e6;
     border: 1px solid #ffeb3b;
     border-radius: 6px;
     padding: 20px;
     margin-bottom: 15px;
-    border-left: 4px solid #ffc107;
+    border-left: 4px solid #88B04B;
 }
 
 .voice-search-page .opportunity-header {
@@ -943,7 +943,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 }
 
 .voice-search-page .impact-badge.medio {
-    background: #ffc107;
+    background: #88B04B;
     color: #333;
 }
 
@@ -960,7 +960,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
     padding: 15px;
     border-radius: 6px;
     margin-bottom: 15px;
-    border-left: 4px solid #54a34a;
+    border-left: 4px solid #88B04B;
 }
 
 .voice-search-page .action-header {

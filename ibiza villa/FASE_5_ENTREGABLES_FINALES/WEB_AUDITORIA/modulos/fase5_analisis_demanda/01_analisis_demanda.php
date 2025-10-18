@@ -58,7 +58,7 @@ $paginas = $datosModulo['paginas'];
 
 <style>
 .demand-cover-page {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #059669 100%);
     padding: 60px;
     min-height: 100vh;
     color: white;
@@ -294,7 +294,7 @@ foreach ($paginas as $index => $pagina):
 
 .keyword-research-page .subtitle {
     font-size: 18px;
-    color: #10b981;
+    color: #88B04B;
     margin: 0;
     font-weight: 600;
 }
@@ -325,18 +325,18 @@ foreach ($paginas as $index => $pagina):
     padding: 25px;
     background: #f7fafc;
     border-radius: 14px;
-    border: 2px solid #e2e8f0;
+    border: 2px solid #f5f5f5;
 }
 
 .summary-metric.highlight {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #059669 100%);
     color: white;
     border: none;
 }
 
 .summary-metric .metric-icon {
     font-size: 36px;
-    color: #10b981;
+    color: #88B04B;
     margin-bottom: 12px;
 }
 
@@ -388,7 +388,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .markets-table thead tr {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #059669 100%);
     color: white;
 }
 
@@ -406,7 +406,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .markets-table tbody tr {
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid #f5f5f5;
 }
 
 .markets-table tbody tr:hover {
@@ -441,12 +441,12 @@ foreach ($paginas as $index => $pagina):
 }
 
 .position-badge.good {
-    background: #d1fae5;
+    background: #f0f7e6;
     color: #065f46;
 }
 
 .position-badge.warning {
-    background: #fef3c7;
+    background: #f0f7e6;
     color: #92400e;
 }
 
@@ -659,7 +659,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .current-situation h2 i {
-    color: #10b981;
+    color: #88B04B;
 }
 
 .situation-grid {
@@ -676,7 +676,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .situation-metric.highlight {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #059669 100%);
     color: white;
 }
 
@@ -704,7 +704,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .strengths-section {
-    background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+    background: linear-gradient(135deg, #f0f7e6 0%, #a7f3d0 100%);
     border-radius: 14px;
     padding: 25px;
     margin-bottom: 25px;
@@ -746,7 +746,7 @@ foreach ($paginas as $index => $pagina):
     content: "✓";
     position: absolute;
     left: 10px;
-    color: #10b981;
+    color: #88B04B;
     font-weight: bold;
     font-size: 16px;
 }
@@ -770,7 +770,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .opportunities-section h3 i {
-    color: #f59e0b;
+    color: #88B04B;
     font-size: 22px;
 }
 
@@ -782,7 +782,7 @@ foreach ($paginas as $index => $pagina):
 
 .opportunities-table thead tr {
     background: #f7fafc;
-    border-bottom: 2px solid #e2e8f0;
+    border-bottom: 2px solid #f5f5f5;
 }
 
 .opportunities-table th {
@@ -800,7 +800,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .opportunities-table tbody tr {
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid #f5f5f5;
 }
 
 .opportunities-table tbody tr:hover {
@@ -824,7 +824,7 @@ foreach ($paginas as $index => $pagina):
 
 .numeric-cell.strong {
     font-weight: 800;
-    color: #10b981;
+    color: #88B04B;
     font-size: 15px;
 }
 
@@ -841,12 +841,12 @@ foreach ($paginas as $index => $pagina):
 }
 
 .priority-badge.priority-alta {
-    background: #fee2e2;
+    background: #f0f7e6;
     color: #991b1b;
 }
 
 .priority-badge.priority-media {
-    background: #fef3c7;
+    background: #f0f7e6;
     color: #92400e;
 }
 
@@ -865,11 +865,11 @@ foreach ($paginas as $index => $pagina):
 }
 
 .action-plan-card.phase-1 {
-    border-left: 5px solid #10b981;
+    border-left: 5px solid #88B04B;
 }
 
 .action-plan-card.phase-2 {
-    border-left: 5px solid #3b82f6;
+    border-left: 5px solid #88B04B;
 }
 
 .action-plan-card h4 {
@@ -883,11 +883,11 @@ foreach ($paginas as $index => $pagina):
 }
 
 .action-plan-card.phase-1 h4 i {
-    color: #10b981;
+    color: #88B04B;
 }
 
 .action-plan-card.phase-2 h4 i {
-    color: #3b82f6;
+    color: #88B04B;
 }
 
 .action-plan-card ul {
@@ -915,11 +915,11 @@ foreach ($paginas as $index => $pagina):
 }
 
 .action-plan-card.phase-1 ul li:before {
-    color: #10b981;
+    color: #88B04B;
 }
 
 .action-plan-card.phase-2 ul li:before {
-    color: #3b82f6;
+    color: #88B04B;
 }
 
 .chart-compact {
@@ -1145,7 +1145,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .def-stat.highlight .stat-value {
-    color: #10b981;
+    color: #88B04B;
 }
 
 .def-stat .stat-label {
@@ -1196,7 +1196,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .trans-keywords-table tbody tr {
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid #f5f5f5;
 }
 
 .trans-keywords-table tbody tr:hover {
@@ -1209,7 +1209,7 @@ foreach ($paginas as $index => $pagina):
 
 .conversion-cell {
     text-align: center;
-    color: #10b981;
+    color: #88B04B;
     font-size: 14px;
 }
 
@@ -1238,7 +1238,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .recommendations-section h2 i {
-    color: #f59e0b;
+    color: #88B04B;
 }
 
 .recommendations-grid {
@@ -1254,14 +1254,14 @@ foreach ($paginas as $index => $pagina):
     padding: 18px;
     background: #f7fafc;
     border-radius: 10px;
-    border-left: 4px solid #10b981;
+    border-left: 4px solid #88B04B;
 }
 
 .rec-number {
     font-size: 20px;
     font-weight: 800;
     color: white;
-    background: #10b981;
+    background: #88B04B;
     width: 36px;
     height: 36px;
     display: flex;
@@ -1487,11 +1487,11 @@ foreach ($paginas as $index => $pagina):
 }
 
 .dafo-compact.fortalezas {
-    border-left: 5px solid #10b981;
+    border-left: 5px solid #88B04B;
 }
 
 .dafo-compact.debilidades {
-    border-left: 5px solid #ef4444;
+    border-left: 5px solid #88B04B;
 }
 
 .dafo-compact h3 {
@@ -1505,11 +1505,11 @@ foreach ($paginas as $index => $pagina):
 }
 
 .dafo-compact.fortalezas h3 i {
-    color: #10b981;
+    color: #88B04B;
 }
 
 .dafo-compact.debilidades h3 i {
-    color: #ef4444;
+    color: #88B04B;
 }
 
 .dafo-compact ul {
@@ -1538,11 +1538,11 @@ foreach ($paginas as $index => $pagina):
 }
 
 .dafo-compact.fortalezas ul li:before {
-    color: #10b981;
+    color: #88B04B;
 }
 
 .dafo-compact.debilidades ul li:before {
-    color: #ef4444;
+    color: #88B04B;
 }
 
 .quick-wins-section {
@@ -1564,7 +1564,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .quick-wins-section h2 i {
-    color: #f59e0b;
+    color: #88B04B;
 }
 
 .quick-wins-grid {
@@ -1577,7 +1577,7 @@ foreach ($paginas as $index => $pagina):
     padding: 18px;
     background: #f7fafc;
     border-radius: 10px;
-    border-left: 4px solid #f59e0b;
+    border-left: 4px solid #88B04B;
 }
 
 .qw-header {
@@ -1593,12 +1593,12 @@ foreach ($paginas as $index => $pagina):
 }
 
 .qw-roi.roi-muy-alto {
-    background: #dcfce7;
+    background: #f0f7e6;
     color: #065f46;
 }
 
 .qw-roi.roi-alto {
-    background: #dbeafe;
+    background: #f0f7e6;
     color: #1e40af;
 }
 
@@ -1624,7 +1624,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .qw-metric i {
-    color: #10b981;
+    color: #88B04B;
 }
 
 .strategy-timeline {
@@ -1646,7 +1646,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .strategy-timeline h2 i {
-    color: #3b82f6;
+    color: #88B04B;
 }
 
 .timeline-phases {
@@ -1664,7 +1664,7 @@ foreach ($paginas as $index => $pagina):
 .phase-badge {
     display: inline-block;
     padding: 6px 14px;
-    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     border-radius: 15px;
     font-size: 12px;
@@ -1691,7 +1691,7 @@ foreach ($paginas as $index => $pagina):
     content: "→";
     position: absolute;
     left: 0;
-    color: #3b82f6;
+    color: #88B04B;
     font-weight: bold;
 }
 
@@ -1733,7 +1733,7 @@ foreach ($paginas as $index => $pagina):
     content: "✓";
     position: absolute;
     left: 10px;
-    color: #10b981;
+    color: #88B04B;
     font-weight: bold;
     font-size: 14px;
 }

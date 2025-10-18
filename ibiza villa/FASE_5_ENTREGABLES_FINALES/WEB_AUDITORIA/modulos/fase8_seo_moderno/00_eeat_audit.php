@@ -26,7 +26,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .eeat-analysis-page .executive-summary {
-    background: linear-gradient(135deg, #54a34a 0%, #6ab85e 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 30px;
     border-radius: 8px;
@@ -70,12 +70,12 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     border-radius: 8px;
     padding: 25px;
     margin-bottom: 25px;
-    border-left: 4px solid #54a34a;
+    border-left: 4px solid #88B04B;
 }
 
 .eeat-analysis-page .eeat-section h3 {
     margin: 0 0 20px 0;
-    color: #54a34a;
+    color: #88B04B;
     font-size: 20px;
     font-weight: 600;
 }
@@ -90,7 +90,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .eeat-analysis-page .score-badge {
-    background: #54a34a;
+    background: #88B04B;
     color: white;
     padding: 8px 16px;
     border-radius: 20px;
@@ -107,7 +107,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .eeat-analysis-page .score-badge.high {
-    background: #54a34a;
+    background: #88B04B;
 }
 
 .eeat-analysis-page .signals-grid {
@@ -120,7 +120,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     background: #fafafa;
     padding: 15px;
     border-radius: 6px;
-    border-left: 3px solid #54a34a;
+    border-left: 3px solid #88B04B;
 }
 
 .eeat-analysis-page .signal-card h4 {
@@ -145,7 +145,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .eeat-analysis-page .status-indicator.presente {
-    background: #54a34a;
+    background: #88B04B;
 }
 
 .eeat-analysis-page .status-indicator.parcial {
@@ -176,7 +176,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
 .eeat-analysis-page .comparison-table th {
     background: #f0f7ee;
-    color: #54a34a;
+    color: #88B04B;
     font-weight: 600;
     font-size: 14px;
 }
@@ -186,8 +186,8 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .eeat-analysis-page .gaps-section {
-    background: #fff3cd;
-    border: 1px solid #ffc107;
+    background: #f0f7e6;
+    border: 1px solid #88B04B;
     border-radius: 8px;
     padding: 20px;
     margin: 20px 0;
@@ -203,7 +203,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     padding: 15px;
     border-radius: 6px;
     margin-bottom: 12px;
-    border-left: 3px solid #ffc107;
+    border-left: 3px solid #88B04B;
 }
 
 .eeat-analysis-page .gap-header {
@@ -251,13 +251,13 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     padding: 15px;
     border-radius: 6px;
     margin-bottom: 12px;
-    border-left: 4px solid #54a34a;
+    border-left: 4px solid #88B04B;
     display: flex;
     gap: 15px;
 }
 
 .eeat-analysis-page .rec-number {
-    background: #54a34a;
+    background: #88B04B;
     color: white;
     width: 30px;
     height: 30px;
@@ -295,7 +295,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
 .eeat-analysis-page .metric-fill {
     height: 100%;
-    background: #54a34a;
+    background: #88B04B;
     transition: width 0.3s ease;
 }
 
@@ -576,7 +576,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     margin: 20px 0;
     padding: 20px;
     background: #fffbf0;
-    border-left: 4px solid #ffc107;
+    border-left: 4px solid #88B04B;
     border-radius: 6px;
 }
 
@@ -658,7 +658,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .eeat-educativo .texto-verde {
-    color: #28a745;
+    color: #88B04B;
     font-weight: 600;
 }
 
@@ -693,7 +693,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .eeat-educativo .header-despues {
-    background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
 }
 
 .eeat-educativo .comparacion-contenido {
@@ -750,7 +750,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .eeat-educativo .footer-despues {
-    background: linear-gradient(135deg, #218838 0%, #1e7e34 100%);
+    background: linear-gradient(135deg, #6d8f3c 0%, #1e7e34 100%);
 }
 
 .eeat-educativo .footer-stat {
@@ -846,7 +846,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
 .eeat-educativo .timeline-resultado {
     font-size: 13px;
-    color: #28a745;
+    color: #88B04B;
     font-weight: 600;
     padding-top: 10px;
     border-top: 1px solid #e0e0e0;
@@ -974,13 +974,13 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .eeat-educativo .valor-despues .valor-principal {
-    color: #28a745;
+    color: #88B04B;
 }
 
 .eeat-educativo .badge-mejora {
     display: inline-block;
     padding: 6px 12px;
-    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #20c997 100%);
     color: white;
     border-radius: 20px;
     font-weight: 600;
@@ -1027,7 +1027,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     margin-top: 20px;
     padding: 15px;
     background: rgba(255, 193, 7, 0.1);
-    border-left: 4px solid #ffc107;
+    border-left: 4px solid #88B04B;
     border-radius: 6px;
     font-size: 14px;
     color: #555;
@@ -1053,7 +1053,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .eeat-educativo .seccion-badge-green {
-    background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 

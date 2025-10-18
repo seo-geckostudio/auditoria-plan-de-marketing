@@ -159,12 +159,12 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 }
 
 .monitoreo-page .metric-value.positive {
-    color: #28a745;
+    color: #88B04B;
 }
 
 .monitoreo-page .current-impact {
-    background: linear-gradient(135deg, #fff9e6 0%, #ffe8cc 100%);
-    border: 2px solid #ffc107;
+    background: linear-gradient(135deg, #f0f7e6 0%, #ffe8cc 100%);
+    border: 2px solid #88B04B;
     border-radius: 8px;
     padding: 25px;
     margin-bottom: 20px;
@@ -214,7 +214,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 }
 
 .monitoreo-page .frequency-badge.semanal {
-    background: #ffc107;
+    background: #88B04B;
     color: #333;
 }
 
@@ -580,7 +580,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
     content: "✓";
     position: absolute;
     left: 0;
-    color: #28a745;
+    color: #88B04B;
     font-weight: 700;
 }
 
@@ -660,8 +660,8 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 }
 
 .monitoreo-page .comparacion-intro {
-    background: #fff9e6;
-    border-left: 4px solid #ffc107;
+    background: #f0f7e6;
+    border-left: 4px solid #88B04B;
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 30px;
@@ -694,7 +694,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 }
 
 .monitoreo-page .comparacion-columna.despues {
-    border-color: #28a745;
+    border-color: #88B04B;
 }
 
 .monitoreo-page .badge-seccion {
@@ -715,7 +715,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 }
 
 .monitoreo-page .despues-badge {
-    background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
 }
@@ -743,7 +743,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 
 .monitoreo-page .solucion-item {
     background: #f0f9f4;
-    border-left: 4px solid #28a745;
+    border-left: 4px solid #88B04B;
 }
 
 .monitoreo-page .problema-numero,
@@ -765,7 +765,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 }
 
 .monitoreo-page .solucion-numero {
-    background: #28a745;
+    background: #88B04B;
     color: white;
     font-size: 20px;
 }
@@ -965,7 +965,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 }
 
 .monitoreo-page .tabla-kpis .fila-destacada {
-    background: #fff9e6;
+    background: #f0f7e6;
 }
 
 .monitoreo-page .tabla-kpis .fila-destacada td {
@@ -975,13 +975,13 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 }
 
 .monitoreo-page .tabla-kpis .mejora-positiva {
-    color: #28a745;
+    color: #88B04B;
     font-weight: 600;
 }
 
 .monitoreo-page .kpis-nota-importante {
-    background: linear-gradient(135deg, #fff9e6 0%, #ffe8cc 100%);
-    border: 2px solid #ffc107;
+    background: linear-gradient(135deg, #f0f7e6 0%, #ffe8cc 100%);
+    border: 2px solid #88B04B;
     border-radius: 10px;
     padding: 25px;
 }

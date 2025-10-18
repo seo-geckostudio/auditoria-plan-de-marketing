@@ -306,12 +306,12 @@
 }
 
 .priority-badge.priority-alta {
-    background: #ffc107;
+    background: #88B04B;
     color: #333;
 }
 
 .priority-badge.priority-media {
-    background: #28a745;
+    background: #88B04B;
     color: white;
 }
 
@@ -408,7 +408,7 @@
 }
 
 .status-badge.status-optimizar {
-    background: #fff3cd;
+    background: #f0f7e6;
     color: #856404;
 }
 
@@ -655,12 +655,12 @@
 }
 
 .position-badge.current {
-    background: #ffc107;
+    background: #88B04B;
     color: #333;
 }
 
 .position-badge.target {
-    background: #28a745;
+    background: #88B04B;
     color: white;
 }
 
@@ -670,7 +670,7 @@
 }
 
 .traffic-value.potential {
-    color: #28a745;
+    color: #88B04B;
 }
 
 .url-keywords {
@@ -874,7 +874,7 @@
 }
 
 .status-mini.status-optimizar {
-    background: #fff3cd;
+    background: #f0f7e6;
     color: #856404;
 }
 
@@ -1327,7 +1327,7 @@
     background: white;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
-    border-left: 4px solid #28a745;
+    border-left: 4px solid #88B04B;
 }
 
 .recommendation-card {
@@ -1343,7 +1343,7 @@
 }
 
 .recommendation-card.priority-alta {
-    border-left-color: #ffc107;
+    border-left-color: #88B04B;
 }
 
 .rec-header {
@@ -1367,7 +1367,7 @@
 }
 
 .recommendation-card.priority-alta .priority-badge {
-    background: #ffc107;
+    background: #88B04B;
     color: #333;
 }
 

@@ -174,7 +174,7 @@
     padding: 20px;
     background: #f7fafc;
     border-radius: 12px;
-    border: 2px solid #e2e8f0;
+    border: 2px solid #f5f5f5;
     transition: all 0.3s ease;
 }
 
@@ -278,7 +278,7 @@
 }
 
 .metric-comparison-card {
-    border: 2px solid #e2e8f0;
+    border: 2px solid #f5f5f5;
     border-radius: 12px;
     padding: 20px;
     background: #f7fafc;
@@ -323,7 +323,7 @@
 
 .metric-target .value.target {
     font-size: 20px;
-    color: #10b981;
+    color: #88B04B;
     font-weight: 700;
 }
 
@@ -345,8 +345,8 @@
     font-weight: 700;
     padding: 3px 10px;
     border-radius: 20px;
-    background: #dcfce7;
-    color: #10b981;
+    background: #f0f7e6;
+    color: #88B04B;
 }
 
 .phase-section {
@@ -395,23 +395,23 @@
 }
 
 .phase-duration {
-    background: #dbeafe;
+    background: #f0f7e6;
     color: #1e40af;
 }
 
 .phase-priority.critical {
-    background: #fee2e2;
+    background: #f0f7e6;
     color: #991b1b;
 }
 
 .phase-investment {
-    background: #dcfce7;
+    background: #f0f7e6;
     color: #166534;
 }
 
 .phase-objective {
     padding: 18px;
-    background: #f0f9ff;
+    background: #f0f7e6;
     border-radius: 10px;
     margin-bottom: 15px;
     font-size: 15px;
@@ -421,7 +421,7 @@
 
 .phase-impact {
     padding: 18px;
-    background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+    background: linear-gradient(135deg, #f0f7e6 0%, #a7f3d0 100%);
     border-radius: 10px;
     font-size: 15px;
     color: #065f46;
@@ -598,17 +598,17 @@
 }
 
 .task-priority.priority-critical {
-    background: #fee2e2;
+    background: #f0f7e6;
     color: #991b1b;
 }
 
 .task-priority.priority-high {
-    background: #fef3c7;
+    background: #f0f7e6;
     color: #92400e;
 }
 
 .task-priority.priority-medium {
-    background: #dbeafe;
+    background: #f0f7e6;
     color: #1e40af;
 }
 
@@ -618,7 +618,7 @@
 }
 
 .task-timing {
-    background: #d1fae5;
+    background: #f0f7e6;
     color: #065f46;
 }
 
@@ -677,12 +677,12 @@
     content: "✓";
     position: absolute;
     left: 0;
-    color: #10b981;
+    color: #88B04B;
     font-weight: bold;
 }
 
 .kpi-list li {
-    background: #f0f9ff;
+    background: #f0f7e6;
     padding: 8px 8px 8px 24px !important;
     border-radius: 6px;
     margin-bottom: 6px;
@@ -847,23 +847,23 @@
 }
 
 .phase-section.phase-2 {
-    border-left: 5px solid #10b981;
+    border-left: 5px solid #88B04B;
 }
 
 .phase-section.phase-3 {
-    border-left: 5px solid #f59e0b;
+    border-left: 5px solid #88B04B;
 }
 
 .phase-section.phase-2 .phase-number {
-    color: #10b981;
+    color: #88B04B;
 }
 
 .phase-section.phase-3 .phase-number {
-    color: #f59e0b;
+    color: #88B04B;
 }
 
 .phase-priority.high {
-    background: #fef3c7;
+    background: #f0f7e6;
     color: #92400e;
 }
 
@@ -882,7 +882,7 @@
 }
 
 .task-summary-card {
-    border: 2px solid #e2e8f0;
+    border: 2px solid #f5f5f5;
     border-radius: 10px;
     padding: 16px;
     background: #f7fafc;
@@ -937,17 +937,17 @@
 }
 
 .priority-badge.priority-critical {
-    background: #fee2e2;
+    background: #f0f7e6;
     color: #991b1b;
 }
 
 .priority-badge.priority-high {
-    background: #fef3c7;
+    background: #f0f7e6;
     color: #92400e;
 }
 
 .priority-badge.priority-medium {
-    background: #dbeafe;
+    background: #f0f7e6;
     color: #1e40af;
 }
 
@@ -957,7 +957,7 @@
 }
 
 .phase-summary-box {
-    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    background: linear-gradient(135deg, #f0f7e6 0%, #f0f7e6 100%);
     border-radius: 12px;
     padding: 20px;
     margin-top: 20px;
@@ -1024,7 +1024,7 @@
     content: "✓";
     position: absolute;
     left: 0;
-    color: #10b981;
+    color: #88B04B;
     font-weight: bold;
     font-size: 16px;
 }
@@ -1036,7 +1036,7 @@
 }
 
 .compact-task-item {
-    border: 1px solid #e2e8f0;
+    border: 1px solid #f5f5f5;
     border-radius: 8px;
     padding: 12px;
     background: #f7fafc;
@@ -1231,13 +1231,13 @@
 }
 
 .phase-section.phase-4 {
-    border-left: 5px solid #8b5cf6;
+    border-left: 5px solid #88B04B;
     padding: 20px;
     margin-bottom: 25px;
 }
 
 .phase-section.phase-4 .phase-number {
-    color: #8b5cf6;
+    color: #88B04B;
     font-size: 36px;
 }
 
@@ -1309,7 +1309,7 @@
 }
 
 .team-card {
-    border: 2px solid #e2e8f0;
+    border: 2px solid #f5f5f5;
     border-radius: 8px;
     padding: 12px;
     background: #f7fafc;
@@ -1336,7 +1336,7 @@
 }
 
 .budget-card {
-    border: 2px solid #e2e8f0;
+    border: 2px solid #f5f5f5;
     border-radius: 8px;
     padding: 14px;
     text-align: center;
@@ -1353,7 +1353,7 @@
 
 .budget-amount {
     font-size: 16px;
-    color: #10b981;
+    color: #88B04B;
     font-weight: 700;
 }
 
@@ -1400,7 +1400,7 @@
 .timeline-content {
     flex: 1;
     padding-bottom: 12px;
-    border-left: 2px solid #e2e8f0;
+    border-left: 2px solid #f5f5f5;
     padding-left: 16px;
     margin-left: 7px;
 }
@@ -1437,7 +1437,7 @@
 }
 
 .kpi-card {
-    border: 2px solid #e2e8f0;
+    border: 2px solid #f5f5f5;
     border-radius: 8px;
     padding: 14px;
     background: #f7fafc;
@@ -1469,7 +1469,7 @@
 
 .kpi-target {
     font-size: 16px;
-    color: #10b981;
+    color: #88B04B;
     font-weight: 700;
 }
 
@@ -1493,12 +1493,12 @@
 }
 
 .criteria-column.must h3 {
-    background: #fee2e2;
+    background: #f0f7e6;
     color: #991b1b;
 }
 
 .criteria-column.should h3 {
-    background: #dbeafe;
+    background: #f0f7e6;
     color: #1e40af;
 }
 
@@ -1520,7 +1520,7 @@
     content: "✓";
     position: absolute;
     left: 0;
-    color: #ef4444;
+    color: #88B04B;
     font-weight: bold;
 }
 
@@ -1528,7 +1528,7 @@
     content: "✓";
     position: absolute;
     left: 0;
-    color: #3b82f6;
+    color: #88B04B;
     font-weight: bold;
 }
 </style>

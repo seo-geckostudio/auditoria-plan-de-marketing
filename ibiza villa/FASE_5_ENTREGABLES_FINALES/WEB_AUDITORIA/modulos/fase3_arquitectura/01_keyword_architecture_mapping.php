@@ -373,7 +373,7 @@ tados</div>
 </div>
 
 <style>
-/* Estilos profesionales para Keyword Mapping - Color corporativo #54a34a */
+/* Estilos profesionales para Keyword Mapping - Color corporativo #88B04B */
 .keyword-mapping-page {
     font-family: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
     color: #333;
@@ -381,7 +381,7 @@ tados</div>
 }
 
 .keyword-mapping-page .page-header {
-    border-bottom: 3px solid #54a34a;
+    border-bottom: 3px solid #88B04B;
     padding-bottom: 20px;
     margin-bottom: 30px;
 }
@@ -417,7 +417,7 @@ tados</div>
     color: #1a1a1a;
     margin: 0 0 15px 0;
     padding-bottom: 10px;
-    border-bottom: 2px solid #54a34a;
+    border-bottom: 2px solid #88B04B;
 }
 
 .keyword-mapping-page .section-intro {
@@ -428,7 +428,7 @@ tados</div>
 
 /* Executive Summary - mismo estilo que arquitectura */
 .keyword-mapping-page .executive-summary {
-    background: linear-gradient(135deg, #54a34a 0%, #6ab85e 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 30px;
     border-radius: 8px;
@@ -513,7 +513,7 @@ tados</div>
     text-transform: uppercase;
     letter-spacing: 0.3px;
     color: #555;
-    border-bottom: 2px solid #54a34a;
+    border-bottom: 2px solid #88B04B;
 }
 
 .keyword-mapping-page .data-table td {
@@ -551,7 +551,7 @@ tados</div>
 }
 
 .keyword-mapping-page .url-ganadora {
-    background: #fff9e6;
+    background: #f0f7e6;
     font-weight: 600;
 }
 
@@ -598,7 +598,7 @@ tados</div>
 
 .keyword-mapping-page .badge-new,
 .keyword-mapping-page .badge-winner {
-    background: #54a34a;
+    background: #88B04B;
     color: white;
     padding: 2px 8px;
     border-radius: 3px;
@@ -623,7 +623,7 @@ tados</div>
 
 .keyword-mapping-page .mapping-benefits {
     background: #f9f9f9;
-    border-left: 4px solid #54a34a;
+    border-left: 4px solid #88B04B;
     padding: 20px;
     margin-top: 30px;
     border-radius: 4px;
@@ -710,7 +710,7 @@ tados</div>
     font-size: 14px;
     padding: 12px;
     background: #f9f9f9;
-    border-left: 3px solid #54a34a;
+    border-left: 3px solid #88B04B;
     border-radius: 4px;
 }
 
@@ -718,7 +718,7 @@ tados</div>
 .keyword-mapping-page .section-summary {
     background: #f0f7ee;
     padding: 15px 20px;
-    border-left: 4px solid #54a34a;
+    border-left: 4px solid #88B04B;
     margin-top: 20px;
     border-radius: 4px;
 }
@@ -760,7 +760,7 @@ tados</div>
 .keyword-mapping-page .recommendation-item {
     background: white;
     border: 1px solid #e0e0e0;
-    border-left: 3px solid #54a34a;
+    border-left: 3px solid #88B04B;
     padding: 15px 20px;
     margin-bottom: 12px;
     border-radius: 4px;

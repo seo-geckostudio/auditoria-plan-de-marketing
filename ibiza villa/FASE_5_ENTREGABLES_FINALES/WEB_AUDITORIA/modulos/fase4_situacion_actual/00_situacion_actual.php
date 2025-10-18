@@ -179,7 +179,7 @@ $paginas = $datosModulo['paginas'];
 }
 
 .metric-card.large.highlight {
-    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #d97706 100%);
     color: white;
 }
 
@@ -467,7 +467,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .language-badge {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #059669 100%);
 }
 
 .objectives-list {
@@ -664,7 +664,7 @@ foreach ($paginas as $index => $pagina):
     padding: 25px;
     text-align: center;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-    border: 2px solid #e2e8f0;
+    border: 2px solid #f5f5f5;
 }
 
 .analytics-card.primary {
@@ -731,7 +731,7 @@ foreach ($paginas as $index => $pagina):
     padding: 20px;
     background: #f7fafc;
     border-radius: 12px;
-    border: 2px solid #e2e8f0;
+    border: 2px solid #f5f5f5;
 }
 
 .source-header {
@@ -756,7 +756,7 @@ foreach ($paginas as $index => $pagina):
 
 .source-bar {
     height: 12px;
-    background: #e2e8f0;
+    background: #f5f5f5;
     border-radius: 6px;
     overflow: hidden;
 }
@@ -896,7 +896,7 @@ foreach ($paginas as $index => $pagina):
     align-items: center;
     margin-bottom: 25px;
     padding-bottom: 20px;
-    border-bottom: 3px solid #e2e8f0;
+    border-bottom: 3px solid #f5f5f5;
 }
 
 .channel-header h3 {
@@ -927,7 +927,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .channel-metric.highlight {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #059669 100%);
 }
 
 .channel-metric .metric-value {
@@ -1113,7 +1113,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .keywords-table tbody tr {
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid #f5f5f5;
     transition: background 0.2s ease;
 }
 
@@ -1149,12 +1149,12 @@ foreach ($paginas as $index => $pagina):
 }
 
 .position-badge.good {
-    background: #d1fae5;
+    background: #f0f7e6;
     color: #065f46;
 }
 
 .position-badge.warning {
-    background: #fef3c7;
+    background: #f0f7e6;
     color: #92400e;
 }
 
@@ -1325,7 +1325,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .stat-item.highlight {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #059669 100%);
 }
 
 .stat-label {
@@ -1364,7 +1364,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .best-keyword i {
-    color: #f59e0b;
+    color: #88B04B;
 }
 </style>
 
@@ -1476,15 +1476,15 @@ foreach ($paginas as $index => $pagina):
 }
 
 .swot-card.fortalezas .swot-header {
-    border-bottom-color: #10b981;
+    border-bottom-color: #88B04B;
 }
 
 .swot-card.debilidades .swot-header {
-    border-bottom-color: #ef4444;
+    border-bottom-color: #88B04B;
 }
 
 .swot-card.oportunidades .swot-header {
-    border-bottom-color: #f59e0b;
+    border-bottom-color: #88B04B;
 }
 
 .swot-card.prioridades .swot-header {
@@ -1496,15 +1496,15 @@ foreach ($paginas as $index => $pagina):
 }
 
 .swot-card.fortalezas .swot-header i {
-    color: #10b981;
+    color: #88B04B;
 }
 
 .swot-card.debilidades .swot-header i {
-    color: #ef4444;
+    color: #88B04B;
 }
 
 .swot-card.oportunidades .swot-header i {
-    color: #f59e0b;
+    color: #88B04B;
 }
 
 .swot-card.prioridades .swot-header i {
@@ -1544,15 +1544,15 @@ foreach ($paginas as $index => $pagina):
 }
 
 .swot-card.fortalezas .swot-list li:before {
-    color: #10b981;
+    color: #88B04B;
 }
 
 .swot-card.debilidades .swot-list li:before {
-    color: #ef4444;
+    color: #88B04B;
 }
 
 .swot-card.oportunidades .swot-list li:before {
-    color: #f59e0b;
+    color: #88B04B;
 }
 
 .swot-card.prioridades .swot-list li:before {

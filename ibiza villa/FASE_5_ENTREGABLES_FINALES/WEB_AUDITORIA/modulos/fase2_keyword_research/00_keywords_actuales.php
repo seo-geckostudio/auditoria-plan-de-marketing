@@ -809,7 +809,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .keywords-table tr.top-three {
-    background: #fff9e6;
+    background: #f0f7e6;
 }
 
 .rank-cell {
@@ -833,7 +833,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .position-badge[class*="pos-"]:not(.pos-1):not(.pos-2):not(.pos-3) {
-    background: #fff3cd;
+    background: #f0f7e6;
     color: #856404;
 }
 
@@ -857,7 +857,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     align-items: center;
     margin-bottom: 16px;
     padding-bottom: 12px;
-    border-bottom: 2px solid #54a34a;
+    border-bottom: 2px solid #88B04B;
 }
 
 .category-header h4 {
@@ -868,7 +868,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 .category-percentage {
     font-size: 1.5em;
     font-weight: 700;
-    color: #54a34a;
+    color: #88B04B;
 }
 
 .category-stats {
@@ -894,7 +894,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .stat-value.highlight {
-    color: #54a34a;
+    color: #88B04B;
 }
 
 .category-examples ul {
@@ -953,13 +953,13 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     position: absolute;
     left: 0;
     top: 14px;
-    color: #54a34a;
+    color: #88B04B;
 }
 
 .recommendation-card {
     background: white;
     border: 1px solid #e0e0e0;
-    border-left: 4px solid #54a34a;
+    border-left: 4px solid #88B04B;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 16px;
@@ -971,8 +971,8 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .recommendation-card.priority-media {
-    border-left-color: #ffc107;
-    background: #fffef8;
+    border-left-color: #88B04B;
+    background: #f0f7e6;
 }
 
 .recommendation-header {
@@ -983,7 +983,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .recommendation-number {
-    background: #54a34a;
+    background: #88B04B;
     color: white;
     width: 32px;
     height: 32px;
@@ -1007,7 +1007,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .priority-badge.priority-media {
-    background: #ffc107;
+    background: #88B04B;
     color: #333;
 }
 
@@ -1245,7 +1245,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .keywords-educativo .entregable-card.priority-high {
-    border-left: 5px solid #ffc107;
+    border-left: 5px solid #88B04B;
 }
 
 .keywords-educativo .entregable-card.priority-warning {
@@ -1416,7 +1416,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .keywords-educativo .comparacion-header.success {
-    background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 
@@ -1576,7 +1576,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .keywords-educativo .section-badge.badge-despues {
-    background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     box-shadow: 0 2px 4px rgba(40,167,69,0.3);
 }
@@ -1627,7 +1627,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .keywords-educativo .tabla-kpis tbody tr.highlight-row {
-    background: #fff3cd;
+    background: #f0f7e6;
 }
 
 .keywords-educativo .tabla-kpis tbody tr.highlight-row:hover {
@@ -1665,7 +1665,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .keywords-educativo .valor-numero.success {
-    color: #28a745;
+    color: #88B04B;
 }
 
 .keywords-educativo .valor-unidad {

@@ -841,15 +841,15 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
 }
 
 .hallazgo-card.criticos {
-    background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+    background: linear-gradient(135deg, #f0f7e6 0%, #fecaca 100%);
 }
 
 .hallazgo-card.importantes {
-    background: linear-gradient(135deg, #fed7aa 0%, #fdba74 100%);
+    background: linear-gradient(135deg, #f0f7e6 0%, #fdba74 100%);
 }
 
 .hallazgo-card.menores {
-    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    background: linear-gradient(135deg, #f0f7e6 0%, #f0f7e6 100%);
 }
 
 .hallazgo-card.total {
@@ -1252,7 +1252,7 @@ endforeach;
 }
 
 .hallazgo-detail.critico { border-left-color: #dc2626; }
-.hallazgo-detail.importante { border-left-color: #f59e0b; }
+.hallazgo-detail.importante { border-left-color: #88B04B; }
 .hallazgo-detail.menor { border-left-color: #eab308; }
 
 .hallazgo-header {
@@ -1272,17 +1272,17 @@ endforeach;
 }
 
 .hallazgo-tipo-badge.critico {
-    background: #fee2e2;
+    background: #f0f7e6;
     color: #991b1b;
 }
 
 .hallazgo-tipo-badge.importante {
-    background: #fed7aa;
+    background: #f0f7e6;
     color: #92400e;
 }
 
 .hallazgo-tipo-badge.menor {
-    background: #fef3c7;
+    background: #f0f7e6;
     color: #854d0e;
 }
 
@@ -1337,7 +1337,7 @@ endforeach;
 }
 
 .hallazgo-ejemplos code {
-    background: #e2e8f0;
+    background: #f5f5f5;
     padding: 2px 6px;
     border-radius: 4px;
     font-size: 12px;
@@ -1346,8 +1346,8 @@ endforeach;
 }
 
 .hallazgo-impacto {
-    background: #fef3c7;
-    border-left: 3px solid #f59e0b;
+    background: #f0f7e6;
+    border-left: 3px solid #88B04B;
     padding: 12px 15px;
     border-radius: 6px;
     font-size: 13px;
@@ -1363,8 +1363,8 @@ endforeach;
 }
 
 .hallazgo-recomendacion {
-    background: #dcfce7;
-    border-left: 3px solid #10b981;
+    background: #f0f7e6;
+    border-left: 3px solid #88B04B;
     padding: 12px 15px;
     border-radius: 6px;
     font-size: 13px;
@@ -1424,7 +1424,7 @@ endforeach;
 }
 
 .ejemplo-actual code {
-    background: #fee2e2;
+    background: #f0f7e6;
     color: #991b1b;
     padding: 8px 12px;
     border-radius: 6px;
@@ -1434,7 +1434,7 @@ endforeach;
 }
 
 .ejemplo-propuesto code {
-    background: #dcfce7;
+    background: #f0f7e6;
     color: #065f46;
     padding: 8px 12px;
     border-radius: 6px;
@@ -1491,24 +1491,24 @@ endforeach;
 }
 
 .oportunidad-prioridad.alta {
-    background: #fee2e2;
+    background: #f0f7e6;
     color: #991b1b;
 }
 
 .oportunidad-prioridad.media {
-    background: #fed7aa;
+    background: #f0f7e6;
     color: #92400e;
 }
 
 .oportunidad-prioridad.baja {
-    background: #fef3c7;
+    background: #f0f7e6;
     color: #854d0e;
 }
 
 .oportunidad-ahorro {
     font-size: 16px;
     font-weight: 700;
-    color: #10b981;
+    color: #88B04B;
 }
 
 .oportunidad-accion {
@@ -1557,17 +1557,17 @@ endforeach;
 }
 
 .schema-prioridad.alta {
-    background: #fee2e2;
+    background: #f0f7e6;
     color: #991b1b;
 }
 
 .schema-prioridad.media {
-    background: #fed7aa;
+    background: #f0f7e6;
     color: #92400e;
 }
 
 .schema-prioridad.baja {
-    background: #fef3c7;
+    background: #f0f7e6;
     color: #854d0e;
 }
 
@@ -1620,7 +1620,7 @@ endforeach;
 }
 
 .impacto-final {
-    background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+    background: linear-gradient(135deg, #f0f7e6 0%, #bbf7d0 100%);
     border-radius: 12px;
     padding: 25px;
     display: flex;
@@ -1656,7 +1656,7 @@ endforeach;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    border-top: 2px solid #e2e8f0;
+    border-top: 2px solid #f5f5f5;
     font-size: 13px;
     color: #718096;
 }
@@ -1869,7 +1869,7 @@ endforeach;
 }
 
 .onpage-educativo .entregable-card.priority-high {
-    border-left: 5px solid #ffc107;
+    border-left: 5px solid #88B04B;
 }
 
 .onpage-educativo .entregable-card.priority-medium {
@@ -1953,7 +1953,7 @@ endforeach;
 
 .onpage-educativo .como-usar-entregables {
     background: #f9f9f9;
-    border-left: 4px solid #54a34a;
+    border-left: 4px solid #88B04B;
     padding: 20px;
     border-radius: 8px;
 }
@@ -2035,7 +2035,7 @@ endforeach;
 }
 
 .onpage-educativo .comparacion-header.success {
-    background: linear-gradient(135deg, #28a745, #218838);
+    background: linear-gradient(135deg, #88B04B, #6d8f3c);
 }
 
 .onpage-educativo .comparacion-header h3 {
@@ -2091,7 +2091,7 @@ endforeach;
 }
 
 .onpage-educativo .mejora-item {
-    border-left: 3px solid #28a745;
+    border-left: 3px solid #88B04B;
 }
 
 .onpage-educativo .icon-error,
@@ -2176,7 +2176,7 @@ endforeach;
 
 .onpage-educativo .section-badge.badge-despues,
 .onpage-summary .section-badge.badge-despues {
-    background: linear-gradient(135deg, #28a745, #218838);
+    background: linear-gradient(135deg, #88B04B, #6d8f3c);
     color: white;
     box-shadow: 0 2px 4px rgba(40,167,69,0.3);
 }
@@ -2266,8 +2266,8 @@ endforeach;
 }
 
 .onpage-educativo .tabla-kpis tbody tr.highlight-row {
-    background: #fff9e6;
-    border-left: 4px solid #ffc107;
+    background: #f0f7e6;
+    border-left: 4px solid #88B04B;
 }
 
 .onpage-educativo .tabla-kpis tbody tr.highlight-row:hover {
@@ -2312,7 +2312,7 @@ endforeach;
 }
 
 .onpage-educativo .valor-numero.success {
-    color: #28a745;
+    color: #88B04B;
 }
 
 .onpage-educativo .valor-unidad {
@@ -2337,7 +2337,7 @@ endforeach;
 
 .onpage-educativo .mejora-badge.success {
     background: linear-gradient(135deg, #d4edda, #c3e6cb);
-    border: 2px solid #28a745;
+    border: 2px solid #88B04B;
 }
 
 .onpage-educativo .mejora-badge.large {
@@ -2348,7 +2348,7 @@ endforeach;
     display: block;
     font-size: 20px;
     font-weight: 700;
-    color: #28a745;
+    color: #88B04B;
     margin-bottom: 2px;
 }
 

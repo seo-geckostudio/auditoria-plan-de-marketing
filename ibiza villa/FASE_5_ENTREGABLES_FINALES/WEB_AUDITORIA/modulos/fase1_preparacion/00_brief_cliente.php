@@ -307,12 +307,12 @@ $timeline = $datosModulo['timeline'] ?? [];
     color: #333;
     margin-bottom: 20px;
     padding-bottom: 12px;
-    border-bottom: 2px solid #54a34a;
+    border-bottom: 2px solid #88B04B;
 }
 
 .section-title i {
     margin-right: 8px;
-    color: #54a34a;
+    color: #88B04B;
 }
 
 .info-grid {
@@ -358,7 +358,7 @@ $timeline = $datosModulo['timeline'] ?? [];
 
 .kpi-card {
     background: #f8f9fa;
-    border-left: 4px solid #54a34a;
+    border-left: 4px solid #88B04B;
     padding: 16px;
     border-radius: 4px;
 }
@@ -378,7 +378,7 @@ $timeline = $datosModulo['timeline'] ?? [];
 
 .kpi-arrow {
     font-size: 1.5em;
-    color: #54a34a;
+    color: #88B04B;
 }
 
 .kpi-label {
@@ -393,7 +393,7 @@ $timeline = $datosModulo['timeline'] ?? [];
 }
 
 .kpi-increment {
-    color: #54a34a;
+    color: #88B04B;
     font-weight: 600;
     font-size: 0.95em;
 }
@@ -430,9 +430,9 @@ $timeline = $datosModulo['timeline'] ?? [];
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: #54a34a;
+    background: #88B04B;
     border: 3px solid #fff;
-    box-shadow: 0 0 0 2px #54a34a;
+    box-shadow: 0 0 0 2px #88B04B;
 }
 
 .timeline-content-simple {

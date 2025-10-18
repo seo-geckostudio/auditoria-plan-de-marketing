@@ -201,8 +201,8 @@ $proximos = $datosModulo['proximos_pasos'] ?? [];
     border: 2px solid #e0e0e0;
 }
 
-.summary-card.verified { border-color: #28a745; }
-.summary-card.pending { border-color: #ffc107; }
+.summary-card.verified { border-color: #88B04B; }
+.summary-card.pending { border-color: #88B04B; }
 .summary-card.unavailable { border-color: #dc3545; }
 .summary-card.optional { border-color: #6c757d; }
 
@@ -211,8 +211,8 @@ $proximos = $datosModulo['proximos_pasos'] ?? [];
     margin-bottom: 10px;
 }
 
-.summary-card.verified .summary-icon { color: #28a745; }
-.summary-card.pending .summary-icon { color: #ffc107; }
+.summary-card.verified .summary-icon { color: #88B04B; }
+.summary-card.pending .summary-icon { color: #88B04B; }
 .summary-card.unavailable .summary-icon { color: #dc3545; }
 .summary-card.optional .summary-icon { color: #6c757d; }
 
@@ -252,7 +252,7 @@ $proximos = $datosModulo['proximos_pasos'] ?? [];
 
 .progress-fill {
     height: 100%;
-    background: linear-gradient(90deg, #54a34a 0%, #6ab85e 100%);
+    background: linear-gradient(90deg, #88B04B 0%, #6d8f3c 100%);
     transition: width 0.3s ease;
     display: flex;
     align-items: center;
@@ -268,10 +268,10 @@ $proximos = $datosModulo['proximos_pasos'] ?? [];
 
 .category-title {
     font-size: 1.5em;
-    color: #54a34a;
+    color: #88B04B;
     margin-bottom: 20px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #54a34a;
+    border-bottom: 2px solid #88B04B;
 }
 
 .checklist-table {
@@ -331,7 +331,7 @@ $proximos = $datosModulo['proximos_pasos'] ?? [];
 }
 
 .status-badge.status-pendiente {
-    background: #fff3cd;
+    background: #f0f7e6;
     color: #856404;
 }
 
@@ -356,8 +356,8 @@ $proximos = $datosModulo['proximos_pasos'] ?? [];
 }
 
 .actions-section, .next-steps-section {
-    background: #fff9e6;
-    border-left: 4px solid #ffc107;
+    background: #f0f7e6;
+    border-left: 4px solid #88B04B;
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -365,7 +365,7 @@ $proximos = $datosModulo['proximos_pasos'] ?? [];
 
 .next-steps-section {
     background: #e8f5e9;
-    border-left-color: #28a745;
+    border-left-color: #88B04B;
 }
 
 .actions-list, .next-steps-list {

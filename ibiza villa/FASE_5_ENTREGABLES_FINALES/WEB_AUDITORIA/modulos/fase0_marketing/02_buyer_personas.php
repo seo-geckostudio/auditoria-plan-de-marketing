@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 labels: <?php echo json_encode(array_column($portada['pais_origen_principal'] ?? [], 'pais')); ?>,
                 datasets: [{
                     data: <?php echo json_encode(array_column($portada['pais_origen_principal'] ?? [], 'porcentaje')); ?>,
-                    backgroundColor: ['#3b82f6', '#f59e0b', '#22c55e', '#a855f7', '#94a3b8'],
+                    backgroundColor: ['#88B04B', '#88B04B', '#88B04B', '#88B04B', '#94a3b8'],
                     borderWidth: 3,
                     borderColor: '#fff'
                 }]
@@ -606,14 +606,14 @@ document.addEventListener('DOMContentLoaded', function() {
    ESTILOS PÁGINA 1: PORTADA PERSONAS
    ======================================== */
 .personas-cover-page {
-    background: linear-gradient(135deg, #fff1f2 0%, #fce7f3 100%);
+    background: linear-gradient(135deg, #f0f7e6 0%, #f0f7e6 100%);
     padding: 60px;
     min-height: 100vh;
 }
 
 .module-badge {
     font-size: 14px;
-    color: #be123c;
+    color: #6d8f3c;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -629,7 +629,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .subtitle {
     font-size: 18px;
-    color: #be123c;
+    color: #6d8f3c;
     margin-top: 10px;
 }
 
@@ -650,7 +650,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .stat-icon {
     font-size: 60px;
-    color: #ec4899;
+    color: #88B04B;
 }
 
 .stat-value {
@@ -662,7 +662,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .stat-label {
     font-size: 16px;
-    color: #be123c;
+    color: #6d8f3c;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -695,17 +695,17 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .method-card {
-    background: #fef2f2;
+    background: #f0f7e6;
     padding: 15px;
     border-radius: 8px;
     display: flex;
     align-items: center;
     gap: 10px;
-    border-left: 3px solid #ec4899;
+    border-left: 3px solid #88B04B;
 }
 
 .method-card i {
-    color: #ec4899;
+    color: #88B04B;
     font-size: 20px;
 }
 
@@ -716,7 +716,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .segment-card {
-    background: #f8fafc;
+    background: #f5f5f5;
     padding: 20px;
     border-radius: 8px;
     border-left: 4px solid;
@@ -745,7 +745,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .segment-bar {
     height: 12px;
-    background: #e2e8f0;
+    background: #f5f5f5;
     border-radius: 6px;
     overflow: hidden;
 }
@@ -780,14 +780,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .origin-bar-container {
     height: 24px;
-    background: #e2e8f0;
+    background: #f5f5f5;
     border-radius: 12px;
     overflow: hidden;
 }
 
 .origin-bar {
     height: 100%;
-    background: linear-gradient(90deg, #ec4899 0%, #be123c 100%);
+    background: linear-gradient(90deg, #88B04B 0%, #6d8f3c 100%);
     border-radius: 12px;
     transition: width 0.3s ease;
 }
@@ -802,7 +802,7 @@ document.addEventListener('DOMContentLoaded', function() {
    ESTILOS PÁGINA 2: PERSONA DETALLE
    ======================================== */
 .persona-detail-page {
-    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    background: linear-gradient(135deg, #f0f7e6 0%, #f0f7e6 100%);
     padding: 60px;
     min-height: 100vh;
 }
@@ -825,7 +825,7 @@ document.addEventListener('DOMContentLoaded', function() {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -856,7 +856,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .detail-item i {
-    color: #3b82f6;
+    color: #88B04B;
     width: 20px;
 }
 
@@ -885,7 +885,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .demo-item {
     padding: 12px;
-    background: #f1f5f9;
+    background: #f5f5f5;
     border-radius: 6px;
     font-size: 14px;
 }
@@ -915,7 +915,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .psico-column li {
     padding: 8px 0;
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid #f5f5f5;
     padding-left: 20px;
     position: relative;
     font-size: 13px;
@@ -925,7 +925,7 @@ document.addEventListener('DOMContentLoaded', function() {
     content: "•";
     position: absolute;
     left: 0;
-    color: #3b82f6;
+    color: #88B04B;
     font-size: 18px;
 }
 
@@ -937,14 +937,14 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .behavior-item {
-    background: #f1f5f9;
+    background: #f5f5f5;
     padding: 15px;
     border-radius: 8px;
     text-align: center;
 }
 
 .behavior-item.highlight {
-    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 
@@ -981,14 +981,14 @@ document.addEventListener('DOMContentLoaded', function() {
     display: flex;
     gap: 10px;
     align-items: start;
-    border-left: 3px solid #3b82f6;
+    border-left: 3px solid #88B04B;
 }
 
 .criterion-number {
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    background: #3b82f6;
+    background: #88B04B;
     color: white;
     display: flex;
     align-items: center;
@@ -1012,19 +1012,19 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .pain-block {
-    border-left: 4px solid #ef4444;
+    border-left: 4px solid #88B04B;
 }
 
 .goals-block {
-    border-left: 4px solid #22c55e;
+    border-left: 4px solid #88B04B;
 }
 
 .pain-block h3 {
-    color: #ef4444;
+    color: #88B04B;
 }
 
 .goals-block h3 {
-    color: #22c55e;
+    color: #88B04B;
 }
 
 .pain-block ul,
@@ -1036,7 +1036,7 @@ document.addEventListener('DOMContentLoaded', function() {
 .pain-block li,
 .goals-block li {
     padding: 10px 0;
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid #f5f5f5;
     padding-left: 25px;
     position: relative;
     font-size: 14px;
@@ -1046,14 +1046,14 @@ document.addEventListener('DOMContentLoaded', function() {
     content: "⚠";
     position: absolute;
     left: 0;
-    color: #ef4444;
+    color: #88B04B;
 }
 
 .goals-block li:before {
     content: "✓";
     position: absolute;
     left: 0;
-    color: #22c55e;
+    color: #88B04B;
 }
 
 .messages-grid {
@@ -1066,7 +1066,7 @@ document.addEventListener('DOMContentLoaded', function() {
     background: #eff6ff;
     padding: 20px;
     border-radius: 8px;
-    border-left: 4px solid #3b82f6;
+    border-left: 4px solid #88B04B;
     position: relative;
 }
 
@@ -1074,7 +1074,7 @@ document.addEventListener('DOMContentLoaded', function() {
     position: absolute;
     top: 15px;
     left: 15px;
-    color: #3b82f6;
+    color: #88B04B;
     font-size: 24px;
     opacity: 0.2;
 }
@@ -1111,7 +1111,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .keyword-tag {
-    background: #3b82f6;
+    background: #88B04B;
     color: white;
     padding: 8px 16px;
     border-radius: 20px;
@@ -1123,7 +1123,7 @@ document.addEventListener('DOMContentLoaded', function() {
    ESTILOS PÁGINA 3: DUAL PERSONAS
    ======================================== */
 .dual-personas-page {
-    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    background: linear-gradient(135deg, #f0f7e6 0%, #f0f7e6 100%);
     padding: 60px;
     min-height: 100vh;
 }
@@ -1142,14 +1142,14 @@ document.addEventListener('DOMContentLoaded', function() {
     gap: 20px;
     margin-bottom: 25px;
     padding-bottom: 20px;
-    border-bottom: 2px solid #fef3c7;
+    border-bottom: 2px solid #f0f7e6;
 }
 
 .compact-avatar {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #d97706 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1180,7 +1180,7 @@ document.addEventListener('DOMContentLoaded', function() {
 .percent-value {
     font-size: 36px;
     font-weight: 700;
-    color: #f59e0b;
+    color: #88B04B;
     line-height: 1;
 }
 
@@ -1213,7 +1213,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .compact-list li {
     padding: 8px 0;
-    border-bottom: 1px solid #fef3c7;
+    border-bottom: 1px solid #f0f7e6;
     padding-left: 20px;
     position: relative;
     font-size: 13px;
@@ -1223,7 +1223,7 @@ document.addEventListener('DOMContentLoaded', function() {
     content: "→";
     position: absolute;
     left: 0;
-    color: #f59e0b;
+    color: #88B04B;
     font-weight: bold;
 }
 
@@ -1240,20 +1240,20 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .compact-message {
-    background: #fef3c7;
+    background: #f0f7e6;
     padding: 12px;
     border-radius: 6px;
     font-size: 12px;
     font-style: italic;
     color: #78350f;
-    border-left: 3px solid #f59e0b;
+    border-left: 3px solid #88B04B;
 }
 
 /* ========================================
    ESTILOS PÁGINA 4: ESTRATEGIA
    ======================================== */
 .strategy-personas-page {
-    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+    background: linear-gradient(135deg, #f0f7e6 0%, #f0f7e6 100%);
     padding: 60px;
     min-height: 100vh;
 }
@@ -1277,7 +1277,7 @@ document.addEventListener('DOMContentLoaded', function() {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #a855f7 0%, #9333ea 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #9333ea 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1298,7 +1298,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .p4-percentage {
     display: inline-block;
-    background: #22c55e;
+    background: #88B04B;
     color: white;
     padding: 5px 12px;
     border-radius: 15px;
@@ -1314,14 +1314,14 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .p4-box {
-    background: #f0fdf4;
+    background: #f0f7e6;
     padding: 15px;
     border-radius: 8px;
-    border-left: 3px solid #22c55e;
+    border-left: 3px solid #88B04B;
 }
 
 .p4-box.highlight {
-    background: #dcfce7;
+    background: #f0f7e6;
 }
 
 .p4-box h4 {
@@ -1348,7 +1348,7 @@ document.addEventListener('DOMContentLoaded', function() {
     font-style: italic;
     margin: 8px 0;
     padding-left: 12px;
-    border-left: 2px solid #22c55e;
+    border-left: 2px solid #88B04B;
 }
 
 .marketing-strategy {
@@ -1378,7 +1378,7 @@ document.addEventListener('DOMContentLoaded', function() {
     align-items: center;
     margin-bottom: 20px;
     padding-bottom: 15px;
-    border-bottom: 2px solid #dcfce7;
+    border-bottom: 2px solid #f0f7e6;
 }
 
 .strategy-header h3 {
@@ -1395,17 +1395,17 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .priority-badge.priority-alta {
-    background: #ef4444;
+    background: #88B04B;
     color: white;
 }
 
 .priority-badge.priority-media {
-    background: #f59e0b;
+    background: #88B04B;
     color: white;
 }
 
 .priority-badge.priority-baja {
-    background: #6b7280;
+    background: #787878;
     color: white;
 }
 
@@ -1441,12 +1441,12 @@ document.addEventListener('DOMContentLoaded', function() {
     content: "▸";
     position: absolute;
     left: 0;
-    color: #22c55e;
+    color: #88B04B;
 }
 
 .strategy-kpi {
     grid-column: span 2;
-    background: #dcfce7;
+    background: #f0f7e6;
     padding: 12px;
     border-radius: 6px;
     font-size: 13px;
@@ -1480,15 +1480,15 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .budget-item {
-    background: #f0fdf4;
+    background: #f0f7e6;
     padding: 15px;
     border-radius: 8px;
     text-align: center;
-    border-left: 3px solid #22c55e;
+    border-left: 3px solid #88B04B;
 }
 
 .budget-item.total {
-    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #16a34a 100%);
     color: white;
     grid-column: span 3;
     border-left: none;
@@ -1514,20 +1514,20 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .objective-card {
-    background: #f0fdf4;
+    background: #f0f7e6;
     padding: 20px;
     border-radius: 8px;
     display: flex;
     gap: 15px;
     align-items: start;
-    border-left: 4px solid #22c55e;
+    border-left: 4px solid #88B04B;
 }
 
 .obj-number {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #16a34a 100%);
     color: white;
     display: flex;
     align-items: center;
@@ -1553,7 +1553,7 @@ document.addEventListener('DOMContentLoaded', function() {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
-    color: #6b7280;
+    color: #787878;
 }
 
 @media print {

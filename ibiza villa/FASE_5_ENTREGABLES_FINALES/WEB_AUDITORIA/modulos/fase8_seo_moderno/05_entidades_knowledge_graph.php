@@ -112,7 +112,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 }
 
 .entidades-page .kp-status-badge.parcial {
-    background: #fff3cd;
+    background: #f0f7e6;
     color: #856404;
 }
 
@@ -290,12 +290,12 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 }
 
 .entidades-page .optimization-item {
-    background: #fff9e6;
-    border: 1px solid #ffc107;
+    background: #f0f7e6;
+    border: 1px solid #88B04B;
     border-radius: 6px;
     padding: 18px;
     margin-bottom: 15px;
-    border-left: 4px solid #ffc107;
+    border-left: 4px solid #88B04B;
 }
 
 .entidades-page .optimization-title {
@@ -319,7 +319,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 }
 
 .entidades-page .priority-tag.media {
-    background: #ffc107;
+    background: #88B04B;
     color: #333;
 }
 
@@ -573,7 +573,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 }
 
 .entidades-page .csv-priority.priority-alta {
-    background: #ffc107;
+    background: #88B04B;
     color: #333;
 }
 
@@ -725,7 +725,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 }
 
 .entidades-page .despues-header {
-    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #20c997 100%);
     color: white;
 }
 
@@ -784,7 +784,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 }
 
 .entidades-page .mejora-numero {
-    background: #28a745;
+    background: #88B04B;
     color: white;
 }
 
@@ -819,7 +819,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 .entidades-page .ganancia-footer {
     background: #d4edda;
     color: #155724;
-    border-top: 2px solid #28a745;
+    border-top: 2px solid #88B04B;
 }
 
 .entidades-page .comparacion-flecha {
@@ -975,12 +975,12 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 }
 
 .entidades-page .tabla-kpis .fila-destacada {
-    background: #fff9e6;
+    background: #f0f7e6;
     border-left: 4px solid #ffd700;
 }
 
 .entidades-page .tabla-kpis .fila-destacada:hover {
-    background: #fff3cd;
+    background: #f0f7e6;
 }
 
 .entidades-page .tabla-kpis .col-metrica {
@@ -1006,7 +1006,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 }
 
 .entidades-page .tabla-kpis .valor-despues {
-    color: #28a745;
+    color: #88B04B;
     font-weight: 600;
 }
 
@@ -1031,11 +1031,11 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 }
 
 .entidades-page .nota-importante {
-    background: #fff3cd;
-    border: 1px solid #ffc107;
+    background: #f0f7e6;
+    border: 1px solid #88B04B;
     border-radius: 8px;
     padding: 20px;
-    border-left: 4px solid #ffc107;
+    border-left: 4px solid #88B04B;
 }
 
 .entidades-page .nota-importante strong {
@@ -1077,7 +1077,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 }
 
 .entidades-page .badge-despues {
-    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #20c997 100%);
     color: white;
 }
 

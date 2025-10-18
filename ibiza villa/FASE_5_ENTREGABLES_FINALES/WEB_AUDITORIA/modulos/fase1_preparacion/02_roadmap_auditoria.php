@@ -242,7 +242,7 @@ $riesgos = $datosModulo['riesgos_identificados'] ?? [];
 }
 
 .metric-box {
-    background: linear-gradient(135deg, #54a34a 0%, #6ab85e 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 24px;
     border-radius: 12px;
@@ -287,13 +287,13 @@ $riesgos = $datosModulo['riesgos_identificados'] ?? [];
 }
 
 .timeline-phase.phase-completado {
-    border-color: #28a745;
+    border-color: #88B04B;
     background: #f8fff8;
 }
 
 .timeline-phase.phase-en_curso {
-    border-color: #ffc107;
-    background: #fffef8;
+    border-color: #88B04B;
+    background: #f0f7e6;
 }
 
 .timeline-phase.phase-pendiente {
@@ -314,7 +314,7 @@ $riesgos = $datosModulo['riesgos_identificados'] ?? [];
 }
 
 .phase-number {
-    background: #54a34a;
+    background: #88B04B;
     color: white;
     padding: 8px 16px;
     border-radius: 20px;
@@ -327,8 +327,8 @@ $riesgos = $datosModulo['riesgos_identificados'] ?? [];
     font-weight: 600;
 }
 
-.phase-completado .phase-status { color: #28a745; }
-.phase-en_curso .phase-status { color: #ffc107; }
+.phase-completado .phase-status { color: #88B04B; }
+.phase-en_curso .phase-status { color: #88B04B; }
 .phase-pendiente .phase-status { color: #6c757d; }
 .phase-no_aplicable .phase-status { color: #6c757d; }
 
@@ -389,8 +389,8 @@ $riesgos = $datosModulo['riesgos_identificados'] ?? [];
 }
 
 .phase-note {
-    background: #fff3cd;
-    border-left: 4px solid #ffc107;
+    background: #f0f7e6;
+    border-left: 4px solid #88B04B;
     padding: 12px;
     margin-top: 12px;
     border-radius: 4px;
@@ -416,14 +416,14 @@ $riesgos = $datosModulo['riesgos_identificados'] ?? [];
 
 .milestone-card {
     background: white;
-    border-left: 4px solid #54a34a;
+    border-left: 4px solid #88B04B;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .milestone-date {
-    background: #54a34a;
+    background: #88B04B;
     color: white;
     display: inline-block;
     padding: 4px 12px;
@@ -474,7 +474,7 @@ $riesgos = $datosModulo['riesgos_identificados'] ?? [];
 
 .role-title {
     font-weight: 700;
-    color: #54a34a;
+    color: #88B04B;
     margin-bottom: 8px;
 }
 
@@ -526,7 +526,7 @@ $riesgos = $datosModulo['riesgos_identificados'] ?? [];
 }
 
 .impact-badge.impact-medio {
-    background: #fff3cd;
+    background: #f0f7e6;
     color: #856404;
 }
 

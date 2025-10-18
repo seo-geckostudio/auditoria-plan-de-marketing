@@ -24,7 +24,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
 }
 
 .featured-snippets-page .executive-summary {
-    background: linear-gradient(135deg, #54a34a 0%, #6ab85e 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 30px;
     border-radius: 8px;
@@ -68,12 +68,12 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
     border-radius: 8px;
     padding: 25px;
     margin-bottom: 25px;
-    border-left: 4px solid #54a34a;
+    border-left: 4px solid #88B04B;
 }
 
 .featured-snippets-page .content-section h3 {
     margin: 0 0 20px 0;
-    color: #54a34a;
+    color: #88B04B;
     font-size: 20px;
     font-weight: 600;
 }
@@ -84,7 +84,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
     border-radius: 6px;
     padding: 15px;
     margin-bottom: 15px;
-    border-left: 3px solid #54a34a;
+    border-left: 3px solid #88B04B;
 }
 
 .featured-snippets-page .snippet-header {
@@ -147,12 +147,12 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
 }
 
 .featured-snippets-page .opportunity-card {
-    background: #fff9e6;
-    border: 1px solid #ffc107;
+    background: #f0f7e6;
+    border: 1px solid #88B04B;
     border-radius: 6px;
     padding: 20px;
     margin-bottom: 15px;
-    border-left: 4px solid #ffc107;
+    border-left: 4px solid #88B04B;
 }
 
 .featured-snippets-page .opportunity-header {
@@ -181,7 +181,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
 }
 
 .featured-snippets-page .priority-badge.media {
-    background: #ffc107;
+    background: #88B04B;
     color: #333;
 }
 
@@ -236,7 +236,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
 
 .featured-snippets-page .type-card h4 {
     margin: 0 0 10px 0;
-    color: #54a34a;
+    color: #88B04B;
     font-size: 18px;
 }
 
@@ -271,7 +271,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
 
 .featured-snippets-page .comparison-table th {
     background: #f0f7ee;
-    color: #54a34a;
+    color: #88B04B;
     font-weight: 600;
     font-size: 14px;
 }
@@ -286,7 +286,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
     border-radius: 6px;
     padding: 15px;
     margin-bottom: 12px;
-    border-left: 4px solid #28a745;
+    border-left: 4px solid #88B04B;
 }
 
 .featured-snippets-page .quick-win-header {
@@ -302,7 +302,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
 }
 
 .featured-snippets-page .effort-badge {
-    background: #28a745;
+    background: #88B04B;
     color: white;
     padding: 3px 10px;
     border-radius: 10px;
@@ -500,7 +500,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
 
         <?php foreach ($estrategia as $fase): ?>
         <div style="margin-bottom: 20px;">
-            <h4 style="color: #54a34a; margin-bottom: 10px;"><?php echo htmlspecialchars($fase['fase']); ?></h4>
+            <h4 style="color: #88B04B; margin-bottom: 10px;"><?php echo htmlspecialchars($fase['fase']); ?></h4>
             <p style="margin-bottom: 10px;"><?php echo htmlspecialchars($fase['descripcion']); ?></p>
             <ul style="margin: 0; padding-left: 20px;">
                 <?php foreach ($fase['acciones'] ?? [] as $accion): ?>

@@ -226,7 +226,7 @@
 }
 
 .evaluation-badge.eval-excelente {
-    background: #28a745;
+    background: #88B04B;
     color: white;
 }
 
@@ -236,7 +236,7 @@
 }
 
 .evaluation-badge.eval-moderado {
-    background: #ffc107;
+    background: #88B04B;
     color: #333;
 }
 
@@ -265,7 +265,7 @@
 }
 
 .strengths-column {
-    border-left: 4px solid #28a745;
+    border-left: 4px solid #88B04B;
 }
 
 .weaknesses-column {
@@ -281,7 +281,7 @@
 }
 
 .strengths-column h3 {
-    color: #28a745;
+    color: #88B04B;
 }
 
 .weaknesses-column h3 {
@@ -310,7 +310,7 @@
     content: '✓';
     position: absolute;
     left: 0;
-    color: #28a745;
+    color: #88B04B;
     font-weight: bold;
     font-size: 1.3rem;
 }
@@ -494,7 +494,7 @@
 }
 
 .finding-card.priority-alta {
-    border-color: #ffc107;
+    border-color: #88B04B;
 }
 
 .finding-card.priority-media-alta {
@@ -562,13 +562,13 @@
 }
 
 .detail-item.impact {
-    background: #fff3cd;
-    border-left: 4px solid #ffc107;
+    background: #f0f7e6;
+    border-left: 4px solid #88B04B;
 }
 
 .detail-item.action {
     background: #d4edda;
-    border-left: 4px solid #28a745;
+    border-left: 4px solid #88B04B;
 }
 
 .detail-item strong {
@@ -609,7 +609,7 @@
 }
 
 .priority-badge.priority-alta {
-    background: #ffc107;
+    background: #88B04B;
     color: #333;
 }
 
@@ -744,17 +744,17 @@
 }
 
 .metric-value.roi {
-    color: #28a745;
+    color: #88B04B;
     font-size: 1.3rem;
 }
 
 .metric-value.risk-bajo {
-    color: #28a745;
+    color: #88B04B;
 }
 
 .metric-value.risk-bajomedio,
 .metric-value.risk-medio {
-    color: #ffc107;
+    color: #88B04B;
 }
 
 .metric-value.risk-medioalto,
@@ -769,11 +769,11 @@
     display: flex;
     align-items: flex-start;
     gap: 0.75rem;
-    border-left: 4px solid #28a745;
+    border-left: 4px solid #88B04B;
 }
 
 .recommendation-results i {
-    color: #28a745;
+    color: #88B04B;
     font-size: 1.3rem;
     margin-top: 0.25rem;
 }
@@ -995,7 +995,7 @@
 }
 
 .decision-page .page-header {
-    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #20c997 100%);
     color: white;
     padding: 2rem;
     margin: -2rem -2rem 2rem -2rem;
@@ -1060,7 +1060,7 @@
 }
 
 .comparison-card.projected {
-    border: 3px solid #28a745;
+    border: 3px solid #88B04B;
 }
 
 .comparison-card h3 {
@@ -1097,7 +1097,7 @@
 }
 
 .comp-metric .value.highlight {
-    color: #28a745;
+    color: #88B04B;
     font-size: 1.4rem;
 }
 
@@ -1110,7 +1110,7 @@
 
 .comparison-arrow i {
     font-size: 3rem;
-    color: #28a745;
+    color: #88B04B;
 }
 
 .increments {
@@ -1121,7 +1121,7 @@
 }
 
 .increments span {
-    background: #28a745;
+    background: #88B04B;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
@@ -1154,23 +1154,23 @@
 }
 
 .benefit-item i {
-    color: #28a745;
+    color: #88B04B;
     font-size: 1.2rem;
     margin-top: 0.25rem;
 }
 
 .decision-question {
-    background: #fff3cd;
+    background: #f0f7e6;
     padding: 2rem;
     border-radius: 0.75rem;
     text-align: center;
     margin-bottom: 2rem;
-    border: 3px solid #ffc107;
+    border: 3px solid #88B04B;
 }
 
 .decision-question i {
     font-size: 3rem;
-    color: #ffc107;
+    color: #88B04B;
     margin-bottom: 1rem;
 }
 
@@ -1196,7 +1196,7 @@
 }
 
 .option-card.recommended {
-    border-color: #28a745;
+    border-color: #88B04B;
     box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
 }
 
@@ -1204,7 +1204,7 @@
     position: absolute;
     top: -15px;
     right: 20px;
-    background: #28a745;
+    background: #88B04B;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
@@ -1235,7 +1235,7 @@
 }
 
 .option-roi .roi-value {
-    color: #28a745;
+    color: #88B04B;
     font-weight: bold;
     font-size: 1.2rem;
 }
@@ -1255,7 +1255,7 @@
 
 .pros {
     background: #d4edda;
-    border-left: 4px solid #28a745;
+    border-left: 4px solid #88B04B;
 }
 
 .cons {
@@ -1285,7 +1285,7 @@
 }
 
 .agency-recommendation {
-    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #20c997 100%);
     color: white;
     padding: 2rem;
     border-radius: 0.75rem;
@@ -1328,7 +1328,7 @@
 }
 
 .approved-steps {
-    border-left: 4px solid #28a745;
+    border-left: 4px solid #88B04B;
 }
 
 .postponed-risks {
@@ -1353,7 +1353,7 @@
 }
 
 .step-timeline {
-    background: #28a745;
+    background: #88B04B;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;

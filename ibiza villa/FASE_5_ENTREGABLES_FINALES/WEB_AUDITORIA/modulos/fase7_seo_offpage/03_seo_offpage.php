@@ -1380,7 +1380,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .competition-table td {
     padding: 15px;
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid #f5f5f5;
 }
 
 .competition-table tr.own-domain {
@@ -1444,17 +1444,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .status-badge.info {
     background: #eff6ff;
-    color: #3b82f6;
+    color: #88B04B;
 }
 
 .status-badge.success {
-    background: #f0fdf4;
-    color: #22c55e;
+    background: #f0f7e6;
+    color: #88B04B;
 }
 
 .status-badge.danger {
-    background: #fef2f2;
-    color: #ef4444;
+    background: #f0f7e6;
+    color: #88B04B;
 }
 
 .chart-container {
@@ -1489,7 +1489,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .status-list li {
     padding: 12px 0;
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid #f5f5f5;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -1589,13 +1589,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .link-types-table td {
     padding: 15px;
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid #f5f5f5;
 }
 
 .percentage-bar {
     position: relative;
     height: 30px;
-    background: #e2e8f0;
+    background: #f5f5f5;
     border-radius: 6px;
     overflow: hidden;
 }
@@ -1676,7 +1676,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .anchor-table td {
     padding: 15px;
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid #f5f5f5;
 }
 
 .anchor-table code {
@@ -1695,7 +1695,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .anchor-type-badge.type-marca {
-    background: #dbeafe;
+    background: #f0f7e6;
     color: #1e40af;
 }
 
@@ -1705,12 +1705,12 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .anchor-type-badge.type-keyword {
-    background: #dcfce7;
+    background: #f0f7e6;
     color: #15803d;
 }
 
 .anchor-type-badge.type-genérico {
-    background: #fee2e2;
+    background: #f0f7e6;
     color: #991b1b;
 }
 
@@ -1759,7 +1759,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .findings-list li {
     padding: 10px 0;
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid #f5f5f5;
     padding-left: 25px;
     position: relative;
 }
@@ -1873,7 +1873,7 @@ document.addEventListener('DOMContentLoaded', function() {
 .spam-categories-table td,
 .toxic-domains-table td {
     padding: 15px;
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid #f5f5f5;
 }
 
 .spam-count {
@@ -1917,7 +1917,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .action-badge.danger {
-    background: #fee2e2;
+    background: #f0f7e6;
     color: #991b1b;
 }
 
@@ -1978,8 +1978,8 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .expected-impact {
-    background: #f0fdf4;
-    border-left: 4px solid #22c55e;
+    background: #f0f7e6;
+    border-left: 4px solid #88B04B;
     padding: 15px 20px;
     border-radius: 6px;
     color: #15803d;
@@ -2010,7 +2010,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .code-block pre {
-    color: #e2e8f0;
+    color: #f5f5f5;
     font-family: 'Courier New', monospace;
     font-size: 13px;
     margin: 0;
@@ -2029,7 +2029,7 @@ document.addEventListener('DOMContentLoaded', function() {
    ESTILOS PÁGINA 4: ANCHOR TEXT OPTIMIZATION
    ======================================== */
 .anchor-optimization-page {
-    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    background: linear-gradient(135deg, #f0f7e6 0%, #f0f7e6 100%);
     padding: 60px;
     min-height: 100vh;
 }
@@ -2052,7 +2052,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .comparison-column.ideal {
-    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+    background: linear-gradient(135deg, #f0f7e6 0%, #f0f7e6 100%);
 }
 
 .comparison-column h3 {
@@ -2076,7 +2076,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .comparison-column.ideal .dist-item {
-    border-left-color: #22c55e;
+    border-left-color: #88B04B;
 }
 
 .dist-type {
@@ -2099,7 +2099,7 @@ document.addEventListener('DOMContentLoaded', function() {
 .dist-range {
     font-size: 20px;
     font-weight: 700;
-    color: #22c55e;
+    color: #88B04B;
 }
 
 .gap-analysis-section {
@@ -2115,7 +2115,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .gap-table thead {
-    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    background: linear-gradient(135deg, #fbbf24 0%, #88B04B 100%);
     color: white;
 }
 
@@ -2127,7 +2127,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .gap-table td {
     padding: 15px;
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid #f5f5f5;
 }
 
 .target-keywords-section {
@@ -2158,7 +2158,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .keyword-card i {
-    color: #f59e0b;
+    color: #88B04B;
 }
 
 .keywords-note {
@@ -2193,7 +2193,7 @@ document.addEventListener('DOMContentLoaded', function() {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    background: linear-gradient(135deg, #fbbf24 0%, #88B04B 100%);
     color: white;
     display: flex;
     align-items: center;
@@ -2654,7 +2654,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .offpage-educativo .comparacion-header.success {
-    background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 
@@ -2803,7 +2803,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .offpage-educativo .section-badge.badge-despues {
-    background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     box-shadow: 0 2px 4px rgba(40,167,69,0.3);
 }
@@ -2854,7 +2854,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .offpage-educativo .tabla-kpis tbody tr.highlight-row {
-    background: #fff3cd;
+    background: #f0f7e6;
 }
 
 .offpage-educativo .tabla-kpis tbody tr.highlight-row:hover {
@@ -2892,7 +2892,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .offpage-educativo .valor-numero.success {
-    color: #28a745;
+    color: #88B04B;
 }
 
 .offpage-educativo .valor-numero.error {

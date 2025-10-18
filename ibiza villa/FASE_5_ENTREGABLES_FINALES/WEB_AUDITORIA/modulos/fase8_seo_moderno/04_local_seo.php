@@ -1131,7 +1131,7 @@ function copyToClipboard(button) {
 
 .local-seo-page .progress-fill {
     height: 100%;
-    background: linear-gradient(90deg, #54a34a 0%, #6ab85e 100%);
+    background: linear-gradient(90deg, #88B04B 0%, #6d8f3c 100%);
     transition: width 0.3s ease;
 }
 
@@ -1156,7 +1156,7 @@ function copyToClipboard(button) {
 }
 
 .local-seo-page .checklist-items li.completed {
-    border-left-color: #54a34a;
+    border-left-color: #88B04B;
 }
 
 .local-seo-page .checklist-items li.pending {
@@ -1182,7 +1182,7 @@ function copyToClipboard(button) {
     top: 10px;
     right: 10px;
     padding: 8px 16px;
-    background: #54a34a;
+    background: #88B04B;
     color: white;
     border: none;
     border-radius: 6px;
@@ -1231,12 +1231,12 @@ function copyToClipboard(button) {
 }
 
 .local-seo-page .highlight-row {
-    background: #fff9e6;
+    background: #f0f7e6;
     font-weight: bold;
 }
 
 .local-seo-page .badge-you {
-    background: #54a34a;
+    background: #88B04B;
     color: white;
     padding: 2px 8px;
     border-radius: 4px;
@@ -1551,7 +1551,7 @@ function copyToClipboard(button) {
     margin: 20px 0;
     padding: 20px;
     background: #fffbf0;
-    border-left: 4px solid #ffc107;
+    border-left: 4px solid #88B04B;
     border-radius: 6px;
 }
 
@@ -1633,7 +1633,7 @@ function copyToClipboard(button) {
 }
 
 .localseo-educativo .texto-verde {
-    color: #28a745;
+    color: #88B04B;
     font-weight: 600;
 }
 
@@ -1668,7 +1668,7 @@ function copyToClipboard(button) {
 }
 
 .localseo-educativo .header-despues {
-    background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
 }
 
 .localseo-educativo .comparacion-contenido {
@@ -1725,7 +1725,7 @@ function copyToClipboard(button) {
 }
 
 .localseo-educativo .footer-despues {
-    background: linear-gradient(135deg, #218838 0%, #1e7e34 100%);
+    background: linear-gradient(135deg, #6d8f3c 0%, #1e7e34 100%);
 }
 
 .localseo-educativo .footer-stat {
@@ -1826,7 +1826,7 @@ function copyToClipboard(button) {
 
 .localseo-educativo .timeline-resultado {
     font-size: 13px;
-    color: #28a745;
+    color: #88B04B;
     font-weight: 600;
     padding-top: 10px;
     border-top: 1px solid #e0e0e0;
@@ -1961,13 +1961,13 @@ function copyToClipboard(button) {
 }
 
 .localseo-educativo .valor-despues .valor-principal {
-    color: #28a745;
+    color: #88B04B;
 }
 
 .localseo-educativo .badge-mejora {
     display: inline-block;
     padding: 6px 12px;
-    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #20c997 100%);
     color: white;
     border-radius: 20px;
     font-weight: 600;
@@ -2014,7 +2014,7 @@ function copyToClipboard(button) {
     margin-top: 20px;
     padding: 15px;
     background: rgba(255, 193, 7, 0.1);
-    border-left: 4px solid #ffc107;
+    border-left: 4px solid #88B04B;
     border-radius: 6px;
     font-size: 14px;
     color: #555;
@@ -2040,7 +2040,7 @@ function copyToClipboard(button) {
 }
 
 .localseo-educativo .seccion-badge-green {
-    background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 

@@ -237,12 +237,12 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 }
 
 .ia-sge-page .csv-badge-success {
-    background: #28a745;
+    background: #88B04B;
     color: white;
 }
 
 .ia-sge-page .csv-badge-warning {
-    background: #ffc107;
+    background: #88B04B;
     color: #333;
 }
 
@@ -278,7 +278,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
     content: "✓";
     position: absolute;
     left: 5px;
-    color: #28a745;
+    color: #88B04B;
     font-weight: bold;
 }
 
@@ -310,7 +310,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
     margin-top: 15px;
     padding: 12px;
     background: #e8f5e9;
-    border-left: 4px solid #28a745;
+    border-left: 4px solid #88B04B;
     border-radius: 4px;
     font-size: 14px;
     color: #155724;
@@ -381,7 +381,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 }
 
 .ia-sge-page .badge-success {
-    background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     box-shadow: 0 2px 6px rgba(40, 167, 69, 0.3);
 }
@@ -410,7 +410,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 
 .ia-sge-page .solucion-item {
     background: #f0f8f4;
-    border-left: 4px solid #28a745;
+    border-left: 4px solid #88B04B;
 }
 
 .ia-sge-page .problema-item:hover,
@@ -441,14 +441,14 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 }
 
 .ia-sge-page .impacto-negocio-antes {
-    background: #fff3cd;
-    border-left: 4px solid #ffc107;
+    background: #f0f7e6;
+    border-left: 4px solid #88B04B;
     color: #856404;
 }
 
 .ia-sge-page .impacto-negocio-despues {
     background: #d4edda;
-    border-left: 4px solid #28a745;
+    border-left: 4px solid #88B04B;
     color: #155724;
 }
 
@@ -550,7 +550,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 .ia-sge-page .timeline-content em {
     display: block;
     margin-top: 10px;
-    color: #28a745;
+    color: #88B04B;
     font-style: normal;
     font-weight: 600;
 }
@@ -598,11 +598,11 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 }
 
 .ia-sge-page .tabla-kpis .fila-destacada:hover {
-    background: #fff3cd;
+    background: #f0f7e6;
 }
 
 .ia-sge-page .mejora-positiva {
-    color: #28a745;
+    color: #88B04B;
     font-weight: 700;
 }
 
@@ -610,8 +610,8 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
     margin-top: 30px;
     display: flex;
     gap: 20px;
-    background: #fff3cd;
-    border-left: 5px solid #ffc107;
+    background: #f0f7e6;
+    border-left: 5px solid #88B04B;
     padding: 20px;
     border-radius: 8px;
 }
@@ -733,7 +733,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 }
 
 .ia-sge-page .status-badge.parcial {
-    background: #fff3cd;
+    background: #f0f7e6;
     color: #856404;
 }
 
@@ -796,7 +796,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 }
 
 .ia-sge-page .priority-indicator.media {
-    background: #ffc107;
+    background: #88B04B;
 }
 
 .ia-sge-page .priority-indicator.baja {
@@ -905,7 +905,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 }
 
 .ia-sge-page .metric-trend.up {
-    color: #28a745;
+    color: #88B04B;
 }
 
 .ia-sge-page .metric-trend.down {

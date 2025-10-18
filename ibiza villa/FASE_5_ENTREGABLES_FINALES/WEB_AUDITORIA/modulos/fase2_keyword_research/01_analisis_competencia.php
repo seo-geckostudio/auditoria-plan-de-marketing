@@ -288,7 +288,7 @@
 .da-score {
     padding: 0.25rem 0.75rem;
     border-radius: 0.5rem;
-    background: #28a745;
+    background: #88B04B;
     color: white;
 }
 
@@ -508,8 +508,8 @@
 }
 
 .gap-card.total i { color: #dc3545; }
-.gap-card.quick i { color: #28a745; }
-.gap-card.medium i { color: #ffc107; }
+.gap-card.quick i { color: #88B04B; }
+.gap-card.medium i { color: #88B04B; }
 .gap-card.difficult i { color: #6c757d; }
 
 .gap-card h3 {
@@ -583,7 +583,7 @@
 }
 
 .badge-warning {
-    background: #ffc107;
+    background: #88B04B;
     color: #333;
 }
 
@@ -625,7 +625,7 @@
     top: 0;
     left: 0;
     height: 100%;
-    background: linear-gradient(90deg, #28a745 0%, #ffc107 50%, #dc3545 100%);
+    background: linear-gradient(90deg, #88B04B 0%, #88B04B 50%, #dc3545 100%);
     border-radius: 0.5rem;
     transition: width 0.3s;
 }
@@ -648,12 +648,12 @@
 }
 
 .opp-badge.opp-alta {
-    background: #28a745;
+    background: #88B04B;
     color: white;
 }
 
 .opp-badge.opp-media {
-    background: #ffc107;
+    background: #88B04B;
     color: #333;
 }
 
@@ -876,7 +876,7 @@
 }
 
 .advantages-column.strengths h3 {
-    color: #28a745;
+    color: #88B04B;
 }
 
 .advantages-column.weaknesses h3 {
@@ -925,7 +925,7 @@
 }
 
 .impact-medio {
-    background: #ffc107;
+    background: #88B04B;
     color: #333;
 }
 
@@ -1098,11 +1098,11 @@
 }
 
 .step-item.priority-alta {
-    border-left-color: #ffc107;
+    border-left-color: #88B04B;
 }
 
 .step-item.priority-media {
-    border-left-color: #28a745;
+    border-left-color: #88B04B;
 }
 
 .priority-badge {
@@ -1120,12 +1120,12 @@
 }
 
 .step-item.priority-alta .priority-badge {
-    background: #ffc107;
+    background: #88B04B;
     color: #333;
 }
 
 .step-item.priority-media .priority-badge {
-    background: #28a745;
+    background: #88B04B;
     color: white;
 }
 

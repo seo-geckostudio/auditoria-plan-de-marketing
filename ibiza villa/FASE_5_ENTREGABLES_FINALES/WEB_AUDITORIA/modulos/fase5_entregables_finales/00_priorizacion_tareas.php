@@ -312,18 +312,18 @@ $moduloData = [
 }
 
 .fase-1 {
-    background: linear-gradient(135deg, #fff9e6 0%, #ffe6cc 100%);
+    background: linear-gradient(135deg, #f0f7e6 0%, #ffe6cc 100%);
     border-color: #ffd700;
 }
 
 .fase-2 {
-    background: linear-gradient(135deg, #f0f9ff 0%, #dbeafe 100%);
-    border-color: #3b82f6;
+    background: linear-gradient(135deg, #f0f7e6 0%, #f0f7e6 100%);
+    border-color: #88B04B;
 }
 
 .fase-3 {
     background: linear-gradient(135deg, #f0fff4 0%, #d4f4dd 100%);
-    border-color: #28a745;
+    border-color: #88B04B;
 }
 
 .fase-box ul {
@@ -394,13 +394,13 @@ $moduloData = [
 }
 
 .fila-destacada {
-    background: linear-gradient(135deg, #fff9e6 0%, #ffe6cc 100%);
+    background: linear-gradient(135deg, #f0f7e6 0%, #ffe6cc 100%);
     border-left: 4px solid #ffd700;
     font-weight: bold;
 }
 
 .mejora-positiva {
-    color: #28a745;
+    color: #88B04B;
     font-weight: bold;
 }
 
@@ -418,7 +418,7 @@ $moduloData = [
 }
 
 .badge-despues {
-    background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 
