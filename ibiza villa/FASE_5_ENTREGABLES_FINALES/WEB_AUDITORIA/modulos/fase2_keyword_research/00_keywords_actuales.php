@@ -15,8 +15,433 @@ $conclusiones = $datosModulo['conclusiones'] ?? [];
 $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 ?>
 
+<!-- SECCIÓN EDUCATIVA: ¿Qué es Keyword Research? -->
+<div class="audit-page keywords-educativo">
+    <section class="concepto-educativo">
+        <div class="concepto-header">
+            <span class="concepto-icon">📚</span>
+            <h2>¿Qué es el Keyword Research y Por Qué Determinará el Éxito de Tu Negocio?</h2>
+        </div>
+        <div class="concepto-content">
+            <p class="concepto-intro">
+                El Keyword Research es el proceso de identificar las palabras exactas que tus clientes potenciales
+                escriben en Google cuando buscan villas de lujo en Ibiza. No se trata solo de "tener keywords",
+                sino de elegir LAS CORRECTAS que atraigan clientes que realmente reserven.
+            </p>
+            <div class="analogia-box">
+                <div class="analogia-header">
+                    <span class="analogia-icon">💡</span>
+                    <strong>Piensa en el Keyword Research como un mapa del tesoro:</strong>
+                </div>
+                <ul class="analogia-list">
+                    <li><strong>El mapa completo</strong> son todas las búsquedas relacionadas con "villas Ibiza" (miles de keywords)</li>
+                    <li><strong>Las X rojas</strong> son las keywords con alto volumen Y alta intención de reserva (las que importan)</li>
+                    <li><strong>Los caminos</strong> son las keywords informativas que guían a los usuarios hacia la reserva</li>
+                    <li><strong>Los obstáculos</strong> son keywords donde la competencia es brutal y no merece la pena competir</li>
+                    <li><strong>El tesoro</strong> son las conversiones: clientes que reservan villas de €3,000-15,000/semana</li>
+                </ul>
+                <p class="analogia-conclusion">
+                    <strong>Sin un buen mapa</strong>, estarás invirtiendo esfuerzo en keywords que no traen clientes de valor.
+                    <strong>Con el mapa correcto</strong>, sabrás exactamente qué contenido crear, qué páginas optimizar y dónde
+                    invertir tu presupuesto para máximo retorno.
+                </p>
+            </div>
+            <div class="impacto-negocio-grid">
+                <div class="impacto-item">
+                    <span class="impacto-icon">🎯</span>
+                    <h3>Tráfico Cualificado</h3>
+                    <p>No cualquier visita vale. Las keywords correctas atraen usuarios que buscan <strong>villas de lujo</strong>,
+                    no apartamentos baratos. Esto multiplica tu tasa de conversión por 5-10x.</p>
+                </div>
+                <div class="impacto-item">
+                    <span class="impacto-icon">💰</span>
+                    <h3>Rentabilidad Directa</h3>
+                    <p>Una keyword como "villa lujo ibiza primera línea" (580 búsquedas/mes) puede generar 2-4 reservas/mes
+                    = €15,000-40,000 en ingresos. Una keyword mal elegida genera 0€.</p>
+                </div>
+                <div class="impacto-item">
+                    <span class="impacto-icon">⏱️</span>
+                    <h3>Eficiencia en Contenido</h3>
+                    <p>Saber qué keywords atacar te dice exactamente qué contenido crear. Sin esto, creas 100 páginas
+                    y solo 5 generan resultados. Con esto, 80 de 100 páginas son rentables.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN ENTREGABLES -->
+    <section class="entregables-section">
+        <div class="entregables-header">
+            <span class="entregables-icon">📄</span>
+            <h2>Archivos de Trabajo para Tu Estrategia de Keywords</h2>
+        </div>
+        <p class="entregables-intro">
+            Hemos preparado 3 archivos CSV con análisis detallado de tus keywords actuales y oportunidades.
+            Descárgalos, ábrelos en Excel y empieza a trabajar tu estrategia:
+        </p>
+        <div class="entregables-grid">
+            <!-- CSV 1: Keywords Bajo Potencial -->
+            <div class="entregable-card priority-warning">
+                <div class="entregable-icon">
+                    <i class="fas fa-file-csv"></i>
+                </div>
+                <div class="entregable-content">
+                    <h3>Keywords con Bajo Potencial</h3>
+                    <p class="entregable-desc">
+                        <strong>12 keywords</strong> actuales que estás posicionando pero que no generan resultados.
+                        Incluye la keyword mejorada recomendada y ganancia estimada.
+                    </p>
+                    <div class="entregable-meta">
+                        <span class="meta-badge priority">Prioridad: Media</span>
+                        <span class="meta-badge impact">Ganancia: +400-550 sesiones/mes cambiando foco</span>
+                    </div>
+                    <p class="entregable-uso">
+                        <strong>Cómo usar:</strong> Revisa las keywords "Keyword_Actual" vs "Keyword_Mejor".
+                        Redirige esfuerzo de las actuales a las mejoradas para mejor ROI.
+                    </p>
+                    <a href="/entregables/keywords/keywords_bajo_potencial.csv" class="btn-download" download>
+                        <i class="fas fa-download"></i> Descargar CSV
+                    </a>
+                </div>
+            </div>
+
+            <!-- CSV 2: Keywords Oportunidad -->
+            <div class="entregable-card priority-critical">
+                <div class="entregable-icon">
+                    <i class="fas fa-file-csv"></i>
+                </div>
+                <div class="entregable-content">
+                    <h3>Keywords de Alta Oportunidad</h3>
+                    <p class="entregable-desc">
+                        <strong>15 keywords</strong> de alto volumen y valor donde NO estás posicionado aún.
+                        Cada una incluye: volumen, dificultad, CPC, acción recomendada y valor estimado.
+                    </p>
+                    <div class="entregable-meta">
+                        <span class="meta-badge priority">Prioridad: Muy Alta</span>
+                        <span class="meta-badge impact">Ganancia: +850-1,200 sesiones/mes + 15-25 reservas/mes</span>
+                    </div>
+                    <p class="entregable-uso">
+                        <strong>Cómo usar:</strong> Ordena por "Prioridad" y empieza por las "Muy Alta".
+                        Sigue la columna "Accion" para implementar. Potencial de €45,000-75,000/mes adicionales.
+                    </p>
+                    <a href="/entregables/keywords/keywords_oportunidad.csv" class="btn-download" download>
+                        <i class="fas fa-download"></i> Descargar CSV
+                    </a>
+                </div>
+            </div>
+
+            <!-- CSV 3: Oportunidades Priorizadas (ya existe) -->
+            <div class="entregable-card priority-high">
+                <div class="entregable-icon">
+                    <i class="fas fa-file-csv"></i>
+                </div>
+                <div class="entregable-content">
+                    <h3>Matriz de Priorización Completa</h3>
+                    <p class="entregable-desc">
+                        Todas las oportunidades ordenadas por score de priorización.
+                        Incluye criterios de volumen, dificultad, relevancia y valor comercial.
+                    </p>
+                    <div class="entregable-meta">
+                        <span class="meta-badge priority">Prioridad: Alta</span>
+                        <span class="meta-badge impact">Herramienta: Planificación estratégica</span>
+                    </div>
+                    <p class="entregable-uso">
+                        <strong>Cómo usar:</strong> Utiliza este archivo para tu roadmap trimestral.
+                        Las keywords con score >80 deben implementarse en los próximos 30 días.
+                    </p>
+                    <a href="/entregables/keywords/oportunidades_priorizadas.csv" class="btn-download" download>
+                        <i class="fas fa-download"></i> Descargar CSV
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="instrucciones-uso">
+            <h3><i class="fas fa-lightbulb"></i> Instrucciones de Uso</h3>
+            <ol class="instrucciones-list">
+                <li>
+                    <strong>Descarga los 3 CSVs</strong> y ábrelos en Excel o Google Sheets
+                </li>
+                <li>
+                    <strong>Empieza por Keywords de Oportunidad</strong> - ordena por "Prioridad" y elige las 5 primeras "Muy Alta"
+                </li>
+                <li>
+                    <strong>Implementa la acción recomendada</strong> para cada keyword (crear landing, optimizar existente, etc.)
+                </li>
+                <li>
+                    <strong>Mide resultados</strong> en Google Search Console después de 30-45 días
+                </li>
+                <li>
+                    <strong>Repite el proceso</strong> con las siguientes 5 keywords mientras optimizas las primeras
+                </li>
+                <li>
+                    <strong>Revisa Keywords Bajo Potencial</strong> y redirige recursos hacia las keywords mejoradas
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- COMPARACIÓN ANTES/DESPUÉS -->
+    <section class="comparacion-antes-despues">
+        <div class="comparacion-main-header">
+            <span class="comparacion-main-icon">🔍</span>
+            <h2>Situación Actual vs. Estrategia Optimizada</h2>
+        </div>
+        <div class="comparacion-grid">
+            <!-- COLUMNA ANTES -->
+            <div class="comparacion-columna antes">
+                <div class="comparacion-header error">
+                    <span class="badge-estado antes">ANTES - ESTRATEGIA ACTUAL</span>
+                    <h3>Enfoque de Keywords Sin Optimizar</h3>
+                </div>
+                <div class="comparacion-content">
+                    <div class="problemas-lista">
+                        <h4>Problemas Detectados:</h4>
+                        <ul>
+                            <li class="problema-item">
+                                <span class="icon-error">❌</span>
+                                <div class="problema-texto">
+                                    <strong>12 keywords de bajo potencial consumiendo recursos</strong>
+                                    <span class="problema-detalle">Posicionamiento en keywords con bajo volumen o muy genéricas sin conversión</span>
+                                </div>
+                            </li>
+                            <li class="problema-item">
+                                <span class="icon-error">❌</span>
+                                <div class="problema-texto">
+                                    <strong>15 keywords de alto valor sin trabajar</strong>
+                                    <span class="problema-detalle">Oportunidades de 850-1,200 sesiones/mes desaprovechadas</span>
+                                </div>
+                            </li>
+                            <li class="problema-item">
+                                <span class="icon-error">❌</span>
+                                <div class="problema-texto">
+                                    <strong>Falta de keywords long-tail específicas</strong>
+                                    <span class="problema-detalle">No hay cobertura de búsquedas como "villa 10 personas piscina privada"</span>
+                                </div>
+                            </li>
+                            <li class="problema-item">
+                                <span class="icon-error">❌</span>
+                                <div class="problema-texto">
+                                    <strong>Pérdida estimada: 15-25 reservas/mes</strong>
+                                    <span class="problema-detalle">Equivalente a €45,000-75,000/mes en ingresos perdidos</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COLUMNA FLECHA -->
+            <div class="comparacion-flecha">
+                <div class="flecha-container">
+                    <i class="fas fa-arrow-right"></i>
+                    <span class="flecha-text">OPTIMIZACIÓN</span>
+                </div>
+            </div>
+
+            <!-- COLUMNA DESPUÉS -->
+            <div class="comparacion-columna despues">
+                <div class="comparacion-header success">
+                    <span class="badge-estado despues">DESPUÉS - ESTRATEGIA OPTIMIZADA</span>
+                    <h3>Enfoque de Keywords Optimizado</h3>
+                </div>
+                <div class="comparacion-content">
+                    <div class="mejoras-lista">
+                        <h4>Mejoras Implementadas:</h4>
+                        <ul>
+                            <li class="mejora-item">
+                                <span class="icon-success">✅</span>
+                                <div class="mejora-texto">
+                                    <strong>Recursos redirigidos a keywords de alto valor</strong>
+                                    <span class="mejora-detalle">Foco en 27 keywords con volumen 180-1,200 búsquedas/mes y alta intención</span>
+                                </div>
+                            </li>
+                            <li class="mejora-item">
+                                <span class="icon-success">✅</span>
+                                <div class="mejora-texto">
+                                    <strong>15 nuevas páginas optimizadas para oportunidades</strong>
+                                    <span class="mejora-detalle">Landings específicas + contenido optimizado + backlinks</span>
+                                </div>
+                            </li>
+                            <li class="mejora-item">
+                                <span class="icon-success">✅</span>
+                                <div class="mejora-texto">
+                                    <strong>Cobertura completa long-tail</strong>
+                                    <span class="mejora-detalle">Keywords específicas tipo "villa lujo san antonio 8 personas"</span>
+                                </div>
+                            </li>
+                            <li class="mejora-item">
+                                <span class="icon-success">✅</span>
+                                <div class="mejora-texto">
+                                    <strong>Ganancia estimada: +15-25 reservas/mes</strong>
+                                    <span class="mejora-detalle">Equivalente a €45,000-75,000/mes en ingresos adicionales</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TABLA DE KPIS -->
+    <section class="kpis-esperados-section">
+        <div class="section-badge-container">
+            <span class="section-badge badge-despues">DESPUÉS - RESULTADOS ESPERADOS</span>
+        </div>
+        <h2>📈 KPIs y Resultados Esperados con Estrategia Optimizada</h2>
+        <div class="tabla-kpis-container">
+            <table class="tabla-kpis">
+                <thead>
+                    <tr>
+                        <th class="col-metrica">Métrica</th>
+                        <th class="col-antes">ANTES<br><span class="col-subtitle">Estrategia Actual</span></th>
+                        <th class="col-despues">DESPUÉS<br><span class="col-subtitle">Con Optimización</span></th>
+                        <th class="col-mejora">Mejora</th>
+                        <th class="col-impacto">Impacto en Negocio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- KPI 1 -->
+                    <tr class="kpi-row">
+                        <td class="metrica-nombre">
+                            <strong>Keywords de Alto Valor Posicionadas</strong>
+                            <span class="metrica-descripcion">Keywords con volumen >150 y posición top 10</span>
+                        </td>
+                        <td class="valor-antes">
+                            <span class="valor-numero">12</span>
+                            <span class="valor-unidad">keywords</span>
+                        </td>
+                        <td class="valor-despues">
+                            <span class="valor-numero success">27-35</span>
+                            <span class="valor-unidad">keywords</span>
+                        </td>
+                        <td class="valor-mejora">
+                            <div class="mejora-badge success">
+                                <span class="mejora-porcentaje">+125-192%</span>
+                                <span class="mejora-texto">incremento</span>
+                            </div>
+                        </td>
+                        <td class="impacto-texto">
+                            Más del doble de keywords generando tráfico cualificado
+                        </td>
+                    </tr>
+
+                    <!-- KPI 2 -->
+                    <tr class="kpi-row">
+                        <td class="metrica-nombre">
+                            <strong>Tráfico de Keywords Long-Tail</strong>
+                            <span class="metrica-descripcion">Búsquedas específicas con alta intención</span>
+                        </td>
+                        <td class="valor-antes">
+                            <span class="valor-numero">320</span>
+                            <span class="valor-unidad">sesiones/mes</span>
+                        </td>
+                        <td class="valor-despues">
+                            <span class="valor-numero success">780-950</span>
+                            <span class="valor-unidad">sesiones/mes</span>
+                        </td>
+                        <td class="valor-mejora">
+                            <div class="mejora-badge success">
+                                <span class="mejora-porcentaje">+144-197%</span>
+                                <span class="mejora-texto">incremento</span>
+                            </div>
+                        </td>
+                        <td class="impacto-texto">
+                            +460-630 sesiones/mes de usuarios listos para reservar
+                        </td>
+                    </tr>
+
+                    <!-- KPI 3 -->
+                    <tr class="kpi-row">
+                        <td class="metrica-nombre">
+                            <strong>Tasa de Conversión de Tráfico Orgánico</strong>
+                            <span class="metrica-descripcion">% de visitantes que solicitan reserva</span>
+                        </td>
+                        <td class="valor-antes">
+                            <span class="valor-numero">1.8%</span>
+                        </td>
+                        <td class="valor-despues">
+                            <span class="valor-numero success">2.8-3.2%</span>
+                        </td>
+                        <td class="valor-mejora">
+                            <div class="mejora-badge success">
+                                <span class="mejora-porcentaje">+56-78%</span>
+                                <span class="mejora-texto">incremento</span>
+                            </div>
+                        </td>
+                        <td class="impacto-texto">
+                            Mejor match keyword-contenido = usuarios más cualificados
+                        </td>
+                    </tr>
+
+                    <!-- KPI 4 - DESTACADO -->
+                    <tr class="kpi-row critical highlight-row">
+                        <td class="metrica-nombre">
+                            <strong>Tráfico Orgánico Total</strong>
+                            <span class="metrica-descripcion">Sesiones mensuales desde búsquedas</span>
+                        </td>
+                        <td class="valor-antes">
+                            <span class="valor-numero">6,850</span>
+                            <span class="valor-unidad">sesiones/mes</span>
+                        </td>
+                        <td class="valor-despues">
+                            <span class="valor-numero success">8,200-9,100</span>
+                            <span class="valor-unidad">sesiones/mes</span>
+                        </td>
+                        <td class="valor-mejora">
+                            <div class="mejora-badge success large">
+                                <span class="mejora-porcentaje">+20-33%</span>
+                                <span class="mejora-texto">incremento</span>
+                            </div>
+                        </td>
+                        <td class="impacto-texto">
+                            <strong>+1,350-2,250 sesiones/mes</strong> de tráfico cualificado adicional
+                        </td>
+                    </tr>
+
+                    <!-- KPI 5 -->
+                    <tr class="kpi-row critical">
+                        <td class="metrica-nombre">
+                            <strong>Reservas desde Búsqueda Orgánica</strong>
+                            <span class="metrica-descripcion">Conversiones directas atribuidas a SEO</span>
+                        </td>
+                        <td class="valor-antes">
+                            <span class="valor-numero">12-15</span>
+                            <span class="valor-unidad">reservas/mes</span>
+                        </td>
+                        <td class="valor-despues">
+                            <span class="valor-numero success">27-40</span>
+                            <span class="valor-unidad">reservas/mes</span>
+                        </td>
+                        <td class="valor-mejora">
+                            <div class="mejora-badge success large">
+                                <span class="mejora-porcentaje">+125-167%</span>
+                                <span class="mejora-texto">incremento</span>
+                            </div>
+                        </td>
+                        <td class="impacto-texto">
+                            <strong>€45,000-75,000/mes adicionales</strong> en ingresos estimados
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="nota-tiempos">
+            <p>
+                <i class="fas fa-clock"></i>
+                <strong>Nota sobre tiempos:</strong> Las primeras mejoras en posicionamiento se ven en 30-45 días.
+                El impacto completo en reservas se materializa en 60-90 días una vez implementada la estrategia completa.
+            </p>
+        </div>
+    </section>
+</div>
+
 <div class="audit-page keywords-page">
     <div class="page-header">
+        <div class="section-badge-container">
+            <span class="section-badge badge-antes">ANTES - SITUACIÓN ACTUAL</span>
+        </div>
         <h1 class="page-title">
             <i class="fas fa-key"></i>
             <?php echo htmlspecialchars($datosModulo['titulo']); ?>
@@ -610,6 +1035,722 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 @media print {
     .audit-page {
         page-break-after: always;
+    }
+}
+
+/* ============================================
+   PATRÓN EDUCATIVO - CSS COMPLETO KEYWORDS
+   ============================================ */
+
+/* Contenedor principal del patrón educativo */
+.keywords-educativo .concepto-educativo {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.keywords-educativo .concepto-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.keywords-educativo .concepto-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.keywords-educativo .concepto-header h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.keywords-educativo .concepto-intro {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Analogía Box */
+.keywords-educativo .analogia-box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 25px;
+    margin: 25px 0;
+}
+
+.keywords-educativo .analogia-header {
+    font-size: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.keywords-educativo .analogia-icon {
+    font-size: 28px;
+}
+
+.keywords-educativo .analogia-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.keywords-educativo .analogia-list li {
+    padding: 10px 0;
+    padding-left: 30px;
+    position: relative;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.keywords-educativo .analogia-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    color: #ffd700;
+}
+
+.keywords-educativo .analogia-conclusion {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    border-left: 4px solid #ffd700;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Grid de Impacto en Negocio */
+.keywords-educativo .impacto-negocio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .keywords-educativo .impacto-negocio-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.keywords-educativo .impacto-item {
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.keywords-educativo .impacto-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.keywords-educativo .impacto-icon {
+    font-size: 42px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.keywords-educativo .impacto-item h3 {
+    margin: 0 0 12px 0;
+    font-size: 20px;
+    color: #667eea;
+}
+
+.keywords-educativo .impacto-item p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Sección Entregables */
+.keywords-educativo .entregables-section {
+    background: #f8f9fa;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.keywords-educativo .entregables-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.keywords-educativo .entregables-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 15px;
+    color: #667eea;
+}
+
+.keywords-educativo .entregables-header h2 {
+    margin: 0;
+    color: #333;
+    font-size: 28px;
+}
+
+.keywords-educativo .entregables-intro {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.keywords-educativo .entregables-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+    .keywords-educativo .entregables-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.keywords-educativo .entregable-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s;
+}
+
+.keywords-educativo .entregable-card:hover {
+    border-color: #667eea;
+    box-shadow: 0 4px 12px rgba(102,126,234,0.15);
+    transform: translateY(-2px);
+}
+
+.keywords-educativo .entregable-card.priority-critical {
+    border-left: 5px solid #dc3545;
+}
+
+.keywords-educativo .entregable-card.priority-high {
+    border-left: 5px solid #ffc107;
+}
+
+.keywords-educativo .entregable-card.priority-warning {
+    border-left: 5px solid #ff9800;
+}
+
+.keywords-educativo .entregable-icon {
+    font-size: 48px;
+    color: #667eea;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.keywords-educativo .entregable-content h3 {
+    margin: 0 0 12px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.keywords-educativo .entregable-desc {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.keywords-educativo .entregable-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.keywords-educativo .meta-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.keywords-educativo .meta-badge.priority {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.keywords-educativo .meta-badge.impact {
+    background: #e8f5e9;
+    color: #388e3c;
+}
+
+.keywords-educativo .entregable-uso {
+    background: #f8f9fa;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    border-left: 3px solid #667eea;
+}
+
+.keywords-educativo .btn-download {
+    display: block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.keywords-educativo .btn-download:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(102,126,234,0.3);
+    color: white;
+}
+
+.keywords-educativo .btn-download i {
+    margin-right: 8px;
+}
+
+/* Instrucciones de uso */
+.keywords-educativo .instrucciones-uso {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 2px solid #667eea;
+}
+
+.keywords-educativo .instrucciones-uso h3 {
+    margin: 0 0 20px 0;
+    color: #667eea;
+    font-size: 22px;
+}
+
+.keywords-educativo .instrucciones-list {
+    margin: 0;
+    padding-left: 25px;
+}
+
+.keywords-educativo .instrucciones-list li {
+    margin: 12px 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Comparación ANTES/DESPUÉS */
+.keywords-educativo .comparacion-antes-despues {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.keywords-educativo .comparacion-main-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.keywords-educativo .comparacion-main-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.keywords-educativo .comparacion-main-header h2 {
+    margin: 0;
+    color: #333;
+    font-size: 28px;
+}
+
+.keywords-educativo .comparacion-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+@media (max-width: 992px) {
+    .keywords-educativo .comparacion-grid {
+        grid-template-columns: 1fr;
+    }
+    .keywords-educativo .comparacion-flecha {
+        order: 2;
+    }
+    .keywords-educativo .comparacion-columna.despues {
+        order: 3;
+    }
+}
+
+.keywords-educativo .comparacion-columna {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.keywords-educativo .comparacion-header {
+    padding: 20px;
+    text-align: center;
+}
+
+.keywords-educativo .comparacion-header.error {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+    color: white;
+}
+
+.keywords-educativo .comparacion-header.success {
+    background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+    color: white;
+}
+
+.keywords-educativo .badge-estado {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.keywords-educativo .badge-estado.antes {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.keywords-educativo .badge-estado.despues {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.keywords-educativo .comparacion-header h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.keywords-educativo .comparacion-content {
+    background: #f8f9fa;
+    padding: 25px;
+    min-height: 400px;
+}
+
+.keywords-educativo .problemas-lista h4,
+.keywords-educativo .mejoras-lista h4 {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.keywords-educativo .problemas-lista ul,
+.keywords-educativo .mejoras-lista ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.keywords-educativo .problema-item,
+.keywords-educativo .mejora-item {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.keywords-educativo .icon-error {
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.keywords-educativo .icon-success {
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.keywords-educativo .problema-texto,
+.keywords-educativo .mejora-texto {
+    flex: 1;
+}
+
+.keywords-educativo .problema-texto strong,
+.keywords-educativo .mejora-texto strong {
+    display: block;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.keywords-educativo .problema-detalle,
+.keywords-educativo .mejora-detalle {
+    display: block;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Flecha de transformación */
+.keywords-educativo .comparacion-flecha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.keywords-educativo .flecha-container {
+    text-align: center;
+}
+
+.keywords-educativo .flecha-container i {
+    font-size: 48px;
+    color: #667eea;
+    display: block;
+    margin-bottom: 10px;
+    animation: pulse 2s infinite;
+}
+
+.keywords-educativo .flecha-text {
+    display: block;
+    font-weight: 700;
+    color: #667eea;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+/* Sección KPIs */
+.keywords-educativo .kpis-esperados-section {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.keywords-educativo .section-badge-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.keywords-educativo .section-badge {
+    display: inline-block;
+    padding: 10px 24px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.keywords-educativo .section-badge.badge-antes {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+    color: white;
+    box-shadow: 0 2px 4px rgba(220,53,69,0.3);
+}
+
+.keywords-educativo .section-badge.badge-despues {
+    background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+    color: white;
+    box-shadow: 0 2px 4px rgba(40,167,69,0.3);
+}
+
+.keywords-educativo .kpis-esperados-section h2 {
+    margin: 0 0 30px 0;
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+}
+
+.keywords-educativo .tabla-kpis-container {
+    overflow-x: auto;
+}
+
+.keywords-educativo .tabla-kpis {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.keywords-educativo .tabla-kpis thead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.keywords-educativo .tabla-kpis th {
+    padding: 15px 12px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.keywords-educativo .col-subtitle {
+    display: block;
+    font-size: 11px;
+    opacity: 0.9;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.keywords-educativo .tabla-kpis tbody tr {
+    border-bottom: 1px solid #e9ecef;
+}
+
+.keywords-educativo .tabla-kpis tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.keywords-educativo .tabla-kpis tbody tr.highlight-row {
+    background: #fff3cd;
+}
+
+.keywords-educativo .tabla-kpis tbody tr.highlight-row:hover {
+    background: #ffe69c;
+}
+
+.keywords-educativo .tabla-kpis td {
+    padding: 18px 12px;
+    vertical-align: top;
+}
+
+.keywords-educativo .metrica-nombre {
+    font-weight: 600;
+    color: #333;
+}
+
+.keywords-educativo .metrica-descripcion {
+    display: block;
+    font-size: 13px;
+    color: #666;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.keywords-educativo .valor-antes,
+.keywords-educativo .valor-despues {
+    text-align: center;
+}
+
+.keywords-educativo .valor-numero {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+.keywords-educativo .valor-numero.success {
+    color: #28a745;
+}
+
+.keywords-educativo .valor-unidad {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.keywords-educativo .valor-mejora {
+    text-align: center;
+}
+
+.keywords-educativo .mejora-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: #d4edda;
+    color: #155724;
+    font-weight: 700;
+}
+
+.keywords-educativo .mejora-badge.success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.keywords-educativo .mejora-badge.large {
+    padding: 12px 20px;
+}
+
+.keywords-educativo .mejora-porcentaje {
+    display: block;
+    font-size: 20px;
+}
+
+.keywords-educativo .mejora-badge.large .mejora-porcentaje {
+    font-size: 24px;
+}
+
+.keywords-educativo .mejora-texto {
+    display: block;
+    font-size: 11px;
+    margin-top: 2px;
+    text-transform: uppercase;
+}
+
+.keywords-educativo .impacto-texto {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.keywords-educativo .nota-tiempos {
+    margin-top: 25px;
+    padding: 20px;
+    background: #e7f3ff;
+    border-left: 4px solid #2196f3;
+    border-radius: 8px;
+}
+
+.keywords-educativo .nota-tiempos p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.keywords-educativo .nota-tiempos i {
+    color: #2196f3;
+    margin-right: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .keywords-educativo .tabla-kpis {
+        font-size: 13px;
+    }
+
+    .keywords-educativo .valor-numero {
+        font-size: 20px;
+    }
+
+    .keywords-educativo .mejora-porcentaje {
+        font-size: 18px;
     }
 }
 </style>
