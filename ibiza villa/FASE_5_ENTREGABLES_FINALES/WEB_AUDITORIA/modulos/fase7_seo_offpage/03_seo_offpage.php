@@ -19,9 +19,451 @@ $seccion = $datosModulo['seccion'];
 $paginas = $datosModulo['paginas'];
 ?>
 
+<!-- SECCIÓN EDUCATIVA: ¿Qué es SEO Off-Page? -->
+<div class="audit-page offpage-educativo">
+    <section class="concepto-educativo">
+        <div class="concepto-header">
+            <span class="concepto-icon">📚</span>
+            <h2>¿Qué es el SEO Off-Page y Por Qué Google Te Ignora Sin Él?</h2>
+        </div>
+        <div class="concepto-content">
+            <p class="concepto-intro">
+                El SEO Off-Page es todo lo que pasa FUERA de tu sitio web pero que determina cómo Google te valora.
+                Principalmente son los <strong>backlinks</strong> (enlaces desde otros sitios hacia el tuyo), que actúan
+                como "votos de confianza". Cuantos más votos de calidad tengas, más autoridad y mejor posicionamiento.
+            </p>
+            <div class="analogia-box">
+                <div class="analogia-header">
+                    <span class="analogia-icon">💡</span>
+                    <strong>Piensa en el SEO Off-Page como un sistema de recomendaciones profesionales:</strong>
+                </div>
+                <ul class="analogia-list">
+                    <li><strong>Los backlinks</strong> son como recomendaciones de otros profesionales hablando de ti</li>
+                    <li><strong>La autoridad de dominio (DR)</strong> es tu reputación profesional acumulada</li>
+                    <li><strong>Un link de Forbes</strong> = recomendación del CEO de Google (DR 91, máximo peso)</li>
+                    <li><strong>Un link de spam</strong> = recomendación de alguien con pésima reputación (te perjudica)</li>
+                    <li><strong>Anchor text</strong> es CÓMO te recomiendan ("experto SEO" vs "click aquí")</li>
+                </ul>
+                <p class="analogia-conclusion">
+                    <strong>Sin recomendaciones</strong>, Google no confía en ti aunque tu web sea perfecta.
+                    <strong>Con recomendaciones de calidad</strong>, Google te posiciona por encima de competidores
+                    que pueden tener mejor contenido técnico pero peor "reputación externa".
+                </p>
+            </div>
+            <div class="impacto-negocio-grid">
+                <div class="impacto-item">
+                    <span class="impacto-icon">🏆</span>
+                    <h3>Autoridad y Rankings</h3>
+                    <p>Un DR alto (50-70) te permite competir por keywords difíciles. Ibiza Villa (DR 38) compite contra
+                    sitios DR 60-80. Subir a DR 50 = acceso a primeras posiciones en búsquedas de alto volumen.</p>
+                </div>
+                <div class="impacto-item">
+                    <span class="impacto-icon">💰</span>
+                    <h3>Tráfico de Referencia</h3>
+                    <p>Un backlink en Timeout.com (DR 78) puede generar 400-600 visitas/mes directas MÁS el impulso SEO.
+                    15 backlinks estratégicos = +2,500-4,000 visitas/mes cualificadas.</p>
+                </div>
+                <div class="impacto-item">
+                    <span class="impacto-icon">🚀</span>
+                    <h3>Efecto Acumulativo</h3>
+                    <p>Los backlinks se acumulan con el tiempo. Una estrategia de 3-6 meses consiguiendo 2-3 links/mes
+                    de DR 50+ multiplica tu autoridad permanentemente. El ROI aumenta cada mes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN ENTREGABLES -->
+    <section class="entregables-section">
+        <div class="entregables-header">
+            <span class="entregables-icon">📄</span>
+            <h2>Archivos de Trabajo para Tu Estrategia de Link Building</h2>
+        </div>
+        <p class="entregables-intro">
+            Hemos preparado 2 archivos CSV con análisis de oportunidades de backlinks y enlaces tóxicos a eliminar.
+            Descárgalos, ábrelos en Excel y ejecuta las acciones recomendadas:
+        </p>
+        <div class="entregables-grid">
+            <!-- CSV 1: Oportunidades Backlinks -->
+            <div class="entregable-card priority-critical">
+                <div class="entregable-icon">
+                    <i class="fas fa-file-csv"></i>
+                </div>
+                <div class="entregable-content">
+                    <h3>Oportunidades de Backlinks Cualificados</h3>
+                    <p class="entregable-desc">
+                        <strong>15 oportunidades</strong> de backlinks desde sitios relevantes DR 36-91.
+                        Incluye: dominio, DR, estrategia, contenido propuesto, esfuerzo y tráfico estimado.
+                    </p>
+                    <div class="entregable-meta">
+                        <span class="meta-badge priority">Prioridad: Muy Alta</span>
+                        <span class="meta-badge impact">Potencial: +DR 8-12 puntos + 2,500-4,000 visitas/mes</span>
+                    </div>
+                    <p class="entregable-uso">
+                        <strong>Cómo usar:</strong> Ordena por "Prioridad" y empieza por las 5 "Muy Alta".
+                        Sigue la columna "Estrategia" para outreach. Prioriza DR >60 y alta relevancia temática.
+                    </p>
+                    <a href="/entregables/off_page/oportunidades_backlinks.csv" class="btn-download" download>
+                        <i class="fas fa-download"></i> Descargar CSV
+                    </a>
+                </div>
+            </div>
+
+            <!-- CSV 2: Enlaces Tóxicos -->
+            <div class="entregable-card priority-warning">
+                <div class="entregable-icon">
+                    <i class="fas fa-file-csv"></i>
+                </div>
+                <div class="entregable-content">
+                    <h3>Enlaces Tóxicos a Eliminar (Disavow)</h3>
+                    <p class="entregable-desc">
+                        <strong>10 enlaces tóxicos</strong> detectados con Spam Score 78-100.
+                        Incluye: dominio origen, tipo de problema, acción recomendada e impacto estimado.
+                    </p>
+                    <div class="entregable-meta">
+                        <span class="meta-badge priority">Prioridad: Crítica</span>
+                        <span class="meta-badge impact">Riesgo: Penalización potencial + pérdida DR 2-4 puntos</span>
+                    </div>
+                    <p class="entregable-uso">
+                        <strong>Cómo usar:</strong> Crea archivo disavow.txt con los dominios marcados "Disavow inmediato".
+                        Súbelo a Google Search Console. Documenta fecha y resultado para seguimiento.
+                    </p>
+                    <a href="/entregables/off_page/enlaces_toxicos.csv" class="btn-download" download>
+                        <i class="fas fa-download"></i> Descargar CSV
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="instrucciones-uso">
+            <h3><i class="fas fa-lightbulb"></i> Instrucciones de Implementación</h3>
+            <ol class="instrucciones-list">
+                <li>
+                    <strong>Eliminar enlaces tóxicos PRIMERO</strong> - crea y sube archivo disavow.txt a GSC
+                </li>
+                <li>
+                    <strong>Priorizar oportunidades por DR y relevancia</strong> - enfócate en DR >60 y temática alineada
+                </li>
+                <li>
+                    <strong>Crear contenido de calidad</strong> para outreach (guest posts, estudios, infografías)
+                </li>
+                <li>
+                    <strong>Personalizar cada outreach</strong> - emails genéricos tienen 2% respuesta, personalizados 25%
+                </li>
+                <li>
+                    <strong>Monitorear resultados cada 30 días</strong> - trackea DR, backlinks nuevos y tráfico referido
+                </li>
+                <li>
+                    <strong>Construir relaciones a largo plazo</strong> - no pidas links, ofrece valor primero
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- COMPARACIÓN ANTES/DESPUÉS -->
+    <section class="comparacion-antes-despues">
+        <div class="comparacion-main-header">
+            <span class="comparacion-main-icon">🔍</span>
+            <h2>Perfil de Enlaces Actual vs. Estrategia Optimizada</h2>
+        </div>
+        <div class="comparacion-grid">
+            <!-- COLUMNA ANTES -->
+            <div class="comparacion-columna antes">
+                <div class="comparacion-header error">
+                    <span class="badge-estado antes">ANTES - PERFIL ACTUAL</span>
+                    <h3>Estrategia Off-Page Débil</h3>
+                </div>
+                <div class="comparacion-content">
+                    <div class="problemas-lista">
+                        <h4>Problemas Críticos Detectados:</h4>
+                        <ul>
+                            <li class="problema-item">
+                                <span class="icon-error">❌</span>
+                                <div class="problema-texto">
+                                    <strong>DR 38 - Por debajo de competencia (promedio DR 58)</strong>
+                                    <span class="problema-detalle">20 puntos de diferencia = competidores dominan primeras posiciones</span>
+                                </div>
+                            </li>
+                            <li class="problema-item">
+                                <span class="icon-error">❌</span>
+                                <div class="problema-texto">
+                                    <strong>Solo 248 dominios referidos (competencia: 600-1,200)</strong>
+                                    <span class="problema-detalle">3-5x menos backlinks que competidores directos</span>
+                                </div>
+                            </li>
+                            <li class="problema-item">
+                                <span class="icon-error">❌</span>
+                                <div class="problema-texto">
+                                    <strong>10 enlaces tóxicos activos (Spam Score 78-100)</strong>
+                                    <span class="problema-detalle">Riesgo de penalización manual + pérdida DR 2-4 puntos</span>
+                                </div>
+                            </li>
+                            <li class="problema-item">
+                                <span class="icon-error">❌</span>
+                                <div class="problema-texto">
+                                    <strong>Perfil backlinks: 78% links de DR bajo (<30)</strong>
+                                    <span class="problema-detalle">Falta autoridad transferida - links de poca calidad</span>
+                                </div>
+                            </li>
+                            <li class="problema-item">
+                                <span class="icon-error">❌</span>
+                                <div class="problema-texto">
+                                    <strong>Sin estrategia link building activa</strong>
+                                    <span class="problema-detalle">Crecimiento orgánico lento: +2-3 dominios/mes vs 8-12 necesarios</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COLUMNA FLECHA -->
+            <div class="comparacion-flecha">
+                <div class="flecha-container">
+                    <i class="fas fa-arrow-right"></i>
+                    <span class="flecha-text">LINK BUILDING</span>
+                </div>
+            </div>
+
+            <!-- COLUMNA DESPUÉS -->
+            <div class="comparacion-columna despues">
+                <div class="comparacion-header success">
+                    <span class="badge-estado despues">DESPUÉS - ESTRATEGIA OPTIMIZADA</span>
+                    <h3>Perfil Off-Page Competitivo</h3>
+                </div>
+                <div class="comparacion-content">
+                    <div class="mejoras-lista">
+                        <h4>Mejoras Implementadas (3-6 meses):</h4>
+                        <ul>
+                            <li class="mejora-item">
+                                <span class="icon-success">✅</span>
+                                <div class="mejora-texto">
+                                    <strong>DR 46-52 - Reducción gap competencia a 6-12 puntos</strong>
+                                    <span class="mejora-detalle">15 backlinks DR 50-91 + disavow tóxicos = +8-14 puntos DR</span>
+                                </div>
+                            </li>
+                            <li class="mejora-item">
+                                <span class="icon-success">✅</span>
+                                <div class="mejora-texto">
+                                    <strong>380-450 dominios referidos (+53-81%)</strong>
+                                    <span class="mejora-detalle">Estrategia 2-3 backlinks/mes calidad DR >50</span>
+                                </div>
+                            </li>
+                            <li class="mejora-item">
+                                <span class="icon-success">✅</span>
+                                <div class="mejora-texto">
+                                    <strong>0 enlaces tóxicos - Disavow completo ejecutado</strong>
+                                    <span class="mejora-detalle">Perfil limpio + recuperación DR perdido</span>
+                                </div>
+                            </li>
+                            <li class="mejora-item">
+                                <span class="icon-success">✅</span>
+                                <div class="mejora-texto">
+                                    <strong>Perfil mejorado: 45% links DR 50+ (antes 22%)</strong>
+                                    <span class="mejora-detalle">Priorización calidad sobre cantidad - autoridad transferida real</span>
+                                </div>
+                            </li>
+                            <li class="mejora-item">
+                                <span class="icon-success">✅</span>
+                                <div class="mejora-texto">
+                                    <strong>Estrategia activa: 8-12 oportunidades/mes identificadas</strong>
+                                    <span class="mejora-detalle">Pipeline estructurado guest posts + partnerships + PR digital</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TABLA DE KPIS -->
+    <section class="kpis-esperados-section">
+        <div class="section-badge-container">
+            <span class="section-badge badge-despues">DESPUÉS - RESULTADOS ESPERADOS</span>
+        </div>
+        <h2>📈 KPIs y Resultados Esperados con Estrategia Link Building</h2>
+        <div class="tabla-kpis-container">
+            <table class="tabla-kpis">
+                <thead>
+                    <tr>
+                        <th class="col-metrica">Métrica</th>
+                        <th class="col-antes">ANTES<br><span class="col-subtitle">Perfil Actual</span></th>
+                        <th class="col-despues">DESPUÉS<br><span class="col-subtitle">Con Link Building</span></th>
+                        <th class="col-mejora">Mejora</th>
+                        <th class="col-impacto">Impacto en Negocio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- KPI 1 -->
+                    <tr class="kpi-row critical highlight-row">
+                        <td class="metrica-nombre">
+                            <strong>Domain Rating (DR)</strong>
+                            <span class="metrica-descripcion">Autoridad de dominio según Ahrefs</span>
+                        </td>
+                        <td class="valor-antes">
+                            <span class="valor-numero">38</span>
+                            <span class="valor-unidad">de 100</span>
+                        </td>
+                        <td class="valor-despues">
+                            <span class="valor-numero success">46-52</span>
+                            <span class="valor-unidad">de 100</span>
+                        </td>
+                        <td class="valor-mejora">
+                            <div class="mejora-badge success large">
+                                <span class="mejora-porcentaje">+8-14 pts</span>
+                                <span class="mejora-texto">incremento</span>
+                            </div>
+                        </td>
+                        <td class="impacto-texto">
+                            <strong>Acceso a competir</strong> en keywords de alta dificultad (DR 45+ requerido)
+                        </td>
+                    </tr>
+
+                    <!-- KPI 2 -->
+                    <tr class="kpi-row">
+                        <td class="metrica-nombre">
+                            <strong>Dominios Referidos</strong>
+                            <span class="metrica-descripcion">Dominios únicos enlazando al sitio</span>
+                        </td>
+                        <td class="valor-antes">
+                            <span class="valor-numero">248</span>
+                            <span class="valor-unidad">dominios</span>
+                        </td>
+                        <td class="valor-despues">
+                            <span class="valor-numero success">380-450</span>
+                            <span class="valor-unidad">dominios</span>
+                        </td>
+                        <td class="valor-mejora">
+                            <div class="mejora-badge success">
+                                <span class="mejora-porcentaje">+53-81%</span>
+                                <span class="mejora-texto">incremento</span>
+                            </div>
+                        </td>
+                        <td class="impacto-texto">
+                            +132-202 dominios nuevos en 6 meses (2-3 backlinks calidad/mes)
+                        </td>
+                    </tr>
+
+                    <!-- KPI 3 -->
+                    <tr class="kpi-row">
+                        <td class="metrica-nombre">
+                            <strong>Backlinks de Calidad (DR 50+)</strong>
+                            <span class="metrica-descripcion">Enlaces desde sitios autoridad alta</span>
+                        </td>
+                        <td class="valor-antes">
+                            <span class="valor-numero">54</span>
+                            <span class="valor-unidad">backlinks (22%)</span>
+                        </td>
+                        <td class="valor-despues">
+                            <span class="valor-numero success">112-145</span>
+                            <span class="valor-unidad">backlinks (45%)</span>
+                        </td>
+                        <td class="valor-mejora">
+                            <div class="mejora-badge success">
+                                <span class="mejora-porcentaje">+107-168%</span>
+                                <span class="mejora-texto">incremento</span>
+                            </div>
+                        </td>
+                        <td class="impacto-texto">
+                            Más del doble de autoridad transferida real desde sitios confiables
+                        </td>
+                    </tr>
+
+                    <!-- KPI 4 -->
+                    <tr class="kpi-row critical">
+                        <td class="metrica-nombre">
+                            <strong>Tráfico de Referencia Mensual</strong>
+                            <span class="metrica-descripcion">Visitas directas desde backlinks</span>
+                        </td>
+                        <td class="valor-antes">
+                            <span class="valor-numero">890</span>
+                            <span class="valor-unidad">sesiones/mes</span>
+                        </td>
+                        <td class="valor-despues">
+                            <span class="valor-numero success">3,400-4,500</span>
+                            <span class="valor-unidad">sesiones/mes</span>
+                        </td>
+                        <td class="valor-mejora">
+                            <div class="mejora-badge success large">
+                                <span class="mejora-porcentaje">+282-406%</span>
+                                <span class="mejora-texto">incremento</span>
+                            </div>
+                        </td>
+                        <td class="impacto-texto">
+                            <strong>+2,500-3,600 sesiones/mes</strong> adicionales de tráfico cualificado directo
+                        </td>
+                    </tr>
+
+                    <!-- KPI 5 -->
+                    <tr class="kpi-row">
+                        <td class="metrica-nombre">
+                            <strong>Enlaces Tóxicos (Spam Score >70)</strong>
+                            <span class="metrica-descripcion">Enlaces que perjudican el SEO</span>
+                        </td>
+                        <td class="valor-antes">
+                            <span class="valor-numero error">10</span>
+                            <span class="valor-unidad">tóxicos activos</span>
+                        </td>
+                        <td class="valor-despues">
+                            <span class="valor-numero success">0</span>
+                            <span class="valor-unidad">disavow completo</span>
+                        </td>
+                        <td class="valor-mejora">
+                            <div class="mejora-badge success">
+                                <span class="mejora-porcentaje">-100%</span>
+                                <span class="mejora-texto">eliminados</span>
+                            </div>
+                        </td>
+                        <td class="impacto-texto">
+                            Evita penalización manual + recupera DR perdido por spam
+                        </td>
+                    </tr>
+
+                    <!-- KPI 6 -->
+                    <tr class="kpi-row critical">
+                        <td class="metrica-nombre">
+                            <strong>Posiciones Promedio Keywords Competitivas</strong>
+                            <span class="metrica-descripcion">Rankings en keywords dificultad >50</span>
+                        </td>
+                        <td class="valor-antes">
+                            <span class="valor-numero">28.4</span>
+                            <span class="valor-unidad">posición</span>
+                        </td>
+                        <td class="valor-despues">
+                            <span class="valor-numero success">14.2-18.6</span>
+                            <span class="valor-unidad">posición</span>
+                        </td>
+                        <td class="valor-mejora">
+                            <div class="mejora-badge success large">
+                                <span class="mejora-porcentaje">+10-14 pos</span>
+                                <span class="mejora-texto">mejora</span>
+                            </div>
+                        </td>
+                        <td class="impacto-texto">
+                            <strong>Entrada a página 1 y 2</strong> en keywords de alto volumen antes inalcanzables
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="nota-tiempos">
+            <p>
+                <i class="fas fa-clock"></i>
+                <strong>Nota sobre tiempos:</strong> Los primeros backlinks mejoran DR en 45-60 días. El impacto completo
+                en rankings se ve en 90-120 días ya que Google evalúa patrones de crecimiento natural. Estrategia de 6 meses
+                genera resultados sostenibles y permanentes.
+            </p>
+        </div>
+    </section>
+</div>
+
 <!-- PÁGINA 1: INTRODUCCIÓN OFF-PAGE + MÉTRICAS AUTORIDAD -->
 <div class="audit-page offpage-intro-page">
     <div class="page-header">
+        <div class="section-badge-container">
+            <span class="section-badge badge-antes">ANTES - SITUACIÓN ACTUAL</span>
+        </div>
         <div class="section-number">Sección <?php echo $seccion['numero']; ?></div>
         <h1><?php echo htmlspecialchars($seccion['titulo']); ?></h1>
         <p class="section-description"><?php echo htmlspecialchars($seccion['descripcion']); ?></p>
@@ -1836,6 +2278,710 @@ document.addEventListener('DOMContentLoaded', function() {
 @media print {
     .audit-page {
         page-break-after: always;
+    }
+}
+
+/* ============================================
+   PATRÓN EDUCATIVO - CSS COMPLETO OFF-PAGE
+   ============================================ */
+
+/* Contenedor principal del patrón educativo */
+.offpage-educativo .concepto-educativo {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.offpage-educativo .concepto-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.offpage-educativo .concepto-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.offpage-educativo .concepto-header h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.offpage-educativo .concepto-intro {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Analogía Box */
+.offpage-educativo .analogia-box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 25px;
+    margin: 25px 0;
+}
+
+.offpage-educativo .analogia-header {
+    font-size: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.offpage-educativo .analogia-icon {
+    font-size: 28px;
+}
+
+.offpage-educativo .analogia-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.offpage-educativo .analogia-list li {
+    padding: 10px 0;
+    padding-left: 30px;
+    position: relative;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.offpage-educativo .analogia-list li::before {
+    content: "🔗";
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+}
+
+.offpage-educativo .analogia-conclusion {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    border-left: 4px solid #ffd700;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Grid de Impacto en Negocio */
+.offpage-educativo .impacto-negocio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .offpage-educativo .impacto-negocio-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.offpage-educativo .impacto-item {
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.offpage-educativo .impacto-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.offpage-educativo .impacto-icon {
+    font-size: 42px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.offpage-educativo .impacto-item h3 {
+    margin: 0 0 12px 0;
+    font-size: 20px;
+    color: #667eea;
+}
+
+.offpage-educativo .impacto-item p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Sección Entregables */
+.offpage-educativo .entregables-section {
+    background: #f8f9fa;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.offpage-educativo .entregables-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.offpage-educativo .entregables-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 15px;
+    color: #667eea;
+}
+
+.offpage-educativo .entregables-header h2 {
+    margin: 0;
+    color: #333;
+    font-size: 28px;
+}
+
+.offpage-educativo .entregables-intro {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.offpage-educativo .entregables-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+    .offpage-educativo .entregables-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.offpage-educativo .entregable-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s;
+}
+
+.offpage-educativo .entregable-card:hover {
+    border-color: #667eea;
+    box-shadow: 0 4px 12px rgba(102,126,234,0.15);
+    transform: translateY(-2px);
+}
+
+.offpage-educativo .entregable-card.priority-critical {
+    border-left: 5px solid #dc3545;
+}
+
+.offpage-educativo .entregable-card.priority-warning {
+    border-left: 5px solid #ff9800;
+}
+
+.offpage-educativo .entregable-icon {
+    font-size: 48px;
+    color: #667eea;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.offpage-educativo .entregable-content h3 {
+    margin: 0 0 12px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.offpage-educativo .entregable-desc {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.offpage-educativo .entregable-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.offpage-educativo .meta-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.offpage-educativo .meta-badge.priority {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.offpage-educativo .meta-badge.impact {
+    background: #e8f5e9;
+    color: #388e3c;
+}
+
+.offpage-educativo .entregable-uso {
+    background: #f8f9fa;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    border-left: 3px solid #667eea;
+}
+
+.offpage-educativo .btn-download {
+    display: block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.offpage-educativo .btn-download:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(102,126,234,0.3);
+    color: white;
+}
+
+.offpage-educativo .btn-download i {
+    margin-right: 8px;
+}
+
+/* Instrucciones de uso */
+.offpage-educativo .instrucciones-uso {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 2px solid #667eea;
+}
+
+.offpage-educativo .instrucciones-uso h3 {
+    margin: 0 0 20px 0;
+    color: #667eea;
+    font-size: 22px;
+}
+
+.offpage-educativo .instrucciones-list {
+    margin: 0;
+    padding-left: 25px;
+}
+
+.offpage-educativo .instrucciones-list li {
+    margin: 12px 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Comparación ANTES/DESPUÉS */
+.offpage-educativo .comparacion-antes-despues {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.offpage-educativo .comparacion-main-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.offpage-educativo .comparacion-main-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.offpage-educativo .comparacion-main-header h2 {
+    margin: 0;
+    color: #333;
+    font-size: 28px;
+}
+
+.offpage-educativo .comparacion-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+@media (max-width: 992px) {
+    .offpage-educativo .comparacion-grid {
+        grid-template-columns: 1fr;
+    }
+    .offpage-educativo .comparacion-flecha {
+        order: 2;
+    }
+    .offpage-educativo .comparacion-columna.despues {
+        order: 3;
+    }
+}
+
+.offpage-educativo .comparacion-columna {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.offpage-educativo .comparacion-header {
+    padding: 20px;
+    text-align: center;
+}
+
+.offpage-educativo .comparacion-header.error {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+    color: white;
+}
+
+.offpage-educativo .comparacion-header.success {
+    background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+    color: white;
+}
+
+.offpage-educativo .badge-estado {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.offpage-educativo .badge-estado.antes {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.offpage-educativo .badge-estado.despues {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.offpage-educativo .comparacion-header h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.offpage-educativo .comparacion-content {
+    background: #f8f9fa;
+    padding: 25px;
+    min-height: 400px;
+}
+
+.offpage-educativo .problemas-lista h4,
+.offpage-educativo .mejoras-lista h4 {
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.offpage-educativo .problemas-lista ul,
+.offpage-educativo .mejoras-lista ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.offpage-educativo .problema-item,
+.offpage-educativo .mejora-item {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.offpage-educativo .icon-error {
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.offpage-educativo .icon-success {
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.offpage-educativo .problema-texto,
+.offpage-educativo .mejora-texto {
+    flex: 1;
+}
+
+.offpage-educativo .problema-texto strong,
+.offpage-educativo .mejora-texto strong {
+    display: block;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.offpage-educativo .problema-detalle,
+.offpage-educativo .mejora-detalle {
+    display: block;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Flecha de transformación */
+.offpage-educativo .comparacion-flecha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offpage-educativo .flecha-container {
+    text-align: center;
+}
+
+.offpage-educativo .flecha-container i {
+    font-size: 48px;
+    color: #667eea;
+    display: block;
+    margin-bottom: 10px;
+    animation: pulse 2s infinite;
+}
+
+.offpage-educativo .flecha-text {
+    display: block;
+    font-weight: 700;
+    color: #667eea;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Sección KPIs */
+.offpage-educativo .kpis-esperados-section {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.offpage-educativo .section-badge-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.offpage-educativo .section-badge {
+    display: inline-block;
+    padding: 10px 24px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.offpage-educativo .section-badge.badge-antes {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+    color: white;
+    box-shadow: 0 2px 4px rgba(220,53,69,0.3);
+}
+
+.offpage-educativo .section-badge.badge-despues {
+    background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+    color: white;
+    box-shadow: 0 2px 4px rgba(40,167,69,0.3);
+}
+
+.offpage-educativo .kpis-esperados-section h2 {
+    margin: 0 0 30px 0;
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+}
+
+.offpage-educativo .tabla-kpis-container {
+    overflow-x: auto;
+}
+
+.offpage-educativo .tabla-kpis {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.offpage-educativo .tabla-kpis thead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.offpage-educativo .tabla-kpis th {
+    padding: 15px 12px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.offpage-educativo .col-subtitle {
+    display: block;
+    font-size: 11px;
+    opacity: 0.9;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.offpage-educativo .tabla-kpis tbody tr {
+    border-bottom: 1px solid #e9ecef;
+}
+
+.offpage-educativo .tabla-kpis tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.offpage-educativo .tabla-kpis tbody tr.highlight-row {
+    background: #fff3cd;
+}
+
+.offpage-educativo .tabla-kpis tbody tr.highlight-row:hover {
+    background: #ffe69c;
+}
+
+.offpage-educativo .tabla-kpis td {
+    padding: 18px 12px;
+    vertical-align: top;
+}
+
+.offpage-educativo .metrica-nombre {
+    font-weight: 600;
+    color: #333;
+}
+
+.offpage-educativo .metrica-descripcion {
+    display: block;
+    font-size: 13px;
+    color: #666;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.offpage-educativo .valor-antes,
+.offpage-educativo .valor-despues {
+    text-align: center;
+}
+
+.offpage-educativo .valor-numero {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+.offpage-educativo .valor-numero.success {
+    color: #28a745;
+}
+
+.offpage-educativo .valor-numero.error {
+    color: #dc3545;
+}
+
+.offpage-educativo .valor-unidad {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.offpage-educativo .valor-mejora {
+    text-align: center;
+}
+
+.offpage-educativo .mejora-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: #d4edda;
+    color: #155724;
+    font-weight: 700;
+}
+
+.offpage-educativo .mejora-badge.success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.offpage-educativo .mejora-badge.large {
+    padding: 12px 20px;
+}
+
+.offpage-educativo .mejora-porcentaje {
+    display: block;
+    font-size: 20px;
+}
+
+.offpage-educativo .mejora-badge.large .mejora-porcentaje {
+    font-size: 24px;
+}
+
+.offpage-educativo .mejora-texto {
+    display: block;
+    font-size: 11px;
+    margin-top: 2px;
+    text-transform: uppercase;
+}
+
+.offpage-educativo .impacto-texto {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.offpage-educativo .nota-tiempos {
+    margin-top: 25px;
+    padding: 20px;
+    background: #e7f3ff;
+    border-left: 4px solid #2196f3;
+    border-radius: 8px;
+}
+
+.offpage-educativo .nota-tiempos p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.offpage-educativo .nota-tiempos i {
+    color: #2196f3;
+    margin-right: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .offpage-educativo .tabla-kpis {
+        font-size: 13px;
+    }
+
+    .offpage-educativo .valor-numero {
+        font-size: 20px;
+    }
+
+    .offpage-educativo .mejora-porcentaje {
+        font-size: 18px;
     }
 }
 </style>
