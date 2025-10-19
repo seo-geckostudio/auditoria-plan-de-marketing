@@ -261,7 +261,7 @@ $moduloData = [
 .real-estate-seo-page {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     line-height: 1.6;
-    color: #2c3e50;
+    color: #000000;
 }
 
 .concepto-educativo {

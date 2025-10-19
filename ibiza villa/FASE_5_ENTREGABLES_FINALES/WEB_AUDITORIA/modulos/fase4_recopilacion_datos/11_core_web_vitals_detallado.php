@@ -272,7 +272,7 @@ $moduloData = [
 .core-web-vitals-page {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.6;
-    color: #2c3e50;
+    color: #000000;
 }
 
 /* Sección educativa */

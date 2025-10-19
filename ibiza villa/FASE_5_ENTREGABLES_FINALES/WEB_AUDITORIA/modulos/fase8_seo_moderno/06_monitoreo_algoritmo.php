@@ -19,7 +19,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 <style>
 .monitoreo-page {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    color: #2c3e50;
+    color: #000000;
     line-height: 1.6;
 }
 
@@ -96,7 +96,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 
 .monitoreo-page .update-name {
     font-weight: 600;
-    color: #2c3e50;
+    color: #000000;
     font-size: 18px;
 }
 
@@ -151,7 +151,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 
 .monitoreo-page .metric-value {
     font-weight: 600;
-    color: #2c3e50;
+    color: #000000;
 }
 
 .monitoreo-page .metric-value.negative {
@@ -173,7 +173,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 .monitoreo-page .impact-status {
     font-size: 20px;
     font-weight: 700;
-    color: #2c3e50;
+    color: #000000;
     margin-bottom: 15px;
 }
 
@@ -234,7 +234,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 
 .monitoreo-page .alert-trigger {
     font-weight: 600;
-    color: #2c3e50;
+    color: #000000;
     margin-bottom: 8px;
 }
 
@@ -255,7 +255,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 }
 
 .monitoreo-page .playbook-title {
-    color: #2c3e50;
+    color: #000000;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 15px;
@@ -292,7 +292,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 
 .monitoreo-page .step-title {
     font-weight: 600;
-    color: #2c3e50;
+    color: #000000;
     margin-bottom: 5px;
 }
 
@@ -472,7 +472,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 }
 
 .monitoreo-page .section-title-download {
-    color: #2c3e50;
+    color: #000000;
     font-size: 26px;
     font-weight: 700;
     margin: 0 0 15px 0;
@@ -524,7 +524,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 
 .monitoreo-page .csv-card-header h3 {
     font-size: 20px;
-    color: #2c3e50;
+    color: #000000;
     margin: 0;
     flex: 1;
     display: flex;
@@ -630,7 +630,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 }
 
 .monitoreo-page .instrucciones-uso h4 {
-    color: #2c3e50;
+    color: #000000;
     font-size: 18px;
     margin: 0 0 15px 0;
 }
@@ -653,7 +653,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 }
 
 .monitoreo-page .section-title-comparison {
-    color: #2c3e50;
+    color: #000000;
     font-size: 26px;
     font-weight: 700;
     margin: 0 0 20px 0;
@@ -721,7 +721,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 }
 
 .monitoreo-page .comparacion-columna h3 {
-    color: #2c3e50;
+    color: #000000;
     font-size: 20px;
     margin: 0 0 20px 0;
 }
@@ -773,7 +773,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 .monitoreo-page .problema-content strong,
 .monitoreo-page .solucion-content strong {
     display: block;
-    color: #2c3e50;
+    color: #000000;
     font-size: 15px;
     margin-bottom: 6px;
 }
@@ -829,7 +829,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 }
 
 .monitoreo-page .timeline-implementacion h4 {
-    color: #2c3e50;
+    color: #000000;
     font-size: 20px;
     margin: 0 0 25px 0;
 }
@@ -879,7 +879,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 }
 
 .monitoreo-page .timeline-fase h5 {
-    color: #2c3e50;
+    color: #000000;
     font-size: 16px;
     margin: 0 0 10px 0;
 }
@@ -905,7 +905,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 }
 
 .monitoreo-page .section-title-kpis {
-    color: #2c3e50;
+    color: #000000;
     font-size: 26px;
     font-weight: 700;
     margin: 0 0 20px 0;
@@ -987,7 +987,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 }
 
 .monitoreo-page .kpis-nota-importante h4 {
-    color: #2c3e50;
+    color: #000000;
     font-size: 18px;
     margin: 0 0 15px 0;
 }

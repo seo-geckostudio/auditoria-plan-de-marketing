@@ -92,7 +92,7 @@
 }
 
 .page-header {
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    background: linear-gradient(135deg, #000000 0%, #000000 100%);
     color: white;
     padding: 2rem;
     margin: -2rem -2rem 2rem -2rem;
@@ -139,7 +139,7 @@
 
 .executive-summary-page section h2 {
     margin: 0 0 1.5rem 0;
-    color: #2c3e50;
+    color: #000000;
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -197,7 +197,7 @@
 }
 
 .metrics-table thead {
-    background: #2c3e50;
+    background: #000000;
     color: white;
 }
 
@@ -472,7 +472,7 @@
 
 .critical-findings-page section h2 {
     margin: 0 0 1.5rem 0;
-    color: #2c3e50;
+    color: #000000;
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -502,7 +502,7 @@
 }
 
 .finding-header {
-    background: #2c3e50;
+    background: #000000;
     color: white;
     padding: 1.5rem;
     display: flex;
@@ -664,13 +664,13 @@
 
 .recommendation-header h3 {
     margin: 0;
-    color: #2c3e50;
+    color: #000000;
     font-size: 1.4rem;
 }
 
 .rec-type-badge {
     padding: 0.5rem 1rem;
-    background: #2c3e50;
+    background: #000000;
     color: white;
     border-radius: 0.5rem;
     font-weight: bold;
@@ -1018,7 +1018,7 @@
 
 .decision-page section h2 {
     margin: 0 0 1.5rem 0;
-    color: #2c3e50;
+    color: #000000;
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -1216,7 +1216,7 @@
 
 .option-card h3 {
     margin: 0 0 1rem 0;
-    color: #2c3e50;
+    color: #000000;
     font-size: 1.2rem;
 }
 

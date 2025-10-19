@@ -510,7 +510,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 
 .wireframes-page {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color: #2c3e50;
+    color: #000000;
     line-height: 1.6;
 }
 
@@ -646,7 +646,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 
 .wireframes-page .section-header h2 {
     font-size: 2rem;
-    color: #2c3e50;
+    color: #000000;
     margin-bottom: 10px;
 }
 
@@ -717,7 +717,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 .wireframes-page .csv-card-header h3 {
     margin: 10px 0;
     font-size: 1.4rem;
-    color: #2c3e50;
+    color: #000000;
 }
 
 .wireframes-page .csv-card-body {
@@ -754,7 +754,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 
 .wireframes-page .csv-highlights h4 {
     font-size: 1.15rem;
-    color: #2c3e50;
+    color: #000000;
     margin-bottom: 12px;
 }
 
@@ -846,7 +846,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 
 .wireframes-page .instrucciones-uso h3 {
     font-size: 1.5rem;
-    color: #2c3e50;
+    color: #000000;
     margin-bottom: 20px;
 }
 
@@ -977,7 +977,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 .wireframes-page .solucion-text strong {
     display: block;
     font-size: 1.1rem;
-    color: #2c3e50;
+    color: #000000;
     margin-bottom: 8px;
 }
 
@@ -1109,7 +1109,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 
 .wireframes-page .timeline-implementacion h3 {
     font-size: 1.6rem;
-    color: #2c3e50;
+    color: #000000;
     margin-bottom: 25px;
     text-align: center;
 }
@@ -1147,7 +1147,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 .wireframes-page .fase-content strong {
     display: block;
     font-size: 1.15rem;
-    color: #2c3e50;
+    color: #000000;
     margin-bottom: 10px;
 }
 
@@ -1223,7 +1223,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 
 .wireframes-page .tabla-kpis td:first-child {
     font-weight: 600;
-    color: #2c3e50;
+    color: #000000;
 }
 
 .wireframes-page .tabla-kpis small {
@@ -1259,7 +1259,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 
 .wireframes-page .kpis-nota h4 {
     font-size: 1.3rem;
-    color: #2c3e50;
+    color: #000000;
     margin-bottom: 15px;
     display: flex;
     align-items: center;

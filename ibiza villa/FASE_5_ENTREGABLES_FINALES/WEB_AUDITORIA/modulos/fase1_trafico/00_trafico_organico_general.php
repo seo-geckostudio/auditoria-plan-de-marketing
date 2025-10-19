@@ -527,7 +527,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
 
 .trafico-organico-page {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color: #2c3e50;
+    color: #000000;
     line-height: 1.6;
 }
 
@@ -658,7 +658,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
 .trafico-organico-page .comparacion-antes-despues .section-header,
 .trafico-organico-page .kpis-section .section-header { margin-bottom: 30px; }
 
-.trafico-organico-page .section-header h2 { font-size: 2rem; color: #2c3e50; margin-bottom: 10px; }
+.trafico-organico-page .section-header h2 { font-size: 2rem; color: #000000; margin-bottom: 10px; }
 .trafico-organico-page .section-header p { font-size: 1.1rem; color: #7f8c8d; }
 
 .trafico-organico-page .badge { display: inline-block; padding: 8px 16px; border-radius: 20px;
@@ -675,7 +675,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
 .trafico-organico-page .csv-card-header { background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     padding: 20px; border-bottom: 2px solid #dee2e6; }
 .trafico-organico-page .csv-icon { font-size: 2rem; margin-right: 12px; }
-.trafico-organico-page .csv-card-header h3 { margin: 10px 0; font-size: 1.4rem; color: #2c3e50; }
+.trafico-organico-page .csv-card-header h3 { margin: 10px 0; font-size: 1.4rem; color: #000000; }
 
 .trafico-organico-page .csv-card-body { padding: 25px; }
 .trafico-organico-page .csv-description { font-size: 1.05rem; color: #495057; margin-bottom: 20px; line-height: 1.6; }
@@ -685,7 +685,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
 .trafico-organico-page .metadata-item { margin-bottom: 8px; font-size: 0.95rem; }
 .trafico-organico-page .metadata-item:last-child { margin-bottom: 0; }
 
-.trafico-organico-page .csv-highlights h4 { font-size: 1.15rem; color: #2c3e50; margin-bottom: 12px; }
+.trafico-organico-page .csv-highlights h4 { font-size: 1.15rem; color: #000000; margin-bottom: 12px; }
 .trafico-organico-page .csv-highlights ul { list-style: none; padding-left: 0; }
 .trafico-organico-page .csv-highlights li { padding: 8px 0 8px 25px; position: relative; font-size: 0.95rem; line-height: 1.5; }
 .trafico-organico-page .csv-highlights li:before { content: "▸"; position: absolute; left: 0; color: #88B04B; font-weight: bold; }
@@ -703,7 +703,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
 .trafico-organico-page .btn-download:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(40,167,69,0.4); color: white; }
 
 .trafico-organico-page .instrucciones-uso { background: #f8f9fa; border-radius: 10px; padding: 30px; border-left: 5px solid #88B04B; }
-.trafico-organico-page .instrucciones-uso h3 { font-size: 1.5rem; color: #2c3e50; margin-bottom: 20px; }
+.trafico-organico-page .instrucciones-uso h3 { font-size: 1.5rem; color: #000000; margin-bottom: 20px; }
 .trafico-organico-page .instrucciones-list { counter-reset: instruccion-counter; list-style: none; padding-left: 0; }
 .trafico-organico-page .instrucciones-list li { counter-increment: instruccion-counter; position: relative;
     padding-left: 50px; margin-bottom: 20px; font-size: 1.05rem; line-height: 1.6; }
@@ -730,7 +730,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
 
 .trafico-organico-page .problema-icon, .trafico-organico-page .solucion-icon { font-size: 1.5rem; flex-shrink: 0; }
 .trafico-organico-page .problema-text strong, .trafico-organico-page .solucion-text strong { display: block;
-    font-size: 1.1rem; color: #2c3e50; margin-bottom: 8px; }
+    font-size: 1.1rem; color: #000000; margin-bottom: 8px; }
 .trafico-organico-page .problema-text p, .trafico-organico-page .solucion-text p { margin: 0 0 10px 0;
     font-size: 0.95rem; color: #495057; line-height: 1.6; }
 
@@ -759,13 +759,13 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
 .trafico-organico-page .footer-note { text-align: center; margin: 0; font-size: 0.95rem; color: #495057; }
 
 .trafico-organico-page .timeline-implementacion { background: #f8f9fa; border-radius: 10px; padding: 30px; margin-top: 40px; }
-.trafico-organico-page .timeline-implementacion h3 { font-size: 1.6rem; color: #2c3e50; margin-bottom: 25px; text-align: center; }
+.trafico-organico-page .timeline-implementacion h3 { font-size: 1.6rem; color: #000000; margin-bottom: 25px; text-align: center; }
 .trafico-organico-page .timeline-fases { display: grid; gap: 20px; }
 .trafico-organico-page .fase-item { display: flex; gap: 20px; align-items: start; }
 .trafico-organico-page .fase-badge { background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%); color: white;
     padding: 10px 20px; border-radius: 25px; font-weight: 700; font-size: 0.9rem; white-space: nowrap; flex-shrink: 0; }
 .trafico-organico-page .fase-content { flex: 1; background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #88B04B; }
-.trafico-organico-page .fase-content strong { display: block; font-size: 1.15rem; color: #2c3e50; margin-bottom: 10px; }
+.trafico-organico-page .fase-content strong { display: block; font-size: 1.15rem; color: #000000; margin-bottom: 10px; }
 .trafico-organico-page .fase-content p { margin: 0 0 10px 0; font-size: 0.95rem; color: #495057; line-height: 1.6; }
 .trafico-organico-page .fase-resultado { display: inline-block; background: #d4edda; color: #155724;
     padding: 6px 12px; border-radius: 4px; font-size: 0.9rem; font-weight: 600; border-left: 3px solid #88B04B; }
@@ -779,7 +779,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
 .trafico-organico-page .tabla-kpis tbody tr { border-bottom: 1px solid #e9ecef; transition: background-color 0.2s ease; }
 .trafico-organico-page .tabla-kpis tbody tr:hover { background-color: #f8f9fa; }
 .trafico-organico-page .tabla-kpis td { padding: 18px 15px; font-size: 0.95rem; color: #495057; vertical-align: top; }
-.trafico-organico-page .tabla-kpis td:first-child { font-weight: 600; color: #2c3e50; }
+.trafico-organico-page .tabla-kpis td:first-child { font-weight: 600; color: #000000; }
 .trafico-organico-page .tabla-kpis small { display: block; font-size: 0.85rem; color: #6c757d; margin-top: 4px; }
 .trafico-organico-page .mejora-positiva { color: #88B04B; font-weight: 700; font-size: 1.05rem; }
 .trafico-organico-page .fila-destacada { background: #f0f7e6 !important; border-top: 2px solid #ffd700; border-bottom: 2px solid #ffd700; }
@@ -787,7 +787,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
 
 .trafico-organico-page .kpis-nota { background: linear-gradient(135deg, #e3f2fd 0%, #e1f5fe 100%);
     border-left: 5px solid #2196f3; border-radius: 8px; padding: 25px; }
-.trafico-organico-page .kpis-nota h4 { font-size: 1.3rem; color: #2c3e50; margin-bottom: 15px;
+.trafico-organico-page .kpis-nota h4 { font-size: 1.3rem; color: #000000; margin-bottom: 15px;
     display: flex; align-items: center; gap: 10px; }
 .trafico-organico-page .kpis-nota p { margin-bottom: 15px; font-size: 1.05rem; line-height: 1.6; color: #495057; }
 .trafico-organico-page .kpis-nota ul { margin-bottom: 15px; padding-left: 25px; }

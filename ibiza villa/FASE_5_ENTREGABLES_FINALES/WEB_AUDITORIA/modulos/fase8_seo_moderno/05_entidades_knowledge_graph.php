@@ -20,7 +20,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 <style>
 .entidades-page {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    color: #2c3e50;
+    color: #000000;
     line-height: 1.6;
 }
 
@@ -153,7 +153,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 
 .entidades-page .entity-name {
     font-weight: 600;
-    color: #2c3e50;
+    color: #000000;
     font-size: 18px;
 }
 
@@ -183,7 +183,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 }
 
 .entidades-page .entity-metric-value {
-    color: #2c3e50;
+    color: #000000;
     font-weight: 600;
 }
 
@@ -223,7 +223,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 
 .entidades-page .mention-source {
     font-weight: 600;
-    color: #2c3e50;
+    color: #000000;
     margin-bottom: 8px;
 }
 
@@ -300,7 +300,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 
 .entidades-page .optimization-title {
     font-weight: 600;
-    color: #2c3e50;
+    color: #000000;
     margin-bottom: 10px;
 }
 
@@ -506,7 +506,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 }
 
 .entidades-page .entregables-header h3 {
-    color: #2c3e50;
+    color: #000000;
     font-size: 24px;
     font-weight: 700;
     margin: 15px 0 10px 0;
@@ -553,7 +553,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 
 .entidades-page .csv-card-header h4 {
     margin: 10px 0;
-    color: #2c3e50;
+    color: #000000;
     font-size: 19px;
     font-weight: 700;
 }
@@ -693,7 +693,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 }
 
 .entidades-page .comparacion-title {
-    color: #2c3e50;
+    color: #000000;
     font-size: 24px;
     font-weight: 700;
     margin: 0 0 30px 0;
@@ -791,7 +791,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 .entidades-page .problema-texto strong,
 .entidades-page .mejora-texto strong {
     display: block;
-    color: #2c3e50;
+    color: #000000;
     font-size: 15px;
     margin-bottom: 5px;
 }
@@ -863,7 +863,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 }
 
 .entidades-page .timeline-implementacion h4 {
-    color: #2c3e50;
+    color: #000000;
     font-size: 20px;
     font-weight: 700;
     margin: 0 0 20px 0;
@@ -896,7 +896,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 
 .entidades-page .timeline-content strong {
     display: block;
-    color: #2c3e50;
+    color: #000000;
     font-size: 14px;
     margin-bottom: 8px;
 }
@@ -932,7 +932,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 }
 
 .entidades-page .kpis-title {
-    color: #2c3e50;
+    color: #000000;
     font-size: 24px;
     font-weight: 700;
     margin: 0 0 15px 0;
@@ -1551,7 +1551,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
         <div class="kp-status">
             <div class="kp-header">
                 <div>
-                    <h4 style="margin: 0; color: #2c3e50;">Google Knowledge Panel</h4>
+                    <h4 style="margin: 0; color: #000000;">Google Knowledge Panel</h4>
                     <p style="margin: 5px 0 0 0; font-size: 14px; color: #6c757d;">
                         Panel informativo que aparece en búsquedas de marca
                     </p>
@@ -1563,7 +1563,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 
             <?php if (!empty($knowledge_panel['datos_actuales'])): ?>
             <div class="kp-preview">
-                <h5 style="margin: 0 0 15px 0; color: #2c3e50;">Datos Actuales en Knowledge Panel</h5>
+                <h5 style="margin: 0 0 15px 0; color: #000000;">Datos Actuales en Knowledge Panel</h5>
                 <?php foreach ($knowledge_panel['datos_actuales'] as $field => $value): ?>
                 <div class="kp-field">
                     <span class="kp-field-label"><?php echo htmlspecialchars($field); ?>:</span>

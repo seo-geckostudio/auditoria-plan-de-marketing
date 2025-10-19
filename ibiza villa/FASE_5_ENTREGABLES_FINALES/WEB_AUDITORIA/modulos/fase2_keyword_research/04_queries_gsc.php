@@ -244,7 +244,7 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
 
 <style>
 /* Reutilizando estilos del módulo Tráfico Orgánico con ajustes mínimos */
-.queries-gsc-page { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #2c3e50; line-height: 1.6; }
+.queries-gsc-page { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #000000; line-height: 1.6; }
 .queries-gsc-page .concepto-educativo { background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%); color: white; padding: 35px; border-radius: 12px; margin-bottom: 40px; }
 .queries-gsc-page .concepto-header { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
 .queries-gsc-page .concepto-icon { font-size: 2.5rem; }
@@ -257,7 +257,7 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
 .queries-gsc-page .analogia-list li:before { content: "🔍"; position: absolute; left: 0; font-size: 1.3rem; }
 
 .queries-gsc-page .section-header { margin-bottom: 30px; }
-.queries-gsc-page .section-header h2 { font-size: 2rem; color: #2c3e50; }
+.queries-gsc-page .section-header h2 { font-size: 2rem; color: #000000; }
 .queries-gsc-page .badge { display: inline-block; padding: 8px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; margin-bottom: 15px; }
 .queries-gsc-page .badge-success { background: linear-gradient(135deg, #88B04B 0%, #20c997 100%); color: white; }
 .queries-gsc-page .badge-critical { background: linear-gradient(135deg, #dc3545 0%, #c82333 100%); color: white; }
@@ -268,7 +268,7 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
 .queries-gsc-page .csv-card:hover { transform: translateY(-5px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); border-color: #88B04B; }
 .queries-gsc-page .csv-card-header { background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 20px; border-bottom: 2px solid #dee2e6; }
 .queries-gsc-page .csv-icon { font-size: 2rem; margin-right: 12px; }
-.queries-gsc-page .csv-card-header h3 { margin: 10px 0; font-size: 1.4rem; color: #2c3e50; }
+.queries-gsc-page .csv-card-header h3 { margin: 10px 0; font-size: 1.4rem; color: #000000; }
 .queries-gsc-page .csv-card-body { padding: 25px; }
 .queries-gsc-page .csv-description { font-size: 1.05rem; color: #495057; margin-bottom: 20px; }
 
@@ -291,7 +291,7 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
 .queries-gsc-page .columna-content { padding: 25px; }
 .queries-gsc-page .problema-item, .queries-gsc-page .solucion-item { display: flex; gap: 15px; }
 .queries-gsc-page .problema-icon, .queries-gsc-page .solucion-icon { font-size: 1.5rem; flex-shrink: 0; }
-.queries-gsc-page .problema-text strong, .queries-gsc-page .solucion-text strong { display: block; font-size: 1.1rem; color: #2c3e50; margin-bottom: 8px; }
+.queries-gsc-page .problema-text strong, .queries-gsc-page .solucion-text strong { display: block; font-size: 1.1rem; color: #000000; margin-bottom: 8px; }
 .queries-gsc-page .problema-text p, .queries-gsc-page .solucion-text p { margin: 0 0 10px 0; font-size: 0.95rem; color: #495057; }
 .queries-gsc-page .problema-dato { display: inline-block; background: #f0f7e6; color: #856404; padding: 6px 12px; border-radius: 4px; font-size: 0.9rem; font-weight: 600; }
 .queries-gsc-page .solucion-dato { display: inline-block; background: #d4edda; color: #155724; padding: 6px 12px; border-radius: 4px; font-size: 0.9rem; font-weight: 600; }
@@ -313,12 +313,12 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
 .queries-gsc-page .tabla-kpis thead { background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%); color: white; }
 .queries-gsc-page .tabla-kpis th { padding: 18px 15px; text-align: left; font-weight: 600; font-size: 0.95rem; }
 .queries-gsc-page .tabla-kpis td { padding: 18px 15px; font-size: 0.95rem; color: #495057; }
-.queries-gsc-page .tabla-kpis td:first-child { font-weight: 600; color: #2c3e50; }
+.queries-gsc-page .tabla-kpis td:first-child { font-weight: 600; color: #000000; }
 .queries-gsc-page .mejora-positiva { color: #88B04B; font-weight: 700; }
 .queries-gsc-page .fila-destacada { background: #f0f7e6 !important; border-top: 2px solid #ffd700; border-bottom: 2px solid #ffd700; }
 
 .queries-gsc-page .kpis-nota { background: linear-gradient(135deg, #e3f2fd 0%, #e1f5fe 100%); border-left: 5px solid #2196f3; border-radius: 8px; padding: 25px; margin-top: 30px; }
-.queries-gsc-page .kpis-nota h4 { font-size: 1.3rem; color: #2c3e50; margin-bottom: 15px; }
+.queries-gsc-page .kpis-nota h4 { font-size: 1.3rem; color: #000000; margin-bottom: 15px; }
 .queries-gsc-page .kpis-nota p { margin-bottom: 15px; font-size: 1.05rem; color: #495057; }
 
 @media (max-width: 992px) {

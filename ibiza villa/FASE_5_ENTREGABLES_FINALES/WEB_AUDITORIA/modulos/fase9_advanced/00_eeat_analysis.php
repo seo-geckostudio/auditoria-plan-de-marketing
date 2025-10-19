@@ -21,7 +21,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 <style>
 .eeat-analysis-page {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    color: #2c3e50;
+    color: #000000;
     line-height: 1.6;
 }
 
@@ -125,7 +125,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
 .eeat-analysis-page .signal-card h4 {
     margin: 0 0 10px 0;
-    color: #2c3e50;
+    color: #000000;
     font-size: 15px;
     font-weight: 600;
 }
@@ -215,7 +215,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
 .eeat-analysis-page .gap-title {
     font-weight: 600;
-    color: #2c3e50;
+    color: #000000;
 }
 
 .eeat-analysis-page .priority-badge {
@@ -275,7 +275,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
 .eeat-analysis-page .rec-title {
     font-weight: 600;
-    color: #2c3e50;
+    color: #000000;
     margin-bottom: 5px;
 }
 

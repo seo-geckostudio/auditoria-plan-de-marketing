@@ -20,7 +20,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 <style>
 .voice-search-page {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    color: #2c3e50;
+    color: #000000;
     line-height: 1.6;
 }
 
@@ -97,7 +97,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 
 .voice-search-page .readiness-label {
     font-weight: 500;
-    color: #2c3e50;
+    color: #000000;
 }
 
 .voice-search-page .readiness-status {
@@ -186,7 +186,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 
 .voice-search-page .question-text {
     font-weight: 600;
-    color: #2c3e50;
+    color: #000000;
     font-size: 15px;
     flex: 1;
 }
@@ -280,7 +280,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 
 .voice-search-page .opportunity-title {
     font-weight: 600;
-    color: #2c3e50;
+    color: #000000;
     font-size: 16px;
 }
 
@@ -326,7 +326,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 
 .voice-search-page .action-title {
     font-weight: 600;
-    color: #2c3e50;
+    color: #000000;
 }
 
 .voice-search-page .action-meta {

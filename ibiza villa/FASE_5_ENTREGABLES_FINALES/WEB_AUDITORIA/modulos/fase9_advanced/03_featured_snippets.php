@@ -19,7 +19,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
 <style>
 .featured-snippets-page {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    color: #2c3e50;
+    color: #000000;
     line-height: 1.6;
 }
 
@@ -96,7 +96,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
 
 .featured-snippets-page .snippet-keyword {
     font-weight: 600;
-    color: #2c3e50;
+    color: #000000;
     flex: 1;
 }
 
@@ -164,7 +164,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
 
 .featured-snippets-page .opportunity-keyword {
     font-weight: 600;
-    color: #2c3e50;
+    color: #000000;
     font-size: 16px;
 }
 
@@ -207,7 +207,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
 }
 
 .featured-snippets-page .detail-value {
-    color: #2c3e50;
+    color: #000000;
     font-weight: 600;
 }
 

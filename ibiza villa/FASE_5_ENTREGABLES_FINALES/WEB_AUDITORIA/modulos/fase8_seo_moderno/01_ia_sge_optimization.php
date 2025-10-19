@@ -24,7 +24,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 
 .ia-sge-page {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    color: #2c3e50;
+    color: #000000;
     line-height: 1.6;
 }
 
@@ -129,7 +129,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 
 .ia-sge-page .impacto-item {
     background: rgba(255, 255, 255, 0.95);
-    color: #2c3e50;
+    color: #000000;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -178,7 +178,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 
 .ia-sge-page .section-title {
     font-size: 26px;
-    color: #2c3e50;
+    color: #000000;
     margin-bottom: 25px;
     font-weight: 700;
 }
@@ -212,7 +212,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 
 .ia-sge-page .csv-title {
     font-size: 22px;
-    color: #2c3e50;
+    color: #000000;
     margin: 0 0 15px 0;
     font-weight: 700;
 }
@@ -325,7 +325,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 
 .ia-sge-page .instrucciones-uso h4 {
     margin: 0 0 18px 0;
-    color: #2c3e50;
+    color: #000000;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -389,7 +389,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 .ia-sge-page .comparacion-titulo {
     font-size: 22px;
     margin: 0 0 20px 0;
-    color: #2c3e50;
+    color: #000000;
     font-weight: 700;
 }
 
@@ -508,7 +508,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 .ia-sge-page .timeline-implementacion h4 {
     margin: 0 0 25px 0;
     font-size: 20px;
-    color: #2c3e50;
+    color: #000000;
 }
 
 .ia-sge-page .timeline-grid {
@@ -543,7 +543,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 .ia-sge-page .timeline-content strong {
     display: block;
     margin-bottom: 10px;
-    color: #2c3e50;
+    color: #000000;
     font-size: 16px;
 }
 
@@ -703,7 +703,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 
 .ia-sge-page .keyword-query {
     font-weight: 600;
-    color: #2c3e50;
+    color: #000000;
     font-size: 16px;
     margin-bottom: 10px;
 }
@@ -757,7 +757,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 
 .ia-sge-page .optimization-title {
     font-weight: 600;
-    color: #2c3e50;
+    color: #000000;
     font-size: 16px;
     margin-bottom: 10px;
 }

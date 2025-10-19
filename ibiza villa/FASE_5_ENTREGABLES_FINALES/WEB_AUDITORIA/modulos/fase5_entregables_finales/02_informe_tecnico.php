@@ -126,7 +126,7 @@
 }
 
 .page-header {
-    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 2rem;
     margin: -2rem -2rem 2rem -2rem;
@@ -167,7 +167,7 @@
 
 .technical-report-intro-page section h2 {
     margin: 0 0 1.5rem 0;
-    color: #2c3e50;
+    color: #000000;
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -186,7 +186,7 @@
     background: #f8f9fa;
     padding: 1.5rem;
     border-radius: 0.75rem;
-    border-left: 4px solid #3498db;
+    border-left: 4px solid #88B04B;
 }
 
 .intro-card.full-width {
@@ -195,7 +195,7 @@
 
 .intro-card h3 {
     margin: 0 0 1rem 0;
-    color: #3498db;
+    color: #88B04B;
     font-size: 1.2rem;
 }
 
@@ -271,7 +271,7 @@
 
 .areas-breakdown h3 {
     margin: 0 0 1.5rem 0;
-    color: #2c3e50;
+    color: #000000;
 }
 
 .areas-grid {
@@ -352,7 +352,7 @@
 
 .key-metrics-section h3 {
     margin: 0 0 1.5rem 0;
-    color: #2c3e50;
+    color: #000000;
 }
 
 .metrics-category {
@@ -364,7 +364,7 @@
 
 .metrics-category h4 {
     margin: 0 0 1rem 0;
-    color: #3498db;
+    color: #88B04B;
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -394,7 +394,7 @@
 .metric-value {
     font-size: 1.3rem;
     font-weight: bold;
-    color: #2c3e50;
+    color: #000000;
 }
 </style>
 
@@ -627,7 +627,7 @@
 }
 
 .technical-seo-page .page-header {
-    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 2rem;
     margin: -2rem -2rem 2rem -2rem;
@@ -650,7 +650,7 @@
 
 .technical-seo-page section h2 {
     margin: 0 0 1.5rem 0;
-    color: #2c3e50;
+    color: #000000;
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -675,7 +675,7 @@
 
 .area-title h3 {
     margin: 0;
-    color: #2c3e50;
+    color: #000000;
 }
 
 .area-score-badge {
@@ -711,7 +711,7 @@
 }
 
 .findings-table thead {
-    background: #2c3e50;
+    background: #000000;
     color: white;
 }
 
@@ -775,11 +775,11 @@
     display: block;
     font-size: 2rem;
     font-weight: bold;
-    color: #2c3e50;
+    color: #000000;
 }
 
 .stat-value.highlight {
-    color: #3498db;
+    color: #88B04B;
 }
 
 .stat-value.success {
@@ -953,7 +953,7 @@
 
 .quality-card h4 {
     margin: 0 0 1rem 0;
-    color: #3498db;
+    color: #88B04B;
 }
 
 .quality-score {
@@ -975,7 +975,7 @@
     padding: 1.5rem;
     border-radius: 0.75rem;
     margin-bottom: 1.5rem;
-    border-left: 4px solid #3498db;
+    border-left: 4px solid #88B04B;
 }
 
 .element-header {
@@ -1019,7 +1019,7 @@
 }
 
 .element-score {
-    background: #2c3e50;
+    background: #000000;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
@@ -1042,7 +1042,7 @@
     content: '•';
     position: absolute;
     left: 0;
-    color: #3498db;
+    color: #88B04B;
     font-weight: bold;
     font-size: 1.2rem;
 }

@@ -142,7 +142,7 @@
             font-size: 18px;
             font-weight: bold;
             margin-bottom: 10px;
-            color: #2c3e50;
+            color: #000000;
         }
 
         .semaforo-valor {
@@ -233,7 +233,7 @@
         .quick-win-item .titulo {
             font-weight: bold;
             font-size: 16px;
-            color: #2c3e50;
+            color: #000000;
             margin-bottom: 8px;
         }
 
@@ -299,7 +299,7 @@
         .fase h4 {
             font-size: 20px;
             margin: 15px 0 10px 0;
-            color: #2c3e50;
+            color: #000000;
         }
 
         .fase .tareas {
@@ -349,7 +349,7 @@
         .modulo-card .nombre {
             font-weight: bold;
             font-size: 16px;
-            color: #2c3e50;
+            color: #000000;
             margin-bottom: 8px;
         }
 
