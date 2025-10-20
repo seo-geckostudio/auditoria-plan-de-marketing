@@ -510,7 +510,7 @@ $pasoId = $_GET['paso_id'] ?? null;
 }
 
 .[NOMBRE_MODULO]-page .entregable-card.priority-medium {
-    border-left: 4px solid #3b82f6;
+    border-left: 4px solid #88B04B;
 }
 
 .[NOMBRE_MODULO]-page .entregable-icon {

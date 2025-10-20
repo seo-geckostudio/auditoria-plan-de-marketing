@@ -201,7 +201,7 @@ class AuditoriaDataLoader {
     // Header
     const thead = document.createElement('thead');
     thead.innerHTML = `
-      <tr style="background: #f8f9fa; border-bottom: 2px solid #54a34a;">
+      <tr style="background: #f8f9fa; border-bottom: 2px solid #88B04B;">
         <th style="padding: 12px; text-align: left;">Keyword</th>
         <th style="padding: 12px; text-align: center;">Clics</th>
         <th style="padding: 12px; text-align: center;">Impresiones</th>
@@ -221,7 +221,7 @@ class AuditoriaDataLoader {
         <td style="padding: 12px; text-align: center;">${kw.clics}</td>
         <td style="padding: 12px; text-align: center;">${kw.impresiones}</td>
         <td style="padding: 12px; text-align: center;">${kw.ctr}%</td>
-        <td style="padding: 12px; text-align: center; color: ${kw.posicion <= 10 ? '#54a34a' : '#666'};">
+        <td style="padding: 12px; text-align: center; color: ${kw.posicion <= 10 ? '#88B04B' : '#666'};">
           ${kw.posicion}
         </td>
       `;
@@ -254,7 +254,7 @@ class AuditoriaDataLoader {
         border: 1px solid #e2e8f0;
         border-radius: 8px;
         padding: 20px;
-        border-top: 4px solid #54a34a;
+        border-top: 4px solid #88B04B;
       `;
 
       card.innerHTML = `
@@ -268,7 +268,7 @@ class AuditoriaDataLoader {
           </div>
           <div style="display: flex; justify-content: space-between;">
             <span style="color: #666;">Porcentaje:</span>
-            <strong style="color: #54a34a;">${info.porcentaje}%</strong>
+            <strong style="color: #88B04B;">${info.porcentaje}%</strong>
           </div>
           <div style="display: flex; justify-content: space-between;">
             <span style="color: #666;">Conversiones:</span>
@@ -276,7 +276,7 @@ class AuditoriaDataLoader {
           </div>
           <div style="display: flex; justify-content: space-between;">
             <span style="color: #666;">Tasa conv.:</span>
-            <strong style="color: #54a34a;">${info.tasa_conversion}%</strong>
+            <strong style="color: #88B04B;">${info.tasa_conversion}%</strong>
           </div>
         </div>
       `;
@@ -294,7 +294,7 @@ class AuditoriaDataLoader {
     const datos = paginaData.contenido.datos;
 
     const sections = [
-      { title: '✓ Fortalezas', items: datos.fortalezas, color: '#54a34a' },
+      { title: '✓ Fortalezas', items: datos.fortalezas, color: '#88B04B' },
       { title: '⚠ Debilidades', items: datos.debilidades, color: '#e53e3e' },
       { title: '⭐ Oportunidades', items: datos.oportunidades, color: '#3182ce' },
       { title: '🎯 Prioridades', items: datos.prioridades, color: '#805ad5' }
@@ -378,7 +378,7 @@ class AuditoriaDataLoader {
       <ul class="bullets" style="list-style: none; padding: 0; margin: 0;">
         ${datos.objetivos_seo.map(obj => `
           <li style="padding: 6px 0 6px 20px; position: relative; font-size: 14px; line-height: 1.5;">
-            <span style="position: absolute; left: 0; color: #54a34a;">•</span>
+            <span style="position: absolute; left: 0; color: #88B04B;">•</span>
             ${obj}
           </li>
         `).join('')}
@@ -439,7 +439,7 @@ class AuditoriaDataLoader {
         border: 1px solid #e2e8f0;
         border-radius: 8px;
         padding: 20px;
-        border-left: 4px solid #54a34a;
+        border-left: 4px solid #88B04B;
       `;
 
       card.innerHTML = `
@@ -449,7 +449,7 @@ class AuditoriaDataLoader {
         <div style="display: grid; gap: 10px; font-size: 14px;">
           <div style="display: flex; justify-content: space-between;">
             <span style="color: #666;">Keywords:</span>
-            <strong style="color: #54a34a; font-size: 20px;">${pais.keywords}</strong>
+            <strong style="color: #88B04B; font-size: 20px;">${pais.keywords}</strong>
           </div>
           <div style="display: flex; justify-content: space-between;">
             <span style="color: #666;">Clics totales:</span>
@@ -457,7 +457,7 @@ class AuditoriaDataLoader {
           </div>
           <div style="display: flex; justify-content: space-between;">
             <span style="color: #666;">Mejor posición:</span>
-            <strong style="color: #54a34a;">${pais.mejor_posicion}</strong>
+            <strong style="color: #88B04B;">${pais.mejor_posicion}</strong>
           </div>
           <div style="margin-top: 8px; padding-top: 12px; border-top: 1px solid #e2e8f0;">
             <div style="color: #666; font-size: 12px; margin-bottom: 4px;">Top keyword:</div>
@@ -484,11 +484,11 @@ class AuditoriaDataLoader {
       border-radius: 8px;
       padding: 20px;
       text-align: center;
-      border-top: 3px solid #54a34a;
+      border-top: 3px solid #88B04B;
     `;
 
     card.innerHTML = `
-      <div style="font-size: 28px; font-weight: 700; color: #54a34a; margin-bottom: 8px;">
+      <div style="font-size: 28px; font-weight: 700; color: #88B04B; margin-bottom: 8px;">
         ${value}
       </div>
       <div style="font-size: 14px; color: #666; font-weight: 500;">
@@ -549,8 +549,8 @@ class AuditoriaDataLoader {
 
     const ctx = canvas.getContext('2d');
     const colors = this.config?.colores || {
-      primario: '#54a34a',
-      secundario: '#6ab85e',
+      primario: '#88B04B',
+      secundario: '#6d8f3c',
       terciario: '#8cc77e',
       cuaternario: '#aed69e'
     };

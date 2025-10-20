@@ -84,8 +84,8 @@ $insights = $datosModulo['insights'] ?? [];
                         datasets: [{
                             label: '<?php echo addslashes($ranking['titulo']); ?>',
                             data: <?php echo json_encode($ranking['valores'] ?? []); ?>,
-                            backgroundColor: '#54a34a',
-                            borderColor: '#54a34a',
+                            backgroundColor: '#88B04B',
+                            borderColor: '#88B04B',
                             borderWidth: 1
                         }]
                     },

@@ -13,7 +13,7 @@
             background: #f5f5f5;
         }
         .test-header {
-            background: #54a34a;
+            background: #88B04B;
             color: white;
             padding: 30px;
             border-radius: 8px;
@@ -32,7 +32,7 @@
         .module-test h2 {
             margin: 0 0 15px 0;
             color: #333;
-            border-bottom: 2px solid #54a34a;
+            border-bottom: 2px solid #88B04B;
             padding-bottom: 10px;
         }
         .test-result {
@@ -71,7 +71,7 @@
             margin-top: 15px;
             padding: 15px;
             background: #fafafa;
-            border-left: 3px solid #54a34a;
+            border-left: 3px solid #88B04B;
         }
     </style>
 </head>
