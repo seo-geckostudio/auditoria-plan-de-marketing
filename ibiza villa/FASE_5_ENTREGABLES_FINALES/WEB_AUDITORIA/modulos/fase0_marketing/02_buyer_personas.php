@@ -101,7 +101,7 @@ $paginas = $datosModulo['paginas'];
 
     <div class="page-footer">
         <span>Fase 0 - Marketing Digital</span>
-        <span>Página 1/3</span>
+        <span>Página 1/4</span>
     </div>
 </div>
 
@@ -314,140 +314,361 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <div class="page-footer">
         <span>Fase 0 - Marketing Digital</span>
-        <span>Página 2/3</span>
+        <span>Página 2/4</span>
     </div>
 </div>
 
-<!-- PÁGINA 3: PERSONA 2 & 3 -->
-<div class="audit-page dual-personas-page">
+<!-- PÁGINA 3: PERSONA 2 - SOFIA -->
+<div class="audit-page persona-detail-page">
     <div class="page-header">
         <h1><?php echo htmlspecialchars($paginas[2]['titulo']); ?></h1>
         <p class="subtitle"><?php echo htmlspecialchars($paginas[2]['subtitulo']); ?></p>
     </div>
 
     <?php
-    $dual = $paginas[2]['contenido']['datos'] ?? [];
-    $persona2 = $dual['persona_2'] ?? [];
-    $persona3 = $dual['persona_3'] ?? [];
+    $datos = $paginas[2]['contenido']['datos'];
+    $persona = $datos['persona'] ?? [];
+    $demografia = $datos['demografia'] ?? [];
+    $psicografia = $datos['psicografia'] ?? [];
+    $comportamiento = $datos['comportamiento_compra'] ?? [];
+    $painPoints = $datos['pain_points'] ?? [];
+    $goals = $datos['goals'] ?? [];
+    $mensajes = $datos['mensajes_clave'] ?? [];
+    $keywords = $datos['keywords_interes'] ?? [];
     ?>
 
     <div class="page-content">
-        <!-- Persona 2: Pareja DINK -->
-        <div class="compact-persona">
-            <div class="compact-header">
-                <div class="compact-avatar"><?php echo $persona2['foto_emoji'] ?? ''; ?></div>
-                <div class="compact-title">
-                    <h2>Persona 2: <?php echo $persona2['nombre'] ?? 'N/A'; ?></h2>
-                    <p class="compact-subtitle"><?php echo ($persona2['edad'] ?? 'N/A') . ' | ' . ($persona2['ubicacion'] ?? 'N/A'); ?></p>
-                    <p class="compact-subtitle"><?php echo $persona2['ocupacion'] ?? 'N/A'; ?></p>
-                </div>
-                <div class="compact-percentage">
-                    <div class="percent-value"><?php echo $persona2['porcentaje_clientes'] ?? '0%'; ?></div>
-                    <div class="percent-label">de clientes</div>
-                </div>
+        <!-- Tarjeta de Persona -->
+        <div class="persona-card">
+            <div class="persona-avatar">
+                <div class="avatar-emoji"><?php echo $persona['foto_emoji'] ?? ''; ?></div>
             </div>
-
-            <div class="compact-content">
-                <div class="compact-section">
-                    <h4><i class="fas fa-star"></i> Características Clave</h4>
-                    <ul class="compact-list">
-                        <?php foreach ($persona2['caracteristicas_clave'] ?? [] as $car): ?>
-                        <li><?php echo htmlspecialchars($car); ?></li>
-                        <?php endforeach; ?>
-                    </ul>
-                </div>
-
-                <div class="compact-columns">
-                    <div class="compact-column">
-                        <h4><i class="fas fa-exclamation-circle"></i> Pain Points</h4>
-                        <ul class="compact-list">
-                            <?php foreach ($persona2['pain_points'] ?? [] as $pain): ?>
-                            <li><?php echo htmlspecialchars($pain); ?></li>
-                            <?php endforeach; ?>
-                        </ul>
+            <div class="persona-info">
+                <h2><?php echo $persona['nombre'] ?? 'Nombre no disponible'; ?></h2>
+                <div class="persona-details">
+                    <div class="detail-item">
+                        <i class="fas fa-birthday-cake"></i>
+                        <span><?php echo $persona['edad'] ?? 'N/A'; ?></span>
                     </div>
-
-                    <div class="compact-column">
-                        <h4><i class="fas fa-bullseye"></i> Objetivos</h4>
-                        <ul class="compact-list">
-                            <?php foreach ($persona2['goals'] ?? [] as $goal): ?>
-                            <li><?php echo htmlspecialchars($goal); ?></li>
-                            <?php endforeach; ?>
-                        </ul>
+                    <div class="detail-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span><?php echo $persona['ubicacion'] ?? 'N/A'; ?></span>
                     </div>
-                </div>
-
-                <div class="compact-messages">
-                    <h4><i class="fas fa-comment"></i> Mensajes Clave</h4>
-                    <div class="compact-messages-grid">
-                        <?php foreach ($persona2['mensajes_clave'] ?? [] as $msg): ?>
-                        <div class="compact-message"><?php echo htmlspecialchars($msg); ?></div>
-                        <?php endforeach; ?>
+                    <div class="detail-item">
+                        <i class="fas fa-briefcase"></i>
+                        <span><?php echo $persona['ocupacion'] ?? 'N/A'; ?></span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-euro-sign"></i>
+                        <span><?php echo $persona['ingresos_anuales'] ?? 'N/A'; ?></span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-heart"></i>
+                        <span><?php echo $persona['estado_civil'] ?? 'N/A'; ?></span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Persona 3: Grupo Millennials -->
-        <div class="compact-persona">
-            <div class="compact-header">
-                <div class="compact-avatar"><?php echo $persona3['foto_emoji'] ?? ''; ?></div>
-                <div class="compact-title">
-                    <h2>Persona 3: <?php echo $persona3['nombre'] ?? 'N/A'; ?></h2>
-                    <p class="compact-subtitle"><?php echo ($persona3['edad'] ?? 'N/A') . ' | ' . ($persona3['ubicacion'] ?? 'N/A'); ?></p>
-                    <p class="compact-subtitle"><?php echo $persona3['ocupacion'] ?? 'N/A'; ?></p>
+        <!-- Demografía -->
+        <div class="section-block demografia-block">
+            <h3><i class="fas fa-chart-bar"></i> Demografía</h3>
+            <div class="demo-grid">
+                <?php foreach ($demografia as $key => $value): ?>
+                <div class="demo-item">
+                    <strong><?php echo ucwords(str_replace('_', ' ', $key)); ?>:</strong>
+                    <span><?php echo is_array($value) ? implode(', ', $value) : $value; ?></span>
                 </div>
-                <div class="compact-percentage">
-                    <div class="percent-value"><?php echo $persona3['porcentaje_clientes'] ?? '0%'; ?></div>
-                    <div class="percent-label">de clientes</div>
-                </div>
+                <?php endforeach; ?>
             </div>
+        </div>
 
-            <div class="compact-content">
-                <div class="compact-section">
-                    <h4><i class="fas fa-star"></i> Características Clave</h4>
-                    <ul class="compact-list">
-                        <?php foreach ($persona3['caracteristicas_clave'] ?? [] as $car): ?>
-                        <li><?php echo htmlspecialchars($car); ?></li>
+        <!-- Psicografía -->
+        <div class="section-block psico-block">
+            <h3><i class="fas fa-brain"></i> Psicografía</h3>
+
+            <div class="psico-columns">
+                <div class="psico-column">
+                    <h4>Valores</h4>
+                    <ul>
+                        <?php foreach ($psicografia['valores'] ?? [] as $valor): ?>
+                        <li><?php echo htmlspecialchars($valor); ?></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
 
-                <div class="compact-columns">
-                    <div class="compact-column">
-                        <h4><i class="fas fa-exclamation-circle"></i> Pain Points</h4>
-                        <ul class="compact-list">
-                            <?php foreach ($persona3['pain_points'] ?? [] as $pain): ?>
-                            <li><?php echo htmlspecialchars($pain); ?></li>
-                            <?php endforeach; ?>
-                        </ul>
-                    </div>
-
-                    <div class="compact-column">
-                        <h4><i class="fas fa-bullseye"></i> Objetivos</h4>
-                        <ul class="compact-list">
-                            <?php foreach ($persona3['goals'] ?? [] as $goal): ?>
-                            <li><?php echo htmlspecialchars($goal); ?></li>
-                            <?php endforeach; ?>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="compact-messages">
-                    <h4><i class="fas fa-comment"></i> Mensajes Clave</h4>
-                    <div class="compact-messages-grid">
-                        <?php foreach ($persona3['mensajes_clave'] ?? [] as $msg): ?>
-                        <div class="compact-message"><?php echo htmlspecialchars($msg); ?></div>
+                <div class="psico-column">
+                    <h4>Estilo de Vida</h4>
+                    <ul>
+                        <?php foreach ($psicografia['estilo_vida'] ?? [] as $estilo): ?>
+                        <li><?php echo htmlspecialchars($estilo); ?></li>
                         <?php endforeach; ?>
-                    </div>
+                    </ul>
                 </div>
+
+                <div class="psico-column">
+                    <h4>Intereses</h4>
+                    <ul>
+                        <?php foreach ($psicografia['intereses'] ?? [] as $interes): ?>
+                        <li><?php echo htmlspecialchars($interes); ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comportamiento de Compra -->
+        <div class="section-block behavior-block">
+            <h3><i class="fas fa-shopping-cart"></i> Comportamiento de Compra</h3>
+
+            <div class="behavior-grid-simple">
+                <div class="behavior-item-simple">
+                    <h4>Frecuencia</h4>
+                    <p><?php echo $comportamiento['frecuencia_compra'] ?? 'N/A'; ?></p>
+                </div>
+
+                <div class="behavior-item-simple highlight">
+                    <h4>Presupuesto</h4>
+                    <p class="budget"><?php echo $comportamiento['presupuesto_promedio'] ?? 'N/A'; ?></p>
+                </div>
+
+                <div class="behavior-item-simple">
+                    <h4>Proceso</h4>
+                    <p><?php echo $comportamiento['proceso_decision'] ?? 'N/A'; ?></p>
+                </div>
+
+                <div class="behavior-item-simple">
+                    <h4>Influenciadores</h4>
+                    <p><?php echo $comportamiento['influenciadores'] ?? 'N/A'; ?></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pain Points & Goals -->
+        <div class="pain-goals-grid">
+            <div class="section-block pain-block">
+                <h3><i class="fas fa-exclamation-triangle"></i> Pain Points</h3>
+                <ul>
+                    <?php foreach ($painPoints as $pain): ?>
+                    <li><?php echo htmlspecialchars($pain); ?></li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+
+            <div class="section-block goals-block">
+                <h3><i class="fas fa-bullseye"></i> Objetivos</h3>
+                <ul>
+                    <?php foreach ($goals as $goal): ?>
+                    <li><?php echo htmlspecialchars($goal); ?></li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mensajes Clave -->
+        <div class="section-block messages-block">
+            <h3><i class="fas fa-comment-dots"></i> Mensajes Clave para Esta Persona</h3>
+            <div class="messages-grid">
+                <?php foreach ($mensajes ?? [] as $mensaje): ?>
+                <div class="message-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p><?php echo htmlspecialchars($mensaje); ?></p>
+                </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+
+        <!-- Keywords -->
+        <div class="keywords-block">
+            <h4><i class="fas fa-search"></i> Keywords de Interés</h4>
+            <div class="keywords-tags">
+                <?php foreach ($keywords ?? [] as $keyword): ?>
+                <span class="keyword-tag"><?php echo htmlspecialchars($keyword); ?></span>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>
 
     <div class="page-footer">
         <span>Fase 0 - Marketing Digital</span>
-        <span>Página 3/3</span>
+        <span>Página 3/4</span>
+    </div>
+</div>
+
+<!-- PÁGINA 4: PERSONA 3 - JAMES -->
+<div class="audit-page persona-detail-page">
+    <div class="page-header">
+        <h1><?php echo htmlspecialchars($paginas[3]['titulo']); ?></h1>
+        <p class="subtitle"><?php echo htmlspecialchars($paginas[3]['subtitulo']); ?></p>
+    </div>
+
+    <?php
+    $datos = $paginas[3]['contenido']['datos'];
+    $persona = $datos['persona'] ?? [];
+    $demografia = $datos['demografia'] ?? [];
+    $psicografia = $datos['psicografia'] ?? [];
+    $comportamiento = $datos['comportamiento_compra'] ?? [];
+    $painPoints = $datos['pain_points'] ?? [];
+    $goals = $datos['goals'] ?? [];
+    $mensajes = $datos['mensajes_clave'] ?? [];
+    $keywords = $datos['keywords_interes'] ?? [];
+    ?>
+
+    <div class="page-content">
+        <!-- Tarjeta de Persona -->
+        <div class="persona-card">
+            <div class="persona-avatar">
+                <div class="avatar-emoji"><?php echo $persona['foto_emoji'] ?? ''; ?></div>
+            </div>
+            <div class="persona-info">
+                <h2><?php echo $persona['nombre'] ?? 'Nombre no disponible'; ?></h2>
+                <div class="persona-details">
+                    <div class="detail-item">
+                        <i class="fas fa-birthday-cake"></i>
+                        <span><?php echo $persona['edad'] ?? 'N/A'; ?></span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span><?php echo $persona['ubicacion'] ?? 'N/A'; ?></span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-briefcase"></i>
+                        <span><?php echo $persona['ocupacion'] ?? 'N/A'; ?></span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-euro-sign"></i>
+                        <span><?php echo $persona['ingresos_anuales'] ?? 'N/A'; ?></span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-heart"></i>
+                        <span><?php echo $persona['estado_civil'] ?? 'N/A'; ?></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Demografía -->
+        <div class="section-block demografia-block">
+            <h3><i class="fas fa-chart-bar"></i> Demografía</h3>
+            <div class="demo-grid">
+                <?php foreach ($demografia as $key => $value): ?>
+                <div class="demo-item">
+                    <strong><?php echo ucwords(str_replace('_', ' ', $key)); ?>:</strong>
+                    <span><?php echo is_array($value) ? implode(', ', $value) : $value; ?></span>
+                </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+
+        <!-- Psicografía -->
+        <div class="section-block psico-block">
+            <h3><i class="fas fa-brain"></i> Psicografía</h3>
+
+            <div class="psico-columns">
+                <div class="psico-column">
+                    <h4>Valores</h4>
+                    <ul>
+                        <?php foreach ($psicografia['valores'] ?? [] as $valor): ?>
+                        <li><?php echo htmlspecialchars($valor); ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+
+                <div class="psico-column">
+                    <h4>Estilo de Vida</h4>
+                    <ul>
+                        <?php foreach ($psicografia['estilo_vida'] ?? [] as $estilo): ?>
+                        <li><?php echo htmlspecialchars($estilo); ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+
+                <div class="psico-column">
+                    <h4>Intereses</h4>
+                    <ul>
+                        <?php foreach ($psicografia['intereses'] ?? [] as $interes): ?>
+                        <li><?php echo htmlspecialchars($interes); ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comportamiento de Compra -->
+        <div class="section-block behavior-block">
+            <h3><i class="fas fa-shopping-cart"></i> Comportamiento de Compra</h3>
+
+            <div class="behavior-grid-simple">
+                <div class="behavior-item-simple">
+                    <h4>Frecuencia</h4>
+                    <p><?php echo $comportamiento['frecuencia_compra'] ?? 'N/A'; ?></p>
+                </div>
+
+                <div class="behavior-item-simple highlight">
+                    <h4>Presupuesto</h4>
+                    <p class="budget"><?php echo $comportamiento['presupuesto_promedio'] ?? 'N/A'; ?></p>
+                </div>
+
+                <div class="behavior-item-simple">
+                    <h4>Proceso</h4>
+                    <p><?php echo $comportamiento['proceso_decision'] ?? 'N/A'; ?></p>
+                </div>
+
+                <div class="behavior-item-simple">
+                    <h4>Influenciadores</h4>
+                    <p><?php echo $comportamiento['influenciadores'] ?? 'N/A'; ?></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pain Points & Goals -->
+        <div class="pain-goals-grid">
+            <div class="section-block pain-block">
+                <h3><i class="fas fa-exclamation-triangle"></i> Pain Points</h3>
+                <ul>
+                    <?php foreach ($painPoints as $pain): ?>
+                    <li><?php echo htmlspecialchars($pain); ?></li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+
+            <div class="section-block goals-block">
+                <h3><i class="fas fa-bullseye"></i> Objetivos</h3>
+                <ul>
+                    <?php foreach ($goals as $goal): ?>
+                    <li><?php echo htmlspecialchars($goal); ?></li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mensajes Clave -->
+        <div class="section-block messages-block">
+            <h3><i class="fas fa-comment-dots"></i> Mensajes Clave para Esta Persona</h3>
+            <div class="messages-grid">
+                <?php foreach ($mensajes ?? [] as $mensaje): ?>
+                <div class="message-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p><?php echo htmlspecialchars($mensaje); ?></p>
+                </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+
+        <!-- Keywords -->
+        <div class="keywords-block">
+            <h4><i class="fas fa-search"></i> Keywords de Interés</h4>
+            <div class="keywords-tags">
+                <?php foreach ($keywords ?? [] as $keyword): ?>
+                <span class="keyword-tag"><?php echo htmlspecialchars($keyword); ?></span>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-footer">
+        <span>Fase 0 - Marketing Digital</span>
+        <span>Página 4/4</span>
     </div>
 </div>
 
