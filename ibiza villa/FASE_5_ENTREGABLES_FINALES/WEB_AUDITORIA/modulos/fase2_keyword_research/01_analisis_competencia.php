@@ -648,9 +648,11 @@
 .difficulty-bar {
     position: relative;
     background: #e9ecef;
-    border-radius: 0.5rem;
-    height: 24px;
-    width: 80px;
+    border-radius: 0.25rem;
+    height: 20px;
+    width: 100%;
+    max-width: 100px;
+    display: inline-block;
 }
 
 .difficulty-fill {
@@ -659,7 +661,7 @@
     left: 0;
     height: 100%;
     background: linear-gradient(90deg, #88B04B 0%, #88B04B 50%, #dc3545 100%);
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     transition: width 0.3s;
 }
 
@@ -668,9 +670,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: bold;
     z-index: 1;
+    color: #333;
+}
+
+.difficulty-cell {
+    padding: 0.5rem 1rem !important;
 }
 
 .opp-badge {
