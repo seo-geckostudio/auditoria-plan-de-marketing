@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         datasets: [{
           label: title || 'Datos',
           data: values,
-          backgroundColor: '#54a34a',
+          backgroundColor: '#88B04B',
           borderRadius: 4,
           maxBarThickness: 48
         }]
@@ -71,8 +71,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         datasets: [{
           label: title || 'Datos',
           data: values,
-          borderColor: '#54a34a',
-          backgroundColor: 'rgba(84,163,74,0.12)',
+          borderColor: '#88B04B',
+          backgroundColor: 'rgba(136,176,75,0.12)',
           borderWidth: 2,
           fill: true,
           tension: 0.3,
@@ -113,8 +113,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const datasets = series.map(s => ({
       label: s.label,
       data: s.data,
-      borderColor: s.color || '#54a34a',
-      backgroundColor: (s.axis === 'y1') ? 'rgba(245,158,11,0.12)' : 'rgba(84,163,74,0.12)',
+      borderColor: s.color || '#88B04B',
+      backgroundColor: (s.axis === 'y1') ? 'rgba(120,120,120,0.12)' : 'rgba(136,176,75,0.12)',
       borderWidth: 2,
       fill: true,
       tension: 0.3,
@@ -271,8 +271,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const prev = rows.map(r => parseFloat((r.sessions_prev || r.sesiones_prev || '0').toString().replace(/[,]/g,'')) || 0);
     const curr = rows.map(r => parseFloat((r.sessions_curr || r.sesiones_curr || '0').toString().replace(/[,]/g,'')) || 0);
     renderLineChartMulti('chart-yoy-sessions', labels, [
-      { label: 'Sesiones año anterior', data: prev, color: '#9ca3af', axis: 'y' },
-      { label: 'Sesiones año actual', data: curr, color: '#54a34a', axis: 'y' }
+      { label: 'Sesiones año anterior', data: prev, color: '#787878', axis: 'y' },
+      { label: 'Sesiones año actual', data: curr, color: '#88B04B', axis: 'y' }
     ], 'Sesiones orgánicas YoY');
   });
 
@@ -388,8 +388,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const ibiza = rows.map(r => parseFloat((r.ibiza_villa || r.iv || '0').toString().replace(/[,]/g,'')) || 0);
     const sector = rows.map(r => parseFloat((r.sector_avg || r.sector || '0').toString().replace(/[,]/g,'')) || 0);
     renderLineChartMulti('chart-sector-visibility-017', labels, [
-      { label: 'Ibiza Villa', data: ibiza, color: '#0ea5e9', axis: 'y' },
-      { label: 'Media sector', data: sector, color: '#54a34a', axis: 'y' }
+      { label: 'Ibiza Villa', data: ibiza, color: '#88B04B', axis: 'y' },
+      { label: 'Media sector', data: sector, color: '#88B04B', axis: 'y' }
     ], 'Comparativa visibilidad');
   });
 
@@ -809,7 +809,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           a.href = `#${p.id}`;
           a.textContent = `${idx + 1}. ${p.titulo || p.id}`;
           a.style.cursor = 'pointer';
-          a.style.color = '#54a34a';
+          a.style.color = '#88B04B';
           a.style.textDecoration = 'none';
           a.addEventListener('mouseover', () => a.style.textDecoration = 'underline');
           a.addEventListener('mouseout', () => a.style.textDecoration = 'none');
@@ -941,7 +941,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const title = document.createElement('h4');
     title.textContent = 'Datos de la Auditoría';
     title.style.margin = '0 0 12px 0';
-    title.style.color = '#54a34a';
+    title.style.color = '#88B04B';
     dataViz.appendChild(title);
     
     // Crear grid de métricas si hay datos numéricos
@@ -1029,9 +1029,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     if (document.getElementById('chart-organic-historical')) {
       const series = [
-        { label: 'Sesiones', data: sessions, axis: 'y', color: '#2563eb' },
-        ...(conversions.length ? [{ label: 'Conversiones', data: conversions, axis: 'y', color: '#54a34a' }] : []),
-        ...(cr.length ? [{ label: 'CR %', data: cr, axis: 'y1', color: '#f59e0b' }] : [])
+        { label: 'Sesiones', data: sessions, axis: 'y', color: '#88B04B' },
+        ...(conversions.length ? [{ label: 'Conversiones', data: conversions, axis: 'y', color: '#88B04B' }] : []),
+        ...(cr.length ? [{ label: 'CR %', data: cr, axis: 'y1', color: '#787878' }] : [])
       ];
       // Si solo tenemos sesiones, usa renderLineChart simple
       if (series.length === 1) {
