@@ -958,13 +958,18 @@ $paginas = $moduloData['paginas'];
     color: var(--brand-color);
 }
 
+.difficulty-cell {
+    padding: 8px;
+}
+
 .difficulty-bar {
     position: relative;
     height: 24px;
     width: 100px;
-    background: var(--bg-lighter);
+    background: #f5f5f5;
     border-radius: 4px;
     overflow: hidden;
+    border: 1px solid #e0e0e0;
 }
 
 .difficulty-fill {
@@ -973,7 +978,9 @@ $paginas = $moduloData['paginas'];
     left: 0;
     height: 100%;
     max-width: 100%;
-    background: linear-gradient(90deg, #88B04B 0%, #88B04B 50%, #88B04B 100%);
+    background: #88B04B;
+    border: none;
+    border-radius: 3px 0 0 3px;
 }
 
 .difficulty-bar span {
@@ -981,14 +988,19 @@ $paginas = $moduloData['paginas'];
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
     font-size: 0.75rem;
     font-weight: 600;
     color: #000000;
     z-index: 2;
+    text-align: center;
+    line-height: 24px;
+    border: none;
+    outline: none;
+    pointer-events: none;
 }
 
 .opportunity-badge {
