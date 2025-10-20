@@ -530,6 +530,11 @@ $paginas = $moduloData['paginas'];
     border-bottom: 3px solid var(--brand-color);
 }
 
+.competencia-header .subtitle {
+    color: #000000 !important;
+    font-weight: 600;
+}
+
 .fase-label {
     font-size: 0.875rem;
     font-weight: 600;
@@ -566,16 +571,19 @@ $paginas = $moduloData['paginas'];
 }
 
 .card-icon {
-    font-size: 2rem;
-    margin-bottom: 12px;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    height: 1.5rem;
+    display: block;
 }
 
 .card-value {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--brand-color);
-    line-height: 1;
+    line-height: 1.2;
     margin: 8px 0;
+    word-wrap: break-word;
 }
 
 .summary-card.primary .card-value {
@@ -953,10 +961,10 @@ $paginas = $moduloData['paginas'];
 .difficulty-bar {
     position: relative;
     height: 24px;
+    width: 100px;
     background: var(--bg-lighter);
     border-radius: 4px;
     overflow: hidden;
-    min-width: 60px;
 }
 
 .difficulty-fill {
@@ -964,18 +972,23 @@ $paginas = $moduloData['paginas'];
     top: 0;
     left: 0;
     height: 100%;
+    max-width: 100%;
     background: linear-gradient(90deg, #88B04B 0%, #88B04B 50%, #88B04B 100%);
 }
 
 .difficulty-bar span {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    font-size: 0.8125rem;
+    font-size: 0.75rem;
     font-weight: 600;
-    z-index: 1;
+    color: #000000;
+    z-index: 2;
 }
 
 .opportunity-badge {

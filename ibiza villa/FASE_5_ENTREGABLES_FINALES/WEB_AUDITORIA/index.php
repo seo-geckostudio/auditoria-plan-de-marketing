@@ -180,11 +180,15 @@ if ($loader->tieneErrores()) {
             </a>
           </div>
 
-          <p class="system-badge">
-            🧩 Generado con Sistema Modular v2.0 |
-            <?php echo $stats['total_modulos']; ?> módulos |
-            <?php echo $stats['total_paginas']; ?> páginas
-          </p>
+          <div style="text-align: center; margin-top: 30px;">
+            <div style="font-size: 2rem; margin-bottom: 10px;">🧩</div>
+            <p class="system-badge" style="margin: 0;">
+              Gecko Studio
+            </p>
+            <p style="font-size: 0.85rem; color: #787878; margin-top: 5px;">
+              <?php echo $stats['total_modulos']; ?> módulos | <?php echo $stats['total_paginas']; ?> páginas
+            </p>
+          </div>
         </div>
       </div>
     </section>
