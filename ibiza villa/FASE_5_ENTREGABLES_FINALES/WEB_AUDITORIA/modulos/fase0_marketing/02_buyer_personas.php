@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 labels: <?php echo json_encode(array_column($portada['pais_origen_principal'] ?? [], 'pais')); ?>,
                 datasets: [{
                     data: <?php echo json_encode(array_column($portada['pais_origen_principal'] ?? [], 'porcentaje')); ?>,
-                    backgroundColor: ['#88B04B', '#88B04B', '#88B04B', '#88B04B', '#94a3b8'],
+                    backgroundColor: ['#667eea', '#ed8936', '#48bb78', '#f59e0b', '#ec4899'],
                     borderWidth: 3,
                     borderColor: '#fff'
                 }]
@@ -244,37 +244,25 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="section-block behavior-block">
             <h3><i class="fas fa-shopping-cart"></i> Comportamiento de Compra</h3>
 
-            <div class="behavior-grid">
-                <div class="behavior-item">
-                    <h4>Proceso de Decisión</h4>
+            <div class="behavior-grid-simple">
+                <div class="behavior-item-simple">
+                    <h4>Frecuencia</h4>
+                    <p><?php echo $comportamiento['frecuencia_compra'] ?? 'N/A'; ?></p>
+                </div>
+
+                <div class="behavior-item-simple highlight">
+                    <h4>Presupuesto</h4>
+                    <p class="budget"><?php echo $comportamiento['presupuesto_promedio'] ?? 'N/A'; ?></p>
+                </div>
+
+                <div class="behavior-item-simple">
+                    <h4>Proceso</h4>
                     <p><?php echo $comportamiento['proceso_decision'] ?? 'N/A'; ?></p>
                 </div>
 
-                <div class="behavior-item">
+                <div class="behavior-item-simple">
                     <h4>Influenciadores</h4>
                     <p><?php echo $comportamiento['influenciadores'] ?? 'N/A'; ?></p>
-                </div>
-
-                <div class="behavior-item highlight">
-                    <h4>Presupuesto</h4>
-                    <p class="budget"><?php echo $comportamiento['presupuesto'] ?? 'N/A'; ?></p>
-                </div>
-
-                <div class="behavior-item">
-                    <h4>Duración Estancia</h4>
-                    <p><?php echo $comportamiento['duracion_estancia'] ?? 'N/A'; ?></p>
-                </div>
-            </div>
-
-            <div class="criteria-section">
-                <h4>Criterios de Selección</h4>
-                <div class="criteria-grid">
-                    <?php foreach ($comportamiento['criterios_seleccion'] ?? [] as $index => $criterio): ?>
-                    <div class="criterion-card">
-                        <div class="criterion-number"><?php echo $index + 1; ?></div>
-                        <p><?php echo htmlspecialchars($criterio); ?></p>
-                    </div>
-                    <?php endforeach; ?>
                 </div>
             </div>
         </div>
@@ -711,21 +699,24 @@ document.addEventListener('DOMContentLoaded', function() {
     min-height: 100vh;
 }
 
-.personas-cover-page .persona-card {
+.personas-cover-page .persona-card,
+.persona-detail-page .persona-card {
     background: white;
     border-radius: 15px;
-    padding: 40px;
+    padding: 30px;
     display: flex;
-    gap: 30px;
+    gap: 25px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-.personas-cover-page .persona-avatar {
+.personas-cover-page .persona-avatar,
+.persona-detail-page .persona-avatar {
     flex-shrink: 0;
 }
 
-.personas-cover-page .avatar-emoji {
+.personas-cover-page .avatar-emoji,
+.persona-detail-page .avatar-emoji {
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -736,7 +727,8 @@ document.addEventListener('DOMContentLoaded', function() {
     font-size: 60px;
 }
 
-.personas-cover-page .persona-info {
+.personas-cover-page .persona-info,
+.persona-detail-page .persona-info {
     flex: 1;
 }
 
@@ -746,13 +738,15 @@ document.addEventListener('DOMContentLoaded', function() {
     margin-bottom: 20px;
 }
 
-.personas-cover-page .persona-details {
+.personas-cover-page .persona-details,
+.persona-detail-page .persona-details {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
-.personas-cover-page .detail-item {
+.personas-cover-page .detail-item,
+.persona-detail-page .detail-item {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -764,7 +758,8 @@ document.addEventListener('DOMContentLoaded', function() {
     width: 20px;
 }
 
-.personas-cover-page .section-block {
+.personas-cover-page .section-block,
+.persona-detail-page .section-block {
     background: white;
     border-radius: 12px;
     padding: 25px;
@@ -781,13 +776,15 @@ document.addEventListener('DOMContentLoaded', function() {
     gap: 10px;
 }
 
-.personas-cover-page .demo-grid {
+.personas-cover-page .demo-grid,
+.persona-detail-page .demo-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
-.personas-cover-page .demo-item {
+.personas-cover-page .demo-item,
+.persona-detail-page .demo-item {
     padding: 12px;
     background: #f5f5f5;
     border-radius: 6px;
@@ -800,7 +797,8 @@ document.addEventListener('DOMContentLoaded', function() {
     margin-bottom: 5px;
 }
 
-.personas-cover-page .psico-columns {
+.personas-cover-page .psico-columns,
+.persona-detail-page .psico-columns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -857,8 +855,45 @@ document.addEventListener('DOMContentLoaded', function() {
     margin-bottom: 8px;
 }
 
+/* Versión simplificada del grid de comportamiento */
+.personas-cover-page .behavior-grid-simple,
+.persona-detail-page .behavior-grid-simple {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.personas-cover-page .behavior-item-simple,
+.persona-detail-page .behavior-item-simple {
+    background: #f0f7e6;
+    padding: 12px;
+    border-radius: 6px;
+    border-left: 3px solid #88B04B;
+}
+
+.personas-cover-page .behavior-item-simple.highlight {
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
+    color: white;
+    border-left: none;
+}
+
+.personas-cover-page .behavior-item-simple h4 {
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.personas-cover-page .behavior-item-simple p {
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 0;
+}
+
 .personas-cover-page .budget {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
 }
 
@@ -908,18 +943,21 @@ document.addEventListener('DOMContentLoaded', function() {
     line-height: 1.5;
 }
 
-.personas-cover-page .pain-goals-grid {
+.personas-cover-page .pain-goals-grid,
+.persona-detail-page .pain-goals-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     margin-bottom: 20px;
 }
 
-.personas-cover-page .pain-block {
+.personas-cover-page .pain-block,
+.persona-detail-page .pain-block {
     border-left: 4px solid #88B04B;
 }
 
-.personas-cover-page .goals-block {
+.personas-cover-page .goals-block,
+.persona-detail-page .goals-block {
     border-left: 4px solid #88B04B;
 }
 
@@ -960,13 +998,15 @@ document.addEventListener('DOMContentLoaded', function() {
     color: #88B04B;
 }
 
-.personas-cover-page .messages-grid {
+.personas-cover-page .messages-grid,
+.persona-detail-page .messages-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
-.personas-cover-page .message-card {
+.personas-cover-page .message-card,
+.persona-detail-page .message-card {
     background: #eff6ff;
     padding: 20px;
     border-radius: 8px;
@@ -992,7 +1032,8 @@ document.addEventListener('DOMContentLoaded', function() {
     line-height: 1.6;
 }
 
-.personas-cover-page .keywords-block {
+.personas-cover-page .keywords-block,
+.persona-detail-page .keywords-block {
     background: white;
     border-radius: 12px;
     padding: 25px;
@@ -1008,13 +1049,15 @@ document.addEventListener('DOMContentLoaded', function() {
     gap: 10px;
 }
 
-.personas-cover-page .keywords-tags {
+.personas-cover-page .keywords-tags,
+.persona-detail-page .keywords-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-.personas-cover-page .keyword-tag {
+.personas-cover-page .keyword-tag,
+.persona-detail-page .keyword-tag {
     background: #88B04B;
     color: white;
     padding: 8px 16px;
