@@ -602,6 +602,47 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <style>
+/* ===================================================================
+   SOBRESCRITURA PRIORITARIA DE ESTILOS GLOBALES - BUYER PERSONAS
+   Estos selectores tienen MÁXIMA especificidad para evitar herencia
+   ================================================================== */
+
+/* Sobrescribir .page-header .subtitle del sistema (styles.css)
+   Sistema usa: .page-header .subtitle { color: var(--text-secondary); }
+   Forzamos colores específicos del módulo */
+.personas-cover-page .page-header,
+.personas-cover-page .page-header h1,
+.personas-cover-page .page-header .subtitle,
+.persona-detail-page .page-header,
+.persona-detail-page .page-header h1,
+.persona-detail-page .page-header .subtitle,
+.dual-personas-page .page-header,
+.dual-personas-page .page-header h1,
+.dual-personas-page .page-header .subtitle,
+.strategy-personas-page .page-header,
+.strategy-personas-page .page-header h1,
+.strategy-personas-page .page-header .subtitle {
+    background: transparent !important;
+}
+
+/* Forzar colores específicos en subtítulos */
+.personas-cover-page .subtitle,
+.persona-detail-page .subtitle,
+.dual-personas-page .subtitle,
+.strategy-personas-page .subtitle {
+    color: #6d8f3c !important;
+    font-weight: 600;
+}
+
+/* Sobrescribir tablas si las hay */
+.personas-cover-page table thead,
+.persona-detail-page table thead,
+.dual-personas-page table thead,
+.strategy-personas-page table thead {
+    background: #88B04B !important;
+    color: #ffffff !important;
+}
+
 /* ========================================
    ESTILOS PÁGINA 1: PORTADA PERSONAS
    ======================================== */
@@ -611,7 +652,7 @@ document.addEventListener('DOMContentLoaded', function() {
     min-height: 100vh;
 }
 
-.module-badge {
+.personas-cover-page .module-badge {
     font-size: 14px;
     color: #6d8f3c;
     font-weight: 600;
@@ -620,25 +661,25 @@ document.addEventListener('DOMContentLoaded', function() {
     margin-bottom: 10px;
 }
 
-.page-header h1 {
+.personas-cover-page .page-header h1 {
     font-size: 42px;
     color: #881337;
     margin: 15px 0;
     font-weight: 700;
 }
 
-.subtitle {
+.personas-cover-page .subtitle {
     font-size: 18px;
     color: #6d8f3c;
     margin-top: 10px;
 }
 
-.personas-summary {
+.personas-cover-page .personas-summary {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.summary-stat {
+.personas-cover-page .summary-stat {
     display: inline-flex;
     align-items: center;
     gap: 20px;
@@ -648,19 +689,19 @@ document.addEventListener('DOMContentLoaded', function() {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.stat-icon {
+.personas-cover-page .stat-icon {
     font-size: 60px;
     color: #88B04B;
 }
 
-.stat-value {
+.personas-cover-page .stat-value {
     font-size: 64px;
     font-weight: 700;
     color: #881337;
     line-height: 1;
 }
 
-.stat-label {
+.personas-cover-page .stat-label {
     font-size: 16px;
     color: #6d8f3c;
     text-transform: uppercase;
@@ -669,7 +710,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .methodology-section,
 .segments-section,
-.origin-section {
+.personas-cover-page .origin-section {
     background: white;
     border-radius: 12px;
     padding: 30px;
@@ -679,7 +720,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .methodology-section h2,
 .segments-section h2,
-.origin-section h2 {
+.personas-cover-page .origin-section h2 {
     font-size: 24px;
     color: #881337;
     margin-bottom: 25px;
@@ -688,13 +729,13 @@ document.addEventListener('DOMContentLoaded', function() {
     gap: 10px;
 }
 
-.methodology-grid {
+.personas-cover-page .methodology-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
-.method-card {
+.personas-cover-page .method-card {
     background: #f0f7e6;
     padding: 15px;
     border-radius: 8px;
@@ -704,38 +745,38 @@ document.addEventListener('DOMContentLoaded', function() {
     border-left: 3px solid #88B04B;
 }
 
-.method-card i {
+.personas-cover-page .method-card i {
     color: #88B04B;
     font-size: 20px;
 }
 
-.segments-grid {
+.personas-cover-page .segments-grid {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.segment-card {
+.personas-cover-page .segment-card {
     background: #f5f5f5;
     padding: 20px;
     border-radius: 8px;
     border-left: 4px solid;
 }
 
-.segment-header {
+.personas-cover-page .segment-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.segment-header h3 {
+.personas-cover-page .segment-header h3 {
     font-size: 18px;
     color: #1e293b;
     margin: 0;
 }
 
-.segment-percentage {
+.personas-cover-page .segment-percentage {
     color: white;
     padding: 8px 16px;
     border-radius: 20px;
@@ -743,56 +784,56 @@ document.addEventListener('DOMContentLoaded', function() {
     font-size: 16px;
 }
 
-.segment-bar {
+.personas-cover-page .segment-bar {
     height: 12px;
     background: #f5f5f5;
     border-radius: 6px;
     overflow: hidden;
 }
 
-.segment-fill {
+.personas-cover-page .segment-fill {
     height: 100%;
     transition: width 0.3s ease;
 }
 
-.origin-chart {
+.personas-cover-page .origin-chart {
     height: 300px;
     margin-bottom: 30px;
 }
 
-.origin-list {
+.personas-cover-page .origin-list {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.origin-item {
+.personas-cover-page .origin-item {
     display: grid;
     grid-template-columns: 150px 1fr 60px;
     align-items: center;
     gap: 15px;
 }
 
-.origin-country {
+.personas-cover-page .origin-country {
     font-weight: 600;
     color: #1e293b;
 }
 
-.origin-bar-container {
+.personas-cover-page .origin-bar-container {
     height: 24px;
     background: #f5f5f5;
     border-radius: 12px;
     overflow: hidden;
 }
 
-.origin-bar {
+.personas-cover-page .origin-bar {
     height: 100%;
     background: linear-gradient(90deg, #88B04B 0%, #6d8f3c 100%);
     border-radius: 12px;
     transition: width 0.3s ease;
 }
 
-.origin-percent {
+.personas-cover-page .origin-percent {
     font-weight: 700;
     color: #881337;
     text-align: right;
@@ -807,7 +848,7 @@ document.addEventListener('DOMContentLoaded', function() {
     min-height: 100vh;
 }
 
-.persona-card {
+.personas-cover-page .persona-card {
     background: white;
     border-radius: 15px;
     padding: 40px;
@@ -817,11 +858,11 @@ document.addEventListener('DOMContentLoaded', function() {
     margin-bottom: 30px;
 }
 
-.persona-avatar {
+.personas-cover-page .persona-avatar {
     flex-shrink: 0;
 }
 
-.avatar-emoji {
+.personas-cover-page .avatar-emoji {
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -832,35 +873,35 @@ document.addEventListener('DOMContentLoaded', function() {
     font-size: 60px;
 }
 
-.persona-info {
+.personas-cover-page .persona-info {
     flex: 1;
 }
 
-.persona-info h2 {
+.personas-cover-page .persona-info h2 {
     font-size: 32px;
     color: #1e40af;
     margin-bottom: 20px;
 }
 
-.persona-details {
+.personas-cover-page .persona-details {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
-.detail-item {
+.personas-cover-page .detail-item {
     display: flex;
     align-items: center;
     gap: 10px;
     font-size: 14px;
 }
 
-.detail-item i {
+.personas-cover-page .detail-item i {
     color: #88B04B;
     width: 20px;
 }
 
-.section-block {
+.personas-cover-page .section-block {
     background: white;
     border-radius: 12px;
     padding: 25px;
@@ -868,7 +909,7 @@ document.addEventListener('DOMContentLoaded', function() {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.section-block h3 {
+.personas-cover-page .section-block h3 {
     font-size: 20px;
     color: #1e40af;
     margin-bottom: 20px;
@@ -877,43 +918,43 @@ document.addEventListener('DOMContentLoaded', function() {
     gap: 10px;
 }
 
-.demo-grid {
+.personas-cover-page .demo-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
-.demo-item {
+.personas-cover-page .demo-item {
     padding: 12px;
     background: #f5f5f5;
     border-radius: 6px;
     font-size: 14px;
 }
 
-.demo-item strong {
+.personas-cover-page .demo-item strong {
     color: #1e40af;
     display: block;
     margin-bottom: 5px;
 }
 
-.psico-columns {
+.personas-cover-page .psico-columns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.psico-column h4 {
+.personas-cover-page .psico-column h4 {
     font-size: 16px;
     color: #1e40af;
     margin-bottom: 10px;
 }
 
-.psico-column ul {
+.personas-cover-page .psico-column ul {
     list-style: none;
     padding: 0;
 }
 
-.psico-column li {
+.personas-cover-page .psico-column li {
     padding: 8px 0;
     border-bottom: 1px solid #f5f5f5;
     padding-left: 20px;
@@ -921,7 +962,7 @@ document.addEventListener('DOMContentLoaded', function() {
     font-size: 13px;
 }
 
-.psico-column li:before {
+.personas-cover-page .psico-column li:before {
     content: "•";
     position: absolute;
     left: 0;
@@ -929,52 +970,52 @@ document.addEventListener('DOMContentLoaded', function() {
     font-size: 18px;
 }
 
-.behavior-grid {
+.personas-cover-page .behavior-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     margin-bottom: 20px;
 }
 
-.behavior-item {
+.personas-cover-page .behavior-item {
     background: #f5f5f5;
     padding: 15px;
     border-radius: 8px;
     text-align: center;
 }
 
-.behavior-item.highlight {
+.personas-cover-page .behavior-item.highlight {
     background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 
-.behavior-item h4 {
+.personas-cover-page .behavior-item h4 {
     font-size: 13px;
     margin-bottom: 8px;
 }
 
-.budget {
+.personas-cover-page .budget {
     font-size: 18px;
     font-weight: 700;
 }
 
-.criteria-section {
+.personas-cover-page .criteria-section {
     margin-top: 20px;
 }
 
-.criteria-section h4 {
+.personas-cover-page .criteria-section h4 {
     font-size: 16px;
     color: #1e40af;
     margin-bottom: 15px;
 }
 
-.criteria-grid {
+.personas-cover-page .criteria-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
 
-.criterion-card {
+.personas-cover-page .criterion-card {
     background: #eff6ff;
     padding: 15px;
     border-radius: 8px;
@@ -984,7 +1025,7 @@ document.addEventListener('DOMContentLoaded', function() {
     border-left: 3px solid #88B04B;
 }
 
-.criterion-number {
+.personas-cover-page .criterion-number {
     width: 28px;
     height: 28px;
     border-radius: 50%;
@@ -998,43 +1039,43 @@ document.addEventListener('DOMContentLoaded', function() {
     flex-shrink: 0;
 }
 
-.criterion-card p {
+.personas-cover-page .criterion-card p {
     margin: 0;
     font-size: 13px;
     line-height: 1.5;
 }
 
-.pain-goals-grid {
+.personas-cover-page .pain-goals-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     margin-bottom: 20px;
 }
 
-.pain-block {
+.personas-cover-page .pain-block {
     border-left: 4px solid #88B04B;
 }
 
-.goals-block {
+.personas-cover-page .goals-block {
     border-left: 4px solid #88B04B;
 }
 
-.pain-block h3 {
+.personas-cover-page .pain-block h3 {
     color: #88B04B;
 }
 
-.goals-block h3 {
+.personas-cover-page .goals-block h3 {
     color: #88B04B;
 }
 
 .pain-block ul,
-.goals-block ul {
+.personas-cover-page .goals-block ul {
     list-style: none;
     padding: 0;
 }
 
 .pain-block li,
-.goals-block li {
+.personas-cover-page .goals-block li {
     padding: 10px 0;
     border-bottom: 1px solid #f5f5f5;
     padding-left: 25px;
@@ -1042,27 +1083,27 @@ document.addEventListener('DOMContentLoaded', function() {
     font-size: 14px;
 }
 
-.pain-block li:before {
+.personas-cover-page .pain-block li:before {
     content: "";
     position: absolute;
     left: 0;
     color: #88B04B;
 }
 
-.goals-block li:before {
+.personas-cover-page .goals-block li:before {
     content: "";
     position: absolute;
     left: 0;
     color: #88B04B;
 }
 
-.messages-grid {
+.personas-cover-page .messages-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
-.message-card {
+.personas-cover-page .message-card {
     background: #eff6ff;
     padding: 20px;
     border-radius: 8px;
@@ -1070,7 +1111,7 @@ document.addEventListener('DOMContentLoaded', function() {
     position: relative;
 }
 
-.message-card i {
+.personas-cover-page .message-card i {
     position: absolute;
     top: 15px;
     left: 15px;
@@ -1079,7 +1120,7 @@ document.addEventListener('DOMContentLoaded', function() {
     opacity: 0.2;
 }
 
-.message-card p {
+.personas-cover-page .message-card p {
     margin: 0;
     padding-left: 35px;
     font-size: 14px;
@@ -1088,14 +1129,14 @@ document.addEventListener('DOMContentLoaded', function() {
     line-height: 1.6;
 }
 
-.keywords-block {
+.personas-cover-page .keywords-block {
     background: white;
     border-radius: 12px;
     padding: 25px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.keywords-block h4 {
+.personas-cover-page .keywords-block h4 {
     font-size: 18px;
     color: #1e40af;
     margin-bottom: 15px;
@@ -1104,13 +1145,13 @@ document.addEventListener('DOMContentLoaded', function() {
     gap: 10px;
 }
 
-.keywords-tags {
+.personas-cover-page .keywords-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-.keyword-tag {
+.personas-cover-page .keyword-tag {
     background: #88B04B;
     color: white;
     padding: 8px 16px;
@@ -1128,7 +1169,7 @@ document.addEventListener('DOMContentLoaded', function() {
     min-height: 100vh;
 }
 
-.compact-persona {
+.personas-cover-page .compact-persona {
     background: white;
     border-radius: 12px;
     padding: 30px;
@@ -1136,7 +1177,7 @@ document.addEventListener('DOMContentLoaded', function() {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.compact-header {
+.personas-cover-page .compact-header {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -1145,7 +1186,7 @@ document.addEventListener('DOMContentLoaded', function() {
     border-bottom: 2px solid #f0f7e6;
 }
 
-.compact-avatar {
+.personas-cover-page .compact-avatar {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -1157,39 +1198,39 @@ document.addEventListener('DOMContentLoaded', function() {
     flex-shrink: 0;
 }
 
-.compact-title {
+.personas-cover-page .compact-title {
     flex: 1;
 }
 
-.compact-title h2 {
+.personas-cover-page .compact-title h2 {
     font-size: 24px;
     color: #78350f;
     margin-bottom: 8px;
 }
 
-.compact-subtitle {
+.personas-cover-page .compact-subtitle {
     font-size: 14px;
     color: #92400e;
     margin: 3px 0;
 }
 
-.compact-percentage {
+.personas-cover-page .compact-percentage {
     text-align: center;
 }
 
-.percent-value {
+.personas-cover-page .percent-value {
     font-size: 36px;
     font-weight: 700;
     color: #88B04B;
     line-height: 1;
 }
 
-.percent-label {
+.personas-cover-page .percent-label {
     font-size: 12px;
     color: #92400e;
 }
 
-.compact-content {
+.personas-cover-page .compact-content {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -1197,7 +1238,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .compact-section h4,
 .compact-column h4,
-.compact-messages h4 {
+.personas-cover-page .compact-messages h4 {
     font-size: 16px;
     color: #78350f;
     margin-bottom: 12px;
@@ -1206,12 +1247,12 @@ document.addEventListener('DOMContentLoaded', function() {
     gap: 8px;
 }
 
-.compact-list {
+.personas-cover-page .compact-list {
     list-style: none;
     padding: 0;
 }
 
-.compact-list li {
+.personas-cover-page .compact-list li {
     padding: 8px 0;
     border-bottom: 1px solid #f0f7e6;
     padding-left: 20px;
@@ -1219,7 +1260,7 @@ document.addEventListener('DOMContentLoaded', function() {
     font-size: 13px;
 }
 
-.compact-list li:before {
+.personas-cover-page .compact-list li:before {
     content: "→";
     position: absolute;
     left: 0;
@@ -1227,19 +1268,19 @@ document.addEventListener('DOMContentLoaded', function() {
     font-weight: bold;
 }
 
-.compact-columns {
+.personas-cover-page .compact-columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-.compact-messages-grid {
+.personas-cover-page .compact-messages-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
 
-.compact-message {
+.personas-cover-page .compact-message {
     background: #f0f7e6;
     padding: 12px;
     border-radius: 6px;
@@ -1258,7 +1299,7 @@ document.addEventListener('DOMContentLoaded', function() {
     min-height: 100vh;
 }
 
-.persona4-compact {
+.strategy-personas-page .persona4-compact {
     background: white;
     border-radius: 12px;
     padding: 25px;
@@ -1266,14 +1307,14 @@ document.addEventListener('DOMContentLoaded', function() {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.p4-header {
+.strategy-personas-page .p4-header {
     display: flex;
     align-items: center;
     gap: 20px;
     margin-bottom: 20px;
 }
 
-.p4-avatar {
+.strategy-personas-page .p4-avatar {
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -1284,19 +1325,19 @@ document.addEventListener('DOMContentLoaded', function() {
     font-size: 35px;
 }
 
-.p4-info h2 {
+.strategy-personas-page .p4-info h2 {
     font-size: 22px;
     color: #14532d;
     margin-bottom: 5px;
 }
 
-.p4-info p {
+.strategy-personas-page .p4-info p {
     font-size: 13px;
     color: #166534;
     margin: 2px 0;
 }
 
-.p4-percentage {
+.strategy-personas-page .p4-percentage {
     display: inline-block;
     background: #88B04B;
     color: white;
@@ -1307,42 +1348,42 @@ document.addEventListener('DOMContentLoaded', function() {
     margin-top: 5px;
 }
 
-.p4-grid {
+.strategy-personas-page .p4-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
 
-.p4-box {
+.strategy-personas-page .p4-box {
     background: #f0f7e6;
     padding: 15px;
     border-radius: 8px;
     border-left: 3px solid #88B04B;
 }
 
-.p4-box.highlight {
+.strategy-personas-page .p4-box.highlight {
     background: #f0f7e6;
 }
 
-.p4-box h4 {
+.strategy-personas-page .p4-box h4 {
     font-size: 14px;
     color: #14532d;
     margin-bottom: 10px;
 }
 
-.p4-box ul {
+.strategy-personas-page .p4-box ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.p4-box li {
+.strategy-personas-page .p4-box li {
     padding: 5px 0;
     font-size: 12px;
     color: #166534;
 }
 
-.p4-message {
+.strategy-personas-page .p4-message {
     font-size: 12px;
     color: #14532d;
     font-style: italic;
@@ -1351,11 +1392,11 @@ document.addEventListener('DOMContentLoaded', function() {
     border-left: 2px solid #88B04B;
 }
 
-.marketing-strategy {
+.strategy-personas-page .marketing-strategy {
     margin-bottom: 30px;
 }
 
-.marketing-strategy h2 {
+.strategy-personas-page .marketing-strategy h2 {
     font-size: 24px;
     color: #14532d;
     margin-bottom: 25px;
@@ -1364,7 +1405,7 @@ document.addEventListener('DOMContentLoaded', function() {
     gap: 10px;
 }
 
-.strategy-persona-block {
+.strategy-personas-page .strategy-persona-block {
     background: white;
     border-radius: 12px;
     padding: 25px;
@@ -1372,7 +1413,7 @@ document.addEventListener('DOMContentLoaded', function() {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.strategy-header {
+.strategy-personas-page .strategy-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1381,41 +1422,41 @@ document.addEventListener('DOMContentLoaded', function() {
     border-bottom: 2px solid #f0f7e6;
 }
 
-.strategy-header h3 {
+.strategy-personas-page .strategy-header h3 {
     font-size: 18px;
     color: #14532d;
     margin: 0;
 }
 
-.priority-badge {
+.strategy-personas-page .priority-badge {
     padding: 6px 14px;
     border-radius: 20px;
     font-size: 12px;
     font-weight: 700;
 }
 
-.priority-badge.priority-alta {
+.strategy-personas-page .priority-badge.priority-alta {
     background: #88B04B;
     color: white;
 }
 
-.priority-badge.priority-media {
+.strategy-personas-page .priority-badge.priority-media {
     background: #88B04B;
     color: white;
 }
 
-.priority-badge.priority-baja {
+.strategy-personas-page .priority-badge.priority-baja {
     background: #787878;
     color: white;
 }
 
-.strategy-content {
+.strategy-personas-page .strategy-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-.strategy-item h4 {
+.strategy-personas-page .strategy-item h4 {
     font-size: 14px;
     color: #14532d;
     margin-bottom: 10px;
@@ -1424,12 +1465,12 @@ document.addEventListener('DOMContentLoaded', function() {
     gap: 8px;
 }
 
-.strategy-item ul {
+.strategy-personas-page .strategy-item ul {
     list-style: none;
     padding: 0;
 }
 
-.strategy-item li {
+.strategy-personas-page .strategy-item li {
     padding: 6px 0;
     padding-left: 20px;
     position: relative;
@@ -1437,14 +1478,14 @@ document.addEventListener('DOMContentLoaded', function() {
     color: #166534;
 }
 
-.strategy-item li:before {
+.strategy-personas-page .strategy-item li:before {
     content: "▸";
     position: absolute;
     left: 0;
     color: #88B04B;
 }
 
-.strategy-kpi {
+.strategy-personas-page .strategy-kpi {
     grid-column: span 2;
     background: #f0f7e6;
     padding: 12px;
@@ -1455,7 +1496,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .budget-section,
-.objectives-section {
+.strategy-personas-page .objectives-section {
     background: white;
     border-radius: 12px;
     padding: 30px;
@@ -1464,7 +1505,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .budget-section h2,
-.objectives-section h2 {
+.strategy-personas-page .objectives-section h2 {
     font-size: 24px;
     color: #14532d;
     margin-bottom: 25px;
@@ -1473,13 +1514,13 @@ document.addEventListener('DOMContentLoaded', function() {
     gap: 10px;
 }
 
-.budget-grid {
+.strategy-personas-page .budget-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
 
-.budget-item {
+.strategy-personas-page .budget-item {
     background: #f0f7e6;
     padding: 15px;
     border-radius: 8px;
@@ -1487,33 +1528,33 @@ document.addEventListener('DOMContentLoaded', function() {
     border-left: 3px solid #88B04B;
 }
 
-.budget-item.total {
+.strategy-personas-page .budget-item.total {
     background: linear-gradient(135deg, #88B04B 0%, #16a34a 100%);
     color: white;
     grid-column: span 3;
     border-left: none;
 }
 
-.budget-label {
+.strategy-personas-page .budget-label {
     display: block;
     font-size: 13px;
     margin-bottom: 8px;
     font-weight: 600;
 }
 
-.budget-value {
+.strategy-personas-page .budget-value {
     display: block;
     font-size: 24px;
     font-weight: 700;
 }
 
-.objectives-list {
+.strategy-personas-page .objectives-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
-.objective-card {
+.strategy-personas-page .objective-card {
     background: #f0f7e6;
     padding: 20px;
     border-radius: 8px;
@@ -1523,7 +1564,7 @@ document.addEventListener('DOMContentLoaded', function() {
     border-left: 4px solid #88B04B;
 }
 
-.obj-number {
+.strategy-personas-page .obj-number {
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -1536,7 +1577,7 @@ document.addEventListener('DOMContentLoaded', function() {
     flex-shrink: 0;
 }
 
-.objective-card p {
+.strategy-personas-page .objective-card p {
     margin: 0;
     font-size: 14px;
     color: #14532d;
@@ -1546,7 +1587,7 @@ document.addEventListener('DOMContentLoaded', function() {
 /* ========================================
    ESTILOS COMUNES
    ======================================== */
-.page-footer {
+.strategy-personas-page .page-footer {
     margin-top: 50px;
     padding-top: 20px;
     border-top: 2px solid rgba(0,0,0,0.1);
@@ -1557,7 +1598,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 @media print {
-    .audit-page {
+    .strategy-personas-page .audit-page {
         page-break-after: always;
     }
 }
