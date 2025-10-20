@@ -139,15 +139,16 @@
 
 <style>
 .competitor-overview-page {
-    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
-    color: white;
+    background: white;
+    color: #333;
 }
 
 .competitor-overview-page .page-header {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
+    color: white;
     padding: 2rem;
     margin: -2rem -2rem 2rem -2rem;
+    border-radius: 12px 12px 0 0;
 }
 
 .header-content {
@@ -159,11 +160,13 @@
 .header-text h1 {
     margin: 0 0 0.5rem 0;
     font-size: 2rem;
+    color: white;
 }
 
 .header-text .subtitle {
     margin: 0;
-    opacity: 0.9;
+    opacity: 0.95;
+    color: white;
 }
 
 .header-meta {
@@ -180,6 +183,7 @@
     background: rgba(255, 255, 255, 0.2);
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
+    color: white;
 }
 
 .competitors-grid {
@@ -204,9 +208,10 @@
 }
 
 .competitor-card.our-site {
-    background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
-    border: 3px solid #ffd700;
+    border: 3px solid #88B04B;
+    box-shadow: 0 8px 16px rgba(136, 176, 75, 0.3);
 }
 
 .competitor-rank {
@@ -226,8 +231,9 @@
 }
 
 .competitor-card.our-site .competitor-rank {
-    background: #ffd700;
-    color: #333;
+    background: white;
+    color: #88B04B;
+    border: 2px solid #88B04B;
 }
 
 .competitor-header h3 {
