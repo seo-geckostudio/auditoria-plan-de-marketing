@@ -226,12 +226,48 @@ $riesgos = $datosModulo['riesgos_identificados'] ?? [];
 </div>
 
 <style>
-/* Estilos del roadmap */
-.page-meta {
+/* Estilos del roadmap - MEJORADOS PARA VISIBILIDAD */
+
+/* Cabecera mejorada */
+.roadmap-page .page-header {
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
+    color: white !important;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.roadmap-page .page-header .page-title,
+.roadmap-page .page-header h1 {
+    color: white !important;
+    margin-bottom: 10px;
+}
+
+.roadmap-page .page-header .page-subtitle,
+.roadmap-page .page-header p {
+    color: rgba(255, 255, 255, 0.95) !important;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.roadmap-page .page-meta {
     display: flex;
     gap: 30px;
     margin-top: 15px;
-    font-size: 0.95em;
+    font-size: 1rem;
+    color: white !important;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+.roadmap-page .page-meta span {
+    color: white !important;
+}
+
+.roadmap-page .page-meta strong {
+    font-weight: 600;
+    margin-right: 5px;
 }
 
 .project-metrics {
@@ -242,30 +278,33 @@ $riesgos = $datosModulo['riesgos_identificados'] ?? [];
 }
 
 .metric-box {
-    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
+    background: linear-gradient(135deg, #5a7a2f 0%, #88B04B 100%);
     color: white;
-    padding: 24px;
+    padding: 28px 24px;
     border-radius: 12px;
     display: flex;
     align-items: center;
     gap: 16px;
+    box-shadow: 0 4px 12px rgba(136, 176, 75, 0.3);
 }
 
 .metric-icon {
     font-size: 2.5em;
-    opacity: 0.9;
+    opacity: 1;
 }
 
 .metric-content h3 {
-    font-size: 2em;
+    font-size: 2.2em;
     font-weight: 700;
     margin: 0 0 5px 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
 .metric-content p {
     margin: 0;
-    opacity: 0.9;
-    font-size: 0.9em;
+    opacity: 1;
+    font-size: 0.95em;
+    font-weight: 500;
 }
 
 .timeline-container {
