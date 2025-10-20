@@ -29,11 +29,12 @@
                 <div class="competitor-card <?php echo $index === 3 ? 'our-site' : ''; ?>">
                     <div class="competitor-rank">#<?php echo $index + 1; ?></div>
                     <div class="competitor-header">
-                        <h3><?php echo htmlspecialchars($competidor['nombre']); ?></h3>
-                        <span class="competitor-url"><?php echo htmlspecialchars($competidor['url']); ?></span>
                         <?php if ($index === 3): ?>
                         <span class="badge badge-primary">Nuestro Sitio</span>
+                        <?php else: ?>
+                        <h3><?php echo htmlspecialchars($competidor['nombre']); ?></h3>
                         <?php endif; ?>
+                        <span class="competitor-url"><?php echo htmlspecialchars($competidor['url']); ?></span>
                     </div>
                     <div class="competitor-metrics">
                         <div class="metric">
@@ -250,15 +251,18 @@
 
 .badge {
     display: inline-block;
-    padding: 0.25rem 0.75rem;
-    border-radius: 0.5rem;
-    font-size: 0.75rem;
+    padding: 0.5rem 1.25rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
     font-weight: bold;
-    margin-top: 0.5rem;
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
 }
 
 .badge-primary {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.95);
+    color: #88B04B;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .competitor-metrics {
