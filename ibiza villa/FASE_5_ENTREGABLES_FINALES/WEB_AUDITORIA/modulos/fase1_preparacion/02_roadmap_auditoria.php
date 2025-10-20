@@ -61,86 +61,6 @@ $riesgos = $datosModulo['riesgos_identificados'] ?? [];
         </div>
         <?php endif; ?>
 
-        <!-- Timeline visual de fases -->
-        <div class="timeline-container">
-            <h2 class="section-title">Timeline del Proyecto</h2>
-            <div class="timeline-visual">
-                <?php foreach ($fases as $index => $fase): ?>
-                <div class="timeline-phase phase-<?php echo $fase['estado']; ?>">
-                    <div class="phase-header">
-                        <div class="phase-number">Fase <?php echo $fase['numero']; ?></div>
-                        <div class="phase-status">
-                            <?php
-                            $statusIcons = [
-                                'completado' => '<i class="fas fa-check-circle"></i> Completado',
-                                'en_curso' => '<i class="fas fa-spinner"></i> En Curso',
-                                'pendiente' => '<i class="fas fa-clock"></i> Pendiente',
-                                'no_aplicable' => '<i class="fas fa-minus-circle"></i> No Aplicable'
-                            ];
-                            echo $statusIcons[$fase['estado']] ?? $fase['estado'];
-                            ?>
-                        </div>
-                    </div>
-                    <h3 class="phase-name"><?php echo htmlspecialchars($fase['nombre']); ?></h3>
-                    <div class="phase-dates">
-                        <i class="fas fa-calendar"></i>
-                        <?php echo htmlspecialchars($fase['fecha_inicio']); ?> - <?php echo htmlspecialchars($fase['fecha_fin']); ?>
-                        <span class="phase-duration">(<?php echo htmlspecialchars($fase['duracion']); ?>)</span>
-                    </div>
-
-                    <div class="phase-details">
-                        <div class="phase-stats">
-                            <span><strong><?php echo $fase['modulos']; ?></strong> módulos</span>
-                            <span><strong><?php echo $fase['horas_estimadas']; ?>h</strong> estimadas</span>
-                        </div>
-
-                        <?php if (!empty($fase['objetivos'])): ?>
-                        <div class="phase-objectives">
-                            <strong>Objetivos:</strong>
-                            <ul>
-                                <?php foreach ($fase['objetivos'] as $objetivo): ?>
-                                <li><?php echo htmlspecialchars($objetivo); ?></li>
-                                <?php endforeach; ?>
-                            </ul>
-                        </div>
-                        <?php endif; ?>
-
-                        <?php if (!empty($fase['entregables'])): ?>
-                        <div class="phase-deliverables">
-                            <strong>Entregables:</strong>
-                            <ul>
-                                <?php foreach ($fase['entregables'] as $entregable): ?>
-                                <li><i class="fas fa-file-alt"></i> <?php echo htmlspecialchars($entregable); ?></li>
-                                <?php endforeach; ?>
-                            </ul>
-                        </div>
-                        <?php endif; ?>
-
-                        <?php if (!empty($fase['herramientas'])): ?>
-                        <div class="phase-tools">
-                            <strong>Herramientas:</strong>
-                            <?php foreach ($fase['herramientas'] as $herramienta): ?>
-                            <span class="tool-badge"><?php echo htmlspecialchars($herramienta); ?></span>
-                            <?php endforeach; ?>
-                        </div>
-                        <?php endif; ?>
-
-                        <?php if (isset($fase['nota'])): ?>
-                        <div class="phase-note">
-                            <i class="fas fa-info-circle"></i>
-                            <?php echo htmlspecialchars($fase['nota']); ?>
-                        </div>
-                        <?php endif; ?>
-                    </div>
-
-                    <?php if ($index < count($fases) - 1): ?>
-                    <div class="timeline-connector"></div>
-                    <?php endif; ?>
-                </div>
-                <?php endforeach; ?>
-            </div>
-        </div>
-
         <!-- Hitos clave -->
         <?php if (!empty($hitos)): ?>
         <div class="milestones-section">
@@ -278,169 +198,34 @@ $riesgos = $datosModulo['riesgos_identificados'] ?? [];
 }
 
 .metric-box {
-    background: linear-gradient(135deg, #5a7a2f 0%, #88B04B 100%);
-    color: white;
+    background: white;
+    color: #333;
     padding: 28px 24px;
     border-radius: 12px;
     display: flex;
     align-items: center;
     gap: 16px;
-    box-shadow: 0 4px 12px rgba(136, 176, 75, 0.3);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e0e0e0;
 }
 
 .metric-icon {
     font-size: 2.5em;
-    opacity: 1;
+    color: #88B04B;
 }
 
 .metric-content h3 {
     font-size: 2.2em;
     font-weight: 700;
     margin: 0 0 5px 0;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    color: #333;
 }
 
 .metric-content p {
     margin: 0;
-    opacity: 1;
     font-size: 0.95em;
     font-weight: 500;
-}
-
-.timeline-container {
-    margin: 40px 0;
-}
-
-.timeline-visual {
-    position: relative;
-    padding: 20px 0;
-}
-
-.timeline-phase {
-    background: white;
-    border: 2px solid #e0e0e0;
-    border-radius: 12px;
-    padding: 24px;
-    margin-bottom: 30px;
-    position: relative;
-}
-
-.timeline-phase.phase-completado {
-    border-color: #88B04B;
-    background: #f8fff8;
-}
-
-.timeline-phase.phase-en_curso {
-    border-color: #88B04B;
-    background: #f0f7e6;
-}
-
-.timeline-phase.phase-pendiente {
-    border-color: #6c757d;
-}
-
-.timeline-phase.phase-no_aplicable {
-    border-color: #dee2e6;
-    background: #f8f9fa;
-    opacity: 0.7;
-}
-
-.phase-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 12px;
-}
-
-.phase-number {
-    background: #88B04B;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-weight: 700;
-    font-size: 0.9em;
-}
-
-.phase-status {
-    font-size: 0.9em;
-    font-weight: 600;
-}
-
-.phase-completado .phase-status { color: #88B04B; }
-.phase-en_curso .phase-status { color: #88B04B; }
-.phase-pendiente .phase-status { color: #6c757d; }
-.phase-no_aplicable .phase-status { color: #6c757d; }
-
-.phase-name {
-    font-size: 1.5em;
-    color: #333;
-    margin: 10px 0;
-}
-
-.phase-dates {
     color: #666;
-    font-size: 0.95em;
-    margin-bottom: 16px;
-}
-
-.phase-duration {
-    color: #999;
-    font-style: italic;
-}
-
-.phase-details {
-    margin-top: 16px;
-}
-
-.phase-stats {
-    display: flex;
-    gap: 24px;
-    margin-bottom: 16px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.phase-objectives ul,
-.phase-deliverables ul {
-    margin: 8px 0 16px 0;
-    padding-left: 20px;
-}
-
-.phase-objectives li,
-.phase-deliverables li {
-    margin: 6px 0;
-    color: #555;
-}
-
-.phase-tools {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 12px;
-}
-
-.tool-badge {
-    background: #e9ecef;
-    padding: 4px 12px;
-    border-radius: 4px;
-    font-size: 0.85em;
-    color: #495057;
-}
-
-.phase-note {
-    background: #f0f7e6;
-    border-left: 4px solid #88B04B;
-    padding: 12px;
-    margin-top: 12px;
-    border-radius: 4px;
-    font-size: 0.9em;
-}
-
-.timeline-connector {
-    width: 2px;
-    height: 30px;
-    background: #dee2e6;
-    margin: 0 auto;
 }
 
 .milestones-section {
@@ -575,10 +360,6 @@ $riesgos = $datosModulo['riesgos_identificados'] ?? [];
 }
 
 @media print {
-    .timeline-phase {
-        page-break-inside: avoid;
-    }
-
     .milestone-card {
         page-break-inside: avoid;
     }
