@@ -993,7 +993,7 @@ $paginas = $moduloData['paginas'];
     padding: 8px;
 }
 
-.difficulty-bar {
+.competencia-page .difficulty-bar {
     position: relative;
     height: 24px;
     width: 100px;
@@ -1003,7 +1003,7 @@ $paginas = $moduloData['paginas'];
     border: 1px solid #e0e0e0;
 }
 
-.difficulty-fill {
+.competencia-page .difficulty-fill {
     position: absolute;
     top: 0;
     left: 0;
@@ -1014,7 +1014,7 @@ $paginas = $moduloData['paginas'];
     border-radius: 3px 0 0 3px;
 }
 
-.difficulty-bar span {
+.competencia-page .difficulty-bar span {
     position: absolute;
     top: 0;
     left: 0;
