@@ -674,7 +674,7 @@
 }
 
 .task-detail ul li:before {
-    content: "✓";
+    content: "";
     position: absolute;
     left: 0;
     color: #88B04B;
@@ -1021,7 +1021,7 @@
 }
 
 .milestones ul li:before {
-    content: "✓";
+    content: "";
     position: absolute;
     left: 0;
     color: #88B04B;
@@ -1517,7 +1517,7 @@
 }
 
 .criteria-column.must ul li:before {
-    content: "✓";
+    content: "";
     position: absolute;
     left: 0;
     color: #88B04B;
@@ -1525,7 +1525,7 @@
 }
 
 .criteria-column.should ul li:before {
-    content: "✓";
+    content: "";
     position: absolute;
     left: 0;
     color: #88B04B;

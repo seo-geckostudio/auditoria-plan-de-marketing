@@ -63,13 +63,13 @@ $moduloData = [
     <!-- Sección Educativa -->
     <section class="concepto-educativo">
         <div class="concepto-header">
-            <span class="icono-concepto">📋</span>
+            <span class="icono-concepto"></span>
             <h2>¿Cómo Priorizar Tareas SEO? (Explicación Simple)</h2>
         </div>
 
         <div class="analogia-box">
             <div class="analogia-header">
-                <span class="analogia-icon">💡</span>
+                <i class="fas fa-info-circle"></i>
                 <strong>Piensa en Priorización SEO como el Plan de Renovación de una Villa antes de Alquilarla:</strong>
             </div>
             <ul class="analogia-list">
@@ -101,19 +101,19 @@ $moduloData = [
 
     <!-- Resumen Ejecutivo -->
     <section class="resumen-ejecutivo">
-        <div class="badge-seccion badge-antes">📊 ROADMAP ESTRATÉGICO CONSOLIDADO</div>
+        <div class="badge-seccion badge-antes"> ROADMAP ESTRATÉGICO CONSOLIDADO</div>
         <h2>Resumen: 22 Tareas Priorizadas de 145+ Recomendaciones</h2>
 
         <div class="fases-implementacion">
             <div class="fase-box fase-1">
                 <h3>Mes 1: Quick Wins (6 tareas)</h3>
                 <ul>
-                    <li>✅ Optimizar Hero Home WebP</li>
-                    <li>✅ Dimensiones imágenes (CLS)</li>
-                    <li>✅ Title tags (41 URLs)</li>
-                    <li>✅ Disavow enlaces tóxicos</li>
-                    <li>✅ Hero propuesta valor</li>
-                    <li>✅ Setup monitoreo algoritmo</li>
+                    <li> Optimizar Hero Home WebP</li>
+                    <li> Dimensiones imágenes (CLS)</li>
+                    <li> Title tags (41 URLs)</li>
+                    <li> Disavow enlaces tóxicos</li>
+                    <li> Hero propuesta valor</li>
+                    <li> Setup monitoreo algoritmo</li>
                 </ul>
                 <p class="fase-impacto">Impacto: €2.5M-4M/año + momentum</p>
             </div>
@@ -158,7 +158,7 @@ $moduloData = [
             <?php foreach ($moduloData['csvs'] as $csv): ?>
             <div class="csv-card">
                 <div class="csv-header">
-                    <span class="csv-icon">📄</span>
+                    <span class="csv-icon"></span>
                     <h3><?= $csv['titulo'] ?></h3>
                 </div>
                 <p class="csv-descripcion"><?= $csv['descripcion'] ?></p>
@@ -198,7 +198,7 @@ $moduloData = [
 
     <!-- Tabla KPIs -->
     <section class="kpis-seccion">
-        <div class="badge-seccion badge-despues">📈 RESULTADOS ESPERADOS CON ROADMAP</div>
+        <div class="badge-seccion badge-despues"> RESULTADOS ESPERADOS CON ROADMAP</div>
         <h2>KPIs: Impacto de Priorización Estratégica</h2>
 
         <table class="tabla-kpis">
@@ -225,7 +225,7 @@ $moduloData = [
         </table>
 
         <div class="nota-importante">
-            <strong>⚠️ Nota Crítica:</strong> Priorización NO es opcional - es la diferencia entre éxito y fracaso de auditoría.
+            <strong>️ Nota Crítica:</strong> Priorización NO es opcional - es la diferencia entre éxito y fracaso de auditoría.
             Sin roadmap estratégico: desperdicio recursos, bloqueos, resultados dispersos, equipo desmotivado.
             Con framework cuantitativo: ejecución enfocada, quick wins momentum, dependencias resueltas, ROI 24:1 promedio.
             <strong>Regla de Oro:</strong> Siempre ejecutar tareas Score ≥9 (Críticas) primero, independientemente de preferencias personales.
@@ -279,7 +279,7 @@ $moduloData = [
 }
 
 .analogia-list li::before {
-    content: "🔧";
+    content: "";
     position: absolute;
     left: 0;
 }

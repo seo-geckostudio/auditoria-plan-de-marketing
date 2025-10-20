@@ -307,7 +307,7 @@
 }
 
 .strengths-column li::before {
-    content: '✓';
+    content: '';
     position: absolute;
     left: 0;
     color: #88B04B;
@@ -316,7 +316,7 @@
 }
 
 .weaknesses-column li::before {
-    content: '⚠';
+    content: '';
     position: absolute;
     left: 0;
     font-size: 1.2rem;
@@ -370,7 +370,7 @@
 
         <!-- Recomendaciones estratégicas -->
         <section class="strategic-recommendations-section">
-            <h2><i class="fas fa-lightbulb"></i> <?php echo htmlspecialchars($datosModulo['recomendaciones_estrategicas']['titulo']); ?></h2>
+            <h2><i class="fas fa-info-circle"></i> <?php echo htmlspecialchars($datosModulo['recomendaciones_estrategicas']['titulo']); ?></h2>
 
             <div class="recommendations-summary">
                 <p><?php echo htmlspecialchars($datosModulo['recomendaciones_estrategicas']['resumen']); ?></p>
@@ -1389,7 +1389,7 @@
 }
 
 .risks-list li::before {
-    content: '⚠';
+    content: '';
     position: absolute;
     left: 0.75rem;
     font-size: 1.2rem;

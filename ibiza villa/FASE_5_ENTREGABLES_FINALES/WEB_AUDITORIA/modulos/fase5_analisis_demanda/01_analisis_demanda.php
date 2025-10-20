@@ -178,7 +178,7 @@ foreach ($paginas as $index => $pagina):
                 </div>
                 <div class="summary-metric">
                     <div class="metric-icon">
-                        <i class="fas fa-lightbulb"></i>
+                        <i class="fas fa-info-circle"></i>
                     </div>
                     <div class="metric-value"><?php echo $datos['resumen']['oportunidades_identificadas']; ?></div>
                     <div class="metric-label">Oportunidades</div>
@@ -743,7 +743,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .strengths-list li:before {
-    content: "✓";
+    content: "";
     position: absolute;
     left: 10px;
     color: #88B04B;
@@ -1000,7 +1000,7 @@ foreach ($paginas as $index => $pagina):
 
         <!-- Recomendaciones -->
         <div class="recommendations-section">
-            <h2><i class="fas fa-lightbulb"></i> Recomendaciones Estratégicas</h2>
+            <h2><i class="fas fa-info-circle"></i> Recomendaciones Estratégicas</h2>
             <div class="recommendations-grid">
                 <?php foreach ($datos['recomendaciones'] as $index => $recomendacion): ?>
                 <div class="recommendation-card">
@@ -1730,7 +1730,7 @@ foreach ($paginas as $index => $pagina):
 }
 
 .kpi-item:before {
-    content: "✓";
+    content: "";
     position: absolute;
     left: 10px;
     color: #88B04B;

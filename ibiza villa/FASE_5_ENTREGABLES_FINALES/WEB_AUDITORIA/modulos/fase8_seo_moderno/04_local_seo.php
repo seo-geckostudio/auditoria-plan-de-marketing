@@ -43,7 +43,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
         <!-- SECCIÓN EDUCATIVA: ¿Qué es Local SEO? -->
         <section class="concepto-educativo">
             <div class="concepto-header">
-                <span class="concepto-icon">📚</span>
+                <span class="concepto-icon"></span>
                 <h2>¿Qué es Local SEO y Por Qué es Crítico para Ibiza Villa?</h2>
             </div>
             <div class="concepto-content">
@@ -57,7 +57,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
                 <div class="analogia-box">
                     <div class="analogia-header">
-                        <span class="analogia-icon">💡</span>
+                        <i class="fas fa-info-circle"></i>
                         <strong>Piensa en Local SEO como un restaurante en la guía turística de Ibiza:</strong>
                     </div>
                     <ul class="analogia-list">
@@ -76,7 +76,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                 </div>
 
                 <div class="impacto-negocio">
-                    <h3>📊 Impacto Directo en el Negocio:</h3>
+                    <h3> Impacto Directo en el Negocio:</h3>
                     <div class="impacto-grid">
                         <div class="impacto-item">
                             <div class="impacto-numero">+45-60%</div>
@@ -128,7 +128,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         <span class="csv-meta-item"><i class="fas fa-chart-line"></i> Impacto: +35-50% visibilidad local</span>
                     </div>
                     <div class="csv-usage">
-                        <h4>📋 Cómo Usar Este Archivo:</h4>
+                        <h4> Cómo Usar Este Archivo:</h4>
                         <ol>
                             <li>Abre el CSV en Excel o Google Sheets</li>
                             <li>Ordena por columna "Prioridad" (Crítica → Alta → Media → Baja)</li>
@@ -137,7 +137,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                             <li>Marca "Status_Actual" como "Completo" cuando termines cada tarea</li>
                         </ol>
                         <p class="csv-tip">
-                            <strong>💡 Tip:</strong> Completar los 8 items críticos toma ~2 horas y genera el 70% del impacto total.
+                            <strong> Tip:</strong> Completar los 8 items críticos toma ~2 horas y genera el 70% del impacto total.
                         </p>
                     </div>
                     <a href="../entregables/local_seo/gbp_optimization_checklist.csv" class="btn-download" download>
@@ -167,7 +167,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         <span class="csv-meta-item"><i class="fas fa-users"></i> Tráfico estimado: 2,800-5,200 visitas/mes</span>
                     </div>
                     <div class="csv-usage">
-                        <h4>📋 Cómo Usar Este Archivo:</h4>
+                        <h4> Cómo Usar Este Archivo:</h4>
                         <ol>
                             <li>Importa el CSV en tu gestor de proyectos o CRM</li>
                             <li>Filtra por columna "Prioridad": Crítica → Muy Alta → Alta</li>
@@ -177,7 +177,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                             <li>Usa columna "Accion" como guía de implementación</li>
                         </ol>
                         <p class="csv-tip">
-                            <strong>💡 Tip:</strong> Enfócate primero en los 8 directorios específicos de Ibiza (Ibiza Spotlight,
+                            <strong> Tip:</strong> Enfócate primero en los 8 directorios específicos de Ibiza (Ibiza Spotlight,
                             Timeout Ibiza, etc.) - audiencia 100% target.
                         </p>
                     </div>
@@ -206,35 +206,35 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                     </div>
                     <div class="comparacion-contenido">
                         <div class="problema-item">
-                            <div class="problema-icono">❌</div>
+                            <div class="problema-icono"></div>
                             <div class="problema-texto">
                                 <strong>Google Business Profile 20% completo</strong>
                                 <p>Perfil sin optimizar: fotos genéricas, sin posts, descripción vacía, categorías incorrectas</p>
                             </div>
                         </div>
                         <div class="problema-item">
-                            <div class="problema-icono">❌</div>
+                            <div class="problema-icono"></div>
                             <div class="problema-texto">
                                 <strong>0 apariciones en Local Pack</strong>
                                 <p>No aparece en el Top 3 de Google para ninguna keyword local ("villas Ibiza", "alquiler lujo Ibiza")</p>
                             </div>
                         </div>
                         <div class="problema-item">
-                            <div class="problema-icono">❌</div>
+                            <div class="problema-icono"></div>
                             <div class="problema-texto">
-                                <strong>3 reviews totales (3.8★ promedio)</strong>
+                                <strong>3 reviews totales (3.8 promedio)</strong>
                                 <p>Pocas reviews, sin estrategia de adquisición, tasa respuesta 0%</p>
                             </div>
                         </div>
                         <div class="problema-item">
-                            <div class="problema-icono">❌</div>
+                            <div class="problema-icono"></div>
                             <div class="problema-texto">
                                 <strong>NAP inconsistente en 8 plataformas</strong>
                                 <p>Nombre/Dirección/Teléfono diferentes en TripAdvisor, Facebook, directorios → penalización algorítmica</p>
                             </div>
                         </div>
                         <div class="problema-item">
-                            <div class="problema-icono">❌</div>
+                            <div class="problema-icono"></div>
                             <div class="problema-texto">
                                 <strong>2 directorios locales activos</strong>
                                 <p>Solo Google Maps y Facebook - ausente en Ibiza Spotlight, Timeout, directorios nicho lujo</p>
@@ -269,35 +269,35 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                     </div>
                     <div class="comparacion-contenido">
                         <div class="solucion-item">
-                            <div class="solucion-icono">✅</div>
+                            <div class="solucion-icono"></div>
                             <div class="solucion-texto">
                                 <strong>Google Business Profile 95% completo</strong>
                                 <p>Perfil optimizado: 30+ fotos profesionales, 3 videos, posts semanales, descripción con keywords, servicios completos</p>
                             </div>
                         </div>
                         <div class="solucion-item">
-                            <div class="solucion-icono">✅</div>
+                            <div class="solucion-icono"></div>
                             <div class="solucion-texto">
                                 <strong>Top 3 Local Pack para 12 keywords</strong>
                                 <p>Aparece en posiciones 1-3 del Local Pack para keywords clave: "villas lujo ibiza", "alquiler villas ibiza"...</p>
                             </div>
                         </div>
                         <div class="solucion-item">
-                            <div class="solucion-icono">✅</div>
+                            <div class="solucion-icono"></div>
                             <div class="solucion-texto">
-                                <strong>50+ reviews (4.8★ promedio) en 6 meses</strong>
+                                <strong>50+ reviews (4.8 promedio) en 6 meses</strong>
                                 <p>Estrategia activa de adquisición + respuesta 100% reviews en <24h + plantillas profesionales</p>
                             </div>
                         </div>
                         <div class="solucion-item">
-                            <div class="solucion-icono">✅</div>
+                            <div class="solucion-icono"></div>
                             <div class="solucion-texto">
                                 <strong>NAP 100% consistente en 15+ plataformas</strong>
                                 <p>Información idéntica en todas las plataformas: GBP, Bing, Apple Maps, directorios, redes sociales</p>
                             </div>
                         </div>
                         <div class="solucion-item">
-                            <div class="solucion-icono">✅</div>
+                            <div class="solucion-icono"></div>
                             <div class="solucion-texto">
                                 <strong>15 directorios locales optimizados</strong>
                                 <p>Presencia en Ibiza Spotlight, Timeout, TripAdvisor, Airbnb, HomeAway + 10 directorios nicho lujo</p>
@@ -337,7 +337,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-periodo">Mes 5-6</div>
-                        <div class="timeline-accion">50+ reviews (4.8★) + dominancia Local Pack + reputación establecida</div>
+                        <div class="timeline-accion">50+ reviews (4.8) + dominancia Local Pack + reputación establecida</div>
                         <div class="timeline-resultado">ROI máximo: +€12,000-18,000/mes</div>
                     </div>
                 </div>
@@ -418,11 +418,11 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                                 <small>Número y calidad de opiniones</small>
                             </td>
                             <td class="valor-antes">
-                                <span class="valor-principal">3 reviews (3.8★)</span>
+                                <span class="valor-principal">3 reviews (3.8)</span>
                                 <span class="valor-detalle">0% tasa respuesta</span>
                             </td>
                             <td class="valor-despues">
-                                <span class="valor-principal">50+ reviews (4.8★)</span>
+                                <span class="valor-principal">50+ reviews (4.8)</span>
                                 <span class="valor-detalle">100% tasa respuesta <24h</span>
                             </td>
                             <td class="valor-mejora">
@@ -687,25 +687,25 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                 <div class="status-item">
                     <span class="status-label">LocalBusiness Schema:</span>
                     <span class="status-badge <?php echo $local_schema['localbusiness_presente'] ? 'success' : 'error'; ?>">
-                        <?php echo $local_schema['localbusiness_presente'] ? '✓ Implementado' : '✗ No encontrado'; ?>
+                        <?php echo $local_schema['localbusiness_presente'] ? ' Implementado' : ' No encontrado'; ?>
                     </span>
                 </div>
                 <div class="status-item">
                     <span class="status-label">NAP en Schema:</span>
                     <span class="status-badge <?php echo $local_schema['nap_en_schema'] ? 'success' : 'error'; ?>">
-                        <?php echo $local_schema['nap_en_schema'] ? '✓ Correcto' : '✗ Incompleto'; ?>
+                        <?php echo $local_schema['nap_en_schema'] ? ' Correcto' : ' Incompleto'; ?>
                     </span>
                 </div>
                 <div class="status-item">
                     <span class="status-label">GeoCoordinates:</span>
                     <span class="status-badge <?php echo $local_schema['geo_presente'] ? 'success' : 'error'; ?>">
-                        <?php echo $local_schema['geo_presente'] ? '✓ Implementado' : '✗ Falta'; ?>
+                        <?php echo $local_schema['geo_presente'] ? ' Implementado' : ' Falta'; ?>
                     </span>
                 </div>
                 <div class="status-item">
                     <span class="status-label">Opening Hours:</span>
                     <span class="status-badge <?php echo $local_schema['hours_presente'] ? 'success' : 'warning'; ?>">
-                        <?php echo $local_schema['hours_presente'] ? '✓ Implementado' : '⚠ Falta'; ?>
+                        <?php echo $local_schema['hours_presente'] ? ' Implementado' : ' Falta'; ?>
                     </span>
                 </div>
             </div>
@@ -756,7 +756,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                             <td><?php echo htmlspecialchars($variacion['telefono']); ?></td>
                             <td>
                                 <span class="status-badge <?php echo $variacion['consistente'] ? 'success' : 'error'; ?>">
-                                    <?php echo $variacion['consistente'] ? '✓' : '✗'; ?>
+                                    <?php echo $variacion['consistente'] ? '' : ''; ?>
                                 </span>
                             </td>
                         </tr>
@@ -833,7 +833,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                             <td>
                                 <?php if ($citation['presente']): ?>
                                 <span class="status-badge <?php echo $citation['nap_consistent'] ? 'success' : 'warning'; ?>">
-                                    <?php echo $citation['nap_consistent'] ? '✓' : '✗'; ?>
+                                    <?php echo $citation['nap_consistent'] ? '' : ''; ?>
                                 </span>
                                 <?php else: ?>
                                 <span>N/A</span>
@@ -1036,7 +1036,7 @@ Gracias por tu feedback. - [Tu Nombre], [Título]"</pre>
         <!-- Recomendaciones -->
         <?php if (!empty($recomendaciones)): ?>
         <section class="recommendations-section">
-            <h2><i class="fas fa-lightbulb"></i> Recomendaciones Prioritarias</h2>
+            <h2><i class="fas fa-info-circle"></i> Recomendaciones Prioritarias</h2>
 
             <div class="recommendations-grid">
                 <?php foreach ($recomendaciones as $rec): ?>

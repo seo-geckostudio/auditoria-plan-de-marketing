@@ -1113,7 +1113,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     <!-- SECCIÓN EDUCATIVA: ¿Qué es E-E-A-T? -->
     <section class="concepto-educativo">
         <div class="concepto-header">
-            <span class="concepto-icon">📚</span>
+            <span class="concepto-icon"></span>
             <h2>¿Qué es E-E-A-T y Por Qué Google lo Valora Tanto?</h2>
         </div>
         <div class="concepto-content">
@@ -1156,14 +1156,14 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
             <div class="analogia-box">
                 <div class="analogia-header">
-                    <span class="analogia-icon">💡</span>
+                    <i class="fas fa-info-circle"></i>
                     <strong>Piensa en E-E-A-T como un agente inmobiliario de lujo certificado:</strong>
                 </div>
                 <ul class="analogia-list">
                     <li><strong>Experience</strong> = Años visitando propiedades, conoce cada villa personalmente, fotos propias de todas las propiedades</li>
                     <li><strong>Expertise</strong> = Certificaciones inmobiliarias, formación continua, conoce el mercado y las leyes, especialista en lujo</li>
                     <li><strong>Authoritativeness</strong> = Premios del sector, featured en Forbes/Timeout, otros agentes lo recomiendan, habla en conferencias</li>
-                    <li><strong>Trustworthiness</strong> = Licencias verificadas, opiniones clientes 4.8★, contratos transparentes, oficina física, seguros</li>
+                    <li><strong>Trustworthiness</strong> = Licencias verificadas, opiniones clientes 4.8, contratos transparentes, oficina física, seguros</li>
                 </ul>
                 <p class="analogia-footer">
                     <strong>Para Ibiza Villa:</strong> E-E-A-T es aún MÁS importante porque estás en un nicho YMYL
@@ -1173,7 +1173,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
             </div>
 
             <div class="impacto-negocio">
-                <h3>📊 Impacto Directo en el Negocio:</h3>
+                <h3> Impacto Directo en el Negocio:</h3>
                 <div class="impacto-grid">
                     <div class="impacto-item">
                         <div class="impacto-numero">+35-55%</div>
@@ -1225,7 +1225,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                     <span class="csv-meta-item"><i class="fas fa-chart-line"></i> Impacto cuantificado por señal</span>
                 </div>
                 <div class="csv-usage">
-                    <h4>📋 Cómo Usar Este Archivo:</h4>
+                    <h4> Cómo Usar Este Archivo:</h4>
                     <ol>
                         <li>Abre el CSV y filtra por columna "Presente" = "No" o "Parcial"</li>
                         <li>Ordena por "Impacto_EEAT" (Muy Alto → Alto → Medio → Bajo)</li>
@@ -1234,7 +1234,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         <li>Marca como completadas a medida que implementas</li>
                     </ol>
                     <p class="csv-tip">
-                        <strong>💡 Tip:</strong> Las 10 señales de prioridad "Muy Alta" o "Crítica" representan el 75%
+                        <strong> Tip:</strong> Las 10 señales de prioridad "Muy Alta" o "Crítica" representan el 75%
                         del impacto total en E-E-A-T.
                     </p>
                 </div>
@@ -1265,7 +1265,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                     <span class="csv-meta-item"><i class="fas fa-calendar-alt"></i> Timeline: 1 semana a 6 meses</span>
                 </div>
                 <div class="csv-usage">
-                    <h4>📋 Cómo Usar Este Archivo:</h4>
+                    <h4> Cómo Usar Este Archivo:</h4>
                     <ol>
                         <li>Ordena por "Impacto_Score" descendente (mayor impacto primero)</li>
                         <li>Filtra por "Esfuerzo" = "Bajo" o "Medio" para quick wins</li>
@@ -1274,7 +1274,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         <li>Trackea "Metricas_Exito" mensualmente</li>
                     </ol>
                     <p class="csv-tip">
-                        <strong>💡 Tip:</strong> Empieza por "Ampliar página Sobre Nosotros" (+15 pts, Esfuerzo Bajo, 1 semana).
+                        <strong> Tip:</strong> Empieza por "Ampliar página Sobre Nosotros" (+15 pts, Esfuerzo Bajo, 1 semana).
                         Es el quick win con mayor ROI (9:1).
                     </p>
                 </div>
@@ -1303,28 +1303,28 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                 </div>
                 <div class="comparacion-contenido">
                     <div class="problema-item">
-                        <div class="problema-icono">❌</div>
+                        <div class="problema-icono"></div>
                         <div class="problema-texto">
                             <strong>Experience Score: 45/100</strong>
                             <p>Fotos básicas, 0 videos, testimonios genéricos, sin guías locales propias, sin blog experiencias clientes</p>
                         </div>
                     </div>
                     <div class="problema-item">
-                        <div class="problema-icono">❌</div>
+                        <div class="problema-icono"></div>
                         <div class="problema-texto">
                             <strong>Expertise Score: 38/100</strong>
                             <p>Página 'Sobre Nosotros' básica sin equipo, 0 contenido educativo, FAQs limitadas, sin proceso inspección visible</p>
                         </div>
                     </div>
                     <div class="problema-item">
-                        <div class="problema-icono">❌</div>
+                        <div class="problema-icono"></div>
                         <div class="problema-texto">
                             <strong>Authoritativeness Score: 32/100</strong>
                             <p>0 menciones en medios, sin premios, sin colaboraciones, backlinks bajos (DR promedio 28)</p>
                         </div>
                     </div>
                     <div class="problema-item">
-                        <div class="problema-icono">❌</div>
+                        <div class="problema-icono"></div>
                         <div class="problema-texto">
                             <strong>Trustworthiness Score: 58/100</strong>
                             <p>12 reviews totales, respuesta irregular, políticas básicas, sin sellos confianza visibles, transparencia precio limitada</p>
@@ -1359,31 +1359,31 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                 </div>
                 <div class="comparacion-contenido">
                     <div class="solucion-item">
-                        <div class="solucion-icono">✅</div>
+                        <div class="solucion-icono"></div>
                         <div class="solucion-texto">
                             <strong>Experience Score: 85/100</strong>
                             <p>50+ fotos profesionales/villa, 5 videos tour, 10 guías locales propias, 3 casos estudio detallados, blog experiencias activo</p>
                         </div>
                     </div>
                     <div class="solucion-item">
-                        <div class="solucion-icono">✅</div>
+                        <div class="solucion-icono"></div>
                         <div class="solucion-texto">
                             <strong>Expertise Score: 82/100</strong>
                             <p>Equipo completo con biografías, 15 artículos educativos, 30+ FAQs, proceso inspección documentado, certificaciones visibles</p>
                         </div>
                     </div>
                     <div class="solucion-item">
-                        <div class="solucion-icono">✅</div>
+                        <div class="solucion-icono"></div>
                         <div class="solucion-texto">
                             <strong>Authoritativeness Score: 78/100</strong>
                             <p>5 menciones medios autoridad (Forbes/Timeout/etc), 3 partnerships lujo, 5 guest posts, backlinks DR 60-85</p>
                         </div>
                     </div>
                     <div class="solucion-item">
-                        <div class="solucion-icono">✅</div>
+                        <div class="solucion-icono"></div>
                         <div class="solucion-texto">
                             <strong>Trustworthiness Score: 92/100</strong>
-                            <p>50+ reviews (4.7★), respuesta 100% <24h, sellos confianza visibles, precios transparentes, garantías claras</p>
+                            <p>50+ reviews (4.7), respuesta 100% <24h, sellos confianza visibles, precios transparentes, garantías claras</p>
                         </div>
                     </div>
                 </div>
@@ -1550,7 +1550,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         </td>
                         <td class="valor-despues">
                             <span class="valor-principal">92/100</span>
-                            <span class="valor-detalle">50+ reviews (4.7★), sellos, transparencia</span>
+                            <span class="valor-detalle">50+ reviews (4.7), sellos, transparencia</span>
                         </td>
                         <td class="valor-mejora">
                             <span class="badge-mejora">+59%</span>

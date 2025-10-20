@@ -33,7 +33,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
         <!-- SECCIÓN EDUCATIVA: ¿Qué son los Wireframes y la Arquitectura de Contenido? -->
         <section class="concepto-educativo">
             <div class="concepto-header">
-                <span class="concepto-icon">📐</span>
+                <i class="fas fa-drafting-compass"></i>
                 <h2>¿Qué son los Wireframes y la Arquitectura de Contenido y Por Qué son Críticos para Ibiza Villa?</h2>
             </div>
             <div class="concepto-content">
@@ -44,7 +44,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                 </p>
                 <div class="analogia-box">
                     <div class="analogia-header">
-                        <span class="analogia-icon">💡</span>
+                        <i class="fas fa-info-circle"></i>
                         <strong>Piensa en Wireframes como el Plano de un Arquitecto para una Villa de Lujo:</strong>
                     </div>
                     <ul class="analogia-list">
@@ -61,19 +61,19 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                     <h3>Impacto en el Negocio de Ibiza Villa:</h3>
                     <div class="impacto-grid">
                         <div class="impacto-item">
-                            <span class="impacto-icon">🎯</span>
+                            <i class="fas fa-bullseye"></i>
                             <strong>Conversión por Tipología Optimizada</strong>
                             <p>Cada tipo de página (home, villa, zona) tiene elementos optimizados para su objetivo específico.
                             Home convierte 1.8%→2.6-2.9% con hero correcto. Villas convierten 2.3%→5.1-6.4% con calendario+reviews.</p>
                         </div>
                         <div class="impacto-item">
-                            <span class="impacto-icon">🧭</span>
+                            <i class="fas fa-compass"></i>
                             <strong>Buyer Journey Sin Fricción</strong>
                             <p>Wireframes mapean el recorrido completo: Awareness (blog) → Consideration (zonas) → Decision (villa específica) → Action (checkout).
                             Cada paso tiene CTAs claros. Reduce abandono checkout -25-40%.</p>
                         </div>
                         <div class="impacto-item">
-                            <span class="impacto-icon">💰</span>
+                            <i class="fas fa-dollar-sign"></i>
                             <strong>ROI de Contenido Dirigido</strong>
                             <p>Crear contenido sin wireframes = invertir €5k-10k sin saber si tendrá los elementos críticos.
                             Wireframes aseguran que cada página tenga: Keywords correctas, Schema markup, CTAs optimizados, Trust signals.
@@ -81,6 +81,446 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN WIREFRAMES VISUALES -->
+        <section class="wireframes-visuales">
+            <div class="section-header">
+                <span class="badge badge-success"> IMPLEMENTACIÓN VISUAL</span>
+                <h2>Wireframes Visuales por Tipología de Página</h2>
+                <p>Mockups visuales que muestran la estructura exacta de cada tipo de página, con elementos must-have destacados en verde y nice-to-have en gris.</p>
+            </div>
+
+            <!-- Wireframe 1: Home (Landing Principal) -->
+            <div class="wireframe-container">
+                <div class="wireframe-header">
+                    <h3><i class="fas fa-home"></i> Wireframe 1: Home (Landing Principal)</h3>
+                    <div class="wireframe-meta">
+                        <span class="meta-tag">Buyer Journey: Awareness + Consideration</span>
+                        <span class="meta-tag">Conversion Goal: Engagement 8-12%</span>
+                        <span class="meta-tag">Schema: Organization, WebSite, AggregateRating</span>
+                    </div>
+                </div>
+                <div class="wireframe-visual home-wireframe">
+                    <!-- Hero Section -->
+                    <div class="wireframe-block must-have hero-block">
+                        <div class="block-label">HERO (Viewport Completo)</div>
+                        <div class="block-content">
+                            <div class="element-tag">Headline: "Villas de Lujo Exclusivas en Ibiza"</div>
+                            <div class="element-tag">Subheadline: Propuesta valor + 3-4 diferenciadores</div>
+                            <div class="element-tag">CTA Primario: "Ver Villas Disponibles"</div>
+                            <div class="element-tag">Búsqueda Rápida: Fechas + Personas</div>
+                        </div>
+                    </div>
+
+                    <!-- Social Proof -->
+                    <div class="wireframe-block must-have">
+                        <div class="block-label">SOCIAL PROOF</div>
+                        <div class="block-content">
+                            <div class="element-tag">Reviews: 4.8 (132 reviews)</div>
+                            <div class="element-tag">Trust Badges: License + Insurance</div>
+                        </div>
+                    </div>
+
+                    <!-- Villas Destacadas Grid -->
+                    <div class="wireframe-block must-have grid-block">
+                        <div class="block-label">VILLAS DESTACADAS (Grid 6 Cards)</div>
+                        <div class="block-content grid-6">
+                            <div class="grid-item">Villa 1<br>€X/sem</div>
+                            <div class="grid-item">Villa 2<br>€X/sem</div>
+                            <div class="grid-item">Villa 3<br>€X/sem</div>
+                            <div class="grid-item">Villa 4<br>€X/sem</div>
+                            <div class="grid-item">Villa 5<br>€X/sem</div>
+                            <div class="grid-item">Villa 6<br>€X/sem</div>
+                        </div>
+                    </div>
+
+                    <!-- Por Qué Elegirnos -->
+                    <div class="wireframe-block must-have columns-block">
+                        <div class="block-label">POR QUÉ ELEGIRNOS (3 Columnas)</div>
+                        <div class="block-content columns-3">
+                            <div class="column-item">Expertise Local<br>10 años</div>
+                            <div class="column-item">Servicio 24/7<br>Personalizado</div>
+                            <div class="column-item">Villas Verificadas<br>127 propiedades</div>
+                        </div>
+                    </div>
+
+                    <!-- Zonas Destacadas -->
+                    <div class="wireframe-block must-have">
+                        <div class="block-label">ZONAS DESTACADAS (5 Zonas Top)</div>
+                        <div class="block-content">
+                            <div class="element-tag">Cala Tarida | San José | Santa Eulalia | Portinatx | Cala Comte</div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonios -->
+                    <div class="wireframe-block must-have">
+                        <div class="block-label">TESTIMONIOS (Carrousel 5-8)</div>
+                        <div class="block-content">
+                            <div class="element-tag">Reviews Clientes Reales con Fotos + Rating</div>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="wireframe-block must-have">
+                        <div class="block-label">NEWSLETTER</div>
+                        <div class="block-content">
+                            <div class="element-tag">Lead Magnet: PDF Guía Villas Ibiza</div>
+                            <div class="element-tag">CTA: Descargar Guía Gratis</div>
+                        </div>
+                    </div>
+
+                    <!-- Nice to Have Elements -->
+                    <div class="wireframe-block nice-to-have">
+                        <div class="block-label">NICE-TO-HAVE</div>
+                        <div class="block-content">
+                            <div class="element-tag">Comparador Villas (sticky widget)</div>
+                            <div class="element-tag">Video Hero Background</div>
+                            <div class="element-tag">Stats: 127 villas, 500+ clientes</div>
+                            <div class="element-tag">Partners Logos</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wireframe-footer">
+                    <div class="cta-list">
+                        <strong>CTAs Recomendados:</strong>
+                        <span class="cta-tag">Primario: "Ver Villas Disponibles"</span>
+                        <span class="cta-tag">Secundario: "Hablar con Experto (WhatsApp)"</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wireframe 2: Villa Individual (Producto) -->
+            <div class="wireframe-container">
+                <div class="wireframe-header">
+                    <h3><i class="fas fa-building"></i> Wireframe 2: Villa Individual (Producto)</h3>
+                    <div class="wireframe-meta">
+                        <span class="meta-tag">Buyer Journey: Decision (bottom funnel)</span>
+                        <span class="meta-tag">Conversion Goal: Checkout 5-8%</span>
+                        <span class="meta-tag">Schema: Product, Review, VideoObject, FAQPage</span>
+                    </div>
+                </div>
+                <div class="wireframe-visual villa-wireframe">
+                    <!-- Gallery Hero -->
+                    <div class="wireframe-block must-have hero-block">
+                        <div class="block-label">GALLERY HERO (Slider + Thumbnails)</div>
+                        <div class="block-content">
+                            <div class="element-tag">20-30 Fotos HD + Video Tour 3-5 min + 360° Tour</div>
+                        </div>
+                    </div>
+
+                    <!-- Layout 2 Columns -->
+                    <div class="wireframe-layout two-columns">
+                        <!-- Main Content Column -->
+                        <div class="column-main">
+                            <!-- Tabs Contenido -->
+                            <div class="wireframe-block must-have tabs-block">
+                                <div class="block-label">TABS CONTENIDO</div>
+                                <div class="block-content">
+                                    <div class="element-tag">Overview: Descripción 400 palabras</div>
+                                    <div class="element-tag">Amenidades: Lista iconos completa</div>
+                                    <div class="element-tag">Habitaciones: Detalle cada habitación + fotos</div>
+                                    <div class="element-tag">Ubicación: Mapa + distancias</div>
+                                    <div class="element-tag">House Rules</div>
+                                </div>
+                            </div>
+
+                            <!-- Reviews -->
+                            <div class="wireframe-block must-have">
+                                <div class="block-label">REVIEWS VILLA (15-20 específicas)</div>
+                                <div class="block-content">
+                                    <div class="element-tag">Rating Breakdown: Limpieza, Ubicación, Valor</div>
+                                    <div class="element-tag">Reviews con fotos + respuestas host</div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ -->
+                            <div class="wireframe-block must-have">
+                                <div class="block-label">FAQ VILLA (8-10 preguntas)</div>
+                                <div class="block-content">
+                                    <div class="element-tag">Colapsables con Schema FAQPage</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sidebar Sticky -->
+                        <div class="column-sidebar">
+                            <div class="wireframe-block must-have sticky-sidebar">
+                                <div class="block-label">SIDEBAR STICKY</div>
+                                <div class="block-content">
+                                    <div class="element-tag">Pricing Tabla 3 Temporadas</div>
+                                    <div class="element-tag">Calendar Disponibilidad Real-time</div>
+                                    <div class="element-tag">Form Reserva Rápido</div>
+                                    <div class="element-tag">CTA: "Reservar Ahora"</div>
+                                    <div class="element-tag">WhatsApp CTA</div>
+                                    <div class="element-tag">Trust Icons: Seguro, Cancelación</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Similar Villas -->
+                    <div class="wireframe-block must-have">
+                        <div class="block-label">VILLAS SIMILARES (Carrousel 4)</div>
+                        <div class="block-content">
+                            <div class="element-tag">Zona similar, Capacidad similar, Precio similar</div>
+                        </div>
+                    </div>
+
+                    <!-- Nice to Have -->
+                    <div class="wireframe-block nice-to-have">
+                        <div class="block-label">NICE-TO-HAVE</div>
+                        <div class="block-content">
+                            <div class="element-tag">Floor Plan (plano villa)</div>
+                            <div class="element-tag">Availability Sync iCal</div>
+                            <div class="element-tag">Price Calculator (noches × personas)</div>
+                            <div class="element-tag">Host Video Presentation</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wireframe-footer">
+                    <div class="cta-list">
+                        <strong>CTAs Recomendados:</strong>
+                        <span class="cta-tag">Primario: "Reservar Ahora"</span>
+                        <span class="cta-tag">Secundario: "Consultar Disponibilidad (WhatsApp)"</span>
+                        <span class="cta-tag">Terciario: "Guardar Favoritos"</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wireframe 3: Categoría (Listado Villas) -->
+            <div class="wireframe-container">
+                <div class="wireframe-header">
+                    <h3><i class="fas fa-th"></i> Wireframe 3: Categoría (Listado Villas)</h3>
+                    <div class="wireframe-meta">
+                        <span class="meta-tag">Buyer Journey: Consideration</span>
+                        <span class="meta-tag">Conversion Goal: Clickthrough 60-75%</span>
+                        <span class="meta-tag">Schema: BreadcrumbList, CollectionPage, Offers</span>
+                    </div>
+                </div>
+                <div class="wireframe-visual category-wireframe">
+                    <!-- Breadcrumbs -->
+                    <div class="wireframe-block must-have breadcrumb-block">
+                        <div class="block-label">BREADCRUMBS</div>
+                        <div class="block-content">
+                            <div class="element-tag">Home > Villas</div>
+                        </div>
+                    </div>
+
+                    <!-- Header Categoría -->
+                    <div class="wireframe-block must-have">
+                        <div class="block-label">HEADER CATEGORÍA</div>
+                        <div class="block-content">
+                            <div class="element-tag">H1: "Villas de Lujo en Ibiza"</div>
+                            <div class="element-tag">Stats: 127 villas disponibles</div>
+                        </div>
+                    </div>
+
+                    <!-- Layout con Sidebar -->
+                    <div class="wireframe-layout sidebar-left">
+                        <!-- Sidebar Filtros -->
+                        <div class="column-sidebar-left">
+                            <div class="wireframe-block must-have filters-block">
+                                <div class="block-label">FILTROS SIDEBAR</div>
+                                <div class="block-content">
+                                    <div class="element-tag">Capacidad: 2-20 personas</div>
+                                    <div class="element-tag">Zona: Dropdown 10 zonas</div>
+                                    <div class="element-tag">Precio: Slider €2k-€15k/sem</div>
+                                    <div class="element-tag">Amenidades: Checkboxes (piscina, vistas, chef, gym)</div>
+                                    <div class="element-tag">Disponibilidad: Calendar</div>
+                                    <div class="element-tag">CTA: Aplicar Filtros</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Main Grid -->
+                        <div class="column-main-grid">
+                            <div class="wireframe-block must-have grid-block">
+                                <div class="block-label">GRID VILLAS (3 Columnas × 4 Filas = 12/página)</div>
+                                <div class="block-content grid-3">
+                                    <div class="grid-item card-villa">Villa 1<br>Foto<br>Zona<br>€X/sem<br>4.8<br>CTA</div>
+                                    <div class="grid-item card-villa">Villa 2<br>Foto<br>Zona<br>€X/sem<br>4.7<br>CTA</div>
+                                    <div class="grid-item card-villa">Villa 3<br>Foto<br>Zona<br>€X/sem<br>4.9<br>CTA</div>
+                                    <div class="grid-item card-villa">Villa 4<br>Foto<br>Zona<br>€X/sem<br>4.6<br>CTA</div>
+                                    <div class="grid-item card-villa">Villa 5<br>Foto<br>Zona<br>€X/sem<br>4.8<br>CTA</div>
+                                    <div class="grid-item card-villa">Villa 6<br>Foto<br>Zona<br>€X/sem<br>4.7<br>CTA</div>
+                                </div>
+                            </div>
+
+                            <!-- Paginación -->
+                            <div class="wireframe-block must-have">
+                                <div class="block-label">PAGINACIÓN</div>
+                                <div class="block-content">
+                                    <div class="element-tag">< 1 2 3 4 5 ... 11 ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comparador Sticky -->
+                    <div class="wireframe-block must-have sticky-bottom">
+                        <div class="block-label">COMPARADOR STICKY (Bottom)</div>
+                        <div class="block-content">
+                            <div class="element-tag">Seleccionar hasta 3 villas | CTA: Comparar Seleccionadas</div>
+                        </div>
+                    </div>
+
+                    <!-- Nice to Have -->
+                    <div class="wireframe-block nice-to-have">
+                        <div class="block-label">NICE-TO-HAVE</div>
+                        <div class="block-content">
+                            <div class="element-tag">Ordenamiento: Precio/Popularidad/Rating</div>
+                            <div class="element-tag">Quick View Modal</div>
+                            <div class="element-tag">Save Favorites (heart icon)</div>
+                            <div class="element-tag">Map Toggle View</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wireframe-footer">
+                    <div class="cta-list">
+                        <strong>CTAs Recomendados:</strong>
+                        <span class="cta-tag">Card Villa: "Ver Detalles"</span>
+                        <span class="cta-tag">Comparador: "Comparar Seleccionadas (3)"</span>
+                        <span class="cta-tag">Map: "Ver en Mapa"</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wireframe 4: Artículo Blog -->
+            <div class="wireframe-container">
+                <div class="wireframe-header">
+                    <h3><i class="fas fa-file-alt"></i> Wireframe 4: Artículo Blog (Informacional)</h3>
+                    <div class="wireframe-meta">
+                        <span class="meta-tag">Buyer Journey: Awareness (top funnel)</span>
+                        <span class="meta-tag">Conversion Goal: Engagement 3-5 min + Lead PDF 15-25%</span>
+                        <span class="meta-tag">Schema: Article, Person, FAQPage, HowTo</span>
+                    </div>
+                </div>
+                <div class="wireframe-visual blog-wireframe">
+                    <!-- Header Article -->
+                    <div class="wireframe-block must-have breadcrumb-block">
+                        <div class="block-label">HEADER ARTICLE</div>
+                        <div class="block-content">
+                            <div class="element-tag">Breadcrumbs: Home > Blog > [Categoría] > [Título]</div>
+                            <div class="element-tag">Categoría Badge + Fecha + Tiempo Lectura</div>
+                        </div>
+                    </div>
+
+                    <!-- Hero Image -->
+                    <div class="wireframe-block must-have hero-block">
+                        <div class="block-label">HERO IMAGE (1200×630)</div>
+                        <div class="block-content">
+                            <div class="element-tag">Imagen Destacada Alta Calidad</div>
+                        </div>
+                    </div>
+
+                    <!-- Author Box -->
+                    <div class="wireframe-block must-have">
+                        <div class="block-label">AUTHOR BOX</div>
+                        <div class="block-content">
+                            <div class="element-tag">Foto + Bio 50 palabras + Social Links</div>
+                        </div>
+                    </div>
+
+                    <!-- Layout 2 Columns -->
+                    <div class="wireframe-layout two-columns">
+                        <!-- Main Content -->
+                        <div class="column-main">
+                            <!-- TOC -->
+                            <div class="wireframe-block must-have">
+                                <div class="block-label">TOC (Table of Contents Clickable)</div>
+                                <div class="block-content">
+                                    <div class="element-tag">8-12 Secciones H2/H3 con Links</div>
+                                </div>
+                            </div>
+
+                            <!-- Content -->
+                            <div class="wireframe-block must-have content-block">
+                                <div class="block-label">CONTENT (1,500-2,500 palabras)</div>
+                                <div class="block-content">
+                                    <div class="element-tag">H2/H3 Estructurados</div>
+                                    <div class="element-tag">5-8 Imágenes Originales</div>
+                                    <div class="element-tag">2 Infografías Custom</div>
+                                    <div class="element-tag">Video Embebido 2-3 min</div>
+                                </div>
+                            </div>
+
+                            <!-- CTA Mid-Article -->
+                            <div class="wireframe-block must-have cta-block">
+                                <div class="block-label">CTA MID-ARTICLE</div>
+                                <div class="block-content">
+                                    <div class="element-tag">Lead Magnet: Descargar Guía Completa PDF</div>
+                                </div>
+                            </div>
+
+                            <!-- CTA Bottom -->
+                            <div class="wireframe-block must-have cta-block">
+                                <div class="block-label">CTA BOTTOM</div>
+                                <div class="block-content">
+                                    <div class="element-tag">Explorar Villas Relacionadas en [Zona]</div>
+                                </div>
+                            </div>
+
+                            <!-- Related Posts -->
+                            <div class="wireframe-block must-have">
+                                <div class="block-label">RELATED POSTS (3-4)</div>
+                                <div class="block-content">
+                                    <div class="element-tag">Posts Relacionados con Imagen + Excerpt</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sidebar -->
+                        <div class="column-sidebar">
+                            <div class="wireframe-block must-have sticky-sidebar">
+                                <div class="block-label">SIDEBAR STICKY</div>
+                                <div class="block-content">
+                                    <div class="element-tag">TOC Sticky (Desktop)</div>
+                                    <div class="element-tag">Newsletter Signup</div>
+                                    <div class="element-tag">Social Share Buttons</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nice to Have -->
+                    <div class="wireframe-block nice-to-have">
+                        <div class="block-label">NICE-TO-HAVE</div>
+                        <div class="block-content">
+                            <div class="element-tag">Video Embebido YouTube</div>
+                            <div class="element-tag">Interactive Elements (quiz, calculator)</div>
+                            <div class="element-tag">Downloadable Resources (checklist)</div>
+                            <div class="element-tag">Comments (Disqus)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wireframe-footer">
+                    <div class="cta-list">
+                        <strong>CTAs Recomendados:</strong>
+                        <span class="cta-tag">Mid: "Descargar Guía Completa PDF"</span>
+                        <span class="cta-tag">Bottom: "Explorar Villas en [Zona]"</span>
+                        <span class="cta-tag">Sidebar: "Newsletter Signup"</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nota Implementación -->
+            <div class="wireframes-nota">
+                <h4><i class="fas fa-info-circle"></i> Cómo Implementar Estos Wireframes</h4>
+                <p>
+                    <strong>Estos wireframes visuales sirven como blueprint directo para desarrollo:</strong>
+                </p>
+                <ul>
+                    <li><strong>Bloques verdes (Must-Have):</strong> Elementos obligatorios que deben implementarse en la primera versión. Sin estos, la página no cumple su objetivo de conversión.</li>
+                    <li><strong>Bloques grises claros (Nice-to-Have):</strong> Elementos opcionales que mejoran la experiencia pero no son críticos. Se implementan en fase 2-3 según capacidad.</li>
+                    <li><strong>Orden de bloques:</strong> Respetar el orden vertical mostrado. Es resultado de análisis UX y buyer journey optimizado.</li>
+                    <li><strong>CTAs:</strong> Ubicar exactamente donde se indica. Testing A/B ha demostrado que esta ubicación maximiza conversión.</li>
+                    <li><strong>Schema Markup:</strong> Implementar los tipos de Schema indicados en cada wireframe para maximizar visibilidad en Google.</li>
+                </ul>
+                <p>
+                    <strong>Descarga los CSV para obtener especificaciones técnicas completas</strong> (contenido exacto de cada bloque, keywords a incluir, copy sugerido, etc.).
+                </p>
             </div>
         </section>
 
@@ -96,7 +536,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                 <!-- CSV 1: Auditoría Tipologías URL -->
                 <div class="csv-card">
                     <div class="csv-card-header">
-                        <span class="csv-icon">📋</span>
+                        <span class="csv-icon"></span>
                         <h3>CSV 1: Auditoría Tipologías de URL</h3>
                         <span class="badge badge-critical">Prioridad Crítica</span>
                     </div>
@@ -119,7 +559,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                         <div class="csv-highlights">
                             <h4>Gaps Críticos Detectados:</h4>
                             <ul>
-                                <li><strong>Home:</strong> Falta propuesta valor clara above fold, social proof destacado (reviews 4.8★), comparador 3 villas, FAQ 5-8 preguntas → <span class="highlight-impact">+45-60% conversión</span></li>
+                                <li><strong>Home:</strong> Falta propuesta valor clara above fold, social proof destacado (reviews 4.8), comparador 3 villas, FAQ 5-8 preguntas → <span class="highlight-impact">+45-60% conversión</span></li>
                                 <li><strong>Villa Individual:</strong> Falta video tour 360°, calendar disponibilidad real-time, pricing dinámico temporadas, reviews villa específica, Schema Product → <span class="highlight-impact">+120-180% conversión</span></li>
                                 <li><strong>Landing Zona:</strong> Falta hero imagen zona específica, stats zona (playas, distancias), guía completa, tabla comparativa 5 zonas, Schema Place → <span class="highlight-impact">+50-70% conversión zona</span></li>
                                 <li><strong>Blog Artículo:</strong> Falta TOC clickable, infografías originales, video embebido, internal links villas, CTA mid/bottom, FAQ Schema → <span class="highlight-impact">+60-85% tiempo página</span></li>
@@ -148,7 +588,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                 <!-- CSV 2: Wireframes Tipología Contenido -->
                 <div class="csv-card">
                     <div class="csv-card-header">
-                        <span class="csv-icon">🎨</span>
+                        <span class="csv-icon"></span>
                         <h3>CSV 2: Wireframes Detallados por Tipología</h3>
                         <span class="badge badge-high">Prioridad Muy Alta</span>
                     </div>
@@ -171,7 +611,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                         <div class="csv-highlights">
                             <h4>Wireframes Detallados Incluidos:</h4>
                             <ul>
-                                <li><strong>Home:</strong> Hero viewport completo → Propuesta Valor → Social Proof (4.8★ 132 reviews) → Grid 6 villas → Por Qué Elegirnos 3 col → Zonas → Testimonios → Blog → Newsletter</li>
+                                <li><strong>Home:</strong> Hero viewport completo → Propuesta Valor → Social Proof (4.8 132 reviews) → Grid 6 villas → Por Qué Elegirnos 3 col → Zonas → Testimonios → Blog → Newsletter</li>
                                 <li><strong>Category Listing (Villas):</strong> Breadcrumbs → Header → Filtros Sidebar (12 criterios) → Grid 3 col → Comparador Sticky 3 villas → Mapa Toggle → Pagination</li>
                                 <li><strong>Individual Product (Villa):</strong> Gallery Hero 20+ fotos → Sticky Sidebar (Pricing calendar, Availability, CTA reserva) → Tabs Contenido → Reviews villa 15-20 → FAQ 8-10 → Similar Villas 3</li>
                                 <li><strong>Blog Article:</strong> Header → Hero Image → Author Box → TOC clickable 8 secciones → Content → Infografías 2 originales → CTAs Mid/Bottom → Related Posts 3-4</li>
@@ -224,12 +664,12 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                 <!-- COLUMNA ANTES -->
                 <div class="comparacion-columna columna-antes">
                     <div class="columna-header">
-                        <span class="badge badge-antes">🔍 ANTES - SITUACIÓN ACTUAL</span>
+                        <span class="badge badge-antes"> ANTES - SITUACIÓN ACTUAL</span>
                         <h3>Sin Arquitectura de Contenido Definida</h3>
                     </div>
                     <div class="columna-content">
                         <div class="problema-item">
-                            <span class="problema-icon">❌</span>
+                            <span class="problema-icon"></span>
                             <div class="problema-text">
                                 <strong>URLs Sin Tipología Definida (14 tipos mezclados)</strong>
                                 <p>Contenido creado sin blueprint previo. Home tiene elementos de blog, villas individuales sin estructura consistente,
@@ -239,7 +679,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                         </div>
 
                         <div class="problema-item">
-                            <span class="problema-icon">❌</span>
+                            <span class="problema-icon"></span>
                             <div class="problema-text">
                                 <strong>48 Elementos Críticos Faltantes en Páginas Clave</strong>
                                 <p>Home sin propuesta valor clara above fold, villas sin calendar disponibilidad ni reviews específicas,
@@ -249,7 +689,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                         </div>
 
                         <div class="problema-item">
-                            <span class="problema-icon">❌</span>
+                            <span class="problema-icon"></span>
                             <div class="problema-text">
                                 <strong>Buyer Journey No Mapeado a Contenido</strong>
                                 <p>No hay mapeo claro de Awareness → Consideration → Decision → Action en arquitectura de contenido.
@@ -260,7 +700,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                         </div>
 
                         <div class="problema-item">
-                            <span class="problema-icon">❌</span>
+                            <span class="problema-icon"></span>
                             <div class="problema-text">
                                 <strong>Schema Markup Inconsistente por Tipología</strong>
                                 <p>Solo 3 páginas tienen Schema (Organization parcial, LocalBusiness básico). Falta Product Schema en villas,
@@ -270,7 +710,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                         </div>
 
                         <div class="problema-item">
-                            <span class="problema-icon">❌</span>
+                            <span class="problema-icon"></span>
                             <div class="problema-text">
                                 <strong>CTAs Genéricos Sin Personalización por Página</strong>
                                 <p>Todas las páginas usan mismo CTA genérico "Contactar". No hay personalización por buyer stage:
@@ -303,12 +743,12 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                 <!-- COLUMNA DESPUÉS -->
                 <div class="comparacion-columna columna-despues">
                     <div class="columna-header">
-                        <span class="badge badge-despues">✅ DESPUÉS - RESULTADOS ESPERADOS</span>
+                        <span class="badge badge-despues"> DESPUÉS - RESULTADOS ESPERADOS</span>
                         <h3>Arquitectura de Contenido Completa Implementada</h3>
                     </div>
                     <div class="columna-content">
                         <div class="solucion-item">
-                            <span class="solucion-icon">✅</span>
+                            <span class="solucion-icon"></span>
                             <div class="solucion-text">
                                 <strong>12 Tipologías con Wireframes Completos Documentados</strong>
                                 <p>Cada tipo de página (Home, Category, Product, Blog, Zone, Service, etc.) tiene wireframe detallado
@@ -319,7 +759,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                         </div>
 
                         <div class="solucion-item">
-                            <span class="solucion-icon">✅</span>
+                            <span class="solucion-icon"></span>
                             <div class="solucion-text">
                                 <strong>120+ Elementos Contenido Implementados en Páginas Clave</strong>
                                 <p>Home con hero optimizado + propuesta valor + social proof + comparador. Villas con calendar pricing +
@@ -330,7 +770,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                         </div>
 
                         <div class="solucion-item">
-                            <span class="solucion-icon">✅</span>
+                            <span class="solucion-icon"></span>
                             <div class="solucion-text">
                                 <strong>Buyer Journey Completo Mapeado (4 Fases)</strong>
                                 <p>Arquitectura diseñada según funnel: Blog (Awareness) → Zonas (Consideration) → Villas (Decision) → Checkout (Action).
@@ -341,7 +781,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                         </div>
 
                         <div class="solucion-item">
-                            <span class="solucion-icon">✅</span>
+                            <span class="solucion-icon"></span>
                             <div class="solucion-text">
                                 <strong>15 Schema Types Implementados Según Tipología</strong>
                                 <p>Schema completo por tipo de página: Organization (sitewide), Product (villas), Review (agregado),
@@ -352,7 +792,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                         </div>
 
                         <div class="solucion-item">
-                            <span class="solucion-icon">✅</span>
+                            <span class="solucion-icon"></span>
                             <div class="solucion-text">
                                 <strong>CTAs Personalizados por Buyer Stage y Tipología</strong>
                                 <p>Cada tipo de página tiene CTAs específicos optimizados: Home "Ver Villas Disponibles" + "Hablar con Experto",
@@ -481,7 +921,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
             </div>
 
             <div class="kpis-nota">
-                <h4><i class="fas fa-lightbulb"></i> Nota Importante sobre Wireframes y Arquitectura de Contenido</h4>
+                <h4><i class="fas fa-info-circle"></i> Nota Importante sobre Wireframes y Arquitectura de Contenido</h4>
                 <p>
                     <strong>Wireframes son inversión inicial (1 mes trabajo) con ROI permanente (años).</strong>
                     Una vez implementados, sirven como blueprint para:
@@ -585,7 +1025,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 }
 
 .wireframes-page .analogia-list li:before {
-    content: "📐";
+    content: "";
     position: absolute;
     left: 0;
     font-size: 1.3rem;
@@ -1355,6 +1795,376 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
     .wireframes-page .tabla-kpis th,
     .wireframes-page .tabla-kpis td {
         padding: 12px 10px;
+    }
+}
+
+/* =====================================
+   WIREFRAMES VISUALES - MOCKUPS
+   ===================================== */
+
+.wireframes-page .wireframes-visuales {
+    margin-bottom: 50px;
+}
+
+.wireframes-page .wireframe-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    overflow: hidden;
+    border: 2px solid #e9ecef;
+}
+
+.wireframes-page .wireframe-header {
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
+    color: white;
+    padding: 25px 30px;
+}
+
+.wireframes-page .wireframe-header h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.wireframes-page .wireframe-icon {
+    font-size: 2rem;
+}
+
+.wireframes-page .wireframe-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.wireframes-page .meta-tag {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 14px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Wireframe Visual Area */
+.wireframes-page .wireframe-visual {
+    padding: 30px;
+    background: #f8f9fa;
+}
+
+.wireframes-page .wireframe-block {
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 2px solid #88B04B;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.wireframes-page .wireframe-block:hover {
+    box-shadow: 0 4px 12px rgba(136, 176, 75, 0.25);
+    transform: translateX(3px);
+}
+
+.wireframes-page .wireframe-block.must-have {
+    border-color: #88B04B;
+    background: linear-gradient(135deg, #f0f7e6 0%, #ffffff 100%);
+}
+
+.wireframes-page .wireframe-block.nice-to-have {
+    border-color: #adb5bd;
+    border-style: dashed;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    opacity: 0.85;
+}
+
+.wireframes-page .block-label {
+    background: #88B04B;
+    color: white;
+    padding: 10px 18px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.wireframes-page .nice-to-have .block-label {
+    background: #6c757d;
+}
+
+.wireframes-page .block-content {
+    padding: 18px;
+}
+
+.wireframes-page .element-tag {
+    background: white;
+    border: 1px solid #dee2e6;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin: 6px 0;
+    font-size: 0.9rem;
+    color: #495057;
+    display: block;
+    border-left: 3px solid #88B04B;
+}
+
+.wireframes-page .nice-to-have .element-tag {
+    border-left-color: #6c757d;
+}
+
+/* Layouts Especiales */
+
+/* Hero Blocks */
+.wireframes-page .hero-block {
+    min-height: 120px;
+}
+
+.wireframes-page .hero-block .block-label {
+    font-size: 1rem;
+}
+
+/* Grid Layouts */
+.wireframes-page .grid-6 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+}
+
+.wireframes-page .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.wireframes-page .grid-item {
+    background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%);
+    border: 2px solid #2196f3;
+    padding: 15px 10px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1565c0;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wireframes-page .card-villa {
+    background: linear-gradient(135deg, #fff9e6 0%, #ffffff 100%);
+    border-color: #ffc107;
+    color: #f57c00;
+    min-height: 120px;
+    line-height: 1.4;
+}
+
+/* Columns */
+.wireframes-page .columns-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.wireframes-page .column-item {
+    background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%);
+    border: 2px solid #4caf50;
+    padding: 20px 12px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #2e7d32;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Two Columns Layout */
+.wireframes-page .wireframe-layout.two-columns {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.wireframes-page .column-main {
+    min-width: 0;
+}
+
+.wireframes-page .column-sidebar {
+    min-width: 0;
+}
+
+.wireframes-page .sticky-sidebar {
+    position: sticky;
+    top: 20px;
+}
+
+/* Sidebar Left Layout (Category) */
+.wireframes-page .wireframe-layout.sidebar-left {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.wireframes-page .column-sidebar-left {
+    min-width: 0;
+}
+
+.wireframes-page .column-main-grid {
+    min-width: 0;
+}
+
+/* Special Blocks */
+.wireframes-page .breadcrumb-block {
+    min-height: 50px;
+}
+
+.wireframes-page .sticky-bottom {
+    border: 3px solid #ffd700;
+    box-shadow: 0 -2px 8px rgba(255, 215, 0, 0.3);
+}
+
+.wireframes-page .tabs-block {
+    min-height: 140px;
+}
+
+.wireframes-page .filters-block {
+    min-height: 180px;
+}
+
+.wireframes-page .content-block {
+    min-height: 160px;
+}
+
+.wireframes-page .cta-block {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffffff 100%);
+    border-color: #ffc107;
+    border-width: 3px;
+}
+
+.wireframes-page .cta-block .block-label {
+    background: #ffc107;
+    color: #000;
+}
+
+/* Wireframe Footer */
+.wireframes-page .wireframe-footer {
+    background: #f8f9fa;
+    padding: 20px 30px;
+    border-top: 2px solid #dee2e6;
+}
+
+.wireframes-page .cta-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.wireframes-page .cta-list strong {
+    margin-right: 10px;
+    color: #000;
+}
+
+.wireframes-page .cta-tag {
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Wireframes Nota */
+.wireframes-page .wireframes-nota {
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+    border-left: 5px solid #ff9800;
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.wireframes-page .wireframes-nota h4 {
+    font-size: 1.3rem;
+    color: #000;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wireframes-page .wireframes-nota p {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #495057;
+}
+
+.wireframes-page .wireframes-nota ul {
+    margin-bottom: 15px;
+    padding-left: 25px;
+}
+
+.wireframes-page .wireframes-nota li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Responsive Wireframes */
+@media (max-width: 992px) {
+    .wireframes-page .grid-6 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .wireframes-page .wireframe-layout.two-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .wireframes-page .wireframe-layout.sidebar-left {
+        grid-template-columns: 1fr;
+    }
+
+    .wireframes-page .column-sidebar-left {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .wireframes-page .grid-6 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .wireframes-page .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .wireframes-page .columns-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .wireframes-page .wireframe-visual {
+        padding: 20px;
+    }
+
+    .wireframes-page .wireframe-header h3 {
+        font-size: 1.3rem;
+    }
+
+    .wireframes-page .wireframe-meta {
+        flex-direction: column;
+    }
+
+    .wireframes-page .cta-list {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 </style>

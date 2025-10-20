@@ -417,7 +417,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 }
 
 .monitoreo-page .analogia-list li::before {
-    content: "🔸";
+    content: "";
     position: absolute;
     left: 0;
 }
@@ -577,7 +577,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 }
 
 .monitoreo-page .csv-highlights li::before {
-    content: "✓";
+    content: "";
     position: absolute;
     left: 0;
     color: #88B04B;
@@ -1069,7 +1069,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
     <!-- Sección Educativa -->
     <section class="concepto-educativo">
         <div class="concepto-header">
-            <span class="concepto-icon">🚨</span>
+            <span class="concepto-icon"></span>
             <h2>¿Qué es el Monitoreo de Algoritmo y Por Qué es Crítico para Ibiza Villa?</h2>
         </div>
         <div class="concepto-content">
@@ -1082,7 +1082,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
             </p>
             <div class="analogia-box">
                 <div class="analogia-header">
-                    <span class="analogia-icon">💡</span>
+                    <i class="fas fa-info-circle"></i>
                     <strong>Piensa en el Monitoreo de Algoritmo como un Sistema de Alerta Temprana de Terremotos:</strong>
                 </div>
                 <ul class="analogia-list">
@@ -1095,21 +1095,21 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
             </div>
             <div class="impacto-negocio-grid">
                 <div class="impacto-item">
-                    <div class="impacto-icon">⚡</div>
+                    <div class="impacto-icon"></div>
                     <div class="impacto-text">
                         <strong>Detección Temprana Crítica</strong>
                         <p>Sin monitoreo: te enteras de caída tráfico 30-45 días después (cuando ya perdiste €10k-20k ingresos). Con monitoreo: alertas en 24-48h.</p>
                     </div>
                 </div>
                 <div class="impacto-item">
-                    <div class="impacto-icon">🛡️</div>
+                    <div class="impacto-icon">️</div>
                     <div class="impacto-text">
                         <strong>Reducción Tiempo Recuperación</strong>
                         <p>Playbook documentado reduce tiempo recuperación de 90-120 días a 30-45 días (2-3x más rápido). Pérdida minimizada.</p>
                     </div>
                 </div>
                 <div class="impacto-item">
-                    <div class="impacto-icon">📊</div>
+                    <div class="impacto-icon"></div>
                     <div class="impacto-text">
                         <strong>Protección Ingresos</strong>
                         <p>Caída -30% tráfico orgánico = pérdida €12k-18k/mes. Recuperación en 45 días vs 120 días = ahorro €36k-54k adicionales.</p>
@@ -1121,7 +1121,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 
     <!-- Entregables CSV Descargables -->
     <section class="entregables-csv">
-        <h2 class="section-title-download">📥 Entregables: Auditoría de Algorithm Updates y Playbook de Recuperación</h2>
+        <h2 class="section-title-download"> Entregables: Auditoría de Algorithm Updates y Playbook de Recuperación</h2>
         <p class="section-description">
             Descarga 2 archivos CSV con <strong>auditoría completa de 14 algorithm updates históricos</strong> que impactaron Ibiza Villa
             (2016-2024) y <strong>13 playbooks de recuperación</strong> para escenarios críticos (caída tráfico, penalties, CWV issues, etc.).
@@ -1130,7 +1130,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
         <div class="csv-cards-grid">
             <div class="csv-card">
                 <div class="csv-card-header">
-                    <span class="csv-icon">📊</span>
+                    <span class="csv-icon"></span>
                     <h3>1. Auditoría Historical Algorithm Updates</h3>
                     <span class="csv-badge muy-alta">Muy Alta Prioridad</span>
                 </div>
@@ -1151,14 +1151,14 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
                         <span><strong>2016-2024</strong> histórico</span>
                     </div>
                     <a href="../entregables/algorithm_monitoring/algorithm_updates_audit.csv" download class="btn-download">
-                        📥 Descargar Auditoría Updates (CSV)
+                         Descargar Auditoría Updates (CSV)
                     </a>
                 </div>
             </div>
 
             <div class="csv-card">
                 <div class="csv-card-header">
-                    <span class="csv-icon">📋</span>
+                    <span class="csv-icon"></span>
                     <h3>2. Playbook Monitoreo y Recuperación</h3>
                     <span class="csv-badge critica">Prioridad Crítica</span>
                 </div>
@@ -1179,14 +1179,14 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
                         <span><strong>Paso a paso</strong> recuperación</span>
                     </div>
                     <a href="../entregables/algorithm_monitoring/monitoring_playbook.csv" download class="btn-download">
-                        📥 Descargar Playbook Recuperación (CSV)
+                         Descargar Playbook Recuperación (CSV)
                     </a>
                 </div>
             </div>
         </div>
 
         <div class="instrucciones-uso">
-            <h4>📌 Cómo Usar Estos Archivos:</h4>
+            <h4> Cómo Usar Estos Archivos:</h4>
             <ol class="instrucciones-list">
                 <li><strong>Auditoría Updates:</strong> Revisar histórico para entender qué updates impactaron Ibiza Villa en el pasado y por qué (lecciones aprendidas)</li>
                 <li><strong>Identificar Vulnerabilidades:</strong> Si HCU causó -18% tráfico por contenido thin, indica que E-E-A-T sigue siendo vulnerabilidad actual</li>
@@ -1201,7 +1201,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 
     <!-- Comparación ANTES/DESPUÉS -->
     <section class="comparacion-antes-despues">
-        <h2 class="section-title-comparison">⚖️ Comparación: Monitoreo Algoritmo ANTES vs DESPUÉS</h2>
+        <h2 class="section-title-comparison">️ Comparación: Monitoreo Algoritmo ANTES vs DESPUÉS</h2>
 
         <div class="comparacion-intro">
             <p>
@@ -1214,7 +1214,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 
         <div class="comparacion-grid">
             <div class="comparacion-columna antes">
-                <div class="badge-seccion antes-badge">🔴 ANTES - SITUACIÓN ACTUAL</div>
+                <div class="badge-seccion antes-badge"> ANTES - SITUACIÓN ACTUAL</div>
                 <h3>Sin Sistema de Monitoreo Activo</h3>
 
                 <div class="problema-item">
@@ -1274,16 +1274,16 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
             </div>
 
             <div class="comparacion-flecha">
-                <div class="flecha-icon">🚨</div>
+                <div class="flecha-icon"></div>
                 <div class="flecha-text">MONITOREO<br>PROACTIVO</div>
             </div>
 
             <div class="comparacion-columna despues">
-                <div class="badge-seccion despues-badge">🟢 DESPUÉS - CON SISTEMA MONITOREO</div>
+                <div class="badge-seccion despues-badge"> DESPUÉS - CON SISTEMA MONITOREO</div>
                 <h3>Sistema Proactivo + Playbooks Documentados</h3>
 
                 <div class="solucion-item">
-                    <div class="solucion-numero">✓</div>
+                    <div class="solucion-numero"></div>
                     <div class="solucion-content">
                         <strong>Detección Temprana Automática (24-48 horas)</strong>
                         <p>
@@ -1294,7 +1294,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
                 </div>
 
                 <div class="solucion-item">
-                    <div class="solucion-numero">✓</div>
+                    <div class="solucion-numero"></div>
                     <div class="solucion-content">
                         <strong>13 Playbooks Documentados Listos para Ejecutar</strong>
                         <p>
@@ -1305,7 +1305,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
                 </div>
 
                 <div class="solucion-item">
-                    <div class="solucion-numero">✓</div>
+                    <div class="solucion-numero"></div>
                     <div class="solucion-content">
                         <strong>18 Métricas Críticas Monitorizadas Diaria/Semanalmente</strong>
                         <p>
@@ -1316,7 +1316,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
                 </div>
 
                 <div class="solucion-item">
-                    <div class="solucion-numero">✓</div>
+                    <div class="solucion-numero"></div>
                     <div class="solucion-content">
                         <strong>Ahorro Acumulado: €36k-72k/año</strong>
                         <p>
@@ -1327,7 +1327,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
                 </div>
 
                 <div class="solucion-item">
-                    <div class="solucion-numero">✓</div>
+                    <div class="solucion-numero"></div>
                     <div class="solucion-content">
                         <strong>Auditorías Preventivas Cada 3 Meses</strong>
                         <p>
@@ -1340,7 +1340,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
         </div>
 
         <div class="timeline-implementacion">
-            <h4>📅 Timeline de Implementación (Sistema Monitoreo Completo)</h4>
+            <h4> Timeline de Implementación (Sistema Monitoreo Completo)</h4>
             <div class="timeline-grid">
                 <div class="timeline-fase">
                     <div class="fase-badge fase-1">Semanas 1-2</div>
@@ -1384,7 +1384,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
 
     <!-- Tabla KPIs -->
     <section class="kpis-section">
-        <h2 class="section-title-kpis">📊 KPIs: Monitoreo de Algoritmo y Recuperación</h2>
+        <h2 class="section-title-kpis"> KPIs: Monitoreo de Algoritmo y Recuperación</h2>
 
         <div class="kpis-intro">
             <p>
@@ -1451,7 +1451,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
         </table>
 
         <div class="kpis-nota-importante">
-            <h4>⚠️ Nota Importante: Monitoreo Algoritmo = Seguro Contra Desastres</h4>
+            <h4>️ Nota Importante: Monitoreo Algoritmo = Seguro Contra Desastres</h4>
             <p>
                 El monitoreo de algoritmo funciona como un <strong>seguro contra desastres SEO</strong>. Pagas €300-500/mes (herramientas + tiempo)
                 pero cuando caída -30% tráfico ocurre (inevitable con 4-6 Core Updates/año), recuperas en 35 días vs 105 días sin sistema =

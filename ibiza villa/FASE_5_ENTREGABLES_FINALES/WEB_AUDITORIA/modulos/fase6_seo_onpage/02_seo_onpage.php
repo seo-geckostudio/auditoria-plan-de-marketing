@@ -160,7 +160,7 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
         <!-- SECCIÓN EDUCATIVA: ¿Qué es SEO On-Page? -->
         <section class="concepto-educativo">
             <div class="concepto-header">
-                <span class="concepto-icon">📚</span>
+                <span class="concepto-icon"></span>
                 <h2>¿Qué es SEO On-Page y Por Qué es Crítico para Tu Negocio?</h2>
             </div>
             <div class="concepto-content">
@@ -171,7 +171,7 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
                 </p>
                 <div class="analogia-box">
                     <div class="analogia-header">
-                        <span class="analogia-icon">💡</span>
+                        <i class="fas fa-info-circle"></i>
                         <strong>Piensa en tu página web como el escaparate de una tienda de lujo:</strong>
                     </div>
                     <ul class="analogia-list">
@@ -190,21 +190,21 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
                     <h3>¿Cómo Afecta el SEO On-Page a Tu Negocio?</h3>
                     <div class="impacto-grid">
                         <div class="impacto-item">
-                            <span class="impacto-icon">🔍</span>
+                            <span class="impacto-icon"></span>
                             <div class="impacto-text">
                                 <strong>Visibilidad:</strong> Title tags optimizados mejoran rankings un 15-25%.
                                 Sin H1 adecuado, Google no entiende de qué trata tu página.
                             </div>
                         </div>
                         <div class="impacto-item">
-                            <span class="impacto-icon">👥</span>
+                            <span class="impacto-icon"></span>
                             <div class="impacto-text">
                                 <strong>Conversión:</strong> Meta descriptions atractivas aumentan CTR 20-35%.
                                 Más clics = más tráfico = más reservas de villas.
                             </div>
                         </div>
                         <div class="impacto-item">
-                            <span class="impacto-icon">⚡</span>
+                            <span class="impacto-icon"></span>
                             <div class="impacto-text">
                                 <strong>Experiencia:</strong> Contenido bien estructurado (H1, H2, H3) reduce rebote -30%.
                                 Usuarios encuentran lo que buscan rápidamente.
@@ -218,7 +218,7 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
         <!-- SECCIÓN: Archivos de Trabajo Descargables -->
         <section class="entregables-section">
             <div class="entregables-header">
-                <span class="entregables-icon">📄</span>
+                <span class="entregables-icon"></span>
                 <h2>Archivos de Trabajo para Implementar las Mejoras</h2>
             </div>
             <p class="entregables-intro">
@@ -342,7 +342,7 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
                 </div>
             </div>
             <div class="como-usar-entregables">
-                <h3>💡 Cómo Usar Estos Archivos</h3>
+                <h3> Cómo Usar Estos Archivos</h3>
                 <ol class="uso-list">
                     <li><strong>Descarga</strong> el CSV haciendo clic en el botón azul</li>
                     <li><strong>Ábrelo</strong> en Excel, Google Sheets o Numbers</li>
@@ -357,7 +357,7 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
         <!-- SECCIÓN: Comparación Visual ANTES vs DESPUÉS -->
         <section class="comparacion-antes-despues">
             <div class="comparacion-main-header">
-                <span class="comparacion-main-icon">🔍</span>
+                <span class="comparacion-main-icon"></span>
                 <h2>Situación Actual vs. Propuesta de Mejora</h2>
             </div>
             <p class="comparacion-intro">
@@ -377,42 +377,42 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
                             <h4>Problemas Detectados:</h4>
                             <ul>
                                 <li class="problema-item">
-                                    <span class="icon-error">❌</span>
+                                    <span class="icon-error"></span>
                                     <div class="problema-texto">
                                         <strong>10 páginas sin H1</strong>
                                         <span class="problema-detalle">Google no identifica el tema principal de la página</span>
                                     </div>
                                 </li>
                                 <li class="problema-item">
-                                    <span class="icon-error">❌</span>
+                                    <span class="icon-error"></span>
                                     <div class="problema-texto">
                                         <strong>12 H1 duplicados</strong>
                                         <span class="problema-detalle">Confusión en jerarquía - páginas compiten entre sí</span>
                                     </div>
                                 </li>
                                 <li class="problema-item">
-                                    <span class="icon-error">❌</span>
+                                    <span class="icon-error"></span>
                                     <div class="problema-texto">
                                         <strong>14 meta descriptions duplicadas</strong>
                                         <span class="problema-detalle">CTR bajo - usuarios no diferencian resultados en Google</span>
                                     </div>
                                 </li>
                                 <li class="problema-item">
-                                    <span class="icon-error">❌</span>
+                                    <span class="icon-error"></span>
                                     <div class="problema-texto">
                                         <strong>15 title tags mal optimizados</strong>
                                         <span class="problema-detalle">Demasiado cortos/largos - se cortan en SERPs</span>
                                     </div>
                                 </li>
                                 <li class="problema-item">
-                                    <span class="icon-error">❌</span>
+                                    <span class="icon-error"></span>
                                     <div class="problema-texto">
                                         <strong>10 imágenes sin ALT</strong>
                                         <span class="problema-detalle">Pérdida de accesibilidad e imagen search</span>
                                     </div>
                                 </li>
                                 <li class="problema-item">
-                                    <span class="icon-error">❌</span>
+                                    <span class="icon-error"></span>
                                     <div class="problema-texto">
                                         <strong>Pérdida estimada total:</strong> 800-1,200 sesiones/mes
                                         <span class="problema-detalle">Por baja visibilidad y CTR deficiente</span>
@@ -425,7 +425,7 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
 
                 <!-- FLECHA DE TRANSFORMACIÓN -->
                 <div class="transformacion-arrow">
-                    <div class="arrow-icon">➡️</div>
+                    <div class="arrow-icon">️</div>
                     <p class="arrow-text">Implementando<br>optimizaciones<br>del CSV</p>
                 </div>
 
@@ -441,42 +441,42 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
                             <h4>Mejoras Implementadas:</h4>
                             <ul>
                                 <li class="mejora-item">
-                                    <span class="icon-success">✅</span>
+                                    <span class="icon-success"></span>
                                     <div class="mejora-texto">
                                         <strong>10 H1 creados y optimizados</strong>
                                         <span class="mejora-detalle">Google identifica claramente el tema de cada página</span>
                                     </div>
                                 </li>
                                 <li class="mejora-item">
-                                    <span class="icon-success">✅</span>
+                                    <span class="icon-success"></span>
                                     <div class="mejora-texto">
                                         <strong>12 H1 diferenciados</strong>
                                         <span class="mejora-detalle">Cada página tiene su propia identidad y keyword target</span>
                                     </div>
                                 </li>
                                 <li class="mejora-item">
-                                    <span class="icon-success">✅</span>
+                                    <span class="icon-success"></span>
                                     <div class="mejora-texto">
                                         <strong>14 meta descriptions únicas</strong>
                                         <span class="mejora-detalle">CTR mejorado - mensajes personalizados por página</span>
                                     </div>
                                 </li>
                                 <li class="mejora-item">
-                                    <span class="icon-success">✅</span>
+                                    <span class="icon-success"></span>
                                     <div class="mejora-texto">
                                         <strong>15 title tags optimizados</strong>
                                         <span class="mejora-detalle">Longitud óptima 50-60 caracteres, keywords al inicio</span>
                                     </div>
                                 </li>
                                 <li class="mejora-item">
-                                    <span class="icon-success">✅</span>
+                                    <span class="icon-success"></span>
                                     <div class="mejora-texto">
                                         <strong>10 atributos ALT añadidos</strong>
                                         <span class="mejora-detalle">Mejor accesibilidad + oportunidad de tráfico de imágenes</span>
                                     </div>
                                 </li>
                                 <li class="mejora-item">
-                                    <span class="icon-success">✅</span>
+                                    <span class="icon-success"></span>
                                     <div class="mejora-texto">
                                         <strong>Ganancia estimada total:</strong> +800-1,200 sesiones/mes
                                         <span class="mejora-detalle">Por mejor visibilidad y CTR optimizado</span>
@@ -494,7 +494,7 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
             <div class="section-badge-container">
                 <span class="section-badge badge-despues">DESPUÉS - RESULTADOS ESPERADOS</span>
             </div>
-            <h2>📈 Resultados Esperados (30-60 días post-implementación)</h2>
+            <h2> Resultados Esperados (30-60 días post-implementación)</h2>
             <p class="kpis-intro">
                 Si implementas las optimizaciones On-Page de los archivos CSV descargables, estos son los resultados que puedes esperar:
             </p>
@@ -641,7 +641,7 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
 
             <div class="kpis-nota-importante">
                 <div class="nota-header">
-                    <span class="nota-icon">💡</span>
+                    <span class="nota-icon"></span>
                     <strong>Nota Importante</strong>
                 </div>
                 <p>
@@ -1152,7 +1152,7 @@ foreach ($areas as $area):
         <!-- Impacto Estimado -->
         <?php if (!empty($area['impacto_estimado'])): ?>
         <div class="impacto-final">
-            <div class="impacto-icon">📈</div>
+            <div class="impacto-icon"></div>
             <div class="impacto-content">
                 <strong>Impacto Estimado de las Optimizaciones:</strong>
                 <p><?php echo htmlspecialchars($area['impacto_estimado']); ?></p>

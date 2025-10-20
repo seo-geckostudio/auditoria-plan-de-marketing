@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <!-- Tarjeta de Persona -->
         <div class="persona-card">
             <div class="persona-avatar">
-                <div class="avatar-emoji"><?php echo $persona['foto_emoji'] ?? '👤'; ?></div>
+                <div class="avatar-emoji"><?php echo $persona['foto_emoji'] ?? ''; ?></div>
             </div>
             <div class="persona-info">
                 <h2><?php echo $persona['nombre'] ?? 'Nombre no disponible'; ?></h2>
@@ -347,7 +347,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <!-- Persona 2: Pareja DINK -->
         <div class="compact-persona">
             <div class="compact-header">
-                <div class="compact-avatar"><?php echo $persona2['foto_emoji'] ?? '👥'; ?></div>
+                <div class="compact-avatar"><?php echo $persona2['foto_emoji'] ?? ''; ?></div>
                 <div class="compact-title">
                     <h2>Persona 2: <?php echo $persona2['nombre'] ?? 'N/A'; ?></h2>
                     <p class="compact-subtitle"><?php echo ($persona2['edad'] ?? 'N/A') . ' | ' . ($persona2['ubicacion'] ?? 'N/A'); ?></p>
@@ -403,7 +403,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <!-- Persona 3: Grupo Millennials -->
         <div class="compact-persona">
             <div class="compact-header">
-                <div class="compact-avatar"><?php echo $persona3['foto_emoji'] ?? '🎉'; ?></div>
+                <div class="compact-avatar"><?php echo $persona3['foto_emoji'] ?? ''; ?></div>
                 <div class="compact-title">
                     <h2>Persona 3: <?php echo $persona3['nombre'] ?? 'N/A'; ?></h2>
                     <p class="compact-subtitle"><?php echo ($persona3['edad'] ?? 'N/A') . ' | ' . ($persona3['ubicacion'] ?? 'N/A'); ?></p>
@@ -483,7 +483,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <!-- Persona 4 Compacta -->
         <div class="persona4-compact">
             <div class="p4-header">
-                <div class="p4-avatar"><?php echo $persona4['foto_emoji'] ?? '💼'; ?></div>
+                <div class="p4-avatar"><?php echo $persona4['foto_emoji'] ?? ''; ?></div>
                 <div class="p4-info">
                     <h2><?php echo $persona4['nombre'] ?? 'N/A'; ?></h2>
                     <p><?php echo ($persona4['edad'] ?? 'N/A') . ' | ' . ($persona4['ubicacion'] ?? 'N/A'); ?></p>
@@ -1043,14 +1043,14 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .pain-block li:before {
-    content: "⚠";
+    content: "";
     position: absolute;
     left: 0;
     color: #88B04B;
 }
 
 .goals-block li:before {
-    content: "✓";
+    content: "";
     position: absolute;
     left: 0;
     color: #88B04B;

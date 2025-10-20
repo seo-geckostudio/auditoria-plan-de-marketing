@@ -510,9 +510,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     const loaded = await dataLoader.init();
 
     if (loaded) {
-      console.log('✓ Sistema de datos externo inicializado correctamente');
+      // Sistema de datos externo inicializado correctamente
     } else {
-      console.log('→ Usando datos embebidos en HTML (fallback)');
+      // Usando datos embebidos en HTML (fallback)
     }
   }
 
@@ -913,7 +913,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     
     // Manejar errores de carga
     img.onerror = function() {
-      console.warn(`No se pudo cargar la imagen: Diapositiva${slideNumber}.JPG`);
+      // Imagen no encontrada (silenciada)
       this.style.display = 'none';
     };
     

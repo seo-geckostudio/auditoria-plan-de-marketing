@@ -454,9 +454,9 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 
             <div class="coverage-status">
                 <?php if ($pregunta['cubierta']): ?>
-                <span class="coverage-yes">✓ Cubierta en: <?php echo htmlspecialchars($pregunta['url_actual']); ?></span>
+                <span class="coverage-yes"> Cubierta en: <?php echo htmlspecialchars($pregunta['url_actual']); ?></span>
                 <?php else: ?>
-                <span class="coverage-no">✗ No cubierta - Oportunidad de crear contenido</span>
+                <span class="coverage-no"> No cubierta - Oportunidad de crear contenido</span>
                 <?php endif; ?>
             </div>
         </div>
@@ -472,7 +472,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
             <?php foreach ($optimizacion_tecnica ?? [] as $item): ?>
             <li>
                 <span class="check-icon <?php echo $item['implementado'] ? 'yes' : 'no'; ?>">
-                    <?php echo $item['implementado'] ? '✓' : '✗'; ?>
+                    <?php echo $item['implementado'] ? '' : ''; ?>
                 </span>
                 <div style="flex: 1;">
                     <div><strong><?php echo htmlspecialchars($item['nombre']); ?></strong></div>

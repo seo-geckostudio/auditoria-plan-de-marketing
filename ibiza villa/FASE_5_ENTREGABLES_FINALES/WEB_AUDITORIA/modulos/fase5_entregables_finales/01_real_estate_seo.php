@@ -63,13 +63,13 @@ $moduloData = [
     <!-- Sección Educativa -->
     <section class="concepto-educativo">
         <div class="concepto-header">
-            <span class="icono-concepto">🏛️</span>
+            <span class="icono-concepto">️</span>
             <h2>¿Qué es Real Estate SEO Vertical? (Explicación Simple)</h2>
         </div>
 
         <div class="analogia-box">
             <div class="analogia-header">
-                <span class="analogia-icon">💡</span>
+                <i class="fas fa-info-circle"></i>
                 <strong>Piensa en Real Estate SEO como el Escaparate de una Agencia Inmobiliaria de Lujo en Calle Principal:</strong>
             </div>
             <ul class="analogia-list">
@@ -106,12 +106,12 @@ $moduloData = [
 
     <!-- Resumen Ejecutivo -->
     <section class="resumen-ejecutivo">
-        <div class="badge-seccion badge-antes">🏗️ ESTRATEGIA VERTICAL REAL ESTATE</div>
+        <div class="badge-seccion badge-antes">️ ESTRATEGIA VERTICAL REAL ESTATE</div>
         <h2>Resumen: SEO Inmobiliario Luxury vs Genérico</h2>
 
         <div class="comparacion-estrategias">
             <div class="estrategia-box estrategia-generica">
-                <h3>❌ SEO Genérico (Actual)</h3>
+                <h3> SEO Genérico (Actual)</h3>
                 <ul>
                     <li>Keywords "alquiler villa" genéricas (competencia Airbnb/Booking masiva)</li>
                     <li>Schema Product básico (no específico real estate)</li>
@@ -122,7 +122,7 @@ $moduloData = [
             </div>
 
             <div class="estrategia-box estrategia-vertical">
-                <h3>✅ SEO Vertical Real Estate (Objetivo)</h3>
+                <h3> SEO Vertical Real Estate (Objetivo)</h3>
                 <ul>
                     <li>Keywords luxury verticales: "luxury villa rental", "exclusive", "beachfront", "private estate"</li>
                     <li>Schema RealEstateListing + Accommodation/Villa específico inmobiliario</li>
@@ -162,14 +162,14 @@ $moduloData = [
 
     <!-- Entregables CSV -->
     <section class="entregables-seccion">
-        <div class="badge-seccion badge-despues">📊 HERRAMIENTAS IMPLEMENTACIÓN VERTICAL</div>
+        <div class="badge-seccion badge-despues"> HERRAMIENTAS IMPLEMENTACIÓN VERTICAL</div>
         <h2>Entregables CSV Descargables</h2>
 
         <div class="csv-grid">
             <?php foreach ($moduloData['csvs'] as $csv): ?>
             <div class="csv-card">
                 <div class="csv-header">
-                    <span class="csv-icon">📄</span>
+                    <span class="csv-icon"></span>
                     <h3><?= $csv['titulo'] ?></h3>
                 </div>
                 <p class="csv-descripcion"><?= $csv['descripcion'] ?></p>
@@ -207,7 +207,7 @@ $moduloData = [
         </div>
 
         <div class="instrucciones-uso">
-            <h3>📋 Roadmap Implementación Real Estate SEO:</h3>
+            <h3> Roadmap Implementación Real Estate SEO:</h3>
             <ol>
                 <li><strong>Mes 1:</strong> Implementar RealEstateListing Schema en 20-30 villas principales (crítico)</li>
                 <li><strong>Mes 2:</strong> Crear 5 landings luxury-specific (luxury rental, exclusive, beachfront, private estate, events)</li>
@@ -221,7 +221,7 @@ $moduloData = [
 
     <!-- Tabla KPIs -->
     <section class="kpis-seccion">
-        <div class="badge-seccion badge-despues">📈 RESULTADOS ESPERADOS VERTICAL</div>
+        <div class="badge-seccion badge-despues"> RESULTADOS ESPERADOS VERTICAL</div>
         <h2>KPIs Real Estate SEO: Luxury vs Genérico</h2>
 
         <table class="tabla-kpis">
@@ -248,11 +248,11 @@ $moduloData = [
         </table>
 
         <div class="nota-importante">
-            <strong>🏆 Conclusión Final:</strong> Real Estate SEO Vertical = diferenciación competitiva crítica en mercado luxury villa rental.
+            <strong> Conclusión Final:</strong> Real Estate SEO Vertical = diferenciación competitiva crítica en mercado luxury villa rental.
             Competir keywords genéricas "alquiler villa" vs Airbnb/Booking = imposible ganar (presupuesto masivo, brand recognition).
             Dominar keywords luxury verticales "luxury villa rental", "exclusive", "beachfront" = océano azul, tráfico cualificado, conversión 2-3x mayor.
             <strong>ROI Vertical:</strong> Inversión €20k-30k implementación → Revenue adicional €5M-8M/año = ROI 167-400:1 en 12 meses.
-            <strong>Módulo 17 de 17 COMPLETADO ✅ - Sistema Auditoría SEO Completo al 100%</strong>
+            <strong>Módulo 17 de 17 COMPLETADO  - Sistema Auditoría SEO Completo al 100%</strong>
         </div>
     </section>
 </div>
@@ -303,7 +303,7 @@ $moduloData = [
 }
 
 .analogia-list li::before {
-    content: "🏠";
+    content: "";
     position: absolute;
     left: 0;
 }

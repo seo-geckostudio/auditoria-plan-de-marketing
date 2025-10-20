@@ -275,7 +275,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 }
 
 .ia-sge-page .csv-contenido li:before {
-    content: "✓";
+    content: "";
     position: absolute;
     left: 5px;
     color: #88B04B;
@@ -967,7 +967,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
     <!-- SECCIÓN EDUCATIVA: ¿Qué es IA/SGE Optimization? -->
     <section class="concepto-educativo">
         <div class="concepto-header">
-            <span class="concepto-icon">🤖</span>
+            <span class="concepto-icon"></span>
             <h2>¿Qué es IA/SGE Optimization y Por Qué es Crítico para Ibiza Villa?</h2>
         </div>
         <div class="concepto-content">
@@ -978,7 +978,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
             </p>
             <div class="analogia-box">
                 <div class="analogia-header">
-                    <span class="analogia-icon">💡</span>
+                    <i class="fas fa-info-circle"></i>
                     <strong>Piensa en IA/SGE como un periodista escribiendo un artículo y decidiendo a quién citar:</strong>
                 </div>
                 <ul class="analogia-list">
@@ -992,10 +992,10 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
             </div>
 
             <div class="impacto-negocio">
-                <h3><span class="icon">📊</span> Impacto en el Negocio de Villas de Lujo</h3>
+                <h3><span class="icon"></span> Impacto en el Negocio de Villas de Lujo</h3>
                 <div class="impacto-grid">
                     <div class="impacto-item">
-                        <div class="impacto-icon">🎯</div>
+                        <div class="impacto-icon"></div>
                         <div class="impacto-texto">
                             <strong>Visibilidad Posición Cero</strong><br>
                             Aparecer citado en SGE = estar SOBRE todos los resultados tradicionales.
@@ -1003,7 +1003,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
                         </div>
                     </div>
                     <div class="impacto-item">
-                        <div class="impacto-icon">💰</div>
+                        <div class="impacto-icon"></div>
                         <div class="impacto-texto">
                             <strong>Capturar Tráfico Zero-Click</strong><br>
                             68% búsquedas informativas terminan sin click. SGE permite capturar ese tráfico
@@ -1011,7 +1011,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
                         </div>
                     </div>
                     <div class="impacto-item">
-                        <div class="impacto-icon">🏆</div>
+                        <div class="impacto-icon"></div>
                         <div class="impacto-texto">
                             <strong>Autoridad y Confianza Algorítmica</strong><br>
                             Ser citado por la IA de Google = señal máxima de autoridad. Efecto halo:
@@ -1044,7 +1044,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
         <div class="csv-cards-grid">
             <!-- CSV 1: SGE Visibility Audit -->
             <div class="csv-card">
-                <div class="csv-icon">📊</div>
+                <div class="csv-icon"></div>
                 <h3 class="csv-title">Auditoría Visibilidad SGE</h3>
                 <div class="csv-meta">
                     <span class="csv-badge csv-badge-critica">15 Queries Auditadas</span>
@@ -1071,7 +1071,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
 
             <!-- CSV 2: AI Content Optimizations -->
             <div class="csv-card">
-                <div class="csv-icon">🤖</div>
+                <div class="csv-icon"></div>
                 <h3 class="csv-title">Plan de Optimización Contenido IA</h3>
                 <div class="csv-meta">
                     <span class="csv-badge csv-badge-success">15 Optimizaciones</span>
@@ -1098,7 +1098,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
         </div>
 
         <div class="instrucciones-uso">
-            <h4><span class="icon-instrucciones">📋</span> Cómo Usar Estos Archivos</h4>
+            <h4><span class="icon-instrucciones"></span> Cómo Usar Estos Archivos</h4>
             <ol class="pasos-implementacion">
                 <li><strong>Auditoría SGE:</strong> Priorizar queries con SGE activo + alto volumen + ausencia actual (máximo ROI)</li>
                 <li><strong>Identificar gaps:</strong> 13 queries críticas donde competencia aparece pero Ibiza Villa no</li>
@@ -1123,7 +1123,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
                 <h3 class="comparacion-titulo">Invisibilidad en IA Generativa</h3>
 
                 <div class="problema-item">
-                    <div class="problema-icon">❌</div>
+                    <div class="problema-icon"></div>
                     <div class="problema-contenido">
                         <strong>Visibilidad SGE: 13% (2/15 queries)</strong><br>
                         Solo 2 citaciones parciales en posiciones bajas (#5, #6).
@@ -1132,7 +1132,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
                 </div>
 
                 <div class="problema-item">
-                    <div class="problema-icon">❌</div>
+                    <div class="problema-icon"></div>
                     <div class="problema-contenido">
                         <strong>Contenido NO IA-friendly</strong><br>
                         Descripciones narrativas largas sin estructura.
@@ -1141,7 +1141,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
                 </div>
 
                 <div class="problema-item">
-                    <div class="problema-icon">❌</div>
+                    <div class="problema-icon"></div>
                     <div class="problema-contenido">
                         <strong>Falta contenido definitional</strong><br>
                         Sin guías "Cómo...", sin comparativas, sin calculadoras.
@@ -1150,7 +1150,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
                 </div>
 
                 <div class="problema-item">
-                    <div class="problema-icon">❌</div>
+                    <div class="problema-icon"></div>
                     <div class="problema-contenido">
                         <strong>Datos propios ausentes</strong><br>
                         No se comparten insights internos (500+ reservas).
@@ -1159,7 +1159,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
                 </div>
 
                 <div class="problema-item">
-                    <div class="problema-icon">❌</div>
+                    <div class="problema-icon"></div>
                     <div class="problema-contenido">
                         <strong>Entidades débiles</strong><br>
                         Entidades no explícitas (0 Schema Organization/Person).
@@ -1176,7 +1176,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
             <!-- FLECHA TRANSFORMACIÓN -->
             <div class="comparacion-flecha">
                 <div class="flecha-container">
-                    <div class="flecha-icon">🤖</div>
+                    <div class="flecha-icon"></div>
                     <div class="flecha-text">IA/SGE<br>OPTIMIZATION</div>
                     <div class="flecha-arrow">→</div>
                 </div>
@@ -1190,7 +1190,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
                 <h3 class="comparacion-titulo">Autoridad en Ecosistema IA</h3>
 
                 <div class="solucion-item">
-                    <div class="solucion-icon">✅</div>
+                    <div class="solucion-icon"></div>
                     <div class="solucion-contenido">
                         <strong>Visibilidad SGE: 60-73% (9-11/15 queries)</strong><br>
                         Citaciones en Top 3 para 9-11 queries clave.
@@ -1199,7 +1199,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
                 </div>
 
                 <div class="solucion-item">
-                    <div class="solucion-icon">✅</div>
+                    <div class="solucion-icon"></div>
                     <div class="solucion-contenido">
                         <strong>Contenido estructurado para IA</strong><br>
                         40+ FAQs con Schema, 12 guías "Cómo...", 8 tablas comparativas.
@@ -1208,7 +1208,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
                 </div>
 
                 <div class="solucion-item">
-                    <div class="solucion-icon">✅</div>
+                    <div class="solucion-icon"></div>
                     <div class="solucion-contenido">
                         <strong>Hub de contenido definitional</strong><br>
                         15 artículos educativos, calculadora precios, guía legal completa.
@@ -1217,7 +1217,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
                 </div>
 
                 <div class="solucion-item">
-                    <div class="solucion-icon">✅</div>
+                    <div class="solucion-icon"></div>
                     <div class="solucion-contenido">
                         <strong>Insights y datos originales</strong><br>
                         Publicación análisis 500+ reservas, estadísticas temporadas, tendencias.
@@ -1226,7 +1226,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
                 </div>
 
                 <div class="solucion-item">
-                    <div class="solucion-icon">✅</div>
+                    <div class="solucion-icon"></div>
                     <div class="solucion-contenido">
                         <strong>Entidades reconocidas</strong><br>
                         Schema Organization/Person completo, SameAs Wikidata/LinkedIn.
@@ -1353,7 +1353,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
         </table>
 
         <div class="nota-importante">
-            <div class="nota-icon">⚠️</div>
+            <div class="nota-icon">️</div>
             <div class="nota-contenido">
                 <strong>Nota Importante sobre IA/SGE:</strong><br>
                 La visibilidad en IA generativa es <strong>acumulativa y de efecto compuesto</strong>. Cada citación SGE:

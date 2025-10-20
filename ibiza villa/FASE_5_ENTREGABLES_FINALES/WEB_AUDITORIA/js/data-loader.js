@@ -20,7 +20,7 @@ class AuditoriaDataLoader {
       if (!configResponse.ok) throw new Error('No se pudo cargar la configuración');
 
       this.config = await configResponse.json();
-      console.log('✓ Configuración cargada:', this.config.auditoria.cliente);
+      // Configuración cargada correctamente
 
       // Actualizar información de portada
       this.updatePortada();
@@ -30,8 +30,8 @@ class AuditoriaDataLoader {
 
       return true;
     } catch (error) {
-      console.warn('⚠ No se pudieron cargar los datos externos:', error.message);
-      console.log('→ Usando datos embebidos en HTML');
+      // No se pudieron cargar datos externos
+      // Usando datos embebidos en HTML
       return false;
     }
   }
@@ -60,7 +60,7 @@ class AuditoriaDataLoader {
     );
 
     await Promise.all(promises);
-    console.log('✓ Todas las secciones cargadas');
+    // Todas las secciones cargadas
   }
 
   /**
@@ -70,7 +70,7 @@ class AuditoriaDataLoader {
     try {
       const response = await fetch(`data/${seccionConfig.archivo_datos}`);
       if (!response.ok) {
-        console.warn(`⚠ No se pudo cargar: ${seccionConfig.archivo_datos}`);
+        // Archivo no cargado (silenciado)
         return;
       }
 
@@ -82,9 +82,9 @@ class AuditoriaDataLoader {
         data.paginas.forEach(pagina => this.renderPage(pagina));
       }
 
-      console.log(`✓ Sección ${seccionConfig.numero} cargada: ${data.paginas?.length || 0} páginas`);
+      // Sección cargada
     } catch (error) {
-      console.warn(`⚠ Error cargando ${seccionConfig.archivo_datos}:`, error.message);
+      // Error de carga (silenciado)
     }
   }
 
@@ -94,7 +94,7 @@ class AuditoriaDataLoader {
   renderPage(paginaData) {
     const pageElement = document.getElementById(paginaData.id);
     if (!pageElement) {
-      console.warn(`⚠ No se encontró elemento para: ${paginaData.id}`);
+      // Elemento no encontrado (silenciado)
       return;
     }
 
@@ -543,7 +543,7 @@ class AuditoriaDataLoader {
    */
   createChart(canvas, config) {
     if (typeof Chart === 'undefined') {
-      console.warn('⚠ Chart.js no está cargado');
+      // Chart.js no cargado (silenciado)
       return;
     }
 

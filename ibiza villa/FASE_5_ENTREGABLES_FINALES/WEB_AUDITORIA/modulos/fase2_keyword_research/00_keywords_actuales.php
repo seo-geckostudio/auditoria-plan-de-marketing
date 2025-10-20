@@ -19,7 +19,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 <div class="audit-page keywords-educativo">
     <section class="concepto-educativo">
         <div class="concepto-header">
-            <span class="concepto-icon">📚</span>
+            <span class="concepto-icon"></span>
             <h2>¿Qué es el Keyword Research y Por Qué Determinará el Éxito de Tu Negocio?</h2>
         </div>
         <div class="concepto-content">
@@ -30,7 +30,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
             </p>
             <div class="analogia-box">
                 <div class="analogia-header">
-                    <span class="analogia-icon">💡</span>
+                    <i class="fas fa-info-circle"></i>
                     <strong>Piensa en el Keyword Research como un mapa del tesoro:</strong>
                 </div>
                 <ul class="analogia-list">
@@ -48,13 +48,13 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
             </div>
             <div class="impacto-negocio-grid">
                 <div class="impacto-item">
-                    <span class="impacto-icon">🎯</span>
+                    <i class="fas fa-bullseye"></i>
                     <h3>Tráfico Cualificado</h3>
                     <p>No cualquier visita vale. Las keywords correctas atraen usuarios que buscan <strong>villas de lujo</strong>,
                     no apartamentos baratos. Esto multiplica tu tasa de conversión por 5-10x.</p>
                 </div>
                 <div class="impacto-item">
-                    <span class="impacto-icon">💰</span>
+                    <i class="fas fa-dollar-sign"></i>
                     <h3>Rentabilidad Directa</h3>
                     <p>Una keyword como "villa lujo ibiza primera línea" (580 búsquedas/mes) puede generar 2-4 reservas/mes
                     = €15,000-40,000 en ingresos. Una keyword mal elegida genera 0€.</p>
@@ -72,7 +72,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     <!-- SECCIÓN ENTREGABLES -->
     <section class="entregables-section">
         <div class="entregables-header">
-            <span class="entregables-icon">📄</span>
+            <span class="entregables-icon"></span>
             <h2>Archivos de Trabajo para Tu Estrategia de Keywords</h2>
         </div>
         <p class="entregables-intro">
@@ -157,7 +157,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
         </div>
 
         <div class="instrucciones-uso">
-            <h3><i class="fas fa-lightbulb"></i> Instrucciones de Uso</h3>
+            <h3><i class="fas fa-info-circle"></i> Instrucciones de Uso</h3>
             <ol class="instrucciones-list">
                 <li>
                     <strong>Descarga los 3 CSVs</strong> y ábrelos en Excel o Google Sheets
@@ -184,7 +184,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     <!-- COMPARACIÓN ANTES/DESPUÉS -->
     <section class="comparacion-antes-despues">
         <div class="comparacion-main-header">
-            <span class="comparacion-main-icon">🔍</span>
+            <span class="comparacion-main-icon"></span>
             <h2>Situación Actual vs. Estrategia Optimizada</h2>
         </div>
         <div class="comparacion-grid">
@@ -199,28 +199,28 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         <h4>Problemas Detectados:</h4>
                         <ul>
                             <li class="problema-item">
-                                <span class="icon-error">❌</span>
+                                <span class="icon-error"></span>
                                 <div class="problema-texto">
                                     <strong>12 keywords de bajo potencial consumiendo recursos</strong>
                                     <span class="problema-detalle">Posicionamiento en keywords con bajo volumen o muy genéricas sin conversión</span>
                                 </div>
                             </li>
                             <li class="problema-item">
-                                <span class="icon-error">❌</span>
+                                <span class="icon-error"></span>
                                 <div class="problema-texto">
                                     <strong>15 keywords de alto valor sin trabajar</strong>
                                     <span class="problema-detalle">Oportunidades de 850-1,200 sesiones/mes desaprovechadas</span>
                                 </div>
                             </li>
                             <li class="problema-item">
-                                <span class="icon-error">❌</span>
+                                <span class="icon-error"></span>
                                 <div class="problema-texto">
                                     <strong>Falta de keywords long-tail específicas</strong>
                                     <span class="problema-detalle">No hay cobertura de búsquedas como "villa 10 personas piscina privada"</span>
                                 </div>
                             </li>
                             <li class="problema-item">
-                                <span class="icon-error">❌</span>
+                                <span class="icon-error"></span>
                                 <div class="problema-texto">
                                     <strong>Pérdida estimada: 15-25 reservas/mes</strong>
                                     <span class="problema-detalle">Equivalente a €45,000-75,000/mes en ingresos perdidos</span>
@@ -250,28 +250,28 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         <h4>Mejoras Implementadas:</h4>
                         <ul>
                             <li class="mejora-item">
-                                <span class="icon-success">✅</span>
+                                <span class="icon-success"></span>
                                 <div class="mejora-texto">
                                     <strong>Recursos redirigidos a keywords de alto valor</strong>
                                     <span class="mejora-detalle">Foco en 27 keywords con volumen 180-1,200 búsquedas/mes y alta intención</span>
                                 </div>
                             </li>
                             <li class="mejora-item">
-                                <span class="icon-success">✅</span>
+                                <span class="icon-success"></span>
                                 <div class="mejora-texto">
                                     <strong>15 nuevas páginas optimizadas para oportunidades</strong>
                                     <span class="mejora-detalle">Landings específicas + contenido optimizado + backlinks</span>
                                 </div>
                             </li>
                             <li class="mejora-item">
-                                <span class="icon-success">✅</span>
+                                <span class="icon-success"></span>
                                 <div class="mejora-texto">
                                     <strong>Cobertura completa long-tail</strong>
                                     <span class="mejora-detalle">Keywords específicas tipo "villa lujo san antonio 8 personas"</span>
                                 </div>
                             </li>
                             <li class="mejora-item">
-                                <span class="icon-success">✅</span>
+                                <span class="icon-success"></span>
                                 <div class="mejora-texto">
                                     <strong>Ganancia estimada: +15-25 reservas/mes</strong>
                                     <span class="mejora-detalle">Equivalente a €45,000-75,000/mes en ingresos adicionales</span>
@@ -289,7 +289,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
         <div class="section-badge-container">
             <span class="section-badge badge-despues">DESPUÉS - RESULTADOS ESPERADOS</span>
         </div>
-        <h2>📈 KPIs y Resultados Esperados con Estrategia Optimizada</h2>
+        <h2> KPIs y Resultados Esperados con Estrategia Optimizada</h2>
         <div class="tabla-kpis-container">
             <table class="tabla-kpis">
                 <thead>
@@ -738,7 +738,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
         <?php if (!empty($recomendaciones)): ?>
         <div class="recommendations-section">
             <h3 class="section-title">
-                <i class="fas fa-lightbulb"></i>
+                <i class="fas fa-info-circle"></i>
                 Recomendaciones Estratégicas
             </h3>
             <?php foreach ($recomendaciones as $index => $rec): ?>

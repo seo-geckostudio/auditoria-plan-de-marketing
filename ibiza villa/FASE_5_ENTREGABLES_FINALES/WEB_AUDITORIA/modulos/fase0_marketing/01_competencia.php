@@ -47,21 +47,21 @@ $paginas = $moduloData['paginas'];
 
             <div class="competencia-summary-grid">
                 <div class="summary-card primary">
-                    <div class="card-icon">🏆</div>
+                    <div class="card-icon"></div>
                     <div class="card-value"><?php echo $portada['competidores_analizados']; ?></div>
                     <div class="card-label">Competidores Analizados</div>
                     <div class="card-sublabel">Con métricas de Ahrefs</div>
                 </div>
 
                 <div class="summary-card">
-                    <div class="card-icon">🌍</div>
+                    <div class="card-icon"></div>
                     <div class="card-value"><?php echo count($portada['mercados_geograficos']); ?></div>
                     <div class="card-label">Mercados Geográficos</div>
                     <div class="card-sublabel"><?php echo implode(', ', $portada['mercados_geograficos']); ?></div>
                 </div>
 
                 <div class="summary-card">
-                    <div class="card-icon">📊</div>
+                    <div class="card-icon"></div>
                     <div class="card-value"><?php echo $portada['metricas_comparadas']; ?></div>
                     <div class="card-label">Métricas Comparadas</div>
                     <div class="card-sublabel">Análisis exhaustivo</div>
@@ -185,7 +185,7 @@ $paginas = $moduloData['paginas'];
 
                             <div class="competitor-analysis">
                                 <div class="strengths">
-                                    <h5>💪 Fortalezas</h5>
+                                    <h5> Fortalezas</h5>
                                     <ul>
                                         <?php foreach ($comp['fortalezas'] as $fortaleza): ?>
                                             <li><?php echo htmlspecialchars($fortaleza); ?></li>
@@ -194,7 +194,7 @@ $paginas = $moduloData['paginas'];
                                 </div>
 
                                 <div class="weaknesses">
-                                    <h5>⚠️ Debilidades</h5>
+                                    <h5>️ Debilidades</h5>
                                     <ul>
                                         <?php foreach ($comp['debilidades'] as $debilidad): ?>
                                             <li><?php echo htmlspecialchars($debilidad); ?></li>
@@ -204,7 +204,7 @@ $paginas = $moduloData['paginas'];
 
                                 <?php if (isset($comp['keywords_atacar'])): ?>
                                     <div class="keywords-attack">
-                                        <h5>🎯 Keywords a Atacar</h5>
+                                        <h5> Keywords a Atacar</h5>
                                         <ul>
                                             <?php foreach ($comp['keywords_atacar'] as $keyword): ?>
                                                 <li><?php echo htmlspecialchars($keyword); ?></li>
@@ -220,7 +220,7 @@ $paginas = $moduloData['paginas'];
 
             <?php if (isset($datos['posicion_ibizavilla'])): ?>
                 <div class="our-position-section">
-                    <h3>📍 Nuestra Posición</h3>
+                    <h3> Nuestra Posición</h3>
                     <div class="position-analysis">
                         <div class="position-card">
                             <p class="position-desc"><?php echo htmlspecialchars($datos['posicion_ibizavilla']['comparacion']); ?></p>
@@ -235,7 +235,7 @@ $paginas = $moduloData['paginas'];
                                 </div>
                             </div>
                             <div class="opportunity-note">
-                                ✅ <?php echo htmlspecialchars($datos['posicion_ibizavilla']['oportunidad']); ?>
+                                 <?php echo htmlspecialchars($datos['posicion_ibizavilla']['oportunidad']); ?>
                             </div>
                         </div>
                     </div>
@@ -318,7 +318,7 @@ $paginas = $moduloData['paginas'];
             </div>
 
             <div class="keywords-main-opportunities">
-                <h3>🎯 Oportunidades Principales</h3>
+                <h3> Oportunidades Principales</h3>
                 <table class="keywords-table">
                     <thead>
                         <tr>
@@ -359,14 +359,14 @@ $paginas = $moduloData['paginas'];
             </div>
 
             <div class="keywords-by-intent-section">
-                <h3>📊 Gaps por Intención de Búsqueda</h3>
+                <h3> Gaps por Intención de Búsqueda</h3>
 
                 <?php foreach ($datos['gaps_por_intencion'] as $tipo => $keywords): ?>
                     <div class="intent-block">
                         <h4 class="intent-title intent-<?php echo $tipo; ?>">
                             <?php
-                            $icons = ['informacional' => '📚', 'navegacional' => '🧭', 'transaccional' => '💳', 'comercial' => '🛒'];
-                            echo $icons[$tipo] ?? '📌';
+                            $icons = ['informacional' => '', 'navegacional' => '', 'transaccional' => '', 'comercial' => ''];
+                            echo $icons[$tipo] ?? '';
                             ?>
                             <?php echo ucfirst($tipo); ?>
                         </h4>
@@ -395,7 +395,7 @@ $paginas = $moduloData['paginas'];
             <?php $datos = $pagina['contenido']['datos']; ?>
 
             <div class="competition-levels-section">
-                <h3>🎯 Nivel de Competencia por Categorías</h3>
+                <h3> Nivel de Competencia por Categorías</h3>
                 <table class="competition-matrix">
                     <thead>
                         <tr>
@@ -432,7 +432,7 @@ $paginas = $moduloData['paginas'];
                 <h3>⏱️ Roadmap de Oportunidades</h3>
 
                 <div class="timeline-level">
-                    <h4 class="timeline-title priority-high">🚀 Primer Nivel (Inmediatas - 2-4 semanas)</h4>
+                    <h4 class="timeline-title priority-high"> Primer Nivel (Inmediatas - 2-4 semanas)</h4>
                     <div class="opportunities-grid">
                         <?php foreach ($datos['oportunidades_primer_nivel'] as $opp): ?>
                             <div class="opportunity-card priority-high">
@@ -450,7 +450,7 @@ $paginas = $moduloData['paginas'];
                 </div>
 
                 <div class="timeline-level">
-                    <h4 class="timeline-title priority-medium">📈 Segundo Nivel (Mediano Plazo - 3-6 meses)</h4>
+                    <h4 class="timeline-title priority-medium"> Segundo Nivel (Mediano Plazo - 3-6 meses)</h4>
                     <div class="opportunities-grid">
                         <?php foreach ($datos['oportunidades_segundo_nivel'] as $opp): ?>
                             <div class="opportunity-card priority-medium">
@@ -468,7 +468,7 @@ $paginas = $moduloData['paginas'];
                 </div>
 
                 <div class="timeline-level">
-                    <h4 class="timeline-title priority-low">🎯 Tercer Nivel (Largo Plazo - 12-18 meses)</h4>
+                    <h4 class="timeline-title priority-low"> Tercer Nivel (Largo Plazo - 12-18 meses)</h4>
                     <div class="opportunities-grid">
                         <?php foreach ($datos['oportunidades_tercer_nivel'] as $opp): ?>
                             <div class="opportunity-card priority-low">
@@ -487,7 +487,7 @@ $paginas = $moduloData['paginas'];
             </div>
 
             <div class="threats-section">
-                <h3>⚠️ Amenazas Competitivas</h3>
+                <h3>️ Amenazas Competitivas</h3>
                 <div class="threats-grid">
                     <?php foreach ($datos['amenazas'] as $amenaza): ?>
                         <div class="threat-card probability-<?php echo strtolower($amenaza['probabilidad']); ?>">

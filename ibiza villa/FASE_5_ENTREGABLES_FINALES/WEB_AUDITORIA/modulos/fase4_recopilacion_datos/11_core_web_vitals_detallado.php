@@ -66,13 +66,13 @@ $moduloData = [
     <!-- Sección Educativa: ¿Qué son Core Web Vitals? -->
     <section class="concepto-educativo">
         <div class="concepto-header">
-            <span class="icono-concepto">⚡</span>
+            <span class="icono-concepto"></span>
             <h2>¿Qué son Core Web Vitals? (Explicación Simple)</h2>
         </div>
 
         <div class="analogia-box">
             <div class="analogia-header">
-                <span class="analogia-icon">💡</span>
+                <i class="fas fa-info-circle"></i>
                 <strong>Piensa en Core Web Vitals como la Velocidad de Servicio en un Restaurante de Lujo:</strong>
             </div>
             <ul class="analogia-list">
@@ -106,7 +106,7 @@ $moduloData = [
 
     <!-- Resumen Ejecutivo ANTES -->
     <section class="resumen-ejecutivo">
-        <div class="badge-seccion badge-antes">🔍 ANTES - SITUACIÓN ACTUAL</div>
+        <div class="badge-seccion badge-antes"> ANTES - SITUACIÓN ACTUAL</div>
         <h2>Resumen Ejecutivo: Core Web Vitals Ibiza Villa</h2>
 
         <div class="situacion-actual">
@@ -123,14 +123,14 @@ $moduloData = [
 
     <!-- Entregables CSV -->
     <section class="entregables-seccion">
-        <div class="badge-seccion badge-despues">📊 DESPUÉS - HERRAMIENTAS DE OPTIMIZACIÓN</div>
+        <div class="badge-seccion badge-despues"> DESPUÉS - HERRAMIENTAS DE OPTIMIZACIÓN</div>
         <h2>Entregables CSV Descargables</h2>
 
         <div class="csv-grid">
             <?php foreach ($moduloData['csvs'] as $csv): ?>
             <div class="csv-card">
                 <div class="csv-header">
-                    <span class="csv-icon">📄</span>
+                    <span class="csv-icon"></span>
                     <h3><?= $csv['titulo'] ?></h3>
                 </div>
                 <p class="csv-descripcion"><?= $csv['descripcion'] ?></p>
@@ -168,7 +168,7 @@ $moduloData = [
         </div>
 
         <div class="instrucciones-uso">
-            <h3>📋 Instrucciones de Uso:</h3>
+            <h3> Instrucciones de Uso:</h3>
             <ol>
                 <li><strong>Descarga ambos CSVs</strong> y ábrelos en Excel/Google Sheets</li>
                 <li><strong>Auditoría CWV:</strong> Identifica páginas con estado "Falla" (10 páginas críticas)</li>
@@ -187,7 +187,7 @@ $moduloData = [
 
         <div class="comparacion-grid">
             <div class="columna-antes">
-                <div class="columna-header antes">❌ ANTES</div>
+                <div class="columna-header antes"> ANTES</div>
                 <h3>Situación Actual CWV</h3>
                 <ul class="lista-problemas">
                     <li><strong>LCP Home Mobile: 4.2s</strong> (FALLA -68% objetivo)</li>
@@ -201,12 +201,12 @@ $moduloData = [
             </div>
 
             <div class="flecha-transformacion">
-                <div class="flecha-contenido">⚡</div>
+                <div class="flecha-contenido"></div>
                 <div class="flecha-texto">OPTIMIZACIÓN CWV</div>
             </div>
 
             <div class="columna-despues">
-                <div class="columna-header despues">✅ DESPUÉS</div>
+                <div class="columna-header despues"> DESPUÉS</div>
                 <h3>Resultado Optimización (3-4 meses)</h3>
                 <ul class="lista-mejoras">
                     <li><strong>LCP Home Mobile: 1.8s</strong> (-57%, APROBADO <2.5s)</li>
@@ -233,7 +233,7 @@ $moduloData = [
 
     <!-- Tabla de KPIs -->
     <section class="kpis-seccion">
-        <div class="badge-seccion badge-despues">📈 DESPUÉS - RESULTADOS ESPERADOS</div>
+        <div class="badge-seccion badge-despues"> DESPUÉS - RESULTADOS ESPERADOS</div>
         <h2>KPIs Core Web Vitals: Impacto Cuantificado</h2>
 
         <table class="tabla-kpis">
@@ -260,7 +260,7 @@ $moduloData = [
         </table>
 
         <div class="nota-importante">
-            <strong>⚠️ Nota Importante:</strong> Core Web Vitals son factor ranking oficial Google desde 2021 (Page Experience Update).
+            <strong>️ Nota Importante:</strong> Core Web Vitals son factor ranking oficial Google desde 2021 (Page Experience Update).
             Sitios con CWV buenos reciben boost +2-4 posiciones promedio en keywords competitivas.
             Mobile-first indexing = CWV Mobile son CRÍTICOS (58% tráfico desde mobile).
             Optimización CWV = Mejora UX + Rankings + Conversión simultáneamente (efecto triple).
@@ -316,7 +316,7 @@ $moduloData = [
 }
 
 .analogia-list li::before {
-    content: "⚡";
+    content: "";
     position: absolute;
     left: 0;
     font-size: 20px;

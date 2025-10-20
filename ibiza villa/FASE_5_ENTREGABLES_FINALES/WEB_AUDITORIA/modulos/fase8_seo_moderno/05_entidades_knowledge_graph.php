@@ -1156,7 +1156,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 
             <div class="analogia-box">
                 <div class="analogia-header">
-                    <span class="analogia-icon">💡</span>
+                    <i class="fas fa-info-circle"></i>
                     <strong>Piensa en ser una Entidad como tener una Tarjeta de Identidad Digital Verificada por Google:</strong>
                 </div>
                 <ul class="analogia-list">
@@ -1170,21 +1170,21 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 
             <div class="impacto-negocio-grid">
                 <div class="impacto-item">
-                    <div class="impacto-icon">🎯</div>
+                    <div class="impacto-icon"></div>
                     <div class="impacto-texto">
                         <strong>Credibilidad Máxima</strong>
                         <p>Knowledge Panel = <strong>sello de verificación Google</strong>. Usuarios confían +65% más en marcas con panel vs sin panel.</p>
                     </div>
                 </div>
                 <div class="impacto-item">
-                    <div class="impacto-icon">📊</div>
+                    <div class="impacto-icon"></div>
                     <div class="impacto-texto">
                         <strong>Control Información Marca</strong>
                         <p>Knowledge Panel muestra <strong>TU información verificada</strong>: logo, descripción, contacto, redes. Controlas narrativa.</p>
                     </div>
                 </div>
                 <div class="impacto-item">
-                    <div class="impacto-icon">⚡</div>
+                    <div class="impacto-icon"></div>
                     <div class="impacto-texto">
                         <strong>Visibilidad Preferencial</strong>
                         <p>Entidades obtienen <strong>prioridad en IA/SGE, Voice Search, Featured Snippets</strong>. Google favorece entidades verificadas.</p>
@@ -1197,7 +1197,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
     <!-- Entregables CSV Descargables -->
     <section class="entregables-csv">
         <div class="entregables-header">
-            <span class="badge-seccion badge-despues">✅ DESPUÉS - HERRAMIENTAS DE OPTIMIZACIÓN</span>
+            <span class="badge-seccion badge-despues"> DESPUÉS - HERRAMIENTAS DE OPTIMIZACIÓN</span>
             <h3>Archivos CSV Descargables para Implementación</h3>
             <p>Descarga estos archivos con la auditoría completa de señales entidad y el plan de implementación Schema markup.</p>
         </div>
@@ -1206,7 +1206,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
             <!-- CSV 1: Entity Audit -->
             <div class="csv-card">
                 <div class="csv-card-header">
-                    <span class="csv-icon">📋</span>
+                    <span class="csv-icon"></span>
                     <h4>Auditoría Señales de Entidad</h4>
                     <span class="csv-priority priority-critica">Muy Alta Prioridad</span>
                 </div>
@@ -1241,7 +1241,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
             <!-- CSV 2: Schema Implementation Plan -->
             <div class="csv-card">
                 <div class="csv-card-header">
-                    <span class="csv-icon">⚙️</span>
+                    <span class="csv-icon">️</span>
                     <h4>Plan Implementación Schema Markup</h4>
                     <span class="csv-priority priority-alta">Alta Prioridad</span>
                 </div>
@@ -1276,7 +1276,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 
         <!-- Instrucciones de Uso -->
         <div class="instrucciones-uso">
-            <h4>📖 Cómo usar estos archivos para construir tu entidad:</h4>
+            <h4> Cómo usar estos archivos para construir tu entidad:</h4>
             <ol>
                 <li><strong>Descarga Entity Audit CSV</strong> y revisa los 15 elementos - identifica cuáles faltan o están incompletos</li>
                 <li><strong>Prioriza por impacto:</strong> Críticos primero (Wikidata, GBP, Organization Schema, menciones DA 70+)</li>
@@ -1298,7 +1298,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
             <!-- Columna ANTES -->
             <div class="comparacion-columna columna-antes">
                 <div class="columna-header antes-header">
-                    <span class="header-icon">❌</span>
+                    <span class="header-icon"></span>
                     <h4>ANTES - Situación Actual</h4>
                     <span class="subtitle">Sin Entidad Reconocida (Score 32/100)</span>
                 </div>
@@ -1356,7 +1356,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
             <!-- Columna DESPUÉS -->
             <div class="comparacion-columna columna-despues">
                 <div class="columna-header despues-header">
-                    <span class="header-icon">✅</span>
+                    <span class="header-icon"></span>
                     <h4>DESPUÉS - Entidad Establecida</h4>
                     <span class="subtitle">Knowledge Panel Activo (Score 88/100)</span>
                 </div>
@@ -1365,7 +1365,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
                         <div class="mejora-numero">1</div>
                         <div class="mejora-texto">
                             <strong>Knowledge Panel activo en búsquedas marca</strong>
-                            <p>Aparece panel lateral con: Logo oficial, Descripción verificada, Contacto, Redes sociales, Reviews 4.8★, Sitelinks, Search box.</p>
+                            <p>Aparece panel lateral con: Logo oficial, Descripción verificada, Contacto, Redes sociales, Reviews 4.8, Sitelinks, Search box.</p>
                         </div>
                     </div>
                     <div class="mejora-item">
@@ -1507,7 +1507,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
         </table>
 
         <div class="nota-importante">
-            <strong>⚠️ Nota Importante:</strong> Knowledge Panel <strong>NO es instantáneo ni garantizado</strong>:
+            <strong>️ Nota Importante:</strong> Knowledge Panel <strong>NO es instantáneo ni garantizado</strong>:
             <ul>
                 <li>Requisitos mínimos: GBP verificado + Wikidata + 5-8 menciones DA 70+ + Organization Schema completo</li>
                 <li>Timeline realista: <strong>4-6 meses</strong> desde implementar requisitos hasta panel aparece</li>
@@ -1520,7 +1520,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 
     <!-- Resumen Ejecutivo -->
     <div class="executive-summary">
-        <span class="badge-seccion badge-antes">🔍 ANTES - SITUACIÓN ACTUAL</span>
+        <span class="badge-seccion badge-antes"> ANTES - SITUACIÓN ACTUAL</span>
         <h2>Resumen Ejecutivo</h2>
         <p><?php echo htmlspecialchars($resumen['descripcion'] ?? ''); ?></p>
 

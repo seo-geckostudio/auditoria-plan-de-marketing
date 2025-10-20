@@ -275,7 +275,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 }
 
 .voice-search-page .csv-contenido li:before {
-    content: "✓";
+    content: "";
     position: absolute;
     left: 5px;
     color: #88B04B;
@@ -1006,7 +1006,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
     <!-- SECCIÓN EDUCATIVA: ¿Qué es Voice Search? -->
     <section class="concepto-educativo">
         <div class="concepto-header">
-            <span class="concepto-icon">🎤</span>
+            <span class="concepto-icon"></span>
             <h2>¿Qué es Voice Search y Por Qué es Crítico para Ibiza Villa?</h2>
         </div>
         <div class="concepto-content">
@@ -1017,7 +1017,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
             </p>
             <div class="analogia-box">
                 <div class="analogia-header">
-                    <span class="analogia-icon">💡</span>
+                    <i class="fas fa-info-circle"></i>
                     <strong>Piensa en Voice Search como preguntar al Concierge de un Hotel de Lujo:</strong>
                 </div>
                 <ul class="analogia-list">
@@ -1031,10 +1031,10 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
             </div>
 
             <div class="impacto-negocio">
-                <h3><span class="icon">📊</span> Impacto en el Negocio de Villas de Lujo</h3>
+                <h3><span class="icon"></span> Impacto en el Negocio de Villas de Lujo</h3>
                 <div class="impacto-grid">
                     <div class="impacto-item">
-                        <div class="impacto-icon">📱</div>
+                        <div class="impacto-icon"></div>
                         <div class="impacto-texto">
                             <strong>58% Búsquedas Viajes = Voice</strong><br>
                             Más de la mitad de los usuarios planificando vacaciones usan voice search.
@@ -1043,7 +1043,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
                         </div>
                     </div>
                     <div class="impacto-item">
-                        <div class="impacto-icon">🎯</div>
+                        <div class="impacto-icon"></div>
                         <div class="impacto-texto">
                             <strong>Tráfico Local + Mobile First</strong><br>
                             76% voice searches = local intent ("cerca de mí", "en Ibiza", "disponible ahora").
@@ -1052,7 +1052,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
                         </div>
                     </div>
                     <div class="impacto-item">
-                        <div class="impacto-icon">🏆</div>
+                        <div class="impacto-icon"></div>
                         <div class="impacto-texto">
                             <strong>Featured Snippet = Posición 0</strong><br>
                             Google Assistant lee el Featured Snippet en 40-50% de casos.
@@ -1086,7 +1086,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
         <div class="csv-cards-grid">
             <!-- CSV 1: Voice Keywords Audit -->
             <div class="csv-card">
-                <div class="csv-icon">🎤</div>
+                <div class="csv-icon"></div>
                 <h3 class="csv-title">Auditoría Keywords Conversacionales</h3>
                 <div class="csv-meta">
                     <span class="csv-badge csv-badge-critica">15 Queries Voice Auditadas</span>
@@ -1113,7 +1113,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 
             <!-- CSV 2: Voice Technical Checklist -->
             <div class="csv-card">
-                <div class="csv-icon">⚙️</div>
+                <div class="csv-icon">️</div>
                 <h3 class="csv-title">Checklist Técnico Voice Search</h3>
                 <div class="csv-meta">
                     <span class="csv-badge csv-badge-success">20 Elementos Técnicos</span>
@@ -1140,7 +1140,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
         </div>
 
         <div class="instrucciones-uso">
-            <h4><span class="icon-instrucciones">📋</span> Cómo Usar Estos Archivos</h4>
+            <h4><span class="icon-instrucciones"></span> Cómo Usar Estos Archivos</h4>
             <ol class="pasos-implementacion">
                 <li><strong>Priorizar queries alto volumen + alto intent:</strong> "cuánto cuesta", "mejores villas", "cerca playa" (tráfico + conversión)</li>
                 <li><strong>Implementar Schema crítico primero:</strong> FAQPage (8-10 páginas), Speakable (secciones clave), HowTo (guías)</li>
@@ -1165,7 +1165,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
                 <h3 class="comparacion-titulo">Invisible para Voice Search</h3>
 
                 <div class="problema-item">
-                    <div class="problema-icon">❌</div>
+                    <div class="problema-icon"></div>
                     <div class="problema-contenido">
                         <strong>Readiness Score: 32/100</strong><br>
                         Solo 6/20 elementos técnicos implementados.
@@ -1174,7 +1174,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
                 </div>
 
                 <div class="problema-item">
-                    <div class="problema-icon">❌</div>
+                    <div class="problema-icon"></div>
                     <div class="problema-contenido">
                         <strong>Cobertura Keywords Voice: 13% (2/15)</strong><br>
                         13 queries conversacionales NO cubiertas.
@@ -1183,7 +1183,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
                 </div>
 
                 <div class="problema-item">
-                    <div class="problema-icon">❌</div>
+                    <div class="problema-icon"></div>
                     <div class="problema-contenido">
                         <strong>Velocidad Móvil: 4.2s LCP</strong><br>
                         Voice search 95% desde móvil.
@@ -1192,7 +1192,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
                 </div>
 
                 <div class="problema-item">
-                    <div class="problema-icon">❌</div>
+                    <div class="problema-icon"></div>
                     <div class="problema-contenido">
                         <strong>Contenido NO conversacional</strong><br>
                         Keywords stuffing ("villa piscina ibiza lujo").
@@ -1201,7 +1201,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
                 </div>
 
                 <div class="problema-item">
-                    <div class="problema-icon">❌</div>
+                    <div class="problema-icon"></div>
                     <div class="problema-contenido">
                         <strong>0 Featured Snippets capturados</strong><br>
                         Google Assistant lee Featured Snippet en 40-50% casos.
@@ -1218,7 +1218,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
             <!-- FLECHA TRANSFORMACIÓN -->
             <div class="comparacion-flecha">
                 <div class="flecha-container">
-                    <div class="flecha-icon">🎤</div>
+                    <div class="flecha-icon"></div>
                     <div class="flecha-text">VOICE<br>OPTIMIZATION</div>
                     <div class="flecha-arrow">→</div>
                 </div>
@@ -1232,7 +1232,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
                 <h3 class="comparacion-titulo">Líder en Voice Search Villas Ibiza</h3>
 
                 <div class="solucion-item">
-                    <div class="solucion-icon">✅</div>
+                    <div class="solucion-icon"></div>
                     <div class="solucion-contenido">
                         <strong>Readiness Score: 85-92/100</strong><br>
                         18/20 elementos implementados. FAQPage en 10 páginas.
@@ -1241,7 +1241,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
                 </div>
 
                 <div class="solucion-item">
-                    <div class="solucion-icon">✅</div>
+                    <div class="solucion-icon"></div>
                     <div class="solucion-contenido">
                         <strong>Cobertura Keywords Voice: 80-93% (12-14/15)</strong><br>
                         12-14 queries optimizadas con contenido conversacional.
@@ -1250,7 +1250,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
                 </div>
 
                 <div class="solucion-item">
-                    <div class="solucion-icon">✅</div>
+                    <div class="solucion-icon"></div>
                     <div class="solucion-contenido">
                         <strong>Velocidad Móvil: 2.1s LCP</strong><br>
                         WebP, CDN, lazy loading, critical CSS.
@@ -1259,7 +1259,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
                 </div>
 
                 <div class="solucion-item">
-                    <div class="solucion-icon">✅</div>
+                    <div class="solucion-icon"></div>
                     <div class="solucion-contenido">
                         <strong>15-20 páginas lenguaje natural</strong><br>
                         "¿Dónde puedo alquilar...?" como H2.
@@ -1268,7 +1268,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
                 </div>
 
                 <div class="solucion-item">
-                    <div class="solucion-icon">✅</div>
+                    <div class="solucion-icon"></div>
                     <div class="solucion-contenido">
                         <strong>8-10 Featured Snippets capturados</strong><br>
                         Listas optimizadas, tablas, definiciones.
@@ -1385,7 +1385,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
         </table>
 
         <div class="nota-importante">
-            <div class="nota-icon">⚠️</div>
+            <div class="nota-icon">️</div>
             <div class="nota-contenido">
                 <strong>Nota Importante sobre Voice Search:</strong><br>
                 Voice search tiene <strong>comportamiento "winner-takes-all"</strong>. A diferencia de búsqueda escrita (usuarios ven 10 resultados):
@@ -1500,9 +1500,9 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 
             <div class="coverage-status">
                 <?php if ($pregunta['cubierta']): ?>
-                <span class="coverage-yes">✓ Cubierta en: <?php echo htmlspecialchars($pregunta['url_actual']); ?></span>
+                <span class="coverage-yes"> Cubierta en: <?php echo htmlspecialchars($pregunta['url_actual']); ?></span>
                 <?php else: ?>
-                <span class="coverage-no">✗ No cubierta - Oportunidad de crear contenido</span>
+                <span class="coverage-no"> No cubierta - Oportunidad de crear contenido</span>
                 <?php endif; ?>
             </div>
         </div>
@@ -1518,7 +1518,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
             <?php foreach ($optimizacion_tecnica ?? [] as $item): ?>
             <li>
                 <span class="check-icon <?php echo $item['implementado'] ? 'yes' : 'no'; ?>">
-                    <?php echo $item['implementado'] ? '✓' : '✗'; ?>
+                    <?php echo $item['implementado'] ? '' : ''; ?>
                 </span>
                 <div style="flex: 1;">
                     <div><strong><?php echo htmlspecialchars($item['nombre']); ?></strong></div>

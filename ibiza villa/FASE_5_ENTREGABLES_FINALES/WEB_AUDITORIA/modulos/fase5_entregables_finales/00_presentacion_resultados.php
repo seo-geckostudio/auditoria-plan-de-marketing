@@ -583,7 +583,7 @@
 
         <!-- Oportunidades -->
         <section class="opportunities-section">
-            <h2><i class="fas fa-lightbulb"></i> Oportunidades de Mejora</h2>
+            <h2><i class="fas fa-info-circle"></i> Oportunidades de Mejora</h2>
 
             <?php foreach ($datosModulo['hallazgos_principales']['oportunidades'] as $oportunidad): ?>
             <div class="opportunity-card">
@@ -735,7 +735,7 @@
 }
 
 .strength-card li::before {
-    content: '✓';
+    content: '';
     position: absolute;
     left: 0;
     color: #88B04B;
@@ -1149,7 +1149,7 @@
 }
 
 .phase-section li::before {
-    content: '✓';
+    content: '';
     position: absolute;
     left: 0;
     color: #88B04B;

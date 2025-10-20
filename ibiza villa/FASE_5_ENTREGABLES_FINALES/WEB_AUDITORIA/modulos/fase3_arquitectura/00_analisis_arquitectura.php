@@ -37,7 +37,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
         <!-- SECCIÓN EDUCATIVA: ¿Qué es la Arquitectura Web? -->
         <section class="concepto-educativo">
             <div class="concepto-header">
-                <span class="concepto-icon">📚</span>
+                <span class="concepto-icon"></span>
                 <h2>¿Qué es la Arquitectura Web y Por Qué es Importante?</h2>
             </div>
             <div class="concepto-content">
@@ -48,7 +48,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                 </p>
                 <div class="analogia-box">
                     <div class="analogia-header">
-                        <span class="analogia-icon">💡</span>
+                        <i class="fas fa-info-circle"></i>
                         <strong>Piensa en tu sitio web como un edificio de apartamentos:</strong>
                     </div>
                     <ul class="analogia-list">
@@ -66,19 +66,19 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                     <h3>¿Cómo Afecta la Arquitectura a Tu Negocio?</h3>
                     <div class="impacto-grid">
                         <div class="impacto-item">
-                            <span class="impacto-icon">🔍</span>
+                            <span class="impacto-icon"></span>
                             <div class="impacto-text">
                                 <strong>SEO:</strong> Google rastrea mejor sitios bien organizados. Páginas a >3 clics pierden 40-60% de visibilidad.
                             </div>
                         </div>
                         <div class="impacto-item">
-                            <span class="impacto-icon">👥</span>
+                            <span class="impacto-icon"></span>
                             <div class="impacto-text">
                                 <strong>Usuarios:</strong> Cada clic adicional = -10% tasa de conversión. Simplicidad = más reservas.
                             </div>
                         </div>
                         <div class="impacto-item">
-                            <span class="impacto-icon">⚡</span>
+                            <span class="impacto-icon"></span>
                             <div class="impacto-text">
                                 <strong>Crawl Budget:</strong> Google tiene tiempo limitado. Arquitectura eficiente = más páginas indexadas.
                             </div>
@@ -91,7 +91,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
         <!-- SECCIÓN: Archivos de Trabajo Descargables -->
         <section class="entregables-section">
             <div class="entregables-header">
-                <span class="entregables-icon">📄</span>
+                <span class="entregables-icon"></span>
                 <h2>Archivos de Trabajo para Implementar las Mejoras</h2>
             </div>
             <p class="entregables-intro">
@@ -143,7 +143,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                 </div>
             </div>
             <div class="como-usar-entregables">
-                <h3>💡 Cómo Usar Estos Archivos</h3>
+                <h3> Cómo Usar Estos Archivos</h3>
                 <ol class="uso-list">
                     <li><strong>Descarga</strong> el CSV haciendo clic en el botón azul</li>
                     <li><strong>Ábrelo</strong> en Excel, Google Sheets o Numbers</li>
@@ -157,7 +157,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
         <!-- SECCIÓN: Comparación Visual ANTES vs DESPUÉS -->
         <section class="comparacion-antes-despues">
             <div class="comparacion-main-header">
-                <span class="comparacion-main-icon">🔍</span>
+                <span class="comparacion-main-icon"></span>
                 <h2>Situación Actual vs. Propuesta de Mejora</h2>
             </div>
             <p class="comparacion-intro">
@@ -175,7 +175,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         <!-- Diagrama visual simplificado -->
                         <div class="arquitectura-visual">
                             <div class="arq-nivel nivel-0">
-                                <div class="arq-nodo home">🏠 Home</div>
+                                <div class="arq-nodo home"> Home</div>
                             </div>
                             <div class="arq-nivel nivel-1">
                                 <div class="arq-nodo categoria">Villas</div>
@@ -200,28 +200,28 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                             <h4>Problemas Detectados:</h4>
                             <ul>
                                 <li class="problema-item">
-                                    <span class="icon-error">❌</span>
+                                    <span class="icon-error"></span>
                                     <div class="problema-texto">
                                         <strong>127 páginas huérfanas</strong> sin enlaces internos
                                         <span class="problema-detalle">No reciben autoridad ni tráfico</span>
                                     </div>
                                 </li>
                                 <li class="problema-item">
-                                    <span class="icon-error">❌</span>
+                                    <span class="icon-error"></span>
                                     <div class="problema-texto">
                                         <strong>26 páginas a >4 clics</strong> de profundidad excesiva
                                         <span class="problema-detalle">Google raramente las rastrea</span>
                                     </div>
                                 </li>
                                 <li class="problema-item">
-                                    <span class="icon-error">❌</span>
+                                    <span class="icon-error"></span>
                                     <div class="problema-texto">
                                         <strong>Profundidad media: 3.8 clics</strong>
                                         <span class="problema-detalle">Objetivo: ≤3 clics para páginas clave</span>
                                     </div>
                                 </li>
                                 <li class="problema-item">
-                                    <span class="icon-error">❌</span>
+                                    <span class="icon-error"></span>
                                     <div class="problema-texto">
                                         <strong>Pérdida estimada:</strong> 1,200-1,500 sesiones/mes
                                         <span class="problema-detalle">Por baja visibilidad de contenido valioso</span>
@@ -234,7 +234,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
                 <!-- FLECHA DE TRANSFORMACIÓN -->
                 <div class="transformacion-arrow">
-                    <div class="arrow-icon">➡️</div>
+                    <div class="arrow-icon">️</div>
                     <p class="arrow-text">Implementando<br>las acciones<br>del CSV</p>
                 </div>
 
@@ -248,7 +248,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         <!-- Diagrama visual mejorado -->
                         <div class="arquitectura-visual">
                             <div class="arq-nivel nivel-0">
-                                <div class="arq-nodo home">🏠 Home</div>
+                                <div class="arq-nodo home"> Home</div>
                             </div>
                             <div class="arq-nivel nivel-1">
                                 <div class="arq-nodo categoria mejorado">Villas</div>
@@ -264,7 +264,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                                 <div class="arq-nodo pagina mejorado">Todas a ≤3 clics</div>
                             </div>
                             <div class="arq-nota-mejora">
-                                ✅ Todas las páginas enlazadas desde categorías relevantes
+                                 Todas las páginas enlazadas desde categorías relevantes
                             </div>
                         </div>
 
@@ -273,28 +273,28 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                             <h4>Mejoras Implementadas:</h4>
                             <ul>
                                 <li class="mejora-item">
-                                    <span class="icon-success">✅</span>
+                                    <span class="icon-success"></span>
                                     <div class="mejora-texto">
                                         <strong>127 páginas enlazadas</strong> desde categorías relevantes
                                         <span class="mejora-detalle">Reciben autoridad y son rastreables</span>
                                     </div>
                                 </li>
                                 <li class="mejora-item">
-                                    <span class="icon-success">✅</span>
+                                    <span class="icon-success"></span>
                                     <div class="mejora-texto">
                                         <strong>26 páginas reducidas</strong> a ≤3 clics de profundidad
                                         <span class="mejora-detalle">Google las rastrea regularmente</span>
                                     </div>
                                 </li>
                                 <li class="mejora-item">
-                                    <span class="icon-success">✅</span>
+                                    <span class="icon-success"></span>
                                     <div class="mejora-texto">
                                         <strong>Profundidad media: 2.1 clics</strong>
                                         <span class="mejora-detalle">Reducción del 45%</span>
                                     </div>
                                 </li>
                                 <li class="mejora-item">
-                                    <span class="icon-success">✅</span>
+                                    <span class="icon-success"></span>
                                     <div class="mejora-texto">
                                         <strong>Ganancia estimada:</strong> +1,200-1,500 sesiones/mes
                                         <span class="mejora-detalle">Contenido valioso ahora es visible</span>
@@ -312,7 +312,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
             <div class="section-badge-container">
                 <span class="section-badge badge-despues">DESPUÉS - RESULTADOS ESPERADOS</span>
             </div>
-            <h2>📈 Resultados Esperados (30-90 días post-implementación)</h2>
+            <h2> Resultados Esperados (30-90 días post-implementación)</h2>
             <p class="kpis-intro">
                 Si implementas las acciones de los archivos CSV descargables, estos son los resultados que puedes esperar ver en tu sitio:
             </p>
@@ -450,7 +450,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
             <div class="kpis-nota-importante">
                 <div class="nota-header">
-                    <span class="nota-icon">💡</span>
+                    <span class="nota-icon"></span>
                     <strong>Nota Importante</strong>
                 </div>
                 <p>

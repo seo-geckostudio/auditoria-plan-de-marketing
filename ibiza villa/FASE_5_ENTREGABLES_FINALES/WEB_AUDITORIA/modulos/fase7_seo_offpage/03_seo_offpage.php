@@ -23,7 +23,7 @@ $paginas = $datosModulo['paginas'];
 <div class="audit-page offpage-educativo">
     <section class="concepto-educativo">
         <div class="concepto-header">
-            <span class="concepto-icon">📚</span>
+            <span class="concepto-icon"></span>
             <h2>¿Qué es el SEO Off-Page y Por Qué Google Te Ignora Sin Él?</h2>
         </div>
         <div class="concepto-content">
@@ -34,7 +34,7 @@ $paginas = $datosModulo['paginas'];
             </p>
             <div class="analogia-box">
                 <div class="analogia-header">
-                    <span class="analogia-icon">💡</span>
+                    <i class="fas fa-info-circle"></i>
                     <strong>Piensa en el SEO Off-Page como un sistema de recomendaciones profesionales:</strong>
                 </div>
                 <ul class="analogia-list">
@@ -52,19 +52,19 @@ $paginas = $datosModulo['paginas'];
             </div>
             <div class="impacto-negocio-grid">
                 <div class="impacto-item">
-                    <span class="impacto-icon">🏆</span>
+                    <span class="impacto-icon"></span>
                     <h3>Autoridad y Rankings</h3>
                     <p>Un DR alto (50-70) te permite competir por keywords difíciles. Ibiza Villa (DR 38) compite contra
                     sitios DR 60-80. Subir a DR 50 = acceso a primeras posiciones en búsquedas de alto volumen.</p>
                 </div>
                 <div class="impacto-item">
-                    <span class="impacto-icon">💰</span>
+                    <i class="fas fa-dollar-sign"></i>
                     <h3>Tráfico de Referencia</h3>
                     <p>Un backlink en Timeout.com (DR 78) puede generar 400-600 visitas/mes directas MÁS el impulso SEO.
                     15 backlinks estratégicos = +2,500-4,000 visitas/mes cualificadas.</p>
                 </div>
                 <div class="impacto-item">
-                    <span class="impacto-icon">🚀</span>
+                    <span class="impacto-icon"></span>
                     <h3>Efecto Acumulativo</h3>
                     <p>Los backlinks se acumulan con el tiempo. Una estrategia de 3-6 meses consiguiendo 2-3 links/mes
                     de DR 50+ multiplica tu autoridad permanentemente. El ROI aumenta cada mes.</p>
@@ -76,7 +76,7 @@ $paginas = $datosModulo['paginas'];
     <!-- SECCIÓN ENTREGABLES -->
     <section class="entregables-section">
         <div class="entregables-header">
-            <span class="entregables-icon">📄</span>
+            <span class="entregables-icon"></span>
             <h2>Archivos de Trabajo para Tu Estrategia de Link Building</h2>
         </div>
         <p class="entregables-intro">
@@ -136,7 +136,7 @@ $paginas = $datosModulo['paginas'];
         </div>
 
         <div class="instrucciones-uso">
-            <h3><i class="fas fa-lightbulb"></i> Instrucciones de Implementación</h3>
+            <h3><i class="fas fa-info-circle"></i> Instrucciones de Implementación</h3>
             <ol class="instrucciones-list">
                 <li>
                     <strong>Eliminar enlaces tóxicos PRIMERO</strong> - crea y sube archivo disavow.txt a GSC
@@ -163,7 +163,7 @@ $paginas = $datosModulo['paginas'];
     <!-- COMPARACIÓN ANTES/DESPUÉS -->
     <section class="comparacion-antes-despues">
         <div class="comparacion-main-header">
-            <span class="comparacion-main-icon">🔍</span>
+            <span class="comparacion-main-icon"></span>
             <h2>Perfil de Enlaces Actual vs. Estrategia Optimizada</h2>
         </div>
         <div class="comparacion-grid">
@@ -178,35 +178,35 @@ $paginas = $datosModulo['paginas'];
                         <h4>Problemas Críticos Detectados:</h4>
                         <ul>
                             <li class="problema-item">
-                                <span class="icon-error">❌</span>
+                                <span class="icon-error"></span>
                                 <div class="problema-texto">
                                     <strong>DR 38 - Por debajo de competencia (promedio DR 58)</strong>
                                     <span class="problema-detalle">20 puntos de diferencia = competidores dominan primeras posiciones</span>
                                 </div>
                             </li>
                             <li class="problema-item">
-                                <span class="icon-error">❌</span>
+                                <span class="icon-error"></span>
                                 <div class="problema-texto">
                                     <strong>Solo 248 dominios referidos (competencia: 600-1,200)</strong>
                                     <span class="problema-detalle">3-5x menos backlinks que competidores directos</span>
                                 </div>
                             </li>
                             <li class="problema-item">
-                                <span class="icon-error">❌</span>
+                                <span class="icon-error"></span>
                                 <div class="problema-texto">
                                     <strong>10 enlaces tóxicos activos (Spam Score 78-100)</strong>
                                     <span class="problema-detalle">Riesgo de penalización manual + pérdida DR 2-4 puntos</span>
                                 </div>
                             </li>
                             <li class="problema-item">
-                                <span class="icon-error">❌</span>
+                                <span class="icon-error"></span>
                                 <div class="problema-texto">
                                     <strong>Perfil backlinks: 78% links de DR bajo (<30)</strong>
                                     <span class="problema-detalle">Falta autoridad transferida - links de poca calidad</span>
                                 </div>
                             </li>
                             <li class="problema-item">
-                                <span class="icon-error">❌</span>
+                                <span class="icon-error"></span>
                                 <div class="problema-texto">
                                     <strong>Sin estrategia link building activa</strong>
                                     <span class="problema-detalle">Crecimiento orgánico lento: +2-3 dominios/mes vs 8-12 necesarios</span>
@@ -236,35 +236,35 @@ $paginas = $datosModulo['paginas'];
                         <h4>Mejoras Implementadas (3-6 meses):</h4>
                         <ul>
                             <li class="mejora-item">
-                                <span class="icon-success">✅</span>
+                                <span class="icon-success"></span>
                                 <div class="mejora-texto">
                                     <strong>DR 46-52 - Reducción gap competencia a 6-12 puntos</strong>
                                     <span class="mejora-detalle">15 backlinks DR 50-91 + disavow tóxicos = +8-14 puntos DR</span>
                                 </div>
                             </li>
                             <li class="mejora-item">
-                                <span class="icon-success">✅</span>
+                                <span class="icon-success"></span>
                                 <div class="mejora-texto">
                                     <strong>380-450 dominios referidos (+53-81%)</strong>
                                     <span class="mejora-detalle">Estrategia 2-3 backlinks/mes calidad DR >50</span>
                                 </div>
                             </li>
                             <li class="mejora-item">
-                                <span class="icon-success">✅</span>
+                                <span class="icon-success"></span>
                                 <div class="mejora-texto">
                                     <strong>0 enlaces tóxicos - Disavow completo ejecutado</strong>
                                     <span class="mejora-detalle">Perfil limpio + recuperación DR perdido</span>
                                 </div>
                             </li>
                             <li class="mejora-item">
-                                <span class="icon-success">✅</span>
+                                <span class="icon-success"></span>
                                 <div class="mejora-texto">
                                     <strong>Perfil mejorado: 45% links DR 50+ (antes 22%)</strong>
                                     <span class="mejora-detalle">Priorización calidad sobre cantidad - autoridad transferida real</span>
                                 </div>
                             </li>
                             <li class="mejora-item">
-                                <span class="icon-success">✅</span>
+                                <span class="icon-success"></span>
                                 <div class="mejora-texto">
                                     <strong>Estrategia activa: 8-12 oportunidades/mes identificadas</strong>
                                     <span class="mejora-detalle">Pipeline estructurado guest posts + partnerships + PR digital</span>
@@ -282,7 +282,7 @@ $paginas = $datosModulo['paginas'];
         <div class="section-badge-container">
             <span class="section-badge badge-despues">DESPUÉS - RESULTADOS ESPERADOS</span>
         </div>
-        <h2>📈 KPIs y Resultados Esperados con Estrategia Link Building</h2>
+        <h2> KPIs y Resultados Esperados con Estrategia Link Building</h2>
         <div class="tabla-kpis-container">
             <table class="tabla-kpis">
                 <thead>
@@ -777,7 +777,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             <div class="findings-card opportunities">
-                <h3><i class="fas fa-lightbulb"></i> Oportunidades</h3>
+                <h3><i class="fas fa-info-circle"></i> Oportunidades</h3>
                 <ul class="findings-list">
                     <?php foreach ($oportunidades as $oportunidad): ?>
                     <li><?php echo htmlspecialchars($oportunidad); ?></li>
@@ -1140,7 +1140,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Recomendaciones Finales -->
         <div class="final-recommendations">
-            <h3><i class="fas fa-lightbulb"></i> Recomendaciones Clave</h3>
+            <h3><i class="fas fa-info-circle"></i> Recomendaciones Clave</h3>
             <div class="recommendations-grid">
                 <div class="rec-card">
                     <div class="rec-icon"><i class="fas fa-shield-alt"></i></div>
@@ -1769,14 +1769,14 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .findings-card.problems .findings-list li:before {
-    content: "⚠";
+    content: "";
     position: absolute;
     left: 0;
     color: #e53e3e;
 }
 
 .findings-card.opportunities .findings-list li:before {
-    content: "✓";
+    content: "";
     position: absolute;
     left: 0;
     color: #48bb78;
@@ -2355,7 +2355,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .offpage-educativo .analogia-list li::before {
-    content: "🔗";
+    content: "";
     position: absolute;
     left: 0;
     font-size: 20px;

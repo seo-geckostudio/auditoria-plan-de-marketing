@@ -389,7 +389,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
 }
 
 .featured-snippets-page .analogia-list li:before {
-    content: "🏆";
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -1094,7 +1094,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
     <!-- Sección Educativa: ¿Qué son los Featured Snippets? -->
     <section class="concepto-educativo">
         <div class="concepto-header">
-            <span class="concepto-icon">🏆</span>
+            <span class="concepto-icon"></span>
             <h2>¿Qué son los Featured Snippets y Por Qué son Críticos para Ibiza Villa?</h2>
         </div>
         <div class="concepto-content">
@@ -1107,7 +1107,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
 
             <div class="analogia-box">
                 <div class="analogia-header">
-                    <span class="analogia-icon">💡</span>
+                    <i class="fas fa-info-circle"></i>
                     <strong>Piensa en Featured Snippets como la Portada de una Revista de Viajes de Lujo:</strong>
                 </div>
                 <ul class="analogia-list">
@@ -1121,21 +1121,21 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
 
             <div class="impacto-negocio-grid">
                 <div class="impacto-item">
-                    <div class="impacto-icon">📊</div>
+                    <div class="impacto-icon"></div>
                     <div class="impacto-texto">
                         <strong>CTR Masivo</strong>
                         <p>Posición 0 = 35-50% CTR vs Posición #1 = 15-20% CTR. <strong>2-3x más clics</strong> con misma keyword.</p>
                     </div>
                 </div>
                 <div class="impacto-item">
-                    <div class="impacto-icon">🎯</div>
+                    <div class="impacto-icon"></div>
                     <div class="impacto-texto">
                         <strong>Autoridad de Marca</strong>
                         <p>Google te presenta como <strong>LA respuesta autorizada</strong>. Efecto halo: usuarios confían más en tu marca.</p>
                     </div>
                 </div>
                 <div class="impacto-item">
-                    <div class="impacto-icon">💰</div>
+                    <div class="impacto-icon"></div>
                     <div class="impacto-texto">
                         <strong>Tráfico Cualificado</strong>
                         <p>Queries informativas (precios, cómo, mejores) = <strong>usuarios en fase de investigación</strong> que luego reservan.</p>
@@ -1148,7 +1148,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
     <!-- Entregables CSV Descargables -->
     <section class="entregables-csv">
         <div class="entregables-header">
-            <span class="badge-seccion badge-despues">✅ DESPUÉS - HERRAMIENTAS DE OPTIMIZACIÓN</span>
+            <span class="badge-seccion badge-despues"> DESPUÉS - HERRAMIENTAS DE OPTIMIZACIÓN</span>
             <h3>Archivos CSV Descargables para Implementación</h3>
             <p>Descarga estos archivos con las oportunidades específicas identificadas y la guía de optimización por tipo de snippet.</p>
         </div>
@@ -1157,7 +1157,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
             <!-- CSV 1: Oportunidades Featured Snippets -->
             <div class="csv-card">
                 <div class="csv-card-header">
-                    <span class="csv-icon">📄</span>
+                    <span class="csv-icon"></span>
                     <h4>Featured Snippets - Oportunidades</h4>
                     <span class="csv-priority priority-critica">Muy Alta Prioridad</span>
                 </div>
@@ -1193,7 +1193,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
             <!-- CSV 2: Guía de Optimización por Tipo de Snippet -->
             <div class="csv-card">
                 <div class="csv-card-header">
-                    <span class="csv-icon">📋</span>
+                    <span class="csv-icon"></span>
                     <h4>Guía de Optimización por Tipo de Snippet</h4>
                     <span class="csv-priority priority-alta">Alta Prioridad</span>
                 </div>
@@ -1228,7 +1228,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
 
         <!-- Instrucciones de Uso -->
         <div class="instrucciones-uso">
-            <h4>📖 Cómo usar estos archivos:</h4>
+            <h4> Cómo usar estos archivos:</h4>
             <ol>
                 <li><strong>Descarga ambos CSV</strong> y ábrelos en Excel/Google Sheets</li>
                 <li><strong>Prioriza por volumen y CTR ganancia</strong>: Empieza por queries de mayor tráfico potencial</li>
@@ -1249,7 +1249,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
             <!-- Columna ANTES -->
             <div class="comparacion-columna columna-antes">
                 <div class="columna-header antes-header">
-                    <span class="header-icon">❌</span>
+                    <span class="header-icon"></span>
                     <h4>ANTES - Situación Actual</h4>
                     <span class="subtitle">Featured Snippets Desaprovechados</span>
                 </div>
@@ -1298,7 +1298,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
             <!-- Flecha de transformación -->
             <div class="comparacion-flecha">
                 <div class="flecha-contenido">
-                    <div class="flecha-icono">🏆</div>
+                    <div class="flecha-icono"></div>
                     <div class="flecha-texto">FEATURED SNIPPETS</div>
                     <div class="flecha-subtexto">Posición 0</div>
                 </div>
@@ -1307,7 +1307,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
             <!-- Columna DESPUÉS -->
             <div class="comparacion-columna columna-despues">
                 <div class="columna-header despues-header">
-                    <span class="header-icon">✅</span>
+                    <span class="header-icon"></span>
                     <h4>DESPUÉS - Implementación Completada</h4>
                     <span class="subtitle">Posición 0 Capturada (3-4 meses)</span>
                 </div>
@@ -1458,7 +1458,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
         </table>
 
         <div class="nota-importante">
-            <strong>⚠️ Nota Importante:</strong> Featured Snippets tienen comportamiento <strong>"winner-takes-most"</strong>:
+            <strong>️ Nota Importante:</strong> Featured Snippets tienen comportamiento <strong>"winner-takes-most"</strong>:
             <ul>
                 <li>Posición 0 (snippet) captura <strong>35-50% de los clics</strong> de esa query</li>
                 <li>Posición #1 tradicional (debajo del snippet) solo recibe <strong>15-20% CTR</strong> (antes recibía 30-35%)</li>
@@ -1471,7 +1471,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
 
     <!-- Resumen Ejecutivo -->
     <div class="executive-summary">
-        <span class="badge-seccion badge-antes">🔍 ANTES - SITUACIÓN ACTUAL</span>
+        <span class="badge-seccion badge-antes"> ANTES - SITUACIÓN ACTUAL</span>
         <h2>Resumen Ejecutivo</h2>
         <p><?php echo htmlspecialchars($resumen['descripcion'] ?? ''); ?></p>
 

@@ -32,7 +32,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
         <!-- SECCIÓN EDUCATIVA: ¿Qué es el Tráfico Orgánico? -->
         <section class="concepto-educativo">
             <div class="concepto-header">
-                <span class="concepto-icon">🚪</span>
+                <span class="concepto-icon"></span>
                 <h2>¿Qué es el Tráfico Orgánico y Por Qué es Crítico para Ibiza Villa?</h2>
             </div>
             <div class="concepto-content">
@@ -43,7 +43,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
                 </p>
                 <div class="analogia-box">
                     <div class="analogia-header">
-                        <span class="analogia-icon">💡</span>
+                        <i class="fas fa-info-circle"></i>
                         <strong>Piensa en el Tráfico Orgánico como la Puerta de Entrada a una Villa de Lujo:</strong>
                     </div>
                     <ul class="analogia-list">
@@ -60,21 +60,21 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
                     <h3>Impacto en el Negocio de Ibiza Villa:</h3>
                     <div class="impacto-grid">
                         <div class="impacto-item">
-                            <span class="impacto-icon">💰</span>
+                            <i class="fas fa-dollar-sign"></i>
                             <strong>ROI Altísimo vs Publicidad</strong>
                             <p>Tráfico orgánico tiene coste marginal casi cero (no pagas por clic).
                             114,500 sesiones orgánicas × €0.00/clic = €0 vs PPC similar = €120k-180k/año.
                             Conversiones orgánicas generaron €5.6M en 2024 sin coste directo de adquisición.</p>
                         </div>
                         <div class="impacto-item">
-                            <span class="impacto-icon">🎯</span>
+                            <i class="fas fa-bullseye"></i>
                             <strong>Alta Intención de Compra</strong>
                             <p>Usuarios que buscan "villa lujo ibiza 10 personas agosto" tienen intención transaccional clara.
                             Tasa conversión orgánica (1.63%) es 2-3x mayor que otros canales (social 0.5%, display 0.3%).
                             Cada mejora +0.5% conversión = +€1.4M-2.1M revenue adicional/año.</p>
                         </div>
                         <div class="impacto-item">
-                            <span class="impacto-icon">📈</span>
+                            <span class="impacto-icon"></span>
                             <strong>Crecimiento Compuesto a Largo Plazo</strong>
                             <p>SEO es activo acumulativo: contenido creado hoy genera tráfico años.
                             Artículo blog "Mejores zonas Ibiza" posición #3 genera 450 sesiones/mes durante 2-3 años (10,800-16,200 sesiones lifetime).
@@ -97,7 +97,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
                 <!-- CSV 1: Tráfico Orgánico General -->
                 <div class="csv-card">
                     <div class="csv-card-header">
-                        <span class="csv-icon">📊</span>
+                        <span class="csv-icon"></span>
                         <h3>CSV 1: Tráfico Orgánico Mensual 2024</h3>
                         <span class="badge badge-high">Prioridad Muy Alta</span>
                     </div>
@@ -149,7 +149,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
                 <!-- CSV 2: Tendencias y Análisis -->
                 <div class="csv-card">
                     <div class="csv-card-header">
-                        <span class="csv-icon">📈</span>
+                        <span class="csv-icon"></span>
                         <h3>CSV 2: Tendencias y Análisis vs Benchmarks</h3>
                         <span class="badge badge-critical">Prioridad Crítica</span>
                     </div>
@@ -225,23 +225,23 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
                 <!-- COLUMNA ANTES -->
                 <div class="comparacion-columna columna-antes">
                     <div class="columna-header">
-                        <span class="badge badge-antes">🔍 ANTES - SITUACIÓN ACTUAL 2024</span>
+                        <span class="badge badge-antes"> ANTES - SITUACIÓN ACTUAL 2024</span>
                         <h3>Tráfico Orgánico Actual (Baseline)</h3>
                     </div>
                     <div class="columna-content">
                         <div class="problema-item">
-                            <span class="problema-icon">❌</span>
+                            <span class="problema-icon"></span>
                             <div class="problema-text">
                                 <strong>Tasa Rebote Alta: 54.1% (vs 45% benchmark)</strong>
                                 <p>Más de la mitad de visitantes abandonan sin explorar. Hero home no comunica propuesta valor claramente,
-                                falta social proof visible (reviews 4.8★ enterradas), sin comparador villas, carga lenta móvil (LCP 4.2s).
+                                falta social proof visible (reviews 4.8 enterradas), sin comparador villas, carga lenta móvil (LCP 4.2s).
                                 Primera impresión no convence = pérdida inmediata.</p>
                                 <span class="problema-dato">Pérdida: ~10,350 visitantes/año (9.1% × 114k) se van inmediatamente = -€1.5M-2.3M/año</span>
                             </div>
                         </div>
 
                         <div class="problema-item">
-                            <span class="problema-icon">❌</span>
+                            <span class="problema-icon"></span>
                             <div class="problema-text">
                                 <strong>Posición Promedio GSC: 24.6 (vs 12.5 benchmark)</strong>
                                 <p>Ranking promedio en página 3 de Google (posiciones 21-30). Solo 2.8% CTR vs 4.5% sector.
@@ -252,7 +252,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
                         </div>
 
                         <div class="problema-item">
-                            <span class="problema-icon">❌</span>
+                            <span class="problema-icon"></span>
                             <div class="problema-text">
                                 <strong>Páginas por Sesión: 3.52 (vs 4.20 benchmark)</strong>
                                 <p>Visitantes exploran pocas páginas. Internal linking deficiente: villas no sugieren similares,
@@ -263,7 +263,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
                         </div>
 
                         <div class="problema-item">
-                            <span class="problema-icon">❌</span>
+                            <span class="problema-icon"></span>
                             <div class="problema-text">
                                 <strong>Tasa Conversión: 1.63% (vs 2.5-3.5% benchmark)</strong>
                                 <p>De cada 100 visitantes orgánicos, solo 1.6 reservan. Faltan elementos de confianza: calendar disponibilidad
@@ -274,7 +274,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
                         </div>
 
                         <div class="problema-item">
-                            <span class="problema-icon">❌</span>
+                            <span class="problema-icon"></span>
                             <div class="problema-text">
                                 <strong>Estacionalidad Extrema: Ratio 2.4x (Alta vs Baja)</strong>
                                 <p>51% del tráfico concentrado en 4 meses (Jun-Sep). Temporada baja (Oct-Mar) promedio 6,025 sesiones/mes
@@ -307,15 +307,15 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
                 <!-- COLUMNA DESPUÉS -->
                 <div class="comparacion-columna columna-despues">
                     <div class="columna-header">
-                        <span class="badge badge-despues">✅ DESPUÉS - RESULTADOS ESPERADOS (6-12 meses)</span>
+                        <span class="badge badge-despues"> DESPUÉS - RESULTADOS ESPERADOS (6-12 meses)</span>
                         <h3>Tráfico Orgánico Optimizado</h3>
                     </div>
                     <div class="columna-content">
                         <div class="solucion-item">
-                            <span class="solucion-icon">✅</span>
+                            <span class="solucion-icon"></span>
                             <div class="solucion-text">
                                 <strong>Tasa Rebote Reducida: 45-48% (-6-9 puntos porcentuales)</strong>
-                                <p>Hero home rediseñado: propuesta valor above fold ("127 Villas Lujo Verificadas Ibiza"), reviews 4.8★ destacadas,
+                                <p>Hero home rediseñado: propuesta valor above fold ("127 Villas Lujo Verificadas Ibiza"), reviews 4.8 destacadas,
                                 comparador sticky 3 villas, trust badges (License, Insurance €5M), velocidad móvil <2.5s LCP optimizado WebP + CDN.
                                 Primera impresión profesional = engagement inmediato.</p>
                                 <span class="solucion-dato">Ganancia: +6.9k-10.3k visitantes retenidos/año = +€1.0M-1.5M revenue adicional</span>
@@ -323,7 +323,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
                         </div>
 
                         <div class="solucion-item">
-                            <span class="solucion-icon">✅</span>
+                            <span class="solucion-icon"></span>
                             <div class="solucion-text">
                                 <strong>Posición Promedio GSC Mejorada: 14-18 (+7-11 posiciones)</strong>
                                 <p>Quick wins keywords posición 11-20 → top 10 con content refresh + internal linking. Featured snippets capturados
@@ -334,7 +334,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
                         </div>
 
                         <div class="solucion-item">
-                            <span class="solucion-icon">✅</span>
+                            <span class="solucion-icon"></span>
                             <div class="solucion-text">
                                 <strong>Páginas por Sesión Incrementadas: 4.5-5.2 (+0.98-1.68 páginas)</strong>
                                 <p>Internal linking estratégico implementado: villas similares carousel 3 opciones, blog articles linkeando 5-8 villas relevantes,
@@ -345,7 +345,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
                         </div>
 
                         <div class="solucion-item">
-                            <span class="solucion-icon">✅</span>
+                            <span class="solucion-icon"></span>
                             <div class="solucion-text">
                                 <strong>Tasa Conversión Mejorada: 2.8-3.2% (+1.17-1.57 puntos)</strong>
                                 <p>Calendar disponibilidad integrado en todas las villas con pricing real-time transparente. Reviews específicas villa
@@ -356,7 +356,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
                         </div>
 
                         <div class="solucion-item">
-                            <span class="solucion-icon">✅</span>
+                            <span class="solucion-icon"></span>
                             <div class="solucion-text">
                                 <strong>Estacionalidad Suavizada: Ratio 1.8-2.0x (vs 2.4x actual)</strong>
                                 <p>Contenido evergreen creado: 15-20 guías Ibiza temporada baja (otoño, primavera, invierno), eventos fuera temporada
@@ -496,7 +496,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
             </div>
 
             <div class="kpis-nota">
-                <h4><i class="fas fa-lightbulb"></i> Nota Importante sobre Tráfico Orgánico</h4>
+                <h4><i class="fas fa-info-circle"></i> Nota Importante sobre Tráfico Orgánico</h4>
                 <p>
                     <strong>Tráfico orgánico es activo acumulativo con ROI compuesto a largo plazo.</strong>
                     A diferencia de publicidad (pagas → recibes tráfico → dejas pagar → tráfico desaparece), SEO tiene efecto permanente:
@@ -602,7 +602,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
 }
 
 .trafico-organico-page .analogia-list li:before {
-    content: "🚪";
+    content: "";
     position: absolute;
     left: 0;
     font-size: 1.3rem;

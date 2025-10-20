@@ -24,7 +24,7 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
         <!-- SECCIÓN EDUCATIVA -->
         <section class="concepto-educativo">
             <div class="concepto-header">
-                <span class="concepto-icon">🔍</span>
+                <span class="concepto-icon"></span>
                 <h2>¿Qué son las Queries GSC y Por Qué son Críticas?</h2>
             </div>
             <div class="concepto-content">
@@ -34,7 +34,7 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
                 </p>
                 <div class="analogia-box">
                     <div class="analogia-header">
-                        <span class="analogia-icon">💡</span>
+                        <i class="fas fa-info-circle"></i>
                         <strong>Piensa en Queries GSC como el Escaparate de tu Villa en Google:</strong>
                     </div>
                     <ul class="analogia-list">
@@ -57,7 +57,7 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
             <div class="csv-cards">
                 <div class="csv-card">
                     <div class="csv-card-header">
-                        <span class="csv-icon">📊</span>
+                        <span class="csv-icon"></span>
                         <h3>CSV 1: Top 15 Queries GSC</h3>
                         <span class="badge badge-high">15 queries principales</span>
                     </div>
@@ -87,7 +87,7 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
 
                 <div class="csv-card">
                     <div class="csv-card-header">
-                        <span class="csv-icon">⚡</span>
+                        <span class="csv-icon"></span>
                         <h3>CSV 2: Quick Wins Priorizados</h3>
                         <span class="badge badge-critical">ROI 12-28:1</span>
                     </div>
@@ -131,7 +131,7 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
                     </div>
                     <div class="columna-content">
                         <div class="problema-item">
-                            <span class="problema-icon">❌</span>
+                            <span class="problema-icon"></span>
                             <div class="problema-text">
                                 <strong>10 Queries Posición 20-35 (Página 3-4 Google)</strong>
                                 <p>Keywords con volumen alto pero posición muy baja. "Alquiler villas ibiza" posición #24.3 (28.4k impresiones/mes, solo 798 clics).
@@ -162,7 +162,7 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
                     </div>
                     <div class="columna-content">
                         <div class="solucion-item">
-                            <span class="solucion-icon">✅</span>
+                            <span class="solucion-icon"></span>
                             <div class="solucion-text">
                                 <strong>10 Queries Subidas a Top 10-20 (Página 1-2)</strong>
                                 <p>Content refresh + backlinks DR 70+ + featured snippets. "Alquiler villas ibiza" posición #24.3 → #8-12.
@@ -232,7 +232,7 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
             </div>
 
             <div class="kpis-nota">
-                <h4><i class="fas fa-lightbulb"></i> Quick Wins Strategy</h4>
+                <h4><i class="fas fa-info-circle"></i> Quick Wins Strategy</h4>
                 <p><strong>Quick Wins son keywords posición 11-35 con volumen medio-alto que podemos subir a top 10-20 con esfuerzo bajo-medio en 30-90 días.</strong></p>
                 <p>Criterios selección: (1) Posición 11-35, (2) Impresiones >1,000/mes, (3) Intent transaccional/informacional alto valor, (4) Competencia media (no dominada por OTAs gigantes).</p>
                 <p>Acciones típicas: Content refresh, internal linking, 1-2 backlinks DR 60-70, featured snippet optimization, Schema markup.</p>
@@ -254,7 +254,7 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
 .queries-gsc-page .analogia-header { display: flex; align-items: center; gap: 12px; margin-bottom: 15px; font-size: 1.15rem; }
 .queries-gsc-page .analogia-list { list-style: none; padding-left: 0; margin: 0; }
 .queries-gsc-page .analogia-list li { padding: 12px 0 12px 35px; position: relative; font-size: 1.05rem; }
-.queries-gsc-page .analogia-list li:before { content: "🔍"; position: absolute; left: 0; font-size: 1.3rem; }
+.queries-gsc-page .analogia-list li:before { content: ""; position: absolute; left: 0; font-size: 1.3rem; }
 
 .queries-gsc-page .section-header { margin-bottom: 30px; }
 .queries-gsc-page .section-header h2 { font-size: 2rem; color: #000000; }
