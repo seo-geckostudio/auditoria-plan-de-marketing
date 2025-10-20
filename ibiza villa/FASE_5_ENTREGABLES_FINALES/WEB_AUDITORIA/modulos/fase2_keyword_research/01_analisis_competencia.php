@@ -156,6 +156,11 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    width: 100%;
+}
+
+.header-text {
+    flex: 1;
 }
 
 .header-text h1 {
@@ -489,8 +494,8 @@
 
 <style>
 .keyword-gap-page {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    color: white;
+    background: white;
+    color: #333;
 }
 
 .gap-summary {
@@ -572,6 +577,7 @@
     padding: 1rem;
     text-align: left;
     border-bottom: 1px solid #e0e0e0;
+    vertical-align: middle;
 }
 
 .gap-table th {
@@ -617,9 +623,6 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    max-height: 120px;
-    overflow-y: auto;
-    padding-right: 0.5rem;
 }
 
 .comp-pos {
