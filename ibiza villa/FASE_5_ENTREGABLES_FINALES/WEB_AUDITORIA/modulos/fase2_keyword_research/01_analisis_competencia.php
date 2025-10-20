@@ -544,10 +544,12 @@
 
 .gap-table {
     width: 100%;
+    min-width: 900px;
     border-collapse: collapse;
     background: white;
     border-radius: 0.5rem;
     overflow: hidden;
+    table-layout: fixed;
 }
 
 .gap-table thead {
@@ -565,6 +567,20 @@
 .gap-table th {
     font-weight: 600;
 }
+
+/* Anchos específicos para cada columna */
+.gap-table th:nth-child(1),
+.gap-table td:nth-child(1) { width: 25%; } /* Keyword */
+.gap-table th:nth-child(2),
+.gap-table td:nth-child(2) { width: 12%; } /* Nuestra Pos */
+.gap-table th:nth-child(3),
+.gap-table td:nth-child(3) { width: 25%; } /* Competencia */
+.gap-table th:nth-child(4),
+.gap-table td:nth-child(4) { width: 12%; } /* Volumen */
+.gap-table th:nth-child(5),
+.gap-table td:nth-child(5) { width: 14%; } /* Dificultad */
+.gap-table th:nth-child(6),
+.gap-table td:nth-child(6) { width: 12%; } /* Oportunidad */
 
 .keyword-cell strong {
     color: #88B04B;
@@ -591,6 +607,9 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    max-height: 120px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
 }
 
 .comp-pos {
@@ -599,6 +618,7 @@
     align-items: center;
     gap: 0.5rem;
     font-size: 0.85rem;
+    flex-shrink: 0;
 }
 
 .comp-name {

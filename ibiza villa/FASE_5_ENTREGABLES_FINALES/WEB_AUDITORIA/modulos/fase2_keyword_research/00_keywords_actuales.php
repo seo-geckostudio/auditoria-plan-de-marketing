@@ -60,7 +60,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                     = €15,000-40,000 en ingresos. Una keyword mal elegida genera 0€.</p>
                 </div>
                 <div class="impacto-item">
-                    <span class="impacto-icon">⏱️</span>
                     <h3>Eficiencia en Contenido</h3>
                     <p>Saber qué keywords atacar te dice exactamente qué contenido crear. Sin esto, creas 100 páginas
                     y solo 5 generan resultados. Con esto, 80 de 100 páginas son rentables.</p>
