@@ -101,7 +101,7 @@ $paginas = $datosModulo['paginas'];
 
     <div class="page-footer">
         <span>Fase 0 - Marketing Digital</span>
-        <span>Página 1/4</span>
+        <span>Página 1/3</span>
     </div>
 </div>
 
@@ -326,7 +326,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <div class="page-footer">
         <span>Fase 0 - Marketing Digital</span>
-        <span>Página 2/4</span>
+        <span>Página 2/3</span>
     </div>
 </div>
 
@@ -459,147 +459,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <div class="page-footer">
         <span>Fase 0 - Marketing Digital</span>
-        <span>Página 3/4</span>
+        <span>Página 3/3</span>
     </div>
 </div>
 
-<!-- PÁGINA 4: PERSONA 4 + ESTRATEGIA -->
-<div class="audit-page strategy-personas-page">
-    <div class="page-header">
-        <h1><?php echo htmlspecialchars($paginas[3]['titulo']); ?></h1>
-        <p class="subtitle"><?php echo htmlspecialchars($paginas[3]['subtitulo']); ?></p>
-    </div>
-
-    <?php
-    $datos4 = $paginas[3]['contenido']['datos'] ?? [];
-    $persona4 = $datos4['persona_4'] ?? [];
-    $estrategia = $datos4['estrategia_marketing'] ?? [];
-    $acciones = $estrategia['acciones_por_persona'] ?? [];
-    $presupuesto = $estrategia['presupuesto_marketing_anual'] ?? [];
-    $objetivos = $estrategia['objetivos_12_meses'] ?? [];
-    ?>
-
-    <div class="page-content">
-        <!-- Persona 4 Compacta -->
-        <div class="persona4-compact">
-            <div class="p4-header">
-                <div class="p4-avatar"><?php echo $persona4['foto_emoji'] ?? ''; ?></div>
-                <div class="p4-info">
-                    <h2><?php echo $persona4['nombre'] ?? 'N/A'; ?></h2>
-                    <p><?php echo ($persona4['edad'] ?? 'N/A') . ' | ' . ($persona4['ubicacion'] ?? 'N/A'); ?></p>
-                    <p><?php echo $persona4['ocupacion'] ?? 'N/A'; ?></p>
-                    <span class="p4-percentage"><?php echo ($persona4['porcentaje_clientes'] ?? '0%') . ' de clientes'; ?></span>
-                </div>
-            </div>
-
-            <div class="p4-grid">
-                <div class="p4-box">
-                    <h4>Características</h4>
-                    <ul>
-                        <?php foreach (array_slice($persona4['caracteristicas_clave'] ?? [], 0, 3) as $car): ?>
-                        <li><?php echo htmlspecialchars($car); ?></li>
-                        <?php endforeach; ?>
-                    </ul>
-                </div>
-
-                <div class="p4-box">
-                    <h4>Pain Points</h4>
-                    <ul>
-                        <?php foreach (array_slice($persona4['pain_points'] ?? [], 0, 3) as $pain): ?>
-                        <li><?php echo htmlspecialchars($pain); ?></li>
-                        <?php endforeach; ?>
-                    </ul>
-                </div>
-
-                <div class="p4-box highlight">
-                    <h4>Mensajes Clave</h4>
-                    <?php foreach (array_slice($persona4['mensajes_clave'] ?? [], 0, 2) as $msg): ?>
-                    <p class="p4-message"><?php echo htmlspecialchars($msg); ?></p>
-                    <?php endforeach; ?>
-                </div>
-            </div>
-        </div>
-
-        <!-- Estrategia de Marketing -->
-        <div class="marketing-strategy">
-            <h2><i class="fas fa-rocket"></i> Estrategia de Marketing por Persona</h2>
-
-            <?php foreach ($acciones as $accion): ?>
-            <div class="strategy-persona-block">
-                <div class="strategy-header">
-                    <h3><?php echo $accion['persona'] ?? 'N/A'; ?></h3>
-                    <span class="priority-badge priority-<?php echo strtolower($accion['prioridad'] ?? 'baja'); ?>">
-                        <?php echo $accion['prioridad'] ?? 'N/A'; ?>
-                    </span>
-                </div>
-
-                <div class="strategy-content">
-                    <div class="strategy-item">
-                        <h4><i class="fas fa-bullhorn"></i> Canales</h4>
-                        <ul>
-                            <?php foreach ($accion['canales'] ?? [] as $canal): ?>
-                            <li><?php echo htmlspecialchars($canal); ?></li>
-                            <?php endforeach; ?>
-                        </ul>
-                    </div>
-
-                    <div class="strategy-item">
-                        <h4><i class="fas fa-file-alt"></i> Contenido</h4>
-                        <ul>
-                            <?php foreach ($accion['contenido'] ?? [] as $cont): ?>
-                            <li><?php echo htmlspecialchars($cont); ?></li>
-                            <?php endforeach; ?>
-                        </ul>
-                    </div>
-
-                    <div class="strategy-kpi">
-                        <strong>KPIs:</strong> <?php echo $accion['kpis'] ?? 'N/A'; ?>
-                    </div>
-                </div>
-            </div>
-            <?php endforeach; ?>
-        </div>
-
-        <!-- Presupuesto Marketing -->
-        <div class="budget-section">
-            <h2><i class="fas fa-euro-sign"></i> Presupuesto Marketing Anual</h2>
-
-            <div class="budget-grid">
-                <?php foreach ($presupuesto as $key => $value): ?>
-                    <?php if ($key !== 'total'): ?>
-                    <div class="budget-item">
-                        <span class="budget-label"><?php echo ucwords(str_replace('_', ' ', $key)); ?></span>
-                        <span class="budget-value"><?php echo $value; ?></span>
-                    </div>
-                    <?php endif; ?>
-                <?php endforeach; ?>
-                <div class="budget-item total">
-                    <span class="budget-label">TOTAL ANUAL</span>
-                    <span class="budget-value"><?php echo $presupuesto['total'] ?? '0€'; ?></span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Objetivos 12 Meses -->
-        <div class="objectives-section">
-            <h2><i class="fas fa-target"></i> Objetivos 12 Meses</h2>
-
-            <div class="objectives-list">
-                <?php foreach ($objetivos as $index => $objetivo): ?>
-                <div class="objective-card">
-                    <div class="obj-number"><?php echo $index + 1; ?></div>
-                    <p><?php echo htmlspecialchars($objetivo); ?></p>
-                </div>
-                <?php endforeach; ?>
-            </div>
-        </div>
-    </div>
-
-    <div class="page-footer">
-        <span>Fase 0 - Marketing Digital</span>
-        <span>Página 4/4</span>
-    </div>
-</div>
 
 <style>
 /* ===================================================================
