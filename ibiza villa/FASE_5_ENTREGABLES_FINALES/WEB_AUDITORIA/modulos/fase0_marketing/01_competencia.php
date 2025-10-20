@@ -519,7 +519,38 @@ $paginas = $moduloData['paginas'];
 <?php endforeach; ?>
 
 <style>
-/* Estilos específicos para el módulo de competencia */
+/* ===================================================================
+   SOBRESCRITURA PRIORITARIA DE ESTILOS GLOBALES
+   Estos selectores tienen MÁXIMA especificidad para evitar herencia
+   ================================================================== */
+
+/* Sobrescribir .page-header .subtitle del sistema (styles.css línea 319)
+   Sistema usa: .page-header .subtitle { color: var(--text-secondary); }
+   Esto fuerza color negro en TODAS las cabeceras del módulo */
+.competencia-page .page-header,
+.competencia-page .page-header h1,
+.competencia-page .page-header h2,
+.competencia-page .page-header .subtitle {
+    color: #000000 !important;
+}
+
+/* Sobrescribir table thead del sistema (gecko-corporate.css)
+   Sistema usa: table thead { background: gradient !important; }
+   Forzamos verde corporativo Gecko */
+.competencia-page table thead,
+.competencia-page table thead tr,
+.competencia-page table thead th {
+    background: #88B04B !important;
+    color: #ffffff !important;
+}
+
+.competencia-page table tbody tr:hover {
+    background: #f0f7e6 !important;
+}
+
+/* ===================================================================
+   ESTILOS ESPECÍFICOS DEL MÓDULO DE COMPETENCIA
+   ================================================================== */
 .competencia-page {
     font-family: 'Inter', sans-serif;
 }
