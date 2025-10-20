@@ -70,7 +70,7 @@ if ($loader->tieneErrores()) {
         <!-- RESUMEN EJECUTIVO - DESTACADO -->
         <li class="nav-section nav-destacado">
           <a href="00_resumen_ejecutivo.php" target="_blank" class="btn-sidebar-cta">
-            📊 Resumen Ejecutivo
+            Resumen Ejecutivo
           </a>
         </li>
 
@@ -176,7 +176,7 @@ if ($loader->tieneErrores()) {
           <!-- CTA Resumen Ejecutivo -->
           <div style="margin: 30px 0 20px 0;">
             <a href="00_resumen_ejecutivo.php" target="_blank" class="btn-cta-primary">
-              📊 Ver Resumen Ejecutivo (Vista Rápida)
+              Ver Resumen Ejecutivo (Vista Rápida)
             </a>
           </div>
 

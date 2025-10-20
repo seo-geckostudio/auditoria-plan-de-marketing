@@ -68,8 +68,7 @@ $paginas = $moduloData['paginas'];
                 </div>
 
                 <div class="summary-card">
-                    <div class="card-icon">⏱️</div>
-                    <div class="card-value"><?php echo $portada['periodo_analisis']; ?></div>
+                    <div class="card-value" style="font-size: 1rem; margin-top: 10px;"><?php echo $portada['periodo_analisis']; ?></div>
                     <div class="card-label">Período de Análisis</div>
                     <div class="card-sublabel">Datos actualizados</div>
                 </div>

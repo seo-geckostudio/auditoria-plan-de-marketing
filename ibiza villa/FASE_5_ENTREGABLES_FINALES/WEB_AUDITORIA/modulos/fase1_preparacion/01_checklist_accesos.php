@@ -24,50 +24,6 @@ $proximos = $datosModulo['proximos_pasos'] ?? [];
 
     <div class="page-body">
 
-        <!-- Resumen visual -->
-        <?php if (!empty($resumen)): ?>
-        <div class="checklist-summary">
-            <div class="summary-card verified">
-                <div class="summary-icon"><i class="fas fa-check-circle"></i></div>
-                <div class="summary-content">
-                    <h3><?php echo $resumen['accesos_verificados'] ?? 0; ?></h3>
-                    <p>Verificados</p>
-                </div>
-            </div>
-            <div class="summary-card pending">
-                <div class="summary-icon"><i class="fas fa-clock"></i></div>
-                <div class="summary-content">
-                    <h3><?php echo $resumen['accesos_pendientes'] ?? 0; ?></h3>
-                    <p>Pendientes</p>
-                </div>
-            </div>
-            <div class="summary-card unavailable">
-                <div class="summary-icon"><i class="fas fa-times-circle"></i></div>
-                <div class="summary-content">
-                    <h3><?php echo $resumen['accesos_no_disponibles'] ?? 0; ?></h3>
-                    <p>No Disponibles</p>
-                </div>
-            </div>
-            <div class="summary-card optional">
-                <div class="summary-icon"><i class="fas fa-minus-circle"></i></div>
-                <div class="summary-content">
-                    <h3><?php echo $resumen['no_requeridos'] ?? 0; ?></h3>
-                    <p>No Requeridos</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="progress-bar-container">
-            <div class="progress-label">
-                <strong>Progreso de Verificación:</strong>
-                <span><?php echo $resumen['porcentaje_completado'] ?? 0; ?>%</span>
-            </div>
-            <div class="progress-bar">
-                <div class="progress-fill" style="width: <?php echo $resumen['porcentaje_completado'] ?? 0; ?>%"></div>
-            </div>
-        </div>
-        <?php endif; ?>
-
         <!-- Checklist por categorías -->
         <?php foreach ($categorias as $categoria): ?>
         <div class="checklist-category">
@@ -141,39 +97,6 @@ $proximos = $datosModulo['proximos_pasos'] ?? [];
             </table>
         </div>
         <?php endforeach; ?>
-
-        <!-- Acciones pendientes -->
-        <?php if (!empty($acciones)): ?>
-        <div class="actions-section">
-            <h2 class="section-title">
-                <i class="fas fa-exclamation-triangle"></i>
-                Acciones Pendientes
-            </h2>
-            <ul class="actions-list">
-                <?php foreach ($acciones as $accion): ?>
-                <li>
-                    <i class="fas fa-arrow-right text-warning"></i>
-                    <?php echo htmlspecialchars($accion); ?>
-                </li>
-                <?php endforeach; ?>
-            </ul>
-        </div>
-        <?php endif; ?>
-
-        <!-- Próximos pasos -->
-        <?php if (!empty($proximos)): ?>
-        <div class="next-steps-section">
-            <h2 class="section-title">
-                <i class="fas fa-forward"></i>
-                Próximos Pasos
-            </h2>
-            <ol class="next-steps-list">
-                <?php foreach ($proximos as $paso): ?>
-                <li><?php echo htmlspecialchars($paso); ?></li>
-                <?php endforeach; ?>
-            </ol>
-        </div>
-        <?php endif; ?>
 
     </div>
 
