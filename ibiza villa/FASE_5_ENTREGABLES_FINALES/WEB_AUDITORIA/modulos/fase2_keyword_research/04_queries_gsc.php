@@ -88,11 +88,11 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
                     <div class="csv-card-header">
                         <span class="csv-icon"></span>
                         <h3>CSV 2: Quick Wins Priorizados</h3>
-                        <span class="badge badge-critical">ROI 12-28:1</span>
+                        <span class="badge badge-critical">Eficiencia: 85/100</span>
                     </div>
                     <div class="csv-card-body">
                         <p class="csv-description">
-                            15 oportunidades quick wins con mayor ROI. Queries posición 11-35 con potencial subir a top 10-20 con bajo esfuerzo.
+                            15 oportunidades quick wins con mayor eficiencia. Queries posición 11-35 con potencial subir a top 10-20 con bajo esfuerzo.
                         </p>
                         <div class="csv-stats">
                             <div class="stat-box">
@@ -105,7 +105,7 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
                             </div>
                             <div class="stat-box">
                                 <span class="stat-number">18:1</span>
-                                <span class="stat-label">ROI Promedio</span>
+                                <span class="stat-label">Eficiencia Promedio</span>
                             </div>
                         </div>
                         <a href="../entregables/gsc/queries_oportunidades_quick_wins.csv" download class="btn-download">
@@ -135,7 +135,7 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
                                 <strong>10 Queries Posición 20-35 (Página 3-4 Google)</strong>
                                 <p>Keywords con volumen alto pero posición muy baja. "Alquiler villas ibiza" posición #24.3 (28.4k impresiones/mes, solo 798 clics).
                                 CTR promedio 2.7% (debería ser 8-15% en top 10). Contenido desactualizado, sin backlinks recientes.</p>
-                                <span class="problema-dato">Pérdida: -3,800-5,200 clics/mes potenciales = -€570k-780k/año</span>
+                                <span class="problema-dato">Pérdida: -3,800-5,200 clics/mes potenciales = -30-45% oportunidad</span>
                             </div>
                         </div>
                     </div>
@@ -164,8 +164,8 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
                             <div class="solucion-text">
                                 <strong>10 Queries Subidas a Top 10-20 (Página 1-2)</strong>
                                 <p>Content refresh + backlinks DR 70+ + featured snippets. "Alquiler villas ibiza" posición #24.3 → #8-12.
-                                CTR 2.8% → 8.5-12.0% (+204-329%). 15 quick wins implementados con ROI promedio 18:1.</p>
-                                <span class="solucion-dato">Ganancia: +3,800-5,200 clics/mes = +€570k-780k/año revenue adicional</span>
+                                CTR 2.8% → 8.5-12.0% (+204-329%). 15 quick wins implementados con eficiencia 85/100.</p>
+                                <span class="solucion-dato">Ganancia: +3,800-5,200 clics/mes = +30-45% mejora anual</span>
                             </div>
                         </div>
                     </div>
@@ -216,14 +216,14 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
                             <td>4,320</td>
                             <td>8,120-9,520</td>
                             <td class="mejora-positiva">+88-120%</td>
-                            <td>+3,800-5,200 clics/mes = +€570k-780k/año revenue</td>
+                            <td>+3,800-5,200 clics/mes = +30-45% mejora anual</td>
                         </tr>
                         <tr>
                             <td><strong>Quick Wins Identificados</strong></td>
                             <td>0</td>
                             <td>15</td>
                             <td class="mejora-positiva">+15 oport.</td>
-                            <td>ROI promedio 18:1, timeline 30-90 días</td>
+                            <td>Eficiencia 85/100, timeline 30-90 días</td>
                         </tr>
                     </tbody>
                 </table>

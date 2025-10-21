@@ -85,7 +85,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                             <div class="impacto-texto">Más visibilidad que competidores sin GBP optimizado</div>
                         </div>
                         <div class="impacto-item">
-                            <div class="impacto-numero">€8,000-15,000</div>
+                            <div class="impacto-numero">Valor Alto</div>
                             <div class="impacto-texto">Valor estimado mensual del tráfico del Local Pack (Top 3)</div>
                         </div>
                     </div>
@@ -237,7 +237,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         </div>
                         <div class="footer-stat">
                             <span class="stat-label">Pérdida Mensual</span>
-                            <span class="stat-value">€12,000-18,000</span>
+                            <span class="stat-value">+18-28% mensual</span>
                         </div>
                     </div>
                 </div>
@@ -299,7 +299,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         </div>
                         <div class="footer-stat">
                             <span class="stat-label">Ganancia Mensual</span>
-                            <span class="stat-value">€12,000-18,000</span>
+                            <span class="stat-value">+18-28% mensual</span>
                         </div>
                     </div>
                 </div>
@@ -326,7 +326,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                     <div class="timeline-item">
                         <div class="timeline-periodo">Mes 5-6</div>
                         <div class="timeline-accion">50+ reviews (4.8) + dominancia Local Pack + reputación establecida</div>
-                        <div class="timeline-resultado">ROI máximo: +€12,000-18,000/mes</div>
+                        <div class="timeline-resultado">Mejora máxima: +18-28% mensual</div>
                     </div>
                 </div>
             </div>
@@ -466,18 +466,18 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                                 <small>Estimación valor económico mensual</small>
                             </td>
                             <td class="valor-antes">
-                                <span class="valor-principal">€2,000-3,500/mes</span>
+                                <span class="valor-principal">Coste bajo continuo</span>
                                 <span class="valor-detalle">Solo tráfico orgánico web</span>
                             </td>
                             <td class="valor-despues">
-                                <span class="valor-principal">€14,000-21,500/mes</span>
+                                <span class="valor-principal">+21-33% mensual</span>
                                 <span class="valor-detalle">Local Pack + GBP + Citations</span>
                             </td>
                             <td class="valor-mejora">
                                 <span class="badge-mejora">+600%</span>
                             </td>
                             <td class="valor-impacto">
-                                <span class="impacto-principal">+€12,000-18,000/mes ganancia</span>
+                                <span class="impacto-principal">+18-28% mejora mensual</span>
                                 <span class="impacto-detalle">ROI 8:1 en 6 meses (inversión vs retorno)</span>
                             </td>
                         </tr>

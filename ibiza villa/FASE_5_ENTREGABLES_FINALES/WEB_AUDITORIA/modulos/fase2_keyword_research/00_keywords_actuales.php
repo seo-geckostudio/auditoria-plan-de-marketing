@@ -37,7 +37,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                     <li><strong>Las X rojas</strong> son las keywords con alto volumen Y alta intención de reserva (las que importan)</li>
                     <li><strong>Los caminos</strong> son las keywords informativas que guían a los usuarios hacia la reserva</li>
                     <li><strong>Los obstáculos</strong> son keywords donde la competencia es brutal y no merece la pena competir</li>
-                    <li><strong>El tesoro</strong> son las conversiones: clientes que reservan villas de €3,000-15,000/semana</li>
+                    <li><strong>El tesoro</strong> son las conversiones: clientes con alto valor de conversión</li>
                 </ul>
                 <p class="analogia-conclusion">
                     <strong>Sin un buen mapa</strong>, estarás invirtiendo esfuerzo en keywords que no traen clientes de valor.
@@ -54,7 +54,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                 <div class="impacto-item">
                     <h3>Rentabilidad Directa</h3>
                     <p>Una keyword como "villa lujo ibiza primera línea" (580 búsquedas/mes) puede generar 2-4 reservas/mes
-                    = €15,000-40,000 en ingresos. Una keyword mal elegida genera 0€.</p>
+                    = alto valor comercial. Una keyword mal elegida genera cero resultados.</p>
                 </div>
                 <div class="impacto-item">
                     <h3>Eficiencia en Contenido</h3>
@@ -122,7 +122,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                     <h3>CSV 2: Keywords de Alta Oportunidad (CRÍTICO)</h3>
                     <div class="wireframe-meta">
                         <span class="meta-tag critical">Prioridad: Muy Alta</span>
-                        <span class="meta-tag critical">Ganancia: +€45k-75k/mes</span>
+                        <span class="meta-tag critical">Ganancia: +15-25% mejora mensual</span>
                     </div>
                 </div>
                 <div class="wireframe-visual">
@@ -132,7 +132,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                             <div class="element-tag">Columna: Keyword (ej: "villa lujo san antonio 8 personas")</div>
                             <div class="element-tag">Columna: Volumen (180-1,200 búsquedas/mes)</div>
                             <div class="element-tag">Columna: Dificultad (15-45 - factible)</div>
-                            <div class="element-tag">Columna: CPC (€3.50-€8.20 - alto valor comercial)</div>
+                            <div class="element-tag">Columna: CPC (alto valor comercial - sector premium)</div>
                             <div class="element-tag">Columna: Accion (crear landing, optimizar existente, contenido blog)</div>
                             <div class="element-tag">Columna: Prioridad (Muy Alta, Alta, Media)</div>
                             <div class="element-tag">Columna: Valor_Estimado (reservas/mes esperadas)</div>
@@ -265,7 +265,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                                 <span class="icon-error"></span>
                                 <div class="problema-texto">
                                     <strong>Pérdida estimada: 15-25 reservas/mes</strong>
-                                    <span class="problema-detalle">Equivalente a €45,000-75,000/mes en ingresos perdidos</span>
+                                    <span class="problema-detalle">Equivalente a 15-25% oportunidad perdida mensual</span>
                                 </div>
                             </li>
                         </ul>
@@ -316,7 +316,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                                 <span class="icon-success"></span>
                                 <div class="mejora-texto">
                                     <strong>Ganancia estimada: +15-25 reservas/mes</strong>
-                                    <span class="mejora-detalle">Equivalente a €45,000-75,000/mes en ingresos adicionales</span>
+                                    <span class="mejora-detalle">Equivalente a +15-25% mejora mensual adicional</span>
                                 </div>
                             </li>
                         </ul>
@@ -463,7 +463,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                             </div>
                         </td>
                         <td class="impacto-texto">
-                            <strong>€45,000-75,000/mes adicionales</strong> en ingresos estimados
+                            <strong>+15-25% mejora mensual</strong> estimada
                         </td>
                     </tr>
                 </tbody>

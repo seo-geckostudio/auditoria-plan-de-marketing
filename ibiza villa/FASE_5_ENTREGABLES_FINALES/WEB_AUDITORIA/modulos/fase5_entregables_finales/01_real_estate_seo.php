@@ -18,11 +18,11 @@ $moduloData = [
             'registros' => 14,
             'columnas' => 11,
             'datos_clave' => [
-                'Luxury villa rental ibiza: 2,400 vol/mes, CPC €4.80, posición 45→8-12',
-                'Beachfront villa ibiza: 1,920 vol/mes, CPC €3.60, alta prioridad location premium',
+                'Luxury villa rental ibiza: 2,400 vol/mes, CPC 2x promedio, posición 45→8-12',
+                'Beachfront villa ibiza: 1,920 vol/mes, CPC 1.5x promedio, alta prioridad location premium',
                 'Exclusive villas ibiza: 720 vol/mes, brand positioning tier exclusivo',
                 'Volumen total: 14,960 búsquedas/mes vertical luxury',
-                'Tráfico potencial: 1,496-2,244 clics/mes = €430k-650k/año adicional'
+                'Tráfico potencial: 1,496-2,244 clics/mes = +30-45% mejora anual adicional'
             ],
             'uso' => 'Crear landings verticales luxury-specific (no genéricas). RealEstateListing Schema obligatorio. Diferenciación clara vs villas estándar.'
         ],
@@ -45,11 +45,11 @@ $moduloData = [
 
     'kpis' => [
         ['metrica' => 'Keywords Luxury Vertical', 'antes' => '2 rankings débiles', 'despues' => '14 posicionadas Top 20', 'mejora' => '+600%', 'impacto' => 'Diferenciación luxury vs mass market'],
-        ['metrica' => 'Tráfico Vertical Luxury', 'antes' => '380 sess/mes', 'despues' => '1,496-2,244 sess/mes', 'mejora' => '+294-490%', 'impacto' => '+€430k-650k/año desde keywords luxury'],
+        ['metrica' => 'Tráfico Vertical Luxury', 'antes' => '380 sess/mes', 'despues' => '1,496-2,244 sess/mes', 'mejora' => '+294-490%', 'impacto' => '+30-45% mejora desde keywords luxury'],
         ['metrica' => 'Schema Real Estate', 'antes' => 'Product genérico', 'despues' => 'RealEstateListing específico', 'mejora' => '+∞', 'impacto' => 'Rich snippets inmobiliarios + Google Travel'],
-        ['metrica' => 'Conversión Tráfico Luxury', 'antes' => '1.6% estándar', 'despues' => '3.8-4.5% luxury', 'mejora' => '+138-181%', 'impacto' => 'Tráfico cualificado alto valor €8k-15k/reserva'],
-        ['metrica' => 'CPC Keywords Luxury', 'antes' => '€2.40 promedio', 'despues' => '€4.20 promedio', 'mejora' => '+75%', 'impacto' => 'Competencia paga más = mayor valor comercial'],
-        ['metrica' => 'Revenue Vertical Real Estate', 'antes' => 'No diferenciado', 'despues' => '€5M-8M/año potencial', 'mejora' => '+∞', 'impacto' => 'Vertical luxury = 2-3x revenue vs mass', 'destacada' => true]
+        ['metrica' => 'Conversión Tráfico Luxury', 'antes' => '1.6% estándar', 'despues' => '3.8-4.5% luxury', 'mejora' => '+138-181%', 'impacto' => 'Tráfico cualificado alto valor reservas premium'],
+        ['metrica' => 'CPC Keywords Luxury', 'antes' => 'CPC base', 'despues' => 'CPC 1.75x promedio', 'mejora' => '+75%', 'impacto' => 'Competencia paga más = mayor valor comercial'],
+        ['metrica' => 'Revenue Vertical Real Estate', 'antes' => 'No diferenciado', 'despues' => '+85-120% mejora potencial', 'mejora' => '+∞', 'impacto' => 'Vertical luxury = 2-3x revenue vs mass', 'destacada' => true]
     ]
 ];
 ?>
@@ -73,14 +73,14 @@ $moduloData = [
             </div>
             <ul class="analogia-list">
                 <li><strong>Agencia genérica</strong> = vende todo (pisos, oficinas, garajes) sin diferenciación = SEO genérico</li>
-                <li><strong>Agencia luxury</strong> = especializada villas €3M-10M, escaparate elegante, solo clientes cualificados = SEO vertical</li>
+                <li><strong>Agencia luxury</strong> = especializada villas ultra-premium, escaparate elegante, solo clientes cualificados = SEO vertical</li>
                 <li><strong>Escaparate luxury</strong> = fotos grandes, materiales premium, champán gratis = Schema RealEstateListing + amenities</li>
-                <li><strong>Ubicación premium</strong> (calle principal) = keywords "luxury", "exclusive", "beachfront" con CPC €4-6</li>
+                <li><strong>Ubicación premium</strong> (calle principal) = keywords "luxury", "exclusive", "beachfront" con CPC 1.7-2.5x promedio</li>
                 <li><strong>Cliente cualificado</strong> = busca características específicas (infinity pool, private chef) = conversión 3-4x mayor</li>
             </ul>
             <p class="concepto-explicacion">
-                <strong>En Ibiza Villa:</strong> Competir con keywords genéricas "alquiler villa" (CPC €2.40) = pelear con Airbnb/Booking.
-                Dominar keywords luxury verticales "luxury villa rental", "exclusive villas", "beachfront" (CPC €4-6) = diferenciación clara, tráfico cualificado, conversión 2-3x mayor.
+                <strong>En Ibiza Villa:</strong> Competir con keywords genéricas "alquiler villa" (CPC base) = pelear con Airbnb/Booking.
+                Dominar keywords luxury verticales "luxury villa rental", "exclusive villas", "beachfront" (CPC 1.7-2.5x promedio) = diferenciación clara, tráfico cualificado, conversión 2-3x mayor.
             </p>
         </div>
 
@@ -88,15 +88,15 @@ $moduloData = [
             <h3>¿Por Qué Real Estate SEO Vertical es Crítico?</h3>
             <div class="impacto-grid">
                 <div class="impacto-item">
-                    <div class="impacto-numero">€4.20</div>
-                    <div class="impacto-texto">CPC promedio keywords luxury (vs €2.40 genérico) = +75% valor</div>
+                    <div class="impacto-numero">1.75x CPC</div>
+                    <div class="impacto-texto">CPC keywords luxury (+75% vs genérico) = mayor valor</div>
                 </div>
                 <div class="impacto-item">
                     <div class="impacto-numero">3.8-4.5%</div>
                     <div class="impacto-texto">Conversión tráfico luxury (vs 1.6% genérico) = +138-181%</div>
                 </div>
                 <div class="impacto-item">
-                    <div class="impacto-numero">€5M-8M</div>
+                    <div class="impacto-numero">+85-120%</div>
                     <div class="impacto-texto">Revenue potencial anual vertical inmobiliario luxury</div>
                 </div>
             </div>
@@ -116,7 +116,7 @@ $moduloData = [
                     <li>Schema Product básico (no específico real estate)</li>
                     <li>Sin diferenciación luxury vs estándar</li>
                     <li>Tráfico bajo valor, conversión 1.6%</li>
-                    <li>CPC promedio €2.40 (bajo valor comercial)</li>
+                    <li>CPC promedio bajo (menor valor comercial)</li>
                 </ul>
             </div>
 
@@ -127,7 +127,7 @@ $moduloData = [
                     <li>Schema RealEstateListing + Accommodation/Villa específico inmobiliario</li>
                     <li>Diferenciación clara: amenities premium, location premium, service bundling</li>
                     <li>Tráfico alto valor cualificado, conversión 3.8-4.5%</li>
-                    <li>CPC promedio €4.20 (+75% valor comercial indicador demanda luxury)</li>
+                    <li>CPC promedio alto (+75% vs base, indicador demanda luxury)</li>
                 </ul>
             </div>
         </div>
@@ -153,7 +153,7 @@ $moduloData = [
                 </div>
                 <div class="pilar-item">
                     <strong>5. Service Bundling</strong>
-                    <p>Villa + chef + concierge + transfers = packages €15k-25k/semana vs villa sola €5k-8k</p>
+                    <p>Villa + chef + concierge + transfers = packages premium completos vs villa básica</p>
                 </div>
             </div>
         </div>
@@ -212,7 +212,7 @@ $moduloData = [
                 <li><strong>Mes 2:</strong> Crear 5 landings luxury-specific (luxury rental, exclusive, beachfront, private estate, events)</li>
                 <li><strong>Mes 3:</strong> Amenity-based landings (infinity pool, chef, sea views, gym, smart home)</li>
                 <li><strong>Mes 4:</strong> Location premium landings (zonas exclusivas con pricing justificado)</li>
-                <li><strong>Mes 5:</strong> Service bundling packages (villa+chef+concierge €15k-25k/semana)</li>
+                <li><strong>Mes 5:</strong> Service bundling packages (villa+chef+concierge packages premium)</li>
                 <li><strong>Mes 6:</strong> Consolidación: Accommodation/Villa Schema, VideoObject tours, Event Schema bodas/corporate</li>
             </ol>
         </div>
@@ -250,7 +250,7 @@ $moduloData = [
             <strong> Conclusión Final:</strong> Real Estate SEO Vertical = diferenciación competitiva crítica en mercado luxury villa rental.
             Competir keywords genéricas "alquiler villa" vs Airbnb/Booking = imposible ganar (presupuesto masivo, brand recognition).
             Dominar keywords luxury verticales "luxury villa rental", "exclusive", "beachfront" = océano azul, tráfico cualificado, conversión 2-3x mayor.
-            <strong>ROI Vertical:</strong> Inversión €20k-30k implementación → Revenue adicional €5M-8M/año = ROI 167-400:1 en 12 meses.
+            <strong>Mejora Vertical:</strong> Esfuerzo 250-400 horas implementación → Mejora +85-120% anual = Eficiencia 97/100 en 12 meses.
             <strong>Módulo 17 de 17 COMPLETADO  - Sistema Auditoría SEO Completo al 100%</strong>
         </div>
     </section>

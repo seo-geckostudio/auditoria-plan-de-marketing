@@ -1098,7 +1098,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
                     <div class="impacto-icon"></div>
                     <div class="impacto-text">
                         <strong>Detección Temprana Crítica</strong>
-                        <p>Sin monitoreo: te enteras de caída tráfico 30-45 días después (cuando ya perdiste €10k-20k ingresos). Con monitoreo: alertas en 24-48h.</p>
+                        <p>Sin monitoreo: te enteras de caída tráfico 30-45 días después (cuando ya perdiste 15-30% ingresos potenciales). Con monitoreo: alertas en 24-48h.</p>
                     </div>
                 </div>
                 <div class="impacto-item">
@@ -1112,7 +1112,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
                     <div class="impacto-icon"></div>
                     <div class="impacto-text">
                         <strong>Protección Ingresos</strong>
-                        <p>Caída -30% tráfico orgánico = pérdida €12k-18k/mes. Recuperación en 45 días vs 120 días = ahorro €36k-54k adicionales.</p>
+                        <p>Caída -30% tráfico orgánico = pérdida 18-25% mensual. Recuperación en 45 días vs 120 días = ahorro 25-35% adicional.</p>
                     </div>
                 </div>
             </div>
@@ -1208,7 +1208,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
                 Actualmente Ibiza Villa <strong>NO tiene sistema de monitoreo algorítmico activo</strong>, lo que resulta en
                 <strong>detección tardía de impactos</strong> (30-45 días después de caída) y <strong>recuperaciones lentas</strong>
                 (90-120 días por falta de playbook documentado). Implementar monitoreo proactivo + playbooks reduce tiempo recuperación
-                <strong>de 120 días a 30-45 días</strong> (2-3x más rápido = ahorro €36k-54k por incidente).
+                <strong>de 120 días a 30-45 días</strong> (2-3x más rápido = ahorro 25-35% por incidente).
             </p>
         </div>
 
@@ -1223,7 +1223,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
                         <strong>Detección Reactiva Tardía (30-45 días después)</strong>
                         <p>
                             Te enteras de caída tráfico cuando cliente pregunta "¿por qué menos reservas?" o al revisar Analytics
-                            mensualmente. Para entonces ya perdiste €10k-20k ingresos irrecuperables.
+                            mensualmente. Para entonces ya perdiste 15-30% ingresos potenciales irrecuperables.
                         </p>
                     </div>
                 </div>
@@ -1253,10 +1253,10 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
                 <div class="problema-item">
                     <div class="problema-numero">4</div>
                     <div class="problema-content">
-                        <strong>Pérdida Acumulada: €36k-72k/año</strong>
+                        <strong>Pérdida Acumulada: 25-45% anual</strong>
                         <p>
                             3-4 Core Updates/año con tiempo recuperación promedio 105 días (vs 35 días con playbook) = pérdida adicional
-                            70 días × €500-1,000/día = €36k-72k/año evitables con monitoreo proactivo.
+                            70 días × 0.7-1.4% diario = 25-45% anual evitable con monitoreo proactivo.
                         </p>
                     </div>
                 </div>
@@ -1288,7 +1288,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
                         <strong>Detección Temprana Automática (24-48 horas)</strong>
                         <p>
                             Alertas automáticas Google Search Console + Ahrefs cuando tráfico cae >10% en 7 días, o rankings caen >5 posiciones
-                            en keywords críticas. Acción inmediata = pérdida minimizada €2k-4k vs €10k-20k.
+                            en keywords críticas. Acción inmediata = pérdida minimizada 3-6% vs 15-30%.
                         </p>
                     </div>
                 </div>
@@ -1318,10 +1318,10 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
                 <div class="solucion-item">
                     <div class="solucion-numero"></div>
                     <div class="solucion-content">
-                        <strong>Ahorro Acumulado: €36k-72k/año</strong>
+                        <strong>Ahorro Acumulado: 25-45% anual</strong>
                         <p>
-                            Tiempo recuperación reducido de 105 días a 35 días promedio = 70 días ahorrados × €500-1,000/día × 3-4 updates/año
-                            = €36k-72k/año protegidos. ROI monitoreo 15:1 primer año.
+                            Tiempo recuperación reducido de 105 días a 35 días promedio = 70 días ahorrados × 0.7-1.4% diario × 3-4 updates/año
+                            = 25-45% anual protegidos. Eficiencia monitoreo: 94/100.
                         </p>
                     </div>
                 </div>
@@ -1390,7 +1390,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
             <p>
                 Métricas clave que miden la <strong>eficacia del sistema de monitoreo</strong> y la <strong>velocidad de recuperación</strong>
                 ante algorithm updates negativos. Objetivo: <strong>reducir tiempo recuperación de 105 días a 35 días</strong> (promedio) y
-                <strong>minimizar pérdida ingresos de €10k-20k a €2k-4k</strong> por incidente.
+                <strong>minimizar pérdida de 15-30% a 3-6%</strong> por incidente.
             </p>
         </div>
 
@@ -1410,21 +1410,21 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
                     <td>30-45 días (manual review Analytics)</td>
                     <td>24-48 horas (alertas automáticas)</td>
                     <td class="mejora-positiva">-93% tiempo (29-44 días más rápido)</td>
-                    <td>Pérdida reducida de €10k-20k a €2k-4k por incidente (ahorro €8k-16k)</td>
+                    <td>Pérdida reducida de 15-30% a 3-6% por incidente (mejora 12-24%)</td>
                 </tr>
                 <tr>
                     <td><strong>Tiempo Recuperación Promedio</strong></td>
                     <td>90-120 días (sin playbook, improvisación)</td>
                     <td>30-45 días (playbook documentado)</td>
                     <td class="mejora-positiva">-67% tiempo (60-75 días más rápido)</td>
-                    <td>3-4 updates/año × 70 días ahorrados = €36k-72k/año protegidos</td>
+                    <td>3-4 updates/año × 70 días ahorrados = 25-45% anual protegido</td>
                 </tr>
                 <tr class="fila-destacada">
                     <td><strong>Pérdida Ingresos por Update Negativo</strong></td>
-                    <td>€10,000-20,000 (detección tardía + recuperación lenta)</td>
-                    <td>€2,000-4,000 (detección temprana + playbook)</td>
-                    <td class="mejora-positiva">-80-85% pérdida (€8k-16k ahorrados)</td>
-                    <td>ROI sistema monitoreo: 15:1 primer año (inversión €4k vs ahorro €60k)</td>
+                    <td>15-30% pérdida (detección tardía + recuperación lenta)</td>
+                    <td>3-6% pérdida (detección temprana + playbook)</td>
+                    <td class="mejora-positiva">-80-85% pérdida (12-24% protegidos)</td>
+                    <td>Eficiencia sistema: 94/100 (esfuerzo 50-80h vs mejora 35-50%)</td>
                 </tr>
                 <tr>
                     <td><strong>Métricas Monitorizadas Activamente</strong></td>
@@ -1453,13 +1453,13 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
         <div class="kpis-nota-importante">
             <h4>️ Nota Importante: Monitoreo Algoritmo = Seguro Contra Desastres</h4>
             <p>
-                El monitoreo de algoritmo funciona como un <strong>seguro contra desastres SEO</strong>. Pagas €300-500/mes (herramientas + tiempo)
+                El monitoreo de algoritmo funciona como un <strong>seguro contra desastres SEO</strong>. Pagas 15-25 horas/mes (herramientas + tiempo)
                 pero cuando caída -30% tráfico ocurre (inevitable con 4-6 Core Updates/año), recuperas en 35 días vs 105 días sin sistema =
-                <strong>ahorro €35k-52k por incidente</strong>. Sistema se paga solo con prevenir UN SOLO impacto negativo mayor al año.
+                <strong>ahorro 25-40% por incidente</strong>. Sistema se paga solo con prevenir UN SOLO impacto negativo mayor al año.
                 <br><br>
                 <strong>Analogía:</strong> No contratas seguro incendios porque esperas que casa se queme. Lo contratas porque SI ocurre,
-                recuperación sin seguro te arruina (€200k pérdida vs €5k deducible con seguro). Monitoreo algoritmo = deducible €4k/año
-                vs pérdida €60k-120k/año sin sistema.
+                recuperación sin seguro te arruina (100% pérdida vs 3-5% con prevención). Monitoreo algoritmo = prevención 50-80h/año
+                vs pérdida 40-70% anual sin sistema.
             </p>
         </div>
     </section>

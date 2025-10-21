@@ -1102,7 +1102,7 @@
                                 <span>Coste: <?php echo htmlspecialchars($fase['coste_estimado']); ?></span>
                             </div>
                             <div class="resource-item roi">
-                                <span>ROI: <?php echo htmlspecialchars($fase['roi_esperado']); ?></span>
+                                <span>Mejora Esperada: <?php echo htmlspecialchars($fase['mejora_esperada']); ?></span>
                             </div>
                         </div>
                     </div>

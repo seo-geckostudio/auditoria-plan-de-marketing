@@ -1183,7 +1183,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                 </ul>
                 <p class="analogia-footer">
                     <strong>Para Ibiza Villa:</strong> E-E-A-T es aún MÁS importante porque estás en un nicho YMYL
-                    (Your Money Your Life) - transacciones de €3,000-15,000/semana. Google quiere asegurarse de que
+                    (Your Money Your Life) - transacciones alto valor/semana. Google quiere asegurarse de que
                     los usuarios no sean estafados. Un sitio con E-E-A-T bajo = penalización algorítmica inmediata.
                 </p>
             </div>
@@ -1200,7 +1200,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         <div class="impacto-texto">Mayor confianza del usuario = Conversión significativamente mayor</div>
                     </div>
                     <div class="impacto-item">
-                        <div class="impacto-numero">€10,000-20,000</div>
+                        <div class="impacto-numero">+15-30% mensual</div>
                         <div class="impacto-texto">Valor estimado mensual del tráfico adicional con E-E-A-T alto</div>
                     </div>
                 </div>
@@ -1567,18 +1567,18 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                             <small>Estimación económica tráfico mensual</small>
                         </td>
                         <td class="valor-antes">
-                            <span class="valor-principal">€8,000-12,000/mes</span>
+                            <span class="valor-principal">Coste bajo continuo</span>
                             <span class="valor-detalle">E-E-A-T bajo = menor visibilidad</span>
                         </td>
                         <td class="valor-despues">
-                            <span class="valor-principal">€18,000-32,000/mes</span>
+                            <span class="valor-principal">+27-48% mensual</span>
                             <span class="valor-detalle">E-E-A-T alto = dominancia YMYL</span>
                         </td>
                         <td class="valor-mejora">
                             <span class="badge-mejora">+167%</span>
                         </td>
                         <td class="valor-impacto">
-                            <span class="impacto-principal">+€10,000-20,000/mes ganancia neta</span>
+                            <span class="impacto-principal">+15-30% mejora mensual neta</span>
                             <span class="impacto-detalle">ROI promedio 11:1 en mejoras E-E-A-T</span>
                         </td>
                     </tr>

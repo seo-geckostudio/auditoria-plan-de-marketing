@@ -902,7 +902,7 @@
                         </div>
                         <div class="phase-metric">
                             <div>
-                                <span class="metric-label">ROI Esperado</span>
+                                <span class="metric-label">Mejora Esperada</span>
                                 <span class="metric-value"><?php echo htmlspecialchars($fase['roi_esperado']); ?></span>
                             </div>
                         </div>
@@ -923,7 +923,7 @@
                     <span><?php echo htmlspecialchars($datosModulo['plan_accion_resumen']['inversion_total']); ?></span>
                 </div>
                 <div class="summary-item highlight">
-                    <strong>ROI Total:</strong>
+                    <strong>Mejora Total:</strong>
                     <span><?php echo htmlspecialchars($datosModulo['plan_accion_resumen']['roi_total_12_meses']); ?></span>
                 </div>
                 <div class="summary-item highlight">

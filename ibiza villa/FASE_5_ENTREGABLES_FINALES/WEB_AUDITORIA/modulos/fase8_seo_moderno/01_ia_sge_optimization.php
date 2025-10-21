@@ -1044,7 +1044,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
                     <li><strong>Búsquedas informativas</strong>: "cómo alquilar villa ibiza", "mejores zonas ibiza", "cuánto cuesta" → SGE muy activo</li>
                     <li><strong>Competencia con OTAs</strong>: Booking/Airbnb dominan SGE. Necesitas contenido educativo para competir</li>
                     <li><strong>Queries de planificación</strong>: Usuarios investigan 3-6 meses antes. SGE es primer punto de contacto</li>
-                    <li><strong>Alto valor transaccional</strong>: €3,000-15,000/reserva. Cada citación SGE = potencial cliente cualificado</li>
+                    <li><strong>Alto valor transaccional</strong>: alto valor por reserva. Cada citación SGE = potencial cliente cualificado</li>
                     <li><strong>Mercado internacional</strong>: SGE activo en UK, US, DE. Capturar ese tráfico = crecimiento exponencial</li>
                 </ul>
             </div>

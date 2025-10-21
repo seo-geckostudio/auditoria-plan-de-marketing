@@ -292,7 +292,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                             <div class="element-tag"><strong>Esfuerzo:</strong> <?php echo htmlspecialchars($categoria['esfuerzo']); ?></div>
                             <?php endif; ?>
                             <?php if (isset($categoria['roi'])): ?>
-                            <div class="element-tag"><strong>ROI Estimado:</strong> <?php echo htmlspecialchars($categoria['roi']); ?></div>
+                            <div class="element-tag"><strong>Mejora Estimado:</strong> <?php echo htmlspecialchars($categoria['roi']); ?></div>
                             <?php endif; ?>
                         </div>
                     </div>

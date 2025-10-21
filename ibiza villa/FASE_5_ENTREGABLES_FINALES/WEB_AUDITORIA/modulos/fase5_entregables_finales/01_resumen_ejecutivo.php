@@ -401,7 +401,7 @@
                     </div>
                     <div class="rec-metric">
                         <div>
-                            <span class="metric-label">ROI Esperado</span>
+                            <span class="metric-label">Mejora Esperada</span>
                             <span class="metric-value roi"><?php echo htmlspecialchars($recomendacion['roi_esperado']); ?></span>
                         </div>
                     </div>
@@ -770,11 +770,11 @@
 <!-- Página 3: ROI, Decisión Ejecutiva y Próximos Pasos -->
 <div class="audit-page decision-page">
     <div class="page-header">
-        <h1>Análisis ROI y Decisión Ejecutiva</h1>
+        <h1>Análisis de Resultados y Decisión Ejecutiva</h1>
     </div>
 
     <div class="page-body">
-        <!-- Análisis ROI -->
+        <!-- Análisis de Resultados -->
         <section class="roi-analysis-section">
             <h2><?php echo htmlspecialchars($datosModulo['analisis_roi']['titulo']); ?></h2>
 
@@ -793,8 +793,8 @@
                             <span class="value"><?php echo number_format($actual['trafico_mensual']); ?></span>
                         </div>
                         <div class="comp-metric">
-                            <span class="label">Valor Anual</span>
-                            <span class="value">€<?php echo number_format($actual['valor_anual']); ?></span>
+                            <span class="label">Índice Mejora Anual</span>
+                            <span class="value"><?php echo number_format($actual['valor_anual']); ?></span>
                         </div>
                         <div class="comp-metric">
                             <span class="label">Keywords Top 10</span>
@@ -826,8 +826,8 @@
                             <span class="value highlight"><?php echo number_format($proyectada['trafico_mensual']); ?></span>
                         </div>
                         <div class="comp-metric">
-                            <span class="label">Valor Anual</span>
-                            <span class="value highlight">€<?php echo number_format($proyectada['valor_anual']); ?></span>
+                            <span class="label">Índice Mejora Anual</span>
+                            <span class="value highlight"><?php echo number_format($proyectada['valor_anual']); ?></span>
                         </div>
                         <div class="comp-metric">
                             <span class="label">Keywords Top 10</span>
@@ -873,10 +873,10 @@
                     <p class="option-description"><?php echo htmlspecialchars($opcion['descripcion']); ?></p>
 
                     <div class="option-investment">
-                        <strong>Inversión:</strong> <?php echo htmlspecialchars($opcion['inversion']); ?>
+                        <strong>Esfuerzo:</strong> <?php echo htmlspecialchars($opcion['inversion']); ?>
                     </div>
                     <div class="option-roi">
-                        <strong>ROI Esperado:</strong> <span class="roi-value"><?php echo htmlspecialchars($opcion['roi_esperado']); ?></span>
+                        <strong>Mejora Esperada:</strong> <span class="roi-value"><?php echo htmlspecialchars($opcion['roi_esperado']); ?></span>
                     </div>
 
                     <div class="pros-cons">

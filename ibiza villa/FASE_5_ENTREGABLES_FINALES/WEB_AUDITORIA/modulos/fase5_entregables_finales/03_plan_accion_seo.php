@@ -24,14 +24,14 @@
                 </div>
                 <div class="summary-card">
                     <div class="summary-content">
-                        <div class="summary-label">Inversión Estimada</div>
-                        <div class="summary-value"><?php echo htmlspecialchars($datosModulo['resumen_ejecutivo']['inversion_estimada']); ?></div>
+                        <div class="summary-label">Esfuerzo Estimado</div>
+                        <div class="summary-value"><?php echo htmlspecialchars($datosModulo['resumen_ejecutivo']['esfuerzo_estimado']); ?></div>
                     </div>
                 </div>
                 <div class="summary-card highlight">
                     <div class="summary-content">
-                        <div class="summary-label">ROI Esperado</div>
-                        <div class="summary-value roi-value"><?php echo htmlspecialchars($datosModulo['resumen_ejecutivo']['roi_esperado']); ?></div>
+                        <div class="summary-label">Mejora Esperada</div>
+                        <div class="summary-value roi-value"><?php echo htmlspecialchars($datosModulo['resumen_ejecutivo']['mejora_esperada']); ?></div>
                     </div>
                 </div>
             </div>
@@ -84,7 +84,7 @@
                             Prioridad: <?php echo htmlspecialchars($datosModulo['fase_1_quick_wins']['prioridad']); ?>
                         </span>
                         <span class="phase-investment">
-                            Inversión: <?php echo htmlspecialchars($datosModulo['fase_1_quick_wins']['inversion']); ?>
+                            Esfuerzo: <?php echo htmlspecialchars($datosModulo['fase_1_quick_wins']['esfuerzo']); ?>
                         </span>
                     </div>
                 </div>
@@ -676,7 +676,7 @@
                             Prioridad: <?php echo htmlspecialchars($datosModulo['fase_2_contenido_estrategico']['prioridad']); ?>
                         </span>
                         <span class="phase-investment">
-                            Inversión: <?php echo htmlspecialchars($datosModulo['fase_2_contenido_estrategico']['inversion']); ?>
+                            Esfuerzo: <?php echo htmlspecialchars($datosModulo['fase_2_contenido_estrategico']['esfuerzo']); ?>
                         </span>
                     </div>
                 </div>
@@ -744,7 +744,7 @@
                             Prioridad: <?php echo htmlspecialchars($datosModulo['fase_3_autoridad_enlaces']['prioridad']); ?>
                         </span>
                         <span class="phase-investment">
-                            Inversión: <?php echo htmlspecialchars($datosModulo['fase_3_autoridad_enlaces']['inversion']); ?>
+                            Esfuerzo: <?php echo htmlspecialchars($datosModulo['fase_3_autoridad_enlaces']['esfuerzo']); ?>
                         </span>
                     </div>
                 </div>
@@ -1050,7 +1050,7 @@
                             Duración: <?php echo htmlspecialchars($datosModulo['fase_4_consolidacion_escalado']['duracion']); ?>
                         </span>
                         <span class="phase-investment">
-                            Inversión: <?php echo htmlspecialchars($datosModulo['fase_4_consolidacion_escalado']['inversion']); ?>
+                            Esfuerzo: <?php echo htmlspecialchars($datosModulo['fase_4_consolidacion_escalado']['esfuerzo']); ?>
                         </span>
                     </div>
                 </div>
@@ -1095,7 +1095,7 @@
                 <?php endforeach; ?>
             </div>
             <div class="budget-total">
-                <span class="total-label">Total Inversión 12 Meses:</span>
+                <span class="total-label">Total Esfuerzo 12 Meses:</span>
                 <span class="total-amount"><?php echo htmlspecialchars($datosModulo['presupuesto_detallado']['total_12_meses']['total']); ?></span>
             </div>
         </div>

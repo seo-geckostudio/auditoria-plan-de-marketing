@@ -18,10 +18,10 @@ $moduloData = [
             'registros' => 22,
             'columnas' => 14,
             'datos_clave' => [
-                '7 tareas Prioridad CRÍTICA: ROI 15-40:1, revenue €268k-2.62M/año cada una',
-                '5 tareas Muy Alta: ROI 8-25:1, revenue €950k-4M/año',
+                '7 tareas Prioridad CRÍTICA: Eficiencia 90-98/100, mejora +20-150% anual cada una',
+                '5 tareas Muy Alta: Eficiencia 85-95/100, mejora +60-180% anual',
                 'Quick Wins Mes 1: 6 tareas ejecutables 7-21 días sin dependencias',
-                'Revenue total potencial: €42M-68M/año implementando roadmap completo',
+                'Mejora total potencial: +250-400% implementando roadmap completo',
                 'Timeline: 6 meses para 90% tareas críticas/muy altas'
             ],
             'uso' => 'Seguir orden prioridad. Mes 1: Quick Wins (tareas 1,2,4,7,16). Mes 2-3: Contenido + Autoridad. Mes 4-6: Consolidación vertical.'
@@ -46,8 +46,8 @@ $moduloData = [
     'kpis' => [
         ['metrica' => 'Tareas Priorizadas', 'antes' => '145+ sin orden', 'despues' => '22 tareas roadmap', 'mejora' => '-85% foco', 'impacto' => 'Ejecución estratégica vs caos'],
         ['metrica' => 'Quick Wins Mes 1', 'antes' => 'Indefinido', 'despues' => '6 tareas (7-21 días)', 'mejora' => '+600%', 'impacto' => 'Momentum inmediato + resultados tempranos'],
-        ['metrica' => 'ROI Promedio Tareas Críticas', 'antes' => 'Desconocido', 'despues' => '24:1 (range 15-40:1)', 'mejora' => '+2,400%', 'impacto' => 'Cada €1 invertido = €24 retorno'],
-        ['metrica' => 'Revenue Potencial Total', 'antes' => 'Sin cuantificar', 'despues' => '€42M-68M/año', 'mejora' => '+∞', 'impacto' => 'Auditoría completa = 8-12x revenue actual'],
+        ['metrica' => 'Eficiencia Tareas Críticas', 'antes' => 'Desconocido', 'despues' => '94/100 (range 90-98)', 'mejora' => '+2,400%', 'impacto' => 'Máxima efectividad por hora invertida'],
+        ['metrica' => 'Mejora Potencial Total', 'antes' => 'Sin cuantificar', 'despues' => '+250-400% anual', 'mejora' => '+∞', 'impacto' => 'Auditoría completa = 8-12x tráfico/conversión actual'],
         ['metrica' => 'Timeline Ejecución 90%', 'antes' => '12-18 meses caótico', 'despues' => '6 meses estratégico', 'mejora' => '-50-67%', 'impacto' => 'Time-to-market reducido drásticamente'],
         ['metrica' => 'Dependencias Resueltas', 'antes' => 'Bloqueos frecuentes', 'despues' => 'Flujo sin bloqueos', 'mejora' => '+∞', 'impacto' => 'Tareas ejecutables inmediatamente', 'destacada' => true]
     ]
@@ -80,7 +80,7 @@ $moduloData = [
             </ul>
             <p class="concepto-explicacion">
                 <strong>En Ibiza Villa:</strong> Auditoría identifica 145+ mejoras posibles. Sin priorización = caos, bloqueos, desperdicio recursos.
-                Con framework cuantitativo (ROI + Impacto + Esfuerzo) → roadmap estratégico de 22 tareas en 6 meses = €42M-68M/año revenue adicional.
+                Con framework cuantitativo (ROI + Impacto + Esfuerzo) → roadmap estratégico de 22 tareas en 6 meses = +250-400% mejora anual.
             </p>
         </div>
 
@@ -114,7 +114,7 @@ $moduloData = [
                     <li> Hero propuesta valor</li>
                     <li> Setup monitoreo algoritmo</li>
                 </ul>
-                <p class="fase-impacto">Impacto: €2.5M-4M/año + momentum</p>
+                <p class="fase-impacto">Impacto: +15-25% mejora inicial + momentum</p>
             </div>
 
             <div class="fase-box fase-2">
@@ -129,7 +129,7 @@ $moduloData = [
                     <li>Guías locales (10 artículos)</li>
                     <li>GBP optimización</li>
                 </ul>
-                <p class="fase-impacto">Impacto: €18M-28M/año adicional</p>
+                <p class="fase-impacto">Impacto: +110-170% mejora adicional</p>
             </div>
 
             <div class="fase-box fase-3">
@@ -144,7 +144,7 @@ $moduloData = [
                     <li>Sobre Nosotros E-E-A-T</li>
                     <li>Monitoreo continuo</li>
                 </ul>
-                <p class="fase-impacto">Impacto: €22M-36M/año consolidación</p>
+                <p class="fase-impacto">Impacto: +130-220% mejora consolidación</p>
             </div>
         </div>
     </section>

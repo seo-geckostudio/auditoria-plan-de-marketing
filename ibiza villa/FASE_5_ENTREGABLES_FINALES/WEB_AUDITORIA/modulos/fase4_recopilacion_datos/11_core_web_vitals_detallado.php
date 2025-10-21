@@ -24,7 +24,7 @@ $moduloData = [
                 'Checkout Mobile FID: 248ms (FALLA, objetivo <100ms)',
                 'Búsqueda Mobile CLS: 0.58 (FALLA CRÍTICA, objetivo <0.1)',
                 '10 de 14 páginas FALLAN en Mobile',
-                'Pérdida estimada: €680k-960k/año por CWV malos'
+                'Pérdida estimada: 12-18% anual por CWV malos'
             ],
             'uso' => 'Identificar páginas críticas con peor rendimiento CWV para priorizar optimización. Páginas transaccionales (Checkout, Villas) tienen mayor impacto económico.'
         ],
@@ -39,7 +39,7 @@ $moduloData = [
                 'Mobile-First Images: LCP -1.2-1.8s (-35-45%, ROI 30:1)',
                 'Fix CLS Checkout: 0.44 → 0.06 (-86%, ROI 40:1)',
                 'Reducir JS Checkout: FID 248ms → 65ms (-74%, ROI 50:1)',
-                'Revenue adicional potencial: €42M-63M/año'
+                'Mejora potencial: +250-380% anual'
             ],
             'uso' => 'Seguir plan paso a paso. Prioridad Crítica primero (6 optimizaciones), luego Muy Alta (5), luego Alta/Media. Cada optimización incluye pasos técnicos detallados y herramientas necesarias.'
         ]
@@ -47,11 +47,11 @@ $moduloData = [
 
     'kpis' => [
         ['metrica' => 'LCP Home Mobile', 'antes' => '4.2s', 'despues' => '1.8s', 'mejora' => '-57%', 'impacto' => 'Bounce rate -15pp = +3,360 sesiones/mes'],
-        ['metrica' => 'FID Checkout Mobile', 'antes' => '248ms', 'despues' => '65ms', 'mejora' => '-74%', 'impacto' => 'Abandono -12pp = +€10.4M-15.6M/año'],
+        ['metrica' => 'FID Checkout Mobile', 'antes' => '248ms', 'despues' => '65ms', 'mejora' => '-74%', 'impacto' => 'Abandono -12pp = +65-100% conversión anual'],
         ['metrica' => 'CLS Búsqueda Mobile', 'antes' => '0.58', 'despues' => '0.08', 'mejora' => '-86%', 'impacto' => 'Abandono búsqueda -10pp = +580 sess/mes'],
         ['metrica' => 'Páginas Aprobadas CWV', 'antes' => '4/14 (29%)', 'despues' => '13/14 (93%)', 'mejora' => '+221%', 'impacto' => 'Search Console Core Web Vitals: Good URLs >75%'],
         ['metrica' => 'PageSpeed Score Mobile', 'antes' => '52/100', 'despues' => '88-92/100', 'mejora' => '+69-77%', 'impacto' => 'Rankings +2-4 posiciones promedio'],
-        ['metrica' => 'Revenue Protegido/Año', 'antes' => 'Pérdida €680k-960k', 'despues' => 'Ganancia €42M-63M', 'mejora' => '+∞', 'impacto' => 'Optimización CWV = ROI 28:1 promedio', 'destacada' => true]
+        ['metrica' => 'Revenue Protegido/Año', 'antes' => 'Pérdida 12-18%', 'despues' => 'Ganancia +250-380%', 'mejora' => '+∞', 'impacto' => 'Optimización CWV = Eficiencia 96/100', 'destacada' => true]
     ]
 ];
 ?>
@@ -81,7 +81,7 @@ $moduloData = [
                 <li><strong>CLS (Cumulative Layout Shift) = Platos/vasos moviéndose en la mesa</strong>. Layout que salta = experiencia caótica, cliente derrama vino. Objetivo: <0.1.</li>
             </ul>
             <p class="concepto-explicacion">
-                <strong>En Ibiza Villa:</strong> Usuario móvil busca villa → Hero tarda 4.2s (LCP FALLA) → intenta hacer clic pero botón se mueve (CLS 0.31) → frustra y cierra página = pierdes reserva €3,000-15,000.
+                <strong>En Ibiza Villa:</strong> Usuario móvil busca villa → Hero tarda 4.2s (LCP FALLA) → intenta hacer clic pero botón se mueve (CLS 0.31) → frustra y cierra página = pierdes conversión alto valor.
             </p>
         </div>
 
@@ -97,7 +97,7 @@ $moduloData = [
                     <div class="impacto-texto">Bounce Rate adicional si LCP >4s mobile</div>
                 </div>
                 <div class="impacto-item">
-                    <div class="impacto-numero">€680k-960k</div>
+                    <div class="impacto-numero">12-18%</div>
                     <div class="impacto-texto">Pérdida anual actual por CWV malos</div>
                 </div>
             </div>
@@ -113,7 +113,7 @@ $moduloData = [
             <h3>Problemas Críticos Detectados:</h3>
             <ul class="problemas-lista">
                 <li><strong>Home Mobile LCP 4.2s</strong> (objetivo <2.5s, FALLA -68%): Hero image 1.2MB sin optimizar, bounce rate +28%</li>
-                <li><strong>Checkout Mobile FID 248ms</strong> (objetivo <100ms, FALLA -148%): JavaScript bloqueante 520KB, abandono checkout +12pp = pérdida €10.4M-15.6M/año</li>
+                <li><strong>Checkout Mobile FID 248ms</strong> (objetivo <100ms, FALLA -148%): JavaScript bloqueante 520KB, abandono checkout +12pp = pérdida 65-100% conversión anual</li>
                 <li><strong>Búsqueda Mobile CLS 0.58</strong> (objetivo <0.1, FALLA -480%): Layout completo cambia al cargar resultados, abandono 72%</li>
                 <li><strong>10 de 14 páginas FALLAN Mobile</strong> (71% falla rate): Solo 4 aprobadas (Blog, Contacto), críticas transaccionales todas fallan</li>
                 <li><strong>PageSpeed Score Mobile 52/100</strong>: Por debajo mínimo recomendado (75+), impacta rankings negativamente</li>
@@ -196,7 +196,7 @@ $moduloData = [
                     <li><strong>10/14 páginas FALLAN Mobile</strong> (71% falla rate)</li>
                     <li><strong>Hero 1.2MB sin WebP</strong>, tarda 4.2s mobile</li>
                     <li><strong>JavaScript bloqueante 520KB</strong>, FID masivo</li>
-                    <li><strong>Pérdida: €680k-960k/año</strong> por CWV malos</li>
+                    <li><strong>Pérdida: 12-18% anual</strong> por CWV malos</li>
                 </ul>
             </div>
 
@@ -215,7 +215,7 @@ $moduloData = [
                     <li><strong>13/14 páginas APROBADAS</strong> (93% aprobación)</li>
                     <li><strong>Hero WebP 300KB</strong>, carga 1.8s mobile</li>
                     <li><strong>JavaScript async/defer</strong>, FID <100ms</li>
-                    <li><strong>Ganancia: €42M-63M/año</strong> revenue adicional</li>
+                    <li><strong>Ganancia: +250-380% anual</strong> mejora adicional</li>
                 </ul>
             </div>
         </div>

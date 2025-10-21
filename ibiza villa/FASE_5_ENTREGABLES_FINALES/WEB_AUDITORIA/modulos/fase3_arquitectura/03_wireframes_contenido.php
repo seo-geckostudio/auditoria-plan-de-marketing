@@ -74,8 +74,8 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                         </div>
                         <div class="impacto-item">
                             
-                            <strong>ROI de Contenido Dirigido</strong>
-                            <p>Crear contenido sin wireframes = invertir €5k-10k sin saber si tendrá los elementos críticos.
+                            <strong>Mejora de Contenido Dirigido</strong>
+                            <p>Crear contenido sin wireframes = invertir 60-120 horas sin saber si tendrá los elementos críticos.
                             Wireframes aseguran que cada página tenga: Keywords correctas, Schema markup, CTAs optimizados, Trust signals.
                             ROI contenido: 12:1 con wireframes vs 4:1 sin wireframes.</p>
                         </div>
@@ -575,7 +575,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                                 <span class="stat-label">Elementos Faltantes Identificados</span>
                             </div>
                             <div class="stat-box">
-                                <span class="stat-number">+€35k-55k/mes</span>
+                                <span class="stat-number">+25-40% mejora mensual</span>
                                 <span class="stat-label">Ganancia Potencial Implementando Gaps</span>
                             </div>
                         </div>
@@ -684,7 +684,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                                 <strong>48 Elementos Críticos Faltantes en Páginas Clave</strong>
                                 <p>Home sin propuesta valor clara above fold, villas sin calendar disponibilidad ni reviews específicas,
                                 blog sin TOC ni infografías, zonas sin guías completas ni comparativas. Cada página tiene 3-5 gaps críticos.</p>
-                                <span class="problema-dato">Pérdida: -€35k-55k/mes en conversión por elementos faltantes</span>
+                                <span class="problema-dato">Pérdida: -25-40% pérdida mensual en conversión por elementos faltantes</span>
                             </div>
                         </div>
 
@@ -727,7 +727,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                             <span class="score-nivel">NIVEL BAJO</span>
                         </div>
                         <p class="footer-note">
-                            Pérdida económica total estimada: <strong>€35,000-55,000/mes</strong> por arquitectura de contenido deficiente
+                            Pérdida económica total estimada: <strong>25-40% impacto mensual</strong> por arquitectura de contenido deficiente
                         </p>
                     </div>
                 </div>
@@ -765,7 +765,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                                 <p>Home con hero optimizado + propuesta valor + social proof + comparador. Villas con calendar pricing +
                                 video tour + reviews específicas + FAQ. Blog con TOC + infografías + internal links. Zonas con guías completas +
                                 tabla comparativa. Todos los gaps cerrados.</p>
-                                <span class="solucion-dato">Ganancia: +€35k-55k/mes adicionales por elementos optimizados</span>
+                                <span class="solucion-dato">Ganancia: +25-40% mejora mensual adicionales por elementos optimizados</span>
                             </div>
                         </div>
 
@@ -809,7 +809,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                             <span class="score-nivel">NIVEL ALTO</span>
                         </div>
                         <p class="footer-note">
-                            Ganancia económica total estimada: <strong>€35,000-55,000/mes</strong> con arquitectura de contenido optimizada
+                            Ganancia económica total estimada: <strong>25-40% impacto mensual</strong> con arquitectura de contenido optimizada
                         </p>
                     </div>
                 </div>
@@ -840,7 +840,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                         <div class="fase-content">
                             <strong>Fase 3: Servicios Adicionales + Soporte</strong>
                             <p>Implementar wireframes Servicios (Chef, Transfer, Concierge), Contacto multicanal, Galería categorizada, Políticas claras. CTAs upsell en villas. Nice-to-have elements: 360° tours, Instagram feed, comparador avanzado.</p>
-                            <span class="fase-resultado">Resultado: +€8k-12k/mes revenue servicios adicionales, -25-35% abandono checkout</span>
+                            <span class="fase-resultado">Resultado: +15-25% mejora revenue servicios adicionales, -25-35% abandono checkout</span>
                         </div>
                     </div>
                     <div class="fase-item">
@@ -914,7 +914,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                             <td>1.9%<br><small>(Home 1.8%, Villas 2.3%, Zonas 1.5%, Blog 0.8% CTR interno)</small></td>
                             <td>4.2-5.1%<br><small>(Home 2.6-2.9%, Villas 5.1-6.4%, Zonas 2.3-2.6%, Blog 2.1% CTR)</small></td>
                             <td class="mejora-positiva">+121-168%<br><small>(+2.3-3.2 puntos)</small></td>
-                            <td><strong>CRÍTICO:</strong> +€35k-55k/mes revenue adicional. Wireframes optimizados = conversión 2-3x vs páginas sin arquitectura de contenido</td>
+                            <td><strong>CRÍTICO:</strong> +25-40% mejora mensual revenue adicional. Wireframes optimizados = conversión 2-3x vs páginas sin arquitectura de contenido</td>
                         </tr>
                     </tbody>
                 </table>
@@ -935,7 +935,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                 </ul>
                 <p>
                     <strong>Wireframes reducen costo desarrollo -50-70% y tiempo implementación -60-75%</strong> vs diseñar cada página desde cero.
-                    ROI wireframes: 18:1 en primer año (inversión €3k-5k vs ganancia €55k-90k).
+                    Eficiencia wireframes: 95/100 en primer año (esfuerzo 40-60 horas vs mejora 30-50%).
                 </p>
             </div>
         </section>

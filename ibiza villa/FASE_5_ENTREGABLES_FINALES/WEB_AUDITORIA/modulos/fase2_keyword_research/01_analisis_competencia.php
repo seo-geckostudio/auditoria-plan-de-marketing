@@ -437,7 +437,7 @@
                                 <strong>Oportunidades Rápidas (Quick Wins):</strong> Keywords con volumen decente, baja dificultad y donde ya tienes cierta autoridad. Puedes capturarlas con optimizaciones on-page y contenido dirigido.
                             </div>
                             <div class="element-tag">
-                                <strong>Oportunidades Medias:</strong> Requieren inversión en contenido de calidad, enlaces internos y algunas mejoras técnicas. ROI positivo en 3-6 meses.
+                                <strong>Oportunidades Medias:</strong> Requieren esfuerzo en contenido de calidad, enlaces internos y algunas mejoras técnicas. Resultados positivos en 3-6 meses.
                             </div>
                             <div class="element-tag">
                                 <strong>Oportunidades Difíciles:</strong> Alta competencia, requiere estrategia de contenido exhaustiva, link building y tiempo. Objetivo a largo plazo pero con potencial de alto tráfico.
