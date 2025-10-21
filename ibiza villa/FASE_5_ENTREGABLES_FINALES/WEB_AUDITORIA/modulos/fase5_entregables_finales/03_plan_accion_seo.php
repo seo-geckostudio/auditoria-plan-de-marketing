@@ -360,18 +360,21 @@
 }
 
 .phase-duration {
-    background: #f0f7e6;
-    color: #1e40af;
+    background: #dbeafe;
+    color: #1e3a8a;
+    font-weight: 600;
 }
 
 .phase-priority.critical {
-    background: #f0f7e6;
+    background: #fee2e2;
     color: #991b1b;
+    font-weight: 700;
 }
 
 .phase-investment {
-    background: #f0f7e6;
-    color: #166534;
+    background: #d1fae5;
+    color: #065f46;
+    font-weight: 600;
 }
 
 .phase-objective {
@@ -559,18 +562,21 @@
 }
 
 .task-priority.priority-critical {
-    background: #f0f7e6;
+    background: #fee2e2;
     color: #991b1b;
+    font-weight: 700;
 }
 
 .task-priority.priority-high {
-    background: #f0f7e6;
+    background: #fed7aa;
     color: #92400e;
+    font-weight: 600;
 }
 
 .task-priority.priority-medium {
-    background: #f0f7e6;
-    color: #1e40af;
+    background: #dbeafe;
+    color: #1e3a8a;
+    font-weight: 600;
 }
 
 .task-effort {
@@ -822,8 +828,9 @@
 }
 
 .phase-priority.high {
-    background: #f0f7e6;
+    background: #fed7aa;
     color: #92400e;
+    font-weight: 600;
 }
 
 .tasks-summary h3 {
@@ -896,18 +903,21 @@
 }
 
 .priority-badge.priority-critical {
-    background: #f0f7e6;
+    background: #fee2e2;
     color: #991b1b;
+    font-weight: 700;
 }
 
 .priority-badge.priority-high {
-    background: #f0f7e6;
+    background: #fed7aa;
     color: #92400e;
+    font-weight: 600;
 }
 
 .priority-badge.priority-medium {
-    background: #f0f7e6;
-    color: #1e40af;
+    background: #dbeafe;
+    color: #1e3a8a;
+    font-weight: 600;
 }
 
 .effort-badge {
@@ -1452,13 +1462,15 @@
 }
 
 .criteria-column.must h3 {
-    background: #f0f7e6;
+    background: #fee2e2;
     color: #991b1b;
+    font-weight: 700;
 }
 
 .criteria-column.should h3 {
-    background: #f0f7e6;
-    color: #1e40af;
+    background: #dbeafe;
+    color: #1e3a8a;
+    font-weight: 600;
 }
 
 .criteria-column ul {
