@@ -1024,7 +1024,392 @@ $metricas_comparacion = [
             margin-bottom: 10px;
         }
 
+        /* Navegación Sticky */
+        .sidebar-nav {
+            position: fixed;
+            left: 20px;
+            top: 120px;
+            width: 220px;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            max-height: calc(100vh - 140px);
+            overflow-y: auto;
+            z-index: 1000;
+        }
+
+        .sidebar-nav h5 {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+
+        .sidebar-nav .nav-link {
+            color: #555;
+            padding: 8px 12px;
+            font-size: 0.9rem;
+            border-left: 3px solid transparent;
+            transition: all 0.3s;
+        }
+
+        .sidebar-nav .nav-link:hover,
+        .sidebar-nav .nav-link.active {
+            color: var(--secondary-color);
+            background: #f8f9fa;
+            border-left-color: var(--secondary-color);
+            padding-left: 20px;
+            font-weight: 600;
+        }
+
+        .tracking-page {
+            margin-left: 260px;
+        }
+
+        /* Glosario */
+        .glossary-item {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--secondary-color);
+            transition: all 0.3s;
+        }
+
+        .glossary-item:hover {
+            background: #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transform: translateX(5px);
+        }
+
+        .glossary-item h4 {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .glossary-item h4 i {
+            color: var(--secondary-color);
+            margin-right: 10px;
+        }
+
+        .glossary-item p {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Quick Wins */
+        .quick-wins-container {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .quick-win {
+            background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+            border-radius: 15px;
+            padding: 25px;
+            display: flex;
+            gap: 20px;
+            border-left: 5px solid var(--warning-color);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+        }
+
+        .quick-win:hover {
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            transform: translateY(-3px);
+        }
+
+        .quick-win-number {
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            background: var(--warning-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .quick-win-content {
+            flex: 1;
+        }
+
+        .quick-win-content h4 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .quick-win-description {
+            color: #555;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .quick-win-config {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .quick-win-config strong {
+            color: var(--secondary-color);
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .quick-win-config ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .quick-win-config li {
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .quick-win-config code {
+            background: #2c3e50;
+            color: #2ecc71;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
+        .impact-badges {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .impact-badges span {
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .badge-impact.very-high {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .badge-impact.high {
+            background: #f39c12;
+            color: white;
+        }
+
+        .badge-impact.medium {
+            background: #3498db;
+            color: white;
+        }
+
+        .badge-difficulty.low {
+            background: #27ae60;
+            color: white;
+        }
+
+        .badge-difficulty.medium {
+            background: #95a5a6;
+            color: white;
+        }
+
+        .badge-time {
+            background: #9b59b6;
+            color: white;
+        }
+
+        /* Testing y Troubleshooting */
+        .testing-phase {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--info-color);
+        }
+
+        .testing-phase h3 {
+            color: var(--info-color);
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .testing-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .testing-step {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .testing-step .step-number {
+            flex-shrink: 0;
+            width: 35px;
+            height: 35px;
+            background: var(--info-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        .testing-step .step-content strong {
+            color: var(--primary-color);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .testing-step .step-content p {
+            margin: 0;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .testing-step code {
+            background: #2c3e50;
+            color: #2ecc71;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        .testing-checklist-box {
+            background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        .testing-checklist-box h4 {
+            color: var(--success-color);
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .checklist-section {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .checklist-section h5 {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--success-color);
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            font-size: 0.95rem;
+            color: #555;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .checklist-item:hover {
+            background: #f8f9fa;
+            padding-left: 10px;
+        }
+
+        .checklist-item input[type="checkbox"] {
+            margin-right: 12px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .troubleshooting-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .problem-solution-item {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 2px solid #e9ecef;
+        }
+
+        .problem-header {
+            background: #fff3cd;
+            padding: 15px 20px;
+            font-size: 1.05rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .problem-header i {
+            color: #f39c12;
+            font-size: 1.2rem;
+        }
+
+        .solution-body {
+            padding: 20px;
+        }
+
+        .solution-body strong {
+            color: var(--success-color);
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .solution-body ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .solution-body li {
+            margin-bottom: 8px;
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .solution-body code {
+            background: #2c3e50;
+            color: #2ecc71;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
         /* Responsive */
+        @media (max-width: 1200px) {
+            .tracking-page {
+                margin-left: 0;
+            }
+        }
+
         @media (max-width: 992px) {
             .comparison-container {
                 grid-template-columns: 1fr;
@@ -1037,6 +1422,23 @@ $metricas_comparacion = [
     </style>
 </head>
 <body>
+    <!-- Navegación Sticky -->
+    <nav class="sidebar-nav d-none d-lg-block">
+        <h5>Índice</h5>
+        <ul class="nav flex-column">
+            <li class="nav-item"><a href="#comparativa" class="nav-link">Comparativa</a></li>
+            <li class="nav-item"><a href="#glosario" class="nav-link">Glosario</a></li>
+            <li class="nav-item"><a href="#quick-wins" class="nav-link">Quick Wins</a></li>
+            <li class="nav-item"><a href="#metodos" class="nav-link">Métodos de Medición</a></li>
+            <li class="nav-item"><a href="#embudo" class="nav-link">Embudo Conversión</a></li>
+            <li class="nav-item"><a href="#gtm-eventos" class="nav-link">Eventos GTM</a></li>
+            <li class="nav-item"><a href="#externos" class="nav-link">Sistemas Externos</a></li>
+            <li class="nav-item"><a href="#implementacion" class="nav-link">Implementación</a></li>
+            <li class="nav-item"><a href="#testing" class="nav-link">Testing</a></li>
+            <li class="nav-item"><a href="#metricas" class="nav-link">Métricas</a></li>
+        </ul>
+    </nav>
+
     <div class="tracking-page">
         <!-- Header -->
         <div class="header-section">
@@ -1044,8 +1446,202 @@ $metricas_comparacion = [
             <p><?php echo $datosModulo['descripcion']; ?></p>
         </div>
 
+        <!-- Glosario de Términos -->
+        <div class="content-section" id="glosario">
+            <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Glosario de Conceptos Clave</h2>
+            <p>Definiciones esenciales para entender el sistema de mediciones:</p>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="glossary-item">
+                        <h4><i class="fas fa-tag"></i> Google Tag Manager (GTM)</h4>
+                        <p>Sistema de gestión de etiquetas que permite agregar y actualizar códigos de seguimiento (píxeles, eventos) sin modificar el código fuente del sitio web. Es como un "administrador central" de todos tus scripts de tracking.</p>
+                    </div>
+
+                    <div class="glossary-item">
+                        <h4><i class="fas fa-chart-line"></i> Google Analytics 4 (GA4)</h4>
+                        <p>Última versión de Google Analytics. A diferencia de Universal Analytics, está basado en eventos (no en sesiones) y permite tracking cross-platform (web + app).</p>
+                    </div>
+
+                    <div class="glossary-item">
+                        <h4><i class="fas fa-database"></i> DataLayer</h4>
+                        <p>Objeto JavaScript que actúa como capa intermedia entre tu sitio web y GTM. Almacena información (productos, valores, IDs) que GTM luego puede leer para enviar a GA4.</p>
+                    </div>
+
+                    <div class="glossary-item">
+                        <h4><i class="fas fa-mouse-pointer"></i> Trigger (Activador)</h4>
+                        <p>Condición que debe cumplirse para que un evento se dispare en GTM. Ejemplos: "cuando el usuario hace clic en el botón X", "cuando se envía el formulario Y".</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="glossary-item">
+                        <h4><i class="fas fa-server"></i> Measurement Protocol API</h4>
+                        <p>API de Google Analytics que permite enviar eventos desde servidores (backend) en vez de solo desde el navegador. Útil para trackear conversiones que ocurren fuera del sitio web (ej: reservas confirmadas en un PMS externo).</p>
+                    </div>
+
+                    <div class="glossary-item">
+                        <h4><i class="fas fa-exchange-alt"></i> Webhook</h4>
+                        <p>Notificación automática que un sistema envía a otro cuando ocurre un evento. Ejemplo: Stripe envía un webhook cuando se procesa un pago, permitiéndote capturar ese dato en GA4.</p>
+                    </div>
+
+                    <div class="glossary-item">
+                        <h4><i class="fas fa-cloud"></i> Server-side Tracking</h4>
+                        <p>Tracking que ocurre en el servidor (no en el navegador del usuario). Más preciso y resistente a ad-blockers. Requiere configurar un servidor GTM en Google Cloud.</p>
+                    </div>
+
+                    <div class="glossary-item">
+                        <h4><i class="fas fa-shopping-cart"></i> Enhanced Ecommerce</h4>
+                        <p>Conjunto de eventos estandarizados de GA4 para e-commerce: view_item, add_to_cart, begin_checkout, purchase. Permite tracking completo del funnel de compra.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Wins -->
+        <div class="content-section" id="quick-wins">
+            <h2 class="section-title"><i class="fas fa-bolt"></i> Quick Wins - Implementa en 2 Horas</h2>
+            <p>Si no tienes tiempo para implementar todo el sistema, empieza con estos 5 eventos de <strong>máximo impacto y mínimo esfuerzo</strong>. Generan valor inmediato:</p>
+
+            <div class="quick-wins-container">
+                <div class="quick-win">
+                    <div class="quick-win-number">1</div>
+                    <div class="quick-win-content">
+                        <h4><i class="fas fa-phone"></i> Phone Click Tracking</h4>
+                        <p class="quick-win-description">Trackea clics en números de teléfono para saber cuántos leads telefónicos generas.</p>
+
+                        <div class="quick-win-config">
+                            <strong>Configuración GTM (10 min):</strong>
+                            <ul>
+                                <li><strong>Trigger:</strong> Click - All Elements | Click URL matches RegEx <code>^tel:</code></li>
+                                <li><strong>Tag:</strong> GA4 Event</li>
+                                <li><strong>Event Name:</strong> <code>generate_lead</code></li>
+                                <li><strong>Parámetros:</strong> <code>method: phone</code>, <code>value: 100</code></li>
+                            </ul>
+                        </div>
+
+                        <div class="impact-badges">
+                            <span class="badge-impact high">Impacto: Alto</span>
+                            <span class="badge-difficulty low">Dificultad: Muy Baja</span>
+                            <span class="badge-time">Tiempo: 10 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quick-win">
+                    <div class="quick-win-number">2</div>
+                    <div class="quick-win-content">
+                        <h4><i class="fab fa-whatsapp"></i> WhatsApp Click Tracking</h4>
+                        <p class="quick-win-description">Mide conversiones a WhatsApp, uno de los canales de mayor conversión.</p>
+
+                        <div class="quick-win-config">
+                            <strong>Configuración GTM (10 min):</strong>
+                            <ul>
+                                <li><strong>Trigger:</strong> Click - All Elements | Click URL contains <code>wa.me</code> OR <code>whatsapp://</code></li>
+                                <li><strong>Tag:</strong> GA4 Event</li>
+                                <li><strong>Event Name:</strong> <code>generate_lead</code></li>
+                                <li><strong>Parámetros:</strong> <code>method: whatsapp</code>, <code>value: 120</code></li>
+                            </ul>
+                        </div>
+
+                        <div class="impact-badges">
+                            <span class="badge-impact very-high">Impacto: Muy Alto</span>
+                            <span class="badge-difficulty low">Dificultad: Muy Baja</span>
+                            <span class="badge-time">Tiempo: 10 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quick-win">
+                    <div class="quick-win-number">3</div>
+                    <div class="quick-win-content">
+                        <h4><i class="fas fa-envelope"></i> Form Submission Tracking</h4>
+                        <p class="quick-win-description">Trackea envíos de formularios de contacto/consulta.</p>
+
+                        <div class="quick-win-config">
+                            <strong>Configuración GTM (15 min):</strong>
+                            <ul>
+                                <li><strong>Trigger:</strong> Form Submission - Form ID: <code>#contact-form</code> (ajustar ID real)</li>
+                                <li><strong>Tag:</strong> GA4 Event</li>
+                                <li><strong>Event Name:</strong> <code>generate_lead</code></li>
+                                <li><strong>Parámetros:</strong> <code>method: form</code>, <code>value: 150</code></li>
+                            </ul>
+                        </div>
+
+                        <div class="impact-badges">
+                            <span class="badge-impact very-high">Impacto: Crítico</span>
+                            <span class="badge-difficulty medium">Dificultad: Baja</span>
+                            <span class="badge-time">Tiempo: 15 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quick-win">
+                    <div class="quick-win-number">4</div>
+                    <div class="quick-win-content">
+                        <h4><i class="fas fa-scroll"></i> Scroll Depth 50%</h4>
+                        <p class="quick-win-description">Mide engagement: usuarios que leen al menos la mitad de la página.</p>
+
+                        <div class="quick-win-config">
+                            <strong>Configuración GTM (20 min):</strong>
+                            <ul>
+                                <li><strong>Variable:</strong> Scroll Depth Threshold (built-in)</li>
+                                <li><strong>Trigger:</strong> Scroll Depth - 50%</li>
+                                <li><strong>Tag:</strong> GA4 Event</li>
+                                <li><strong>Event Name:</strong> <code>scroll</code></li>
+                                <li><strong>Parámetros:</strong> <code>percent_scrolled: 50</code></li>
+                            </ul>
+                        </div>
+
+                        <div class="impact-badges">
+                            <span class="badge-impact medium">Impacto: Medio</span>
+                            <span class="badge-difficulty medium">Dificultad: Baja</span>
+                            <span class="badge-time">Tiempo: 20 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quick-win">
+                    <div class="quick-win-number">5</div>
+                    <div class="quick-win-content">
+                        <h4><i class="fas fa-external-link-alt"></i> Outbound Link Clicks</h4>
+                        <p class="quick-win-description">Trackea clics en links externos (redes sociales, partners, etc.).</p>
+
+                        <div class="quick-win-config">
+                            <strong>Configuración GTM (15 min):</strong>
+                            <ul>
+                                <li><strong>Trigger:</strong> Click - All Elements | Click URL does NOT contain <code>{{Page Hostname}}</code></li>
+                                <li><strong>Tag:</strong> GA4 Event</li>
+                                <li><strong>Event Name:</strong> <code>click</code></li>
+                                <li><strong>Parámetros:</strong> <code>link_url: {{Click URL}}</code>, <code>outbound: true</code></li>
+                            </ul>
+                        </div>
+
+                        <div class="impact-badges">
+                            <span class="badge-impact medium">Impacto: Medio</span>
+                            <span class="badge-difficulty low">Dificultad: Baja</span>
+                            <span class="badge-time">Tiempo: 15 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert-box success" style="margin-top: 30px;">
+                <h4><i class="fas fa-rocket"></i> Resultado en 2 Horas</h4>
+                <p><strong>Con solo estos 5 eventos implementados, tendrás visibilidad de:</strong></p>
+                <ul>
+                    <li>✅ Leads telefónicos (phone clicks)</li>
+                    <li>✅ Leads WhatsApp (conversión alta)</li>
+                    <li>✅ Leads formulario (conversión principal)</li>
+                    <li>✅ Engagement de contenido (scroll depth)</li>
+                    <li>✅ Interacción con links externos</li>
+                </ul>
+                <p><strong>Esto te da ~70% del valor del tracking completo con solo 10% del esfuerzo.</strong> Una vez implementados y validados, puedes continuar con los eventos avanzados del resto del módulo.</p>
+            </div>
+        </div>
+
         <!-- Tabla de Comparación de Métricas -->
-        <div class="content-section">
+        <div class="content-section" id="comparativa">
             <h2 class="section-title"><i class="fas fa-balance-scale"></i> Comparativa: Tracking Actual vs Propuesto</h2>
 
             <table class="table metrics-table">
@@ -1115,7 +1711,7 @@ $metricas_comparacion = [
         </div>
 
         <!-- Métodos de Medición -->
-        <div class="content-section">
+        <div class="content-section" id="metodos">
             <h2 class="section-title"><i class="fas fa-tools"></i> Métodos de Medición Disponibles</h2>
 
             <?php foreach ($datosModulo['metodos_medicion'] as $key => $metodo): ?>
@@ -1138,7 +1734,7 @@ $metricas_comparacion = [
         </div>
 
         <!-- Embudo de Conversión -->
-        <div class="content-section">
+        <div class="content-section" id="embudo">
             <h2 class="section-title"><i class="fas fa-filter"></i> Embudo de Conversión Completo</h2>
 
             <?php foreach ($datosModulo['embudo_conversion'] as $stage_key => $stage): ?>
@@ -1219,7 +1815,7 @@ $metricas_comparacion = [
         </div>
 
         <!-- Eventos GTM Específicos -->
-        <div class="content-section">
+        <div class="content-section" id="gtm-eventos">
             <h2 class="section-title"><i class="fab fa-google"></i> Eventos GTM Específicos para Ibiza Villa</h2>
             <p>Configuración detallada de los 28 eventos personalizados en Google Tag Manager:</p>
 
@@ -1275,7 +1871,7 @@ $metricas_comparacion = [
         </div>
 
         <!-- Integración con Sistemas Externos -->
-        <div class="content-section">
+        <div class="content-section" id="externos">
             <h2 class="section-title"><i class="fas fa-plug"></i> Integración con Sistemas Externos</h2>
             <p>Cómo trackear conversiones que ocurren fuera de Google Analytics (PMS, CRM, Payment gateways):</p>
 
@@ -1315,7 +1911,7 @@ $metricas_comparacion = [
         </div>
 
         <!-- Implementación Técnica -->
-        <div class="content-section">
+        <div class="content-section" id="implementacion">
             <h2 class="section-title"><i class="fas fa-code"></i> Implementación Técnica</h2>
 
             <?php foreach ($datosModulo['implementacion_tecnica'] as $phase_key => $phase): ?>
@@ -1362,8 +1958,226 @@ $metricas_comparacion = [
             </div>
         </div>
 
+        <!-- Testing y Troubleshooting -->
+        <div class="content-section" id="testing">
+            <h2 class="section-title"><i class="fas fa-vial"></i> Testing y Validación</h2>
+            <p>Cómo validar que tu implementación de tracking funciona correctamente:</p>
+
+            <div class="testing-phase">
+                <h3><i class="fas fa-microscope"></i> Fase 1: GTM Preview Mode</h3>
+                <div class="testing-steps">
+                    <div class="testing-step">
+                        <span class="step-number">1</span>
+                        <div class="step-content">
+                            <strong>Activar Preview Mode</strong>
+                            <p>En GTM, clic en "Preview" (esquina superior derecha) → se abre ventana con URL del sitio</p>
+                        </div>
+                    </div>
+                    <div class="testing-step">
+                        <span class="step-number">2</span>
+                        <div class="step-content">
+                            <strong>Navegar y Disparar Eventos</strong>
+                            <p>Navega por el sitio en la ventana abierta: haz clic en botones, envía formularios, scroll, etc.</p>
+                        </div>
+                    </div>
+                    <div class="testing-step">
+                        <span class="step-number">3</span>
+                        <div class="step-content">
+                            <strong>Verificar en Panel Preview</strong>
+                            <p>En el panel GTM Preview verás los triggers que se activan. Verifica que tus eventos aparezcan en "Tags Fired"</p>
+                        </div>
+                    </div>
+                    <div class="testing-step">
+                        <span class="step-number">4</span>
+                        <div class="step-content">
+                            <strong>Inspeccionar Variables</strong>
+                            <p>Haz clic en cada tag disparado para ver valores de variables. Verifica que sean correctos (Villa ID, valor, etc.)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testing-phase">
+                <h3><i class="fas fa-bug"></i> Fase 2: GA4 DebugView</h3>
+                <div class="testing-steps">
+                    <div class="testing-step">
+                        <span class="step-number">1</span>
+                        <div class="step-content">
+                            <strong>Habilitar Modo Debug</strong>
+                            <p>Agrega <code>?debug_mode=true</code> a la URL del sitio en tu navegador</p>
+                        </div>
+                    </div>
+                    <div class="testing-step">
+                        <span class="step-number">2</span>
+                        <div class="step-content">
+                            <strong>Abrir DebugView en GA4</strong>
+                            <p>En GA4: Admin → DebugView (verás eventos en tiempo real)</p>
+                        </div>
+                    </div>
+                    <div class="testing-step">
+                        <span class="step-number">3</span>
+                        <div class="step-content">
+                            <strong>Verificar Eventos Llegan</strong>
+                            <p>Dispara eventos en el sitio y confirma que aparecen en DebugView (puede tardar 2-5 segundos)</p>
+                        </div>
+                    </div>
+                    <div class="testing-step">
+                        <span class="step-number">4</span>
+                        <div class="step-content">
+                            <strong>Validar Parámetros</strong>
+                            <p>Haz clic en cada evento para expandir parámetros. Verifica que item_id, value, method, etc. sean correctos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testing-checklist-box">
+                <h4><i class="fas fa-check-square"></i> Checklist de Validación Completa</h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="checklist-section">
+                            <h5>GTM</h5>
+                            <label class="checklist-item">
+                                <input type="checkbox">
+                                <span>Triggers disparan en Preview Mode</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox">
+                                <span>Tags se marcan como "Fired" (no "Not Fired")</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox">
+                                <span>Variables tienen valores correctos (no undefined)</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox">
+                                <span>No hay errores en consola JavaScript</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="checklist-section">
+                            <h5>GA4</h5>
+                            <label class="checklist-item">
+                                <input type="checkbox">
+                                <span>Eventos aparecen en DebugView</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox">
+                                <span>Parámetros completos (item_id, value, currency)</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox">
+                                <span>Conversiones marcadas correctamente</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox">
+                                <span>Attribution paths funcionan en reportes</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 40px;"><i class="fas fa-tools"></i> Problemas Comunes y Soluciones</h3>
+
+            <div class="troubleshooting-section">
+                <div class="problem-solution-item">
+                    <div class="problem-header">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <strong>Problema:</strong> Eventos no aparecen en GA4 DebugView
+                    </div>
+                    <div class="solution-body">
+                        <strong>✅ Soluciones:</strong>
+                        <ol>
+                            <li>Verificar GA4 Measurement ID correcto en GTM tag (empieza con "G-")</li>
+                            <li>Desactivar ad-blockers (uBlock Origin, AdBlock Plus bloquean GA4)</li>
+                            <li>Verificar modo debug activo: URL debe tener <code>?debug_mode=true</code></li>
+                            <li>Comprobar que tag GA4 se dispara en GTM Preview (debe aparecer en "Tags Fired")</li>
+                            <li>Esperar 10-15 segundos, a veces hay delay en DebugView</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="problem-solution-item">
+                    <div class="problem-header">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <strong>Problema:</strong> Trigger se activa pero parámetros están vacíos (undefined)
+                    </div>
+                    <div class="solution-body">
+                        <strong>✅ Soluciones:</strong>
+                        <ol>
+                            <li>Variables están mal configuradas. Verificar en GTM Preview → Variables → click en evento → ver valores</li>
+                            <li>Si variable es de dataLayer, verificar que dataLayer.push() ocurre ANTES de que se dispare el tag</li>
+                            <li>Si variable es de DOM (ej: Click Classes), verificar que elemento HTML tenga esa clase/atributo</li>
+                            <li>Usar fallback values en variables para evitar undefined</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="problem-solution-item">
+                    <div class="problem-header">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <strong>Problema:</strong> Trigger se dispara múltiples veces para un solo clic
+                    </div>
+                    <div class="solution-body">
+                        <strong>✅ Soluciones:</strong>
+                        <ol>
+                            <li>Trigger tipo "Click - All Elements" muy amplio. Hacer más específico con condiciones (ej: Click Classes equals "button-submit")</li>
+                            <li>Usar "This fires on" → Some Clicks (no All Clicks)</li>
+                            <li>Verificar que no haya event listeners duplicados en código JavaScript del sitio</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="problem-solution-item">
+                    <div class="problem-header">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <strong>Problema:</strong> Form submission trigger no funciona
+                    </div>
+                    <div class="solution-body">
+                        <strong>✅ Soluciones:</strong>
+                        <ol>
+                            <li>Formulario usa preventDefault() en JavaScript → trigger "Form Submission" no funciona. Usar trigger de Click en botón submit</li>
+                            <li>Formulario es AJAX (no recarga página) → necesitas custom event en dataLayer al enviar</li>
+                            <li>Verificar que Form ID es correcto (inspeccionar HTML del formulario)</li>
+                            <li>Alternativa: trigger "Element Visibility" cuando aparece mensaje de "Gracias por enviar"</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="problem-solution-item">
+                    <div class="problem-header">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <strong>Problema:</strong> Conversiones externas (webhooks) no llegan a GA4
+                    </div>
+                    <div class="solution-body">
+                        <strong>✅ Soluciones:</strong>
+                        <ol>
+                            <li>Verificar webhook está configurado en sistema externo (Stripe, PMS, etc.)</li>
+                            <li>Comprobar logs de Cloud Function para ver si recibe POST requests</li>
+                            <li>Validar que client_id se preserve: debe pasarse desde web → formulario → PMS → webhook</li>
+                            <li>Verificar Measurement Protocol API secret y Measurement ID correctos</li>
+                            <li>Testing: Usar Postman para enviar evento manual vía Measurement Protocol y verificar aparece en GA4</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert-box info" style="margin-top: 30px;">
+                <h4><i class="fas fa-lightbulb"></i> Mejores Prácticas de Testing</h4>
+                <ul>
+                    <li><strong>Nunca publiques sin probar:</strong> Siempre usar GTM Preview + GA4 DebugView antes de publicar</li>
+                    <li><strong>Testing en múltiples navegadores:</strong> Chrome, Firefox, Safari pueden comportarse diferente</li>
+                    <li><strong>Mobile testing:</strong> No olvides probar en mobile (comportamiento táctil diferente a clicks)</li>
+                    <li><strong>Testing post-publicación:</strong> Después de publicar, hacer prueba completa en sitio real (no solo preview)</li>
+                    <li><strong>Monitoring continuo:</strong> Revisar GA4 semanalmente para detectar eventos que dejaron de funcionar (ej: por cambios en sitio)</li>
+                </ul>
+            </div>
+        </div>
+
         <!-- Métricas Principales por Fase -->
-        <div class="content-section">
+        <div class="content-section" id="metricas">
             <h2 class="section-title"><i class="fas fa-chart-pie"></i> Métricas Principales a Trackear</h2>
 
             <?php foreach ($datosModulo['metricas_principales'] as $phase_name => $metrics): ?>
