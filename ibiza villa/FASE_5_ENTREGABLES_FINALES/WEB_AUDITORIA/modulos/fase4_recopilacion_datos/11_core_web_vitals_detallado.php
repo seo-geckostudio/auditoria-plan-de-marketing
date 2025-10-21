@@ -72,7 +72,7 @@ $moduloData = [
 
         <div class="analogia-box">
             <div class="analogia-header">
-                <i class="fas fa-info-circle"></i>
+                
                 <strong>Piensa en Core Web Vitals como la Velocidad de Servicio en un Restaurante de Lujo:</strong>
             </div>
             <ul class="analogia-list">

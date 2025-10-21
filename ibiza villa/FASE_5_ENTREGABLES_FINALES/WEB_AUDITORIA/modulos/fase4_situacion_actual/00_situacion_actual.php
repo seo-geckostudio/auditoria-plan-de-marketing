@@ -27,7 +27,6 @@ $paginas = $datosModulo['paginas'];
             <div class="metrics-grid-large">
                 <div class="metric-card large">
                     <div class="metric-icon">
-                        <i class="fas fa-key"></i>
                     </div>
                     <div class="metric-content">
                         <div class="metric-value"><?php echo number_format($metricas_generales['keywords_totales']); ?></div>
@@ -36,7 +35,6 @@ $paginas = $datosModulo['paginas'];
                 </div>
                 <div class="metric-card large">
                     <div class="metric-icon">
-                        <i class="fas fa-mouse-pointer"></i>
                     </div>
                     <div class="metric-content">
                         <div class="metric-value"><?php echo number_format($metricas_generales['clics_totales']); ?></div>
@@ -45,7 +43,6 @@ $paginas = $datosModulo['paginas'];
                 </div>
                 <div class="metric-card large">
                     <div class="metric-icon">
-                        <i class="fas fa-eye"></i>
                     </div>
                     <div class="metric-content">
                         <div class="metric-value"><?php echo number_format($metricas_generales['impresiones_totales']); ?></div>
@@ -54,7 +51,6 @@ $paginas = $datosModulo['paginas'];
                 </div>
                 <div class="metric-card large highlight">
                     <div class="metric-icon">
-                        <i class="fas fa-percentage"></i>
                     </div>
                     <div class="metric-content">
                         <div class="metric-value"><?php echo number_format($metricas_generales['ctr_promedio'], 1); ?>%</div>
@@ -63,7 +59,6 @@ $paginas = $datosModulo['paginas'];
                 </div>
                 <div class="metric-card large">
                     <div class="metric-icon">
-                        <i class="fas fa-chart-line"></i>
                     </div>
                     <div class="metric-content">
                         <div class="metric-value"><?php echo number_format($metricas_generales['posicion_promedio'], 1); ?></div>
@@ -77,27 +72,21 @@ $paginas = $datosModulo['paginas'];
             <h2>Contenido de esta Sección</h2>
             <div class="contents-list">
                 <div class="content-item">
-                    <i class="fas fa-file-alt"></i>
                     <span>Descripción del Proyecto</span>
                 </div>
                 <div class="content-item">
-                    <i class="fas fa-chart-pie"></i>
                     <span>Analítica Web (GA4)</span>
                 </div>
                 <div class="content-item">
-                    <i class="fas fa-filter"></i>
                     <span>Canales de Captación</span>
                 </div>
                 <div class="content-item">
-                    <i class="fas fa-search"></i>
                     <span>Posicionamiento y Keywords</span>
                 </div>
                 <div class="content-item">
-                    <i class="fas fa-globe"></i>
                     <span>Análisis por País</span>
                 </div>
                 <div class="content-item">
-                    <i class="fas fa-lightbulb"></i>
                     <span>Conclusiones y Recomendaciones</span>
                 </div>
             </div>
@@ -283,7 +272,6 @@ foreach ($paginas as $index => $pagina):
         <div class="project-info-grid">
             <div class="info-card">
                 <div class="info-icon">
-                    <i class="fas fa-globe"></i>
                 </div>
                 <div class="info-content">
                     <div class="info-label">Dominio</div>
@@ -292,7 +280,6 @@ foreach ($paginas as $index => $pagina):
             </div>
             <div class="info-card">
                 <div class="info-icon">
-                    <i class="fas fa-industry"></i>
                 </div>
                 <div class="info-content">
                     <div class="info-label">Sector</div>
@@ -301,7 +288,6 @@ foreach ($paginas as $index => $pagina):
             </div>
             <div class="info-card">
                 <div class="info-icon">
-                    <i class="fas fa-code"></i>
                 </div>
                 <div class="info-content">
                     <div class="info-label">CMS/Plataforma</div>
@@ -312,7 +298,7 @@ foreach ($paginas as $index => $pagina):
 
         <div class="project-details">
             <div class="detail-section">
-                <h3><i class="fas fa-map-marked-alt"></i> Mercados Objetivo</h3>
+                <h3>Mercados Objetivo</h3>
                 <div class="markets-list">
                     <?php foreach ($datos['mercados_objetivo'] as $mercado): ?>
                     <div class="market-badge"><?php echo htmlspecialchars($mercado); ?></div>
@@ -321,7 +307,7 @@ foreach ($paginas as $index => $pagina):
             </div>
 
             <div class="detail-section">
-                <h3><i class="fas fa-language"></i> Idiomas Disponibles</h3>
+                <h3>Idiomas Disponibles</h3>
                 <div class="languages-list">
                     <?php foreach ($datos['idiomas'] as $idioma): ?>
                     <div class="language-badge"><?php echo htmlspecialchars($idioma); ?></div>
@@ -330,7 +316,7 @@ foreach ($paginas as $index => $pagina):
             </div>
 
             <div class="detail-section">
-                <h3><i class="fas fa-bullseye"></i> Objetivos SEO Principales</h3>
+                <h3>Objetivos SEO Principales</h3>
                 <ul class="objectives-list">
                     <?php foreach ($datos['objetivos_seo'] as $objetivo): ?>
                     <li><?php echo htmlspecialchars($objetivo); ?></li>
@@ -521,7 +507,6 @@ foreach ($paginas as $index => $pagina):
         <div class="analytics-grid">
             <div class="analytics-card primary">
                 <div class="card-icon">
-                    <i class="fas fa-users"></i>
                 </div>
                 <div class="card-content">
                     <div class="card-value"><?php echo number_format($datos['usuarios_mes']); ?></div>
@@ -530,7 +515,6 @@ foreach ($paginas as $index => $pagina):
             </div>
             <div class="analytics-card primary">
                 <div class="card-icon">
-                    <i class="fas fa-chart-line"></i>
                 </div>
                 <div class="card-content">
                     <div class="card-value"><?php echo number_format($datos['sesiones_mes']); ?></div>
@@ -539,7 +523,6 @@ foreach ($paginas as $index => $pagina):
             </div>
             <div class="analytics-card">
                 <div class="card-icon">
-                    <i class="fas fa-file-alt"></i>
                 </div>
                 <div class="card-content">
                     <div class="card-value"><?php echo number_format($datos['paginas_vistas']); ?></div>
@@ -548,7 +531,6 @@ foreach ($paginas as $index => $pagina):
             </div>
             <div class="analytics-card">
                 <div class="card-icon">
-                    <i class="fas fa-clock"></i>
                 </div>
                 <div class="card-content">
                     <div class="card-value"><?php echo htmlspecialchars($datos['duracion_sesion_promedio']); ?></div>
@@ -557,7 +539,6 @@ foreach ($paginas as $index => $pagina):
             </div>
             <div class="analytics-card">
                 <div class="card-icon">
-                    <i class="fas fa-sign-out-alt"></i>
                 </div>
                 <div class="card-content">
                     <div class="card-value"><?php echo htmlspecialchars($datos['tasa_rebote']); ?></div>
@@ -1197,7 +1178,6 @@ foreach ($paginas as $index => $pagina):
                     </div>
                 </div>
                 <div class="best-keyword">
-                    <i class="fas fa-star"></i>
                     <span><?php echo htmlspecialchars($pais_data['keyword_mejor']); ?></span>
                 </div>
             </div>
@@ -1326,6 +1306,8 @@ foreach ($paginas as $index => $pagina):
 
 .stat-item.highlight {
     background: linear-gradient(135deg, #88B04B 0%, #059669 100%);
+    border: 2px solid rgba(255,255,255,0.3);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .stat-label {
@@ -1338,7 +1320,8 @@ foreach ($paginas as $index => $pagina):
 }
 
 .stat-item.highlight .stat-label {
-    color: rgba(255,255,255,0.9);
+    color: white;
+    font-weight: 700;
 }
 
 .stat-value {
@@ -1349,6 +1332,7 @@ foreach ($paginas as $index => $pagina):
 
 .stat-item.highlight .stat-value {
     color: white;
+    font-weight: 900;
 }
 
 .best-keyword {
@@ -1380,7 +1364,6 @@ foreach ($paginas as $index => $pagina):
         <div class="swot-grid">
             <div class="swot-card fortalezas">
                 <div class="swot-header">
-                    <i class="fas fa-check-circle"></i>
                     <h3>Fortalezas</h3>
                 </div>
                 <ul class="swot-list">
@@ -1392,7 +1375,6 @@ foreach ($paginas as $index => $pagina):
 
             <div class="swot-card debilidades">
                 <div class="swot-header">
-                    <i class="fas fa-exclamation-triangle"></i>
                     <h3>Debilidades</h3>
                 </div>
                 <ul class="swot-list">
@@ -1404,7 +1386,6 @@ foreach ($paginas as $index => $pagina):
 
             <div class="swot-card oportunidades">
                 <div class="swot-header">
-                    <i class="fas fa-lightbulb"></i>
                     <h3>Oportunidades</h3>
                 </div>
                 <ul class="swot-list">
@@ -1416,7 +1397,6 @@ foreach ($paginas as $index => $pagina):
 
             <div class="swot-card prioridades">
                 <div class="swot-header">
-                    <i class="fas fa-flag-checkered"></i>
                     <h3>Prioridades de Acción</h3>
                 </div>
                 <ul class="swot-list">

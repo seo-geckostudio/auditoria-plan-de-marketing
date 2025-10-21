@@ -48,7 +48,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                 </p>
                 <div class="analogia-box">
                     <div class="analogia-header">
-                        <i class="fas fa-info-circle"></i>
                         <strong>Piensa en tu sitio web como un edificio de apartamentos:</strong>
                     </div>
                     <ul class="analogia-list">
@@ -101,7 +100,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
             <div class="entregables-grid">
                 <div class="entregable-card priority-critical">
                     <div class="entregable-icon">
-                        <i class="fas fa-file-csv"></i>
                     </div>
                     <div class="entregable-content">
                         <h3>URLs Huérfanas a Enlazar</h3>
@@ -116,13 +114,12 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                            class="btn-download"
                            download
                            title="Descargar CSV con 127 URLs huérfanas">
-                            <i class="fas fa-download"></i> Descargar CSV
+                            Descargar CSV
                         </a>
                     </div>
                 </div>
                 <div class="entregable-card priority-high">
                     <div class="entregable-icon">
-                        <i class="fas fa-file-csv"></i>
                     </div>
                     <div class="entregable-content">
                         <h3>URLs Profundas a Reducir</h3>
@@ -137,13 +134,13 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                            class="btn-download"
                            download
                            title="Descargar CSV con 26 URLs profundas">
-                            <i class="fas fa-download"></i> Descargar CSV
+                            Descargar CSV
                         </a>
                     </div>
                 </div>
             </div>
             <div class="como-usar-entregables">
-                <h3> Cómo Usar Estos Archivos</h3>
+                <h3>Cómo Usar Estos Archivos</h3>
                 <ol class="uso-list">
                     <li><strong>Descarga</strong> el CSV haciendo clic en el botón azul</li>
                     <li><strong>Ábrelo</strong> en Excel, Google Sheets o Numbers</li>
@@ -961,7 +958,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     gap: 20px;
     flex-wrap: wrap;
     font-size: 14px;
-    color: #888;
+    color: white;
 }
 
 .arquitectura-page .page-meta span {
@@ -995,6 +992,10 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     padding: 20px;
     border-radius: 6px;
     text-align: center;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .arquitectura-page .summary-label {
@@ -1002,18 +1003,35 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-bottom: 10px;
-    opacity: 0.9;
+    color: white;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-word;
 }
 
 .arquitectura-page .summary-value {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     margin-bottom: 5px;
+    color: white;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-word;
 }
 
 .arquitectura-page .summary-detail {
     font-size: 13px;
-    opacity: 0.85;
+    color: rgba(255, 255, 255, 0.95);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-word;
 }
 
 .arquitectura-page .summary-diagnosis {

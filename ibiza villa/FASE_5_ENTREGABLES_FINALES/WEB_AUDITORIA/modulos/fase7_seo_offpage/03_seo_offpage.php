@@ -34,7 +34,6 @@ $paginas = $datosModulo['paginas'];
             </p>
             <div class="analogia-box">
                 <div class="analogia-header">
-                    <i class="fas fa-info-circle"></i>
                     <strong>Piensa en el SEO Off-Page como un sistema de recomendaciones profesionales:</strong>
                 </div>
                 <ul class="analogia-list">
@@ -58,7 +57,7 @@ $paginas = $datosModulo['paginas'];
                     sitios DR 60-80. Subir a DR 50 = acceso a primeras posiciones en búsquedas de alto volumen.</p>
                 </div>
                 <div class="impacto-item">
-                    <i class="fas fa-dollar-sign"></i>
+                    <span class="impacto-icon"></span>
                     <h3>Tráfico de Referencia</h3>
                     <p>Un backlink en Timeout.com (DR 78) puede generar 400-600 visitas/mes directas MÁS el impulso SEO.
                     15 backlinks estratégicos = +2,500-4,000 visitas/mes cualificadas.</p>
@@ -86,9 +85,6 @@ $paginas = $datosModulo['paginas'];
         <div class="entregables-grid">
             <!-- CSV 1: Oportunidades Backlinks -->
             <div class="entregable-card priority-critical">
-                <div class="entregable-icon">
-                    <i class="fas fa-file-csv"></i>
-                </div>
                 <div class="entregable-content">
                     <h3>Oportunidades de Backlinks Cualificados</h3>
                     <p class="entregable-desc">
@@ -104,16 +100,13 @@ $paginas = $datosModulo['paginas'];
                         Sigue la columna "Estrategia" para outreach. Prioriza DR >60 y alta relevancia temática.
                     </p>
                     <a href="/entregables/off_page/oportunidades_backlinks.csv" class="btn-download" download>
-                        <i class="fas fa-download"></i> Descargar CSV
+                        Descargar CSV
                     </a>
                 </div>
             </div>
 
             <!-- CSV 2: Enlaces Tóxicos -->
             <div class="entregable-card priority-warning">
-                <div class="entregable-icon">
-                    <i class="fas fa-file-csv"></i>
-                </div>
                 <div class="entregable-content">
                     <h3>Enlaces Tóxicos a Eliminar (Disavow)</h3>
                     <p class="entregable-desc">
@@ -129,14 +122,14 @@ $paginas = $datosModulo['paginas'];
                         Súbelo a Google Search Console. Documenta fecha y resultado para seguimiento.
                     </p>
                     <a href="/entregables/off_page/enlaces_toxicos.csv" class="btn-download" download>
-                        <i class="fas fa-download"></i> Descargar CSV
+                        Descargar CSV
                     </a>
                 </div>
             </div>
         </div>
 
         <div class="instrucciones-uso">
-            <h3><i class="fas fa-info-circle"></i> Instrucciones de Implementación</h3>
+            <h3>Instrucciones de Implementación</h3>
             <ol class="instrucciones-list">
                 <li>
                     <strong>Eliminar enlaces tóxicos PRIMERO</strong> - crea y sube archivo disavow.txt a GSC
@@ -220,7 +213,7 @@ $paginas = $datosModulo['paginas'];
             <!-- COLUMNA FLECHA -->
             <div class="comparacion-flecha">
                 <div class="flecha-container">
-                    <i class="fas fa-arrow-right"></i>
+                    <span class="flecha-simbolo">→</span>
                     <span class="flecha-text">LINK BUILDING</span>
                 </div>
             </div>
@@ -449,7 +442,6 @@ $paginas = $datosModulo['paginas'];
         </div>
         <div class="nota-tiempos">
             <p>
-                <i class="fas fa-clock"></i>
                 <strong>Nota sobre tiempos:</strong> Los primeros backlinks mejoran DR en 45-60 días. El impacto completo
                 en rankings se ve en 90-120 días ya que Google evalúa patrones de crecimiento natural. Estrategia de 6 meses
                 genera resultados sostenibles y permanentes.
@@ -481,10 +473,9 @@ $paginas = $datosModulo['paginas'];
     <div class="page-content">
         <!-- Métricas de Autoridad -->
         <div class="authority-metrics-section">
-            <h2><i class="fas fa-chart-line"></i> Métricas de Autoridad del Dominio</h2>
+            <h2>Métricas de Autoridad del Dominio</h2>
             <div class="authority-grid">
                 <div class="authority-card highlight">
-                    <div class="metric-icon"><i class="fas fa-shield-alt"></i></div>
                     <div class="metric-content">
                         <div class="metric-label">Domain Rating (Ahrefs)</div>
                         <div class="metric-value large"><?php echo $metricas['domain_rating_ahrefs']; ?></div>
@@ -493,7 +484,6 @@ $paginas = $datosModulo['paginas'];
                 </div>
 
                 <div class="authority-card">
-                    <div class="metric-icon"><i class="fas fa-link"></i></div>
                     <div class="metric-content">
                         <div class="metric-label">URL Rating (Home)</div>
                         <div class="metric-value"><?php echo $metricas['url_rating_home']; ?></div>
@@ -502,7 +492,6 @@ $paginas = $datosModulo['paginas'];
                 </div>
 
                 <div class="authority-card">
-                    <div class="metric-icon"><i class="fas fa-globe"></i></div>
                     <div class="metric-content">
                         <div class="metric-label">Dominios Referidos</div>
                         <div class="metric-value"><?php echo number_format($metricas['dominios_referidos']); ?></div>
@@ -511,7 +500,6 @@ $paginas = $datosModulo['paginas'];
                 </div>
 
                 <div class="authority-card">
-                    <div class="metric-icon"><i class="fas fa-arrow-circle-left"></i></div>
                     <div class="metric-content">
                         <div class="metric-label">Backlinks Totales</div>
                         <div class="metric-value"><?php echo number_format($metricas['backlinks_totales']); ?></div>
@@ -520,7 +508,6 @@ $paginas = $datosModulo['paginas'];
                 </div>
 
                 <div class="authority-card">
-                    <div class="metric-icon"><i class="fas fa-users"></i></div>
                     <div class="metric-content">
                         <div class="metric-label">Tráfico Referido</div>
                         <div class="metric-value"><?php echo number_format($metricas['trafico_referido_estimado']); ?></div>
@@ -532,7 +519,7 @@ $paginas = $datosModulo['paginas'];
 
         <!-- Comparativa con Competencia -->
         <div class="competition-comparison">
-            <h2><i class="fas fa-users-cog"></i> Comparativa con Competencia</h2>
+            <h2>Comparativa con Competencia</h2>
 
             <table class="competition-table">
                 <thead>
@@ -587,7 +574,7 @@ $paginas = $datosModulo['paginas'];
 
         <!-- Resumen de Estado -->
         <div class="status-summary">
-            <h3><i class="fas fa-clipboard-check"></i> Resumen de Estado Actual</h3>
+            <h3>Resumen de Estado Actual</h3>
             <ul class="status-list">
                 <?php foreach ($resumen as $item): ?>
                 <li><?php echo htmlspecialchars($item); ?></li>
@@ -668,7 +655,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="page-content">
         <!-- Distribución de Enlaces -->
         <div class="link-distribution-section">
-            <h2><i class="fas fa-chart-pie"></i> Distribución de Enlaces</h2>
+            <h2>Distribución de Enlaces</h2>
 
             <div class="distribution-grid">
                 <div class="dist-card">
@@ -699,7 +686,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Tipos de Enlace -->
         <div class="link-types-section">
-            <h2><i class="fas fa-list-ul"></i> Análisis por Tipo de Enlace</h2>
+            <h2>Análisis por Tipo de Enlace</h2>
 
             <table class="link-types-table">
                 <thead>
@@ -739,7 +726,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Top Anchor Texts -->
         <div class="anchor-texts-section">
-            <h2><i class="fas fa-anchor"></i> Top Anchor Texts</h2>
+            <h2>Top Anchor Texts</h2>
 
             <table class="anchor-table">
                 <thead>
@@ -768,7 +755,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <!-- Problemas y Oportunidades -->
         <div class="findings-grid">
             <div class="findings-card problems">
-                <h3><i class="fas fa-exclamation-triangle"></i> Problemas Detectados</h3>
+                <h3>Problemas Detectados</h3>
                 <ul class="findings-list">
                     <?php foreach ($problemas as $problema): ?>
                     <li><?php echo htmlspecialchars($problema); ?></li>
@@ -777,7 +764,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             <div class="findings-card opportunities">
-                <h3><i class="fas fa-info-circle"></i> Oportunidades</h3>
+                <h3>Oportunidades</h3>
                 <ul class="findings-list">
                     <?php foreach ($oportunidades as $oportunidad): ?>
                     <li><?php echo htmlspecialchars($oportunidad); ?></li>
@@ -854,7 +841,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="page-content">
         <!-- Resumen de Toxicidad -->
         <div class="toxicity-summary">
-            <h2><i class="fas fa-shield-virus"></i> Resumen de Toxicidad</h2>
+            <h2>Resumen de Toxicidad</h2>
 
             <div class="toxicity-grid">
                 <div class="tox-card">
@@ -884,7 +871,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Categorías de SPAM -->
         <div class="spam-categories-section">
-            <h2><i class="fas fa-layer-group"></i> Categorías de SPAM</h2>
+            <h2>Categorías de SPAM</h2>
 
             <table class="spam-categories-table">
                 <thead>
@@ -908,7 +895,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Top Dominios Tóxicos -->
         <div class="toxic-domains-section">
-            <h2><i class="fas fa-ban"></i> Top Dominios Tóxicos a Desautorizar</h2>
+            <h2>Top Dominios Tóxicos a Desautorizar</h2>
 
             <table class="toxic-domains-table">
                 <thead>
@@ -942,7 +929,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Plan de Limpieza -->
         <div class="cleanup-plan">
-            <h2><i class="fas fa-broom"></i> Plan de Limpieza de Enlaces Tóxicos</h2>
+            <h2>Plan de Limpieza de Enlaces Tóxicos</h2>
 
             <div class="plan-phases">
                 <div class="phase-step">
@@ -985,7 +972,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Preview Archivo Disavow -->
         <div class="disavow-preview">
-            <h3><i class="fas fa-file-code"></i> Preview: Archivo Disavow</h3>
+            <h3>Preview: Archivo Disavow</h3>
             <div class="code-block">
                 <pre><?php
                     foreach ($disavow as $line) {
@@ -994,8 +981,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 ?></pre>
             </div>
             <p class="disavow-note">
-                <i class="fas fa-info-circle"></i>
-                Este archivo debe subirse en Google Search Console &gt; Seguridad y Acciones Manuales &gt; Desautorizar Enlaces
+                <strong>Nota:</strong> Este archivo debe subirse en Google Search Console &gt; Seguridad y Acciones Manuales &gt; Desautorizar Enlaces
             </p>
         </div>
     </div>
@@ -1026,7 +1012,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="page-content">
         <!-- Distribución Actual vs Ideal -->
         <div class="distribution-comparison">
-            <h2><i class="fas fa-balance-scale"></i> Distribución Anchor Text: Actual vs Ideal</h2>
+            <h2>Distribución Anchor Text: Actual vs Ideal</h2>
 
             <div class="comparison-grid">
                 <div class="comparison-column">
@@ -1058,7 +1044,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- GAP Analysis -->
         <div class="gap-analysis-section">
-            <h2><i class="fas fa-chart-bar"></i> GAP Analysis</h2>
+            <h2>GAP Analysis</h2>
 
             <table class="gap-table">
                 <thead>
@@ -1087,11 +1073,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         </td>
                         <td>
                             <?php if ($item['estado'] === 'Por debajo'): ?>
-                                <i class="fas fa-arrow-up"></i> Aumentar
+                                <span class="accion-simbolo">↑</span> Aumentar
                             <?php elseif ($item['estado'] === 'Excesivo'): ?>
-                                <i class="fas fa-arrow-down"></i> Reducir
+                                <span class="accion-simbolo">↓</span> Reducir
                             <?php else: ?>
-                                <i class="fas fa-check"></i> Mantener
+                                <span class="accion-simbolo">✓</span> Mantener
                             <?php endif; ?>
                         </td>
                     </tr>
@@ -1107,26 +1093,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Keywords Objetivo para Link Building -->
         <div class="target-keywords-section">
-            <h2><i class="fas fa-bullseye"></i> Keywords Objetivo para Link Building</h2>
+            <h2>Keywords Objetivo para Link Building</h2>
 
             <div class="keywords-grid">
                 <?php foreach ($keywords_objetivo as $kw): ?>
                 <div class="keyword-card">
-                    <i class="fas fa-key"></i>
                     <span><?php echo htmlspecialchars($kw); ?></span>
                 </div>
                 <?php endforeach; ?>
             </div>
 
             <p class="keywords-note">
-                <i class="fas fa-info-circle"></i>
-                Priorizar estas keywords en campañas de guest posting, relaciones públicas digitales y contenido editorial.
+                <strong>Nota:</strong> Priorizar estas keywords en campañas de guest posting, relaciones públicas digitales y contenido editorial.
             </p>
         </div>
 
         <!-- Estrategia de Anchor Text -->
         <div class="anchor-strategy-section">
-            <h2><i class="fas fa-rocket"></i> Estrategia de Optimización de Anchor Text</h2>
+            <h2>Estrategia de Optimización de Anchor Text</h2>
 
             <div class="strategy-steps">
                 <?php foreach ($estrategia as $index => $paso): ?>
@@ -1140,28 +1124,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Recomendaciones Finales -->
         <div class="final-recommendations">
-            <h3><i class="fas fa-info-circle"></i> Recomendaciones Clave</h3>
+            <h3>Recomendaciones Clave</h3>
             <div class="recommendations-grid">
                 <div class="rec-card">
-                    <div class="rec-icon"><i class="fas fa-shield-alt"></i></div>
                     <h4>Prioridad Alta</h4>
                     <p>Reducir enlaces genéricos eliminando SPAM y mejorando calidad del perfil de enlaces</p>
                 </div>
 
                 <div class="rec-card">
-                    <div class="rec-icon"><i class="fas fa-chart-line"></i></div>
                     <h4>Crecimiento</h4>
                     <p>Aumentar anchors con keywords objetivo mediante guest posting estratégico</p>
                 </div>
 
                 <div class="rec-card">
-                    <div class="rec-icon"><i class="fas fa-balance-scale"></i></div>
                     <h4>Balance</h4>
                     <p>Mantener distribución natural: 50-60% marca/URL, 20% keywords, resto variado</p>
                 </div>
 
                 <div class="rec-card">
-                    <div class="rec-icon"><i class="fas fa-globe-europe"></i></div>
                     <h4>Diversificación</h4>
                     <p>Expandir link building a mercados FR y DE con keywords localizadas</p>
                 </div>

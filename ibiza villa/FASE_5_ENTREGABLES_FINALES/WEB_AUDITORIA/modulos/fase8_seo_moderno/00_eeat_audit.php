@@ -51,17 +51,28 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     padding: 20px;
     border-radius: 6px;
     backdrop-filter: blur(10px);
-}
-
-.eeat-analysis-page .summary-card .value {
-    font-size: 32px;
-    font-weight: 700;
-    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
 }
 
 .eeat-analysis-page .summary-card .label {
     font-size: 14px;
-    opacity: 0.9;
+    opacity: 1;
+    color: white;
+    font-weight: 600;
+    order: 1;
+}
+
+.eeat-analysis-page .summary-card .value {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    word-break: break-word;
+    order: 2;
+    color: white;
 }
 
 .eeat-analysis-page .eeat-section {
@@ -770,6 +781,12 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     font-weight: bold;
 }
 
+/* Asegurar texto blanco en footers de comparación */
+.eeat-educativo .comparacion-footer .stat-label,
+.eeat-educativo .comparacion-footer .stat-value {
+    color: white;
+}
+
 .eeat-educativo .comparacion-flecha {
     display: flex;
     align-items: center;
@@ -1156,7 +1173,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
             <div class="analogia-box">
                 <div class="analogia-header">
-                    <i class="fas fa-info-circle"></i>
                     <strong>Piensa en E-E-A-T como un agente inmobiliario de lujo certificado:</strong>
                 </div>
                 <ul class="analogia-list">
@@ -1197,7 +1213,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
         <div class="seccion-badge seccion-badge-green">
             DESPUÉS - HERRAMIENTAS DE OPTIMIZACIÓN
         </div>
-        <h2><i class="fas fa-file-download"></i> Archivos Descargables - E-E-A-T Ibiza Villa</h2>
+        <h2>Archivos Descargables - E-E-A-T Ibiza Villa</h2>
         <p class="entregables-intro">
             Hemos preparado <strong>2 archivos CSV</strong> con el análisis completo de E-E-A-T de Ibiza Villa y
             las mejoras prioritarias. Estos archivos te permiten auditar cada señal y priorizar acciones:
@@ -1207,9 +1223,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
             <!-- CSV 1: E-E-A-T Signals Audit -->
             <div class="csv-card">
                 <div class="csv-header">
-                    <div class="csv-icon">
-                        <i class="fas fa-clipboard-check"></i>
-                    </div>
                     <div class="csv-info">
                         <h3>Auditoría Completa de Señales E-E-A-T</h3>
                         <p class="csv-descripcion">
@@ -1220,9 +1233,9 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                     </div>
                 </div>
                 <div class="csv-metadata">
-                    <span class="csv-meta-item"><i class="fas fa-list-check"></i> 30 señales auditadas</span>
-                    <span class="csv-meta-item"><i class="fas fa-exclamation-triangle"></i> 12 gaps críticos detectados</span>
-                    <span class="csv-meta-item"><i class="fas fa-chart-line"></i> Impacto cuantificado por señal</span>
+                    <span class="csv-meta-item">30 señales auditadas</span>
+                    <span class="csv-meta-item">12 gaps críticos detectados</span>
+                    <span class="csv-meta-item">Impacto cuantificado por señal</span>
                 </div>
                 <div class="csv-usage">
                     <h4> Cómo Usar Este Archivo:</h4>
@@ -1239,7 +1252,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                     </p>
                 </div>
                 <a href="../entregables/eeat/eeat_signals_audit.csv" class="btn-download" download>
-                    <i class="fas fa-download"></i>
                     Descargar Auditoría Señales.csv
                 </a>
             </div>
@@ -1247,9 +1259,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
             <!-- CSV 2: Mejoras Prioritarias -->
             <div class="csv-card">
                 <div class="csv-header">
-                    <div class="csv-icon">
-                        <i class="fas fa-tasks"></i>
-                    </div>
                     <div class="csv-info">
                         <h3>Plan de Mejoras Prioritarias E-E-A-T</h3>
                         <p class="csv-descripcion">
@@ -1260,9 +1269,9 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                     </div>
                 </div>
                 <div class="csv-metadata">
-                    <span class="csv-meta-item"><i class="fas fa-rocket"></i> 15 mejoras priorizadas por ROI</span>
-                    <span class="csv-meta-item"><i class="fas fa-trophy"></i> Impacto total: +162 puntos E-E-A-T</span>
-                    <span class="csv-meta-item"><i class="fas fa-calendar-alt"></i> Timeline: 1 semana a 6 meses</span>
+                    <span class="csv-meta-item">15 mejoras priorizadas por ROI</span>
+                    <span class="csv-meta-item">Impacto total: +162 puntos E-E-A-T</span>
+                    <span class="csv-meta-item">Timeline: 1 semana a 6 meses</span>
                 </div>
                 <div class="csv-usage">
                     <h4> Cómo Usar Este Archivo:</h4>
@@ -1279,7 +1288,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                     </p>
                 </div>
                 <a href="../entregables/eeat/eeat_mejoras_prioritarias.csv" class="btn-download" download>
-                    <i class="fas fa-download"></i>
                     Descargar Plan Mejoras.csv
                 </a>
             </div>
@@ -1288,7 +1296,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
     <!-- SECCIÓN COMPARATIVA: ANTES vs DESPUÉS -->
     <section class="comparacion-antes-despues">
-        <h2><i class="fas fa-exchange-alt"></i> Transformación E-E-A-T: Situación Actual vs Optimizada</h2>
+        <h2>Transformación E-E-A-T: Situación Actual vs Optimizada</h2>
         <p class="comparacion-intro">
             Esta comparación muestra el estado actual de E-E-A-T de Ibiza Villa (<span class="texto-rojo">ANTES</span>)
             vs el estado tras implementar las 15 mejoras prioritarias (<span class="texto-verde">DESPUÉS</span>):
@@ -1298,7 +1306,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
             <!-- Columna ANTES -->
             <div class="comparacion-columna columna-antes">
                 <div class="comparacion-header header-antes">
-                    <i class="fas fa-times-circle"></i>
                     ANTES - Situación Actual
                 </div>
                 <div class="comparacion-contenido">
@@ -1346,7 +1353,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
             <!-- Flecha de Transformación -->
             <div class="comparacion-flecha">
                 <div class="flecha-contenedor">
-                    <i class="fas fa-arrow-right"></i>
+                    <span class="flecha-simbolo">→</span>
                     <span class="flecha-texto">MEJORAS<br>E-E-A-T</span>
                 </div>
             </div>
@@ -1354,7 +1361,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
             <!-- Columna DESPUÉS -->
             <div class="comparacion-columna columna-despues">
                 <div class="comparacion-header header-despues">
-                    <i class="fas fa-check-circle"></i>
                     DESPUÉS - E-E-A-T Optimizado
                 </div>
                 <div class="comparacion-contenido">
@@ -1401,7 +1407,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
         </div>
 
         <div class="timeline-implementacion">
-            <h3><i class="fas fa-calendar-alt"></i> Timeline de Implementación:</h3>
+            <h3>Timeline de Implementación:</h3>
             <div class="timeline-grid">
                 <div class="timeline-item">
                     <div class="timeline-periodo">Semana 1-2 (Quick Wins)</div>
@@ -1432,7 +1438,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
         <div class="seccion-badge seccion-badge-green">
             DESPUÉS - RESULTADOS ESPERADOS
         </div>
-        <h2><i class="fas fa-chart-bar"></i> KPIs y Resultados Cuantificados - E-E-A-T</h2>
+        <h2>KPIs y Resultados Cuantificados - E-E-A-T</h2>
         <p class="kpis-intro">
             Estos son los <strong>KPIs medibles</strong> que cambiarán tras implementar las mejoras de E-E-A-T.
             Todas las métricas son cuantificadas y alcanzables en <strong>6 meses</strong>:
@@ -1452,7 +1458,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                 <tbody>
                     <tr class="fila-destacada">
                         <td class="metrica-nombre">
-                            <i class="fas fa-star"></i>
                             <strong>Score E-E-A-T Global</strong>
                             <small>Puntuación general de los 4 pilares</small>
                         </td>
@@ -1474,7 +1479,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                     </tr>
                     <tr>
                         <td class="metrica-nombre">
-                            <i class="fas fa-camera"></i>
                             <strong>Experience Signals</strong>
                             <small>Señales de experiencia de primera mano</small>
                         </td>
@@ -1496,7 +1500,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                     </tr>
                     <tr>
                         <td class="metrica-nombre">
-                            <i class="fas fa-graduation-cap"></i>
                             <strong>Expertise Signals</strong>
                             <small>Señales de conocimiento profesional</small>
                         </td>
@@ -1518,7 +1521,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                     </tr>
                     <tr>
                         <td class="metrica-nombre">
-                            <i class="fas fa-award"></i>
                             <strong>Authoritativeness Signals</strong>
                             <small>Reconocimiento externo como autoridad</small>
                         </td>
@@ -1540,7 +1542,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                     </tr>
                     <tr>
                         <td class="metrica-nombre">
-                            <i class="fas fa-shield-alt"></i>
                             <strong>Trustworthiness Signals</strong>
                             <small>Señales de confiabilidad y seguridad</small>
                         </td>
@@ -1562,7 +1563,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                     </tr>
                     <tr class="fila-destacada">
                         <td class="metrica-nombre">
-                            <i class="fas fa-euro-sign"></i>
                             <strong>Valor Tráfico Cualificado</strong>
                             <small>Estimación económica tráfico mensual</small>
                         </td>
@@ -1587,7 +1587,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
         </div>
 
         <div class="nota-tiempos">
-            <h4><i class="fas fa-clock"></i> Nota sobre Tiempos y ROI:</h4>
+            <h4>Nota sobre Tiempos y ROI:</h4>
             <ul>
                 <li><strong>Quick Wins (Semana 1-2):</strong> Sobre Nosotros + FAQs + Sellos (+14 pts, ROI 15:1)</li>
                 <li><strong>Contenido (Mes 1-2):</strong> Videos + Guías + Casos estudio (+11 pts, ROI 10:1)</li>
@@ -1595,7 +1595,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                 <li><strong>Consolidación (Mes 5-6):</strong> Prensa + Reviews + Posicionamiento experto (+6 pts, ROI 9:1)</li>
             </ul>
             <p class="nota-importante">
-                <i class="fas fa-info-circle"></i>
                 <strong>Importante:</strong> E-E-A-T es acumulativo y compuesto. Cada señal refuerza las demás.
                 Por ejemplo: Mención en Forbes (Authoritativeness) → Más tráfico → Más reviews (Trustworthiness) →
                 Mejor posicionamiento (círculo virtuoso). Tras 6 meses, la ventaja competitiva es casi imposible de alcanzar.

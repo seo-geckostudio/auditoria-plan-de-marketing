@@ -26,7 +26,7 @@ $timeline = $datosModulo['timeline'] ?? [];
     <!-- Header de la página -->
     <div class="page-header">
         <h1 class="page-title">
-            <i class="fas fa-file-alt"></i>
+            
             <?php echo htmlspecialchars($datosModulo['titulo'] ?? 'Brief del Cliente'); ?>
         </h1>
         <p class="page-subtitle"><?php echo htmlspecialchars($datosModulo['subtitulo'] ?? ''); ?></p>
@@ -44,7 +44,7 @@ $timeline = $datosModulo['timeline'] ?? [];
                 <!-- Información del Proyecto -->
                 <div class="brief-section">
                     <h2 class="section-title">
-                        <i class="fas fa-building"></i>
+                        
                         Información del Proyecto
                     </h2>
                     <div class="info-grid">
@@ -84,7 +84,7 @@ $timeline = $datosModulo['timeline'] ?? [];
                 <!-- Situación Actual -->
                 <div class="brief-section">
                     <h2 class="section-title">
-                        <i class="fas fa-chart-line"></i>
+                        
                         Situación Actual
                     </h2>
                     <div class="info-grid">
@@ -112,7 +112,7 @@ $timeline = $datosModulo['timeline'] ?? [];
                         <ul class="problems-list">
                             <?php foreach ($situacion['problemas_principales'] as $problema): ?>
                             <li>
-                                <i class="fas fa-exclamation-circle text-warning"></i>
+                                
                                 <?php echo htmlspecialchars($problema); ?>
                             </li>
                             <?php endforeach; ?>
@@ -124,7 +124,7 @@ $timeline = $datosModulo['timeline'] ?? [];
                 <!-- Competencia -->
                 <div class="brief-section">
                     <h2 class="section-title">
-                        <i class="fas fa-users"></i>
+                        
                         Competencia
                     </h2>
                     <?php if (!empty($competencia['principales_competidores'])): ?>
@@ -133,7 +133,7 @@ $timeline = $datosModulo['timeline'] ?? [];
                         <ul class="competitors-list">
                             <?php foreach ($competencia['principales_competidores'] as $competidor): ?>
                             <li>
-                                <i class="fas fa-globe"></i>
+                                
                                 <a href="https://<?php echo htmlspecialchars($competidor); ?>" target="_blank">
                                     <?php echo htmlspecialchars($competidor); ?>
                                 </a>
@@ -149,7 +149,7 @@ $timeline = $datosModulo['timeline'] ?? [];
                         <ul class="advantages-list">
                             <?php foreach ($competencia['ventajas_competitivas'] as $ventaja): ?>
                             <li>
-                                <i class="fas fa-check-circle text-success"></i>
+                                
                                 <?php echo htmlspecialchars($ventaja); ?>
                             </li>
                             <?php endforeach; ?>
@@ -166,14 +166,14 @@ $timeline = $datosModulo['timeline'] ?? [];
                 <!-- Objetivos -->
                 <div class="brief-section">
                     <h2 class="section-title">
-                        <i class="fas fa-bullseye"></i>
+                        
                         Objetivos del Proyecto
                     </h2>
                     <?php if (!empty($objetivos['principales'])): ?>
                     <ul class="objectives-list">
                         <?php foreach ($objetivos['principales'] as $objetivo): ?>
                         <li>
-                            <i class="fas fa-arrow-right text-primary"></i>
+                            
                             <?php echo htmlspecialchars($objetivo); ?>
                         </li>
                         <?php endforeach; ?>
@@ -199,7 +199,7 @@ $timeline = $datosModulo['timeline'] ?? [];
                                     </div>
                                 </div>
                                 <div class="kpi-increment">
-                                    <i class="fas fa-arrow-up"></i>
+                                    
                                     <?php echo htmlspecialchars($kpi['incremento']); ?>
                                 </div>
                             </div>
@@ -212,7 +212,7 @@ $timeline = $datosModulo['timeline'] ?? [];
                 <!-- Recursos Disponibles -->
                 <div class="brief-section">
                     <h2 class="section-title">
-                        <i class="fas fa-tools"></i>
+                        
                         Recursos Disponibles
                     </h2>
 
@@ -222,7 +222,7 @@ $timeline = $datosModulo['timeline'] ?? [];
                         <ul class="resources-list">
                             <?php foreach ($recursos['accesos'] as $acceso): ?>
                             <li>
-                                <i class="fas fa-key text-info"></i>
+                                
                                 <?php echo htmlspecialchars($acceso); ?>
                             </li>
                             <?php endforeach; ?>
@@ -236,7 +236,7 @@ $timeline = $datosModulo['timeline'] ?? [];
                         <ul class="resources-list">
                             <?php foreach ($recursos['equipo_interno'] as $miembro): ?>
                             <li>
-                                <i class="fas fa-user text-primary"></i>
+                                
                                 <?php echo htmlspecialchars($miembro); ?>
                             </li>
                             <?php endforeach; ?>
@@ -255,7 +255,7 @@ $timeline = $datosModulo['timeline'] ?? [];
                 <!-- Timeline -->
                 <div class="brief-section">
                     <h2 class="section-title">
-                        <i class="fas fa-calendar-alt"></i>
+                        
                         Timeline del Proyecto
                     </h2>
                     <div class="timeline-simple">

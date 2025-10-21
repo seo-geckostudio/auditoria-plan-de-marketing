@@ -181,9 +181,9 @@ if ($loader->tieneErrores()) {
           </div>
 
           <div style="text-align: center; margin-top: 30px;">
-            <div style="font-size: 2rem; margin-bottom: 10px;">🧩</div>
-            <p class="system-badge" style="margin: 0;">
-              Gecko Studio
+            <img src="assets/logo_gecko.svg" alt="Gecko Studio" style="width: 200px; height: auto; margin-bottom: 20px;">
+            <p style="font-size: 0.85rem; color: #787878; margin: 0;">
+              Sistema Profesional de Auditoría SEO
             </p>
             <p style="font-size: 0.85rem; color: #787878; margin-top: 5px;">
               <?php echo $stats['total_modulos']; ?> módulos | <?php echo $stats['total_paginas']; ?> páginas
@@ -272,7 +272,7 @@ if ($loader->tieneErrores()) {
         </div>
         <div class="cover-footer" style="margin-top: 100px;">
           <p class="system-badge">
-            🧩 Sistema Modular de Auditoría SEO v2.0<br>
+            Sistema Modular de Auditoría SEO v2.0<br>
             Desarrollado con <?php echo $stats['total_modulos']; ?> módulos personalizados<br>
             <?php echo htmlspecialchars($proyecto['nombre'] ?? 'Proyecto'); ?> — <?php echo date('Y'); ?>
           </p>

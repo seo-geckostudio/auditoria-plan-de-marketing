@@ -2,13 +2,13 @@
 <div class="audit-page executive-summary-page">
     <div class="page-header">
         <div class="header-content">
-            <h1><i class="fas fa-file-alt"></i> <?php echo htmlspecialchars($datosModulo['titulo']); ?></h1>
+            <h1><?php echo htmlspecialchars($datosModulo['titulo']); ?></h1>
             <div class="header-meta">
-                <span class="meta-item"><i class="fas fa-user"></i> <?php echo htmlspecialchars($datosModulo['cliente']); ?></span>
-                <span class="meta-item"><i class="fas fa-calendar"></i> <?php echo htmlspecialchars($datosModulo['fecha']); ?></span>
-                <span class="meta-item"><i class="fas fa-code-branch"></i> v<?php echo htmlspecialchars($datosModulo['version']); ?></span>
+                <span class="meta-item"><?php echo htmlspecialchars($datosModulo['cliente']); ?></span>
+                <span class="meta-item"><?php echo htmlspecialchars($datosModulo['fecha']); ?></span>
+                <span class="meta-item">v<?php echo htmlspecialchars($datosModulo['version']); ?></span>
                 <?php if ($datosModulo['confidencial']): ?>
-                <span class="confidential-badge"><i class="fas fa-lock"></i> CONFIDENCIAL</span>
+                <span class="confidential-badge">CONFIDENCIAL</span>
                 <?php endif; ?>
             </div>
         </div>
@@ -17,7 +17,7 @@
     <div class="page-body">
         <!-- Introducción -->
         <section class="introduction-section">
-            <h2><i class="fas fa-info-circle"></i> <?php echo htmlspecialchars($datosModulo['introduccion']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['introduccion']['titulo']); ?></h2>
             <?php foreach ($datosModulo['introduccion']['parrafos'] as $parrafo): ?>
             <p><?php echo htmlspecialchars($parrafo); ?></p>
             <?php endforeach; ?>
@@ -25,10 +25,9 @@
 
         <!-- Situación Actual -->
         <section class="current-situation-section">
-            <h2><i class="fas fa-chart-bar"></i> <?php echo htmlspecialchars($datosModulo['situacion_actual']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['situacion_actual']['titulo']); ?></h2>
 
             <div class="situation-summary">
-                <i class="fas fa-quote-left"></i>
                 <p><?php echo htmlspecialchars($datosModulo['situacion_actual']['resumen']); ?></p>
             </div>
 
@@ -66,7 +65,7 @@
             <!-- Fortalezas y Debilidades -->
             <div class="strengths-weaknesses">
                 <div class="strengths-column">
-                    <h3><i class="fas fa-check-circle"></i> Fortalezas Principales</h3>
+                    <h3>Fortalezas Principales</h3>
                     <ul>
                         <?php foreach ($datosModulo['situacion_actual']['fortalezas_principales'] as $fortaleza): ?>
                         <li><?php echo htmlspecialchars($fortaleza); ?></li>
@@ -74,7 +73,7 @@
                     </ul>
                 </div>
                 <div class="weaknesses-column">
-                    <h3><i class="fas fa-exclamation-triangle"></i> Debilidades Principales</h3>
+                    <h3>Debilidades Principales</h3>
                     <ul>
                         <?php foreach ($datosModulo['situacion_actual']['debilidades_principales'] as $debilidad): ?>
                         <li><?php echo htmlspecialchars($debilidad); ?></li>
@@ -163,12 +162,6 @@
     border-radius: 0.75rem;
     margin-bottom: 2rem;
     position: relative;
-}
-
-.situation-summary i {
-    font-size: 2rem;
-    opacity: 0.3;
-    margin-bottom: 1rem;
 }
 
 .situation-summary p {
@@ -326,13 +319,13 @@
 <!-- Página 2: Hallazgos Críticos y Recomendaciones -->
 <div class="audit-page critical-findings-page">
     <div class="page-header">
-        <h1><i class="fas fa-exclamation-circle"></i> Hallazgos Críticos y Recomendaciones</h1>
+        <h1>Hallazgos Críticos y Recomendaciones</h1>
     </div>
 
     <div class="page-body">
         <!-- Hallazgos críticos -->
         <section class="critical-findings-section">
-            <h2><i class="fas fa-list-ol"></i> <?php echo htmlspecialchars($datosModulo['hallazgos_criticos']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['hallazgos_criticos']['titulo']); ?></h2>
 
             <?php foreach ($datosModulo['hallazgos_criticos']['hallazgos'] as $hallazgo): ?>
             <div class="finding-card priority-<?php echo strtolower(str_replace(' ', '-', $hallazgo['prioridad'])); ?>">
@@ -347,12 +340,12 @@
 
                     <div class="finding-details">
                         <div class="detail-item impact">
-                            <strong><i class="fas fa-chart-line"></i> Impacto en Negocio:</strong>
+                            <strong>Impacto en Negocio:</strong>
                             <p><?php echo htmlspecialchars($hallazgo['impacto_negocio']); ?></p>
                         </div>
 
                         <div class="detail-item action">
-                            <strong><i class="fas fa-tasks"></i> Acción Requerida:</strong>
+                            <strong>Acción Requerida:</strong>
                             <p><?php echo htmlspecialchars($hallazgo['accion_requerida']); ?></p>
                         </div>
                     </div>
@@ -370,7 +363,7 @@
 
         <!-- Recomendaciones estratégicas -->
         <section class="strategic-recommendations-section">
-            <h2><i class="fas fa-info-circle"></i> <?php echo htmlspecialchars($datosModulo['recomendaciones_estrategicas']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['recomendaciones_estrategicas']['titulo']); ?></h2>
 
             <div class="recommendations-summary">
                 <p><?php echo htmlspecialchars($datosModulo['recomendaciones_estrategicas']['resumen']); ?></p>
@@ -401,28 +394,24 @@
 
                 <div class="recommendation-metrics">
                     <div class="rec-metric">
-                        <i class="fas fa-euro-sign"></i>
                         <div>
                             <span class="metric-label">Inversión</span>
                             <span class="metric-value"><?php echo htmlspecialchars($recomendacion['inversion']); ?></span>
                         </div>
                     </div>
                     <div class="rec-metric">
-                        <i class="fas fa-percentage"></i>
                         <div>
                             <span class="metric-label">ROI Esperado</span>
                             <span class="metric-value roi"><?php echo htmlspecialchars($recomendacion['roi_esperado']); ?></span>
                         </div>
                     </div>
                     <div class="rec-metric">
-                        <i class="fas fa-clock"></i>
                         <div>
                             <span class="metric-label">Tiempo Resultados</span>
                             <span class="metric-value"><?php echo htmlspecialchars($recomendacion['tiempo_resultados']); ?></span>
                         </div>
                     </div>
                     <div class="rec-metric">
-                        <i class="fas fa-shield-alt"></i>
                         <div>
                             <span class="metric-label">Riesgo</span>
                             <span class="metric-value risk-<?php echo strtolower(str_replace('-', '', $recomendacion['riesgo'])); ?>">
@@ -433,7 +422,6 @@
                 </div>
 
                 <div class="recommendation-results">
-                    <i class="fas fa-bullseye"></i>
                     <strong>Resultados Esperados:</strong>
                     <?php echo htmlspecialchars($recomendacion['resultados']); ?>
                 </div>
@@ -782,13 +770,13 @@
 <!-- Página 3: ROI, Decisión Ejecutiva y Próximos Pasos -->
 <div class="audit-page decision-page">
     <div class="page-header">
-        <h1><i class="fas fa-handshake"></i> Análisis ROI y Decisión Ejecutiva</h1>
+        <h1>Análisis ROI y Decisión Ejecutiva</h1>
     </div>
 
     <div class="page-body">
         <!-- Análisis ROI -->
         <section class="roi-analysis-section">
-            <h2><i class="fas fa-chart-line"></i> <?php echo htmlspecialchars($datosModulo['analisis_roi']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['analisis_roi']['titulo']); ?></h2>
 
             <div class="roi-summary">
                 <p><?php echo htmlspecialchars($datosModulo['analisis_roi']['resumen']); ?></p>
@@ -797,7 +785,7 @@
             <!-- Comparativa Actual vs Proyectada -->
             <div class="comparison-grid">
                 <div class="comparison-card current">
-                    <h3><i class="fas fa-calendar-day"></i> Situación Actual</h3>
+                    <h3>Situación Actual</h3>
                     <?php $actual = $datosModulo['analisis_roi']['comparativa']['situacion_actual']; ?>
                     <div class="comparison-metrics">
                         <div class="comp-metric">
@@ -820,7 +808,6 @@
                 </div>
 
                 <div class="comparison-arrow">
-                    <i class="fas fa-arrow-right"></i>
                     <?php $incrementos = $datosModulo['analisis_roi']['comparativa']['incrementos']; ?>
                     <div class="increments">
                         <span><?php echo $incrementos['trafico']; ?></span>
@@ -831,7 +818,7 @@
                 </div>
 
                 <div class="comparison-card projected">
-                    <h3><i class="fas fa-rocket"></i> Situación Proyectada (12 meses)</h3>
+                    <h3>Situación Proyectada (12 meses)</h3>
                     <?php $proyectada = $datosModulo['analisis_roi']['comparativa']['situacion_proyectada']; ?>
                     <div class="comparison-metrics">
                         <div class="comp-metric">
@@ -860,7 +847,6 @@
                 <div class="benefits-grid">
                     <?php foreach ($datosModulo['analisis_roi']['beneficios_adicionales'] as $beneficio): ?>
                     <div class="benefit-item">
-                        <i class="fas fa-check-circle"></i>
                         <span><?php echo htmlspecialchars($beneficio); ?></span>
                     </div>
                     <?php endforeach; ?>
@@ -870,10 +856,9 @@
 
         <!-- Decisión Ejecutiva -->
         <section class="executive-decision-section">
-            <h2><i class="fas fa-gavel"></i> <?php echo htmlspecialchars($datosModulo['decision_ejecutiva']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['decision_ejecutiva']['titulo']); ?></h2>
 
             <div class="decision-question">
-                <i class="fas fa-question-circle"></i>
                 <h3><?php echo htmlspecialchars($datosModulo['decision_ejecutiva']['pregunta']); ?></h3>
             </div>
 
@@ -881,7 +866,7 @@
                 <?php foreach ($datosModulo['decision_ejecutiva']['opciones'] as $index => $opcion): ?>
                 <div class="option-card <?php echo $index === 0 ? 'recommended' : ''; ?>">
                     <?php if ($index === 0): ?>
-                    <div class="recommended-badge"><i class="fas fa-star"></i> RECOMENDADO</div>
+                    <div class="recommended-badge">RECOMENDADO</div>
                     <?php endif; ?>
 
                     <h3><?php echo htmlspecialchars($opcion['opcion']); ?></h3>
@@ -896,7 +881,7 @@
 
                     <div class="pros-cons">
                         <div class="pros">
-                            <strong><i class="fas fa-thumbs-up"></i> Pros:</strong>
+                            <strong>Pros:</strong>
                             <ul>
                                 <?php foreach ($opcion['pros'] as $pro): ?>
                                 <li><?php echo htmlspecialchars($pro); ?></li>
@@ -904,7 +889,7 @@
                             </ul>
                         </div>
                         <div class="cons">
-                            <strong><i class="fas fa-thumbs-down"></i> Contras:</strong>
+                            <strong>Contras:</strong>
                             <ul>
                                 <?php foreach ($opcion['cons'] as $con): ?>
                                 <li><?php echo htmlspecialchars($con); ?></li>
@@ -917,7 +902,7 @@
             </div>
 
             <div class="agency-recommendation">
-                <h3><i class="fas fa-award"></i> Recomendación de la Agencia</h3>
+                <h3>Recomendación de la Agencia</h3>
                 <p class="recommendation-choice"><?php echo htmlspecialchars($datosModulo['decision_ejecutiva']['recomendacion_agencia']); ?></p>
                 <p class="justification"><?php echo htmlspecialchars($datosModulo['decision_ejecutiva']['justificacion']); ?></p>
             </div>
@@ -925,11 +910,11 @@
 
         <!-- Próximos Pasos -->
         <section class="next-steps-section">
-            <h2><i class="fas fa-forward"></i> <?php echo htmlspecialchars($datosModulo['proximos_pasos']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['proximos_pasos']['titulo']); ?></h2>
 
             <div class="next-steps-columns">
                 <div class="approved-steps">
-                    <h3><i class="fas fa-check-circle"></i> Si el Plan es Aprobado</h3>
+                    <h3>Si el Plan es Aprobado</h3>
                     <?php foreach ($datosModulo['proximos_pasos']['si_aprobado'] as $paso): ?>
                     <div class="step-item">
                         <div class="step-timeline"><?php echo htmlspecialchars($paso['plazo']); ?></div>
@@ -942,7 +927,7 @@
                 </div>
 
                 <div class="postponed-risks">
-                    <h3><i class="fas fa-exclamation-triangle"></i> Si se Pospone la Decisión</h3>
+                    <h3>Si se Pospone la Decisión</h3>
                     <ul class="risks-list">
                         <?php foreach ($datosModulo['proximos_pasos']['si_pospuesto'] as $riesgo): ?>
                         <li><?php echo htmlspecialchars($riesgo); ?></li>
@@ -954,18 +939,16 @@
 
         <!-- Contacto -->
         <section class="contact-section">
-            <h2><i class="fas fa-phone"></i> <?php echo htmlspecialchars($datosModulo['contacto']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['contacto']['titulo']); ?></h2>
             <p class="contact-message"><?php echo htmlspecialchars($datosModulo['contacto']['mensaje']); ?></p>
 
             <div class="contact-details">
                 <div class="contact-item">
-                    <i class="fas fa-user-tie"></i>
                     <div>
                         <strong><?php echo htmlspecialchars($datosModulo['contacto']['persona']); ?></strong>
                     </div>
                 </div>
                 <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
                     <div>
                         <a href="mailto:<?php echo htmlspecialchars($datosModulo['contacto']['email']); ?>">
                             <?php echo htmlspecialchars($datosModulo['contacto']['email']); ?>
@@ -973,13 +956,11 @@
                     </div>
                 </div>
                 <div class="contact-item">
-                    <i class="fas fa-phone"></i>
                     <div>
                         <span><?php echo htmlspecialchars($datosModulo['contacto']['telefono']); ?></span>
                     </div>
                 </div>
                 <div class="contact-item">
-                    <i class="fas fa-clock"></i>
                     <div>
                         <span><?php echo htmlspecialchars($datosModulo['contacto']['disponibilidad']); ?></span>
                     </div>
@@ -1153,12 +1134,6 @@
     border-radius: 0.5rem;
 }
 
-.benefit-item i {
-    color: #88B04B;
-    font-size: 1.2rem;
-    margin-top: 0.25rem;
-}
-
 .decision-question {
     background: #f0f7e6;
     padding: 2rem;
@@ -1166,12 +1141,6 @@
     text-align: center;
     margin-bottom: 2rem;
     border: 3px solid #88B04B;
-}
-
-.decision-question i {
-    font-size: 3rem;
-    color: #88B04B;
-    margin-bottom: 1rem;
 }
 
 .decision-question h3 {
@@ -1425,10 +1394,6 @@
     backdrop-filter: blur(10px);
     padding: 1.5rem;
     border-radius: 0.75rem;
-}
-
-.contact-item i {
-    font-size: 2rem;
 }
 
 .contact-item a {

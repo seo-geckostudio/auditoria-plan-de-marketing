@@ -252,26 +252,25 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
 }
 
 .voice-search-page .csv-description {
-    font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 12px;
     color: #495057;
 }
 
 .voice-search-page .csv-contenido {
     list-style: none;
-    padding: 0;
-    margin: 15px 0;
+    padding: 12px;
+    margin: 12px 0;
     background: #f8f9fa;
     border-radius: 6px;
-    padding: 15px;
 }
 
 .voice-search-page .csv-contenido li {
-    padding: 8px 0 8px 25px;
+    padding: 5px 0 5px 25px;
     position: relative;
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: 13px;
+    line-height: 1.5;
 }
 
 .voice-search-page .csv-contenido li:before {
@@ -1017,7 +1016,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
             </p>
             <div class="analogia-box">
                 <div class="analogia-header">
-                    <i class="fas fa-info-circle"></i>
+                    
                     <strong>Piensa en Voice Search como preguntar al Concierge de un Hotel de Lujo:</strong>
                 </div>
                 <ul class="analogia-list">

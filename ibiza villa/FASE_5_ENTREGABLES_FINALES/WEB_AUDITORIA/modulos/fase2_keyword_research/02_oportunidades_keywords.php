@@ -3,17 +3,15 @@
     <div class="page-header">
         <div class="header-content">
             <div class="header-text">
-                <h1><i class="fas fa-lightbulb"></i> <?php echo htmlspecialchars($datosModulo['titulo']); ?></h1>
+                <h1><?php echo htmlspecialchars($datosModulo['titulo']); ?></h1>
                 <p class="subtitle"><?php echo htmlspecialchars($datosModulo['subtitulo']); ?></p>
             </div>
             <div class="header-meta">
                 <div class="meta-item">
-                    <i class="fas fa-calendar-alt"></i>
-                    <span><?php echo htmlspecialchars($datosModulo['periodo']); ?></span>
+                    <span>Periodo: <?php echo htmlspecialchars($datosModulo['periodo']); ?></span>
                 </div>
                 <div class="meta-item">
-                    <i class="fas fa-tools"></i>
-                    <span><?php echo implode(', ', $datosModulo['herramientas']); ?></span>
+                    <span>Herramientas: <?php echo implode(', ', $datosModulo['herramientas']); ?></span>
                 </div>
             </div>
         </div>
@@ -25,9 +23,6 @@
             <div class="metrics-grid">
                 <?php foreach ($datosModulo['metricas_oportunidades'] as $metrica): ?>
                 <div class="metric-card">
-                    <div class="metric-icon">
-                        <i class="fas <?php echo $metrica['icono']; ?>"></i>
-                    </div>
                     <div class="metric-content">
                         <h3><?php echo htmlspecialchars($metrica['label']); ?></h3>
                         <p class="metric-value"><?php echo htmlspecialchars($metrica['valor']); ?></p>
@@ -40,7 +35,7 @@
 
         <!-- Categorías de oportunidades -->
         <section class="categories-section">
-            <h2><i class="fas fa-layer-group"></i> Categorías de Oportunidades</h2>
+            <h2>Categorías de Oportunidades</h2>
 
             <div class="categories-grid">
                 <?php foreach ($datosModulo['categorias_oportunidades'] as $categoria): ?>
@@ -55,19 +50,15 @@
 
                     <div class="category-stats">
                         <div class="stat">
-                            <i class="fas fa-key"></i>
                             <span><strong><?php echo $categoria['total_keywords']; ?></strong> keywords</span>
                         </div>
                         <div class="stat">
-                            <i class="fas fa-users"></i>
                             <span><strong><?php echo number_format($categoria['trafico_potencial']); ?></strong> visitas/mes</span>
                         </div>
                         <div class="stat">
-                            <i class="fas fa-gauge"></i>
                             <span>Dificultad <strong><?php echo $categoria['dificultad_promedio']; ?></strong></span>
                         </div>
                         <div class="stat">
-                            <i class="fas fa-tools"></i>
                             <span>Esfuerzo <strong><?php echo htmlspecialchars($categoria['esfuerzo']); ?></strong></span>
                         </div>
                     </div>
@@ -92,7 +83,7 @@
 
         <!-- Gráfico de distribución -->
         <section class="distribution-chart-section">
-            <h2><i class="fas fa-chart-pie"></i> Distribución de Oportunidades</h2>
+            <h2>Distribución de Oportunidades</h2>
             <div class="chart-container">
                 <canvas id="opportunitiesDistributionChart"></canvas>
             </div>
@@ -142,15 +133,16 @@
 
 <style>
 .opportunities-overview-page {
-    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
-    color: white;
+    background: white;
+    color: #333;
 }
 
 .opportunities-overview-page .page-header {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
+    color: white;
     padding: 2rem;
     margin: -2rem -2rem 2rem -2rem;
+    border-radius: 12px 12px 0 0;
 }
 
 .header-content {
@@ -315,10 +307,6 @@
     font-size: 0.9rem;
 }
 
-.stat i {
-    color: #88B04B;
-}
-
 .category-examples {
     border-top: 1px solid #e0e0e0;
     padding-top: 1rem;
@@ -377,7 +365,7 @@
 <!-- Página 2: Análisis Detallado por Categoría -->
 <div class="audit-page categories-detail-page">
     <div class="page-header">
-        <h1><i class="fas fa-table"></i> Análisis Detallado por Categoría</h1>
+        <h1>Análisis Detallado por Categoría</h1>
     </div>
 
     <div class="page-body">
@@ -425,7 +413,7 @@
                                     <span class="pos-badge target">#<?php echo $ejemplo['posicion_objetivo']; ?></span>
                                     <?php if ($ejemplo['posicion_actual'] !== null): ?>
                                     <span class="improvement">
-                                        <i class="fas fa-arrow-up"></i> <?php echo $ejemplo['posicion_actual'] - $ejemplo['posicion_objetivo']; ?>
+                                        ↑ <?php echo $ejemplo['posicion_actual'] - $ejemplo['posicion_objetivo']; ?>
                                     </span>
                                     <?php endif; ?>
                                 </td>
@@ -597,13 +585,13 @@
 <!-- Página 3: Análisis Especiales -->
 <div class="audit-page special-analysis-page">
     <div class="page-header">
-        <h1><i class="fas fa-star"></i> Análisis Especiales</h1>
+        <h1>Análisis Especiales</h1>
     </div>
 
     <div class="page-body">
         <!-- Keywords en tendencia -->
         <section class="trending-keywords-section">
-            <h2><i class="fas fa-chart-line"></i> <?php echo htmlspecialchars($datosModulo['keywords_tendencia']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['keywords_tendencia']['titulo']); ?></h2>
             <p class="section-subtitle"><?php echo htmlspecialchars($datosModulo['keywords_tendencia']['descripcion']); ?></p>
 
             <div class="trending-grid">
@@ -612,7 +600,7 @@
                     <div class="trending-header">
                         <h3><?php echo htmlspecialchars($trend['keyword']); ?></h3>
                         <span class="growth-badge">
-                            <i class="fas fa-arrow-trend-up"></i> <?php echo htmlspecialchars($trend['crecimiento']); ?>
+                            ↗ <?php echo htmlspecialchars($trend['crecimiento']); ?>
                         </span>
                     </div>
                     <div class="trending-stats">
@@ -635,7 +623,7 @@
 
         <!-- Análisis estacional -->
         <section class="seasonal-analysis-section">
-            <h2><i class="fas fa-calendar-days"></i> <?php echo htmlspecialchars($datosModulo['analisis_estacional']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['analisis_estacional']['titulo']); ?></h2>
             <p class="section-subtitle"><?php echo htmlspecialchars($datosModulo['analisis_estacional']['descripcion']); ?></p>
 
             <div class="seasons-grid">
@@ -646,15 +634,12 @@
 
                     <div class="season-metrics">
                         <div class="metric">
-                            <i class="fas fa-key"></i>
                             <span><?php echo $temporada['keywords_objetivo']; ?> keywords</span>
                         </div>
                         <div class="metric">
-                            <i class="fas fa-chart-line"></i>
                             <span><?php echo htmlspecialchars($temporada['pico_busquedas']); ?> pico</span>
                         </div>
                         <div class="metric">
-                            <i class="fas fa-exclamation-circle"></i>
                             <span>Prioridad <?php echo htmlspecialchars($temporada['prioridad']); ?></span>
                         </div>
                     </div>
@@ -673,13 +658,13 @@
 
             <!-- Eventos especiales -->
             <div class="special-events">
-                <h3><i class="fas fa-calendar-star"></i> Eventos Especiales</h3>
+                <h3>Eventos Especiales</h3>
                 <div class="events-grid">
                     <?php foreach ($datosModulo['analisis_estacional']['eventos_especiales'] as $evento): ?>
                     <div class="event-card">
                         <h4><?php echo htmlspecialchars($evento['evento']); ?></h4>
                         <p class="event-volume">
-                            <i class="fas fa-users"></i> Volumen pico: <?php echo htmlspecialchars($evento['volumen_pico']); ?>
+                            Volumen pico: <?php echo htmlspecialchars($evento['volumen_pico']); ?>
                         </p>
                         <div class="event-keywords">
                             <?php foreach ($evento['keywords'] as $kw): ?>
@@ -694,7 +679,7 @@
 
         <!-- Análisis por intención -->
         <section class="intent-analysis-section">
-            <h2><i class="fas fa-bullseye"></i> <?php echo htmlspecialchars($datosModulo['analisis_intencion']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['analisis_intencion']['titulo']); ?></h2>
 
             <div class="intent-grid">
                 <?php foreach ($datosModulo['analisis_intencion']['distribución'] as $intent): ?>
@@ -734,14 +719,16 @@
 
 <style>
 .special-analysis-page {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    color: white;
+    background: white;
+    color: #333;
 }
 
 .special-analysis-page .page-header {
-    background: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
+    color: white;
     padding: 1.5rem;
     margin: -2rem -2rem 2rem -2rem;
+    border-radius: 12px 12px 0 0;
 }
 
 .special-analysis-page section {
@@ -878,10 +865,6 @@
     padding: 0.5rem;
     background: #f8f9fa;
     border-radius: 0.5rem;
-}
-
-.season-metrics .metric i {
-    color: #88B04B;
 }
 
 .season-examples {
@@ -1036,13 +1019,13 @@
 <!-- Página 4: Plan de Implementación y Priorización -->
 <div class="audit-page implementation-plan-page">
     <div class="page-header">
-        <h1><i class="fas fa-tasks"></i> Plan de Implementación y Matriz de Priorización</h1>
+        <h1>Plan de Implementación y Matriz de Priorización</h1>
     </div>
 
     <div class="page-body">
         <!-- Matriz de priorización -->
         <section class="prioritization-matrix">
-            <h2><i class="fas fa-sort-amount-down"></i> <?php echo htmlspecialchars($datosModulo['matriz_priorizacion']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['matriz_priorizacion']['titulo']); ?></h2>
 
             <div class="criteria-info">
                 <strong>Criterios de priorización:</strong>
@@ -1090,17 +1073,16 @@
 
         <!-- Plan de implementación -->
         <section class="implementation-phases">
-            <h2><i class="fas fa-road"></i> <?php echo htmlspecialchars($datosModulo['plan_implementacion']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['plan_implementacion']['titulo']); ?></h2>
 
             <div class="phases-timeline">
                 <?php foreach ($datosModulo['plan_implementacion']['fases'] as $index => $fase): ?>
                 <div class="phase-card">
-                    <div class="phase-number">Fase <?php echo $index + 1; ?></div>
                     <div class="phase-content">
                         <h3><?php echo htmlspecialchars($fase['fase']); ?></h3>
                         <div class="phase-meta">
-                            <span class="meta-badge"><i class="fas fa-clock"></i> <?php echo htmlspecialchars($fase['duracion']); ?></span>
-                            <span class="meta-badge"><i class="fas fa-key"></i> <?php echo $fase['keywords_objetivo']; ?> keywords</span>
+                            <span class="meta-badge">Duración: <?php echo htmlspecialchars($fase['duracion']); ?></span>
+                            <span class="meta-badge"><?php echo $fase['keywords_objetivo']; ?> keywords</span>
                         </div>
 
                         <div class="phase-actions">
@@ -1114,15 +1096,12 @@
 
                         <div class="phase-resources">
                             <div class="resource-item">
-                                <i class="fas fa-users"></i>
-                                <span><?php echo implode(', ', $fase['recursos_necesarios']); ?></span>
+                                <span>Recursos: <?php echo implode(', ', $fase['recursos_necesarios']); ?></span>
                             </div>
                             <div class="resource-item">
-                                <i class="fas fa-euro-sign"></i>
-                                <span><?php echo htmlspecialchars($fase['coste_estimado']); ?></span>
+                                <span>Coste: <?php echo htmlspecialchars($fase['coste_estimado']); ?></span>
                             </div>
                             <div class="resource-item roi">
-                                <i class="fas fa-chart-line"></i>
                                 <span>ROI: <?php echo htmlspecialchars($fase['roi_esperado']); ?></span>
                             </div>
                         </div>
@@ -1135,7 +1114,7 @@
         <!-- Conclusiones y recomendaciones -->
         <section class="final-recommendations">
             <div class="conclusions-column">
-                <h2><i class="fas fa-check-double"></i> Conclusiones</h2>
+                <h2>Conclusiones</h2>
                 <ul class="conclusions-list">
                     <?php foreach ($datosModulo['conclusiones'] as $conclusion): ?>
                     <li><?php echo htmlspecialchars($conclusion); ?></li>
@@ -1144,7 +1123,7 @@
             </div>
 
             <div class="recommendations-column">
-                <h2><i class="fas fa-lightbulb"></i> Recomendaciones</h2>
+                <h2>Recomendaciones</h2>
                 <?php foreach ($datosModulo['recomendaciones'] as $rec): ?>
                 <div class="recommendation-card priority-<?php echo strtolower($rec['prioridad']); ?>">
                     <div class="rec-header">
@@ -1153,7 +1132,7 @@
                     </div>
                     <p><?php echo htmlspecialchars($rec['descripcion']); ?></p>
                     <span class="rec-timeline">
-                        <i class="fas fa-calendar-alt"></i> <?php echo htmlspecialchars($rec['plazo']); ?>
+                        Plazo: <?php echo htmlspecialchars($rec['plazo']); ?>
                     </span>
                 </div>
                 <?php endforeach; ?>
@@ -1164,14 +1143,16 @@
 
 <style>
 .implementation-plan-page {
-    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    background: white;
+    color: #333;
 }
 
 .implementation-plan-page .page-header {
-    background: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 1.5rem;
     margin: -2rem -2rem 2rem -2rem;
+    border-radius: 12px 12px 0 0;
 }
 
 .implementation-plan-page section {
@@ -1277,30 +1258,15 @@
 }
 
 .phase-card {
-    display: flex;
-    gap: 1.5rem;
     background: white;
     padding: 1.5rem;
     border-radius: 0.75rem;
     border-left: 4px solid #88B04B;
-}
-
-.phase-number {
-    flex-shrink: 0;
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 .phase-content {
-    flex: 1;
+    width: 100%;
 }
 
 .phase-content h3 {
@@ -1355,10 +1321,6 @@
     align-items: center;
     gap: 0.5rem;
     font-size: 0.9rem;
-}
-
-.resource-item i {
-    color: #88B04B;
 }
 
 .resource-item.roi {

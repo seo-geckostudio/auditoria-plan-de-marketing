@@ -4,7 +4,6 @@
         <div class="cover-header">
             <div class="logo-section">
                 <div class="logo-placeholder">
-                    <i class="fas fa-building"></i>
                     <span>Logo Cliente</span>
                 </div>
             </div>
@@ -16,21 +15,18 @@
 
             <div class="project-info">
                 <div class="info-item">
-                    <i class="fas fa-user-tie"></i>
                     <div>
                         <strong>Cliente:</strong>
                         <span><?php echo htmlspecialchars($datosModulo['portada']['cliente']); ?></span>
                     </div>
                 </div>
                 <div class="info-item">
-                    <i class="fas fa-project-diagram"></i>
                     <div>
                         <strong>Proyecto:</strong>
                         <span><?php echo htmlspecialchars($datosModulo['portada']['proyecto']); ?></span>
                     </div>
                 </div>
                 <div class="info-item">
-                    <i class="fas fa-calendar"></i>
                     <div>
                         <strong>Fecha:</strong>
                         <span><?php echo htmlspecialchars($datosModulo['portada']['fecha']); ?></span>
@@ -78,10 +74,8 @@
     padding: 2rem;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 1rem;
-}
-
-.logo-placeholder i {
-    font-size: 4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .cover-main {
@@ -123,12 +117,6 @@
     text-align: left;
 }
 
-.info-item i {
-    font-size: 2rem;
-    width: 50px;
-    text-align: center;
-}
-
 .info-item div {
     display: flex;
     flex-direction: column;
@@ -157,9 +145,8 @@
 <!-- Página 2: Agenda -->
 <div class="audit-page agenda-page">
     <div class="page-header">
-        <h1><i class="fas fa-list-check"></i> <?php echo htmlspecialchars($datosModulo['agenda']['titulo']); ?></h1>
+        <h1><?php echo htmlspecialchars($datosModulo['agenda']['titulo']); ?></h1>
         <span class="duration-badge">
-            <i class="fas fa-clock"></i>
             Duración total: <?php echo htmlspecialchars($datosModulo['agenda']['duracion_total']); ?>
         </span>
     </div>
@@ -173,13 +160,12 @@
                     <div class="agenda-header">
                         <h2><?php echo htmlspecialchars($seccion['titulo']); ?></h2>
                         <span class="duration-pill">
-                            <i class="fas fa-clock"></i>
                             <?php echo htmlspecialchars($seccion['duracion']); ?>
                         </span>
                     </div>
                     <ul class="agenda-topics">
                         <?php foreach ($seccion['temas'] as $tema): ?>
-                        <li><i class="fas fa-chevron-right"></i> <?php echo htmlspecialchars($tema); ?></li>
+                        <li><?php echo htmlspecialchars($tema); ?></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
@@ -315,23 +301,29 @@
     background: #f8f9fa;
     border-radius: 0.5rem;
     font-size: 1.05rem;
+    padding-left: 1.5rem;
+    position: relative;
 }
 
-.agenda-topics li i {
+.agenda-topics li::before {
+    content: '→';
+    position: absolute;
+    left: 0.75rem;
     color: #88B04B;
+    font-weight: bold;
 }
 </style>
 
 <!-- Página 3: Contexto y Objetivos -->
 <div class="audit-page context-page">
     <div class="page-header">
-        <h1><i class="fas fa-bullseye"></i> <?php echo htmlspecialchars($datosModulo['contexto_objetivos']['titulo']); ?></h1>
+        <h1><?php echo htmlspecialchars($datosModulo['contexto_objetivos']['titulo']); ?></h1>
     </div>
 
     <div class="page-body">
         <!-- Situación actual -->
         <section class="current-situation">
-            <h2><i class="fas fa-chart-line"></i> Situación Actual</h2>
+            <h2>Situación Actual</h2>
             <p class="situation-description">
                 <?php echo htmlspecialchars($datosModulo['contexto_objetivos']['situacion_actual']['descripcion']); ?>
             </p>
@@ -349,7 +341,7 @@
 
         <!-- Objetivos de negocio -->
         <section class="business-objectives">
-            <h2><i class="fas fa-target"></i> Objetivos de Negocio</h2>
+            <h2>Objetivos de Negocio</h2>
 
             <div class="objectives-grid">
                 <?php foreach ($datosModulo['contexto_objetivos']['objetivos_negocio'] as $objetivo): ?>
@@ -357,7 +349,6 @@
                     <h3><?php echo htmlspecialchars($objetivo['objetivo']); ?></h3>
                     <p><?php echo htmlspecialchars($objetivo['descripcion']); ?></p>
                     <div class="kpi-badge">
-                        <i class="fas fa-chart-bar"></i>
                         <span><?php echo htmlspecialchars($objetivo['kpi']); ?></span>
                     </div>
                 </div>
@@ -367,14 +358,14 @@
 
         <!-- Alcance de la auditoría -->
         <section class="audit-scope">
-            <h2><i class="fas fa-list-check"></i> Alcance de la Auditoría</h2>
+            <h2>Alcance de la Auditoría</h2>
 
             <div class="scope-columns">
                 <div class="scope-column">
                     <h3>Áreas Analizadas</h3>
                     <ul>
                         <?php foreach ($datosModulo['contexto_objetivos']['alcance_auditoria']['areas_analizadas'] as $area): ?>
-                        <li><i class="fas fa-check-circle"></i> <?php echo htmlspecialchars($area); ?></li>
+                        <li><?php echo htmlspecialchars($area); ?></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
@@ -383,14 +374,13 @@
                     <h3>Herramientas Utilizadas</h3>
                     <ul>
                         <?php foreach ($datosModulo['contexto_objetivos']['alcance_auditoria']['herramientas_utilizadas'] as $herramienta): ?>
-                        <li><i class="fas fa-tools"></i> <?php echo htmlspecialchars($herramienta); ?></li>
+                        <li><?php echo htmlspecialchars($herramienta); ?></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
             </div>
 
             <div class="period-info">
-                <i class="fas fa-calendar-alt"></i>
                 <strong>Periodo de datos:</strong>
                 <?php echo htmlspecialchars($datosModulo['contexto_objetivos']['alcance_auditoria']['periodo_datos']); ?>
             </div>
@@ -519,16 +509,21 @@
     align-items: flex-start;
     gap: 0.75rem;
     padding: 0.75rem 0;
+    padding-left: 1.5rem;
     border-bottom: 1px solid #f0f0f0;
+    position: relative;
 }
 
 .scope-column li:last-child {
     border-bottom: none;
 }
 
-.scope-column li i {
+.scope-column li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
     color: #88B04B;
-    margin-top: 0.25rem;
+    font-weight: bold;
 }
 
 .period-info {
@@ -541,35 +536,27 @@
     color: #1976d2;
     font-size: 1.05rem;
 }
-
-.period-info i {
-    font-size: 1.3rem;
-}
 </style>
 
 <!-- Página 4: Hallazgos Principales -->
 <div class="audit-page findings-page">
     <div class="page-header">
-        <h1><i class="fas fa-search"></i> <?php echo htmlspecialchars($datosModulo['hallazgos_principales']['titulo']); ?></h1>
+        <h1><?php echo htmlspecialchars($datosModulo['hallazgos_principales']['titulo']); ?></h1>
     </div>
 
     <div class="page-body">
         <!-- Resumen ejecutivo -->
         <div class="executive-summary">
-            <i class="fas fa-quote-left"></i>
             <p><?php echo htmlspecialchars($datosModulo['hallazgos_principales']['resumen_ejecutivo']); ?></p>
         </div>
 
         <!-- Fortalezas -->
         <section class="strengths-section">
-            <h2><i class="fas fa-star"></i> Fortalezas Identificadas</h2>
+            <h2>Fortalezas Identificadas</h2>
 
             <div class="strengths-grid">
                 <?php foreach ($datosModulo['hallazgos_principales']['fortalezas'] as $fortaleza): ?>
                 <div class="strength-card">
-                    <div class="strength-icon">
-                        <i class="fas <?php echo $fortaleza['icono']; ?>"></i>
-                    </div>
                     <h3><?php echo htmlspecialchars($fortaleza['categoria']); ?></h3>
                     <ul>
                         <?php foreach ($fortaleza['items'] as $item): ?>
@@ -583,7 +570,7 @@
 
         <!-- Oportunidades -->
         <section class="opportunities-section">
-            <h2><i class="fas fa-info-circle"></i> Oportunidades de Mejora</h2>
+            <h2>Oportunidades de Mejora</h2>
 
             <?php foreach ($datosModulo['hallazgos_principales']['oportunidades'] as $oportunidad): ?>
             <div class="opportunity-card">
@@ -604,7 +591,6 @@
                     <?php endforeach; ?>
                 </ul>
                 <div class="roi-badge">
-                    <i class="fas fa-chart-line"></i>
                     ROI Estimado: <?php echo htmlspecialchars($oportunidad['roi_estimado']); ?>
                 </div>
             </div>
@@ -613,7 +599,7 @@
 
         <!-- Problemas críticos -->
         <section class="critical-issues-section">
-            <h2><i class="fas fa-exclamation-triangle"></i> Problemas Críticos a Resolver</h2>
+            <h2>Problemas Críticos a Resolver</h2>
 
             <?php foreach ($datosModulo['hallazgos_principales']['problemas_criticos'] as $problema): ?>
             <div class="issue-card severity-<?php echo strtolower($problema['severidad']); ?>">
@@ -627,7 +613,7 @@
                     <?php echo htmlspecialchars($problema['impacto']); ?>
                 </div>
                 <div class="issue-solution">
-                    <strong><i class="fas fa-check-circle"></i> Solución:</strong>
+                    <strong>Solución:</strong>
                     <?php echo htmlspecialchars($problema['solucion']); ?>
                 </div>
             </div>
@@ -651,12 +637,6 @@
     line-height: 1.8;
     position: relative;
     box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
-}
-
-.executive-summary i {
-    font-size: 2rem;
-    opacity: 0.3;
-    margin-bottom: 1rem;
 }
 
 .executive-summary p {
@@ -704,19 +684,6 @@
     border-top: 4px solid #88B04B;
 }
 
-.strength-icon {
-    width: 50px;
-    height: 50px;
-    background: #88B04B;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
 .strength-card h3 {
     margin: 0 0 1rem 0;
     color: #88B04B;
@@ -735,7 +702,7 @@
 }
 
 .strength-card li::before {
-    content: '';
+    content: '✓';
     position: absolute;
     left: 0;
     color: #88B04B;
@@ -890,23 +857,18 @@
 .issue-solution {
     border-left: 4px solid #88B04B;
 }
-
-.issue-solution i {
-    color: #88B04B;
-    margin-right: 0.5rem;
-}
 </style>
 
 <!-- Página 5: Plan de Acción y Próximos Pasos -->
 <div class="audit-page action-plan-page">
     <div class="page-header">
-        <h1><i class="fas fa-road"></i> Plan de Acción y Próximos Pasos</h1>
+        <h1>Plan de Acción y Próximos Pasos</h1>
     </div>
 
     <div class="page-body">
         <!-- Plan de acción resumen -->
         <section class="action-plan-summary">
-            <h2><i class="fas fa-tasks"></i> <?php echo htmlspecialchars($datosModulo['plan_accion_resumen']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['plan_accion_resumen']['titulo']); ?></h2>
             <p class="plan-vision"><?php echo htmlspecialchars($datosModulo['plan_accion_resumen']['vision_general']); ?></p>
 
             <?php foreach ($datosModulo['plan_accion_resumen']['fases'] as $fase): ?>
@@ -933,21 +895,18 @@
 
                     <div class="phase-metrics">
                         <div class="phase-metric">
-                            <i class="fas fa-euro-sign"></i>
                             <div>
                                 <span class="metric-label">Inversión</span>
                                 <span class="metric-value"><?php echo htmlspecialchars($fase['inversion']); ?></span>
                             </div>
                         </div>
                         <div class="phase-metric">
-                            <i class="fas fa-chart-line"></i>
                             <div>
                                 <span class="metric-label">ROI Esperado</span>
                                 <span class="metric-value"><?php echo htmlspecialchars($fase['roi_esperado']); ?></span>
                             </div>
                         </div>
                         <div class="phase-metric">
-                            <i class="fas fa-bullseye"></i>
                             <div>
                                 <span class="metric-label">Resultados</span>
                                 <span class="metric-value"><?php echo htmlspecialchars($fase['resultados_esperados']); ?></span>
@@ -976,7 +935,7 @@
 
         <!-- Próximos pasos -->
         <section class="next-steps-section">
-            <h2><i class="fas fa-forward"></i> <?php echo htmlspecialchars($datosModulo['proximos_pasos']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['proximos_pasos']['titulo']); ?></h2>
 
             <div class="timeline-immediate">
                 <h3>Timeline Inmediato</h3>
@@ -1015,7 +974,7 @@
                     <h3>KPIs de Seguimiento</h3>
                     <ul class="kpis-list">
                         <?php foreach ($datosModulo['proximos_pasos']['kpis_seguimiento'] as $kpi): ?>
-                        <li><i class="fas fa-chart-bar"></i> <?php echo htmlspecialchars($kpi); ?></li>
+                        <li><?php echo htmlspecialchars($kpi); ?></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
@@ -1029,17 +988,17 @@
 
             <div class="contact-info">
                 <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
+                    <strong>Email:</strong>
                     <a href="mailto:<?php echo htmlspecialchars($datosModulo['cierre']['contacto']['email']); ?>">
                         <?php echo htmlspecialchars($datosModulo['cierre']['contacto']['email']); ?>
                     </a>
                 </div>
                 <div class="contact-item">
-                    <i class="fas fa-phone"></i>
+                    <strong>Teléfono:</strong>
                     <span><?php echo htmlspecialchars($datosModulo['cierre']['contacto']['telefono']); ?></span>
                 </div>
                 <div class="contact-item">
-                    <i class="fas fa-globe"></i>
+                    <strong>Web:</strong>
                     <a href="http://<?php echo htmlspecialchars($datosModulo['cierre']['contacto']['web']); ?>">
                         <?php echo htmlspecialchars($datosModulo['cierre']['contacto']['web']); ?>
                     </a>
@@ -1173,14 +1132,10 @@
     border: 2px solid #e0e0e0;
 }
 
-.phase-metric i {
-    font-size: 1.5rem;
-    color: #88B04B;
-}
-
 .phase-metric div {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .metric-label {
@@ -1308,16 +1263,22 @@
 
 .kpis-list li {
     padding: 0.75rem;
+    padding-left: 1.5rem;
     background: #f8f9fa;
     border-radius: 0.5rem;
     margin-bottom: 0.75rem;
     display: flex;
     align-items: center;
     gap: 0.75rem;
+    position: relative;
 }
 
-.kpis-list i {
+.kpis-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0.75rem;
     color: #88B04B;
+    font-weight: bold;
 }
 
 .closing-section {
@@ -1352,8 +1313,8 @@
     font-size: 1.1rem;
 }
 
-.contact-item i {
-    font-size: 1.5rem;
+.contact-item strong {
+    font-weight: 700;
 }
 
 .contact-item a {

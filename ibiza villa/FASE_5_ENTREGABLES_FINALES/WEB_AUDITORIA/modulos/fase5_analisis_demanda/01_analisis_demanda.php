@@ -20,30 +20,18 @@ $paginas = $datosModulo['paginas'];
     <div class="page-content">
         <div class="cover-features">
             <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-search"></i>
-                </div>
                 <h3>Keyword Research</h3>
                 <p>Análisis exhaustivo de palabras clave por mercado y oportunidades de posicionamiento</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-globe-europe"></i>
-                </div>
                 <h3>Análisis por Mercado</h3>
                 <p>Evaluación detallada de 4 mercados principales: España, Francia, Alemania y Reino Unido</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-chart-line"></i>
-                </div>
                 <h3>Oportunidades</h3>
                 <p>Identificación de keywords transaccionales y oportunidades de crecimiento rápido</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-bullseye"></i>
-                </div>
                 <h3>Estrategia</h3>
                 <p>Roadmap de optimización y prioridades para maximizar ROI</p>
             </div>
@@ -156,30 +144,18 @@ foreach ($paginas as $index => $pagina):
             <h2>Resumen General</h2>
             <div class="summary-metrics">
                 <div class="summary-metric">
-                    <div class="metric-icon">
-                        <i class="fas fa-key"></i>
-                    </div>
                     <div class="metric-value"><?php echo number_format($datos['resumen']['keywords_totales']); ?></div>
                     <div class="metric-label">Keywords Totales</div>
                 </div>
                 <div class="summary-metric">
-                    <div class="metric-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
                     <div class="metric-value"><?php echo $datos['resumen']['mercados_analizados']; ?></div>
                     <div class="metric-label">Mercados Analizados</div>
                 </div>
                 <div class="summary-metric highlight">
-                    <div class="metric-icon">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
                     <div class="metric-value"><?php echo number_format($datos['resumen']['volumen_busqueda_mensual']); ?></div>
                     <div class="metric-label">Vol. Búsqueda/Mes</div>
                 </div>
                 <div class="summary-metric">
-                    <div class="metric-icon">
-                        <i class="fas fa-info-circle"></i>
-                    </div>
                     <div class="metric-value"><?php echo $datos['resumen']['oportunidades_identificadas']; ?></div>
                     <div class="metric-label">Oportunidades</div>
                 </div>
@@ -481,7 +457,7 @@ foreach ($paginas as $index => $pagina):
     <div class="page-content">
         <!-- Situación Actual -->
         <div class="current-situation">
-            <h2><i class="fas fa-chart-pie"></i> Situación Actual - <?php echo htmlspecialchars($datos['pais']); ?></h2>
+            <h2>Situación Actual - <?php echo htmlspecialchars($datos['pais']); ?></h2>
             <div class="situation-grid">
                 <div class="situation-metric">
                     <div class="metric-value"><?php echo $datos['situacion_actual']['keywords_activas']; ?></div>
@@ -508,7 +484,7 @@ foreach ($paginas as $index => $pagina):
 
         <!-- Fortalezas -->
         <div class="strengths-section">
-            <h3><i class="fas fa-check-circle"></i> Fortalezas Identificadas</h3>
+            <h3>Fortalezas Identificadas</h3>
             <ul class="strengths-list">
                 <?php foreach ($datos['fortalezas'] as $fortaleza): ?>
                 <li><?php echo htmlspecialchars($fortaleza); ?></li>
@@ -518,7 +494,7 @@ foreach ($paginas as $index => $pagina):
 
         <!-- Oportunidades Críticas -->
         <div class="opportunities-section">
-            <h3><i class="fas fa-bullseye"></i> Oportunidades Críticas</h3>
+            <h3>Oportunidades Críticas</h3>
             <table class="opportunities-table">
                 <thead>
                     <tr>
@@ -550,7 +526,7 @@ foreach ($paginas as $index => $pagina):
         <!-- Plan de Acción -->
         <div class="action-plan-grid">
             <div class="action-plan-card phase-1">
-                <h4><i class="fas fa-rocket"></i> Fase 1 (Meses 1-3)</h4>
+                <h4>Fase 1 (Meses 1-3)</h4>
                 <ul>
                     <?php foreach ($datos['plan_accion']['fase_1'] as $accion): ?>
                     <li><?php echo htmlspecialchars($accion); ?></li>
@@ -558,7 +534,7 @@ foreach ($paginas as $index => $pagina):
                 </ul>
             </div>
             <div class="action-plan-card phase-2">
-                <h4><i class="fas fa-chart-line"></i> Fase 2 (Meses 4-6)</h4>
+                <h4>Fase 2 (Meses 4-6)</h4>
                 <ul>
                     <?php foreach ($datos['plan_accion']['fase_2'] as $accion): ?>
                     <li><?php echo htmlspecialchars($accion); ?></li>
@@ -942,9 +918,6 @@ foreach ($paginas as $index => $pagina):
     <div class="page-content">
         <!-- Definición y Resumen -->
         <div class="definition-box">
-            <div class="definition-icon">
-                <i class="fas fa-info-circle"></i>
-            </div>
             <div class="definition-content">
                 <h3>¿Qué son Keywords Transaccionales?</h3>
                 <p><?php echo htmlspecialchars($datos['definicion']); ?></p>
@@ -1000,7 +973,7 @@ foreach ($paginas as $index => $pagina):
 
         <!-- Recomendaciones -->
         <div class="recommendations-section">
-            <h2><i class="fas fa-info-circle"></i> Recomendaciones Estratégicas</h2>
+            <h2>Recomendaciones Estratégicas</h2>
             <div class="recommendations-grid">
                 <?php foreach ($datos['recomendaciones'] as $index => $recomendacion): ?>
                 <div class="recommendation-card">
@@ -1298,11 +1271,10 @@ foreach ($paginas as $index => $pagina):
     <div class="page-content">
         <!-- Hallazgos Clave -->
         <div class="key-findings">
-            <h2><i class="fas fa-search"></i> Hallazgos Clave</h2>
+            <h2>Hallazgos Clave</h2>
             <div class="findings-list">
                 <?php foreach ($datos['hallazgos_clave'] as $hallazgo): ?>
                 <div class="finding-item">
-                    <i class="fas fa-chart-bar"></i>
                     <span><?php echo htmlspecialchars($hallazgo); ?></span>
                 </div>
                 <?php endforeach; ?>
@@ -1312,7 +1284,7 @@ foreach ($paginas as $index => $pagina):
         <!-- DAFO Compacto -->
         <div class="dafo-compact-grid">
             <div class="dafo-compact fortalezas">
-                <h3><i class="fas fa-check-circle"></i> Fortalezas</h3>
+                <h3>Fortalezas</h3>
                 <ul>
                     <?php foreach ($datos['fortalezas'] as $item): ?>
                     <li><?php echo htmlspecialchars($item); ?></li>
@@ -1320,7 +1292,7 @@ foreach ($paginas as $index => $pagina):
                 </ul>
             </div>
             <div class="dafo-compact debilidades">
-                <h3><i class="fas fa-exclamation-triangle"></i> Debilidades</h3>
+                <h3>Debilidades</h3>
                 <ul>
                     <?php foreach ($datos['debilidades'] as $item): ?>
                     <li><?php echo htmlspecialchars($item); ?></li>
@@ -1331,7 +1303,7 @@ foreach ($paginas as $index => $pagina):
 
         <!-- Quick Wins -->
         <div class="quick-wins-section">
-            <h2><i class="fas fa-bolt"></i> Oportunidades Quick Wins</h2>
+            <h2>Oportunidades Quick Wins</h2>
             <div class="quick-wins-grid">
                 <?php foreach ($datos['oportunidades_quick_wins'] as $qw): ?>
                 <div class="quick-win-card">
@@ -1343,11 +1315,10 @@ foreach ($paginas as $index => $pagina):
                     <h4><?php echo htmlspecialchars($qw['accion']); ?></h4>
                     <div class="qw-metrics">
                         <div class="qw-metric">
-                            <i class="fas fa-arrow-up"></i>
+                            <span class="metric-symbol">↑</span>
                             <span><?php echo htmlspecialchars($qw['impacto']); ?></span>
                         </div>
                         <div class="qw-metric">
-                            <i class="fas fa-clock"></i>
                             <span>Esfuerzo: <?php echo htmlspecialchars($qw['esfuerzo']); ?></span>
                         </div>
                     </div>
@@ -1358,7 +1329,7 @@ foreach ($paginas as $index => $pagina):
 
         <!-- Estrategia 12 Meses -->
         <div class="strategy-timeline">
-            <h2><i class="fas fa-calendar-check"></i> Estrategia 12 Meses</h2>
+            <h2>Estrategia 12 Meses</h2>
             <div class="timeline-phases">
                 <div class="timeline-phase">
                     <div class="phase-badge">Meses 1-3</div>
@@ -1389,7 +1360,7 @@ foreach ($paginas as $index => $pagina):
 
         <!-- KPIs -->
         <div class="kpis-tracking">
-            <h2><i class="fas fa-chart-line"></i> KPIs de Seguimiento</h2>
+            <h2>KPIs de Seguimiento</h2>
             <div class="kpis-list">
                 <?php foreach ($datos['kpis_seguimiento'] as $kpi): ?>
                 <div class="kpi-item"><?php echo htmlspecialchars($kpi); ?></div>

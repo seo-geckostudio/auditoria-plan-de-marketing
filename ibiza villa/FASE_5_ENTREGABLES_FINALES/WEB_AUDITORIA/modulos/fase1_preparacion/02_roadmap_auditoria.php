@@ -14,7 +14,7 @@ $riesgos = $datosModulo['riesgos_identificados'] ?? [];
 <div class="audit-page roadmap-page">
     <div class="page-header">
         <h1 class="page-title">
-            <i class="fas fa-route"></i>
+            
             <?php echo htmlspecialchars($datosModulo['titulo'] ?? 'Roadmap de Auditoría'); ?>
         </h1>
         <p class="page-subtitle"><?php echo htmlspecialchars($datosModulo['subtitulo'] ?? ''); ?></p>
@@ -31,28 +31,28 @@ $riesgos = $datosModulo['riesgos_identificados'] ?? [];
         <?php if (!empty($metricas)): ?>
         <div class="project-metrics">
             <div class="metric-box">
-                <div class="metric-icon"><i class="fas fa-clock"></i></div>
+                <div class="metric-icon"></div>
                 <div class="metric-content">
                     <h3><?php echo $metricas['total_horas_planificadas']; ?>h</h3>
                     <p>Horas Totales</p>
                 </div>
             </div>
             <div class="metric-box">
-                <div class="metric-icon"><i class="fas fa-puzzle-piece"></i></div>
+                <div class="metric-icon"></div>
                 <div class="metric-content">
                     <h3><?php echo $metricas['total_modulos']; ?></h3>
                     <p>Módulos</p>
                 </div>
             </div>
             <div class="metric-box">
-                <div class="metric-icon"><i class="fas fa-file-alt"></i></div>
+                <div class="metric-icon"></div>
                 <div class="metric-content">
                     <h3><?php echo $metricas['total_paginas']; ?></h3>
                     <p>Páginas</p>
                 </div>
             </div>
             <div class="metric-box">
-                <div class="metric-icon"><i class="fas fa-tasks"></i></div>
+                <div class="metric-icon"></div>
                 <div class="metric-content">
                     <h3><?php echo $metricas['progreso_actual']; ?>%</h3>
                     <p>Progreso</p>
@@ -65,7 +65,7 @@ $riesgos = $datosModulo['riesgos_identificados'] ?? [];
         <?php if (!empty($hitos)): ?>
         <div class="milestones-section">
             <h2 class="section-title">
-                <i class="fas fa-flag-checkered"></i>
+                
                 Hitos Clave del Proyecto
             </h2>
             <div class="milestones-grid">
@@ -84,7 +84,7 @@ $riesgos = $datosModulo['riesgos_identificados'] ?? [];
         <?php if (!empty($equipo)): ?>
         <div class="team-section">
             <h2 class="section-title">
-                <i class="fas fa-users"></i>
+                
                 Equipo del Proyecto
             </h2>
             <div class="team-lead">
@@ -108,7 +108,7 @@ $riesgos = $datosModulo['riesgos_identificados'] ?? [];
         <?php if (!empty($riesgos)): ?>
         <div class="risks-section">
             <h2 class="section-title">
-                <i class="fas fa-exclamation-triangle"></i>
+                
                 Riesgos Identificados y Mitigación
             </h2>
             <table class="risks-table">

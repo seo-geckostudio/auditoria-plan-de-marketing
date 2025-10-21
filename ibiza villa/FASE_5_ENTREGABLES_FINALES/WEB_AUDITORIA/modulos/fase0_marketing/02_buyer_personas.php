@@ -35,7 +35,7 @@ $paginas = $datosModulo['paginas'];
         <!-- Resumen Ejecutivo -->
         <div class="personas-summary">
             <div class="summary-stat">
-                <div class="stat-icon"><i class="fas fa-users"></i></div>
+                <div class="stat-icon"></div>
                 <div class="stat-content">
                     <div class="stat-value"><?php echo $portada['personas_identificadas']; ?></div>
                     <div class="stat-label">Buyer Personas Identificadas</div>
@@ -45,11 +45,11 @@ $paginas = $datosModulo['paginas'];
 
         <!-- Metodología -->
         <div class="methodology-section">
-            <h2><i class="fas fa-microscope"></i> Metodología de Investigación</h2>
+            <h2>Metodología de Investigación</h2>
             <div class="methodology-grid">
                 <?php foreach ($portada['metodologia'] as $metodo): ?>
                 <div class="method-card">
-                    <i class="fas fa-check-circle"></i>
+                    <span class="check-mark">✓</span>
                     <span><?php echo htmlspecialchars($metodo); ?></span>
                 </div>
                 <?php endforeach; ?>
@@ -58,7 +58,7 @@ $paginas = $datosModulo['paginas'];
 
         <!-- Segmentos Principales -->
         <div class="segments-section">
-            <h2><i class="fas fa-chart-pie"></i> Distribución de Segmentos</h2>
+            <h2>Distribución de Segmentos</h2>
 
             <div class="segments-grid">
                 <?php foreach ($portada['segmentos_principales'] ?? [] as $segmento): ?>
@@ -79,7 +79,7 @@ $paginas = $datosModulo['paginas'];
 
         <!-- Origen Geográfico -->
         <div class="origin-section">
-            <h2><i class="fas fa-globe-europe"></i> Origen Geográfico de Clientes</h2>
+            <h2>Origen Geográfico de Clientes</h2>
 
             <div class="origin-chart">
                 <canvas id="origin-chart"></canvas>
@@ -170,23 +170,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h2><?php echo $persona['nombre'] ?? 'Nombre no disponible'; ?></h2>
                 <div class="persona-details">
                     <div class="detail-item">
-                        <i class="fas fa-birthday-cake"></i>
                         <span><?php echo $persona['edad'] ?? 'N/A'; ?></span>
                     </div>
                     <div class="detail-item">
-                        <i class="fas fa-map-marker-alt"></i>
                         <span><?php echo $persona['ubicacion'] ?? 'N/A'; ?></span>
                     </div>
                     <div class="detail-item">
-                        <i class="fas fa-briefcase"></i>
                         <span><?php echo $persona['ocupacion'] ?? 'N/A'; ?></span>
                     </div>
                     <div class="detail-item">
-                        <i class="fas fa-euro-sign"></i>
                         <span><?php echo $persona['ingresos_anuales'] ?? 'N/A'; ?></span>
                     </div>
                     <div class="detail-item">
-                        <i class="fas fa-heart"></i>
                         <span><?php echo $persona['estado_civil'] ?? 'N/A'; ?></span>
                     </div>
                 </div>
@@ -195,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Demografía -->
         <div class="section-block demografia-block">
-            <h3><i class="fas fa-chart-bar"></i> Demografía</h3>
+            <h3>Demografía</h3>
             <div class="demo-grid">
                 <?php foreach ($demografia as $key => $value): ?>
                 <div class="demo-item">
@@ -208,7 +203,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Psicografía -->
         <div class="section-block psico-block">
-            <h3><i class="fas fa-brain"></i> Psicografía</h3>
+            <h3>Psicografía</h3>
 
             <div class="psico-columns">
                 <div class="psico-column">
@@ -242,7 +237,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Comportamiento de Compra -->
         <div class="section-block behavior-block">
-            <h3><i class="fas fa-shopping-cart"></i> Comportamiento de Compra</h3>
+            <h3>Comportamiento de Compra</h3>
 
             <div class="behavior-grid-simple">
                 <div class="behavior-item-simple">
@@ -270,7 +265,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <!-- Pain Points & Goals -->
         <div class="pain-goals-grid">
             <div class="section-block pain-block">
-                <h3><i class="fas fa-exclamation-triangle"></i> Pain Points</h3>
+                <h3>Pain Points</h3>
                 <ul>
                     <?php foreach ($painPoints as $pain): ?>
                     <li><?php echo htmlspecialchars($pain); ?></li>
@@ -279,7 +274,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             <div class="section-block goals-block">
-                <h3><i class="fas fa-bullseye"></i> Objetivos</h3>
+                <h3>Objetivos</h3>
                 <ul>
                     <?php foreach ($goals as $goal): ?>
                     <li><?php echo htmlspecialchars($goal); ?></li>
@@ -290,11 +285,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Mensajes Clave -->
         <div class="section-block messages-block">
-            <h3><i class="fas fa-comment-dots"></i> Mensajes Clave para Esta Persona</h3>
+            <h3>Mensajes Clave para Esta Persona</h3>
             <div class="messages-grid">
                 <?php foreach ($mensajes ?? [] as $mensaje): ?>
                 <div class="message-card">
-                    <i class="fas fa-quote-left"></i>
                     <p><?php echo htmlspecialchars($mensaje); ?></p>
                 </div>
                 <?php endforeach; ?>
@@ -303,7 +297,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Keywords -->
         <div class="keywords-block">
-            <h4><i class="fas fa-search"></i> Keywords de Interés</h4>
+            <h4>Keywords de Interés</h4>
             <div class="keywords-tags">
                 <?php foreach ($keywords ?? [] as $keyword): ?>
                 <span class="keyword-tag"><?php echo htmlspecialchars($keyword); ?></span>
@@ -347,23 +341,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h2><?php echo $persona['nombre'] ?? 'Nombre no disponible'; ?></h2>
                 <div class="persona-details">
                     <div class="detail-item">
-                        <i class="fas fa-birthday-cake"></i>
                         <span><?php echo $persona['edad'] ?? 'N/A'; ?></span>
                     </div>
                     <div class="detail-item">
-                        <i class="fas fa-map-marker-alt"></i>
                         <span><?php echo $persona['ubicacion'] ?? 'N/A'; ?></span>
                     </div>
                     <div class="detail-item">
-                        <i class="fas fa-briefcase"></i>
                         <span><?php echo $persona['ocupacion'] ?? 'N/A'; ?></span>
                     </div>
                     <div class="detail-item">
-                        <i class="fas fa-euro-sign"></i>
                         <span><?php echo $persona['ingresos_anuales'] ?? 'N/A'; ?></span>
                     </div>
                     <div class="detail-item">
-                        <i class="fas fa-heart"></i>
                         <span><?php echo $persona['estado_civil'] ?? 'N/A'; ?></span>
                     </div>
                 </div>
@@ -372,7 +361,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Demografía -->
         <div class="section-block demografia-block">
-            <h3><i class="fas fa-chart-bar"></i> Demografía</h3>
+            <h3>Demografía</h3>
             <div class="demo-grid">
                 <?php foreach ($demografia as $key => $value): ?>
                 <div class="demo-item">
@@ -385,7 +374,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Psicografía -->
         <div class="section-block psico-block">
-            <h3><i class="fas fa-brain"></i> Psicografía</h3>
+            <h3>Psicografía</h3>
 
             <div class="psico-columns">
                 <div class="psico-column">
@@ -419,7 +408,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Comportamiento de Compra -->
         <div class="section-block behavior-block">
-            <h3><i class="fas fa-shopping-cart"></i> Comportamiento de Compra</h3>
+            <h3>Comportamiento de Compra</h3>
 
             <div class="behavior-grid-simple">
                 <div class="behavior-item-simple">
@@ -447,7 +436,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <!-- Pain Points & Goals -->
         <div class="pain-goals-grid">
             <div class="section-block pain-block">
-                <h3><i class="fas fa-exclamation-triangle"></i> Pain Points</h3>
+                <h3>Pain Points</h3>
                 <ul>
                     <?php foreach ($painPoints as $pain): ?>
                     <li><?php echo htmlspecialchars($pain); ?></li>
@@ -456,7 +445,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             <div class="section-block goals-block">
-                <h3><i class="fas fa-bullseye"></i> Objetivos</h3>
+                <h3>Objetivos</h3>
                 <ul>
                     <?php foreach ($goals as $goal): ?>
                     <li><?php echo htmlspecialchars($goal); ?></li>
@@ -467,11 +456,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Mensajes Clave -->
         <div class="section-block messages-block">
-            <h3><i class="fas fa-comment-dots"></i> Mensajes Clave para Esta Persona</h3>
+            <h3>Mensajes Clave para Esta Persona</h3>
             <div class="messages-grid">
                 <?php foreach ($mensajes ?? [] as $mensaje): ?>
                 <div class="message-card">
-                    <i class="fas fa-quote-left"></i>
                     <p><?php echo htmlspecialchars($mensaje); ?></p>
                 </div>
                 <?php endforeach; ?>
@@ -480,7 +468,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Keywords -->
         <div class="keywords-block">
-            <h4><i class="fas fa-search"></i> Keywords de Interés</h4>
+            <h4>Keywords de Interés</h4>
             <div class="keywords-tags">
                 <?php foreach ($keywords ?? [] as $keyword): ?>
                 <span class="keyword-tag"><?php echo htmlspecialchars($keyword); ?></span>
@@ -524,23 +512,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h2><?php echo $persona['nombre'] ?? 'Nombre no disponible'; ?></h2>
                 <div class="persona-details">
                     <div class="detail-item">
-                        <i class="fas fa-birthday-cake"></i>
                         <span><?php echo $persona['edad'] ?? 'N/A'; ?></span>
                     </div>
                     <div class="detail-item">
-                        <i class="fas fa-map-marker-alt"></i>
                         <span><?php echo $persona['ubicacion'] ?? 'N/A'; ?></span>
                     </div>
                     <div class="detail-item">
-                        <i class="fas fa-briefcase"></i>
                         <span><?php echo $persona['ocupacion'] ?? 'N/A'; ?></span>
                     </div>
                     <div class="detail-item">
-                        <i class="fas fa-euro-sign"></i>
                         <span><?php echo $persona['ingresos_anuales'] ?? 'N/A'; ?></span>
                     </div>
                     <div class="detail-item">
-                        <i class="fas fa-heart"></i>
                         <span><?php echo $persona['estado_civil'] ?? 'N/A'; ?></span>
                     </div>
                 </div>
@@ -549,7 +532,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Demografía -->
         <div class="section-block demografia-block">
-            <h3><i class="fas fa-chart-bar"></i> Demografía</h3>
+            <h3>Demografía</h3>
             <div class="demo-grid">
                 <?php foreach ($demografia as $key => $value): ?>
                 <div class="demo-item">
@@ -562,7 +545,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Psicografía -->
         <div class="section-block psico-block">
-            <h3><i class="fas fa-brain"></i> Psicografía</h3>
+            <h3>Psicografía</h3>
 
             <div class="psico-columns">
                 <div class="psico-column">
@@ -596,7 +579,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Comportamiento de Compra -->
         <div class="section-block behavior-block">
-            <h3><i class="fas fa-shopping-cart"></i> Comportamiento de Compra</h3>
+            <h3>Comportamiento de Compra</h3>
 
             <div class="behavior-grid-simple">
                 <div class="behavior-item-simple">
@@ -624,7 +607,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <!-- Pain Points & Goals -->
         <div class="pain-goals-grid">
             <div class="section-block pain-block">
-                <h3><i class="fas fa-exclamation-triangle"></i> Pain Points</h3>
+                <h3>Pain Points</h3>
                 <ul>
                     <?php foreach ($painPoints as $pain): ?>
                     <li><?php echo htmlspecialchars($pain); ?></li>
@@ -633,7 +616,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             <div class="section-block goals-block">
-                <h3><i class="fas fa-bullseye"></i> Objetivos</h3>
+                <h3>Objetivos</h3>
                 <ul>
                     <?php foreach ($goals as $goal): ?>
                     <li><?php echo htmlspecialchars($goal); ?></li>
@@ -644,11 +627,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Mensajes Clave -->
         <div class="section-block messages-block">
-            <h3><i class="fas fa-comment-dots"></i> Mensajes Clave para Esta Persona</h3>
+            <h3>Mensajes Clave para Esta Persona</h3>
             <div class="messages-grid">
                 <?php foreach ($mensajes ?? [] as $mensaje): ?>
                 <div class="message-card">
-                    <i class="fas fa-quote-left"></i>
                     <p><?php echo htmlspecialchars($mensaje); ?></p>
                 </div>
                 <?php endforeach; ?>
@@ -657,7 +639,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Keywords -->
         <div class="keywords-block">
-            <h4><i class="fas fa-search"></i> Keywords de Interés</h4>
+            <h4>Keywords de Interés</h4>
             <div class="keywords-tags">
                 <?php foreach ($keywords ?? [] as $keyword): ?>
                 <span class="keyword-tag"><?php echo htmlspecialchars($keyword); ?></span>

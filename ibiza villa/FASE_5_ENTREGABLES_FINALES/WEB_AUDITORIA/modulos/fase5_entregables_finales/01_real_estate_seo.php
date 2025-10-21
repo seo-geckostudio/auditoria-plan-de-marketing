@@ -69,7 +69,6 @@ $moduloData = [
 
         <div class="analogia-box">
             <div class="analogia-header">
-                <i class="fas fa-info-circle"></i>
                 <strong>Piensa en Real Estate SEO como el Escaparate de una Agencia Inmobiliaria de Lujo en Calle Principal:</strong>
             </div>
             <ul class="analogia-list">

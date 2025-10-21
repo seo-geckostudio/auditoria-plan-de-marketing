@@ -885,23 +885,40 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
     border-radius: 6px;
     padding: 15px;
     text-align: center;
-}
-
-.ia-sge-page .metric-value {
-    font-size: 28px;
-    font-weight: 700;
-    color: #88B04B;
-    margin: 10px 0;
+    min-height: 120px;
+    max-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .ia-sge-page .metric-label {
     font-size: 13px;
     color: #6c757d;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-word;
+    order: 1;
+}
+
+.ia-sge-page .metric-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #88B04B;
+    margin: 8px 0;
+    order: 2;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .ia-sge-page .metric-trend {
     font-size: 12px;
     margin-top: 5px;
+    order: 3;
 }
 
 .ia-sge-page .metric-trend.up {
@@ -978,7 +995,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
             </p>
             <div class="analogia-box">
                 <div class="analogia-header">
-                    <i class="fas fa-info-circle"></i>
+                    
                     <strong>Piensa en IA/SGE como un periodista escribiendo un artículo y decidiendo a quién citar:</strong>
                 </div>
                 <ul class="analogia-list">

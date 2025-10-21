@@ -101,7 +101,9 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
 }
 
 .stat-item.highlight {
-    background: rgba(255,255,255,0.25);
+    background: rgba(136,176,75,0.4);
+    border: 2px solid rgba(255,255,255,0.5);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .stat-number {
@@ -139,15 +141,18 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
 }
 
 .area-card {
-    background: rgba(255,255,255,0.2);
+    background: rgba(136,176,75,0.25);
     border-left: 4px solid;
     border-radius: 8px;
     padding: 15px 20px;
+    border: 1px solid rgba(255,255,255,0.3);
 }
 
 .area-name {
     font-size: 15px;
     font-weight: 600;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 </style>
 
@@ -171,7 +176,7 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
                 </p>
                 <div class="analogia-box">
                     <div class="analogia-header">
-                        <i class="fas fa-info-circle"></i>
+                        
                         <strong>Piensa en tu página web como el escaparate de una tienda de lujo:</strong>
                     </div>
                     <ul class="analogia-list">
@@ -229,7 +234,7 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
                 <!-- CSV 1: Páginas sin H1 -->
                 <div class="entregable-card priority-critical">
                     <div class="entregable-icon">
-                        <i class="fas fa-file-csv"></i>
+                        
                     </div>
                     <div class="entregable-content">
                         <h3>Páginas sin H1</h3>
@@ -244,7 +249,7 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
                            class="btn-download"
                            download
                            title="Descargar CSV con 10 páginas sin H1">
-                            <i class="fas fa-download"></i> Descargar CSV
+                            Descargar CSV
                         </a>
                     </div>
                 </div>
@@ -252,7 +257,7 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
                 <!-- CSV 2: H1 Duplicados -->
                 <div class="entregable-card priority-critical">
                     <div class="entregable-icon">
-                        <i class="fas fa-file-csv"></i>
+                        
                     </div>
                     <div class="entregable-content">
                         <h3>H1 Duplicados a Diferenciar</h3>
@@ -267,7 +272,7 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
                            class="btn-download"
                            download
                            title="Descargar CSV con 12 H1 duplicados">
-                            <i class="fas fa-download"></i> Descargar CSV
+                            Descargar CSV
                         </a>
                     </div>
                 </div>
@@ -275,7 +280,7 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
                 <!-- CSV 3: Meta Descriptions Duplicadas -->
                 <div class="entregable-card priority-high">
                     <div class="entregable-icon">
-                        <i class="fas fa-file-csv"></i>
+                        
                     </div>
                     <div class="entregable-content">
                         <h3>Meta Descriptions Duplicadas</h3>
@@ -290,7 +295,7 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
                            class="btn-download"
                            download
                            title="Descargar CSV con 14 meta descriptions">
-                            <i class="fas fa-download"></i> Descargar CSV
+                            Descargar CSV
                         </a>
                     </div>
                 </div>
@@ -298,7 +303,7 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
                 <!-- CSV 4: Title Tags a Optimizar -->
                 <div class="entregable-card priority-high">
                     <div class="entregable-icon">
-                        <i class="fas fa-file-csv"></i>
+                        
                     </div>
                     <div class="entregable-content">
                         <h3>Title Tags a Optimizar</h3>
@@ -313,7 +318,7 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
                            class="btn-download"
                            download
                            title="Descargar CSV con 15 title tags">
-                            <i class="fas fa-download"></i> Descargar CSV
+                            Descargar CSV
                         </a>
                     </div>
                 </div>
@@ -321,7 +326,7 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
                 <!-- CSV 5: Imágenes sin ALT -->
                 <div class="entregable-card priority-medium">
                     <div class="entregable-icon">
-                        <i class="fas fa-file-csv"></i>
+                        
                     </div>
                     <div class="entregable-content">
                         <h3>Imágenes sin Atributo ALT</h3>
@@ -336,7 +341,7 @@ $areas = $datosModulo['areas_analizadas'] ?? [];
                            class="btn-download"
                            download
                            title="Descargar CSV con 10 imágenes sin ALT">
-                            <i class="fas fa-download"></i> Descargar CSV
+                            Descargar CSV
                         </a>
                     </div>
                 </div>

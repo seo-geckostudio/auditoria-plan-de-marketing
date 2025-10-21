@@ -33,7 +33,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
         <!-- SECCIÓN EDUCATIVA: ¿Qué son los Wireframes y la Arquitectura de Contenido? -->
         <section class="concepto-educativo">
             <div class="concepto-header">
-                <i class="fas fa-drafting-compass"></i>
+                
                 <h2>¿Qué son los Wireframes y la Arquitectura de Contenido y Por Qué son Críticos para Ibiza Villa?</h2>
             </div>
             <div class="concepto-content">
@@ -44,7 +44,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                 </p>
                 <div class="analogia-box">
                     <div class="analogia-header">
-                        <i class="fas fa-info-circle"></i>
+                        
                         <strong>Piensa en Wireframes como el Plano de un Arquitecto para una Villa de Lujo:</strong>
                     </div>
                     <ul class="analogia-list">
@@ -61,19 +61,19 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                     <h3>Impacto en el Negocio de Ibiza Villa:</h3>
                     <div class="impacto-grid">
                         <div class="impacto-item">
-                            <i class="fas fa-bullseye"></i>
+                            
                             <strong>Conversión por Tipología Optimizada</strong>
                             <p>Cada tipo de página (home, villa, zona) tiene elementos optimizados para su objetivo específico.
                             Home convierte 1.8%→2.6-2.9% con hero correcto. Villas convierten 2.3%→5.1-6.4% con calendario+reviews.</p>
                         </div>
                         <div class="impacto-item">
-                            <i class="fas fa-compass"></i>
+                            
                             <strong>Buyer Journey Sin Fricción</strong>
                             <p>Wireframes mapean el recorrido completo: Awareness (blog) → Consideration (zonas) → Decision (villa específica) → Action (checkout).
                             Cada paso tiene CTAs claros. Reduce abandono checkout -25-40%.</p>
                         </div>
                         <div class="impacto-item">
-                            <i class="fas fa-dollar-sign"></i>
+                            
                             <strong>ROI de Contenido Dirigido</strong>
                             <p>Crear contenido sin wireframes = invertir €5k-10k sin saber si tendrá los elementos críticos.
                             Wireframes aseguran que cada página tenga: Keywords correctas, Schema markup, CTAs optimizados, Trust signals.
@@ -95,7 +95,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
             <!-- Wireframe 1: Home (Landing Principal) -->
             <div class="wireframe-container">
                 <div class="wireframe-header">
-                    <h3><i class="fas fa-home"></i> Wireframe 1: Home (Landing Principal)</h3>
+                    <h3>Wireframe 1: Home (Landing Principal)</h3>
                     <div class="wireframe-meta">
                         <span class="meta-tag">Buyer Journey: Awareness + Consideration</span>
                         <span class="meta-tag">Conversion Goal: Engagement 8-12%</span>
@@ -194,7 +194,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
             <!-- Wireframe 2: Villa Individual (Producto) -->
             <div class="wireframe-container">
                 <div class="wireframe-header">
-                    <h3><i class="fas fa-building"></i> Wireframe 2: Villa Individual (Producto)</h3>
+                    <h3>Wireframe 2: Villa Individual (Producto)</h3>
                     <div class="wireframe-meta">
                         <span class="meta-tag">Buyer Journey: Decision (bottom funnel)</span>
                         <span class="meta-tag">Conversion Goal: Checkout 5-8%</span>
@@ -292,7 +292,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
             <!-- Wireframe 3: Categoría (Listado Villas) -->
             <div class="wireframe-container">
                 <div class="wireframe-header">
-                    <h3><i class="fas fa-th"></i> Wireframe 3: Categoría (Listado Villas)</h3>
+                    <h3>Wireframe 3: Categoría (Listado Villas)</h3>
                     <div class="wireframe-meta">
                         <span class="meta-tag">Buyer Journey: Consideration</span>
                         <span class="meta-tag">Conversion Goal: Clickthrough 60-75%</span>
@@ -390,7 +390,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
             <!-- Wireframe 4: Artículo Blog -->
             <div class="wireframe-container">
                 <div class="wireframe-header">
-                    <h3><i class="fas fa-file-alt"></i> Wireframe 4: Artículo Blog (Informacional)</h3>
+                    <h3>Wireframe 4: Artículo Blog (Informacional)</h3>
                     <div class="wireframe-meta">
                         <span class="meta-tag">Buyer Journey: Awareness (top funnel)</span>
                         <span class="meta-tag">Conversion Goal: Engagement 3-5 min + Lead PDF 15-25%</span>
@@ -507,7 +507,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 
             <!-- Nota Implementación -->
             <div class="wireframes-nota">
-                <h4><i class="fas fa-info-circle"></i> Cómo Implementar Estos Wireframes</h4>
+                <h4> Cómo Implementar Estos Wireframes</h4>
                 <p>
                     <strong>Estos wireframes visuales sirven como blueprint directo para desarrollo:</strong>
                 </p>
@@ -580,7 +580,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                             </div>
                         </div>
                         <a href="../entregables/content_architecture/urls_tipologia_audit.csv" download class="btn-download">
-                            <i class="fas fa-download"></i> Descargar urls_tipologia_audit.csv
+                            Descargar urls_tipologia_audit.csv
                         </a>
                     </div>
                 </div>
@@ -632,7 +632,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                             </div>
                         </div>
                         <a href="../entregables/content_architecture/wireframes_tipologia_contenido.csv" download class="btn-download">
-                            <i class="fas fa-download"></i> Descargar wireframes_tipologia_contenido.csv
+                            Descargar wireframes_tipologia_contenido.csv
                         </a>
                     </div>
                 </div>
@@ -640,7 +640,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
 
             <!-- Instrucciones de Uso -->
             <div class="instrucciones-uso">
-                <h3><i class="fas fa-book"></i> Cómo Usar los Archivos CSV</h3>
+                <h3>Cómo Usar los Archivos CSV</h3>
                 <ol class="instrucciones-list">
                     <li><strong>Descargar ambos CSV</strong> y abrirlos en Excel o Google Sheets</li>
                     <li><strong>CSV 1 (Auditoría):</strong> Revisar columna "Gaps_Detectados" y "Elementos_Faltantes" para cada URL tipo. Priorizar por columna "Prioridad" (Crítica → Muy Alta → Alta → Media → Baja)</li>
@@ -735,7 +735,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                 <!-- FLECHA TRANSFORMACIÓN -->
                 <div class="comparacion-flecha">
                     <div class="flecha-container">
-                        <i class="fas fa-arrow-right"></i>
+                        →
                         <span class="flecha-text">WIREFRAMES<br>+<br>CONTENT<br>ARCHITECTURE</span>
                     </div>
                 </div>
@@ -921,7 +921,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
             </div>
 
             <div class="kpis-nota">
-                <h4><i class="fas fa-info-circle"></i> Nota Importante sobre Wireframes y Arquitectura de Contenido</h4>
+                <h4> Nota Importante sobre Wireframes y Arquitectura de Contenido</h4>
                 <p>
                     <strong>Wireframes son inversión inicial (1 mes trabajo) con ROI permanente (años).</strong>
                     Una vez implementados, sirven como blueprint para:
@@ -952,6 +952,18 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: #000000;
     line-height: 1.6;
+}
+
+.wireframes-page .page-meta {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: white;
+}
+
+.wireframes-page .page-meta span {
+    padding: 4px 0;
 }
 
 /* =====================================

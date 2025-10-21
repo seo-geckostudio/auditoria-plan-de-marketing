@@ -215,6 +215,100 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
             <h2>Nuevas Categorías y Secciones Propuestas</h2>
             <p class="section-intro">Categorías que deberían crearse para capturar oportunidades de tráfico identificadas en keyword research.</p>
 
+            <!-- WIREFRAMES VISUALES DE CATEGORÍAS -->
+            <div class="wireframes-categorias">
+            <?php foreach ($nuevas_categorias as $index => $categoria): ?>
+            <!-- Wireframe Categoría <?php echo $index + 1; ?> -->
+            <div class="wireframe-container categoria-wireframe">
+                <div class="wireframe-header <?php echo strtolower($categoria['prioridad'] ?? 'media') === 'alta' || strtolower($categoria['prioridad'] ?? 'media') === 'muy alta' ? 'priority-high' : 'priority-medium'; ?>">
+                    <h3>Categoría Propuesta: <?php echo htmlspecialchars($categoria['nombre']); ?></h3>
+                    <div class="wireframe-meta">
+                        <span class="meta-tag priority-<?php echo strtolower($categoria['prioridad'] ?? 'media'); ?>">
+                            Prioridad: <?php echo htmlspecialchars($categoria['prioridad'] ?? 'Media'); ?>
+                        </span>
+                        <span class="meta-tag">
+                            Tráfico: <?php echo htmlspecialchars($categoria['trafico_estimado'] ?? 'N/A'); ?>
+                        </span>
+                        <?php if (isset($categoria['esfuerzo'])): ?>
+                        <span class="meta-tag">Esfuerzo: <?php echo htmlspecialchars($categoria['esfuerzo']); ?></span>
+                        <?php endif; ?>
+                    </div>
+                </div>
+                <div class="wireframe-visual">
+                    <!-- Información Básica -->
+                    <div class="wireframe-block must-have">
+                        <div class="block-label">INFORMACIÓN BÁSICA (MUST-HAVE)</div>
+                        <div class="block-content">
+                            <div class="element-tag"><strong>URL:</strong> <?php echo htmlspecialchars($categoria['url'] ?? ''); ?></div>
+                            <div class="element-tag"><strong>Tipo:</strong> <?php echo htmlspecialchars($categoria['tipo'] ?? ''); ?></div>
+                            <div class="element-tag"><strong>Nivel Jerarquía:</strong> <?php echo htmlspecialchars($categoria['nivel'] ?? ''); ?></div>
+                        </div>
+                    </div>
+
+                    <!-- Keywords Objetivo -->
+                    <?php if (!empty($categoria['keywords'])): ?>
+                    <div class="wireframe-block must-have">
+                        <div class="block-label">KEYWORDS OBJETIVO (<?php echo count($categoria['keywords']); ?> keywords)</div>
+                        <div class="block-content grid-keywords">
+                            <?php foreach ($categoria['keywords'] ?? [] as $kw): ?>
+                            <div class="keyword-wireframe-tag">
+                                <?php
+                                $keyword_text = is_array($kw) ? $kw['keyword'] : $kw;
+                                $volumen = is_array($kw) && isset($kw['volumen']) ? $kw['volumen'] : null;
+                                echo htmlspecialchars($keyword_text);
+                                if ($volumen): ?>
+                                <small>(<?php echo number_format($volumen); ?>/mes)</small>
+                                <?php endif; ?>
+                            </div>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                    <?php endif; ?>
+
+                    <!-- Descripción y Contenido -->
+                    <div class="wireframe-block nice-to-have">
+                        <div class="block-label">DESCRIPCIÓN Y CONTENIDO SUGERIDO</div>
+                        <div class="block-content">
+                            <div class="element-tag"><strong>Descripción:</strong><br><?php echo nl2br(htmlspecialchars($categoria['descripcion'] ?? '')); ?></div>
+                            <?php if (!empty($categoria['contenido_sugerido'])): ?>
+                            <div class="element-tag">
+                                <strong>Contenido Sugerido:</strong>
+                                <ul style="margin: 8px 0 0 20px;">
+                                    <?php foreach ($categoria['contenido_sugerido'] ?? [] as $contenido): ?>
+                                    <li><?php echo htmlspecialchars($contenido); ?></li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </div>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+
+                    <!-- Métricas de Impacto -->
+                    <div class="wireframe-block cta-block">
+                        <div class="block-label">MÉTRICAS DE IMPACTO</div>
+                        <div class="block-content">
+                            <div class="element-tag"><strong>Tráfico Estimado:</strong> <?php echo htmlspecialchars($categoria['trafico_estimado'] ?? 'N/A'); ?></div>
+                            <?php if (isset($categoria['esfuerzo'])): ?>
+                            <div class="element-tag"><strong>Esfuerzo:</strong> <?php echo htmlspecialchars($categoria['esfuerzo']); ?></div>
+                            <?php endif; ?>
+                            <?php if (isset($categoria['roi'])): ?>
+                            <div class="element-tag"><strong>ROI Estimado:</strong> <?php echo htmlspecialchars($categoria['roi']); ?></div>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="wireframe-footer">
+                    <div class="cta-list">
+                        <strong>Acción Recomendada:</strong>
+                        <span class="cta-tag">Crear categoría en próximos <?php echo strtolower($categoria['prioridad'] ?? 'media') === 'alta' || strtolower($categoria['prioridad'] ?? 'media') === 'muy alta' ? '30 días' : '60-90 días'; ?></span>
+                    </div>
+                </div>
+            </div>
+            <?php endforeach; ?>
+            </div>
+
+            <!-- Mantener versión antigua como fallback invisible -->
+            <div style="display:none;">
             <?php foreach ($nuevas_categorias as $categoria): ?>
             <div class="categoria-card">
                 <div class="categoria-header">
@@ -244,8 +338,10 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         <div class="keywords-list">
                             <?php foreach ($categoria['keywords'] ?? [] as $kw): ?>
                             <span class="keyword-tag">
-                                <?php echo htmlspecialchars($kw['keyword']); ?>
+                                <?php echo htmlspecialchars(is_array($kw) ? $kw['keyword'] : $kw); ?>
+                                <?php if (is_array($kw) && isset($kw['volumen'])): ?>
                                 <small>(<?php echo number_format($kw['volumen']); ?>/mes)</small>
+                                <?php endif; ?>
                             </span>
                             <?php endforeach; ?>
                         </div>
@@ -268,16 +364,20 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                     <div class="categoria-metrics">
                         <div class="metric-inline">
                             <span class="metric-label">Tráfico estimado:</span>
-                            <span class="metric-value"><?php echo number_format($categoria['trafico_estimado']); ?> sesiones/mes</span>
+                            <span class="metric-value"><?php echo htmlspecialchars($categoria['trafico_estimado'] ?? 'N/A'); ?></span>
                         </div>
+                        <?php if (isset($categoria['esfuerzo'])): ?>
                         <div class="metric-inline">
                             <span class="metric-label">Esfuerzo:</span>
                             <span class="metric-value"><?php echo htmlspecialchars($categoria['esfuerzo']); ?></span>
                         </div>
+                        <?php endif; ?>
+                        <?php if (isset($categoria['roi'])): ?>
                         <div class="metric-inline">
                             <span class="metric-label">ROI estimado:</span>
                             <span class="metric-value"><?php echo htmlspecialchars($categoria['roi']); ?></span>
                         </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
@@ -533,7 +633,17 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     gap: 20px;
     flex-wrap: wrap;
     font-size: 14px;
-    color: #888;
+    color: #333;
+    background: rgba(136, 176, 75, 0.1);
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.propuestas-arquitectura-page .page-meta span {
+    background: white;
+    padding: 5px 12px;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
 }
 
 .propuestas-arquitectura-page section {
@@ -799,6 +909,86 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     line-height: 1.8;
     overflow-x: auto;
     margin: 20px 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.sitemap-level {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sitemap-level > div {
+    padding: 10px;
+    border-left: 3px solid #88B04B;
+    margin-left: 0;
+}
+
+.sitemap-level .level-0 {
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    border-left: none;
+}
+
+.sitemap-level .level-1 {
+    background: #f0f7e6;
+    padding: 15px;
+    border-left: 3px solid #88B04B;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.sitemap-level .level-1 > div {
+    background: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #d0d0d0;
+    font-size: 13px;
+}
+
+.sitemap-level .level-2 {
+    background: #fafafa;
+    padding: 15px;
+    border-left: 3px solid #88B04B;
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 8px;
+}
+
+.sitemap-level .level-2 > div {
+    padding: 6px 10px;
+    font-size: 12px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+}
+
+.sitemap-level .level-3 {
+    background: #f9f9f9;
+    padding: 12px;
+    border-left: 2px solid #ccc;
+    margin-left: 60px;
+    font-size: 11px;
+    color: #666;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.sitemap-level .level-3 > div {
+    padding: 4px 8px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
 }
 
 /* Nuevas Categorías Cards */
@@ -1189,6 +1379,243 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     .propuestas-arquitectura-page .comparison-arrow {
         transform: rotate(90deg);
         margin: 20px 0;
+    }
+}
+
+/* ============================================
+   WIREFRAMES VISUALES - SISTEMA DE DISEÑO CATEGORÍAS
+   ============================================ */
+
+.wireframes-categorias {
+    margin: 30px 0;
+}
+
+.wireframe-container.categoria-wireframe {
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.wireframe-header {
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
+    color: white;
+    padding: 20px 30px;
+}
+
+.wireframe-header.priority-high {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+}
+
+.wireframe-header.priority-medium {
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
+}
+
+.wireframe-header h3 {
+    margin: 0 0 12px 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.wireframe-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.meta-tag {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.meta-tag.priority-alta,
+.meta-tag.priority-muy-alta {
+    background: #ffc107;
+    color: #000;
+    animation: pulse 2s infinite;
+}
+
+.wireframe-visual {
+    padding: 30px;
+    background: #f8f9fa;
+}
+
+.wireframe-block {
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 2px solid #88B04B;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.wireframe-block:hover {
+    box-shadow: 0 4px 12px rgba(136, 176, 75, 0.25);
+    transform: translateX(3px);
+}
+
+.wireframe-block.must-have {
+    border-color: #88B04B;
+    background: linear-gradient(135deg, #f0f7e6 0%, #ffffff 100%);
+}
+
+.wireframe-block.nice-to-have {
+    border-color: #adb5bd;
+    border-style: dashed;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    opacity: 0.85;
+}
+
+.wireframe-block.cta-block {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffffff 100%);
+    border-color: #ffc107;
+    border-width: 3px;
+}
+
+.block-label {
+    background: #88B04B;
+    color: white;
+    padding: 10px 18px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.nice-to-have .block-label {
+    background: #6c757d;
+}
+
+.cta-block .block-label {
+    background: #ffc107;
+    color: #000;
+}
+
+.block-content {
+    padding: 18px;
+}
+
+.element-tag {
+    background: white;
+    border: 1px solid #dee2e6;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin: 6px 0;
+    font-size: 0.9rem;
+    color: #495057;
+    display: block;
+    border-left: 3px solid #88B04B;
+}
+
+.nice-to-have .element-tag {
+    border-left-color: #6c757d;
+}
+
+.cta-block .element-tag {
+    border-left-color: #ffc107;
+}
+
+/* Grid de Keywords */
+.grid-keywords {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.keyword-wireframe-tag {
+    background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%);
+    border: 2px solid #2196f3;
+    padding: 10px 12px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1565c0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.keyword-wireframe-tag small {
+    font-size: 0.75rem;
+    color: #666;
+    margin-top: 4px;
+}
+
+.wireframe-footer {
+    background: #f8f9fa;
+    padding: 20px 30px;
+    border-top: 2px solid #dee2e6;
+}
+
+.cta-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.cta-list strong {
+    margin-right: 10px;
+    color: #000;
+}
+
+.cta-tag {
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.cta-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(136, 176, 75, 0.3);
+    color: white;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+}
+
+/* Responsive Wireframes */
+@media (max-width: 768px) {
+    .wireframe-visual {
+        padding: 20px;
+    }
+
+    .wireframe-header h3 {
+        font-size: 1.3rem;
+    }
+
+    .wireframe-meta {
+        flex-direction: column;
+    }
+
+    .grid-keywords {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-list {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 </style>

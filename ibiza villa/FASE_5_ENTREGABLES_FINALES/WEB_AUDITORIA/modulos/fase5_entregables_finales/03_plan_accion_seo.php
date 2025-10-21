@@ -11,36 +11,24 @@
             <h2>Resumen Ejecutivo del Plan</h2>
             <div class="summary-grid">
                 <div class="summary-card">
-                    <div class="summary-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
                     <div class="summary-content">
                         <div class="summary-label">Duración Total</div>
                         <div class="summary-value"><?php echo htmlspecialchars($datosModulo['resumen_ejecutivo']['duracion_total']); ?></div>
                     </div>
                 </div>
                 <div class="summary-card">
-                    <div class="summary-icon">
-                        <i class="fas fa-tasks"></i>
-                    </div>
                     <div class="summary-content">
                         <div class="summary-label">Fases de Implementación</div>
                         <div class="summary-value"><?php echo $datosModulo['resumen_ejecutivo']['fases']; ?> Fases</div>
                     </div>
                 </div>
                 <div class="summary-card">
-                    <div class="summary-icon">
-                        <i class="fas fa-euro-sign"></i>
-                    </div>
                     <div class="summary-content">
                         <div class="summary-label">Inversión Estimada</div>
                         <div class="summary-value"><?php echo htmlspecialchars($datosModulo['resumen_ejecutivo']['inversion_estimada']); ?></div>
                     </div>
                 </div>
                 <div class="summary-card highlight">
-                    <div class="summary-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
                     <div class="summary-content">
                         <div class="summary-label">ROI Esperado</div>
                         <div class="summary-value roi-value"><?php echo htmlspecialchars($datosModulo['resumen_ejecutivo']['roi_esperado']); ?></div>
@@ -48,7 +36,6 @@
                 </div>
             </div>
             <div class="plan-objective">
-                <i class="fas fa-bullseye"></i>
                 <p><?php echo htmlspecialchars($datosModulo['resumen_ejecutivo']['objetivo_principal']); ?></p>
             </div>
         </div>
@@ -68,7 +55,7 @@
                             <span class="value"><?php echo htmlspecialchars($metrica['actual']); ?></span>
                         </div>
                         <div class="metric-arrow">
-                            <i class="fas fa-long-arrow-alt-right"></i>
+                            <span class="arrow-symbol">→</span>
                             <span class="increment <?php echo strpos($metrica['incremento'], '+') === 0 ? 'positive' : ''; ?>">
                                 <?php echo htmlspecialchars($metrica['incremento']); ?>
                             </span>
@@ -91,13 +78,13 @@
                     <h2><?php echo htmlspecialchars($datosModulo['fase_1_quick_wins']['titulo']); ?></h2>
                     <div class="phase-meta">
                         <span class="phase-duration">
-                            <i class="fas fa-calendar-alt"></i> <?php echo htmlspecialchars($datosModulo['fase_1_quick_wins']['duracion']); ?>
+                            Duración: <?php echo htmlspecialchars($datosModulo['fase_1_quick_wins']['duracion']); ?>
                         </span>
                         <span class="phase-priority critical">
-                            <i class="fas fa-exclamation-circle"></i> <?php echo htmlspecialchars($datosModulo['fase_1_quick_wins']['prioridad']); ?>
+                            Prioridad: <?php echo htmlspecialchars($datosModulo['fase_1_quick_wins']['prioridad']); ?>
                         </span>
                         <span class="phase-investment">
-                            <i class="fas fa-euro-sign"></i> <?php echo htmlspecialchars($datosModulo['fase_1_quick_wins']['inversion']); ?>
+                            Inversión: <?php echo htmlspecialchars($datosModulo['fase_1_quick_wins']['inversion']); ?>
                         </span>
                     </div>
                 </div>
@@ -106,7 +93,6 @@
                 <strong>Objetivo:</strong> <?php echo htmlspecialchars($datosModulo['fase_1_quick_wins']['objetivo']); ?>
             </div>
             <div class="phase-impact">
-                <i class="fas fa-chart-line"></i>
                 <strong>Impacto Esperado:</strong> <?php echo htmlspecialchars($datosModulo['fase_1_quick_wins']['impacto_esperado']); ?>
             </div>
         </div>
@@ -193,25 +179,9 @@
     color: white;
 }
 
-.summary-icon {
-    font-size: 32px;
-    color: #88B04B;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: white;
-    border-radius: 12px;
-}
-
-.summary-card.highlight .summary-icon {
-    background: rgba(255,255,255,0.2);
-    color: white;
-}
-
 .summary-content {
     flex: 1;
+    width: 100%;
 }
 
 .summary-label {
@@ -241,12 +211,6 @@
     background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
     border-radius: 12px;
     border-left: 4px solid #88B04B;
-}
-
-.plan-objective i {
-    font-size: 24px;
-    color: #88B04B;
-    margin-top: 2px;
 }
 
 .plan-objective p {
@@ -335,9 +299,10 @@
     padding: 0 10px;
 }
 
-.metric-arrow i {
+.metric-arrow .arrow-symbol {
     font-size: 24px;
     color: #88B04B;
+    font-weight: bold;
 }
 
 .metric-arrow .increment {
@@ -430,10 +395,6 @@
     gap: 12px;
 }
 
-.phase-impact i {
-    font-size: 22px;
-}
-
 .page-footer {
     display: flex;
     justify-content: space-between;
@@ -469,10 +430,10 @@
                                 <?php echo htmlspecialchars($tarea['prioridad']); ?>
                             </span>
                             <span class="task-effort">
-                                <i class="fas fa-clock"></i> <?php echo htmlspecialchars($tarea['esfuerzo']); ?>
+                                Esfuerzo: <?php echo htmlspecialchars($tarea['esfuerzo']); ?>
                             </span>
                             <span class="task-timing">
-                                <i class="fas fa-calendar"></i> <?php echo htmlspecialchars($tarea['semanas']); ?>
+                                <?php echo htmlspecialchars($tarea['semanas']); ?>
                             </span>
                         </div>
                     </div>
@@ -482,11 +443,11 @@
                 </div>
                 <div class="task-details-grid">
                     <div class="task-detail">
-                        <h4><i class="fas fa-user"></i> Responsable</h4>
+                        <h4>Responsable</h4>
                         <p><?php echo htmlspecialchars($tarea['responsable']); ?></p>
                     </div>
                     <div class="task-detail">
-                        <h4><i class="fas fa-check-circle"></i> Entregables</h4>
+                        <h4>Entregables</h4>
                         <ul>
                             <?php foreach ($tarea['entregables'] as $entregable): ?>
                             <li><?php echo htmlspecialchars($entregable); ?></li>
@@ -494,7 +455,7 @@
                         </ul>
                     </div>
                     <div class="task-detail">
-                        <h4><i class="fas fa-chart-bar"></i> KPIs</h4>
+                        <h4>KPIs</h4>
                         <ul class="kpi-list">
                             <?php foreach ($tarea['kpis'] as $kpi): ?>
                             <li><?php echo htmlspecialchars($kpi); ?></li>
@@ -709,13 +670,13 @@
                     <h2><?php echo htmlspecialchars($datosModulo['fase_2_contenido_estrategico']['titulo']); ?></h2>
                     <div class="phase-meta">
                         <span class="phase-duration">
-                            <i class="fas fa-calendar-alt"></i> <?php echo htmlspecialchars($datosModulo['fase_2_contenido_estrategico']['duracion']); ?>
+                            Duración: <?php echo htmlspecialchars($datosModulo['fase_2_contenido_estrategico']['duracion']); ?>
                         </span>
                         <span class="phase-priority high">
-                            <i class="fas fa-star"></i> <?php echo htmlspecialchars($datosModulo['fase_2_contenido_estrategico']['prioridad']); ?>
+                            Prioridad: <?php echo htmlspecialchars($datosModulo['fase_2_contenido_estrategico']['prioridad']); ?>
                         </span>
                         <span class="phase-investment">
-                            <i class="fas fa-euro-sign"></i> <?php echo htmlspecialchars($datosModulo['fase_2_contenido_estrategico']['inversion']); ?>
+                            Inversión: <?php echo htmlspecialchars($datosModulo['fase_2_contenido_estrategico']['inversion']); ?>
                         </span>
                     </div>
                 </div>
@@ -724,7 +685,6 @@
                 <strong>Objetivo:</strong> <?php echo htmlspecialchars($datosModulo['fase_2_contenido_estrategico']['objetivo']); ?>
             </div>
             <div class="phase-impact">
-                <i class="fas fa-chart-line"></i>
                 <strong>Impacto Esperado:</strong> <?php echo htmlspecialchars($datosModulo['fase_2_contenido_estrategico']['impacto_esperado']); ?>
             </div>
 
@@ -748,7 +708,7 @@
             </div>
 
             <div class="phase-summary-box">
-                <h3><i class="fas fa-clipboard-check"></i> Resumen de Fase</h3>
+                <h3>Resumen de Fase</h3>
                 <div class="summary-stats">
                     <div class="stat">
                         <span class="stat-value"><?php echo $datosModulo['fase_2_contenido_estrategico']['resumen_fase']['total_tareas']; ?></span>
@@ -778,13 +738,13 @@
                     <h2><?php echo htmlspecialchars($datosModulo['fase_3_autoridad_enlaces']['titulo']); ?></h2>
                     <div class="phase-meta">
                         <span class="phase-duration">
-                            <i class="fas fa-calendar-alt"></i> <?php echo htmlspecialchars($datosModulo['fase_3_autoridad_enlaces']['duracion']); ?>
+                            Duración: <?php echo htmlspecialchars($datosModulo['fase_3_autoridad_enlaces']['duracion']); ?>
                         </span>
                         <span class="phase-priority high">
-                            <i class="fas fa-star"></i> <?php echo htmlspecialchars($datosModulo['fase_3_autoridad_enlaces']['prioridad']); ?>
+                            Prioridad: <?php echo htmlspecialchars($datosModulo['fase_3_autoridad_enlaces']['prioridad']); ?>
                         </span>
                         <span class="phase-investment">
-                            <i class="fas fa-euro-sign"></i> <?php echo htmlspecialchars($datosModulo['fase_3_autoridad_enlaces']['inversion']); ?>
+                            Inversión: <?php echo htmlspecialchars($datosModulo['fase_3_autoridad_enlaces']['inversion']); ?>
                         </span>
                     </div>
                 </div>
@@ -793,7 +753,6 @@
                 <strong>Objetivo:</strong> <?php echo htmlspecialchars($datosModulo['fase_3_autoridad_enlaces']['objetivo']); ?>
             </div>
             <div class="phase-impact">
-                <i class="fas fa-chart-line"></i>
                 <strong>Impacto Esperado:</strong> <?php echo htmlspecialchars($datosModulo['fase_3_autoridad_enlaces']['impacto_esperado']); ?>
             </div>
 
@@ -1088,10 +1047,10 @@
                     <h2><?php echo htmlspecialchars($datosModulo['fase_4_consolidacion_escalado']['titulo']); ?></h2>
                     <div class="phase-meta">
                         <span class="phase-duration">
-                            <i class="fas fa-calendar-alt"></i> <?php echo htmlspecialchars($datosModulo['fase_4_consolidacion_escalado']['duracion']); ?>
+                            Duración: <?php echo htmlspecialchars($datosModulo['fase_4_consolidacion_escalado']['duracion']); ?>
                         </span>
                         <span class="phase-investment">
-                            <i class="fas fa-euro-sign"></i> <?php echo htmlspecialchars($datosModulo['fase_4_consolidacion_escalado']['inversion']); ?>
+                            Inversión: <?php echo htmlspecialchars($datosModulo['fase_4_consolidacion_escalado']['inversion']); ?>
                         </span>
                     </div>
                 </div>
@@ -1109,7 +1068,7 @@
 
         <!-- Equipo Core -->
         <div class="resources-section">
-            <h2><i class="fas fa-users"></i> Equipo Core Necesario</h2>
+            <h2>Equipo Core Necesario</h2>
             <div class="team-grid">
                 <?php foreach ($datosModulo['recursos_necesarios']['equipo_core'] as $miembro): ?>
                 <div class="team-card">
@@ -1122,7 +1081,7 @@
 
         <!-- Presupuesto -->
         <div class="budget-section">
-            <h2><i class="fas fa-euro-sign"></i> Presupuesto 12 Meses</h2>
+            <h2>Presupuesto 12 Meses</h2>
             <div class="budget-grid">
                 <?php
                 $fases_presupuesto = ['fase_1', 'fase_2', 'fase_3', 'fase_4'];
@@ -1143,7 +1102,7 @@
 
         <!-- Timeline Hitos -->
         <div class="timeline-section">
-            <h2><i class="fas fa-calendar-check"></i> Timeline de Hitos Clave</h2>
+            <h2>Timeline de Hitos Clave</h2>
             <div class="timeline">
                 <?php
                 $meses = ['mes_1', 'mes_2', 'mes_3', 'mes_6', 'mes_9', 'mes_12'];
@@ -1167,18 +1126,18 @@
 
         <!-- KPIs Primarios -->
         <div class="kpis-section">
-            <h2><i class="fas fa-chart-line"></i> KPIs de Seguimiento</h2>
+            <h2>KPIs de Seguimiento</h2>
             <div class="kpis-grid">
                 <?php foreach (array_slice($datosModulo['kpis_seguimiento']['metricas_primarias'], 0, 4) as $kpi): ?>
                 <div class="kpi-card">
                     <div class="kpi-metric"><?php echo htmlspecialchars($kpi['metrica']); ?></div>
                     <div class="kpi-values">
                         <span class="kpi-baseline"><?php echo htmlspecialchars($kpi['baseline']); ?></span>
-                        <i class="fas fa-arrow-right"></i>
+                        <span class="kpi-arrow">→</span>
                         <span class="kpi-target"><?php echo htmlspecialchars($kpi['objetivo_12m']); ?></span>
                     </div>
                     <div class="kpi-tool">
-                        <i class="fas fa-tools"></i> <?php echo htmlspecialchars($kpi['herramienta']); ?>
+                        Herramienta: <?php echo htmlspecialchars($kpi['herramienta']); ?>
                     </div>
                 </div>
                 <?php endforeach; ?>
@@ -1187,7 +1146,7 @@
 
         <!-- Criterios Éxito -->
         <div class="success-criteria">
-            <h2><i class="fas fa-trophy"></i> Criterios de Éxito</h2>
+            <h2>Criterios de Éxito</h2>
             <div class="criteria-columns">
                 <div class="criteria-column must">
                     <h3>Must-Have (Obligatorios)</h3>
@@ -1517,7 +1476,7 @@
 }
 
 .criteria-column.must ul li:before {
-    content: "";
+    content: "✓";
     position: absolute;
     left: 0;
     color: #88B04B;
@@ -1525,10 +1484,17 @@
 }
 
 .criteria-column.should ul li:before {
-    content: "";
+    content: "→";
     position: absolute;
     left: 0;
     color: #88B04B;
     font-weight: bold;
+}
+
+.kpi-arrow {
+    font-size: 18px;
+    color: #88B04B;
+    font-weight: bold;
+    margin: 0 8px;
 }
 </style>

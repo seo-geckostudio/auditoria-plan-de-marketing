@@ -30,7 +30,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
             </p>
             <div class="analogia-box">
                 <div class="analogia-header">
-                    <i class="fas fa-info-circle"></i>
                     <strong>Piensa en el Keyword Research como un mapa del tesoro:</strong>
                 </div>
                 <ul class="analogia-list">
@@ -48,13 +47,11 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
             </div>
             <div class="impacto-negocio-grid">
                 <div class="impacto-item">
-                    <i class="fas fa-bullseye"></i>
                     <h3>Tráfico Cualificado</h3>
                     <p>No cualquier visita vale. Las keywords correctas atraen usuarios que buscan <strong>villas de lujo</strong>,
                     no apartamentos baratos. Esto multiplica tu tasa de conversión por 5-10x.</p>
                 </div>
                 <div class="impacto-item">
-                    <i class="fas fa-dollar-sign"></i>
                     <h3>Rentabilidad Directa</h3>
                     <p>Una keyword como "villa lujo ibiza primera línea" (580 búsquedas/mes) puede generar 2-4 reservas/mes
                     = €15,000-40,000 en ingresos. Una keyword mal elegida genera 0€.</p>
@@ -78,85 +75,131 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
             Hemos preparado 3 archivos CSV con análisis detallado de tus keywords actuales y oportunidades.
             Descárgalos, ábrelos en Excel y empieza a trabajar tu estrategia:
         </p>
-        <div class="entregables-grid">
+        <!-- WIREFRAMES VISUALES DE ENTREGABLES -->
+        <div class="wireframes-entregables">
             <!-- CSV 1: Keywords Bajo Potencial -->
-            <div class="entregable-card priority-warning">
-                <div class="entregable-icon">
-                    <i class="fas fa-file-csv"></i>
-                </div>
-                <div class="entregable-content">
-                    <h3>Keywords con Bajo Potencial</h3>
-                    <p class="entregable-desc">
-                        <strong>12 keywords</strong> actuales que estás posicionando pero que no generan resultados.
-                        Incluye la keyword mejorada recomendada y ganancia estimada.
-                    </p>
-                    <div class="entregable-meta">
-                        <span class="meta-badge priority">Prioridad: Media</span>
-                        <span class="meta-badge impact">Ganancia: +400-550 sesiones/mes cambiando foco</span>
+            <div class="wireframe-container">
+                <div class="wireframe-header">
+                    <h3>CSV 1: Keywords con Bajo Potencial</h3>
+                    <div class="wireframe-meta">
+                        <span class="meta-tag">Prioridad: Media</span>
+                        <span class="meta-tag">Ganancia: +400-550 sesiones/mes</span>
                     </div>
-                    <p class="entregable-uso">
-                        <strong>Cómo usar:</strong> Revisa las keywords "Keyword_Actual" vs "Keyword_Mejor".
-                        Redirige esfuerzo de las actuales a las mejoradas para mejor ROI.
-                    </p>
-                    <a href="/entregables/keywords/keywords_bajo_potencial.csv" class="btn-download" download>
-                        <i class="fas fa-download"></i> Descargar CSV
-                    </a>
+                </div>
+                <div class="wireframe-visual">
+                    <div class="wireframe-block nice-to-have">
+                        <div class="block-label">CONTENIDO CSV (12 keywords)</div>
+                        <div class="block-content">
+                            <div class="element-tag">Columna: Keyword_Actual (ej: "casas ibiza")</div>
+                            <div class="element-tag">Columna: Keyword_Mejor (ej: "villas lujo ibiza primera linea")</div>
+                            <div class="element-tag">Columna: Volumen_Perdido (180-320 búsquedas/mes)</div>
+                            <div class="element-tag">Columna: Accion_Recomendada (redireccionar esfuerzo)</div>
+                            <div class="element-tag">Columna: Ganancia_Estimada (+400-550 sesiones/mes totales)</div>
+                        </div>
+                    </div>
+                    <div class="wireframe-block cta-block">
+                        <div class="block-label">ACCIÓN REQUERIDA</div>
+                        <div class="block-content">
+                            <div class="element-tag"><strong>Paso 1:</strong> Descargar CSV y abrir en Excel</div>
+                            <div class="element-tag"><strong>Paso 2:</strong> Comparar columna "Keyword_Actual" vs "Keyword_Mejor"</div>
+                            <div class="element-tag"><strong>Paso 3:</strong> Redirigir recursos de keywords actuales a mejoradas</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wireframe-footer">
+                    <div class="cta-list">
+                        <strong>Descarga:</strong>
+                        <a href="/entregables/keywords/keywords_bajo_potencial.csv" class="cta-tag" download>
+                            Descargar keywords_bajo_potencial.csv
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <!-- CSV 2: Keywords Oportunidad -->
-            <div class="entregable-card priority-critical">
-                <div class="entregable-icon">
-                    <i class="fas fa-file-csv"></i>
-                </div>
-                <div class="entregable-content">
-                    <h3>Keywords de Alta Oportunidad</h3>
-                    <p class="entregable-desc">
-                        <strong>15 keywords</strong> de alto volumen y valor donde NO estás posicionado aún.
-                        Cada una incluye: volumen, dificultad, CPC, acción recomendada y valor estimado.
-                    </p>
-                    <div class="entregable-meta">
-                        <span class="meta-badge priority">Prioridad: Muy Alta</span>
-                        <span class="meta-badge impact">Ganancia: +850-1,200 sesiones/mes + 15-25 reservas/mes</span>
+            <!-- CSV 2: Keywords Alta Oportunidad -->
+            <div class="wireframe-container">
+                <div class="wireframe-header">
+                    <h3>CSV 2: Keywords de Alta Oportunidad (CRÍTICO)</h3>
+                    <div class="wireframe-meta">
+                        <span class="meta-tag critical">Prioridad: Muy Alta</span>
+                        <span class="meta-tag critical">Ganancia: +€45k-75k/mes</span>
                     </div>
-                    <p class="entregable-uso">
-                        <strong>Cómo usar:</strong> Ordena por "Prioridad" y empieza por las "Muy Alta".
-                        Sigue la columna "Accion" para implementar. Potencial de €45,000-75,000/mes adicionales.
-                    </p>
-                    <a href="/entregables/keywords/keywords_oportunidad.csv" class="btn-download" download>
-                        <i class="fas fa-download"></i> Descargar CSV
-                    </a>
+                </div>
+                <div class="wireframe-visual">
+                    <div class="wireframe-block must-have">
+                        <div class="block-label">CONTENIDO CSV (15 keywords CRÍTICAS)</div>
+                        <div class="block-content">
+                            <div class="element-tag">Columna: Keyword (ej: "villa lujo san antonio 8 personas")</div>
+                            <div class="element-tag">Columna: Volumen (180-1,200 búsquedas/mes)</div>
+                            <div class="element-tag">Columna: Dificultad (15-45 - factible)</div>
+                            <div class="element-tag">Columna: CPC (€3.50-€8.20 - alto valor comercial)</div>
+                            <div class="element-tag">Columna: Accion (crear landing, optimizar existente, contenido blog)</div>
+                            <div class="element-tag">Columna: Prioridad (Muy Alta, Alta, Media)</div>
+                            <div class="element-tag">Columna: Valor_Estimado (reservas/mes esperadas)</div>
+                        </div>
+                    </div>
+                    <div class="wireframe-block cta-block">
+                        <div class="block-label">IMPLEMENTACIÓN PRIORITARIA</div>
+                        <div class="block-content">
+                            <div class="element-tag"><strong>Semana 1-2:</strong> Implementar 5 keywords "Muy Alta" prioridad</div>
+                            <div class="element-tag"><strong>Semana 3-4:</strong> Implementar 5 keywords "Alta" prioridad</div>
+                            <div class="element-tag"><strong>Mes 2:</strong> Implementar 5 keywords "Media" + monitoreo resultados</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wireframe-footer">
+                    <div class="cta-list">
+                        <strong>Descarga:</strong>
+                        <a href="/entregables/keywords/keywords_oportunidad.csv" class="cta-tag" download>
+                            Descargar keywords_oportunidad.csv
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <!-- CSV 3: Oportunidades Priorizadas (ya existe) -->
-            <div class="entregable-card priority-high">
-                <div class="entregable-icon">
-                    <i class="fas fa-file-csv"></i>
-                </div>
-                <div class="entregable-content">
-                    <h3>Matriz de Priorización Completa</h3>
-                    <p class="entregable-desc">
-                        Todas las oportunidades ordenadas por score de priorización.
-                        Incluye criterios de volumen, dificultad, relevancia y valor comercial.
-                    </p>
-                    <div class="entregable-meta">
-                        <span class="meta-badge priority">Prioridad: Alta</span>
-                        <span class="meta-badge impact">Herramienta: Planificación estratégica</span>
+            <!-- CSV 3: Matriz Priorización -->
+            <div class="wireframe-container">
+                <div class="wireframe-header">
+                    <h3>CSV 3: Matriz de Priorización Completa</h3>
+                    <div class="wireframe-meta">
+                        <span class="meta-tag">Prioridad: Alta</span>
+                        <span class="meta-tag">Herramienta: Planificación estratégica</span>
                     </div>
-                    <p class="entregable-uso">
-                        <strong>Cómo usar:</strong> Utiliza este archivo para tu roadmap trimestral.
-                        Las keywords con score >80 deben implementarse en los próximos 30 días.
-                    </p>
-                    <a href="/entregables/keywords/oportunidades_priorizadas.csv" class="btn-download" download>
-                        <i class="fas fa-download"></i> Descargar CSV
-                    </a>
+                </div>
+                <div class="wireframe-visual">
+                    <div class="wireframe-block must-have">
+                        <div class="block-label">CONTENIDO CSV (Todas las oportunidades ordenadas)</div>
+                        <div class="block-content">
+                            <div class="element-tag">Columna: Score_Priorizacion (0-100 - ordenado descendente)</div>
+                            <div class="element-tag">Columna: Criterio_Volumen (peso 30%)</div>
+                            <div class="element-tag">Columna: Criterio_Dificultad (peso 25%)</div>
+                            <div class="element-tag">Columna: Criterio_Relevancia (peso 25%)</div>
+                            <div class="element-tag">Columna: Criterio_Valor_Comercial (peso 20%)</div>
+                            <div class="element-tag">Regla: Score >80 = implementar próximos 30 días</div>
+                        </div>
+                    </div>
+                    <div class="wireframe-block nice-to-have">
+                        <div class="block-label">USO ESTRATÉGICO</div>
+                        <div class="block-content">
+                            <div class="element-tag">Roadmap Trimestral: Ordenar por score y planificar sprints mensuales</div>
+                            <div class="element-tag">Filtrar por Criterio_Dificultad <30 para quick wins primeros 2 meses</div>
+                            <div class="element-tag">Revisión mensual: Re-priorizar según resultados obtenidos</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wireframe-footer">
+                    <div class="cta-list">
+                        <strong>Descarga:</strong>
+                        <a href="/entregables/keywords/oportunidades_priorizadas.csv" class="cta-tag" download>
+                            Descargar oportunidades_priorizadas.csv
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="instrucciones-uso">
-            <h3><i class="fas fa-info-circle"></i> Instrucciones de Uso</h3>
+            <h3>Instrucciones de Uso</h3>
             <ol class="instrucciones-list">
                 <li>
                     <strong>Descarga los 3 CSVs</strong> y ábrelos en Excel o Google Sheets
@@ -233,7 +276,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
             <!-- COLUMNA FLECHA -->
             <div class="comparacion-flecha">
                 <div class="flecha-container">
-                    <i class="fas fa-arrow-right"></i>
+                    <span class="flecha-arrow">→</span>
                     <span class="flecha-text">OPTIMIZACIÓN</span>
                 </div>
             </div>
@@ -428,7 +471,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
         </div>
         <div class="nota-tiempos">
             <p>
-                <i class="fas fa-clock"></i>
                 <strong>Nota sobre tiempos:</strong> Las primeras mejoras en posicionamiento se ven en 30-45 días.
                 El impacto completo en reservas se materializa en 60-90 días una vez implementada la estrategia completa.
             </p>
@@ -442,13 +484,12 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
             <span class="section-badge badge-antes">ANTES - SITUACIÓN ACTUAL</span>
         </div>
         <h1 class="page-title">
-            <i class="fas fa-key"></i>
             <?php echo htmlspecialchars($datosModulo['titulo']); ?>
         </h1>
         <p class="page-subtitle"><?php echo htmlspecialchars($datosModulo['subtitulo']); ?></p>
         <div class="page-meta">
-            <span><i class="fas fa-calendar"></i> <?php echo htmlspecialchars($datosModulo['periodo']); ?></span>
-            <span><i class="fas fa-tools"></i> <?php echo implode(', ', $datosModulo['herramientas']); ?></span>
+            <span>Periodo: <?php echo htmlspecialchars($datosModulo['periodo']); ?></span>
+            <span>Herramientas: <?php echo implode(', ', $datosModulo['herramientas']); ?></span>
         </div>
     </div>
 
@@ -458,9 +499,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
         <div class="metrics-grid">
             <?php foreach ($metricas as $metrica): ?>
             <div class="metric-card">
-                <div class="metric-icon">
-                    <i class="fas <?php echo $metrica['icono']; ?>"></i>
-                </div>
                 <div class="metric-content">
                     <h3 class="metric-label"><?php echo htmlspecialchars($metrica['label']); ?></h3>
                     <p class="metric-value"><?php echo htmlspecialchars($metrica['valor']); ?></p>
@@ -469,7 +507,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                     <?php endif; ?>
                     <?php if (isset($metrica['variacion'])): ?>
                     <p class="metric-change <?php echo $metrica['tendencia']; ?>">
-                        <i class="fas fa-arrow-<?php echo $metrica['variacion'] >= 0 ? 'up' : 'down'; ?>"></i>
+                        <?php echo $metrica['variacion'] >= 0 ? '↑' : '↓'; ?>
                         <?php echo abs($metrica['variacion']); ?>% vs mes anterior
                     </p>
                     <?php endif; ?>
@@ -482,7 +520,9 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
         <?php if (!empty($evolucion)): ?>
         <div class="chart-section">
             <h2 class="chart-title"><?php echo htmlspecialchars($evolucion['titulo']); ?></h2>
-            <canvas id="evolucion-chart" height="280"></canvas>
+            <div style="position: relative; height: 280px; width: 100%;">
+                <canvas id="evolucion-chart"></canvas>
+            </div>
         </div>
 
         <script>
@@ -551,7 +591,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                 <tr class="<?php echo $index < 3 ? 'top-three' : ''; ?>">
                     <td class="rank-cell">
                         <?php if ($index === 0): ?>
-                        <i class="fas fa-crown text-warning"></i>
+                        <span class="crown-badge">👑</span>
                         <?php endif; ?>
                         <strong><?php echo $fila[0]; ?></strong>
                     </td>
@@ -570,8 +610,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         $icon = $change[0] === '+' ? 'up' : ($change[0] === '-' ? 'down' : 'minus');
                         ?>
                         <span class="<?php echo $class; ?>">
-                            <i class="fas fa-arrow-<?php echo $icon; ?>"></i>
-                            <?php echo htmlspecialchars($change); ?>
+                            <?php echo $change; ?>
                         </span>
                     </td>
                 </tr>
@@ -599,7 +638,9 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
         <?php if (!empty($distribucion)): ?>
         <div class="chart-section">
             <h3 class="chart-title"><?php echo htmlspecialchars($distribucion['titulo']); ?></h3>
-            <canvas id="distribucion-chart" height="250"></canvas>
+            <div style="position: relative; height: 250px; width: 100%;">
+                <canvas id="distribucion-chart"></canvas>
+            </div>
         </div>
 
         <script>
@@ -643,7 +684,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
         <?php if (!empty($categorias)): ?>
         <div class="categories-section">
             <h3 class="section-title">
-                <i class="fas fa-tags"></i>
                 <?php echo htmlspecialchars($categorias['titulo']); ?>
             </h3>
             <div class="categories-grid">
@@ -681,7 +721,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
         <?php if (!empty($competitividad)): ?>
         <div class="competitiveness-section">
             <h3 class="section-title">
-                <i class="fas fa-chart-pie"></i>
                 <?php echo htmlspecialchars($competitividad['titulo']); ?>
             </h3>
             <div class="competitiveness-grid">
@@ -719,13 +758,11 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
         <?php if (!empty($conclusiones)): ?>
         <div class="conclusions-section">
             <h3 class="section-title">
-                <i class="fas fa-check-circle"></i>
                 Conclusiones Principales
             </h3>
             <ul class="conclusions-list">
                 <?php foreach ($conclusiones as $conclusion): ?>
                 <li>
-                    <i class="fas fa-angle-right"></i>
                     <?php echo htmlspecialchars($conclusion); ?>
                 </li>
                 <?php endforeach; ?>
@@ -737,7 +774,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
         <?php if (!empty($recomendaciones)): ?>
         <div class="recommendations-section">
             <h3 class="section-title">
-                <i class="fas fa-info-circle"></i>
                 Recomendaciones Estratégicas
             </h3>
             <?php foreach ($recomendaciones as $index => $rec): ?>
@@ -780,10 +816,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     color: #666;
 }
 
-.page-meta i {
-    margin-right: 6px;
-}
-
 .keywords-table {
     width: 100%;
     border-collapse: collapse;
@@ -814,6 +846,11 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 .rank-cell {
     width: 40px;
     text-align: center;
+}
+
+.crown-badge {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
 }
 
 .position-badge {
@@ -943,16 +980,8 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 }
 
 .conclusions-list li {
-    padding: 12px 0 12px 30px;
-    position: relative;
+    padding: 12px 0;
     border-bottom: 1px solid #e9ecef;
-}
-
-.conclusions-list i {
-    position: absolute;
-    left: 0;
-    top: 14px;
-    color: #88B04B;
 }
 
 .recommendation-card {
@@ -1092,10 +1121,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     gap: 10px;
 }
 
-.keywords-educativo .analogia-icon {
-    font-size: 28px;
-}
-
 .keywords-educativo .analogia-list {
     list-style: none;
     padding: 0;
@@ -1156,12 +1181,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
-.keywords-educativo .impacto-icon {
-    font-size: 42px;
-    display: block;
-    margin-bottom: 15px;
-}
-
 .keywords-educativo .impacto-item h3 {
     margin: 0 0 12px 0;
     font-size: 20px;
@@ -1186,13 +1205,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 .keywords-educativo .entregables-header {
     text-align: center;
     margin-bottom: 20px;
-}
-
-.keywords-educativo .entregables-icon {
-    font-size: 48px;
-    display: block;
-    margin-bottom: 15px;
-    color: #88B04B;
 }
 
 .keywords-educativo .entregables-header h2 {
@@ -1516,7 +1528,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     text-align: center;
 }
 
-.keywords-educativo .flecha-container i {
+.keywords-educativo .flecha-container .flecha-arrow {
     font-size: 48px;
     color: #88B04B;
     display: block;
@@ -1733,11 +1745,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
     line-height: 1.6;
 }
 
-.keywords-educativo .nota-tiempos i {
-    color: #2196f3;
-    margin-right: 8px;
-}
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .keywords-educativo .tabla-kpis {
@@ -1750,6 +1757,190 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
     .keywords-educativo .mejora-porcentaje {
         font-size: 18px;
+    }
+}
+
+/* ============================================
+   WIREFRAMES VISUALES - SISTEMA DE DISEÑO
+   ============================================ */
+
+.wireframes-entregables {
+    margin: 30px 0;
+}
+
+.wireframe-container {
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.wireframe-header {
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
+    color: white;
+    padding: 20px 30px;
+}
+
+.wireframe-header h3 {
+    margin: 0 0 12px 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.wireframe-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.meta-tag {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.meta-tag.critical {
+    background: #dc3545;
+    animation: pulse 2s infinite;
+}
+
+.wireframe-visual {
+    padding: 30px;
+    background: #f8f9fa;
+}
+
+.wireframe-block {
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 2px solid #88B04B;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.wireframe-block:hover {
+    box-shadow: 0 4px 12px rgba(136, 176, 75, 0.25);
+    transform: translateX(3px);
+}
+
+.wireframe-block.must-have {
+    border-color: #88B04B;
+    background: linear-gradient(135deg, #f0f7e6 0%, #ffffff 100%);
+}
+
+.wireframe-block.nice-to-have {
+    border-color: #adb5bd;
+    border-style: dashed;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    opacity: 0.85;
+}
+
+.wireframe-block.cta-block {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffffff 100%);
+    border-color: #ffc107;
+    border-width: 3px;
+}
+
+.block-label {
+    background: #88B04B;
+    color: white;
+    padding: 10px 18px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.nice-to-have .block-label {
+    background: #6c757d;
+}
+
+.cta-block .block-label {
+    background: #ffc107;
+    color: #000;
+}
+
+.block-content {
+    padding: 18px;
+}
+
+.element-tag {
+    background: white;
+    border: 1px solid #dee2e6;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin: 6px 0;
+    font-size: 0.9rem;
+    color: #495057;
+    display: block;
+    border-left: 3px solid #88B04B;
+}
+
+.nice-to-have .element-tag {
+    border-left-color: #6c757d;
+}
+
+.cta-block .element-tag {
+    border-left-color: #ffc107;
+}
+
+.wireframe-footer {
+    background: #f8f9fa;
+    padding: 20px 30px;
+    border-top: 2px solid #dee2e6;
+}
+
+.cta-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.cta-list strong {
+    margin-right: 10px;
+    color: #000;
+}
+
+.cta-tag {
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.cta-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(136, 176, 75, 0.3);
+    color: white;
+}
+
+/* Responsive Wireframes */
+@media (max-width: 768px) {
+    .wireframe-visual {
+        padding: 20px;
+    }
+
+    .wireframe-header h3 {
+        font-size: 1.3rem;
+    }
+
+    .wireframe-meta {
+        flex-direction: column;
+    }
+
+    .cta-list {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 </style>

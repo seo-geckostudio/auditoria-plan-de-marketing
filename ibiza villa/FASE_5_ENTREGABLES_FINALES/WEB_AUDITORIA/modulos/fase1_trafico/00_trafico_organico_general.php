@@ -43,7 +43,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
                 </p>
                 <div class="analogia-box">
                     <div class="analogia-header">
-                        <i class="fas fa-info-circle"></i>
+                        
                         <strong>Piensa en el Tráfico Orgánico como la Puerta de Entrada a una Villa de Lujo:</strong>
                     </div>
                     <ul class="analogia-list">
@@ -60,14 +60,14 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
                     <h3>Impacto en el Negocio de Ibiza Villa:</h3>
                     <div class="impacto-grid">
                         <div class="impacto-item">
-                            <i class="fas fa-dollar-sign"></i>
+                            
                             <strong>ROI Altísimo vs Publicidad</strong>
                             <p>Tráfico orgánico tiene coste marginal casi cero (no pagas por clic).
                             114,500 sesiones orgánicas × €0.00/clic = €0 vs PPC similar = €120k-180k/año.
                             Conversiones orgánicas generaron €5.6M en 2024 sin coste directo de adquisición.</p>
                         </div>
                         <div class="impacto-item">
-                            <i class="fas fa-bullseye"></i>
+                            
                             <strong>Alta Intención de Compra</strong>
                             <p>Usuarios que buscan "villa lujo ibiza 10 personas agosto" tienen intención transaccional clara.
                             Tasa conversión orgánica (1.63%) es 2-3x mayor que otros canales (social 0.5%, display 0.3%).
@@ -141,7 +141,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
                             </div>
                         </div>
                         <a href="../entregables/trafico/trafico_organico_general.csv" download class="btn-download">
-                            <i class="fas fa-download"></i> Descargar trafico_organico_general.csv
+                            Descargar trafico_organico_general.csv
                         </a>
                     </div>
                 </div>
@@ -193,7 +193,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
                             </div>
                         </div>
                         <a href="../entregables/trafico/trafico_tendencias_analisis.csv" download class="btn-download">
-                            <i class="fas fa-download"></i> Descargar trafico_tendencias_analisis.csv
+                            Descargar trafico_tendencias_analisis.csv
                         </a>
                     </div>
                 </div>
@@ -201,7 +201,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
 
             <!-- Instrucciones de Uso -->
             <div class="instrucciones-uso">
-                <h3><i class="fas fa-book"></i> Cómo Usar los Archivos CSV</h3>
+                <h3>Cómo Usar los Archivos CSV</h3>
                 <ol class="instrucciones-list">
                     <li><strong>Descargar ambos CSV</strong> y abrirlos en Excel o Google Sheets para análisis completo</li>
                     <li><strong>CSV 1 (Mensual):</strong> Crear gráfico de línea temporal para visualizar estacionalidad. Identificar meses pico (Jul-Ago) y valles (Nov-Feb). Calcular promedio temporada alta vs baja</li>
@@ -299,7 +299,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
                 <!-- FLECHA TRANSFORMACIÓN -->
                 <div class="comparacion-flecha">
                     <div class="flecha-container">
-                        <i class="fas fa-arrow-right"></i>
+                        
                         <span class="flecha-text">OPTIMIZACIÓN<br>TRÁFICO<br>ORGÁNICO</span>
                     </div>
                 </div>
@@ -496,7 +496,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
             </div>
 
             <div class="kpis-nota">
-                <h4><i class="fas fa-info-circle"></i> Nota Importante sobre Tráfico Orgánico</h4>
+                <h4>Nota Importante sobre Tráfico Orgánico</h4>
                 <p>
                     <strong>Tráfico orgánico es activo acumulativo con ROI compuesto a largo plazo.</strong>
                     A diferencia de publicidad (pagas → recibes tráfico → dejas pagar → tráfico desaparece), SEO tiene efecto permanente:

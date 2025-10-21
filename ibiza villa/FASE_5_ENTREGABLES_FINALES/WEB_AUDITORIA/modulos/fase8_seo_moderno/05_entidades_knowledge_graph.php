@@ -1156,7 +1156,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
 
             <div class="analogia-box">
                 <div class="analogia-header">
-                    <i class="fas fa-info-circle"></i>
+                    
                     <strong>Piensa en ser una Entidad como tener una Tarjeta de Identidad Digital Verificada por Google:</strong>
                 </div>
                 <ul class="analogia-list">

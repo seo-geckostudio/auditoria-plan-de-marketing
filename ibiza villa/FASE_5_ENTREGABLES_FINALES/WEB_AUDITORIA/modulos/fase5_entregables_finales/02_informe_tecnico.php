@@ -2,11 +2,11 @@
 <div class="audit-page technical-report-intro-page">
     <div class="page-header">
         <div class="header-content">
-            <h1><i class="fas fa-cogs"></i> <?php echo htmlspecialchars($datosModulo['titulo']); ?></h1>
+            <h1><?php echo htmlspecialchars($datosModulo['titulo']); ?></h1>
             <div class="header-meta">
-                <span><i class="fas fa-user"></i> <?php echo htmlspecialchars($datosModulo['cliente']); ?></span>
-                <span><i class="fas fa-calendar"></i> <?php echo htmlspecialchars($datosModulo['fecha']); ?></span>
-                <span><i class="fas fa-clock"></i> <?php echo htmlspecialchars($datosModulo['periodo_analisis']); ?></span>
+                <span><strong>Cliente:</strong> <?php echo htmlspecialchars($datosModulo['cliente']); ?></span>
+                <span><strong>Fecha:</strong> <?php echo htmlspecialchars($datosModulo['fecha']); ?></span>
+                <span><strong>Periodo:</strong> <?php echo htmlspecialchars($datosModulo['periodo_analisis']); ?></span>
             </div>
             <div class="auditors">
                 <strong>Equipo Auditor:</strong>
@@ -18,7 +18,7 @@
     <div class="page-body">
         <!-- Introducción -->
         <section class="introduction-section">
-            <h2><i class="fas fa-info-circle"></i> Introducción</h2>
+            <h2>Introducción</h2>
             <div class="intro-grid">
                 <div class="intro-card">
                     <h3>Objetivo</h3>
@@ -37,7 +37,7 @@
 
         <!-- Resumen Técnico -->
         <section class="technical-summary-section">
-            <h2><i class="fas fa-chart-pie"></i> <?php echo htmlspecialchars($datosModulo['resumen_tecnico']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['resumen_tecnico']['titulo']); ?></h2>
 
             <div class="overall-status">
                 <div class="status-badge">
@@ -81,7 +81,7 @@
                 <h3>Métricas Clave del Sitio</h3>
 
                 <div class="metrics-category">
-                    <h4><i class="fas fa-users"></i> Tráfico y Engagement</h4>
+                    <h4>Tráfico y Engagement</h4>
                     <div class="metrics-row">
                         <?php foreach ($datosModulo['resumen_tecnico']['metricas_clave']['trafico'] as $metrica => $valor): ?>
                         <div class="metric-item">
@@ -93,7 +93,7 @@
                 </div>
 
                 <div class="metrics-category">
-                    <h4><i class="fas fa-key"></i> Keywords y Posicionamiento</h4>
+                    <h4>Keywords y Posicionamiento</h4>
                     <div class="metrics-row">
                         <?php foreach ($datosModulo['resumen_tecnico']['metricas_clave']['keywords'] as $metrica => $valor): ?>
                         <div class="metric-item">
@@ -105,7 +105,7 @@
                 </div>
 
                 <div class="metrics-category">
-                    <h4><i class="fas fa-cogs"></i> Aspectos Técnicos</h4>
+                    <h4>Aspectos Técnicos</h4>
                     <div class="metrics-row">
                         <?php foreach ($datosModulo['resumen_tecnico']['metricas_clave']['tecnicos'] as $metrica => $valor): ?>
                         <div class="metric-item">
@@ -150,6 +150,10 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+
+.header-meta strong {
+    font-weight: 700;
 }
 
 .auditors {
@@ -401,13 +405,13 @@
 <!-- Página 2: SEO Técnico y Contenido -->
 <div class="audit-page technical-seo-page">
     <div class="page-header">
-        <h1><i class="fas fa-server"></i> Análisis SEO Técnico y Contenido</h1>
+        <h1>Análisis SEO Técnico y Contenido</h1>
     </div>
 
     <div class="page-body">
         <!-- SEO Técnico -->
         <section class="seo-tecnico-section">
-            <h2><i class="fas fa-code"></i> <?php echo htmlspecialchars($datosModulo['analisis_seo_tecnico']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['analisis_seo_tecnico']['titulo']); ?></h2>
 
             <!-- Crawlability -->
             <div class="technical-area">
@@ -492,7 +496,7 @@
                             </ul>
                         </div>
                         <div class="problem-solution">
-                            <strong><i class="fas fa-check-circle"></i> Solución:</strong>
+                            <strong>Solución:</strong>
                             <?php echo htmlspecialchars($problema['solucion']); ?>
                         </div>
                     </div>
@@ -511,7 +515,6 @@
 
                 <?php if (empty($errores['criticos'])): ?>
                 <div class="no-critical-errors">
-                    <i class="fas fa-check-circle"></i>
                     <strong>Sin Errores Críticos</strong>
                     <span>No se detectaron errores críticos que requieran atención inmediata</span>
                 </div>
@@ -519,7 +522,7 @@
 
                 <?php if (!empty($errores['importantes'])): ?>
                 <div class="errors-section importantes">
-                    <h4><i class="fas fa-exclamation-triangle"></i> Errores Importantes</h4>
+                    <h4>Errores Importantes</h4>
                     <?php foreach ($errores['importantes'] as $error): ?>
                     <div class="error-item">
                         <div class="error-info">
@@ -535,7 +538,7 @@
 
                 <?php if (!empty($errores['menores'])): ?>
                 <div class="errors-section menores">
-                    <h4><i class="fas fa-info-circle"></i> Errores Menores</h4>
+                    <h4>Errores Menores</h4>
                     <?php foreach ($errores['menores'] as $error): ?>
                     <div class="error-item minor">
                         <div class="error-info">
@@ -553,7 +556,7 @@
 
         <!-- Análisis de Contenido -->
         <section class="content-analysis-section">
-            <h2><i class="fas fa-file-alt"></i> <?php echo htmlspecialchars($datosModulo['analisis_contenido']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['analisis_contenido']['titulo']); ?></h2>
 
             <!-- Calidad del Contenido -->
             <div class="content-quality">
@@ -610,7 +613,6 @@
                     </div>
 
                     <div class="element-recommendation">
-                        <i class="fas fa-lightbulb"></i>
                         <strong>Recomendación:</strong>
                         <?php echo htmlspecialchars($elemento['recomendacion']); ?>
                     </div>
@@ -842,12 +844,6 @@
     border-left: 4px solid #88B04B;
 }
 
-.problem-solution i {
-    color: #88B04B;
-    font-size: 1.2rem;
-    margin-top: 0.25rem;
-}
-
 .no-critical-errors {
     background: #d4edda;
     padding: 2rem;
@@ -857,17 +853,15 @@
     margin-bottom: 1.5rem;
 }
 
-.no-critical-errors i {
-    font-size: 3rem;
-    color: #88B04B;
-    margin-bottom: 1rem;
-}
-
 .no-critical-errors strong {
     display: block;
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
     color: #155724;
+}
+
+.no-critical-errors span {
+    display: block;
 }
 
 .errors-section {
@@ -1054,11 +1048,6 @@
     display: flex;
     align-items: flex-start;
     gap: 0.75rem;
-}
-
-.element-recommendation i {
-    color: #88B04B;
-    font-size: 1.2rem;
-    margin-top: 0.25rem;
+    border-left: 4px solid #88B04B;
 }
 </style>

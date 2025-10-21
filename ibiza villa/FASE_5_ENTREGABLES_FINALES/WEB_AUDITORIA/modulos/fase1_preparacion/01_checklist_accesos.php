@@ -13,7 +13,7 @@ $proximos = $datosModulo['proximos_pasos'] ?? [];
 <div class="audit-page checklist-page">
     <div class="page-header">
         <h1 class="page-title">
-            <i class="fas fa-key"></i>
+            
             <?php echo htmlspecialchars($datosModulo['titulo'] ?? 'Checklist de Accesos'); ?>
         </h1>
         <p class="page-subtitle"><?php echo htmlspecialchars($datosModulo['subtitulo'] ?? ''); ?></p>
@@ -28,7 +28,7 @@ $proximos = $datosModulo['proximos_pasos'] ?? [];
         <?php foreach ($categorias as $categoria): ?>
         <div class="checklist-category">
             <h2 class="category-title">
-                <i class="fas fa-folder"></i>
+                
                 <?php echo htmlspecialchars($categoria['nombre']); ?>
             </h2>
 
@@ -48,11 +48,11 @@ $proximos = $datosModulo['proximos_pasos'] ?? [];
                         <td class="status-icon">
                             <?php
                             $icons = [
-                                'verificado' => '<i class="fas fa-check-circle text-success"></i>',
-                                'pendiente' => '<i class="fas fa-clock text-warning"></i>',
-                                'no_disponible' => '<i class="fas fa-times-circle text-danger"></i>',
-                                'no_requerido' => '<i class="fas fa-minus-circle text-muted"></i>',
-                                'disponible' => '<i class="fas fa-check text-info"></i>'
+                                'verificado' => '',
+                                'pendiente' => '',
+                                'no_disponible' => '',
+                                'no_requerido' => '',
+                                'disponible' => ''
                             ];
                             echo $icons[$item['estado']] ?? '';
                             ?>

@@ -1082,7 +1082,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
             </p>
             <div class="analogia-box">
                 <div class="analogia-header">
-                    <i class="fas fa-info-circle"></i>
+                    
                     <strong>Piensa en el Monitoreo de Algoritmo como un Sistema de Alerta Temprana de Terremotos:</strong>
                 </div>
                 <ul class="analogia-list">

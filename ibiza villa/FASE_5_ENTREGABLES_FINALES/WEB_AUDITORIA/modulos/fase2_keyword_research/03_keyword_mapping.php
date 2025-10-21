@@ -3,16 +3,14 @@
     <div class="page-header">
         <div class="header-content">
             <div class="header-text">
-                <h1><i class="fas fa-sitemap"></i> <?php echo htmlspecialchars($datosModulo['titulo']); ?></h1>
+                <h1><?php echo htmlspecialchars($datosModulo['titulo']); ?></h1>
                 <p class="subtitle"><?php echo htmlspecialchars($datosModulo['subtitulo']); ?></p>
             </div>
             <div class="header-meta">
                 <div class="meta-item">
-                    <i class="fas fa-calendar-alt"></i>
                     <span><?php echo htmlspecialchars($datosModulo['periodo']); ?></span>
                 </div>
                 <div class="meta-item">
-                    <i class="fas fa-tools"></i>
                     <span><?php echo implode(', ', $datosModulo['herramientas']); ?></span>
                 </div>
             </div>
@@ -26,7 +24,6 @@
                 <?php foreach ($datosModulo['metricas_mapping'] as $metrica): ?>
                 <div class="metric-card">
                     <div class="metric-icon">
-                        <i class="fas <?php echo $metrica['icono']; ?>"></i>
                     </div>
                     <div class="metric-content">
                         <h3><?php echo htmlspecialchars($metrica['label']); ?></h3>
@@ -40,7 +37,7 @@
 
         <!-- Estructura del sitio -->
         <section class="site-structure-section">
-            <h2><i class="fas fa-layer-group"></i> <?php echo htmlspecialchars($datosModulo['estructura_sitio']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['estructura_sitio']['titulo']); ?></h2>
 
             <div class="structure-grid">
                 <?php foreach ($datosModulo['estructura_sitio']['categorias'] as $categoria): ?>
@@ -54,15 +51,15 @@
 
                     <div class="structure-stats">
                         <div class="stat-row">
-                            <span class="stat-label"><i class="fas fa-link"></i> URLs:</span>
+                            <span class="stat-label">URLs:</span>
                             <span class="stat-value"><?php echo $categoria['total_urls']; ?></span>
                         </div>
                         <div class="stat-row">
-                            <span class="stat-label"><i class="fas fa-key"></i> Keywords:</span>
+                            <span class="stat-label">Keywords:</span>
                             <span class="stat-value"><?php echo $categoria['keywords_asignadas']; ?></span>
                         </div>
                         <div class="stat-row">
-                            <span class="stat-label"><i class="fas fa-bullseye"></i> Intención:</span>
+                            <span class="stat-label">Intención:</span>
                             <span class="stat-value"><?php echo htmlspecialchars($categoria['intención']); ?></span>
                         </div>
                     </div>
@@ -93,7 +90,7 @@
 
         <!-- Gráfico de distribución -->
         <section class="distribution-chart">
-            <h2><i class="fas fa-chart-pie"></i> Distribución de Keywords por Tipo de Página</h2>
+            <h2>Distribución de Keywords por Tipo de Página</h2>
             <div class="chart-container">
                 <canvas id="keywordDistributionChart"></canvas>
             </div>
@@ -149,15 +146,16 @@
 
 <style>
 .mapping-overview-page {
-    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
-    color: white;
+    background: white;
+    color: #333;
 }
 
 .mapping-overview-page .page-header {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
+    color: white;
     padding: 2rem;
     margin: -2rem -2rem 2rem -2rem;
+    border-radius: 12px 12px 0 0;
 }
 
 .header-content {
@@ -446,13 +444,13 @@
 <!-- Página 2: Mapping Detallado y Clusters Temáticos -->
 <div class="audit-page mapping-detail-page">
     <div class="page-header">
-        <h1><i class="fas fa-map-marked-alt"></i> Mapping Detallado y Clusters Temáticos</h1>
+        <h1>Mapping Detallado y Clusters Temáticos</h1>
     </div>
 
     <div class="page-body">
         <!-- Mapping detallado top URLs -->
         <section class="detailed-mapping-section">
-            <h2><i class="fas fa-list-ul"></i> <?php echo htmlspecialchars($datosModulo['mapping_detallado']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['mapping_detallado']['titulo']); ?></h2>
 
             <?php foreach ($datosModulo['mapping_detallado']['urls'] as $url): ?>
             <div class="url-mapping-card">
@@ -469,7 +467,6 @@
                         <div class="metric-item">
                             <span class="metric-label">Posición</span>
                             <span class="position-badge current">#<?php echo $url['posicion_actual']; ?></span>
-                            <i class="fas fa-arrow-right"></i>
                             <span class="position-badge target">#<?php echo $url['objetivo_posicion']; ?></span>
                         </div>
                         <?php else: ?>
@@ -481,7 +478,6 @@
                         <div class="metric-item">
                             <span class="metric-label">Tráfico</span>
                             <span class="traffic-value"><?php echo number_format($url['trafico_actual']); ?></span>
-                            <i class="fas fa-arrow-right"></i>
                             <span class="traffic-value potential"><?php echo number_format($url['trafico_potencial']); ?></span>
                         </div>
                     </div>
@@ -489,12 +485,12 @@
 
                 <div class="url-keywords">
                     <div class="keyword-group">
-                        <strong><i class="fas fa-star"></i> Keyword Principal:</strong>
+                        <strong>Keyword Principal:</strong>
                         <span class="main-keyword"><?php echo htmlspecialchars($url['keyword_principal']); ?></span>
                     </div>
 
                     <div class="keyword-group">
-                        <strong><i class="fas fa-tags"></i> Keywords Secundarias:</strong>
+                        <strong>Keywords Secundarias:</strong>
                         <div class="keywords-list">
                             <?php foreach ($url['keywords_secundarias'] as $kw): ?>
                             <span class="kw-tag secondary"><?php echo htmlspecialchars($kw); ?></span>
@@ -503,7 +499,7 @@
                     </div>
 
                     <div class="keyword-group">
-                        <strong><i class="fas fa-list"></i> Long Tail:</strong>
+                        <strong>Long Tail:</strong>
                         <div class="keywords-list">
                             <?php foreach ($url['keywords_long_tail'] as $kw): ?>
                             <span class="kw-tag longtail"><?php echo htmlspecialchars($kw); ?></span>
@@ -513,7 +509,7 @@
                 </div>
 
                 <div class="url-actions">
-                    <strong><i class="fas fa-tasks"></i> Acciones Recomendadas:</strong>
+                    <strong>Acciones Recomendadas:</strong>
                     <ul>
                         <?php foreach ($url['acciones'] as $accion): ?>
                         <li><?php echo htmlspecialchars($accion); ?></li>
@@ -526,7 +522,7 @@
 
         <!-- Clusters temáticos -->
         <section class="clusters-section">
-            <h2><i class="fas fa-object-group"></i> <?php echo htmlspecialchars($datosModulo['clusters_tematicos']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['clusters_tematicos']['titulo']); ?></h2>
             <p class="section-subtitle"><?php echo htmlspecialchars($datosModulo['clusters_tematicos']['descripcion']); ?></p>
 
             <div class="clusters-grid">
@@ -543,7 +539,7 @@
                         <strong>Pillar Page:</strong>
                         <code><?php echo htmlspecialchars($cluster['pillar_page']); ?></code>
                         <div class="pillar-stats">
-                            <span><i class="fas fa-key"></i> <?php echo $cluster['total_keywords']; ?> keywords</span>
+                            <span><?php echo $cluster['total_keywords']; ?> keywords</span>
                             <span class="status-badge"><?php echo htmlspecialchars($cluster['estado']); ?></span>
                         </div>
                     </div>
@@ -593,9 +589,6 @@
 }
 
 .url-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     margin-bottom: 1.5rem;
     padding-bottom: 1.5rem;
     border-bottom: 2px solid #e0e0e0;
@@ -603,13 +596,16 @@
 
 .url-info h3 {
     margin: 0 0 0.75rem 0;
-    color: #88B04B;
-    font-family: 'Courier New', monospace;
+    color: #333;
+    font-size: 1.1rem;
+    word-break: break-all;
 }
 
 .url-meta {
     display: flex;
     gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
 
 .type-badge {
@@ -622,45 +618,52 @@
 
 .status-badge {
     padding: 0.25rem 0.75rem;
-    background: #d4edda;
-    color: #155724;
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
+    color: white;
     border-radius: 0.5rem;
     font-size: 0.85rem;
     font-weight: bold;
 }
 
 .url-metrics {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
-    align-items: flex-end;
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
 
 .metric-item {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 .metric-label {
     font-size: 0.85rem;
-    opacity: 0.7;
+    font-weight: bold;
+    color: #666;
+    min-width: 70px;
 }
 
 .position-badge {
     display: inline-block;
-    padding: 0.5rem 1rem;
+    padding: 0.35rem 0.75rem;
     border-radius: 0.5rem;
     font-weight: bold;
+    font-size: 0.9rem;
 }
 
 .position-badge.current {
-    background: #88B04B;
+    background: #e9ecef;
     color: #333;
+    border: 2px solid #88B04B;
 }
 
 .position-badge.target {
-    background: #88B04B;
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
 }
 
@@ -887,18 +890,17 @@
 <!-- Página 3: Keywords Huérfanas y Plan de Implementación -->
 <div class="audit-page implementation-page">
     <div class="page-header">
-        <h1><i class="fas fa-road"></i> Keywords Huérfanas y Plan de Implementación</h1>
+        <h1>Keywords Huérfanas y Plan de Implementación</h1>
     </div>
 
     <div class="page-body">
         <!-- Keywords huérfanas -->
         <section class="orphan-keywords-section">
-            <h2><i class="fas fa-exclamation-triangle"></i> <?php echo htmlspecialchars($datosModulo['keywords_huerfanas']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['keywords_huerfanas']['titulo']); ?></h2>
             <p class="section-subtitle"><?php echo htmlspecialchars($datosModulo['keywords_huerfanas']['descripcion']); ?></p>
 
             <div class="orphan-summary">
                 <div class="summary-card">
-                    <i class="fas fa-key"></i>
                     <div class="summary-content">
                         <h3>Total Keywords Huérfanas</h3>
                         <p class="summary-value"><?php echo $datosModulo['keywords_huerfanas']['total']; ?></p>
@@ -916,10 +918,10 @@
                             <h4><?php echo htmlspecialchars($kw['keyword']); ?></h4>
                             <div class="orphan-metrics">
                                 <span class="metric-badge volume">
-                                    <i class="fas fa-chart-line"></i> <?php echo number_format($kw['volumen']); ?>
+                                    <?php echo number_format($kw['volumen']); ?>
                                 </span>
                                 <span class="metric-badge difficulty">
-                                    <i class="fas fa-gauge"></i> Dif: <?php echo $kw['dificultad']; ?>
+                                    Dif: <?php echo $kw['dificultad']; ?>
                                 </span>
                             </div>
                         </div>
@@ -942,7 +944,7 @@
 
         <!-- Estrategia de internal linking -->
         <section class="linking-strategy-section">
-            <h2><i class="fas fa-link"></i> <?php echo htmlspecialchars($datosModulo['estrategia_internal_linking']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['estrategia_internal_linking']['titulo']); ?></h2>
             <p class="section-subtitle"><?php echo htmlspecialchars($datosModulo['estrategia_internal_linking']['descripcion']); ?></p>
 
             <div class="linking-pillars">
@@ -982,7 +984,7 @@
 
         <!-- Calendario de implementación -->
         <section class="calendar-section">
-            <h2><i class="fas fa-calendar-check"></i> <?php echo htmlspecialchars($datosModulo['calendario_implementacion']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['calendario_implementacion']['titulo']); ?></h2>
 
             <div class="calendar-grid">
                 <?php foreach (['q4_2025', 'q1_2026'] as $quarter):
@@ -997,11 +999,9 @@
                     </div>
                     <div class="quarter-stats">
                         <div class="stat">
-                            <i class="fas fa-plus-circle"></i>
                             <span><?php echo $data['urls_nuevas']; ?> URLs nuevas</span>
                         </div>
                         <div class="stat">
-                            <i class="fas fa-key"></i>
                             <span><?php echo $data['keywords_objetivo']; ?> keywords objetivo</span>
                         </div>
                     </div>
@@ -1021,7 +1021,7 @@
         <!-- Conclusiones y recomendaciones -->
         <section class="final-section">
             <div class="conclusions-column">
-                <h2><i class="fas fa-check-double"></i> Conclusiones</h2>
+                <h2>Conclusiones</h2>
                 <ul class="conclusions-list">
                     <?php foreach ($datosModulo['conclusiones'] as $conclusion): ?>
                     <li><?php echo htmlspecialchars($conclusion); ?></li>
@@ -1030,7 +1030,7 @@
             </div>
 
             <div class="recommendations-column">
-                <h2><i class="fas fa-lightbulb"></i> Recomendaciones</h2>
+                <h2>Recomendaciones</h2>
                 <?php foreach ($datosModulo['recomendaciones'] as $rec): ?>
                 <div class="recommendation-card priority-<?php echo strtolower($rec['prioridad']); ?>">
                     <div class="rec-header">
@@ -1039,7 +1039,7 @@
                     </div>
                     <p><?php echo htmlspecialchars($rec['descripcion']); ?></p>
                     <span class="rec-timeline">
-                        <i class="fas fa-calendar-alt"></i> <?php echo htmlspecialchars($rec['plazo']); ?>
+                        <?php echo htmlspecialchars($rec['plazo']); ?>
                     </span>
                 </div>
                 <?php endforeach; ?>
@@ -1050,14 +1050,16 @@
 
 <style>
 .implementation-page {
-    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    background: white;
+    color: #333;
 }
 
 .implementation-page .page-header {
-    background: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     padding: 1.5rem;
     margin: -2rem -2rem 2rem -2rem;
+    border-radius: 12px 12px 0 0;
 }
 
 .implementation-page section {

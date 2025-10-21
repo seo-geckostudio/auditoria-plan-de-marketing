@@ -34,7 +34,6 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
                 </p>
                 <div class="analogia-box">
                     <div class="analogia-header">
-                        <i class="fas fa-info-circle"></i>
                         <strong>Piensa en Queries GSC como el Escaparate de tu Villa en Google:</strong>
                     </div>
                     <ul class="analogia-list">
@@ -80,7 +79,7 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
                             </div>
                         </div>
                         <a href="../entregables/gsc/queries_gsc_top.csv" download class="btn-download">
-                            <i class="fas fa-download"></i> Descargar queries_gsc_top.csv
+                            Descargar queries_gsc_top.csv
                         </a>
                     </div>
                 </div>
@@ -110,7 +109,7 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
                             </div>
                         </div>
                         <a href="../entregables/gsc/queries_oportunidades_quick_wins.csv" download class="btn-download">
-                            <i class="fas fa-download"></i> Descargar queries_oportunidades_quick_wins.csv
+                            Descargar queries_oportunidades_quick_wins.csv
                         </a>
                     </div>
                 </div>
@@ -150,7 +149,6 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
 
                 <div class="comparacion-flecha">
                     <div class="flecha-container">
-                        <i class="fas fa-arrow-right"></i>
                         <span class="flecha-text">QUICK<br>WINS</span>
                     </div>
                 </div>
@@ -232,7 +230,7 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
             </div>
 
             <div class="kpis-nota">
-                <h4><i class="fas fa-info-circle"></i> Quick Wins Strategy</h4>
+                <h4>Quick Wins Strategy</h4>
                 <p><strong>Quick Wins son keywords posición 11-35 con volumen medio-alto que podemos subir a top 10-20 con esfuerzo bajo-medio en 30-90 días.</strong></p>
                 <p>Criterios selección: (1) Posición 11-35, (2) Impresiones >1,000/mes, (3) Intent transaccional/informacional alto valor, (4) Competencia media (no dominada por OTAs gigantes).</p>
                 <p>Acciones típicas: Content refresh, internal linking, 1-2 backlinks DR 60-70, featured snippet optimization, Schema markup.</p>

@@ -69,7 +69,6 @@ $moduloData = [
 
         <div class="analogia-box">
             <div class="analogia-header">
-                <i class="fas fa-info-circle"></i>
                 <strong>Piensa en Priorización SEO como el Plan de Renovación de una Villa antes de Alquilarla:</strong>
             </div>
             <ul class="analogia-list">

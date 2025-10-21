@@ -1107,7 +1107,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
 
             <div class="analogia-box">
                 <div class="analogia-header">
-                    <i class="fas fa-info-circle"></i>
+                    
                     <strong>Piensa en Featured Snippets como la Portada de una Revista de Viajes de Lujo:</strong>
                 </div>
                 <ul class="analogia-list">

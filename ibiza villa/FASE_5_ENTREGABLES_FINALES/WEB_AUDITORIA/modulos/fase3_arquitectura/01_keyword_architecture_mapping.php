@@ -404,7 +404,7 @@ tados</div>
     gap: 20px;
     flex-wrap: wrap;
     font-size: 14px;
-    color: #888;
+    color: white;
 }
 
 .keyword-mapping-page section {

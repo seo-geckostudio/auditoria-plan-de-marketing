@@ -22,14 +22,13 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 <div class="audit-page local-seo-page">
     <div class="page-header">
         <h1 class="page-title">
-            <i class="fas fa-map-marker-alt"></i>
             <?php echo htmlspecialchars($datosModulo['titulo'] ?? 'Local SEO'); ?>
         </h1>
         <p class="page-subtitle"><?php echo htmlspecialchars($datosModulo['subtitulo'] ?? 'Optimización para Búsquedas Locales y Google Business Profile'); ?></p>
         <div class="page-meta">
-            <span><i class="fas fa-calendar"></i> <?php echo htmlspecialchars($datosModulo['fecha_analisis'] ?? date('d/m/Y')); ?></span>
-            <span><i class="fas fa-tools"></i> Google Business Profile, Google Maps, LSI Graph</span>
-            <span><i class="fas fa-book"></i> Página 138</span>
+            <span>Fecha: <?php echo htmlspecialchars($datosModulo['fecha_analisis'] ?? date('d/m/Y')); ?></span>
+            <span>Herramientas: Google Business Profile, Google Maps, LSI Graph</span>
+            <span>Página 138</span>
         </div>
     </div>
 
@@ -57,7 +56,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
                 <div class="analogia-box">
                     <div class="analogia-header">
-                        <i class="fas fa-info-circle"></i>
                         <strong>Piensa en Local SEO como un restaurante en la guía turística de Ibiza:</strong>
                     </div>
                     <ul class="analogia-list">
@@ -100,7 +98,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
             <div class="seccion-badge seccion-badge-green">
                 DESPUÉS - HERRAMIENTAS DE OPTIMIZACIÓN
             </div>
-            <h2><i class="fas fa-file-download"></i> Archivos Descargables - Local SEO Ibiza Villa</h2>
+            <h2>Archivos Descargables - Local SEO Ibiza Villa</h2>
             <p class="entregables-intro">
                 Hemos preparado <strong>2 archivos CSV</strong> con todas las optimizaciones de Local SEO listas para implementar.
                 Estos archivos contienen checklists completas y directorios prioritarios específicos para Ibiza Villa:
@@ -110,9 +108,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                 <!-- CSV 1: GBP Optimization Checklist -->
                 <div class="csv-card">
                     <div class="csv-header">
-                        <div class="csv-icon">
-                            <i class="fas fa-tasks"></i>
-                        </div>
                         <div class="csv-info">
                             <h3>Google Business Profile - Checklist Optimización</h3>
                             <p class="csv-descripcion">
@@ -123,9 +118,9 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         </div>
                     </div>
                     <div class="csv-metadata">
-                        <span class="csv-meta-item"><i class="fas fa-list"></i> 25 items de optimización</span>
-                        <span class="csv-meta-item"><i class="fas fa-exclamation-triangle"></i> 8 items críticos</span>
-                        <span class="csv-meta-item"><i class="fas fa-chart-line"></i> Impacto: +35-50% visibilidad local</span>
+                        <span class="csv-meta-item">25 items de optimización</span>
+                        <span class="csv-meta-item">8 items críticos</span>
+                        <span class="csv-meta-item">Impacto: +35-50% visibilidad local</span>
                     </div>
                     <div class="csv-usage">
                         <h4> Cómo Usar Este Archivo:</h4>
@@ -141,7 +136,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         </p>
                     </div>
                     <a href="../entregables/local_seo/gbp_optimization_checklist.csv" class="btn-download" download>
-                        <i class="fas fa-download"></i>
                         Descargar GBP Checklist.csv
                     </a>
                 </div>
@@ -149,9 +143,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                 <!-- CSV 2: Citations y Directorios -->
                 <div class="csv-card">
                     <div class="csv-header">
-                        <div class="csv-icon">
-                            <i class="fas fa-map-marked-alt"></i>
-                        </div>
                         <div class="csv-info">
                             <h3>Citations y Directorios Locales Prioritarios</h3>
                             <p class="csv-descripcion">
@@ -162,9 +153,9 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         </div>
                     </div>
                     <div class="csv-metadata">
-                        <span class="csv-meta-item"><i class="fas fa-building"></i> 23 directorios analizados</span>
-                        <span class="csv-meta-item"><i class="fas fa-star"></i> DA 48-100 (alta autoridad)</span>
-                        <span class="csv-meta-item"><i class="fas fa-users"></i> Tráfico estimado: 2,800-5,200 visitas/mes</span>
+                        <span class="csv-meta-item">23 directorios analizados</span>
+                        <span class="csv-meta-item">DA 48-100 (alta autoridad)</span>
+                        <span class="csv-meta-item">Tráfico estimado: 2,800-5,200 visitas/mes</span>
                     </div>
                     <div class="csv-usage">
                         <h4> Cómo Usar Este Archivo:</h4>
@@ -182,7 +173,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         </p>
                     </div>
                     <a href="../entregables/local_seo/citations_directorios.csv" class="btn-download" download>
-                        <i class="fas fa-download"></i>
                         Descargar Citations Directorios.csv
                     </a>
                 </div>
@@ -191,7 +181,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
 
         <!-- SECCIÓN COMPARATIVA: ANTES vs DESPUÉS -->
         <section class="comparacion-antes-despues">
-            <h2><i class="fas fa-exchange-alt"></i> Transformación Local SEO: Situación Actual vs Optimizada</h2>
+            <h2>Transformación Local SEO: Situación Actual vs Optimizada</h2>
             <p class="comparacion-intro">
                 Esta comparación muestra el estado actual de Local SEO de Ibiza Villa (<span class="texto-rojo">ANTES</span>)
                 vs el estado tras implementar las optimizaciones (<span class="texto-verde">DESPUÉS</span>):
@@ -201,7 +191,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                 <!-- Columna ANTES -->
                 <div class="comparacion-columna columna-antes">
                     <div class="comparacion-header header-antes">
-                        <i class="fas fa-times-circle"></i>
                         ANTES - Situación Actual
                     </div>
                     <div class="comparacion-contenido">
@@ -256,7 +245,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                 <!-- Flecha de Transformación -->
                 <div class="comparacion-flecha">
                     <div class="flecha-contenedor">
-                        <i class="fas fa-arrow-right"></i>
+                        <span class="flecha-simbolo">→</span>
                         <span class="flecha-texto">OPTIMIZACIÓN<br>LOCAL SEO</span>
                     </div>
                 </div>
@@ -264,7 +253,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                 <!-- Columna DESPUÉS -->
                 <div class="comparacion-columna columna-despues">
                     <div class="comparacion-header header-despues">
-                        <i class="fas fa-check-circle"></i>
                         DESPUÉS - Optimización Completa
                     </div>
                     <div class="comparacion-contenido">
@@ -318,7 +306,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
             </div>
 
             <div class="timeline-implementacion">
-                <h3><i class="fas fa-calendar-alt"></i> Timeline de Resultados:</h3>
+                <h3>Timeline de Resultados:</h3>
                 <div class="timeline-grid">
                     <div class="timeline-item">
                         <div class="timeline-periodo">Semanas 1-2</div>
@@ -349,7 +337,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
             <div class="seccion-badge seccion-badge-green">
                 DESPUÉS - RESULTADOS ESPERADOS
             </div>
-            <h2><i class="fas fa-chart-bar"></i> KPIs y Resultados Cuantificados - Local SEO</h2>
+            <h2>KPIs y Resultados Cuantificados - Local SEO</h2>
             <p class="kpis-intro">
                 Estos son los <strong>KPIs medibles</strong> que cambiarán tras implementar las optimizaciones de Local SEO.
                 Todas las métricas son cuantificadas y alcanzables en <strong>3-6 meses</strong>:
@@ -369,7 +357,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                     <tbody>
                         <tr class="fila-destacada">
                             <td class="metrica-nombre">
-                                <i class="fas fa-map-marker-alt"></i>
                                 <strong>Visibilidad Local Pack</strong>
                                 <small>Apariciones en Top 3 Google Maps</small>
                             </td>
@@ -391,7 +378,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         </tr>
                         <tr>
                             <td class="metrica-nombre">
-                                <i class="fas fa-google"></i>
                                 <strong>Google Business Profile Score</strong>
                                 <small>Completitud y optimización perfil</small>
                             </td>
@@ -413,7 +399,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         </tr>
                         <tr>
                             <td class="metrica-nombre">
-                                <i class="fas fa-star"></i>
                                 <strong>Reviews & Rating</strong>
                                 <small>Número y calidad de opiniones</small>
                             </td>
@@ -435,7 +420,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         </tr>
                         <tr>
                             <td class="metrica-nombre">
-                                <i class="fas fa-address-card"></i>
                                 <strong>NAP Consistency</strong>
                                 <small>Consistencia Nombre/Dirección/Teléfono</small>
                             </td>
@@ -457,7 +441,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         </tr>
                         <tr>
                             <td class="metrica-nombre">
-                                <i class="fas fa-link"></i>
                                 <strong>Local Citations</strong>
                                 <small>Directorios y plataformas activas</small>
                             </td>
@@ -479,7 +462,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         </tr>
                         <tr class="fila-destacada">
                             <td class="metrica-nombre">
-                                <i class="fas fa-euro-sign"></i>
                                 <strong>Valor Tráfico Local</strong>
                                 <small>Estimación valor económico mensual</small>
                             </td>
@@ -504,7 +486,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
             </div>
 
             <div class="nota-tiempos">
-                <h4><i class="fas fa-clock"></i> Nota sobre Tiempos de Implementación:</h4>
+                <h4>Nota sobre Tiempos de Implementación:</h4>
                 <ul>
                     <li><strong>Semanas 1-2:</strong> Optimización GBP + corrección NAP (impacto inmediato +15-20%)</li>
                     <li><strong>Mes 1-2:</strong> Creación citations + primeras 20-30 reviews (visibilidad +35-45%)</li>
@@ -512,7 +494,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                     <li><strong>Mes 5-6:</strong> Dominancia local establecida + ROI máximo (visibilidad 80-85%)</li>
                 </ul>
                 <p class="nota-importante">
-                    <i class="fas fa-info-circle"></i>
                     <strong>Importante:</strong> Local SEO es acumulativo - cuantas más reviews y citations, mayor la ventaja competitiva.
                     Tras 6 meses, la posición es muy difícil de desbancar por competidores.
                 </p>
@@ -528,7 +509,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
         </div>
         <?php if (!empty($resumen)): ?>
         <section class="executive-summary">
-            <h2><i class="fas fa-chart-line"></i> Resumen Ejecutivo</h2>
+            <h2>Resumen Ejecutivo</h2>
             <div class="summary-grid">
                 <div class="summary-item">
                     <div class="summary-label">Score Local SEO</div>
@@ -567,7 +548,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
         <!-- Google Business Profile Status -->
         <?php if (!empty($gbp_status)): ?>
         <section class="gbp-section">
-            <h2><i class="fas fa-google"></i> Google Business Profile - Status</h2>
+            <h2>Google Business Profile - Status</h2>
 
             <div class="gbp-completion">
                 <h3>Completitud del Perfil: <?php echo htmlspecialchars($gbp_status['completion_percentage'] ?? '0'); ?>%</h3>
@@ -587,7 +568,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         foreach ($info_basica as $item):
                         ?>
                         <li class="<?php echo $item['status'] ? 'completed' : 'pending'; ?>">
-                            <i class="fas fa-<?php echo $item['status'] ? 'check-circle' : 'times-circle'; ?>"></i>
+                            <span class="status-icon"><?php echo $item['status'] ? '✓' : '✗'; ?></span>
                             <?php echo htmlspecialchars($item['item']); ?>
                             <?php if (!empty($item['nota'])): ?>
                             <span class="item-note"><?php echo htmlspecialchars($item['nota']); ?></span>
@@ -605,7 +586,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         foreach ($multimedia as $item):
                         ?>
                         <li class="<?php echo $item['status'] ? 'completed' : 'pending'; ?>">
-                            <i class="fas fa-<?php echo $item['status'] ? 'check-circle' : 'times-circle'; ?>"></i>
+                            <span class="status-icon"><?php echo $item['status'] ? '✓' : '✗'; ?></span>
                             <?php echo htmlspecialchars($item['item']); ?>
                             <?php if (!empty($item['cantidad'])): ?>
                             <span class="item-quantity">(<?php echo htmlspecialchars($item['cantidad']); ?>)</span>
@@ -623,7 +604,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         foreach ($products as $item):
                         ?>
                         <li class="<?php echo $item['status'] ? 'completed' : 'pending'; ?>">
-                            <i class="fas fa-<?php echo $item['status'] ? 'check-circle' : 'times-circle'; ?>"></i>
+                            <span class="status-icon"><?php echo $item['status'] ? '✓' : '✗'; ?></span>
                             <?php echo htmlspecialchars($item['item']); ?>
                         </li>
                         <?php endforeach; ?>
@@ -638,7 +619,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         foreach ($posts as $item):
                         ?>
                         <li class="<?php echo $item['status'] ? 'completed' : 'pending'; ?>">
-                            <i class="fas fa-<?php echo $item['status'] ? 'check-circle' : 'times-circle'; ?>"></i>
+                            <span class="status-icon"><?php echo $item['status'] ? '✓' : '✗'; ?></span>
                             <?php echo htmlspecialchars($item['item']); ?>
                         </li>
                         <?php endforeach; ?>
@@ -653,7 +634,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         foreach ($reviews_mgmt as $item):
                         ?>
                         <li class="<?php echo $item['status'] ? 'completed' : 'pending'; ?>">
-                            <i class="fas fa-<?php echo $item['status'] ? 'check-circle' : 'times-circle'; ?>"></i>
+                            <span class="status-icon"><?php echo $item['status'] ? '✓' : '✗'; ?></span>
                             <?php echo htmlspecialchars($item['item']); ?>
                         </li>
                         <?php endforeach; ?>
@@ -668,7 +649,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         foreach ($qna as $item):
                         ?>
                         <li class="<?php echo $item['status'] ? 'completed' : 'pending'; ?>">
-                            <i class="fas fa-<?php echo $item['status'] ? 'check-circle' : 'times-circle'; ?>"></i>
+                            <span class="status-icon"><?php echo $item['status'] ? '✓' : '✗'; ?></span>
                             <?php echo htmlspecialchars($item['item']); ?>
                         </li>
                         <?php endforeach; ?>
@@ -681,7 +662,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
         <!-- Local Schema Implementation -->
         <?php if (!empty($local_schema)): ?>
         <section class="local-schema-section">
-            <h2><i class="fas fa-code"></i> Local Schema Implementation</h2>
+            <h2>Local Schema Implementation</h2>
 
             <div class="schema-status">
                 <div class="status-item">
@@ -715,7 +696,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                 <h3>Schema Recomendado:</h3>
                 <pre><code><?php echo htmlspecialchars($local_schema['schema_recomendado']); ?></code></pre>
                 <button class="btn-copy" onclick="copyToClipboard(this)">
-                    <i class="fas fa-copy"></i> Copiar código
+                    Copiar código
                 </button>
             </div>
             <?php endif; ?>
@@ -725,7 +706,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
         <!-- NAP Consistency -->
         <?php if (!empty($nap_consistency)): ?>
         <section class="nap-section">
-            <h2><i class="fas fa-address-card"></i> NAP Consistency (Name, Address, Phone)</h2>
+            <h2>NAP Consistency (Name, Address, Phone)</h2>
 
             <div class="nap-score">
                 <h3>Consistencia NAP: <?php echo htmlspecialchars($nap_consistency['consistency_score'] ?? '0'); ?>%</h3>
@@ -775,7 +756,6 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                     <p><strong>Teléfono:</strong> <?php echo htmlspecialchars($nap_consistency['nap_canonico']['telefono']); ?></p>
                 </div>
                 <p class="info-note">
-                    <i class="fas fa-info-circle"></i>
                     Usar esta versión exacta en todas las plataformas para maximizar consistencia
                 </p>
             </div>
@@ -786,7 +766,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
         <!-- Citations Analysis -->
         <?php if (!empty($citations)): ?>
         <section class="citations-section">
-            <h2><i class="fas fa-link"></i> Citations y Directorios</h2>
+            <h2>Citations y Directorios</h2>
 
             <div class="citations-summary">
                 <div class="citation-stat">
@@ -852,7 +832,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
         <!-- Reviews Analysis -->
         <?php if (!empty($reviews)): ?>
         <section class="reviews-section">
-            <h2><i class="fas fa-star"></i> Análisis de Reviews</h2>
+            <h2>Análisis de Reviews</h2>
 
             <div class="reviews-summary">
                 <div class="review-stat">
@@ -930,7 +910,7 @@ Gracias por tu feedback. - [Tu Nombre], [Título]"</pre>
         <!-- Local Pack Visibility -->
         <?php if (!empty($local_pack)): ?>
         <section class="local-pack-section">
-            <h2><i class="fas fa-map"></i> Visibilidad en Local Pack</h2>
+            <h2>Visibilidad en Local Pack</h2>
 
             <div class="local-pack-score">
                 <h3>Apariciones en Local Pack: <?php echo htmlspecialchars($local_pack['apariciones_porcentaje'] ?? '0'); ?>%</h3>
@@ -986,7 +966,7 @@ Gracias por tu feedback. - [Tu Nombre], [Título]"</pre>
         <!-- Competencia Local -->
         <?php if (!empty($competencia_local)): ?>
         <section class="competencia-local-section">
-            <h2><i class="fas fa-users"></i> Benchmarking vs Competencia Local</h2>
+            <h2>Benchmarking vs Competencia Local</h2>
 
             <?php if (!empty($competencia_local['comparativa'])): ?>
             <table class="audit-table competitive-table">
@@ -1036,7 +1016,7 @@ Gracias por tu feedback. - [Tu Nombre], [Título]"</pre>
         <!-- Recomendaciones -->
         <?php if (!empty($recomendaciones)): ?>
         <section class="recommendations-section">
-            <h2><i class="fas fa-info-circle"></i> Recomendaciones Prioritarias</h2>
+            <h2>Recomendaciones Prioritarias</h2>
 
             <div class="recommendations-grid">
                 <?php foreach ($recomendaciones as $rec): ?>
@@ -1048,11 +1028,9 @@ Gracias por tu feedback. - [Tu Nombre], [Título]"</pre>
                     <p class="rec-description"><?php echo nl2br(htmlspecialchars($rec['descripcion'])); ?></p>
                     <div class="rec-meta">
                         <span class="rec-effort">
-                            <i class="fas fa-clock"></i>
-                            <?php echo htmlspecialchars($rec['esfuerzo']); ?>
+                            Esfuerzo: <?php echo htmlspecialchars($rec['esfuerzo']); ?>
                         </span>
                         <span class="rec-impact">
-                            <i class="fas fa-bolt"></i>
                             Impacto: <?php echo htmlspecialchars($rec['impacto']); ?>
                         </span>
                     </div>
@@ -1075,9 +1053,9 @@ Gracias por tu feedback. - [Tu Nombre], [Título]"</pre>
 function copyToClipboard(button) {
     const code = button.previousElementSibling.textContent;
     navigator.clipboard.writeText(code).then(() => {
-        button.innerHTML = '<i class="fas fa-check"></i> ¡Copiado!';
+        button.innerHTML = '✓ ¡Copiado!';
         setTimeout(() => {
-            button.innerHTML = '<i class="fas fa-copy"></i> Copiar código';
+            button.innerHTML = 'Copiar código';
         }, 2000);
     });
 }
@@ -1299,6 +1277,10 @@ function copyToClipboard(button) {
     padding: 20px;
     border-radius: 8px;
     border-left: 4px solid;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
 }
 
 .local-seo-page .recommendation-card.priority-a {
@@ -1314,6 +1296,51 @@ function copyToClipboard(button) {
 .local-seo-page .recommendation-card.priority-c {
     background: #e3f2fd;
     border-left-color: #2196f3;
+}
+
+.local-seo-page .recommendation-card .rec-header {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.local-seo-page .recommendation-card .rec-priority {
+    background: rgba(0,0,0,0.1);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.local-seo-page .recommendation-card h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    max-width: 80px;
+    word-break: break-word;
+}
+
+.local-seo-page .recommendation-card .rec-description {
+    flex: 1;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.local-seo-page .recommendation-card .rec-meta {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 12px;
+    color: #6c757d;
+    min-width: 150px;
 }
 
 @media print {
@@ -1745,6 +1772,12 @@ function copyToClipboard(button) {
     font-weight: bold;
 }
 
+/* Asegurar texto blanco en footers de comparación */
+.localseo-educativo .comparacion-footer .stat-label,
+.localseo-educativo .comparacion-footer .stat-value {
+    color: white;
+}
+
 .localseo-educativo .comparacion-flecha {
     display: flex;
     align-items: center;
@@ -2080,6 +2113,150 @@ function copyToClipboard(button) {
 
     .localseo-educativo .timeline-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Citations y Reviews - Maquetación mejorada */
+.citations-summary,
+.reviews-summary {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.citation-stat,
+.review-stat {
+    background: white;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+}
+
+.citation-stat .stat-number,
+.review-stat .stat-number {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #88B04B;
+    margin-bottom: 5px;
+}
+
+.citation-stat .stat-label,
+.review-stat .stat-label {
+    display: block;
+    font-size: 12px;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.citations-list,
+.reviews-distribution,
+.reviews-keywords,
+.reviews-templates {
+    margin-bottom: 25px;
+}
+
+.reviews-distribution .stars-chart {
+    background: white;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.star-row {
+    display: grid;
+    grid-template-columns: 60px 1fr 150px;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.star-label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.star-bar {
+    height: 20px;
+    background: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.star-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #88B04B, #6d8f3c);
+    transition: width 0.5s ease;
+}
+
+.star-count {
+    font-size: 13px;
+    color: #6c757d;
+    text-align: right;
+}
+
+.keywords-cloud {
+    background: white;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.keyword-tag {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 13px;
+    color: #495057;
+}
+
+.template-box {
+    background: white;
+    border: 2px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.template-box.positive {
+    border-left: 4px solid #88B04B;
+}
+
+.template-box.negative {
+    border-left: 4px solid #dc3545;
+}
+
+.template-box h4 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+}
+
+.template-box pre {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 13px;
+    line-height: 1.6;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+@media (max-width: 768px) {
+    .citations-summary,
+    .reviews-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .star-row {
+        grid-template-columns: 50px 1fr 100px;
+        gap: 10px;
     }
 }
 

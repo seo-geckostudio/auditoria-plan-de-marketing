@@ -8,11 +8,9 @@
             </div>
             <div class="header-meta">
                 <div class="meta-item">
-                    <i class="fas fa-calendar-alt"></i>
                     <span><?php echo htmlspecialchars($datosModulo['periodo']); ?></span>
                 </div>
                 <div class="meta-item">
-                    <i class="fas fa-tools"></i>
                     <span><?php echo implode(', ', $datosModulo['herramientas']); ?></span>
                 </div>
             </div>
@@ -22,7 +20,7 @@
     <div class="page-body">
         <!-- Tabla de competidores -->
         <section class="competitors-table-section">
-            <h2><i class="fas fa-building"></i> Competidores Analizados</h2>
+            <h2>Competidores Analizados</h2>
 
             <div class="competitors-grid">
                 <?php foreach ($datosModulo['competidores_analizados'] as $index => $competidor): ?>
@@ -62,7 +60,7 @@
 
         <!-- Gráfico de comparación -->
         <section class="comparison-chart-section">
-            <h2><i class="fas fa-chart-bar"></i> Comparativa de Métricas Clave</h2>
+            <h2>Comparativa de Métricas Clave</h2>
             <div class="chart-container">
                 <canvas id="competitorComparisonChart"></canvas>
             </div>
@@ -71,7 +69,6 @@
 
     <div class="page-footer">
         <div class="footer-note">
-            <i class="fas fa-info-circle"></i>
             <span>Datos actualizados al <?php echo date('d/m/Y'); ?> | Fuentes: <?php echo implode(', ', $datosModulo['herramientas']); ?></span>
         </div>
     </div>
@@ -360,45 +357,112 @@
 <!-- Página 2: Keyword Gap Analysis -->
 <div class="audit-page keyword-gap-page">
     <div class="page-header">
-        <h1><i class="fas fa-search-minus"></i> <?php echo htmlspecialchars($datosModulo['keyword_gap_analysis']['titulo']); ?></h1>
+        <h1><?php echo htmlspecialchars($datosModulo['keyword_gap_analysis']['titulo']); ?></h1>
         <p class="subtitle"><?php echo htmlspecialchars($datosModulo['keyword_gap_analysis']['subtitulo']); ?></p>
     </div>
 
     <div class="page-body">
-        <!-- Resumen de gap -->
-        <section class="gap-summary">
-            <?php $resumen = $datosModulo['keyword_gap_analysis']['resumen']; ?>
-            <div class="gap-cards">
-                <div class="gap-card total">
-                    <i class="fas fa-exclamation-triangle"></i>
-                    <h3>Total Keywords Gap</h3>
-                    <p class="gap-number"><?php echo number_format($resumen['total_gap_keywords']); ?></p>
-                    <span class="gap-label">Keywords donde competencia nos supera</span>
+        <!-- WIREFRAME: Resumen de Gap de Keywords -->
+        <section class="wireframes-visuales">
+            <div class="wireframe-container">
+                <div class="wireframe-header priority-high">
+                    <h3>Análisis de Keyword Gap: Oportunidades vs Competencia</h3>
+                    <div class="wireframe-meta">
+                        <span class="meta-tag priority-critical">Análisis Crítico</span>
+                        <?php $resumen = $datosModulo['keyword_gap_analysis']['resumen']; ?>
+                        <span class="meta-tag">Total Gap: <?php echo number_format($resumen['total_gap_keywords']); ?> keywords</span>
+                        <span class="meta-tag">Oportunidades Rápidas: <?php echo number_format($resumen['oportunidades_rapidas']); ?></span>
+                    </div>
                 </div>
-                <div class="gap-card quick">
-                    <i class="fas fa-bolt"></i>
-                    <h3>Oportunidades Rápidas</h3>
-                    <p class="gap-number"><?php echo number_format($resumen['oportunidades_rapidas']); ?></p>
-                    <span class="gap-label">Dificultad baja, alto impacto</span>
+
+                <div class="wireframe-visual">
+                    <!-- Grid de Oportunidades -->
+                    <div class="grid-4-gap">
+                        <!-- Total Gap (CTA Block) -->
+                        <div class="wireframe-block cta-block">
+                            <div class="block-label">⚠️ TOTAL KEYWORD GAP</div>
+                            <div class="block-content text-center">
+                                <div class="gap-number-large"><?php echo number_format($resumen['total_gap_keywords']); ?></div>
+                                <div class="element-tag" style="margin-top: 10px;">
+                                    Keywords donde la competencia nos supera significativamente
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Oportunidades Rápidas (Must-have) -->
+                        <div class="wireframe-block must-have">
+                            <div class="block-label">⚡ OPORTUNIDADES RÁPIDAS</div>
+                            <div class="block-content text-center">
+                                <div class="gap-number-medium" style="color: #88B04B;"><?php echo number_format($resumen['oportunidades_rapidas']); ?></div>
+                                <div class="element-tag" style="margin-top: 10px;">
+                                    <strong>Dificultad:</strong> Baja | <strong>Impacto:</strong> Alto<br>
+                                    <small>Implementar en los próximos 1-2 meses</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Oportunidades Medias (Must-have) -->
+                        <div class="wireframe-block must-have">
+                            <div class="block-label">⚖️ OPORTUNIDADES MEDIAS</div>
+                            <div class="block-content text-center">
+                                <div class="gap-number-medium" style="color: #88B04B;"><?php echo number_format($resumen['oportunidades_medias']); ?></div>
+                                <div class="element-tag" style="margin-top: 10px;">
+                                    <strong>Dificultad:</strong> Media | <strong>Esfuerzo:</strong> Moderado<br>
+                                    <small>Planificar para 3-6 meses</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Oportunidades Difíciles (Nice-to-have) -->
+                        <div class="wireframe-block nice-to-have">
+                            <div class="block-label">🏔️ OPORTUNIDADES DIFÍCILES</div>
+                            <div class="block-content text-center">
+                                <div class="gap-number-medium" style="color: #6c757d;"><?php echo number_format($resumen['oportunidades_dificiles']); ?></div>
+                                <div class="element-tag" style="margin-top: 10px;">
+                                    <strong>Dificultad:</strong> Alta | <strong>Competitividad:</strong> Muy alta<br>
+                                    <small>Objetivo a largo plazo (6-12 meses)</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interpretación de Resultados -->
+                    <div class="wireframe-block must-have" style="margin-top: 20px;">
+                        <div class="block-label">💡 INTERPRETACIÓN DE RESULTADOS</div>
+                        <div class="block-content">
+                            <div class="element-tag">
+                                <strong>Keyword Gap:</strong> La diferencia entre keywords en las que rankean tus competidores principales pero tú no (o estás muy atrás)
+                            </div>
+                            <div class="element-tag">
+                                <strong>Oportunidades Rápidas (Quick Wins):</strong> Keywords con volumen decente, baja dificultad y donde ya tienes cierta autoridad. Puedes capturarlas con optimizaciones on-page y contenido dirigido.
+                            </div>
+                            <div class="element-tag">
+                                <strong>Oportunidades Medias:</strong> Requieren inversión en contenido de calidad, enlaces internos y algunas mejoras técnicas. ROI positivo en 3-6 meses.
+                            </div>
+                            <div class="element-tag">
+                                <strong>Oportunidades Difíciles:</strong> Alta competencia, requiere estrategia de contenido exhaustiva, link building y tiempo. Objetivo a largo plazo pero con potencial de alto tráfico.
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="gap-card medium">
-                    <i class="fas fa-balance-scale"></i>
-                    <h3>Oportunidades Medias</h3>
-                    <p class="gap-number"><?php echo number_format($resumen['oportunidades_medias']); ?></p>
-                    <span class="gap-label">Requiere esfuerzo moderado</span>
-                </div>
-                <div class="gap-card difficult">
-                    <i class="fas fa-mountain"></i>
-                    <h3>Oportunidades Difíciles</h3>
-                    <p class="gap-number"><?php echo number_format($resumen['oportunidades_dificiles']); ?></p>
-                    <span class="gap-label">Alta competitividad</span>
+
+                <div class="wireframe-footer">
+                    <div class="cta-list">
+                        <strong>Exporta los Datos:</strong>
+                        <a href="#" class="cta-tag" onclick="alert('Funcionalidad de descarga CSV próximamente')">
+                            Descargar Keyword Gap Completo (CSV)
+                        </a>
+                        <a href="#" class="cta-tag" onclick="alert('Funcionalidad de descarga Excel próximamente')">
+                            Descargar Priorización (Excel)
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Top gap keywords -->
         <section class="gap-keywords-section">
-            <h2><i class="fas fa-list"></i> Top Keywords con Potencial de Captura</h2>
+            <h2>Top Keywords con Potencial de Captura</h2>
 
             <div class="gap-table-container">
                 <table class="gap-table">
@@ -437,10 +501,25 @@
                                 <?php echo number_format($keyword['volumen']); ?>
                             </td>
                             <td class="difficulty-cell">
-                                <div class="difficulty-bar">
-                                    <div class="difficulty-fill" style="width: <?php echo $keyword['dificultad']; ?>%"></div>
-                                    <span class="difficulty-text"><?php echo $keyword['dificultad']; ?></span>
-                                </div>
+                                <?php
+                                $dificultad = $keyword['dificultad'];
+                                $diffClass = '';
+                                $diffLabel = '';
+
+                                if ($dificultad <= 30) {
+                                    $diffClass = 'diff-easy';
+                                    $diffLabel = 'Fácil';
+                                } elseif ($dificultad <= 60) {
+                                    $diffClass = 'diff-medium';
+                                    $diffLabel = 'Media';
+                                } else {
+                                    $diffClass = 'diff-hard';
+                                    $diffLabel = 'Difícil';
+                                }
+                                ?>
+                                <span class="difficulty-badge <?php echo $diffClass; ?>">
+                                    <?php echo $diffLabel; ?> (<?php echo $dificultad; ?>)
+                                </span>
                             </td>
                             <td class="opportunity-cell">
                                 <span class="opp-badge opp-<?php echo strtolower($keyword['oportunidad']); ?>">
@@ -456,7 +535,7 @@
 
         <!-- Keywords compartidas -->
         <section class="shared-keywords-section">
-            <h2><i class="fas fa-users"></i> <?php echo htmlspecialchars($datosModulo['keywords_compartidas']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['keywords_compartidas']['titulo']); ?></h2>
             <p class="section-subtitle"><?php echo htmlspecialchars($datosModulo['keywords_compartidas']['subtitulo']); ?> (<?php echo $datosModulo['keywords_compartidas']['total']; ?> total)</p>
 
             <div class="shared-keywords-list">
@@ -465,9 +544,8 @@
                     <div class="shared-keyword-header">
                         <h4><?php echo htmlspecialchars($keyword['keyword']); ?></h4>
                         <div class="keyword-stats">
-                            <span class="volume"><i class="fas fa-chart-line"></i> <?php echo number_format($keyword['volumen']); ?></span>
+                            <span class="volume"><?php echo number_format($keyword['volumen']); ?></span>
                             <span class="distance <?php echo $keyword['distancia_al_lider'] < 0 ? 'positive' : 'negative'; ?>">
-                                <i class="fas fa-<?php echo $keyword['distancia_al_lider'] < 0 ? 'arrow-up' : 'arrow-down'; ?>"></i>
                                 <?php echo abs($keyword['distancia_al_lider']); ?> posiciones <?php echo $keyword['distancia_al_lider'] < 0 ? 'mejor' : 'peor'; ?> que líder
                             </span>
                         </div>
@@ -559,12 +637,12 @@
 
 .gap-table {
     width: 100%;
-    min-width: 900px;
+    min-width: 1100px;
     border-collapse: collapse;
     background: white;
     border-radius: 0.5rem;
     overflow: hidden;
-    table-layout: fixed;
+    table-layout: auto;
 }
 
 .gap-table thead {
@@ -590,7 +668,7 @@
 .gap-table th:nth-child(2),
 .gap-table td:nth-child(2) { width: 12%; } /* Nuestra Pos */
 .gap-table th:nth-child(3),
-.gap-table td:nth-child(3) { width: 25%; } /* Competencia */
+.gap-table td:nth-child(3) { width: 300px; } /* Competencia */
 .gap-table th:nth-child(4),
 .gap-table td:nth-child(4) { width: 12%; } /* Volumen */
 .gap-table th:nth-child(5),
@@ -647,21 +725,23 @@
 
 .difficulty-bar {
     position: relative;
-    background: #e9ecef;
-    border-radius: 0.25rem;
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
     height: 20px;
     width: 100%;
     max-width: 100px;
     display: inline-block;
+    overflow: hidden;
 }
 
 .difficulty-fill {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
-    background: linear-gradient(90deg, #88B04B 0%, #88B04B 50%, #dc3545 100%);
-    border-radius: 0.25rem;
+    height: 20px;
+    background: linear-gradient(90deg, #88B04B 0%, #f59e0b 50%, #dc3545 100%);
+    border-radius: 3px;
     transition: width 0.3s;
 }
 
@@ -674,6 +754,33 @@
     font-weight: bold;
     z-index: 1;
     color: #333;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
+}
+
+/* Difficulty Badges - Nueva representación */
+.difficulty-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.difficulty-badge.diff-easy {
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
+    color: white;
+}
+
+.difficulty-badge.diff-medium {
+    background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%);
+    color: #000;
+}
+
+.difficulty-badge.diff-hard {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+    color: white;
 }
 
 .difficulty-cell {
@@ -767,10 +874,11 @@
 }
 
 .position-item.our-site {
-    background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
     color: white;
     font-weight: bold;
-    border: 2px solid #ffd700;
+    border: 2px solid #88B04B;
+    box-shadow: 0 2px 8px rgba(136, 176, 75, 0.3);
 }
 
 .site-position {
@@ -784,28 +892,28 @@
 <!-- Página 3: Estrategia y Conclusiones -->
 <div class="audit-page strategy-page">
     <div class="page-header">
-        <h1><i class="fas fa-chess"></i> Estrategia de Diferenciación y Conclusiones</h1>
+        <h1>Estrategia de Diferenciación y Conclusiones</h1>
     </div>
 
     <div class="page-body">
         <!-- Ventajas competitivas -->
         <section class="competitive-advantages">
-            <h2><i class="fas fa-trophy"></i> <?php echo htmlspecialchars($datosModulo['ventajas_competitivas']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['ventajas_competitivas']['titulo']); ?></h2>
 
             <div class="advantages-grid">
                 <div class="advantages-column strengths">
-                    <h3><i class="fas fa-check-circle"></i> Nuestras Fortalezas</h3>
+                    <h3>Nuestras Fortalezas</h3>
                     <?php foreach ($datosModulo['ventajas_competitivas']['nuestras_fortalezas'] as $fortaleza): ?>
                     <div class="advantage-item">
                         <h4><?php echo htmlspecialchars($fortaleza['area']); ?></h4>
                         <p><?php echo htmlspecialchars($fortaleza['descripcion']); ?></p>
-                        <span class="example"><i class="fas fa-quote-left"></i> <?php echo htmlspecialchars($fortaleza['ejemplo']); ?></span>
+                        <span class="example"><?php echo htmlspecialchars($fortaleza['ejemplo']); ?></span>
                     </div>
                     <?php endforeach; ?>
                 </div>
 
                 <div class="advantages-column weaknesses">
-                    <h3><i class="fas fa-exclamation-triangle"></i> Debilidades Detectadas</h3>
+                    <h3>Debilidades Detectadas</h3>
                     <?php foreach ($datosModulo['ventajas_competitivas']['debilidades_detectadas'] as $debilidad): ?>
                     <div class="advantage-item">
                         <h4><?php echo htmlspecialchars($debilidad['area']); ?></h4>
@@ -821,7 +929,7 @@
 
         <!-- Estrategias de diferenciación -->
         <section class="differentiation-strategies">
-            <h2><i class="fas fa-lightbulb"></i> <?php echo htmlspecialchars($datosModulo['estrategia_diferenciacion']['titulo']); ?></h2>
+            <h2><?php echo htmlspecialchars($datosModulo['estrategia_diferenciacion']['titulo']); ?></h2>
 
             <div class="strategies-list">
                 <?php foreach ($datosModulo['estrategia_diferenciacion']['recomendaciones'] as $index => $estrategia): ?>
@@ -842,13 +950,13 @@
 
                         <div class="strategy-metrics">
                             <span class="metric-badge esfuerzo">
-                                <i class="fas fa-tools"></i> Esfuerzo: <?php echo htmlspecialchars($estrategia['esfuerzo']); ?>
+                                Esfuerzo: <?php echo htmlspecialchars($estrategia['esfuerzo']); ?>
                             </span>
                             <span class="metric-badge impacto">
-                                <i class="fas fa-chart-line"></i> Impacto: <?php echo htmlspecialchars($estrategia['impacto_esperado']); ?>
+                                Impacto: <?php echo htmlspecialchars($estrategia['impacto_esperado']); ?>
                             </span>
                             <span class="metric-badge tiempo">
-                                <i class="fas fa-clock"></i> Tiempo: <?php echo htmlspecialchars($estrategia['tiempo']); ?>
+                                Tiempo: <?php echo htmlspecialchars($estrategia['tiempo']); ?>
                             </span>
                         </div>
                     </div>
@@ -859,7 +967,7 @@
 
         <!-- Conclusiones -->
         <section class="conclusions-section">
-            <h2><i class="fas fa-list-check"></i> Conclusiones Principales</h2>
+            <h2>Conclusiones Principales</h2>
             <div class="conclusions-list">
                 <?php foreach ($datosModulo['conclusiones'] as $index => $conclusion): ?>
                 <div class="conclusion-item">
@@ -872,7 +980,7 @@
 
         <!-- Próximos pasos -->
         <section class="next-steps-section">
-            <h2><i class="fas fa-forward"></i> Plan de Acción Inmediato</h2>
+            <h2>Plan de Acción Inmediato</h2>
             <div class="next-steps-timeline">
                 <?php foreach ($datosModulo['proximos_pasos'] as $paso): ?>
                 <div class="step-item priority-<?php echo strtolower($paso['prioridad']); ?>">
@@ -882,7 +990,7 @@
                     <div class="step-content">
                         <h4><?php echo htmlspecialchars($paso['accion']); ?></h4>
                         <span class="step-timeline">
-                            <i class="fas fa-calendar-alt"></i> <?php echo htmlspecialchars($paso['plazo']); ?>
+                            <?php echo htmlspecialchars($paso['plazo']); ?>
                         </span>
                     </div>
                 </div>
@@ -894,7 +1002,8 @@
 
 <style>
 .strategy-page {
-    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    background: white;
+    color: #333;
 }
 
 .competitive-advantages {
@@ -1179,5 +1288,255 @@
     gap: 0.5rem;
     color: #6c757d;
     font-size: 0.9rem;
+}
+
+/* ========================================
+   WIREFRAMES SYSTEM - Keyword Gap Analysis
+   ======================================== */
+
+/* Wireframe Container */
+.wireframes-visuales .wireframe-container {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+}
+
+/* Wireframe Header con prioridades */
+.wireframes-visuales .wireframe-header {
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
+    color: white;
+    padding: 25px 30px;
+}
+
+.wireframes-visuales .wireframe-header.priority-high {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+}
+
+.wireframes-visuales .wireframe-header h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wireframes-visuales .wireframe-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.wireframes-visuales .meta-tag {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.wireframes-visuales .meta-tag.priority-critical {
+    animation: pulse 2s infinite;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* Wireframe Visual Area */
+.wireframes-visuales .wireframe-visual {
+    padding: 30px;
+    background: #f8f9fa;
+}
+
+/* Grid 4 columnas para Gap Analysis */
+.grid-4-gap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+    .grid-4-gap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-4-gap {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Wireframe Blocks */
+.wireframes-visuales .wireframe-block {
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 2px solid #88B04B;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.wireframes-visuales .wireframe-block:hover {
+    box-shadow: 0 4px 12px rgba(136, 176, 75, 0.25);
+    transform: translateY(-3px);
+}
+
+.wireframes-visuales .wireframe-block.must-have {
+    border-color: #88B04B;
+    background: linear-gradient(135deg, #f0f7e6 0%, #ffffff 100%);
+}
+
+.wireframes-visuales .wireframe-block.nice-to-have {
+    border-color: #adb5bd;
+    border-style: dashed;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    opacity: 0.85;
+}
+
+.wireframes-visuales .wireframe-block.cta-block {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffffff 100%);
+    border: 3px solid #ffc107;
+}
+
+/* Block Labels */
+.wireframes-visuales .block-label {
+    background: #88B04B;
+    color: white;
+    padding: 10px 18px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.wireframes-visuales .nice-to-have .block-label {
+    background: #6c757d;
+}
+
+.wireframes-visuales .cta-block .block-label {
+    background: #ffc107;
+    color: #000;
+}
+
+/* Block Content */
+.wireframes-visuales .block-content {
+    padding: 18px;
+}
+
+.wireframes-visuales .block-content.text-center {
+    text-align: center;
+}
+
+/* Gap Numbers */
+.gap-number-large {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #dc3545;
+    line-height: 1;
+    margin: 15px 0;
+}
+
+.gap-number-medium {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    margin: 10px 0;
+}
+
+/* Element Tags */
+.wireframes-visuales .element-tag {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-left: 3px solid #88B04B;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin: 6px 0;
+    font-size: 0.9rem;
+    color: #495057;
+    display: block;
+}
+
+.wireframes-visuales .nice-to-have .element-tag {
+    border-left-color: #6c757d;
+}
+
+/* Wireframe Footer */
+.wireframes-visuales .wireframe-footer {
+    background: #f8f9fa;
+    padding: 20px 30px;
+    border-top: 2px solid #dee2e6;
+}
+
+.wireframes-visuales .cta-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.wireframes-visuales .cta-list strong {
+    margin-right: 10px;
+    color: #000;
+}
+
+.wireframes-visuales .cta-tag {
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.wireframes-visuales .cta-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(136, 176, 75, 0.3);
+    color: white;
+    text-decoration: none;
+}
+
+.wireframes-visuales .cta-tag i {
+    font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .wireframes-visuales .wireframe-visual {
+        padding: 20px;
+    }
+
+    .wireframes-visuales .wireframe-header h3 {
+        font-size: 1.2rem;
+    }
+
+    .wireframes-visuales .wireframe-meta {
+        flex-direction: column;
+    }
+
+    .gap-number-large {
+        font-size: 2.5rem;
+    }
+
+    .gap-number-medium {
+        font-size: 2rem;
+    }
+
+    .wireframes-visuales .cta-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 </style>
