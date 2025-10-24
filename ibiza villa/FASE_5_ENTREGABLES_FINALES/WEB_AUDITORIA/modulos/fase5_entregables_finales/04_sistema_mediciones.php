@@ -450,7 +450,7 @@ async function sendToGA4(payload) {
     const GA4_MEASUREMENT_ID = 'G-XXXXXXXXXX';
     const API_SECRET = 'your_api_secret';
 
-    await fetch(`https://www.google-analytics.com/mp/collect?measurement_id=${GA4_MEASUREMENT_ID}&api_secret=${API_SECRET}`, {
+    await fetch(`https://www.google-analytics.com/mp/collect?measurement_id=\${GA4_MEASUREMENT_ID}&api_secret=\${API_SECRET}`, {
         method: 'POST',
         body: JSON.stringify(payload)
     });
@@ -550,7 +550,7 @@ $metricas_comparacion = [
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #ffffff;
             min-height: 100vh;
             padding: 40px 0;
         }
@@ -609,7 +609,7 @@ $metricas_comparacion = [
 
         /* Cards de métodos */
         .method-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
             border-radius: 15px;
             padding: 25px;
             margin-bottom: 20px;
@@ -720,7 +720,7 @@ $metricas_comparacion = [
         }
 
         .badge-gtm {
-            background: #667eea;
+            background: #88B04B;
             color: white;
         }
 
@@ -749,7 +749,7 @@ $metricas_comparacion = [
         }
 
         .gtm-event:hover {
-            border-color: #667eea;
+            border-color: #88B04B;
             box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
         }
 
@@ -816,7 +816,7 @@ $metricas_comparacion = [
 
         /* Sistemas externos */
         .external-system {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
             border-radius: 15px;
             padding: 25px;
             margin-bottom: 20px;

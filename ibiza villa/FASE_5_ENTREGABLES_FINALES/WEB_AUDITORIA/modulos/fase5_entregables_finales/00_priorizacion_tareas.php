@@ -4,7 +4,8 @@
  * Roadmap consolidado con todas las recomendaciones priorizadas por ROI, esfuerzo, impacto
  */
 
-$rutaEntregables = __DIR__ . '/../../entregables/priorizacion/';
+// Ruta base para entregables (URL relativa para descargas web)
+$rutaEntregables = '../../entregables/priorizacion/';
 
 $moduloData = [
     'titulo' => 'Priorización de Tareas SEO - Roadmap Consolidado',

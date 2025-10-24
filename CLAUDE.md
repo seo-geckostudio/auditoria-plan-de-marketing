@@ -40,23 +40,29 @@ Key tables representing the 5-phase audit workflow:
 
 ## Starting the Development Server
 
+**IMPORTANT:** This project uses **port 8095** for the development server.
+
 ### Option 1: Automatic Startup (Windows)
 ```bash
-# Double-click or run:
+# For Ibiza Villa Web Audit System:
+cd "ibiza villa/FASE_5_ENTREGABLES_FINALES/WEB_AUDITORIA"
+iniciar_auditoria.bat
+
+# For main system (if different):
 iniciar_sistema.bat
 ```
-This verifies PHP installation, checks/creates database, and starts server on port 8000.
+This verifies PHP installation, checks/creates database, and starts server on port 8095.
 
 ### Option 2: Manual Startup
 ```bash
 # Using bundled PHP
-.\php\php.exe -S localhost:8000
+.\php\php.exe -S localhost:8095
 
 # Or system PHP
-php -S localhost:8000
+php -S localhost:8095
 ```
 
-Access the system at: http://localhost:8000
+Access the system at: **http://localhost:8095**
 
 ## Running Tests
 
@@ -79,7 +85,7 @@ npm run test:report
 npm run typecheck
 ```
 
-Test files are in `tests/*.spec.ts` and configured via `playwright.config.ts` with base URL `http://localhost:8000`.
+Test files are in `tests/*.spec.ts` and configured via `playwright.config.ts` with base URL `http://localhost:8095`.
 
 ## Key PHP Functions (includes/functions.php)
 

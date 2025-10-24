@@ -135,7 +135,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                             <strong> Tip:</strong> Completar los 8 items críticos toma ~2 horas y genera el 70% del impacto total.
                         </p>
                     </div>
-                    <a href="../entregables/local_seo/gbp_optimization_checklist.csv" class="btn-download" download>
+                    <a href="entregables/local_seo/gbp_optimization_checklist.csv" class="btn-download" download>
                         Descargar GBP Checklist.csv
                     </a>
                 </div>
@@ -172,7 +172,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                             Timeout Ibiza, etc.) - audiencia 100% target.
                         </p>
                     </div>
-                    <a href="../entregables/local_seo/citations_directorios.csv" class="btn-download" download>
+                    <a href="entregables/local_seo/citations_directorios.csv" class="btn-download" download>
                         Descargar Citations Directorios.csv
                     </a>
                 </div>

@@ -579,7 +579,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                                 <span class="stat-label">Ganancia Potencial Implementando Gaps</span>
                             </div>
                         </div>
-                        <a href="../entregables/content_architecture/urls_tipologia_audit.csv" download class="btn-download">
+                        <a href="entregables/content_architecture/urls_tipologia_audit.csv" download class="btn-download">
                             Descargar urls_tipologia_audit.csv
                         </a>
                     </div>
@@ -631,7 +631,7 @@ $schema_requirements = $datosModulo['schema_requirements'] ?? [];
                                 <span class="stat-label">Schema Types Requeridos</span>
                             </div>
                         </div>
-                        <a href="../entregables/content_architecture/wireframes_tipologia_contenido.csv" download class="btn-download">
+                        <a href="entregables/content_architecture/wireframes_tipologia_contenido.csv" download class="btn-download">
                             Descargar wireframes_tipologia_contenido.csv
                         </a>
                     </div>

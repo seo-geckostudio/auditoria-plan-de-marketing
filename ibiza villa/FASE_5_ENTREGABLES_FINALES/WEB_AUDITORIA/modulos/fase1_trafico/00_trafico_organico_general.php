@@ -140,7 +140,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
                                 <span class="stat-label">Revenue Orgánico</span>
                             </div>
                         </div>
-                        <a href="../entregables/trafico/trafico_organico_general.csv" download class="btn-download">
+                        <a href="entregables/trafico/trafico_organico_general.csv" download class="btn-download">
                             Descargar trafico_organico_general.csv
                         </a>
                     </div>
@@ -192,7 +192,7 @@ $benchmarks = $datosModulo['benchmarks_sector'] ?? [];
                                 <span class="stat-label">Potencial Anual Adicional</span>
                             </div>
                         </div>
-                        <a href="../entregables/trafico/trafico_tendencias_analisis.csv" download class="btn-download">
+                        <a href="entregables/trafico/trafico_tendencias_analisis.csv" download class="btn-download">
                             Descargar trafico_tendencias_analisis.csv
                         </a>
                     </div>

@@ -701,7 +701,7 @@ document.addEventListener('DOMContentLoaded', function() {
    ESTILOS PÁGINA 1: PORTADA PERSONAS
    ======================================== */
 .personas-cover-page {
-    background: linear-gradient(135deg, #f0f7e6 0%, #f0f7e6 100%);
+    background: #ffffff;
     padding: 60px;
     min-height: 100vh;
 }
@@ -717,7 +717,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .personas-cover-page .page-header h1 {
     font-size: 42px;
-    color: #881337;
+    color: #2d3748;
     margin: 15px 0;
     font-weight: 700;
 }
@@ -751,7 +751,7 @@ document.addEventListener('DOMContentLoaded', function() {
 .personas-cover-page .stat-value {
     font-size: 64px;
     font-weight: 700;
-    color: #881337;
+    color: #2d3748;
     line-height: 1;
 }
 
@@ -776,7 +776,7 @@ document.addEventListener('DOMContentLoaded', function() {
 .segments-section h2,
 .personas-cover-page .origin-section h2 {
     font-size: 24px;
-    color: #881337;
+    color: #2d3748;
     margin-bottom: 25px;
     display: flex;
     align-items: center;
@@ -790,7 +790,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .personas-cover-page .method-card {
-    background: #f0f7e6;
+    background: #f8f9fa;
     padding: 15px;
     border-radius: 8px;
     display: flex;
@@ -889,7 +889,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .personas-cover-page .origin-percent {
     font-weight: 700;
-    color: #881337;
+    color: #2d3748;
     text-align: right;
 }
 
@@ -897,7 +897,7 @@ document.addEventListener('DOMContentLoaded', function() {
    ESTILOS PÁGINA 2: PERSONA DETALLE
    ======================================== */
 .persona-detail-page {
-    background: linear-gradient(135deg, #f0f7e6 0%, #f0f7e6 100%);
+    background: #ffffff;
     padding: 60px;
     min-height: 100vh;
 }
@@ -937,7 +937,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .personas-cover-page .persona-info h2 {
     font-size: 32px;
-    color: #1e40af;
+    color: #2d3748;
     margin-bottom: 20px;
 }
 
@@ -972,7 +972,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .personas-cover-page .section-block h3 {
     font-size: 20px;
-    color: #1e40af;
+    color: #2d3748;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
@@ -995,7 +995,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .personas-cover-page .demo-item strong {
-    color: #1e40af;
+    color: #2d3748;
     display: block;
     margin-bottom: 5px;
 }
@@ -1009,7 +1009,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .personas-cover-page .psico-column h4 {
     font-size: 16px;
-    color: #1e40af;
+    color: #2d3748;
     margin-bottom: 10px;
 }
 
@@ -1069,7 +1069,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .personas-cover-page .behavior-item-simple,
 .persona-detail-page .behavior-item-simple {
-    background: #f0f7e6;
+    background: #f8f9fa;
     padding: 12px;
     border-radius: 6px;
     border-left: 3px solid #88B04B;
@@ -1106,7 +1106,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .personas-cover-page .criteria-section h4 {
     font-size: 16px;
-    color: #1e40af;
+    color: #2d3748;
     margin-bottom: 15px;
 }
 
@@ -1231,7 +1231,7 @@ document.addEventListener('DOMContentLoaded', function() {
     padding-left: 35px;
     font-size: 14px;
     font-style: italic;
-    color: #1e40af;
+    color: #2d3748;
     line-height: 1.6;
 }
 
@@ -1245,7 +1245,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .personas-cover-page .keywords-block h4 {
     font-size: 18px;
-    color: #1e40af;
+    color: #2d3748;
     margin-bottom: 15px;
     display: flex;
     align-items: center;
@@ -1273,7 +1273,7 @@ document.addEventListener('DOMContentLoaded', function() {
    ESTILOS PÁGINA 3: DUAL PERSONAS
    ======================================== */
 .dual-personas-page {
-    background: linear-gradient(135deg, #f0f7e6 0%, #f0f7e6 100%);
+    background: #ffffff;
     padding: 60px;
     min-height: 100vh;
 }
@@ -1390,7 +1390,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .personas-cover-page .compact-message {
-    background: #f0f7e6;
+    background: #f8f9fa;
     padding: 12px;
     border-radius: 6px;
     font-size: 12px;
@@ -1403,7 +1403,7 @@ document.addEventListener('DOMContentLoaded', function() {
    ESTILOS PÁGINA 4: ESTRATEGIA
    ======================================== */
 .strategy-personas-page {
-    background: linear-gradient(135deg, #f0f7e6 0%, #f0f7e6 100%);
+    background: #ffffff;
     padding: 60px;
     min-height: 100vh;
 }
@@ -1464,14 +1464,14 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .strategy-personas-page .p4-box {
-    background: #f0f7e6;
+    background: #f8f9fa;
     padding: 15px;
     border-radius: 8px;
     border-left: 3px solid #88B04B;
 }
 
 .strategy-personas-page .p4-box.highlight {
-    background: #f0f7e6;
+    background: #f8f9fa;
 }
 
 .strategy-personas-page .p4-box h4 {
@@ -1596,7 +1596,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .strategy-personas-page .strategy-kpi {
     grid-column: span 2;
-    background: #f0f7e6;
+    background: #f8f9fa;
     padding: 12px;
     border-radius: 6px;
     font-size: 13px;
@@ -1630,7 +1630,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .strategy-personas-page .budget-item {
-    background: #f0f7e6;
+    background: #f8f9fa;
     padding: 15px;
     border-radius: 8px;
     text-align: center;
@@ -1664,7 +1664,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .strategy-personas-page .objective-card {
-    background: #f0f7e6;
+    background: #f8f9fa;
     padding: 20px;
     border-radius: 8px;
     display: flex;

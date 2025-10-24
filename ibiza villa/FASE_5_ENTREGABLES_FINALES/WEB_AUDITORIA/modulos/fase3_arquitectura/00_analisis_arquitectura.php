@@ -138,6 +138,46 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         </a>
                     </div>
                 </div>
+                <div class="entregable-card priority-critical">
+                    <div class="entregable-icon">
+                    </div>
+                    <div class="entregable-content">
+                        <h3>Arquitectura de Keywords</h3>
+                        <p class="entregable-desc">
+                            <strong>27 URLs estratégicas</strong> con keywords principales, secundarias, volumen de búsqueda, dificultad SEO y recomendaciones de Schema.
+                        </p>
+                        <div class="entregable-meta">
+                            <span class="meta-badge priority">Prioridad: Crítica</span>
+                            <span class="meta-badge impact">Impacto: Mejora completa arquitectura SEO</span>
+                        </div>
+                        <a href="/entregables/arquitectura/arquitectura_keywords_ibiza_villa.csv"
+                           class="btn-download"
+                           download
+                           title="Descargar CSV con arquitectura de keywords">
+                            Descargar CSV
+                        </a>
+                    </div>
+                </div>
+                <div class="entregable-card priority-critical">
+                    <div class="entregable-icon">
+                    </div>
+                    <div class="entregable-content">
+                        <h3>Mapeo de URLs y Redirecciones 301/302</h3>
+                        <p class="entregable-desc">
+                            <strong>30 redirecciones especificadas</strong> con URL actual, URL nueva propuesta, tipo de redirección, motivo del cambio, backlinks y prioridad de implementación.
+                        </p>
+                        <div class="entregable-meta">
+                            <span class="meta-badge priority">Prioridad: Crítica</span>
+                            <span class="meta-badge impact">Impacto: Preservar autoridad y tráfico orgánico</span>
+                        </div>
+                        <a href="/entregables/arquitectura/mapeo_urls_redirecciones_ibiza_villa.csv"
+                           class="btn-download"
+                           download
+                           title="Descargar CSV con mapeo de redirecciones">
+                            Descargar CSV
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="como-usar-entregables">
                 <h3>Cómo Usar Estos Archivos</h3>

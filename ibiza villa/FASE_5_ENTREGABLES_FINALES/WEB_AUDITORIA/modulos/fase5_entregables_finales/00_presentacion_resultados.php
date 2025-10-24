@@ -1,3 +1,15 @@
+<?php
+/**
+ * Módulo: Presentación de Resultados (m5.0)
+ * Fase: 5 - Entregables Finales
+ */
+
+// Cargar datos del JSON
+$jsonPath = __DIR__ . '/../../data/fase5/presentacion_resultados.json';
+$jsonContent = file_get_contents($jsonPath);
+$datosModulo = json_decode($jsonContent, true);
+?>
+
 <!-- Página 1: Portada y Agenda -->
 <div class="audit-page presentation-cover-page">
     <div class="cover-content">
@@ -590,9 +602,11 @@
                     <li><?php echo htmlspecialchars($item); ?></li>
                     <?php endforeach; ?>
                 </ul>
+                <?php if (isset($oportunidad['roi_estimado']) && $oportunidad['roi_estimado']): ?>
                 <div class="roi-badge">
-                    ROI Estimado: <?php echo htmlspecialchars($oportunidad['roi_estimado']); ?>
+                    Mejora Esperada: <?php echo htmlspecialchars($oportunidad['roi_estimado']); ?>
                 </div>
+                <?php endif; ?>
             </div>
             <?php endforeach; ?>
         </section>
@@ -894,42 +908,40 @@
                     </div>
 
                     <div class="phase-metrics">
-                        <div class="phase-metric">
-                            <div>
-                                <span class="metric-label">Inversión</span>
-                                <span class="metric-value"><?php echo htmlspecialchars($fase['inversion']); ?></span>
-                            </div>
-                        </div>
+                        <?php if (isset($fase['roi_esperado']) && $fase['roi_esperado']): ?>
                         <div class="phase-metric">
                             <div>
                                 <span class="metric-label">Mejora Esperada</span>
                                 <span class="metric-value"><?php echo htmlspecialchars($fase['roi_esperado']); ?></span>
                             </div>
                         </div>
+                        <?php endif; ?>
+                        <?php if (isset($fase['resultados_esperados']) && $fase['resultados_esperados']): ?>
                         <div class="phase-metric">
                             <div>
                                 <span class="metric-label">Resultados</span>
                                 <span class="metric-value"><?php echo htmlspecialchars($fase['resultados_esperados']); ?></span>
                             </div>
                         </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
             <?php endforeach; ?>
 
             <div class="total-summary">
-                <div class="summary-item">
-                    <strong>Inversión Total 12 Meses:</strong>
-                    <span><?php echo htmlspecialchars($datosModulo['plan_accion_resumen']['inversion_total']); ?></span>
-                </div>
+                <?php if (isset($datosModulo['plan_accion_resumen']['roi_total_12_meses']) && $datosModulo['plan_accion_resumen']['roi_total_12_meses']): ?>
                 <div class="summary-item highlight">
                     <strong>Mejora Total:</strong>
                     <span><?php echo htmlspecialchars($datosModulo['plan_accion_resumen']['roi_total_12_meses']); ?></span>
                 </div>
+                <?php endif; ?>
+                <?php if (isset($datosModulo['plan_accion_resumen']['valor_generado']) && $datosModulo['plan_accion_resumen']['valor_generado']): ?>
                 <div class="summary-item highlight">
                     <strong>Valor Generado:</strong>
                     <span><?php echo htmlspecialchars($datosModulo['plan_accion_resumen']['valor_generado']); ?></span>
                 </div>
+                <?php endif; ?>
             </div>
         </section>
 

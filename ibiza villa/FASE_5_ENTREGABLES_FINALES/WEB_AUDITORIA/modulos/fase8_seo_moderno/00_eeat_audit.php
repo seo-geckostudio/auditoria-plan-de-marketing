@@ -1251,7 +1251,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         del impacto total en E-E-A-T.
                     </p>
                 </div>
-                <a href="../entregables/eeat/eeat_signals_audit.csv" class="btn-download" download>
+                <a href="entregables/eeat/eeat_signals_audit.csv" class="btn-download" download>
                     Descargar Auditoría Señales.csv
                 </a>
             </div>
@@ -1287,7 +1287,7 @@ $recomendaciones = $datosModulo['recomendaciones'] ?? [];
                         Es el quick win con mayor ROI (9:1).
                     </p>
                 </div>
-                <a href="../entregables/eeat/eeat_mejoras_prioritarias.csv" class="btn-download" download>
+                <a href="entregables/eeat/eeat_mejoras_prioritarias.csv" class="btn-download" download>
                     Descargar Plan Mejoras.csv
                 </a>
             </div>

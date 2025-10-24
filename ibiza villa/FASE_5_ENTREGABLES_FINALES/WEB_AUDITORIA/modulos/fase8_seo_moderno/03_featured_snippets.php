@@ -1182,7 +1182,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
                     </div>
                 </div>
                 <div class="csv-card-footer">
-                    <a href="../entregables/featured_snippets/featured_snippets_opportunities.csv"
+                    <a href="entregables/featured_snippets/featured_snippets_opportunities.csv"
                        class="btn-download" download>
                         <span class="download-icon">⬇️</span>
                         Descargar CSV - Oportunidades Featured Snippets
@@ -1217,7 +1217,7 @@ $estrategia = $datosModulo['estrategia_implementacion'] ?? [];
                     </div>
                 </div>
                 <div class="csv-card-footer">
-                    <a href="../entregables/featured_snippets/snippet_optimization_guide.csv"
+                    <a href="entregables/featured_snippets/snippet_optimization_guide.csv"
                        class="btn-download" download>
                         <span class="download-icon">⬇️</span>
                         Descargar CSV - Guía de Optimización Snippets

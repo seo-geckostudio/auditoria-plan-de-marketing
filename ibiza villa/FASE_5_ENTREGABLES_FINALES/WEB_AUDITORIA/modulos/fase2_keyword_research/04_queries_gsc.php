@@ -78,7 +78,7 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
                                 <span class="stat-label">Clics Totales/mes</span>
                             </div>
                         </div>
-                        <a href="../entregables/gsc/queries_gsc_top.csv" download class="btn-download">
+                        <a href="entregables/gsc/queries_gsc_top.csv" download class="btn-download">
                             Descargar queries_gsc_top.csv
                         </a>
                     </div>
@@ -108,7 +108,7 @@ $oportunidades = $datosModulo['oportunidades_quick_wins'] ?? [];
                                 <span class="stat-label">Eficiencia Promedio</span>
                             </div>
                         </div>
-                        <a href="../entregables/gsc/queries_oportunidades_quick_wins.csv" download class="btn-download">
+                        <a href="entregables/gsc/queries_oportunidades_quick_wins.csv" download class="btn-download">
                             Descargar queries_oportunidades_quick_wins.csv
                         </a>
                     </div>

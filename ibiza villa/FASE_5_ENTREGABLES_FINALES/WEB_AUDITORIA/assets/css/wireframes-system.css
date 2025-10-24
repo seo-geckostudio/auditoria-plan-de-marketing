@@ -1,0 +1,425 @@
+/* ============================================
+   SISTEMA DE DISEÑO WIREFRAMES - CSS REUTILIZABLE
+   ============================================
+
+   Este archivo contiene el CSS completo del sistema de diseño
+   wireframes para aplicar de forma consistente en todos los módulos.
+
+   Basado en: modulos/fase3_arquitectura/03_wireframes_contenido.php
+   Color corporativo: #88B04B (verde Gecko)
+   Fecha: 2025-01-21
+*/
+
+/* ============================================
+   CONTENEDORES PRINCIPALES
+   ============================================ */
+
+.wireframes-entregables,
+.wireframes-categorias,
+.wireframes-section {
+    margin: 30px 0;
+}
+
+.wireframe-container {
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* ============================================
+   HEADER WIREFRAME
+   ============================================ */
+
+.wireframe-header {
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
+    color: white;
+    padding: 20px 30px;
+}
+
+.wireframe-header.priority-high,
+.wireframe-header.priority-critical {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+}
+
+.wireframe-header.priority-medium {
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
+}
+
+.wireframe-header.priority-low {
+    background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%);
+}
+
+.wireframe-header h3 {
+    margin: 0 0 12px 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.wireframe-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.meta-tag {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.meta-tag.critical,
+.meta-tag.priority-alta,
+.meta-tag.priority-muy-alta {
+    background: #ffc107;
+    color: #000;
+    animation: pulse 2s infinite;
+}
+
+/* ============================================
+   VISUAL AREA (Fondo gris)
+   ============================================ */
+
+.wireframe-visual {
+    padding: 30px;
+    background: #f8f9fa;
+}
+
+/* ============================================
+   BLOQUES WIREFRAME
+   ============================================ */
+
+.wireframe-block {
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 2px solid #88B04B;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.wireframe-block:hover {
+    box-shadow: 0 4px 12px rgba(136, 176, 75, 0.25);
+    transform: translateX(3px);
+}
+
+/* MUST-HAVE: Elementos críticos/obligatorios */
+.wireframe-block.must-have {
+    border-color: #88B04B;
+    background: linear-gradient(135deg, #f0f7e6 0%, #ffffff 100%);
+}
+
+/* NICE-TO-HAVE: Elementos opcionales/avanzados */
+.wireframe-block.nice-to-have {
+    border-color: #adb5bd;
+    border-style: dashed;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    opacity: 0.85;
+}
+
+/* CTA BLOCKS: Llamadas a la acción */
+.wireframe-block.cta-block {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffffff 100%);
+    border-color: #ffc107;
+    border-width: 3px;
+}
+
+/* HERO BLOCKS */
+.wireframe-block.hero-block {
+    min-height: 120px;
+}
+
+/* ============================================
+   LABELS DE BLOQUES
+   ============================================ */
+
+.block-label {
+    background: #88B04B;
+    color: white;
+    padding: 10px 18px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.nice-to-have .block-label {
+    background: #6c757d;
+}
+
+.cta-block .block-label {
+    background: #ffc107;
+    color: #000;
+}
+
+.hero-block .block-label {
+    font-size: 1rem;
+}
+
+/* ============================================
+   CONTENIDO DE BLOQUES
+   ============================================ */
+
+.block-content {
+    padding: 18px;
+}
+
+.element-tag {
+    background: white;
+    border: 1px solid #dee2e6;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin: 6px 0;
+    font-size: 0.9rem;
+    color: #495057;
+    display: block;
+    border-left: 3px solid #88B04B;
+}
+
+.nice-to-have .element-tag {
+    border-left-color: #6c757d;
+}
+
+.cta-block .element-tag {
+    border-left-color: #ffc107;
+}
+
+/* ============================================
+   GRID LAYOUTS
+   ============================================ */
+
+/* Grid 6 columnas */
+.grid-6 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+}
+
+/* Grid 3 columnas */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+/* Grid de keywords */
+.grid-keywords {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+/* Grid items genéricos */
+.grid-item {
+    background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%);
+    border: 2px solid #2196f3;
+    padding: 15px 10px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1565c0;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cards de villas */
+.card-villa {
+    background: linear-gradient(135deg, #fff9e6 0%, #ffffff 100%);
+    border-color: #ffc107;
+    color: #f57c00;
+    min-height: 120px;
+    line-height: 1.4;
+}
+
+/* Keywords tags */
+.keyword-wireframe-tag {
+    background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%);
+    border: 2px solid #2196f3;
+    padding: 10px 12px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1565c0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.keyword-wireframe-tag small {
+    font-size: 0.75rem;
+    color: #666;
+    margin-top: 4px;
+}
+
+/* ============================================
+   COLUMNAS
+   ============================================ */
+
+/* 3 columnas */
+.columns-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.column-item {
+    background: linear-gradient(135deg, #e8f5e9 0%, #ffffff 100%);
+    border: 2px solid #4caf50;
+    padding: 20px 12px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #2e7d32;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* ============================================
+   FOOTER WIREFRAME
+   ============================================ */
+
+.wireframe-footer {
+    background: #f8f9fa;
+    padding: 20px 30px;
+    border-top: 2px solid #dee2e6;
+}
+
+.cta-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.cta-list strong {
+    margin-right: 10px;
+    color: #000;
+}
+
+.cta-tag {
+    background: linear-gradient(135deg, #88B04B 0%, #6d8f3c 100%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.cta-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(136, 176, 75, 0.3);
+    color: white;
+}
+
+.cta-tag i {
+    margin-right: 6px;
+}
+
+/* ============================================
+   ANIMACIONES
+   ============================================ */
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 992px) {
+    .grid-6 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .wireframe-visual {
+        padding: 20px;
+    }
+
+    .wireframe-header h3 {
+        font-size: 1.3rem;
+    }
+
+    .wireframe-meta {
+        flex-direction: column;
+    }
+
+    .grid-6 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-3,
+    .columns-3,
+    .grid-keywords {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* ============================================
+   NOTAS Y UTILIDADES
+   ============================================ */
+
+.wireframes-nota {
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+    border-left: 5px solid #ff9800;
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.wireframes-nota h4 {
+    font-size: 1.3rem;
+    color: #000;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wireframes-nota p {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #495057;
+}
+
+.wireframes-nota ul {
+    margin-bottom: 15px;
+    padding-left: 25px;
+}
+
+.wireframes-nota li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}

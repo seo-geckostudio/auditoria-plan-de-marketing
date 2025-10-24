@@ -1,0 +1,17 @@
+# Ignorar todos los archivos CSV (datos confidenciales del cliente)
+*.csv
+
+# Permitir el README
+!README.md
+
+# Permitir archivos de ejemplo (si existen)
+!*_ejemplo.csv
+!*_template.csv
+
+# Ignorar backups
+*_backup_*/
+backup_*/
+
+# Ignorar archivos temporales de Excel
+~$*.csv
+*.tmp

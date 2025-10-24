@@ -1,3 +1,15 @@
+<?php
+/**
+ * Módulo: Plan de Acción SEO (m5.3)
+ * Fase: 5 - Entregables Finales
+ */
+
+// Cargar datos del JSON
+$jsonPath = __DIR__ . '/../../data/fase5/plan_accion_seo.json';
+$jsonContent = file_get_contents($jsonPath);
+$datosModulo = json_decode($jsonContent, true);
+?>
+
 <!-- Página 1: Overview + Resumen Impacto + Fase 1 -->
 <div class="audit-page action-plan-intro-page">
     <div class="page-header">
@@ -1089,14 +1101,14 @@
             </div>
         </div>
 
-        <!-- Presupuesto -->
+        <!-- Esfuerzo Detallado -->
         <div class="budget-section">
-            <h2>Presupuesto 12 Meses</h2>
+            <h2>Esfuerzo Detallado 12 Meses</h2>
             <div class="budget-grid">
                 <?php
-                $fases_presupuesto = ['fase_1', 'fase_2', 'fase_3', 'fase_4'];
-                foreach ($fases_presupuesto as $key):
-                    $fase_data = $datosModulo['presupuesto_detallado'][$key];
+                $fases_esfuerzo = ['fase_1', 'fase_2', 'fase_3', 'fase_4'];
+                foreach ($fases_esfuerzo as $key):
+                    $fase_data = $datosModulo['esfuerzo_detallado'][$key];
                 ?>
                 <div class="budget-card">
                     <div class="budget-phase">Fase <?php echo substr($key, -1); ?></div>
@@ -1106,7 +1118,7 @@
             </div>
             <div class="budget-total">
                 <span class="total-label">Total Esfuerzo 12 Meses:</span>
-                <span class="total-amount"><?php echo htmlspecialchars($datosModulo['presupuesto_detallado']['total_12_meses']['total']); ?></span>
+                <span class="total-amount"><?php echo htmlspecialchars($datosModulo['esfuerzo_detallado']['total_12_meses']['total']); ?></span>
             </div>
         </div>
 

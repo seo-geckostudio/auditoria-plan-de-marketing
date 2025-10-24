@@ -4,7 +4,8 @@
  * Estrategia SEO vertical específica para luxury villa rental / real estate
  */
 
-$rutaEntregables = __DIR__ . '/../../entregables/real_estate_seo/';
+// Ruta base para entregables (URL relativa para descargas web)
+$rutaEntregables = '../../entregables/real_estate_seo/';
 
 $moduloData = [
     'titulo' => 'Real Estate SEO Vertical - Estrategia Inmobiliaria Lujo',

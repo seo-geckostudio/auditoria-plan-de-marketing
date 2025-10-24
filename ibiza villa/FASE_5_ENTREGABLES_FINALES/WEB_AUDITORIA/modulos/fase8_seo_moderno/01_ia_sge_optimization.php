@@ -1078,7 +1078,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
                     <li><strong>Gaps críticos:</strong> 13 queries con SGE activo donde NO aparecemos (competencia sí)</li>
                     <li><strong>Acción por query:</strong> Tipo de contenido necesario para cada oportunidad (guía/FAQ/calculadora/landing)</li>
                 </ul>
-                <a href="../entregables/ia_sge/sge_visibility_audit.csv" class="btn-download" download>
+                <a href="entregables/ia_sge/sge_visibility_audit.csv" class="btn-download" download>
                     <span class="download-icon">⬇</span> Descargar CSV - Auditoría SGE
                 </a>
                 <div class="csv-stats">
@@ -1105,7 +1105,7 @@ $metricas = $datosModulo['metricas_seguimiento'] ?? [];
                     <li><strong>Datos propios:</strong> Insights de 500+ reservas, estadísticas internas, casos de estudio cuantificados</li>
                     <li><strong>E-E-A-T signals:</strong> Team expertise visible, credenciales, experiencia local, testimonios estructurados</li>
                 </ul>
-                <a href="../entregables/ia_sge/ai_content_optimizations.csv" class="btn-download" download>
+                <a href="entregables/ia_sge/ai_content_optimizations.csv" class="btn-download" download>
                     <span class="download-icon">⬇</span> Descargar CSV - Optimizaciones IA
                 </a>
                 <div class="csv-stats">

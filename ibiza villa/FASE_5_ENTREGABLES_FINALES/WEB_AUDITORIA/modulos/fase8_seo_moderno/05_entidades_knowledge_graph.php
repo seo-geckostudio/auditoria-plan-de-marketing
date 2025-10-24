@@ -1230,7 +1230,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
                     </div>
                 </div>
                 <div class="csv-card-footer">
-                    <a href="../entregables/knowledge_graph/entity_audit.csv"
+                    <a href="entregables/knowledge_graph/entity_audit.csv"
                        class="btn-download" download>
                         <span class="download-icon">⬇️</span>
                         Descargar CSV - Auditoría Señales Entidad
@@ -1265,7 +1265,7 @@ $estrategia_entidades = $datosModulo['estrategia_entidades'] ?? [];
                     </div>
                 </div>
                 <div class="csv-card-footer">
-                    <a href="../entregables/knowledge_graph/schema_implementation_plan.csv"
+                    <a href="entregables/knowledge_graph/schema_implementation_plan.csv"
                        class="btn-download" download>
                         <span class="download-icon">⬇️</span>
                         Descargar CSV - Plan Implementación Schema

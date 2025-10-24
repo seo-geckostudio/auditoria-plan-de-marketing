@@ -1102,7 +1102,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
                     <li><strong>Tráfico estimado total:</strong> 950-1,320 sesiones/mes capturables</li>
                     <li><strong>Acciones detalladas:</strong> Landing, FAQ Schema, Speakable markup, HowTo Schema por query</li>
                 </ul>
-                <a href="../entregables/voice_search/voice_keywords_audit.csv" class="btn-download" download>
+                <a href="entregables/voice_search/voice_keywords_audit.csv" class="btn-download" download>
                     <span class="download-icon">⬇</span> Descargar CSV - Keywords Voice
                 </a>
                 <div class="csv-stats">
@@ -1129,7 +1129,7 @@ $plan_accion = $datosModulo['plan_accion'] ?? [];
                     <li><strong>Featured Snippets:</strong> Optimization para Posición 0 (voice answer source)</li>
                     <li><strong>Natural language:</strong> Conversational tone, Frases cortas (<20 palabras), Audio-friendly</li>
                 </ul>
-                <a href="../entregables/voice_search/voice_technical_checklist.csv" class="btn-download" download>
+                <a href="entregables/voice_search/voice_technical_checklist.csv" class="btn-download" download>
                     <span class="download-icon">⬇</span> Descargar CSV - Checklist Técnico
                 </a>
                 <div class="csv-stats">

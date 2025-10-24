@@ -1,0 +1,201 @@
+═══════════════════════════════════════════════════════════════════════
+  AUDITORÍA SEO PROFESIONAL - IBIZA VILLA
+  Sistema de Visualización de Resultados
+═══════════════════════════════════════════════════════════════════════
+
+📋 CONTENIDO DE ESTE PAQUETE
+═══════════════════════════════════════════════════════════════════════
+
+Este paquete contiene la auditoría SEO completa realizada para Ibiza Villa,
+presentada en un sistema web interactivo de fácil navegación.
+
+
+🚀 INICIO RÁPIDO (3 PASOS)
+═══════════════════════════════════════════════════════════════════════
+
+1. Haz doble clic en el archivo: "iniciar_auditoria.bat"
+
+2. Espera 5 segundos a que se abra tu navegador automáticamente
+
+3. ¡Listo! Navega por las diferentes secciones usando el menú lateral
+
+
+💻 REQUISITOS DEL SISTEMA
+═══════════════════════════════════════════════════════════════════════
+
+✓ Windows 7 / 8 / 10 / 11
+✓ Navegador web actualizado (Chrome, Firefox, Edge o Safari)
+✓ 100 MB de espacio libre en disco
+✓ NO requiere instalación de software adicional
+✓ NO requiere conexión a Internet (sistema 100% local)
+
+
+📂 ESTRUCTURA DE CARPETAS
+═══════════════════════════════════════════════════════════════════════
+
+ibiza-villa-auditoria-seo/
+│
+├── iniciar_auditoria.bat         ⬅️ EJECUTA ESTE ARCHIVO
+├── INSTRUCCIONES.txt              (este archivo)
+├── LEEME.pdf                      (versión impresa de estas instrucciones)
+│
+├── php/                           (servidor web portable - no tocar)
+├── data/                          (datos de la auditoría en formato JSON)
+├── recursos/                      (archivos CSV y exports adicionales)
+│   ├── ahrefs_exports/
+│   ├── gsc_exports/
+│   └── ga4_exports/
+│
+├── css/                           (estilos del sistema)
+├── js/                            (funcionalidad interactiva)
+└── modulos/                       (módulos de cada fase)
+
+
+🗺️ NAVEGACIÓN DEL SISTEMA
+═══════════════════════════════════════════════════════════════════════
+
+El sistema está organizado en 5 fases principales:
+
+┌─────────────────────────────────────────────────────────────────┐
+│ FASE 0: MARKETING DIGITAL                                       │
+├─────────────────────────────────────────────────────────────────┤
+│ • Análisis de Competencia (Top 10 competidores identificados)   │
+│ • Buyer Personas (4 perfiles de cliente ideal)                  │
+└─────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────┐
+│ FASE 1: PREPARACIÓN                                             │
+├─────────────────────────────────────────────────────────────────┤
+│ • Brief del Cliente (objetivos y contexto)                      │
+│ • Checklist de Accesos (herramientas necesarias)                │
+│ • Roadmap de Auditoría (plan de trabajo)                        │
+└─────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────┐
+│ FASE 2: KEYWORD RESEARCH ⭐ MÁS IMPORTANTE                      │
+├─────────────────────────────────────────────────────────────────┤
+│ • Keywords Actuales (análisis de posicionamiento)               │
+│ • Análisis de Competencia (gaps identificados)                  │
+│ • Oportunidades de Keywords (quick wins)                        │
+│ • Keyword Mapping (asignación a páginas)                        │
+│ • Queries GSC (rendimiento en Google)                           │
+└─────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────┐
+│ FASE 3: ARQUITECTURA WEB                                        │
+├─────────────────────────────────────────────────────────────────┤
+│ • Análisis de Arquitectura Actual                               │
+│ • Mapeo Keywords-Arquitectura                                   │
+│ • Propuestas de Mejora                                          │
+└─────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────┐
+│ FASE 5: ENTREGABLES FINALES                                     │
+├─────────────────────────────────────────────────────────────────┤
+│ • Resumen Ejecutivo                                             │
+│ • Informe Técnico Completo                                      │
+│ • Plan de Acción SEO (priorizado)                               │
+│ • Sistema de Mediciones (KPIs y seguimiento)                    │
+└─────────────────────────────────────────────────────────────────┘
+
+
+🔧 SOLUCIÓN DE PROBLEMAS
+═══════════════════════════════════════════════════════════════════
+
+Problema: El navegador no se abre automáticamente
+─────────────────────────────────────────────────────────────────
+Solución: Abre manualmente tu navegador y escribe:
+          http://localhost:8095
+
+
+Problema: Aparece "Puerto 8095 ya está en uso"
+─────────────────────────────────────────────────────────────────
+Solución: El sistema automáticamente usará el puerto 8096.
+          Si ves este mensaje, abre: http://localhost:8096
+
+
+Problema: Error "No se encontró PHP"
+─────────────────────────────────────────────────────────────────
+Solución: Verifica que la carpeta 'php' esté en el mismo directorio
+          que 'iniciar_auditoria.bat'. Si falta, contacta con soporte.
+
+
+Problema: La página web no carga correctamente
+─────────────────────────────────────────────────────────────────
+Solución: 1. Cierra la ventana negra (terminal)
+          2. Espera 10 segundos
+          3. Vuelve a ejecutar "iniciar_auditoria.bat"
+
+
+Problema: Los gráficos no se ven
+─────────────────────────────────────────────────────────────────
+Solución: Asegúrate de usar un navegador moderno actualizado:
+          • Google Chrome 100+
+          • Mozilla Firefox 100+
+          • Microsoft Edge 100+
+
+
+📥 EXPORTACIÓN DE DATOS
+═══════════════════════════════════════════════════════════════════
+
+Todos los datos de la auditoría están disponibles en formatos
+procesables dentro de la carpeta 'recursos/':
+
+• Archivos CSV de Ahrefs (keywords, backlinks, competidores)
+• Exportaciones de Google Search Console
+• Datos de Google Analytics 4
+• Análisis procesados en formato JSON
+
+
+🖨️ IMPRESIÓN
+═══════════════════════════════════════════════════════════════════
+
+Para imprimir secciones específicas:
+
+1. Navega a la sección que deseas imprimir
+2. Usa Ctrl+P (o Cmd+P en Mac)
+3. Selecciona tu impresora
+4. Recomendado: Orientación "Vertical" y márgenes "Normales"
+
+NOTA: Algunas secciones están optimizadas para visualización web
+      y pueden no verse perfectas al imprimir.
+
+
+📧 SOPORTE Y CONTACTO
+═══════════════════════════════════════════════════════════════════
+
+Si tienes alguna pregunta o necesitas asistencia:
+
+📧 Email:    [TU EMAIL AQUÍ]
+📱 WhatsApp: [TU NÚMERO AQUÍ]
+🌐 Web:      [TU WEB AQUÍ]
+
+Horario de soporte:
+Lunes a Viernes: 9:00 - 18:00 (CET)
+
+
+📜 TÉRMINOS DE USO
+═══════════════════════════════════════════════════════════════════
+
+• Este sistema es de uso exclusivo para Ibiza Villa
+• Los datos son confidenciales y no deben compartirse sin autorización
+• Se recomienda realizar backups periódicos de la carpeta completa
+• La auditoría refleja el estado del sitio en la fecha de realización
+
+
+📅 INFORMACIÓN DE LA AUDITORÍA
+═══════════════════════════════════════════════════════════════════
+
+Cliente:            Ibiza Villa
+Dominio analizado:  [DOMINIO]
+Fecha de auditoría: [FECHA]
+Herramientas:       Ahrefs, Google Search Console, Google Analytics 4
+Metodología:        Auditoría SEO Completa (5 Fases)
+
+
+═══════════════════════════════════════════════════════════════════
+  © 2025 - Auditoría SEO Profesional
+  Sistema desarrollado con metodología propia certificada
+═══════════════════════════════════════════════════════════════════
+
+¡Gracias por confiar en nuestros servicios!

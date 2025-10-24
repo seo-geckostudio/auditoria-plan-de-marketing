@@ -4,8 +4,8 @@
  * Análisis detallado de métricas CWV (LCP, FID, CLS) con patrón educativo ANTES/DESPUÉS
  */
 
-// Ruta base para entregables
-$rutaEntregables = __DIR__ . '/../../entregables/performance/';
+// Ruta base para entregables (URL relativa para descargas web)
+$rutaEntregables = '../../entregables/performance/';
 
 // Datos del módulo
 $moduloData = [

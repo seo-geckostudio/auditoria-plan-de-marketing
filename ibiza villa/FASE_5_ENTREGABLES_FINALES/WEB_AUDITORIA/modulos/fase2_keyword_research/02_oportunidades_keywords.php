@@ -1098,12 +1098,11 @@
                             <div class="resource-item">
                                 <span>Recursos: <?php echo implode(', ', $fase['recursos_necesarios']); ?></span>
                             </div>
-                            <div class="resource-item">
-                                <span>Coste: <?php echo htmlspecialchars($fase['coste_estimado']); ?></span>
-                            </div>
+                            <?php if (isset($fase['mejora_esperada'])): ?>
                             <div class="resource-item roi">
                                 <span>Mejora Esperada: <?php echo htmlspecialchars($fase['mejora_esperada']); ?></span>
                             </div>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>

@@ -1,3 +1,15 @@
+<?php
+/**
+ * Módulo: Informe Técnico Completo (m5.2)
+ * Fase: 5 - Entregables Finales
+ */
+
+// Cargar datos del JSON
+$jsonPath = __DIR__ . '/../../data/fase5/informe_tecnico.json';
+$jsonContent = file_get_contents($jsonPath);
+$datosModulo = json_decode($jsonContent, true);
+?>
+
 <!-- Página 1: Introducción y Resumen Técnico -->
 <div class="audit-page technical-report-intro-page">
     <div class="page-header">

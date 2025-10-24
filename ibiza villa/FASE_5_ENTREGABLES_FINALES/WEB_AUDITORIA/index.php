@@ -66,6 +66,7 @@ if ($loader->tieneErrores()) {
       <ul>
         <li><a href="#portada">Portada</a></li>
         <li><a href="#indice">Índice General</a></li>
+        <li><a href="#documentos-descargables">Documentos Descargables</a></li>
 
         <!-- RESUMEN EJECUTIVO - DESTACADO -->
         <li class="nav-section nav-destacado">
@@ -228,9 +229,164 @@ if ($loader->tieneErrores()) {
       </div>
     </section>
 
+    <!-- ACCESO RÁPIDO A DOCUMENTOS -->
+    <section id="documentos-descargables" class="audit-page" style="page-break-before: always;">
+      <div class="page-header">
+        <h1 class="page-title">Acceso Rápido a Documentos</h1>
+        <p class="page-subtitle">Documentación descargable para esta auditoría</p>
+      </div>
+      <div class="page-body">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 30px;">
+
+          <!-- Documentos para el Cliente -->
+          <div style="background: #f8fafc; border-left: 4px solid var(--brand-color); padding: 20px; border-radius: 8px;">
+            <h3 style="color: var(--brand-color); margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              <span>📄</span> Documentos para el Cliente
+            </h3>
+            <ul style="list-style: none; padding: 0; margin: 0;">
+              <li style="margin-bottom: 10px;">
+                <a href="modulos/fase5_entregables_finales/01_resumen_ejecutivo.php" target="_blank" style="color: var(--text-color); text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                  <span style="color: var(--brand-color);">→</span> Resumen Ejecutivo (PDF)
+                </a>
+              </li>
+              <li style="margin-bottom: 10px;">
+                <a href="modulos/fase5_entregables_finales/03_plan_accion_seo.php" target="_blank" style="color: var(--text-color); text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                  <span style="color: var(--brand-color);">→</span> Plan de Acción SEO (PDF)
+                </a>
+              </li>
+              <li style="margin-bottom: 10px;">
+                <a href="modulos/fase5_entregables_finales/00_presentacion_resultados.php" target="_blank" style="color: var(--text-color); text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                  <span style="color: var(--brand-color);">→</span> Presentación de Resultados (PDF)
+                </a>
+              </li>
+              <li style="margin-bottom: 10px;">
+                <a href="modulos/fase5_entregables_finales/06_recursos_adicionales.php" target="_blank" style="color: var(--text-color); text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                  <span style="color: var(--brand-color);">→</span> Recursos Adicionales
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Documentos para el Equipo de Dev -->
+          <div style="background: #f1f5f9; border-left: 4px solid #2563eb; padding: 20px; border-radius: 8px;">
+            <h3 style="color: #2563eb; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              <span>🔧</span> Documentos para el Equipo Dev
+            </h3>
+            <ul style="list-style: none; padding: 0; margin: 0;">
+              <li style="margin-bottom: 10px;">
+                <a href="modulos/fase5_entregables_finales/02_informe_tecnico.php" target="_blank" style="color: var(--text-color); text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                  <span style="color: #2563eb;">→</span> Informe Técnico Completo (PDF)
+                </a>
+              </li>
+              <li style="margin-bottom: 10px;">
+                <a href="modulos/fase5_entregables_finales/04_sistema_mediciones.php" target="_blank" style="color: var(--text-color); text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                  <span style="color: #2563eb;">→</span> Sistema de Mediciones y Tracking
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- CSV y Datos Exportables -->
+          <div style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 20px; border-radius: 8px; grid-column: span 2;">
+            <h3 style="color: #f59e0b; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+              <span>📊</span> CSV y Datos Exportables
+            </h3>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+              <div>
+                <h4 style="font-size: 14px; color: #78350f; margin-bottom: 10px;">Google Search Console</h4>
+                <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px;">
+                  <li style="margin-bottom: 6px;">
+                    <a href="datos/gsc_queries.csv" download style="color: var(--text-secondary); text-decoration: none;">
+                      <span style="color: #f59e0b;">↓</span> Queries (CSV)
+                    </a>
+                  </li>
+                  <li style="margin-bottom: 6px;">
+                    <a href="datos/gsc_pages.csv" download style="color: var(--text-secondary); text-decoration: none;">
+                      <span style="color: #f59e0b;">↓</span> Pages (CSV)
+                    </a>
+                  </li>
+                  <li style="margin-bottom: 6px;">
+                    <a href="datos/gsc_devices.csv" download style="color: var(--text-secondary); text-decoration: none;">
+                      <span style="color: #f59e0b;">↓</span> Devices (CSV)
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 style="font-size: 14px; color: #78350f; margin-bottom: 10px;">Google Analytics 4</h4>
+                <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px;">
+                  <li style="margin-bottom: 6px;">
+                    <a href="datos/ga4_traffic.csv" download style="color: var(--text-secondary); text-decoration: none;">
+                      <span style="color: #f59e0b;">↓</span> Organic Traffic (CSV)
+                    </a>
+                  </li>
+                  <li style="margin-bottom: 6px;">
+                    <a href="datos/ga4_conversions.csv" download style="color: var(--text-secondary); text-decoration: none;">
+                      <span style="color: #f59e0b;">↓</span> Conversions (CSV)
+                    </a>
+                  </li>
+                  <li style="margin-bottom: 6px;">
+                    <a href="datos/ga4_landing_pages.csv" download style="color: var(--text-secondary); text-decoration: none;">
+                      <span style="color: #f59e0b;">↓</span> Landing Pages (CSV)
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 style="font-size: 14px; color: #78350f; margin-bottom: 10px;">Ahrefs</h4>
+                <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px;">
+                  <li style="margin-bottom: 6px;">
+                    <a href="datos/ahrefs_keywords.csv" download style="color: var(--text-secondary); text-decoration: none;">
+                      <span style="color: #f59e0b;">↓</span> Organic Keywords (CSV)
+                    </a>
+                  </li>
+                  <li style="margin-bottom: 6px;">
+                    <a href="datos/ahrefs_backlinks.csv" download style="color: var(--text-secondary); text-decoration: none;">
+                      <span style="color: #f59e0b;">↓</span> Backlinks (CSV)
+                    </a>
+                  </li>
+                  <li style="margin-bottom: 6px;">
+                    <a href="datos/ahrefs_anchors.csv" download style="color: var(--text-secondary); text-decoration: none;">
+                      <span style="color: #f59e0b;">↓</span> Anchor Texts (CSV)
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 style="font-size: 14px; color: #78350f; margin-bottom: 10px;">Screaming Frog</h4>
+                <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px;">
+                  <li style="margin-bottom: 6px;">
+                    <a href="datos/sf_internal_all.csv" download style="color: var(--text-secondary); text-decoration: none;">
+                      <span style="color: #f59e0b;">↓</span> All Internal (CSV)
+                    </a>
+                  </li>
+                  <li style="margin-bottom: 6px;">
+                    <a href="datos/sf_page_titles.csv" download style="color: var(--text-secondary); text-decoration: none;">
+                      <span style="color: #f59e0b;">↓</span> Page Titles (CSV)
+                    </a>
+                  </li>
+                  <li style="margin-bottom: 6px;">
+                    <a href="datos/sf_meta_description.csv" download style="color: var(--text-secondary); text-decoration: none;">
+                      <span style="color: #f59e0b;">↓</span> Meta Descriptions (CSV)
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="page-footer">
+        <div class="footer-left"><?php echo htmlspecialchars($proyecto['nombre'] ?? 'Proyecto'); ?></div>
+        <div class="footer-center">Auditoría SEO | <?php echo date('Y'); ?></div>
+        <div class="footer-right">Página 3</div>
+      </div>
+    </section>
+
     <!-- RENDERIZAR TODOS LOS MÓDULOS ACTIVOS -->
     <?php
-    $paginaActual = 3; // La portada e índice ya ocupan 2 páginas
+    $paginaActual = 4; // La portada, índice y documentos ocupan 3 páginas
 
     foreach ($fases as $numFase => $fase):
         // Separador de fase (opcional, solo si quieres visual entre fases)
@@ -299,6 +455,68 @@ if ($loader->tieneErrores()) {
     pageNumbers.forEach((el, index) => {
       el.textContent = index + 1;
     });
+
+    // =========================================================================
+    // FIX: Force white text on all green backgrounds (Gecko Studio green #88B04B)
+    // =========================================================================
+    function fixGreenBackgroundTextColors() {
+      const allElements = document.querySelectorAll('*');
+
+      allElements.forEach(element => {
+        const computed = window.getComputedStyle(element);
+        const bgColor = computed.backgroundColor;
+        const bgImage = computed.backgroundImage;
+
+        // Check if element has green background (#88B04B = rgb(136, 176, 75))
+        const hasGreenBg = bgColor.includes('136, 176, 75') ||
+                          bgColor.includes('#88B04B') ||
+                          bgImage.includes('88B04B') ||
+                          bgImage.includes('136, 176, 75');
+
+        if (hasGreenBg) {
+          // Get current text color
+          const textColor = computed.color;
+
+          // Parse RGB values
+          const rgb = textColor.match(/\d+/g);
+          if (rgb) {
+            const r = parseInt(rgb[0]);
+            const g = parseInt(rgb[1]);
+            const b = parseInt(rgb[2]);
+
+            // Calculate luminance (dark colors have low luminance)
+            const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+
+            // If text is dark (luminance < 0.6), force it to white
+            if (luminance < 0.6) {
+              element.style.color = '#ffffff';
+
+              // Also fix child text elements
+              const textElements = element.querySelectorAll('h1, h2, h3, h4, h5, h6, p, span, div, a, strong, em');
+              textElements.forEach(child => {
+                const childColor = window.getComputedStyle(child).color;
+                const childRgb = childColor.match(/\d+/g);
+                if (childRgb) {
+                  const cr = parseInt(childRgb[0]);
+                  const cg = parseInt(childRgb[1]);
+                  const cb = parseInt(childRgb[2]);
+                  const childLuminance = (0.299 * cr + 0.587 * cg + 0.114 * cb) / 255;
+                  if (childLuminance < 0.6) {
+                    child.style.color = '#ffffff';
+                  }
+                }
+              });
+            }
+          }
+        }
+      });
+    }
+
+    // Run fix on page load
+    fixGreenBackgroundTextColors();
+
+    // Run fix again after a short delay to catch any dynamically loaded content
+    setTimeout(fixGreenBackgroundTextColors, 500);
   });
   </script>
 

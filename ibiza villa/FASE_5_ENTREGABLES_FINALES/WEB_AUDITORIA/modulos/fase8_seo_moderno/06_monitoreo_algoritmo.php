@@ -1150,7 +1150,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
                         <span><strong>13 columnas</strong> de análisis</span>
                         <span><strong>2016-2024</strong> histórico</span>
                     </div>
-                    <a href="../entregables/algorithm_monitoring/algorithm_updates_audit.csv" download class="btn-download">
+                    <a href="entregables/algorithm_monitoring/algorithm_updates_audit.csv" download class="btn-download">
                          Descargar Auditoría Updates (CSV)
                     </a>
                 </div>
@@ -1178,7 +1178,7 @@ $calendario_updates = $datosModulo['calendario_updates'] ?? [];
                         <span><strong>15 columnas</strong> detalladas</span>
                         <span><strong>Paso a paso</strong> recuperación</span>
                     </div>
-                    <a href="../entregables/algorithm_monitoring/monitoring_playbook.csv" download class="btn-download">
+                    <a href="entregables/algorithm_monitoring/monitoring_playbook.csv" download class="btn-download">
                          Descargar Playbook Recuperación (CSV)
                     </a>
                 </div>

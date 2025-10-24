@@ -530,7 +530,7 @@ $paginas = $moduloData['paginas'];
 .competencia-page .page-header h1,
 .competencia-page .page-header h2,
 .competencia-page .page-header .subtitle {
-    color: #000000 !important;
+    color: #ffffff !important;
 }
 
 /* Sobrescribir table thead del sistema (gecko-corporate.css)
@@ -561,7 +561,7 @@ $paginas = $moduloData['paginas'];
 }
 
 .competencia-header .subtitle {
-    color: #000000 !important;
+    color: #ffffff !important;
     font-weight: 600;
 }
 
@@ -728,7 +728,7 @@ $paginas = $moduloData['paginas'];
 
 .type-plataforma-global {
     background: #f0f7e6;
-    color: #1e40af;
+    color: #2d3748;
 }
 
 .type-competidor-directo {
@@ -1068,7 +1068,7 @@ $paginas = $moduloData['paginas'];
 
 .intent-informacional {
     background: #f0f7e6;
-    color: #1e40af;
+    color: #2d3748;
 }
 
 .intent-navegacional {
